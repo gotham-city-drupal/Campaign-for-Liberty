@@ -1,0 +1,27 @@
+<?php
+
+class RUZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Russia Zipcode test'),
+      'description' => t('Tests various valid and invalid Russia zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeRUValid() {
+    $this->assertTrue(valid_zipcode('ru', '150016'), t('Test valid'));
+  }
+
+  public function testZipcodeRUInvalid() {
+    $this->assertFalse(valid_zipcode('ru', 'wert12'), t('Test invalid '));
+  }
+
+  public function testZipcodeRUFormatting() {
+    //$this->assertEqual(format_zipcode('ru', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

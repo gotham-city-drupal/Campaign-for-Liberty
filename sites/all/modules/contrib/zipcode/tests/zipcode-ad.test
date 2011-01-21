@@ -1,0 +1,29 @@
+<?php
+
+class ADZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Andorra Zipcode test'),
+      'description' => t('Tests various valid and invalid Andorra zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeADValid() {
+    $this->assertTrue(valid_zipcode('ad', 'ab 123'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('ad', 'ab123'), t('Test valid'));
+  }
+  
+  public function testZipcodeADInvalid() {
+    $this->assertFalse(valid_zipcode('ad', '12 abc'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('ad', '12345'), t('Test invalid '));
+  }
+
+  public function testZipcodeADFormatting() {
+    //$this->assertEqual(format_zipcode('ad', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

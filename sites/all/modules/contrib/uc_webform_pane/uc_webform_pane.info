@@ -1,0 +1,15 @@
+; $Id: uc_webform_pane.info,v 1.2 2010/09/18 21:10:21 arski Exp $
+name = Webform Checkout Pane
+description = "Allows Webform nodes to be displayed as checkout panes."
+dependencies[] = uc_product
+dependencies[] = uc_store
+dependencies[] = uc_cart
+dependencies[] = webform
+package = Ubercart - extra
+
+; Information added by drupal.org packaging script on 2010-11-02
+version = "6.x-3.2"
+core = "6.x"
+project = "uc_webform_pane"
+datestamp = "1288726543"
+

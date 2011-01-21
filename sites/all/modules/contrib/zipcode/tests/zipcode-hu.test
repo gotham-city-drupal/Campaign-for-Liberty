@@ -1,0 +1,27 @@
+<?php
+
+class HUZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Hungary Zipcode test'),
+      'description' => t('Tests various valid and invalid Hungary zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeHUValid() {
+    //$this->assertTrue(valid_zipcode('hu', '(041)245-9848'), t('Test valid'));
+  }
+
+  public function testZipcodeHUInvalid() {
+    //$this->assertFalse(valid_zipcode('hu', '0412459848'), t('Test invalid '));
+  }
+
+  public function testZipcodeHUFormatting() {
+    //$this->assertEqual(format_zipcode('hu', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

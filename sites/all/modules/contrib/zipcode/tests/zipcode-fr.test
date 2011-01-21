@@ -1,0 +1,28 @@
+<?php
+
+class FRZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('France Zipcode test'),
+      'description' => t('Tests various valid and invalid France zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeFRValid() {
+    $this->assertTrue(valid_zipcode('fr', '29600'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('fr', '75015'), t('Test valid'));
+  }
+
+  public function testZipcodeFRInvalid() {
+    $this->assertFalse(valid_zipcode('fr', '999999'), t('Test invalid '));
+  }
+
+  public function testZipcodeFRFormatting() {
+    //$this->assertEqual(format_zipcode('fr', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

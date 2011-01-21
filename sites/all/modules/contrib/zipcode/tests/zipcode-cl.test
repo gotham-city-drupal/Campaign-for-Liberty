@@ -1,0 +1,30 @@
+<?php
+
+class CLZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Chili Zipcode test'),
+      'description' => t('Tests various valid and invalid Chili zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeCLValid() {
+    $this->assertTrue(valid_zipcode('cl', '872-0019'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('cl', '000-0000'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('cl', '999-9999'), t('Test valid'));    
+  }
+
+  public function testZipcodeCLInvalid() {
+    $this->assertFalse(valid_zipcode('cl', '000 0000'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('cl', '000000'), t('Test invalid '));
+  }
+
+  public function testZipcodeCLFormatting() {
+    //$this->assertEqual(format_zipcode('cl', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

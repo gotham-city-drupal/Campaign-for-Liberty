@@ -1,0 +1,33 @@
+<?php
+
+class INZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('India Zipcode test'),
+      'description' => t('Tests various valid and invalid India zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeINValid() {
+    $this->assertTrue(valid_zipcode('in', '400 099'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('in', '400099'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('in', '400050'), t('Test valid'));    
+  }
+  
+  public function testZipcodeINInvalid() {
+    $this->assertFalse(valid_zipcode('in', '2345678'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('in', '12345'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('in', 'asdf'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('in', '034562'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('in', '00342'), t('Test invalid '));    
+  }
+
+  public function testZipcodeINFormatting() {
+    //$this->assertEqual(format_zipcode('in', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

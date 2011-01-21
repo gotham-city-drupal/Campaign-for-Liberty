@@ -1,0 +1,67 @@
+<?php
+// $Id: hosting_stats.install,v 1.1 2010/05/26 22:51:51 chrisyates Exp $
+/**
+ * @file hosting_stats.install
+ * Install file for Hosting Statistics
+ */
+
+/**
+ * Implementation of hook_schema().
+ */
+function hosting_stats_schema() {
+  $schema['hosting_stats_log'] = array(
+    'description' => 'Page view statistics',
+    'fields' => array(
+      'usertype' => array(
+        'description' => 'User type',
+        'type' => 'int',
+        'size' => 'tiny',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'timestamp' => array(
+        'description' => 'Timestamp for page load',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+    ),
+    'indexes' => array(
+      'type' => array('usertype'),
+      'time' => array('timestamp'),
+    ),
+  );
+  return $schema;
+}
+
+
+/**
+ * Implementation of hook_install().
+ */
+function hosting_stats_install() {
+  drupal_install_schema('hosting_stats');
+}
+
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function hosting_stats_uninstall() {
+  drupal_uninstall_schema('hosting_stats');
+  // Delete variables
+  $vars = array(
+    'hostings_stats_logging',
+    'hosting_stats_clear',
+    'hosting_stats_db',
+    'hosting_stats_env',
+    'hosting_stats_file',
+    'hosting_stats_logging',
+    'hosting_stats_mailto',
+    'hosting_stats_perf',
+    'hosting_stats_update'
+  );
+  foreach ($vars as $key) {
+    variable_del($key);
+  }
+}
+

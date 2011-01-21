@@ -1,0 +1,29 @@
+<?php
+
+class HRZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Crotia Zipcode test'),
+      'description' => t('Tests various valid and invalid Crotia zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeHRValid() {
+    $this->assertTrue(valid_zipcode('hr', 'HR-00000'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('hr', 'HR-99999'), t('Test valid'));
+  }
+  
+  public function testZipcodeHRInvalid() {
+    $this->assertFalse(valid_zipcode('hr', 'HR 00000'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('hr', '00000'), t('Test invalid '));
+  }
+
+  public function testZipcodeHRFormatting() {
+    //$this->assertEqual(format_zipcode('hr', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

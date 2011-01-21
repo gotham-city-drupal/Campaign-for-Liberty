@@ -1,0 +1,27 @@
+<?php
+
+class ARZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Argentina Zipcode test'),
+      'description' => t('Tests various valid and invalid Argentina zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeARValid() {
+    //$this->assertTrue(valid_zipcode('ar', '(041)245-9848'), t('Test valid'));
+  }
+
+  public function testZipcodeARInvalid() {
+    //$this->assertFalse(valid_zipcode('ar', '0412459848'), t('Test invalid '));
+  }
+
+  public function testZipcodeARFormatting() {
+    //$this->assertEqual(format_zipcode('ar', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

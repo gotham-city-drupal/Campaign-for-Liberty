@@ -1,0 +1,29 @@
+<?php
+
+class BNZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Brunei Zipcode test'),
+      'description' => t('Tests various valid and invalid Brunei zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeBNValid() {
+    $this->assertTrue(valid_zipcode('bn', 'BT2328'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('bn', 'KA1234'), t('Test valid'));
+  }
+
+  public function testZipcodeBNInvalid() {
+    $this->assertFalse(valid_zipcode('bn', 'AB1234'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('bn', 'AB 1234'), t('Test invalid '));
+  }
+
+  public function testZipcodeBNFormatting() {
+    //$this->assertEqual(format_zipcode('bn', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

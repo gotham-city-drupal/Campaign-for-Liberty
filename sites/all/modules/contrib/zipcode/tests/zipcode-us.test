@@ -1,0 +1,29 @@
+<?php
+
+class USZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('US Zipcode test'),
+      'description' => t('Tests various valid and invalid US zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeUSValid() {
+    //$this->assertTrue(valid_zipcode('us', '(041)245-9848'), t('Test valid'));
+    //$this->assertTrue(valid_zipcode('us', '(063)421-232'), t('Test valid'));
+  }
+
+  public function testZipcodeUSInvalid() {
+    //$this->assertFalse(valid_zipcode('us', '0412459848'), t('Test invalid '));
+    //$this->assertFalse(valid_zipcode('us', '063421232'), t('Test invalid '));
+  }
+
+  public function testZipcodeUSFormatting() {
+    //$this->assertEqual(format_zipcode('us', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

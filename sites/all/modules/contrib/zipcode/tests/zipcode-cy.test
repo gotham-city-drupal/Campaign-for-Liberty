@@ -1,0 +1,31 @@
+<?php
+
+class CYZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Cyprus Zipcode test'),
+      'description' => t('Tests various valid and invalid Cyprus zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeCYValid() {
+    $this->assertTrue(valid_zipcode('cy', '1000'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('cy', '9999'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('cy', '0000'), t('Test valid'));    
+  }
+  
+  public function testZipcodeCYInvalid() {
+    $this->assertFalse(valid_zipcode('cy', '1'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('cy', '99999'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('cy', '99 000'), t('Test invalid '));    
+  }
+
+  public function testZipcodeCYFormatting() {
+    //$this->assertEqual(format_zipcode('cy', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

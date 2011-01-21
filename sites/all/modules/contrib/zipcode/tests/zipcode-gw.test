@@ -1,0 +1,30 @@
+<?php
+
+class GWZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Guinea Bissau Zipcode test'),
+      'description' => t('Tests various valid and invalid Guinea Bissau zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeGWValid() {
+    $this->assertTrue(valid_zipcode('gw', '1000'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('gw', '1999'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('gw', '9999'), t('Test valid'));    
+  }
+  
+  public function testZipcodeGWInvalid() {
+    $this->assertFalse(valid_zipcode('gw', '0000'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('gw', '0123'), t('Test invalid '));
+  }
+
+  public function testZipcodeGWFormatting() {
+    //$this->assertEqual(format_zipcode('gw', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

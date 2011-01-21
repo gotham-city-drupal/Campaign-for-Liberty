@@ -1,0 +1,27 @@
+<?php
+
+class NZZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('New Zealand Zipcode test'),
+      'description' => t('Tests various valid and invalid New Zealand zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeCNValid() {
+    $this->assertTrue(valid_zipcode('nz', '0099'), t('Test valid'));
+  }
+
+  public function testZipcodeCNInvalid() {
+    $this->assertFalse(valid_zipcode('nz', '12345'), t('Test invalid '));
+  }
+
+  public function testZipcodeCNFormatting() {
+    //$this->assertEqual(format_zipcode('nz', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

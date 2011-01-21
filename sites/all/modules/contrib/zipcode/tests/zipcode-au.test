@@ -1,0 +1,27 @@
+<?php
+
+class AUZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Australia Zipcode test'),
+      'description' => t('Tests various valid and invalid Australia zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeAUValid() {
+    //$this->assertTrue(valid_zipcode('au', '(041)245-9848'), t('Test valid'));
+  }
+
+  public function testZipcodeAUInvalid() {
+    //$this->assertFalse(valid_zipcode('au', '0412459848'), t('Test invalid '));
+  }
+
+  public function testZipcodeAUFormatting() {
+    //$this->assertEqual(format_zipcode('au', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

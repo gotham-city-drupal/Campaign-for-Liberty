@@ -1,0 +1,27 @@
+<?php
+
+class CNZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('China Zipcode test'),
+      'description' => t('Tests various valid and invalid China zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeCNValid() {
+    $this->assertTrue(valid_zipcode('cn', '009999'), t('Test valid'));
+  }
+
+  public function testZipcodeCNInvalid() {
+    //$this->assertFalse(valid_zipcode('cn', '12345'), t('Test invalid '));
+  }
+
+  public function testZipcodeCNFormatting() {
+    //$this->assertEqual(format_zipcode('cn', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}
