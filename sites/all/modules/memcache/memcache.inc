@@ -1,9 +1,17 @@
 <?php
+<<<<<<< HEAD
 // $Id: memcache.inc,v 1.15.2.8.2.21 2010/10/13 03:11:31 Jeremy Exp $
+=======
+// $Id: memcache.inc,v 1.15.2.8.2.28 2010/12/28 11:11:27 robertDouglass Exp $
+>>>>>>> Initialize Project: pantheon
 
 /** Implementation of cache.inc with memcache logic included **/
 
 require_once 'dmemcache.inc';
+<<<<<<< HEAD
+=======
+require_once variable_get('memcache_extra_include', 'database.inc');
+>>>>>>> Initialize Project: pantheon
 
 /**
  * Defines the period after which wildcard clears are not considered valid.
@@ -23,6 +31,15 @@ define('MEMCACHE_WILDCARD_INVALIDATE', 86400 * 28);
  *   'cache_menu', 'cache_page', or 'cache' for the default cache.
  */
 function cache_get($cid, $table = 'cache') {
+<<<<<<< HEAD
+=======
+  // Handle excluded bins first.
+  $bins = variable_get('memcache_bins', array());
+  if (!is_null($table) && isset($bins[$table]) && $bins[$table] == 'database') {
+    return _cache_get($cid, $table);
+  }
+
+>>>>>>> Initialize Project: pantheon
   // Determine when the current table was last flushed.
   $cache_flush = variable_get("cache_flush_$table", 0);
   // Retrieve the item from the cache.
@@ -48,8 +65,23 @@ function cache_get($cid, $table = 'cache') {
   }
 
   $cache_tables = isset($_SESSION['cache_flush']) ? $_SESSION['cache_flush'] : NULL;
+<<<<<<< HEAD
   // Items cached before the cache was last flushed are no longer valid.
   $cache_lifetime = variable_get('cache_lifetime', 0);
+=======
+  $cache_lifetime = variable_get('cache_lifetime', 0);
+  if (is_array($cache_tables) && !empty($cache_tables) && $cache_lifetime) {
+    // Expire the $_SESSION['cache_flush'] variable array if it is older than
+    // the minimum cache lifetime, since after that the $cache_flush variable
+    // will take over.
+    if (max($cache_tables) < ($_SERVER['REQUEST_TIME'] - $cache_lifetime)) {
+      unset($_SESSION['cache_flush']);
+      $cache_tables = NULL;
+    }
+  }
+
+  // Items cached before the cache was last flushed are no longer valid.
+>>>>>>> Initialize Project: pantheon
   if ($cache_lifetime && $cache->created && $cache_flush &&
       ($cache->created < $cache_flush) &&
       (($_SERVER['REQUEST_TIME'] - $cache->created >= $cache_lifetime)) ||
@@ -85,6 +117,15 @@ function cache_get($cid, $table = 'cache') {
  *   A string containing HTTP header information for cached pages.
  */
 function cache_set($cid, $data, $table = 'cache', $expire = CACHE_PERMANENT, $headers = NULL) {
+<<<<<<< HEAD
+=======
+  // Handle database fallback first.
+  $bins = variable_get('memcache_bins', array());
+  if (!is_null($table) && isset($bins[$table]) && $bins[$table] == 'database') {
+    return _cache_set($cid, $data, $table, $expire, $headers);
+  }
+  
+>>>>>>> Initialize Project: pantheon
   $created = $_SERVER['REQUEST_TIME'];
 
   // Create new cache object.
@@ -141,6 +182,15 @@ function cache_set($cid, $data, $table = 'cache', $expire = CACHE_PERMANENT, $he
  *   match. If '*' is given as $cid, the table $table will be emptied.
  */
 function cache_clear_all($cid = NULL, $table = NULL, $wildcard = FALSE) {
+<<<<<<< HEAD
+=======
+  // Handle database fallback first.
+  $bins = variable_get('memcache_bins', array());
+  if (!is_null($table) && isset($bins[$table]) && $bins[$table] == 'database') {
+    return _cache_clear_all($cid, $table, $wildcard);
+  }
+  
+>>>>>>> Initialize Project: pantheon
   // Default behavior for when cache_clear_all() is called without parameters
   // is to clear all of the expirable entries in the block and page caches.
   if (!isset($cid) && !isset($table)) {
@@ -149,7 +199,18 @@ function cache_clear_all($cid = NULL, $table = NULL, $wildcard = FALSE) {
     return;
   }
   if (empty($cid) || $wildcard === TRUE) {
+<<<<<<< HEAD
     if ($cid == '*') {
+=======
+    // system_cron() flushes all cache bins returned by hook_flush_caches()
+    // with cache_clear_all(NULL, $bin); This is for garbage collection with
+    // the database cache, but serves no purpose with memcache. So return
+    // early here.
+    if (!isset($cid)) {
+      return;
+    }
+    elseif ($cid == '*') {
+>>>>>>> Initialize Project: pantheon
       $cid = '';
     }
     if (variable_get('cache_lifetime', 0) && empty($cid)) {
@@ -278,3 +339,7 @@ function memcache_wildcards($cid, $table, $flush = FALSE) {
 function memcache_clone($object) {
   return version_compare(phpversion(), '5.0') < 0 ? $object : clone($object);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> Initialize Project: pantheon

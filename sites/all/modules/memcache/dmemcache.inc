@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 // $Id: dmemcache.inc,v 1.1.2.7.2.20 2010/09/29 15:04:05 robertDouglass Exp $
+=======
+// $Id: dmemcache.inc,v 1.1.2.7.2.21 2010/11/03 19:18:42 robertDouglass Exp $
+>>>>>>> Initialize Project: pantheon
 
 /*
  * Core dmemcache functions required by:
@@ -33,6 +37,7 @@ $_memcache_statistics = array();
 function dmemcache_set($key, $value, $exp = 0, $bin = 'cache') {
   global $_memcache_statistics;
   $full_key = dmemcache_key($key, $bin);
+<<<<<<< HEAD
   $_memcache_statistics[] = array('set', $bin, $full_key, '');
   if ($mc = dmemcache_object($bin)) {
     if (class_exists('Memcached')) {
@@ -43,6 +48,19 @@ function dmemcache_set($key, $value, $exp = 0, $bin = 'cache') {
     }
   }
   return FALSE;
+=======
+  $success = FALSE;
+  if ($mc = dmemcache_object($bin)) {
+    if (class_exists('Memcached')) {
+      $success = $mc->set($full_key, $value, $exp);
+    }
+    else {
+      $success = $mc->set($full_key, $value, MEMCACHE_COMPRESSED, $exp);
+    }
+  }
+  $_memcache_statistics[] = array('set', $bin, $full_key, (int)$success);
+  return $success;
+>>>>>>> Initialize Project: pantheon
 }
 
 /**
@@ -73,6 +91,7 @@ function dmemcache_set($key, $value, $exp = 0, $bin = 'cache') {
 function dmemcache_add($key, $value, $exp = 0, $bin = 'cache', $mc = NULL, $flag = FALSE) {
   global $_memcache_statistics;
   $full_key = dmemcache_key($key, $bin);
+<<<<<<< HEAD
   $_memcache_statistics[] = array('add', $bin, $full_key, '');
   if ($mc || ($mc = dmemcache_object($bin))) {
     if (class_exists('Memcached')) {
@@ -83,6 +102,19 @@ function dmemcache_add($key, $value, $exp = 0, $bin = 'cache', $mc = NULL, $flag
     }
   }
   return FALSE;
+=======
+  $success = FALSE;
+  if ($mc || ($mc = dmemcache_object($bin))) {
+    if (class_exists('Memcached')) {
+      $success = $mc->add($full_key, $value, $exp);
+    }
+    else {
+      $success = $mc->add($full_key, $value, $flag, $exp);
+    }
+  }
+  $_memcache_statistics[] = array('add', $bin, $full_key, (int)$success);
+  return $success;
+>>>>>>> Initialize Project: pantheon
 }
 
 /**
@@ -168,11 +200,20 @@ function dmemcache_get_multi($keys, $bin = 'cache', $mc = NULL) {
 function dmemcache_delete($key, $bin = 'cache') {
   global $_memcache_statistics;
   $full_key = dmemcache_key($key, $bin);
+<<<<<<< HEAD
   $_memcache_statistics[] = array('delete', $bin, $full_key, '');
   if ($mc = dmemcache_object($bin)) {
     return $mc->delete($full_key);
   }
   return FALSE;
+=======
+  $success = FALSE;
+  if ($mc = dmemcache_object($bin)) {
+    $success = $mc->delete($full_key);
+  }
+  $_memcache_statistics[] = array('delete', $bin, $full_key, (int)$success);
+  return $success;
+>>>>>>> Initialize Project: pantheon
 }
 
 /**

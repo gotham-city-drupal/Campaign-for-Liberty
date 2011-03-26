@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 // $Id: README.txt,v 1.4.2.10.2.11 2010/09/29 15:04:05 robertDouglass Exp $
+=======
+// $Id: README.txt,v 1.4.2.10.2.17 2011/02/01 19:54:31 Jeremy Exp $
+>>>>>>> Initialize Project: pantheon
 
 ## Requirements ##
 
 - PHP 5.1 or greater
 - Availability of a memcached daemon: http://memcached.org/
 - One of the two PECL memcache packages:
+<<<<<<< HEAD
   - http://pecl.php.net/package/memcache
   - http://pecl.php.net/package/memcached (recommended
+=======
+  - http://pecl.php.net/package/memcache (older, most stable)
+  - http://pecl.php.net/package/memcached (newer, possible performance issues)
+>>>>>>> Initialize Project: pantheon
 
 ## INSTALLATION ##
 
@@ -25,13 +34,19 @@ http://www.lullabot.com/articles/how_install_memcache_debian_etch
 6. Start at least one instance of memcached on your server.
 7. Edit settings.php to configure the servers, clusters and bins that memcache
    is supposed to use.
+<<<<<<< HEAD
 8. Edit settings.php to include either memcache.inc or memcache.db.inc. For
    example, $conf['cache_inc'] ='sites/all/modules/memcache/memcache.db.inc';
+=======
+8. Edit settings.php to include either memcache.inc. For
+   example, $conf['cache_inc'] ='sites/all/modules/memcache/memcache.inc';
+>>>>>>> Initialize Project: pantheon
 9. Bring your site back online.
 
 For instructions on 1 and 2 above, please see the INSTALLATION.txt file that
 comes with the memcache module download.
 
+<<<<<<< HEAD
 Either the memcache.inc or the memcache.db.inc file is intended to be used
 instead of cache.inc, utilizing Drupal's pluggable cache system. The .db.inc
 variant saves all data to the database as well, so the site will still have
@@ -50,13 +65,26 @@ http://www.lullabot.com/files/memcache-inc.png
 http://www.lullabot.com/files/memcache-db-inc.png
 
 Update $conf in settings.php to tell Drupal which cache_inc file to use:
+=======
+The memcache.inc file is intended to be used instead of cache.inc, utilizing
+Drupal's pluggable cache system.
+
+memcache.db.inc IS DEPRECATED AND IS NOT RECOMMENDED. It is still distributed
+with the 6.x-1.x branch, but will not be included in any further versions and
+may be removed in future 6.x releases.
+
+Update $conf in settings.php to tell Drupal where the cache_inc file is:
+>>>>>>> Initialize Project: pantheon
 
  $conf = array(
    // The path to wherever memcache.inc is. The easiest is to simply point it
    // to the copy in your module's directory.
    'cache_inc' => './sites/all/modules/memcache/memcache.inc',
+<<<<<<< HEAD
    // or
    // 'cache_inc' => './sites/all/modules/memcache/memcache.db.inc',
+=======
+>>>>>>> Initialize Project: pantheon
  );
 
 ## SERVERS ##
@@ -70,7 +98,11 @@ than your web server, read on.
 
 The available memcached servers are specified in $conf in settings.php. If
 you do not specify any servers, memcache.inc assumes that you have a
+<<<<<<< HEAD
 memcached instance running on localhost:11211. If this is true, and it is
+=======
+memcached instance running on 10.0.0.1:11211. If this is true, and it is
+>>>>>>> Initialize Project: pantheon
 the only memcached instance you wish to use, no further configuration is
 required.
 
@@ -110,21 +142,35 @@ $conf = array(
   ...
   // Important to define a default cluster in both the servers
   // and in the bins. This links them together.
+<<<<<<< HEAD
   'memcache_servers' => array('localhost:11211' => 'default',
                               'localhost:11212' => 'pages'),
+=======
+  'memcache_servers' => array('10.0.0.1:11211' => 'default',
+                              '10.0.0.1:11212' => 'pages'),
+>>>>>>> Initialize Project: pantheon
   'memcache_bins' => array('cache' => 'default',
                            'cache_page' => 'pages'),
 );
 
 Here is an example configuration that has two clusters, 'default' and
 'cluster2'. Five memcached instances are divided up between the two
+<<<<<<< HEAD
 clusters. 'cache_filter' and 'cache_menu' bins goe to 'cluster2'. All other
+=======
+clusters. 'cache_filter' and 'cache_menu' bins go to 'cluster2'. All other
+>>>>>>> Initialize Project: pantheon
 bins go to 'default'.
 
 $conf = array(
   'cache_inc' => './sites/all/modules/memcache/memcache.inc',
+<<<<<<< HEAD
   'memcache_servers' => array('localhost:11211' => 'default',
                               'localhost:11212' => 'default',
+=======
+  'memcache_servers' => array('10.0.0.1:11211' => 'default',
+                              '10.0.0.1:11212' => 'default',
+>>>>>>> Initialize Project: pantheon
                               '123.45.67.890:11211' => 'default',
                               '123.45.67.891:11211' => 'cluster2',
                               '123.45.67.892:11211' => 'cluster2'),
@@ -133,6 +179,32 @@ $conf = array(
                            'cache_filter' => 'cluster2',
                            'cache_menu' => 'cluster2'),
 );
+<<<<<<< HEAD
+=======
+
+Here is an example configuration where the 'cache_form' bin is set to bypass
+memcache and use the standard table-based Drupal cache by assigning it to a
+cluster called 'database'.
+
+$conf = array(
+  ...
+  'memcache_servers' => array('10.0.0.1:11211' => 'default'),
+  'memcache_bins' => array('cache' => 'default',
+                           'cache_form' => 'database'),
+);
+
+## memcache_extra_include and database.inc ##
+
+In the above example, mapping a bin to 'database' makes a cache be stored
+in the database instead of memcache. This is actually done by the file
+database.inc, which is copy and pasted from DRUPAL/includes/cache.inc. 
+If you want to provide an alternate file instead of database.inc to handle
+the cache calls to 'database', override the variable memcache_extra_include
+in settings.php to provide the location of the file to include. This only
+applies if you are using memcache.inc (not memcache.db.inc, which is deprecated).
+
+
+>>>>>>> Initialize Project: pantheon
 ## PREFIXING ##
 
 If you want to have multiple Drupal installations share memcached instances,
@@ -150,7 +222,11 @@ Here is a sample config that uses memcache for sessions. Note you MUST have
 a session and a users server set up for memcached sessions to work.
 
 $conf = array(
+<<<<<<< HEAD
   'cache_inc' => './sites/all/modules/memcache/memcache.db.inc',
+=======
+  'cache_inc' => './sites/all/modules/memcache/memcache.inc',
+>>>>>>> Initialize Project: pantheon
   'session_inc' => './sites/all/modules/memcache/memcache-session.inc',
   'memcache_servers' => array(
     'localhost:11211' => 'default',
@@ -192,9 +268,18 @@ way to clear the cache, and an interface to organize servers/bins/clusters.
 
 ## Memcached PECL Extension Support
 
+<<<<<<< HEAD
 We also now support the Memcached PECL extension. If you install this extension,
 it will be used by default. This new extension backends to libmemcached and 
 allows you to use some of the newer advanced features in memcached 1.4. 
+=======
+The Drupal memcach modules supports both the memcache and the memcached PECL
+extensions.  If you install the newer memcached extension, it will be used by
+default. This new extension backends to libmemcached and allows you to use some
+of the newer advanced features in memcached 1.4.  We highly recommend that you
+test with both PECL extensions to determine which is a better fit for your
+infrastructure.
+>>>>>>> Initialize Project: pantheon
 
 NOTE: It is important to realize that the memcache php.ini options do not impact
 the memcached extension, this new extension doesn't read in options that way.
@@ -213,8 +298,15 @@ $conf['memcache_options'] = array(
 
 These are as follows:
 
+<<<<<<< HEAD
  * Turn off compression, as this takes more CPU cycles than its worth for most users
  * Turn on consistent distribution, which allows you to add/remove servers easily
+=======
+ * Turn off compression, as this takes more CPU cycles than its worth for most
+   users
+ * Turn on consistent distribution, which allows you to add/remove servers
+   easily
+>>>>>>> Initialize Project: pantheon
 
 If you are using memcached 1.4 or above, you should enable the binary protocol,
 which is more advanced and faster, by adding the following to settings.php:
