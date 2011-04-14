@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /.DS_Store
 /sites/.DS_Store
 /sites/all/.DS_Store
@@ -6,3 +7,7 @@
 DS_store
 /.bzrignore
 DS_Store
+=======
+*.sql
+.DS_store
+>>>>>>> changes to gitignore
