@@ -261,4 +261,6 @@ $databases['default']['default'] = array(
 //</@@ADCP_CONF@@>
 
 /* Added by Pantheon */
-include 'pantheon.settings.php';
+if (file_exists('../pantheon6.settings.php')) {
+  include_once('../pantheon6.settings.php');
+}
