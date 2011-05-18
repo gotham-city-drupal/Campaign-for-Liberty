@@ -27,3 +27,8 @@ Icon?
 Thumbs.db
 ._*
 .bzrignore
+/sites/default/backup_settings.php
+/sites/default/symlink-maker.app
+/sites/default/symlink-maker.app.zip
+/sites/.DS_Store
+/.DS_Store
