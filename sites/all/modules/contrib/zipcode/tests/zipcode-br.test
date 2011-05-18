@@ -1,0 +1,39 @@
+<?php
+
+class BRZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Brazil Zipcode test'),
+      'description' => t('Tests various valid and invalid Brazil zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeBRValid() {
+    $this->assertTrue(valid_zipcode('br', '12.345-678'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('br', '12345-678'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('br', '12345678'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('br', '02245-999'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('br', '70235'), t('Test valid'));    
+  }
+
+  public function testZipcodeBRInvalid() {
+    $this->assertFalse(valid_zipcode('br', '12.345678'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', '123456789'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', '12345*678'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', '12345-67'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', '1234567'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', 'ABCDE-FGH'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', '70.235'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', '70.235.000'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('br', '70.235000'), t('Test invalid '));    
+  }
+
+  public function testZipcodeBRFormatting() {
+    //$this->assertEqual(format_zipcode('br', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

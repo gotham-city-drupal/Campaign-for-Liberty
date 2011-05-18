@@ -1,0 +1,29 @@
+<?php
+
+class EGZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Egypt Zipcode test'),
+      'description' => t('Tests various valid and invalid Egypt zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeEGValid() {
+    $this->assertTrue(valid_zipcode('eg', '00000'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('eg', '99999'), t('Test valid'));
+  }
+
+  public function testZipcodeEGInvalid() {
+    $this->assertFalse(valid_zipcode('eg', '0 0 0 00'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('eg', '00'), t('Test invalid '));
+  }
+
+  public function testZipcodeEGFormatting() {
+    //$this->assertEqual(format_zipcode('eg', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

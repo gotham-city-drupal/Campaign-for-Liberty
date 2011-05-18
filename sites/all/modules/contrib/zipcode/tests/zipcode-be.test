@@ -1,0 +1,28 @@
+<?php
+
+class BEZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Belgium Zipcode test'),
+      'description' => t('Tests various valid and invalid Belgium zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeBEValid() {
+    $this->assertTrue(valid_zipcode('be', '1234'), t('Test valid'));
+  }
+
+  public function testZipcodeBEInvalid() {
+    $this->assertFalse(valid_zipcode('be', '123'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('be', '123A'), t('Test invalid '));
+  }
+
+  public function testZipcodeBEFormatting() {
+    //$this->assertEqual(format_zipcode('be', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

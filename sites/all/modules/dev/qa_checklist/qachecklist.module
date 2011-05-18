@@ -1,0 +1,47 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * QA Checklist module allows users to track important QA techniques on the website.
+ */
+
+/**
+ * Implementation of hook_help().
+ */
+function qachecklist_help($path, $arg) {
+  if ($path == 'admin/settings/qachecklist') {
+    return '<p>' . t('Check off each QA-related task as you complete it. Do not forget to click the <em>Save</em> button!') . '</p>';
+  }
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function qachecklist_perm() {
+  return array('access qachecklist content');
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function qachecklist_menu() {
+  $items['admin/settings/qachecklist'] = array(
+    'title' => 'QA Checklist',
+    'description' => 'Keep track of your Drupal QA tasks.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('qachecklist_admin_settings'),
+    'access arguments' => array('access qachecklist content'),
+    'file' => 'qachecklist.admin.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implementation of hook_footer().
+ */
+function qachecklist_footer($main = 0) {
+  if (variable_get('qa_checklist_link', 0)) {
+    return '<div align="center"><a href="http://www.interactiveqa.com/" target="_blank">Drupal QA</a></div>';
+  }
+}

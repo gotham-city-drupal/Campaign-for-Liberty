@@ -1,0 +1,13 @@
+/* $Id$ */
+
+div.qachecklist_item {
+  clear:both;
+}
+
+div.qachecklist_item div,
+div.qachecklist_item label,
+div.qachecklist_item p {
+  display:inline;
+  margin-bottom:0;
+  margin-top:0;
+}

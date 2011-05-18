@@ -1,0 +1,27 @@
+<?php
+
+class JPZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Japan Zipcode test'),
+      'description' => t('Tests various valid and invalid Japan zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeJPValid() {
+    $this->assertTrue(valid_zipcode('jp', '102-8166'), t('Test valid : Chiyoda in Tokyo'));
+  }
+
+  public function testZipcodeJPInvalid() {
+    //$this->assertFalse(valid_zipcode('jp', '12345'), t('Test invalid '));
+  }
+
+  public function testZipcodeJPFormatting() {
+    //$this->assertEqual(format_zipcode('jp', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

@@ -1,0 +1,196 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Install, update and uninstall functions for the qachecklist module.
+ */
+
+/**
+ * Implementation of hook_schema().
+ */
+function qachecklist_schema() {
+  $schema['qa_group'] = array(
+    'description' => 'qa_group',
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'size' => 'tiny',
+        'not null' => TRUE,
+        'description' => 'id',
+        'disp-width' => '4'
+      ),
+      'name' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'description' => 'name',
+        'default' => ''
+      ),
+      'description' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'description' => 'description',
+        'default' => ''
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  $schema['qa_checklist'] = array(
+    'description' => 'qa_checklist',
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'size' => 'tiny',
+        'not null' => TRUE,
+        'description' => 'id',
+      ),
+      'group_id' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'group_id',
+      ),
+      'name' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'description' => 'name',
+        'default' => '',
+      ),
+      'module' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'description' => 'module',
+        'default' => '',
+      ),
+      'download' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'description' => 'download',
+        'default' => '',
+      ),
+      'enable' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'description' => 'enable',
+        'default' => '',
+      ),
+      'configure' => array(
+        'type' => 'varchar',
+        'length' => '255',
+        'not null' => TRUE,
+        'description' => 'configure',
+        'default' => '',
+      ),
+      'order_id' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => TRUE,
+        'description' => 'order id',
+        'default' => 0,
+      ),
+      'completed' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'UNIX timestamp of when this task was completed, or 0 if the task has not yet been completed.',
+      ),
+      'uid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'The {user}.uid of the account that completed this task.',
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}
+
+/**
+ * Implementation of hook_install().
+ */
+function qachecklist_install() {
+  drupal_install_schema('qachecklist');
+
+  $task_fields = "(id, group_id, name, module, download, enable, configure, order_id)";
+
+  // Other Checklists
+  db_query("INSERT INTO {qa_group} VALUES (1, 'Other Checklists', 'Ensure that other Drupal checklists are installed and completed.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (1, 1, 'Security Review', 'security_review', 'http://drupal.org/project/security_review', 'admin/build/modules', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (2, 1, 'SEO Checklist', 'seo_checklist', 'http://drupal.org/project/seo_checklist', 'admin/build/modules', '', 2)");
+
+  // Other Modules
+  db_query("INSERT INTO {qa_group} VALUES (2, 'Other Modules', 'Other important Drupal modules.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (3, 2, 'Backup and Migrate', 'backup_migrate', 'http://drupal.org/project/backup_migrate', 'admin/build/modules', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (4, 2, 'Backup and Migrate Files', 'backup_migrate_files', 'http://drupal.org/project/backup_migrate_files', 'admin/build/modules', '', 2)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (5, 2, 'DB Maintenance', 'db_maintenance', 'http://drupal.org/project/db_maintenance', 'admin/build/modules', '', 3)");
+  
+  // Server Optimization
+  db_query("INSERT INTO {qa_group} VALUES (3, 'Server Optimization', 'Make sure your server is running Drupal as best it can.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (6, 3, 'Review web server configuration - for Apache, check max clients settings and enabled modules', '', '', '', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (7, 3, 'Review database configuration - for MySQL, adjust cache size and other settings as necessary', '', '', '', '', 2)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (8, 3, 'Review PHP configuration - adjust max memory and max execution as necessary', '', '', '', '', 3)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (9, 3, 'Install and configure PHP opcode cache', '', '', '', '', 4)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (10, 3, 'OPTIONAL: install and configure reverse proxy cache', '', '', '', '', 5)");
+  
+  // Drupal Optimization
+  db_query("INSERT INTO {qa_group} VALUES (4, 'Drupal Optimization', 'Install modules and configure Drupal to run at top speed.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (11, 4, 'Enable caching', '', '', '', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (12, 4, 'Enable page compression', '', '', '', '', 2)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (13, 4, 'CSS Gzip', 'css_gzip', 'http://drupal.org/project/css_gzip', 'admin/build/modules', '', 3)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (14, 4, 'Javascript Aggregator', 'javascript_aggregator', 'http://drupal.org/project/javascript_aggregator', 'admin/build/modules', '', 4)");
+  
+  // User Settings
+  db_query("INSERT INTO {qa_group} VALUES (5, 'User Settings', 'Review user settings.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (15, 5, 'Confirm user registration settings.', '', '', '', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (16, 5, 'Confirm email settings.', '', '', '', '', 2)");
+  
+  // User Permissions
+  db_query("INSERT INTO {qa_group} VALUES (6, 'User Permissions', 'Review user permissions.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (17, 6, 'Filter Permissions', 'filter_perms', 'http://drupal.org/project/filter_perms', 'admin/build/modules', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (18, 6, 'Better Permissions', 'better_perms', 'http://drupal.org/project/better_perms', 'admin/build/modules', '', 2)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (19, 6, 'Admin Role module', 'adminrole', 'http://drupal.org/project/adminrole', 'admin/build/modules', '', 3)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (20, 6, 'Read: Managing Drupal Permissions', '', 'http://drupal.org/node/22275', '', '', 4)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (21, 6, 'Review and revise user permissions.', '', '', '', '', 5)");
+  
+  // In Case You Forgot
+  db_query("INSERT INTO {qa_group} VALUES (7, 'In Case You Forgot', 'Some tasks to remember.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (22, 7, 'Review and revise user permissions.', '', '', '', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (23, 7, 'Check Drupal status log for issues.', '', '', '', '', 2)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (24, 7, 'Check update page for Drupal updates.', '', '', '', '', 3)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (25, 7, 'Check update page for contributed module updates.', '', '', '', '', 4)");
+  
+  // Getting Ready
+  db_query("INSERT INTO {qa_group} VALUES (8, 'Getting Ready', 'A few things to do before deployment.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (26, 8, 'Disable devel modules.', '', '', '', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (27, 8, 'Set a maintenance theme - add \$conf[\'maintenance_theme\'] = \'mytheme\'; to settings.php.', '', '', '', '', 2)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (28, 8, 'Clean CSS files with CSS tidy. (recommended for future development)', '', '', '', '', 3)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (29, 8, 'Disable theme registry rebuild.', '', '', '', '', 4)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (30, 8, 'Turn off PHP error display.', '', '', '', '', 5)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (31, 8, 'Change all necessary Drupal/MySQL/SSH passwords.', '', '', '', '', 6)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (32, 8, 'Remove temporary users and content.', '', '', '', '', 7)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (33, 8, 'Setup site emails.', '', '', '', '', 8)");
+  
+  // Deployment
+  db_query("INSERT INTO {qa_group} VALUES (9, 'Deployment', 'Tasks to be done when launching the site.')");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (34, 9, 'Setup HTTP redirect in settings.php.', '', '', '', '', 1)");
+  db_query("INSERT INTO {qa_checklist} $task_fields VALUES (35, 9, 'Setup cron job.', '', '', '', '', 2)");
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function qachecklist_uninstall() {
+  drupal_uninstall_schema('qachecklist');
+  variable_del('qa_checklist_link');
+  variable_del('qa_checklist_thanks');
+}

@@ -1,0 +1,27 @@
+<?php
+
+class CAZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Canada Zipcode test'),
+      'description' => t('Tests various valid and invalid Canada zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeCAValid() {
+    //$this->assertTrue(valid_zipcode('ca', '(041)245-9848'), t('Test valid'));
+  }
+
+  public function testZipcodeCAInvalid() {
+    //$this->assertFalse(valid_zipcode('ca', '0412459848'), t('Test invalid '));
+  }
+
+  public function testZipcodeCAFormatting() {
+    //$this->assertEqual(format_zipcode('ca', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

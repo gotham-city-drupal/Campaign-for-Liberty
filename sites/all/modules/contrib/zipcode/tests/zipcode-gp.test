@@ -1,0 +1,29 @@
+<?php
+
+class GPZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Guadeloupe Zipcode test'),
+      'description' => t('Tests various valid and invalid Guadeloupe zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeGPValid() {
+    $this->assertTrue(valid_zipcode('gp', '97100'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('gp', '98099'), t('Test valid'));
+  }
+
+  public function testZipcodeGPInvalid() {
+    $this->assertFalse(valid_zipcode('gp', '12345'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('gp', '97 100'), t('Test invalid '));
+  }
+  
+  public function testZipcodeGPFormatting() {
+    //$this->assertEqual(format_zipcode('gp', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

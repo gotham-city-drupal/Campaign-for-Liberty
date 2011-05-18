@@ -1,0 +1,35 @@
+<?php
+
+class DEZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Germany Zipcode test'),
+      'description' => t('Tests various valid and invalid Germany zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeDEValid() {
+    //$this->assertTrue(valid_zipcode('de', '(041)245-9848'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('de', '10203'), t('Test valid'));
+    
+    $this->assertTrue(valid_zipcode('de', '06001'), t('Test valid - Halle, Saxony-Anhalt'));
+    $this->assertTrue(valid_zipcode('de', '12487'), t('Test valid - Adlershof'));
+    $this->assertTrue(valid_zipcode('de', '16515'), t('Test valid - Oranienburg'));
+    $this->assertTrue(valid_zipcode('de', '58313'), t('Test valid - Herdecke'));
+    $this->assertTrue(valid_zipcode('de', '71032'), t('Test valid - Boblingen'));
+    $this->assertTrue(valid_zipcode('de', '10119'), t('Test valid - Berlin')); 
+  }
+
+  public function testZipcodeDEInvalid() {
+    //$this->assertFalse(valid_zipcode('de', '0412459848'), t('Test invalid '));
+  }
+
+  public function testZipcodeDEFormatting() {
+    //$this->assertEqual(format_zipcode('de', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

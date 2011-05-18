@@ -1,0 +1,33 @@
+<?php
+
+class DKZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Denmark Zipcode test'),
+      'description' => t('Tests various valid and invalid Denmark zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeDKValid() {
+    $this->assertTrue(valid_zipcode('dk', '4760'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('dk', 'DK-4700'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('dk', 'Dk-1234'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('dk', 'dk-1234'), t('Test valid'));
+  }
+
+  public function testZipcodeDKInvalid() {
+    $this->assertFalse(valid_zipcode('dk', 'DK4720'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('dk', 'DE-4000'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('dk', 'DK 1234'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('dk', 'DK 12345'), t('Test invalid '));
+  }
+
+  public function testZipcodeDKFormatting() {
+    //$this->assertEqual(format_zipcode('dk', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

@@ -1,0 +1,36 @@
+<?php
+
+class SEZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Sweden Zipcode test'),
+      'description' => t('Tests various valid and invalid Sweden zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeSEValid() {
+    $this->assertTrue(valid_zipcode('se', '12345'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('se', '932 68'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('se', 'S-621 46'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('se', 'S-123 45'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('se', 's 123 45'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('se', 'S123-45'), t('Test valid'));
+    
+  }
+
+  public function testZipcodeSEInvalid() {
+    $this->assertFalse(valid_zipcode('se', '5367'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('se', '425611'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('se', '31 545'), t('Test invalid '));
+    $this->assertFalse(valid_zipcode('se', 'Se12345'), t('Test invalid '));    
+  }
+
+  public function testZipcodeSEFormatting() {
+    //$this->assertEqual(format_zipcode('se', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

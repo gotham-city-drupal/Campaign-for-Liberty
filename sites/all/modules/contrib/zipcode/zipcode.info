@@ -1,0 +1,15 @@
+; $Id: zipcode.info,v 1.11 2010/05/26 15:02:41 thierrygd Exp $
+name = Zipcode - CCK
+description = "The zipcode module allows administrators to define a field type for zip or postal codes. Note: Requires content.module"
+package = CCK
+dependencies[] = content
+core = 6.x
+
+
+
+; Information added by drupal.org packaging script on 2010-05-26
+version = "6.x-2.9"
+core = "6.x"
+project = "zipcode"
+datestamp = "1274893509"
+

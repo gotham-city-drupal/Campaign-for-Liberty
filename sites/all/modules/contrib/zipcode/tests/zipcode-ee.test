@@ -1,0 +1,28 @@
+<?php
+
+class EEZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('Estonia Zipcode test'),
+      'description' => t('Tests various valid and invalid Estonia zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeEEValid() {
+    $this->assertTrue(valid_zipcode('ee', '00000'), t('Test valid'));
+    $this->assertTrue(valid_zipcode('ee', '99999'), t('Test valid'));
+  }
+  
+  public function testZipcodeEEInvalid() {
+    $this->assertFalse(valid_zipcode('ee', '00 000'), t('Test invalid '));
+  }
+
+  public function testZipcodeEEFormatting() {
+    //$this->assertEqual(format_zipcode('ee', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}

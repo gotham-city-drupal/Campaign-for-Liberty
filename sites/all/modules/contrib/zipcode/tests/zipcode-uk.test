@@ -1,0 +1,29 @@
+<?php
+
+class UKZipcodeTestCase extends DrupalWebTestCase {
+  /**
+   * Implementation of getInfo()
+   *
+   */
+  public static function getInfo() {
+    return array(
+      'name' => t('United Kingdom Zipcode test'),
+      'description' => t('Tests various valid and invalid United Kingdom zipcodes for validity'),
+      'group' => t('Zipcode')
+    );
+  }
+
+  public function testZipcodeUKValid() {
+    //$this->assertTrue(valid_zipcode('uk', '(041)245-9848'), t('Test valid'));
+    //$this->assertTrue(valid_zipcode('uk', '(063)421-232'), t('Test valid'));
+  }
+
+  public function testZipcodeUKInvalid() {
+    //$this->assertFalse(valid_zipcode('uk', '0412459848'), t('Test invalid '));
+    //$this->assertFalse(valid_zipcode('uk', '063421232'), t('Test invalid '));
+  }
+
+  public function testZipcodeUKFormatting() {
+    //$this->assertEqual(format_zipcode('uk', '+6421123456', null), '+64 21 123 456', t('Check international mobile format'));
+  }
+}
