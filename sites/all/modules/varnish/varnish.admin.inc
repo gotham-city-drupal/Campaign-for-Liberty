@@ -1,28 +1,16 @@
 <?php
-<<<<<<< HEAD
-// $Id:
-
-/**
- * @file varnish.admin.inc
-=======
 
 /**
  * @file
  * varnish.admin.inc
  *
->>>>>>> Initialize Project: pantheon
  * Administrative functions for Varnish integration.
  */
  
  
 /**
-<<<<<<< HEAD
-* Menu callback for varnish admin settings.
-*/
-=======
  * Menu callback for varnish admin settings.
  */
->>>>>>> Initialize Project: pantheon
 function varnish_admin_settings_form() {
   $form = array();
   
@@ -44,8 +32,6 @@ function varnish_admin_settings_form() {
     '#default_value' => variable_get('varnish_flush_cron', 0),
     '#description' => t('Internally Drupal will attempt to flush its page cache every time cron.php runs. This can mean too-frequent cache flushes if you have cron running frequently. NOTE: this cache flush is global!'),
   );
-<<<<<<< HEAD
-=======
 
   $form['varnish_legacy'] = array(
     '#type' => 'checkbox',
@@ -54,7 +40,6 @@ function varnish_admin_settings_form() {
     '#required' => TRUE,
     '#description' => t('Check this if you use a version of varnish lower than 2.1'),
   );
->>>>>>> Initialize Project: pantheon
       
   $form['varnish_control_terminal'] = array(
     '#type' => 'textfield',
@@ -69,8 +54,6 @@ function varnish_admin_settings_form() {
     '#default_value' => variable_get('varnish_control_key', ''),
     '#description' => t('Optional: if you have established a secret key for control terminal access, please put it here.'),
   );
-<<<<<<< HEAD
-=======
   $form['varnish_socket_timeout'] = array(
    '#type' => 'textfield',
    '#title' => t('Varnish connection timeout (milliseconds)'),
@@ -78,7 +61,6 @@ function varnish_admin_settings_form() {
    '#description' => t('If Varnish is running on a different server, you may need to increase this value.'),
    '#required' => TRUE,
   );
->>>>>>> Initialize Project: pantheon
   $form['varnish_cache_clear'] = array(
     '#type' => 'radios',
     '#title' => t('Varnish Cache Clearing'),
@@ -103,35 +85,12 @@ function varnish_admin_settings_form() {
   $form['varnish_stats'] = array(
     '#type' => 'item',
     '#title' => t('Status'),
+    '#value' => theme('varnish_status', varnish_get_status()),
   );
 
-  $status = _varnish_terminal_run('status');
-  $terminals = explode(' ', variable_get('varnish_control_terminal', '127.0.0.1:6082'));
-  $items = array();
-  foreach ($terminals as $terminal) {
-    list($server, $port) = explode(':', $terminal);
-    $stat = array_shift($status);
-    if ($stat['code'] != 200) {
-      $items[] = t('The Varnish control terminal is not responding at %server on port %port.', array('%server' => $server, '%port' => $port));
-    }
-    else {
-      $items[] = t('Varnish running. Observe more detailed statistics !link.', array('!link' => l(t('here'), 'admin/reports/varnish')));
-    }
-    $form['varnish_stats']['#value'] = theme('item_list', $items);
-  }
   return system_settings_form($form);
 }
 
-<<<<<<< HEAD
-
-/**
-* Menu callback for varnish admin settings.
-*/
-function varnish_admin_reports_page() {
-  // connect to varnish and do a full status report
-  $status = _varnish_terminal_run('stats');
-  foreach($status as $stat) {
-=======
 function varnish_admin_settings_form_validate($form, &$form_state) {
   if (!is_numeric($form_state['values']['varnish_socket_timeout']) || $form_state['values']['varnish_socket_timeout'] < 0) {
     form_set_error('varnish_socket_timeout', t('Varnish connection timeout must be a positive number.'));
@@ -150,7 +109,6 @@ function varnish_admin_reports_page() {
   $status = _varnish_terminal_run('stats');
   $output = '';
   foreach ($status as $stat) {
->>>>>>> Initialize Project: pantheon
     $output .= '<pre>'. $stat['msg'] .'</pre>';
   }
   return $output;

@@ -1,9 +1,4 @@
 <?php
-<<<<<<< HEAD
-// $Id: memcache-session.inc,v 1.1.2.2.2.13 2010/09/29 12:47:07 robertDouglass Exp $
-=======
-// $Id: memcache-session.inc,v 1.1.2.2.2.14 2010/12/16 02:15:00 Jeremy Exp $
->>>>>>> Initialize Project: pantheon
 
 require_once dirname(__FILE__) . '/dmemcache.inc';
 
@@ -51,18 +46,11 @@ function sess_read($key) {
   // Otherwise, if the session is still active, we have a record of the 
   // client's session in memcache.
   $session = dmemcache_get($key, 'session');
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> Initialize Project: pantheon
   $user = sess_user_load($session);
 
   // Record whether this session contains data so that in sess_write() it can 
   // be determined whether to skip a write.
-<<<<<<< HEAD
-  $user->session_data_present_at_load = !empty($session->session);
-=======
   if ($user->session_data_present_at_load = !empty($session->session)) {
     // Set a global value for the original session value to be compared against
     // during sess_write().
@@ -71,7 +59,6 @@ function sess_read($key) {
       'value' => $user->session,
     );
   }
->>>>>>> Initialize Project: pantheon
 
   return $user->session;
 }
@@ -106,7 +93,7 @@ function sess_write($key, $value) {
   // If the client doesn't have a session, and one isn't being created ($value),
   // do nothing. If session saving has been turned off, do nothing.
   // Cases 1a, 1c, and 2c are covered here.
-  if ((empty($_COOKIE[session_name()]) && empty($value)) || !session_save_session()) {
+  if (!session_save_session() || ($user->uid == 0 && empty($_COOKIE[session_name()]) && empty($value))) {
     return TRUE;
   }
 
@@ -130,10 +117,6 @@ function sess_write($key, $value) {
   // was created during this request and it's safest to do a write. 
   // Cases 1b, 1d, 2a, and 2b are covered here.
   if ($user->uid || !empty($value) || empty($value) && (!isset($user->session_data_present_at_load) || $user->session_data_present_at_load)) {
-<<<<<<< HEAD
-    dmemcache_set($key, $session, ini_get('session.gc_maxlifetime'), 'session');
-    if ($user->uid && $session->timestamp - $user->access > variable_get('session_write_interval', 360)) {
-=======
     // Additionally, check if the session has changed since it was loaded.
     // if not, only write with the same frequency as session_write_interval.
     $last_read = isset($GLOBALS['memcache_session_last_read']) ? $GLOBALS['memcache_session_last_read'] : FALSE;
@@ -146,22 +129,10 @@ function sess_write($key, $value) {
     if ($user->uid && time() - $user->access > variable_get('session_write_interval', 360)) {
       // Update user->access if the session_write_interval threshold has
       // passed.
->>>>>>> Initialize Project: pantheon
       db_query('UPDATE {users} SET access = %d WHERE uid = %d', $session->timestamp, $user->uid);
       // Update the user access time so that the dmemcache_set() call
       // caches the updated time.
       $user->access = $session->timestamp;
-<<<<<<< HEAD
-    }
-    // Data stored in session is stored in session memcache; no need
-    // to duplicate it in users memcache.
-    unset($user->session);
-    unset($user->session_data_present_at_load);
-    // Store the session id so we can locate the session with the user id.
-    $user->sid = $key;
-    
-    dmemcache_set($user->uid, $user, ini_get('session.gc_maxlifetime'), 'users');
-=======
       $access_update = TRUE;
     }
     // If either the session $user->access has been updated, refresh the cached
@@ -179,7 +150,6 @@ function sess_write($key, $value) {
       $user->sid = $key;
       dmemcache_set($user->uid, $user, ini_get('session.gc_maxlifetime'), 'users');
     }
->>>>>>> Initialize Project: pantheon
   }
 
   return TRUE;
@@ -231,6 +201,30 @@ function sess_count($timestamp = 0, $anonymous = true) {
  */
 function sess_destroy_sid($sid) {
   dmemcache_delete($sid, 'session');
+
+  // If the session ID being destroyed is the one of the current user,
+  // clean-up his/her session data and cookie.
+  if ($sid == session_id()) {
+    global $user;
+
+    // Reset $_SESSION and $user to prevent a new session from being started
+    // in drupal_session_commit()
+    $_SESSION = array();
+    $user = drupal_anonymous_user();
+
+    // Unset the session cookie.
+    if (isset($_COOKIE[session_name()])) {
+      $params = session_get_cookie_params();
+
+      if (version_compare(PHP_VERSION, '5.2.0') === 1) {
+        setcookie(session_name(), '', $_SERVER['REQUEST_TIME'] - 3600, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
+      }
+      else {
+        setcookie(session_name(), '', $_SERVER['REQUEST_TIME'] - 3600, $params['path'], $params['domain'], $params['secure']);
+      }
+      unset($_COOKIE[session_name()]);
+    }
+  }
 }
 
 /**
@@ -297,16 +291,6 @@ function sess_user_load($session) {
       }
       else {
         $user = drupal_unpack($user);
-<<<<<<< HEAD
-        // Normally we would join the session and user tables. But we already
-        // have the session information. So add that in.
-        $user->sid = $session->sid;
-        $user->cache = $session->cache;
-        $user->hostname = $session->hostname;
-        $user->timestamp = $session->timestamp;
-        $user->session = empty($session->session) ? '' : $session->session;
-=======
->>>>>>> Initialize Project: pantheon
 
         // Add roles element to $user
         $user->roles = array();
@@ -316,8 +300,6 @@ function sess_user_load($session) {
           $user->roles[$role->rid] = $role->name;
         }
       }
-<<<<<<< HEAD
-=======
 
       // Normally we would join the session and user tables. But we already
       // have the session information. So add that in.
@@ -330,7 +312,6 @@ function sess_user_load($session) {
       // is available separately.
       dmemcache_set($user->uid, $user, ini_get('session.gc_maxlifetime'), 'users');
       $user->session = empty($session->session) ? '' : $session->session;
->>>>>>> Initialize Project: pantheon
     }
     else if ($user->uid && $user->status) {
       // Got a user object from 'users' memcache bin. Mark it in case modules
