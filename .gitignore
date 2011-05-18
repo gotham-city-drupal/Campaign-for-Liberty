@@ -1,13 +1,29 @@
-<<<<<<< HEAD
-/.DS_Store
-/sites/.DS_Store
-/sites/all/.DS_Store
-/sites/all/themes/.DS_Store
-/sites/all/themes/custom/.DS_Store
-DS_store
-/.bzrignore
-DS_Store
-=======
+# Drupal #
+##########
+sites/*/files/*
+files/*
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
 *.sql
-.DS_store
->>>>>>> changes to gitignore
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+.bzrignore
