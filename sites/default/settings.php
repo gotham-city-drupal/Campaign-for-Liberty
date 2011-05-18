@@ -280,7 +280,6 @@ $databases['default']['default'] = array(
     'host' => '127.0.0.1',
     'port' => 33066 );
 //</@@ADCP_CONF@@>
-=======
 /**
  * Smart start:
  *
