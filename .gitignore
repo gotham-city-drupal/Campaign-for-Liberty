@@ -32,3 +32,8 @@ Thumbs.db
 /sites/default/symlink-maker.app.zip
 /sites/.DS_Store
 /.DS_Store
+
+# Eclipse Project Files #
+#########################
+.buildpath
+.project
