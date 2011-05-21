@@ -1,5 +1,0 @@
-Updated file to include a css call to make the background transparent as the cycle plugin was doing silly things in IE
-
---This line, and those below, will be ignored--
-
-M    banner_rotator.js
