@@ -1,0 +1,22 @@
+hr {
+  zoom: 49%;
+}
+
+div#block-views-og_events-block_1  div.date_info1 {
+  margin-left: 50px;
+  width: 140px;
+}
+
+div#block-views-og_events-block_3  div.date_info1 {
+  margin-left: 50px;
+  width: 136px;
+}
+
+#homepage_banner .promo_right {
+  overflow: hidden;
+  height: 480px;
+}
+
+#header-search .form-submit {
+  position: absolute;
+}
