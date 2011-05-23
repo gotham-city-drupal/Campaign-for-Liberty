@@ -2,10 +2,9 @@ name = Campaign for Liberty
 description = 2 column design for Campaign for Liberty Website
 
 core = 6.x
-version = 6.0
+version = 6.x-1.0
 engine = phptemplate
 stylesheets[all][] = css/style.css
-
 
 regions[header_top] = header top
 regions[header_bottom] = header bottom
