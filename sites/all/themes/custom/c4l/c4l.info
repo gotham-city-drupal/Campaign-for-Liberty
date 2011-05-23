@@ -5,8 +5,6 @@ core = 6.x
 version = 6.0
 engine = phptemplate
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/c4l.css
-stylesheets[print][] = css/print.css
 
 
 regions[header_top] = header top
@@ -21,6 +19,3 @@ regions[right_top] = sidebar right top
 regions[right] = sidebar right bottom
 regions[footer_top] = footer top
 regions[footer_bottom] = footer bottom
-scripts[] = scripts/cfl.js
-scripts[] = js/banner_rotator.js
-

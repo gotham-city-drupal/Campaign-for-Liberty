@@ -18,34 +18,34 @@ function phptemplate_preprocess(&$vars) {
 
 function phptemplate_preprocess_page(&$vars, $hook) {
 	// Build array of helpful body classes
-	  
+
 	$body_classes = array();
 	  $body_classes[] = ($vars['logged_in']) ? 'logged-in' : 'not-logged-in'; // Page user is logged in
 	  $body_classes[] = ($vars['is_front']) ? 'front' : 'not-front'; // Page is front page
-		
+
 	$vars['head_title'] = strip_tags($vars['head_title']);
-	  	
+
 	if (isset($vars['node'])) {
 	    $body_classes[] = ($vars['node']) ? 'full-node' : ''; // Page is one full node
 	    $body_classes[] = ($vars['node']->type) ? 'node-type-'. $vars['node']->type : ''; // Page has node-type-x, e.g., node-type-page
 		$body_classes[] = ($vars['node']->nid) ? 'node-nid-'. $vars['node']->nid : '';
-	
-		// 
+
+		//
 		// switch($vars['node']->type){
 		// 	case 'page':
 		// 	break;
 		// }
 	 	}
 	$body_classes[] = 'layout-'. (($vars['left']) ? 'left-main' : 'main') . (($vars['right'] || $vars['right_top']) ? '-right' : '');
-	//$body_classes[] = ($vars['right'] || $vars['right_top']) ? 'layout-main-right' : 'layout-main';  
+	//$body_classes[] = ($vars['right'] || $vars['right_top']) ? 'layout-main-right' : 'layout-main';
 	$body_classes = array_filter($body_classes); // Remove empty elements
 	  $vars['body_classes'] = implode(' ', $body_classes); // Create class list separated by spaces
-	  
-	
+
+
 	// add a hook so we can theme page-contentType.tpl.php
 	  switch ($hook){
 		case 'page':
-		  // Add a content-type page template in second to last.	
+		  // Add a content-type page template in second to last.
 			if ('node' == arg(0)) {
 				$node_template = array_pop($vars['template_files']);
 				$vars['template_files'][]  = 'page-' . $vars['node']->type;
@@ -58,22 +58,22 @@ function phptemplate_preprocess_page(&$vars, $hook) {
   }
 
 	return $vars;
-	
-	
+
+
 }
 
 function phptemplate_preprocess_node(&$variables) {
   if ($variables['node']->type == 'memblog') {
     if (arg(0) == 'group_posts' && arg(1) == 'list') {
       // FIXME: should not call custom function c4l_link
-      $variables['links'] = theme('links', c4l_link($variables['node']->type, $variables['node']));
+      //$variables['links'] = theme('links', c4l_link($variables['node']->type, $variables['node']));
     }
   }
 	//dprint_r($variables);
 	// switch($variables['node']->type){
 	// 	case 'page':
 	// 	break;
-	// }	
+	// }
 }
 
 function phptemplate_breadcrumb($breadcrumb) {

@@ -1,0 +1,157 @@
+#homepage_banner .active-control {
+  color: red;
+}
+
+#homepage_banner {
+  height: 370px;
+  overflow: hidden;
+  margin: 10px 0 0 0;
+}
+
+#homepage_banner .jcarousel-skin-tango .jcarousel-item-horizontal {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 950px;
+  height: 370px;
+}
+
+#homepage_banner .jcarousel-skin-tango .jcarousel-container-horizontal {
+  background: none;
+  border: none;
+  width: 950px;
+  height: 370px;
+  padding: 0;
+  margin: 0;
+}
+
+#homepage_banner .jcarousel-skin-tango .jcarousel-clip-horizontal {
+  width: 950px;
+  height: 370px;
+  padding: 0;
+  margin: 0;
+}
+
+#homepage_carousel {
+  width: 950px;
+  margin: 0;
+  padding: 0;
+}
+
+.front-video-carousel-controls {
+  width: 192px;
+  height: 34px;
+  float: left;
+  position: absolute;
+  top: 550px;
+  z-index: 99;
+  margin-left: 53px;
+}
+
+#homepage_banner .front-video-carousel-controls a {
+  color: #a89d94;
+  padding: 2px 5px;
+  margin: 5px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+#homepage_banner .front-video-carousel-controls a.active-control {
+  background-color: #550e03;
+}
+
+#homepage_banner .front-video-carousel-controls a.prev,#homepage_banner .front-video-carousel-controls a.next
+  {
+  display: block;
+  background: url(../img/arrow-left-banner.png) center no-repeat;
+  text-indent: -99999px;
+  width: 12px;
+  height: 11px;
+  float: left;
+}
+
+#homepage_banner .front-video-carousel-controls a.next {
+  float: right;
+  background-image: url(../img/arrow-right-banner.png);
+}
+
+#homepage_banner a img {
+  margin-right: 5px;
+  -moz-box-shadow: 3px 3px 4px #210401;
+  -webkit-box-shadow: 3px 3px 4px #210401;
+  box-shadow: 3px 3px 4px #210401;
+  min-height: 350px;
+  min-width: 480px;
+}
+
+/*STEVEN ADD*/
+#wrap-banner {
+  width: 100%;
+  height: 410px;
+}
+
+#banner-area {
+  position: relative;
+}
+
+#homepage_banner {
+  height: 370px;
+  overflow: hidden;
+  margin: 10px 0 0 0;
+}
+
+#homepage_carousel {
+  width: 950px;
+  margin: 0;
+  padding: 0;
+}
+
+.front-video-carousel-controls {
+  width: 176px;
+  height: 34px;
+  float: left;
+  position: absolute;
+  top: 345px;
+  z-index: 99;
+  margin-left: 53px;
+}
+
+#banner-area .front-video-carousel-controls a {
+  color: #a89d94;
+  padding: 2px 5px;
+  margin: 5px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.front-video-carousel-controls a.activeSlide {
+  background-color: #550e03;
+}
+
+.front-video-carousel-controls a.prev,.front-video-carousel-controls a.next
+  {
+  display: block;
+  background: url(../img/arrow-left-banner.png) center no-repeat;
+  text-indent: -99999px;
+  width: 12px;
+  height: 11px;
+  float: left;
+}
+
+.front-video-carousel-controls a.next {
+  float: right;
+  background-image: url(../img/arrow-right-banner.png);
+}
+
+#banner-pager {
+  float: left;
+}
+
+#homepage_banner a img {
+  margin-right: 5px;
+  -moz-box-shadow: 3px 3px 4px #210401;
+  -webkit-box-shadow: 3px 3px 4px #210401;
+  box-shadow: 3px 3px 4px #210401;
+  min-height: 350px;
+  min-width: 480px;
+}
