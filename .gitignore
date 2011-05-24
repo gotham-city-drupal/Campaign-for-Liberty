@@ -41,3 +41,8 @@ Thumbs.db
 /sites/all/.DS_Store
 /sites/all/libraries/.DS_Store
 /sites/all/modules/contrib/.DS_Store
+/sites/all/modules/apachesolr/.DS_Store
+/sites/all/modules/apachesolr/SolrPhpClient/.DS_Store
+/sites/all/modules/pantheon/.DS_Store
+/sites/all/modules/features/.DS_Store
+/sites/default/.DS_Store
