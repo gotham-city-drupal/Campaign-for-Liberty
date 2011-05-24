@@ -4,13 +4,16 @@ description = 2 column design for Campaign for Liberty Website
 core = 6.x
 version = 6.x-1.0
 engine = phptemplate
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/htmlelements.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/navigation.css
+
 
 regions[header_top] = header top
 regions[header_bottom] = header bottom
 regions[banner_area] = banner area
 regions[left_top] = sidebar left top
-regions[left] = sidebar left
+regions[left] = sidebar left bottom
 regions[content_top] = top content
 regions[content] = main content
 regions[content_front] = front content
