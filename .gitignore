@@ -39,3 +39,5 @@ Thumbs.db
 .project
 /sites/all/modules/.DS_Store
 /sites/all/.DS_Store
+/sites/all/libraries/.DS_Store
+/sites/all/modules/contrib/.DS_Store
