@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_statistics.inc,v 1.5 2006/08/29 05:08:43 jaza Exp $
 
 /**
  * @file

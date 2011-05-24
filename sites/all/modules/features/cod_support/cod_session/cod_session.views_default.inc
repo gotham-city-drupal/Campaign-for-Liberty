@@ -6,9 +6,9 @@
 function cod_session_views_default_views() {
   $views = array();
 
-  // Exported view: schedule
+  // Exported view: cod_schedule
   $view = new view;
-  $view->name = 'schedule';
+  $view->name = 'cod_schedule';
   $view->description = 'Session Schedule';
   $view->tag = 'cod session';
   $view->view_php = '';
@@ -17,6 +17,21 @@ function cod_session_views_default_views() {
   $view->api_version = 2;
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
+  $handler->override_option('relationships', array(
+    'flag_content_rel' => array(
+      'label' => 'flag: session_schedule',
+      'required' => 0,
+      'flag' => 'session_schedule',
+      'user_scope' => 'current',
+      'id' => 'flag_content_rel',
+      'table' => 'node',
+      'field' => 'flag_content_rel',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+  ));
   $handler->override_option('fields', array(
     'field_track_value' => array(
       'label' => '',
@@ -117,7 +132,7 @@ function cod_session_views_default_views() {
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'none',
-      'format' => 'default',
+      'format' => 'user_full_name',
       'multiple' => array(
         'group' => 1,
         'multiple_number' => '',
@@ -132,6 +147,80 @@ function cod_session_views_default_views() {
         'button' => 'Override',
       ),
       'relationship' => 'none',
+    ),
+    'field_experience_value' => array(
+      'label' => 'Experience',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 1,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'widget',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => 1,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => 0,
+      ),
+      'exclude' => 0,
+      'id' => 'field_experience_value',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'ops' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_type' => '',
+      'exclude' => 0,
+      'id' => 'ops',
+      'table' => 'flag_content',
+      'field' => 'ops',
+      'relationship' => 'flag_content_rel',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('filters', array(
@@ -228,26 +317,252 @@ function cod_session_views_default_views() {
     ),
   ));
   $handler->override_option('access', array(
-    'type' => 'none',
+    'type' => 'role',
+    'role' => array(
+      '3' => 3,
+    ),
   ));
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
-  $handler->override_option('title', 'Schedule');
-  $handler->override_option('header', '<strong>Note:</strong> The below schedule is a work in progress and is subject to changes until officially announced. ');
+  $handler->override_option('title', 'Schedule (Access Restricted)');
   $handler->override_option('header_format', '1');
   $handler->override_option('header_empty', 0);
-  $handler->override_option('empty', '<?php print theme(\'cod_session_calendar\'); ?>');
-  $handler->override_option('empty_format', '3');
+  $handler->override_option('empty', 'The schedule is empty. Please create one or more rooms and timeslots, and assign a session or schedule item to them. For help with scheduling, please see the <a href="http://groups.drupal.org/node/79003">COD Documentation</a>.');
+  $handler->override_option('empty_format', '1');
   $handler->override_option('items_per_page', 0);
   $handler->override_option('link_display', 'page_1');
   $handler->override_option('style_plugin', 'cod_session_calendar');
   $handler->override_option('style_options', NULL);
-  $handler = $view->new_display('page', 'Page: Session Schedule', 'page_1');
-  $handler->override_option('path', 'program/schedule');
+  $handler = $view->new_display('page', 'Schedule', 'page_1');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'schedule_item' => 'schedule_item',
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'field_accepted_value' => array(
+      'operator' => '=',
+      'value' => array(
+        'value' => '1',
+        'min' => '',
+        'max' => '',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_accepted_value',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_session_slot_nid' => array(
+      'operator' => 'not empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_slot_nid',
+      'table' => 'node_data_field_session_slot',
+      'field' => 'field_session_slot_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_session_room_nid' => array(
+      'operator' => 'not empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_room_nid',
+      'table' => 'node_data_field_session_room',
+      'field' => 'field_session_room_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+  ));
+  $handler->override_option('path', 'program/session-schedule/all');
   $handler->override_option('menu', array(
-    'type' => 'normal',
+    'type' => 'default tab',
     'title' => 'Session Schedule',
+    'description' => '',
+    'weight' => '0',
+    'name' => 'primary-links',
+  ));
+  $handler->override_option('tab_options', array(
+    'type' => 'normal',
+    'title' => 'Session schedule',
+    'description' => '',
+    'weight' => '0',
+    'name' => 'primary-links',
+  ));
+  $handler = $view->new_display('block', 'Primary Sessions Block', 'block_1');
+  $handler->override_option('block_description', 'Primary Sessions');
+  $handler->override_option('block_caching', -1);
+  $handler = $view->new_display('page', 'Your schedule', 'page_4');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+        'schedule_item' => 'schedule_item',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'field_accepted_value' => array(
+      'operator' => '=',
+      'value' => array(
+        'value' => '1',
+        'min' => '',
+        'max' => '',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_accepted_value',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_session_slot_nid' => array(
+      'operator' => 'not empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_slot_nid',
+      'table' => 'node_data_field_session_slot',
+      'field' => 'field_session_slot_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_session_room_nid' => array(
+      'operator' => 'not empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_room_nid',
+      'table' => 'node_data_field_session_room',
+      'field' => 'field_session_room_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'flagged' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'flagged',
+      'table' => 'flag_content',
+      'field' => 'flagged',
+      'relationship' => 'flag_content_rel',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+    ),
+  ));
+  $handler->override_option('title', 'Your schedule');
+  $handler->override_option('empty', 'Your schedule is empty. You can add sessions to your personal schedule from the <a href="./program/session-schedule">main schedule.</a>');
+  $handler->override_option('path', 'program/session-schedule/your-schedule');
+  $handler->override_option('menu', array(
+    'type' => 'tab',
+    'title' => 'Your schedule',
     'description' => '',
     'weight' => '0',
     'name' => 'primary-links',
@@ -256,115 +571,29 @@ function cod_session_views_default_views() {
     'type' => 'none',
     'title' => '',
     'description' => '',
-    'weight' => 0,
+    'weight' => '0',
     'name' => 'navigation',
   ));
-  $handler = $view->new_display('block', 'Primary Sessions Block', 'block_1');
-  $handler->override_option('block_description', 'Primary Sessions');
-  $handler->override_option('block_caching', -1);
-  $handler = $view->new_display('page', 'Admin list', 'page_2');
-  $handler->override_option('relationships', array(
-    'field_session_slot_nid' => array(
-      'label' => 'Time slot',
-      'required' => 0,
-      'delta' => -1,
-      'id' => 'field_session_slot_nid',
-      'table' => 'node_data_field_session_slot',
-      'field' => 'field_session_slot_nid',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
-  ));
+
+  $views[$view->name] = $view;
+
+  // Exported view: sessions
+  $view = new view;
+  $view->name = 'sessions';
+  $view->description = 'Submitted sessions (before voting)';
+  $view->tag = 'cod session';
+  $view->view_php = '';
+  $view->base_table = 'node';
+  $view->is_cacheable = FALSE;
+  $view->api_version = 2;
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+  $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
-    'field_session_slot_nid' => array(
-      'label' => 'Time slot',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_session_slot_nid',
-      'table' => 'node_data_field_session_slot',
-      'field' => 'field_session_slot_nid',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
-    'field_room_value' => array(
-      'label' => 'Room',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'widget',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_room_value',
-      'table' => 'node_data_field_room',
-      'field' => 'field_room_value',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
     'title' => array(
-      'label' => 'Title',
+      'label' => 'Session',
       'alter' => array(
         'alter_text' => 0,
-        'text' => '<strong>[title]</strong>',
+        'text' => '',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -390,49 +619,8 @@ function cod_session_views_default_views() {
       'field' => 'title',
       'relationship' => 'none',
       'override' => array(
-        'button' => 'Use default',
-      ),
-    ),
-    'field_track_value' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'none',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_track_value',
-      'table' => 'node_data_field_track',
-      'field' => 'field_track_value',
-      'override' => array(
         'button' => 'Override',
       ),
-      'relationship' => 'none',
     ),
     'field_presenters_uid' => array(
       'label' => 'Presenter(s)',
@@ -459,11 +647,11 @@ function cod_session_views_default_views() {
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'widget',
-      'format' => 'default',
+      'format' => 'user_full_name',
       'multiple' => array(
         'group' => 1,
-        'multiple_number' => '',
-        'multiple_from' => '',
+        'multiple_number' => '10',
+        'multiple_from' => '0',
         'multiple_reversed' => 0,
       ),
       'exclude' => 0,
@@ -471,12 +659,41 @@ function cod_session_views_default_views() {
       'table' => 'node_data_field_presenters',
       'field' => 'field_presenters_uid',
       'override' => array(
-        'button' => 'Use default',
+        'button' => 'Override',
       ),
       'relationship' => 'none',
     ),
-    'edit_node' => array(
-      'label' => 'Edit link',
+    'teaser' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 1,
+        'max_length' => '200',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'teaser',
+      'table' => 'node_revisions',
+      'field' => 'teaser',
+      'relationship' => 'none',
+    ),
+    'field_accepted_value' => array(
+      'label' => 'Status',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -498,38 +715,101 @@ function cod_session_views_default_views() {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'text' => '',
-      'exclude' => 0,
-      'id' => 'edit_node',
-      'table' => 'node',
-      'field' => 'edit_node',
+      'link_to_node' => 0,
+      'label_type' => 'custom',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 1,
+      'id' => 'field_accepted_value',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value',
       'override' => array(
-        'button' => 'Use default',
+        'button' => 'Override',
       ),
       'relationship' => 'none',
     ),
-  ));
-  $handler->override_option('sorts', array(
-    'field_slot_datetime_value' => array(
-      'order' => 'ASC',
-      'delta' => -1,
-      'id' => 'field_slot_datetime_value',
-      'table' => 'node_data_field_slot_datetime',
-      'field' => 'field_slot_datetime_value',
-      'override' => array(
-        'button' => 'Use default',
+    'field_experience_value' => array(
+      'label' => 'Experience level',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
       ),
-      'relationship' => 'field_session_slot_nid',
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'widget',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_experience_value',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
-    'field_room_value' => array(
-      'order' => 'ASC',
-      'delta' => -1,
-      'id' => 'field_room_value',
-      'table' => 'node_data_field_room',
-      'field' => 'field_room_value',
-      'override' => array(
-        'button' => 'Use default',
+    'field_track_value' => array(
+      'label' => 'Track',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
       ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'widget',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_track_value',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value',
       'relationship' => 'none',
     ),
   ));
@@ -564,30 +844,26 @@ function cod_session_views_default_views() {
       'field' => 'status',
       'relationship' => 'none',
     ),
-    'field_accepted_value' => array(
-      'operator' => '=',
-      'value' => array(
-        'value' => '1',
-        'min' => '',
-        'max' => '',
-      ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
       'group' => '0',
       'exposed' => TRUE,
       'expose' => array(
         'use_operator' => 0,
-        'operator' => 'field_accepted_value_op',
-        'identifier' => 'field_accepted_value',
-        'label' => 'Status',
+        'operator' => 'field_experience_value_many_to_one_op',
+        'identifier' => 'field_experience_value_many_to_one',
+        'label' => 'Experience level',
         'optional' => 1,
+        'single' => 1,
         'remember' => 0,
+        'reduce' => 0,
       ),
-      'id' => 'field_accepted_value',
-      'table' => 'node_data_field_accepted',
-      'field' => 'field_accepted_value',
-      'override' => array(
-        'button' => 'Use default',
-      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
       'relationship' => 'none',
+      'reduce_duplicates' => 0,
     ),
     'field_track_value_many_to_one' => array(
       'operator' => 'or',
@@ -600,341 +876,7 @@ function cod_session_views_default_views() {
         'identifier' => 'field_track_value_many_to_one',
         'label' => 'Track',
         'optional' => 1,
-        'single' => 0,
-        'remember' => 0,
-        'reduce' => 0,
-      ),
-      'id' => 'field_track_value_many_to_one',
-      'table' => 'node_data_field_track',
-      'field' => 'field_track_value_many_to_one',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-      'reduce_duplicates' => 0,
-    ),
-  ));
-  $handler->override_option('empty', 'No sessions listed.');
-  $handler->override_option('style_plugin', 'table');
-  $handler->override_option('style_options', array(
-    'grouping' => '',
-    'override' => 1,
-    'sticky' => 0,
-    'order' => 'asc',
-    'columns' => array(
-      'title' => 'title',
-      'field_track_value' => 'field_track_value',
-      'field_presenters_uid' => 'field_presenters_uid',
-    ),
-    'info' => array(
-      'title' => array(
-        'sortable' => 0,
-        'separator' => '',
-      ),
-      'field_track_value' => array(
-        'sortable' => 0,
-        'separator' => '',
-      ),
-      'field_presenters_uid' => array(
-        'separator' => '',
-      ),
-    ),
-    'default' => '-1',
-  ));
-  $handler->override_option('path', 'sessions-admin');
-  $handler->override_option('menu', array(
-    'type' => 'none',
-    'title' => '',
-    'description' => '',
-    'weight' => 0,
-    'name' => 'navigation',
-  ));
-  $handler->override_option('tab_options', array(
-    'type' => 'none',
-    'title' => '',
-    'description' => '',
-    'weight' => 0,
-    'name' => 'navigation',
-  ));
-
-  $views[$view->name] = $view;
-
-  // Exported view: sessions
-  $view = new view;
-  $view->name = 'sessions';
-  $view->description = 'Submitted sessions (before voting)';
-  $view->tag = 'cod session';
-  $view->view_php = '';
-  $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-  $handler = $view->new_display('default', 'Defaults', 'default');
-  $handler->override_option('fields', array(
-    'picture' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'exclude' => 0,
-      'id' => 'picture',
-      'table' => 'users',
-      'field' => 'picture',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-    'name' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_user' => 1,
-      'overwrite_anonymous' => 0,
-      'anonymous_text' => '',
-      'exclude' => 0,
-      'id' => 'name',
-      'table' => 'users',
-      'field' => 'name',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-    'title' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 1,
-      'exclude' => 0,
-      'id' => 'title',
-      'table' => 'node',
-      'field' => 'title',
-      'relationship' => 'none',
-    ),
-    'field_session_summary_value' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 1,
-        'text' => '<p>[field_session_summary_value]</p>',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'none',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_session_summary_value',
-      'table' => 'node_data_field_session_summary',
-      'field' => 'field_session_summary_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-    'field_accepted_value' => array(
-      'label' => 'Status: ',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'custom',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_accepted_value',
-      'table' => 'node_data_field_accepted',
-      'field' => 'field_accepted_value',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-    'field_presenters_uid' => array(
-      'label' => 'Presenters: ',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'custom',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => 1,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => 0,
-      ),
-      'exclude' => 0,
-      'id' => 'field_presenters_uid',
-      'table' => 'node_data_field_presenters',
-      'field' => 'field_presenters_uid',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-  ));
-  $handler->override_option('filters', array(
-    'type' => array(
-      'operator' => 'in',
-      'value' => array(
-        'session' => 'session',
-      ),
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'type',
-      'table' => 'node',
-      'field' => 'type',
-      'relationship' => 'none',
-    ),
-    'status' => array(
-      'operator' => '=',
-      'value' => '1',
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'status',
-      'table' => 'node',
-      'field' => 'status',
-      'relationship' => 'none',
-    ),
-    'field_track_value_many_to_one' => array(
-      'operator' => 'or',
-      'value' => array(),
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => 'field_track_value_many_to_one_op',
-        'label' => 'Track',
-        'use_operator' => 0,
-        'identifier' => 'track',
-        'optional' => 1,
-        'single' => 0,
+        'single' => 1,
         'remember' => 0,
         'reduce' => 0,
       ),
@@ -1006,16 +948,59 @@ function cod_session_views_default_views() {
   $handler->override_option('css_class', 'view-grouped-list sessions-list');
   $handler->override_option('header_format', '1');
   $handler->override_option('header_empty', 0);
+  $handler->override_option('empty', 'No sessions have been submitted.');
   $handler->override_option('empty_format', '1');
   $handler->override_option('items_per_page', 20);
   $handler->override_option('use_pager', '1');
   $handler->override_option('link_display', 'page_1');
-  $handler->override_option('style_plugin', 'list');
+  $handler->override_option('style_plugin', 'table');
   $handler->override_option('style_options', array(
     'grouping' => '',
-    'type' => 'ul',
+    'override' => 1,
+    'sticky' => 0,
+    'order' => 'asc',
+    'columns' => array(
+      'title' => 'title',
+      'field_presenters_uid' => 'title',
+      'teaser' => 'title',
+      'field_accepted_value' => 'title',
+      'field_experience_value' => 'field_experience_value',
+      'field_track_value' => 'field_track_value',
+    ),
+    'info' => array(
+      'title' => array(
+        'sortable' => 1,
+        'separator' => '<br>',
+      ),
+      'field_presenters_uid' => array(
+        'separator' => '',
+      ),
+      'teaser' => array(
+        'separator' => '',
+      ),
+      'field_accepted_value' => array(
+        'sortable' => 0,
+        'separator' => '',
+      ),
+      'field_experience_value' => array(
+        'sortable' => 1,
+        'separator' => '',
+      ),
+      'field_track_value' => array(
+        'sortable' => 1,
+        'separator' => '',
+      ),
+    ),
+    'default' => '-1',
   ));
-  $handler = $view->new_display('page', 'Page: Sessions Accepted', 'page_1');
+  $handler->override_option('row_options', array(
+    'inline' => array(
+      'field_presenters_uid' => 'field_presenters_uid',
+    ),
+    'separator' => '',
+    'hide_empty' => 0,
+  ));
+  $handler = $view->new_display('page', 'Page: Accepted', 'page_1');
   $handler->override_option('sorts', array(
     'title' => array(
       'order' => 'ASC',
@@ -1028,11 +1013,12 @@ function cod_session_views_default_views() {
       'relationship' => 'none',
     ),
   ));
-  $handler->override_option('title', 'Sessions Accepted');
+  $handler->override_option('title', 'Accepted sessions');
+  $handler->override_option('empty', 'Sessions have not yet been accepted.');
   $handler->override_option('path', 'program/sessions/accepted');
   $handler->override_option('menu', array(
     'type' => 'default tab',
-    'title' => 'Sessions Accepted',
+    'title' => 'Accepted sessions',
     'description' => '',
     'weight' => '0',
     'name' => 'primary-links',
@@ -1045,6 +1031,104 @@ function cod_session_views_default_views() {
     'name' => 'primary-links',
   ));
   $handler = $view->new_display('feed', 'Feed: Sessions All', 'feed_1');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_experience_value_many_to_one_op',
+        'identifier' => 'field_experience_value_many_to_one',
+        'label' => 'Experience level',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_track_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_track_value_many_to_one_op',
+        'identifier' => 'field_track_value_many_to_one',
+        'label' => 'Track',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_track_value_many_to_one',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'keys' => array(
+      'operator' => 'optional',
+      'value' => '',
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'keys_op',
+        'identifier' => 'keys',
+        'label' => 'Filter by keywords:',
+        'optional' => 1,
+        'remember' => 0,
+      ),
+      'id' => 'keys',
+      'table' => 'search_index',
+      'field' => 'keys',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
   $handler->override_option('style_plugin', 'rss');
   $handler->override_option('style_options', array(
     'mission_description' => FALSE,
@@ -1167,88 +1251,6 @@ function cod_session_views_default_views() {
       ),
       'relationship' => 'field_session_slot_nid',
     ),
-    'field_duration_value' => array(
-      'label' => 'Duration: ',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'custom',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_duration_value',
-      'table' => 'node_data_field_duration',
-      'field' => 'field_duration_value',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
-    'field_room_value' => array(
-      'label' => 'Room: ',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'custom',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_room_value',
-      'table' => 'node_data_field_room',
-      'field' => 'field_room_value',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
     'field_track_value' => array(
       'label' => 'Track: ',
       'alter' => array(
@@ -1290,46 +1292,10 @@ function cod_session_views_default_views() {
       ),
       'relationship' => 'none',
     ),
-    'field_topics_value' => array(
-      'label' => 'Topic Keywords: ',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'custom',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => 1,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => 0,
-      ),
-      'exclude' => 0,
-      'id' => 'field_topics_value',
-      'table' => 'node_data_field_topics',
-      'field' => 'field_topics_value',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
+    'delta' => array(
+      'id' => 'delta',
+      'table' => 'node_data_field_session_room',
+      'field' => 'delta',
     ),
   ));
   $handler->override_option('arguments', array(
@@ -1484,6 +1450,74 @@ function cod_session_views_default_views() {
       'id' => 'name',
       'table' => 'users',
       'field' => 'name',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'field_presenters_uid',
+    ),
+    'name_1' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 1,
+        'text' => '([name_1])',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_user' => 1,
+      'overwrite_anonymous' => 0,
+      'anonymous_text' => '',
+      'exclude' => 0,
+      'id' => 'name_1',
+      'table' => 'users',
+      'field' => 'name',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+    'value' => array(
+      'label' => 'Personal information: Organization',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 1,
+        'path' => 'organization/[value]',
+        'link_class' => '',
+        'alt' => 'People who work with [value]',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_user' => 1,
+      'exclude' => 0,
+      'id' => 'value',
+      'table' => 'profile_values_profile_org',
+      'field' => 'value',
       'override' => array(
         'button' => 'Use default',
       ),
@@ -1650,7 +1684,474 @@ function cod_session_views_default_views() {
   ));
   $handler->override_option('block_description', 'Sessions: Session Presenters');
   $handler->override_option('block_caching', -1);
-  $handler = $view->new_display('page', 'Page: Sessions Proposed', 'page_2');
+  $handler = $view->new_display('page', 'Page: Proposed', 'page_2');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_experience_value_many_to_one_op',
+        'identifier' => 'field_experience_value_many_to_one',
+        'label' => 'Experience level',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_track_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_track_value_many_to_one_op',
+        'identifier' => 'field_track_value_many_to_one',
+        'label' => 'Track',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_track_value_many_to_one',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'keys' => array(
+      'operator' => 'optional',
+      'value' => '',
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'keys_op',
+        'identifier' => 'keys',
+        'label' => 'Filter by keywords:',
+        'optional' => 1,
+        'remember' => 0,
+      ),
+      'id' => 'keys',
+      'table' => 'search_index',
+      'field' => 'keys',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_accepted_value_many_to_one' => array(
+      'operator' => 'not',
+      'value' => array(
+        '1' => '1',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => 'field_accepted_value_many_to_one_op',
+        'label' => 'by status:',
+        'use_operator' => 0,
+        'identifier' => 'status',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 1,
+      ),
+      'id' => 'field_accepted_value_many_to_one',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value_many_to_one',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+  ));
+  $handler->override_option('title', 'Proposed Sessions');
+  $handler->override_option('path', 'program/sessions/proposed');
+  $handler->override_option('menu', array(
+    'type' => 'tab',
+    'title' => 'Proposed sessions',
+    'description' => '',
+    'weight' => '10',
+    'name' => 'navigation',
+  ));
+  $handler->override_option('tab_options', array(
+    'type' => 'none',
+    'title' => '',
+    'description' => '',
+    'weight' => 0,
+    'name' => 'navigation',
+  ));
+  $handler = $view->new_display('block', 'Block: Featured', 'block_3');
+  $handler->override_option('relationships', array(
+    'nodequeue_rel' => array(
+      'label' => 'queue',
+      'required' => 1,
+      'limit' => 1,
+      'qids' => array(
+        '4' => 4,
+        '1' => 0,
+        '2' => 0,
+      ),
+      'id' => 'nodequeue_rel',
+      'table' => 'node',
+      'field' => 'nodequeue_rel',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'field_accepted_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(
+        '1' => '1',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => 'field_accepted_value_many_to_one_op',
+        'label' => 'by status:',
+        'use_operator' => 0,
+        'identifier' => 'status',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 1,
+      ),
+      'id' => 'field_accepted_value_many_to_one',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value_many_to_one',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+  ));
+  $handler->override_option('title', 'Featured Sessions');
+  $handler->override_option('block_description', '');
+  $handler->override_option('block_caching', -1);
+
+  $views[$view->name] = $view;
+
+  // Exported view: sessions_admin
+  $view = new view;
+  $view->name = 'sessions_admin';
+  $view->description = 'Session organizing View';
+  $view->tag = 'cod session';
+  $view->view_php = '';
+  $view->base_table = 'node';
+  $view->is_cacheable = FALSE;
+  $view->api_version = 2;
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+  $handler = $view->new_display('default', 'Defaults', 'default');
+  $handler->override_option('fields', array(
+    'title' => array(
+      'label' => 'Title',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 0,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'field_accepted_value' => array(
+      'label' => 'Status',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 1,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'widget',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_accepted_value',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_presenters_uid' => array(
+      'label' => 'Presenters',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'custom',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => 1,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => 0,
+      ),
+      'exclude' => 0,
+      'id' => 'field_presenters_uid',
+      'table' => 'node_data_field_presenters',
+      'field' => 'field_presenters_uid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_experience_value' => array(
+      'label' => 'Experience',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'widget',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => 1,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => 0,
+      ),
+      'exclude' => 0,
+      'id' => 'field_experience_value',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_track_value' => array(
+      'label' => 'Track',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 0,
+        'ellipsis' => 0,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'widget',
+      'format' => 'default',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_track_value',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'edit_node' => array(
+      'label' => 'Ops',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'text' => '',
+      'exclude' => 0,
+      'id' => 'edit_node',
+      'table' => 'node',
+      'field' => 'edit_node',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
   $handler->override_option('filters', array(
     'type' => array(
       'operator' => 'in',
@@ -1686,12 +2187,12 @@ function cod_session_views_default_views() {
       'operator' => 'or',
       'value' => array(),
       'group' => '0',
-      'exposed' => FALSE,
+      'exposed' => TRUE,
       'expose' => array(
-        'operator' => 'field_track_value_many_to_one_op',
-        'label' => 'Track',
         'use_operator' => 0,
-        'identifier' => 'track',
+        'operator' => 'field_track_value_many_to_one_op',
+        'identifier' => 'field_track_value_many_to_one',
+        'label' => 'Track',
         'optional' => 1,
         'single' => 0,
         'remember' => 0,
@@ -1730,16 +2231,378 @@ function cod_session_views_default_views() {
     'field_accepted_value_many_to_one' => array(
       'operator' => 'or',
       'value' => array(
-        '0' => '0',
         '1' => '1',
       ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => 'field_accepted_value_many_to_one_op',
+        'label' => 'by status:',
+        'use_operator' => 0,
+        'identifier' => 'status',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 1,
+      ),
+      'id' => 'field_accepted_value_many_to_one',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value_many_to_one',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
       'group' => '0',
       'exposed' => TRUE,
       'expose' => array(
         'use_operator' => 0,
+        'operator' => '',
+        'identifier' => 'experience_level',
+        'label' => 'Experience level',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 1,
+        'reduce' => 0,
+      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'field_session_room_nid' => array(
+      'id' => 'field_session_room_nid',
+      'table' => 'node_data_field_session_room',
+      'field' => 'field_session_room_nid',
+    ),
+  ));
+  $handler->override_option('access', array(
+    'type' => 'perm',
+    'perm' => 'edit field_accepted',
+  ));
+  $handler->override_option('cache', array(
+    'type' => 'none',
+  ));
+  $handler->override_option('title', 'Sessions');
+  $handler->override_option('css_class', 'view-grouped-list sessions-list');
+  $handler->override_option('header_format', '1');
+  $handler->override_option('header_empty', 0);
+  $handler->override_option('empty', 'There are no sessions with this status.');
+  $handler->override_option('empty_format', '1');
+  $handler->override_option('items_per_page', 20);
+  $handler->override_option('use_pager', '1');
+  $handler->override_option('link_display', 'page_1');
+  $handler->override_option('distinct', 1);
+  $handler->override_option('style_plugin', 'table');
+  $handler->override_option('style_options', array(
+    'grouping' => '',
+    'override' => 1,
+    'sticky' => 0,
+    'order' => 'asc',
+    'columns' => array(
+      'title' => 'title',
+      'field_accepted_value' => 'field_accepted_value',
+      'field_presenters_uid' => 'field_presenters_uid',
+      'field_experience_value' => 'field_experience_value',
+      'field_track_value' => 'field_track_value',
+      'edit_node' => 'edit_node',
+    ),
+    'info' => array(
+      'title' => array(
+        'sortable' => 1,
+        'separator' => '',
+      ),
+      'field_accepted_value' => array(
+        'sortable' => 1,
+        'separator' => '',
+      ),
+      'field_presenters_uid' => array(
+        'separator' => '',
+      ),
+      'field_experience_value' => array(
+        'sortable' => 1,
+        'separator' => '',
+      ),
+      'field_track_value' => array(
+        'sortable' => 1,
+        'separator' => '',
+      ),
+      'edit_node' => array(
+        'separator' => '',
+      ),
+    ),
+    'default' => '-1',
+  ));
+  $handler->override_option('row_options', array(
+    'inline' => array(
+      'field_presenters_uid' => 'field_presenters_uid',
+    ),
+    'separator' => ', ',
+    'hide_empty' => 0,
+  ));
+  $handler = $view->new_display('page', 'Accepted sessions', 'page_1');
+  $handler->override_option('sorts', array(
+    'title' => array(
+      'order' => 'ASC',
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'field_track_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_track_value_many_to_one_op',
+        'identifier' => 'field_track_value_many_to_one',
+        'label' => 'Track',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_track_value_many_to_one',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'keys' => array(
+      'operator' => 'optional',
+      'value' => '',
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'keys_op',
+        'identifier' => 'keys',
+        'label' => 'Filter by keywords:',
+        'optional' => 1,
+        'remember' => 0,
+      ),
+      'id' => 'keys',
+      'table' => 'search_index',
+      'field' => 'keys',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_accepted_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(
+        '1' => '1',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
         'operator' => 'field_accepted_value_many_to_one_op',
-        'identifier' => 'status',
         'label' => 'by status:',
+        'use_operator' => 0,
+        'identifier' => 'status',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 1,
+      ),
+      'id' => 'field_accepted_value_many_to_one',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value_many_to_one',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => '',
+        'identifier' => 'experience_level',
+        'label' => 'Experience level',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 1,
+        'reduce' => 0,
+      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'field_session_room_nid' => array(
+      'operator' => 'empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_room_nid',
+      'table' => 'node_data_field_session_room',
+      'field' => 'field_session_room_nid',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_session_slot_nid' => array(
+      'operator' => 'empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_slot_nid',
+      'table' => 'node_data_field_session_slot',
+      'field' => 'field_session_slot_nid',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+  ));
+  $handler->override_option('title', 'Accepted sessions');
+  $handler->override_option('header', 'Note: Only unscheduled sessions (that are accepted and published) are displayed here.');
+  $handler->override_option('header_empty', 1);
+  $handler->override_option('path', 'conference-admin/sessions/accepted');
+  $handler->override_option('menu', array(
+    'type' => 'tab',
+    'title' => 'Accepted Sessions',
+    'description' => '',
+    'weight' => '1',
+    'name' => 'menu-conference-admin',
+  ));
+  $handler->override_option('tab_options', array(
+    'type' => 'normal',
+    'title' => 'Sessions',
+    'description' => '',
+    'weight' => '0',
+    'name' => 'menu-conference-admin',
+  ));
+  $handler = $view->new_display('page', 'Declined sessions', 'page_3');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'field_track_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_track_value_many_to_one_op',
+        'identifier' => 'field_track_value_many_to_one',
+        'label' => 'Track',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_track_value_many_to_one',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'keys' => array(
+      'operator' => 'optional',
+      'value' => '',
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'keys_op',
+        'identifier' => 'keys',
+        'label' => 'Filter by keywords:',
+        'optional' => 1,
+        'remember' => 0,
+      ),
+      'id' => 'keys',
+      'table' => 'search_index',
+      'field' => 'keys',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_accepted_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(
+        '2' => '2',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => 'field_accepted_value_many_to_one_op',
+        'label' => 'by status:',
+        'use_operator' => 0,
+        'identifier' => 'status',
         'optional' => 1,
         'single' => 1,
         'remember' => 0,
@@ -1754,14 +2617,325 @@ function cod_session_views_default_views() {
       'relationship' => 'none',
       'reduce_duplicates' => 0,
     ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => '',
+        'identifier' => 'experience_level',
+        'label' => 'Experience level',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 1,
+        'reduce' => 0,
+      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
   ));
-  $handler->override_option('title', 'Sessions Proposed');
-  $handler->override_option('path', 'program/sessions/proposed');
+  $handler->override_option('title', 'Declined sessions');
+  $handler->override_option('header', 'Note: Only declined sessions (of any published status) are displayed here.');
+  $handler->override_option('path', 'conference-admin/sessions/declined');
   $handler->override_option('menu', array(
     'type' => 'tab',
-    'title' => 'Sessions Proposed',
+    'title' => 'Declined Sessions',
     'description' => '',
-    'weight' => '10',
+    'weight' => '-8',
+    'name' => 'menu-conference-admin',
+  ));
+  $handler->override_option('tab_options', array(
+    'type' => 'none',
+    'title' => '',
+    'description' => '',
+    'weight' => 0,
+    'name' => 'navigation',
+  ));
+  $handler = $view->new_display('page', 'Unprocessed sessions', 'page_4');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'field_track_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_track_value_many_to_one_op',
+        'identifier' => 'field_track_value_many_to_one',
+        'label' => 'Track',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_track_value_many_to_one',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'keys' => array(
+      'operator' => 'optional',
+      'value' => '',
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'keys_op',
+        'identifier' => 'keys',
+        'label' => 'Filter by keywords:',
+        'optional' => 1,
+        'remember' => 0,
+      ),
+      'id' => 'keys',
+      'table' => 'search_index',
+      'field' => 'keys',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_accepted_value_many_to_one' => array(
+      'operator' => 'not',
+      'value' => array(
+        '1' => '1',
+        '2' => '2',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => 'field_accepted_value_many_to_one_op',
+        'label' => 'by status:',
+        'use_operator' => 0,
+        'identifier' => 'status',
+        'optional' => 1,
+        'single' => 1,
+        'remember' => 0,
+        'reduce' => 1,
+      ),
+      'id' => 'field_accepted_value_many_to_one',
+      'table' => 'node_data_field_accepted',
+      'field' => 'field_accepted_value_many_to_one',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => '',
+        'identifier' => 'experience_level',
+        'label' => 'Experience level',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 1,
+        'reduce' => 0,
+      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+  ));
+  $handler->override_option('title', 'Unprocessed sessions');
+  $handler->override_option('path', 'conference-admin/sessions/unprocessed');
+  $handler->override_option('menu', array(
+    'type' => 'default tab',
+    'title' => 'Unprocessed sessions',
+    'description' => '',
+    'weight' => '-9',
+    'name' => 'menu-conference-admin',
+  ));
+  $handler->override_option('tab_options', array(
+    'type' => 'normal',
+    'title' => 'Session moderation',
+    'description' => '',
+    'weight' => '0',
+    'name' => 'menu-conference-admin',
+  ));
+  $handler = $view->new_display('page', 'Scheduled sessions', 'page_2');
+  $handler->override_option('filters', array(
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'session' => 'session',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'field_track_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'field_track_value_many_to_one_op',
+        'identifier' => 'field_track_value_many_to_one',
+        'label' => 'Track',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 0,
+        'reduce' => 0,
+      ),
+      'id' => 'field_track_value_many_to_one',
+      'table' => 'node_data_field_track',
+      'field' => 'field_track_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'keys' => array(
+      'operator' => 'optional',
+      'value' => '',
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => 'keys_op',
+        'identifier' => 'keys',
+        'label' => 'Filter by keywords:',
+        'optional' => 1,
+        'remember' => 0,
+      ),
+      'id' => 'keys',
+      'table' => 'search_index',
+      'field' => 'keys',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'field_experience_value_many_to_one' => array(
+      'operator' => 'or',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => TRUE,
+      'expose' => array(
+        'use_operator' => 0,
+        'operator' => '',
+        'identifier' => 'experience_level',
+        'label' => 'Experience level',
+        'optional' => 1,
+        'single' => 0,
+        'remember' => 1,
+        'reduce' => 0,
+      ),
+      'id' => 'field_experience_value_many_to_one',
+      'table' => 'node_data_field_experience',
+      'field' => 'field_experience_value_many_to_one',
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'field_session_room_nid' => array(
+      'operator' => 'not empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_room_nid',
+      'table' => 'node_data_field_session_room',
+      'field' => 'field_session_room_nid',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+    'field_session_slot_nid' => array(
+      'operator' => 'not empty',
+      'value' => array(),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'field_session_slot_nid',
+      'table' => 'node_data_field_session_slot',
+      'field' => 'field_session_slot_nid',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+      'reduce_duplicates' => 0,
+    ),
+  ));
+  $handler->override_option('header', '<a href="/program/schedule">View schedule grid</a>');
+  $handler->override_option('header_empty', 1);
+  $handler->override_option('path', 'conference-admin/sessions/scheduled');
+  $handler->override_option('menu', array(
+    'type' => 'tab',
+    'title' => 'Scheduled sessions',
+    'description' => '',
+    'weight' => '6',
     'name' => 'navigation',
   ));
   $handler->override_option('tab_options', array(

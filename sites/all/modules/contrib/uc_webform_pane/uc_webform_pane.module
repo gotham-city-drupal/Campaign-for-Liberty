@@ -1,20 +1,12 @@
 <?php
-// $Id: uc_webform_pane.module,v 1.2.2.5 2010/11/02 19:09:47 arski Exp $
 
 /**
  * @file uc_webform_pane.module
  * 
  * Ubercart Webform Checkout Panes.
  * 
- * @note Ubercart webform data is stored in database during checkout, even when order is not complete.
+ * @note Webform data will be stored in database during checkout, even when order is not complete.
  */ 
-
-/**
- * Implementation of hook_init().
- */
-function uc_webform_pane_init() {
-  drupal_add_css(drupal_get_path('module', 'uc_webform_pane') .'/uc_webform_pane.css');
-}
 
 /**
  * Implementation of hook_theme().
@@ -37,6 +29,10 @@ function uc_webform_pane_form_alter(&$form, &$form_state, $form_id) {
   // Make sure the webform form supports files.
   if ($form_id == 'uc_cart_checkout_form') {
     $form['#attributes']['enctype'] = 'multipart/form-data';
+    // Support for Webform Validation module
+    if (function_exists('webform_validation_validate')) {
+      $form['#validate'][] = 'uc_webform_pane_wv_validate';
+    }
   }
   
   // Add a config option to webform nodes to enable them as checkout panes.
@@ -54,23 +50,45 @@ function uc_webform_pane_form_alter(&$form, &$form_state, $form_id) {
   }
   
   // Add access validation to all UC checkout pane webforms.
-  $nid = arg(1);
-  $node = node_load($nid);
-  if ($node->type == 'webform' && $node->webform['uc_webform_pane']) {
-    global $user;
-    $form['uc_access'] = array(
-      '#type' => 'hidden',
-      '#value' => user_access('administer store', $user) ? '1' : '0',
-    );
-    $form['#validate'][] = 'uc_webform_pane_access_validate';
-    $form['#validate'][] = 'webform_client_form_validate';
+  if (preg_match('|webform_.*_form|', $form_id)) {
+    $nid = arg(1);
+    if (uc_webform_pane_nodestatus($nid)) {
+      global $user;
+      $form['uc_access'] = array(
+        '#type' => 'hidden',
+        '#value' => user_access('administer store', $user) ? '1' : '0',
+      );
+      $form['#validate'][] = 'uc_webform_pane_access_validate';
+    }
+  }
+}
+
+/**
+ * Send the values of each Webform Pane through to Webform Validation checkers.
+ */
+function uc_webform_pane_wv_validate($form, &$form_state) {
+  $panes = $form_state['values']['panes'];
+  foreach ($panes as $paneid => $values) {
+    if (substr($paneid, 0, 11) == 'webform_nid') {
+      $nid = substr($paneid, 11);
+      
+      $pane_values = array();
+      $pane_values['op'] = t('Submit');
+      $pane_values['submitted'] = $values;
+      $pane_values['details']['nid'] = $nid;
+      
+      $pane_state = array();
+      $pane_state['values'] = $pane_values;
+      
+      webform_validation_validate($form, $pane_state);
+    }
   }
 }
 
 /**
  * Make sure that the user trying to modify the UC checkout pane enabled webform has adequate Ubercart permissions.
  */
-function uc_webform_pane_access_validate($form, $form_state) {
+function uc_webform_pane_access_validate($form, &$form_state) {
   if ($form_state['values']['uc_access'] === '0') {
     form_set_error('uc_access', t('This webform is used as an Ubercart checkout pane and cannot be accessed outside of Ubercart and/or without the appropriate Ubercart permissions.'));
   }
@@ -81,7 +99,9 @@ function uc_webform_pane_access_validate($form, $form_state) {
  */ 
 function uc_webform_pane_webform_configure_form_submit($form, &$form_state) {
   if ($form_state['values']['uc_webform_pane']) {
-    db_query("INSERT IGNORE INTO {uc_webform_pane} (nid) VALUES (%d)", $form_state['values']['nid']);
+    if (!db_result(db_query("SELECT nid FROM {uc_webform_pane} WHERE nid = %d", $form_state['values']['nid']))) {
+      db_query("INSERT INTO {uc_webform_pane} (nid) VALUES (%d)", $form_state['values']['nid']);
+    }
   } else {
     db_query("DELETE FROM {uc_webform_pane} WHERE nid = %d", $form_state['values']['nid']);
   }
@@ -113,6 +133,24 @@ function uc_webform_pane_nodestatus($nid) {
 }
 
 /**
+ * Implementation of hook_token_list().
+ */
+function uc_webform_pane_token_list($type = 'all') {
+  $tokens = array();
+  if ($type == 'order' || $type == 'ubercart' || $type == 'all') {
+    $webforms = _uc_webform_pane_get_nodes();
+    foreach ($webforms as $webform) {
+      $nid = $webform->nid;
+      $node = node_load($nid);
+      foreach ($node->webform['components'] as $field) {
+        $tokens['order']['uc-webform-'.$nid.'-'.str_replace('_', '-', $field['form_key'])] = $node->title.': '.$field['name'];
+      }
+    }
+  }
+  return $tokens;
+}
+
+/**
  * Implementation of hook_token_values().
  */
 function uc_webform_pane_token_values($type, $object = NULL) {
@@ -134,25 +172,6 @@ function uc_webform_pane_token_values($type, $object = NULL) {
       break;
   }
   return $values;
-}
-
-/**
- * Implementation of hook_token_list().
- */
-function uc_webform_pane_token_list($type = 'all') {
-  $tokens = array();
-  if ($type == 'order' || $type == 'ubercart' || $type == 'all') {
-    $webforms = _uc_webform_pane_get_nodes();
-    foreach ($webforms as $webform) {
-      $nid = $webform->nid;
-      $node = node_load($nid);
-      $data = get_object_vars(_uc_webform_pane_get_data($nid, $object->order_id));
-      foreach ($node->webform['components'] as $field) {
-        $tokens['order']['uc-webform-'.$nid.'-'.str_replace('_', '-', $field['form_key'])] = $node->title.': '.$field['name'];
-      }
-    }
-  }
-  return $tokens;
 }
 
 /**
@@ -218,6 +237,29 @@ function uc_webform_pane_checkout_pane_callback($nid, $op, &$arg1, $arg2) {
 }
 
 /**
+ * Implementation of drupal_alter('checkout_pane', $panes).
+ */
+function uc_webform_pane_checkout_pane_alter(&$panes) {
+  // Validate all the webform panes individually during the checkout process
+  foreach ($panes as $pid => $pane) {
+    if (substr($pane['id'], 0, 11) == 'webform_nid') {
+      $nid = substr($pane['id'], 11);
+      $node = node_load($nid);
+      
+      // Check if the webform submission limit has already been reached
+      if ($node->webform['submit_limit'] != -1) {
+        include_once(drupal_get_path('module', 'webform') ."/includes/webform.submissions.inc");
+        
+        global $user;
+        if (_webform_submission_limit_check($node) && ($user->uid != 0 || variable_get('cache', 0) == 0)) {
+          $panes[$pid]['enabled'] = FALSE;
+        }
+      }
+    }
+  }
+}
+
+/**
  * Implementation of hook_order_pane().
  */
 function uc_webform_pane_order_pane() {
@@ -241,7 +283,7 @@ function uc_webform_pane_order_pane() {
       'title' => $node->title,
       'class' => 'abs-left',
       'weight' => 7,
-      'show' => array('view', 'edit'),
+      'show' => array('view', 'customer', 'edit'),
     );
   }
   
@@ -254,6 +296,7 @@ function uc_webform_pane_order_pane() {
 function uc_webform_pane_order_pane_callback($nid, $op, $arg1) {
   switch ($op) {
     case 'view':
+    case 'customer':
       $data = _uc_webform_pane_render($nid, $arg1->order_id);
       return theme('uc_webform_pane_order_view', $data);
       break;
@@ -274,6 +317,7 @@ function uc_webform_pane_order_pane_callback($nid, $op, $arg1) {
       break;
     
     case 'edit-theme':
+      drupal_add_css(drupal_get_path('module', 'uc_webform_pane') .'/uc_webform_pane.css');
       $output = '<div id="webform-'.$nid.'-select"></div><table class="uc-webform-edit-table">';
       foreach (element_children($arg1['webform_nid'.$nid]) as $field) {
         if ($arg1['webform_nid'.$nid][$field]['#type'] == 'value') {
@@ -324,10 +368,9 @@ function _uc_webform_pane_save($nid, $order_id, $values) {
   $node = node_load($nid);
   
   // Filter out webform values (with the help of 'webform_'-prefixed fields)
-  $wf_values = array();
   foreach (array_keys($values) as $k) {
     if (substr($k, 0, 8) == 'webform_' && webform_get_cid($node, substr($k, 8), 0)) {
-      $wf_values[substr($k, 8)] = $values[substr($k, 8)];
+      unset($values[$k]);
     }
   }
   
@@ -385,7 +428,7 @@ function _uc_webform_pane_get_data($nid, $order_id) {
 function _uc_webform_pane_get_nodes($join_type = 'INNER') {
   $webforms = array();
   
-  $q = db_query(db_rewrite_sql("SELECT n.nid, uc.nid AS uc_nid
+  $q = db_query(db_rewrite_sql("SELECT n.nid
   FROM {node} n 
   $join_type JOIN {uc_webform_pane} uc ON (n.nid = uc.nid)
   WHERE n.type = 'webform' AND n.status = 1 ORDER BY n.title DESC"));
@@ -444,6 +487,9 @@ function theme_uc_webform_pane_order_view($data) {
  * Generate a form to edit webform submission data.
  */ 
 function _uc_webform_pane_edit_form($nid, $order_id, $pane_type) {
+  drupal_add_css(drupal_get_path('module', 'webform') .'/css/webform.css');
+  drupal_add_js(drupal_get_path('module', 'webform') .'/js/webform.js');
+  
   $node = node_load($nid);
   
   if (!$node->webform['components']) {

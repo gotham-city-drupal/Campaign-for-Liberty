@@ -1,0 +1,24 @@
+<?php
+// $Id: uc_donation.install,v 1.1.4.1 2008/11/13 22:23:41 greenskin Exp $
+
+/**
+ * @file
+ * Database installation, uninstallation, and updates for the donation module.
+ */
+
+/**
+ * Implementation of hook_install
+ */
+function uc_donation_install() {
+  
+}
+
+/**
+ * Implementation of hook_uninstall
+ */
+function uc_donation_uninstall() {
+  $variables = db_query("SELECT name FROM {variable} WHERE name LIKE 'uc_donation%%'");
+  while ($variable = db_fetch_object($variables)) {
+    variable_del($variable->name);
+  }
+}

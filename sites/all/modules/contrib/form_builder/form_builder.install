@@ -1,5 +1,4 @@
 <?php
-// $Id: form_builder.install,v 1.1 2008/12/03 19:32:22 quicksketch Exp $
 
 /**
  * Implementation of hook_install().
@@ -70,6 +69,7 @@ function form_builder_schema() {
       'data' => array(
         'type' => 'blob',
         'not null' => FALSE,
+        'size' => 'big',
       ),
     ),
     'indexes' => array(
@@ -78,6 +78,19 @@ function form_builder_schema() {
     ),
   );
 
-
   return $schema;
+}
+
+/**
+ * Change the {form_builder_cache} table to use a 'longblob' data column.
+ */
+function form_builder_update_6000() {
+  $ret = array();
+  $spec = array(
+    'type' => 'blob',
+    'not null' => FALSE,
+    'size' => 'big',
+  );
+  db_change_field($ret, 'form_builder_cache', 'data', 'data', $spec);
+  return $ret;
 }

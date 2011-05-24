@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_freeform.inc,v 1.3 2006/08/29 17:10:19 jaza Exp $
 
 /**
  * @file

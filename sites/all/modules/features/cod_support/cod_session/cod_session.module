@@ -36,10 +36,10 @@ function cod_session_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
 
       if (!empty($slots) && !empty($rooms)) {
         $result = db_rewrite_sql(db_query("SELECT DISTINCT
-        node.nid nid,
-        node.title title,
-        content_field_session_room.field_session_room_nid room_nid,
-        node2.title room_title
+        node.nid AS nid,
+        node.title AS title,
+        content_field_session_room.field_session_room_nid AS room_nid,
+        node2.title AS room_title
         FROM {node} node
         INNER JOIN {content_field_session_room} content_field_session_room
         ON content_field_session_room.nid = node.nid AND content_field_session_room.vid = node.vid 

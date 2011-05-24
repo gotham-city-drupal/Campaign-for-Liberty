@@ -1,6 +1,5 @@
 <?php
 
-// $Id: treecomp.inc.php,v 1.1 2006/06/09 16:43:28 jaza Exp $
 
 /**
  * @file

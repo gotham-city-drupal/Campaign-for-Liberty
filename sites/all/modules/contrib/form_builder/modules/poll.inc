@@ -1,5 +1,4 @@
 <?php
-// $Id: poll.inc,v 1.1 2009/01/16 23:06:08 quicksketch Exp $
 
 /**
  * @file

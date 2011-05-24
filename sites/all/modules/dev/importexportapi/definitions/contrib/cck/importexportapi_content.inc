@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_content.inc,v 1.8 2009/04/29 14:50:28 earnie Exp $
 
 /**
  * @file

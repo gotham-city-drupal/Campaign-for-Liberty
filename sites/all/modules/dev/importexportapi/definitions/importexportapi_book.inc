@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_book.inc,v 1.8 2006/09/19 05:03:58 jaza Exp $
 
 /**
  * @file

@@ -1,5 +1,4 @@
 <?php
-// $Id: menu.inc,v 1.3 2009/01/16 23:06:08 quicksketch Exp $
 
 /**
  * @file

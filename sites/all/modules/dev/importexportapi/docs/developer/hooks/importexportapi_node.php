@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_node.php,v 1.1 2006/09/01 13:43:18 jaza Exp $
 
 /**
  * @file

@@ -1,5 +1,4 @@
 <?php
-// $Id: webform_conditional.install,v 1.1.2.2 2011/01/12 13:38:31 tedbow11 Exp $
 /**
  * @file
  * Used for module updates
@@ -10,7 +9,7 @@ function webform_conditional_update_6000() {
   $sql = "SELECT name, form_key, type, extra,cid,nid FROM {webform_component}";
   $result = db_query($sql);
   if ($result) {
-    while ($row=db_fetch_array($result)) {
+    while ($row = db_fetch_array($result)) {
       $extra = unserialize($row['extra']);
       $extra['webform_conditional_field_key'] = trim($extra['webform_conditional_field_key']);
       if (!empty($extra['webform_conditional_field_key'])) {
@@ -37,11 +36,11 @@ function webform_conditional_update_6000() {
             $row['extra']['webform_conditional_operator '] = "=";
             $extra = serialize($row['extra']);
             //can't use update_sql here becauce of serialized data??? is that right?
-            $success = db_query("UPDATE {webform_component} SET   extra = '%s' WHERE nid = %d AND cid = '%s'",  $extra, $row['nid'], $row['cid']);
+            $success = db_query("UPDATE {webform_component} SET   extra = '%s' WHERE nid = %d AND cid = '%s'",   $extra, $row['nid'], $row['cid']);
             $affected = db_affected_rows();
             if (!$success || $affected != 1) {
               watchdog("wfc_conditional", "Webform_conditional could not update. Could not update webform_component table.", NULL, WATCHDOG_ERROR);
-              $ret['#abort'] = array('success' => FALSE );
+              $ret['#abort'] = array('success' => FALSE);
               return $ret;
             }
           }
@@ -65,4 +64,23 @@ function webform_conditional_update_6000() {
     }
   }
   return array();
+}
+function webform_conditional_update_6001() {
+  $ret = array();
+  $sql = "SELECT nid, cid,extra FROM {webform_component}";
+  $result = db_query($sql);
+  if ($result) {
+    while ($row = db_fetch_array($result)) {
+      $extra = unserialize($row['extra']);
+      if (!empty($extra['webform_conditional_mandatory'])) {
+        $update_components[$row['nid']][] = $row['cid'];
+      }
+    }
+    if ($update_components) {
+      foreach ($update_components as $nid => $cids) {
+        $ret[] = update_sql("UPDATE {webform_component} SET mandatory = 1 where nid = $nid and cid in (" . implode(",", $cids) . ")");
+      }
+    }
+  }
+  return $ret;
 }

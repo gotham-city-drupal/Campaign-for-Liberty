@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_profile.inc,v 1.17 2006/08/29 17:10:19 jaza Exp $
 
 /**
  * @file

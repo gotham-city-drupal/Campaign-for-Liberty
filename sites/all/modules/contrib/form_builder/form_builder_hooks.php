@@ -1,5 +1,4 @@
 <?php
-// $Id: form_builder_hooks.php,v 1.5 2009/06/19 20:48:33 quicksketch Exp $
 
 /**
  * @addtogroup hooks

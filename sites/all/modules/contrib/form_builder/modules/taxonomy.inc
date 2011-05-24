@@ -1,5 +1,4 @@
 <?php
-// $Id: taxonomy.inc,v 1.4 2009/01/16 23:06:08 quicksketch Exp $
 
 /**
  * @file

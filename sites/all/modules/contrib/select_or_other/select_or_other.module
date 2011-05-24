@@ -1,5 +1,4 @@
 <?php
-// $Id: select_or_other.module,v 1.1.2.1.2.10.2.3 2010/12/14 04:06:17 danielb Exp $
 
 /**
  * @file
@@ -99,6 +98,11 @@ function select_or_other_process($element, $edit, &$form_state, $form) {
     '#columns' => $element['#columns'],
 
   );
+
+  // If working with checkboxes, set our own process function to handle them.
+  if ($element['#select_type'] == 'checkboxes') {
+    $element['select']['#process'] = array('select_or_other_expand_checkboxes');
+  }
 
   // Remove the default value on the container level so it doesn't get rendered there.
   $element['#value'] = NULL;
@@ -200,6 +204,56 @@ function select_or_other_process($element, $edit, &$form_state, $form) {
 function _select_or_other_title_display($element) {
   if (isset($element['#title_display']) && $element['#title_display'] === 'none') {
     $element['select']['#title'] = NULL;
+  }
+  return $element;
+}
+
+ /**
+ * Element process callback for Select (or other) checkboxes.
+ */
+function select_or_other_expand_checkboxes($element) {
+  $element = expand_checkboxes($element);
+  foreach (element_children($element) as $key) {
+    $element[$key]['#return_value'] = check_plain($element[$key]['#return_value']);
+    $element[$key]['#name'] = $element['#name'] . '[' . $element[$key]['#return_value'] . ']';
+    $element[$key]['#value_callback'] = 'select_or_other_checkbox_value';
+    $element[$key]['#pre_render'][] = 'select_or_other_checkbox_prerender';
+  }
+  return $element;
+}
+
+/**
+ * Helper function to determine the value for a checkbox form element.
+ *
+ * Drupal core cannot discern the difference between an unchecked checkbox and
+ * a checked checkbox that has a value of '0'. This value callback will return
+ * NULL instead of an integer 0 for checkboxes that are not checked.
+ *
+ * @see form_type_checkbox_value()
+ */
+function select_or_other_checkbox_value($form, $edit = FALSE) {
+  if ($edit !== FALSE) {
+    if (empty($form['#disabled'])) {
+      return $edit !== NULL ? $form['#return_value'] : NULL; // 0 in core.
+    }
+    else {
+      return $form['#default_value'];
+    }
+  }
+}
+
+/**
+ * Helper function to ensure that the default value of "0" checkboxes renders.
+ *
+ * The default handling of checkboxes only checks checkboxes based on the #value
+ * property. If a checkbox has a value of "0" (as a string), the checkbox
+ * doesn't print out the way it should.
+ *
+ * @see theme_checkbox()
+ */
+function select_or_other_checkbox_prerender($element) {
+  if ($element['#value'] === '0') {
+    $element['#value'] = TRUE;
   }
   return $element;
 }
@@ -363,7 +417,7 @@ function select_or_other_widget(&$form, &$form_state, $field, $items, $delta = N
     $opt = content_filter_xss($opt);
     if (strpos($opt, '|') !== FALSE) {
       list($key, $value) = explode('|', $opt);
-      $options[$key] = (isset($value) && $value !=='') ? $value : $key;
+      $options[$key] = (isset($value) && $value !=='') ? html_entity_decode($value) : $key;
     }
     else {
       $options[$opt] = $opt;
@@ -573,15 +627,43 @@ function theme_select_or_other_none($field) {
 }
 
 /**
+ * Implementation of hook_content_allowed_values_alter().
+ *
+ * Integrate with CCK for properly displaying key|value options.
+ */
+function select_or_other_content_allowed_values_alter(&$allowed_values, $field) {
+  // Test the operation to avoid validation error with text field valudation on saving
+  if ($field['widget']['module'] == 'select_or_other' && $_POST['op'] != t('Save')) {
+    $list = explode("\n", $field['widget']['available_options']);
+    $list = array_map('trim', $list);
+    $list = array_filter($list, 'strlen');
+    foreach ($list as $option) {
+      // Sanitize the user input with a permissive filter.
+      $option = content_filter_xss($option);
+      if (strpos($option, '|') !== FALSE) {
+        list($key, $value) = explode('|', $option);
+        $allowed_values[$key] = (isset($value) && $value !== '') ? html_entity_decode($value) : $key;
+      }
+      else {
+        $allowed_values[$option] = $option;
+      }
+    }
+  }
+}
+
+/**
  * Implementation of hook_apachesolr_cck_fields_alter().
  *
  * Integrate with apachesolr.module.
  */
 function select_or_other_apachesolr_cck_fields_alter(&$mappings) {
-  $mappings['text']['select_or_other_buttons'] = array(
+  $map = array(
     'display_callback' => 'apachesolr_cck_text_field_callback',
     'indexing_callback' => 'apachesolr_cck_text_indexing_callback',
     'index_type' => 'string',
     'facets' => TRUE,
   );
+  $mappings['text']['select_or_other_buttons'] = &$map;
+  $mappings['text']['select_or_other'] = &$map;
+  $mappings['text']['select_or_other_sort'] = &$map;
 }

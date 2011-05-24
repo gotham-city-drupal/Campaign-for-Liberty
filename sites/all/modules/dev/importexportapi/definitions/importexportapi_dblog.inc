@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_dblog.inc,v 1.1.2.1 2009/05/06 18:30:49 earnie Exp $
 
 /**
  * @file

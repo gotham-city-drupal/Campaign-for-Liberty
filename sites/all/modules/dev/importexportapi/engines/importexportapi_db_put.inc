@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_db_put.inc,v 1.29.4.2 2009/07/07 14:08:50 earnie Exp $
 
 /**
  * @file

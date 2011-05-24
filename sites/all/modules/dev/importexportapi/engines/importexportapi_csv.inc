@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_csv.inc,v 1.4 2006/09/06 03:32:10 jaza Exp $
 
 /**
  * @file

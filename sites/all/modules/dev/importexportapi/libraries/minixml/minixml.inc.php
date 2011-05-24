@@ -1,6 +1,5 @@
 <?php
 
-// $Id: minixml.inc.php,v 1.2 2006/08/15 17:13:12 jaza Exp $
 
 /**
  * @file

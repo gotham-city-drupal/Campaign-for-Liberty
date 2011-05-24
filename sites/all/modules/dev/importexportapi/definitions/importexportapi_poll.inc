@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_poll.inc,v 1.4 2006/08/29 04:33:45 jaza Exp $
 
 /**
  * @file

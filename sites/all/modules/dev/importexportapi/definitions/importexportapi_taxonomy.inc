@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_taxonomy.inc,v 1.12.2.1 2009/10/12 13:44:13 earnie Exp $
 
 /**
  * @file

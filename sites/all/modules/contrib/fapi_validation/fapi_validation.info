@@ -2,9 +2,9 @@ name = "Form API Validation"
 description = "Enable rules and filters on fapi."
 core = 6.x
 package = Development
-; Information added by drupal.org packaging script on 2010-07-11
+; Information added by drupal.org packaging script on 2011-03-01
 version = "6.x-1.x-dev"
 core = "6.x"
 project = "fapi_validation"
-datestamp = "1278834193"
+datestamp = "1298937947"
 

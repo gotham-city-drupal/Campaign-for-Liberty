@@ -1,4 +1,3 @@
-$Id: README.txt,v 1.1.2.1.2.4.2.2 2010/12/14 04:06:17 danielb Exp $
 
 Select (or other) README
 

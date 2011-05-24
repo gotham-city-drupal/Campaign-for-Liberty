@@ -7,19 +7,46 @@ You can create one or more of the predefined validation rules, and select which 
 By using the hooks provided by this module, you can also define your own validation rules in your own modules.
 
 The following validation rules are currently included:
-- Numeric values
+- Numeric values (optionally specify min and / or max value)
 - Minimum length
 - Maximum length
 - Equal values on multiple fields
 - Unique values on multiple fields
+- Specific value
 - Require at least one of two fields
+- Require at least one of several fields
+- Minimum number of selections required
+- Maximum number of selections allowed
+- Exact number of selections required
+- Plain text (disallow tags)
 - Regular expression
+- Must be empty (Anti-Spam: Hide with CSS)
+- Words blacklist
 
 Installation
 ------------
 1) Place the module folder in your sites/all/modules folder
 2) Make sure you have the webform module enabled
 3) Activate the module via admin/build/modules
+
+Usage
+-----
+Once you have installed the module, an extra tab will appear on the node's webform management pages (tab "Edit" in Webform 2.x, tab "Webform" in Webform 3.x).
+This extra tab is labeled "Webform validation".
+Upon selecting this tab, you can choose to add one of the available validation rules to your webform.
+Make sure you have added the webform components you wish to validate before adding the validation rule.
+
+After clicking the link to add the desired validation rule, you can specify the following details for your rule:
+- an administrative name to describe the validation rule
+- one or more webform components that should be validated against this rule
+(depending on the chosen rule, you will have to select a specific number of components for the validation rule to work properly).
+
+Depending on the chosen rule, more form fields will be available on the rules form:
+- optionally an extra setting to further configure the rule
+- optionally a custom error message textfield
+
+Once you have configured your desired validation rules for the selected webform components, every time a user fills in the webform,
+the validation will be triggered for the selected components, and show the user a standard form error message when entered data doesn't pass the validation rule you have set up.
 
 Adding custom validation rules
 -------------------------------

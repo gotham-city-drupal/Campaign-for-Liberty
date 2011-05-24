@@ -1,4 +1,3 @@
-// $Id: select_or_other.js,v 1.1.2.1.2.8.2.2 2010/12/14 04:06:17 danielb Exp $
 
 function select_or_other_check_and_show(ele, page_init) {
   var speed;

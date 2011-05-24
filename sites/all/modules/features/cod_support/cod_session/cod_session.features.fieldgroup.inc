@@ -66,7 +66,7 @@ function cod_session_fieldgroup_default_groups() {
         'description' => '',
       ),
       'display' => array(
-        'weight' => '3',
+        'weight' => '1',
         'label' => 'hidden',
         'teaser' => array(
           'format' => 'hidden',
@@ -90,6 +90,7 @@ function cod_session_fieldgroup_default_groups() {
     'weight' => '1',
     'fields' => array(
       '0' => 'field_track',
+      '1' => 'field_experience',
     ),
   );
 
@@ -105,7 +106,7 @@ function cod_session_fieldgroup_default_groups() {
         'description' => '',
       ),
       'display' => array(
-        'weight' => '1',
+        'weight' => '0',
         'label' => 'above',
         'teaser' => array(
           'format' => 'simple',
@@ -136,9 +137,9 @@ function cod_session_fieldgroup_default_groups() {
     ),
     'weight' => '0',
     'fields' => array(
-      '0' => 'field_accepted',
-      '1' => 'field_session_slot',
-      '2' => 'field_session_room',
+      '0' => 'field_session_slot',
+      '1' => 'field_session_room',
+      '2' => 'field_accepted',
     ),
   );
 

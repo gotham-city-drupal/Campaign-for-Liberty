@@ -27,28 +27,27 @@ $flags[] = array (
   'types' => 
   array (
     0 => 'session',
+    1 => 'schedule_item',
   ),
-  'flag_short' => 'Add to my agenda',
-  'flag_long' => 'Add this session to your agenda to organize your session attendance.',
-  'flag_message' => '',
-  'unflag_short' => 'Remove from my agenda',
-  'unflag_long' => 'Remove this session from your agenda.',
-  'unflag_message' => '',
+  'flag_short' => 'Add to your schedule',
+  'flag_long' => 'Add this session to your personal session attendance.',
+  'flag_message' => 'Session added',
+  'unflag_short' => 'Remove from your schedule',
+  'unflag_long' => 'Remove this session from your schedule',
+  'unflag_message' => 'Session removed',
   'unflag_denied_text' => '',
   'link_type' => 'toggle',
   'roles' => 
   array (
     'flag' => 
     array (
-      0 => 2,
     ),
     'unflag' => 
     array (
-      0 => 2,
     ),
   ),
   'show_on_page' => 0,
-  'show_on_teaser' => 0,
+  'show_on_teaser' => 1,
   'show_on_form' => 0,
   'access_author' => '',
   'i18n' => 0,
@@ -108,10 +107,10 @@ return $flags;
  */
 function cod_session_node_info() {
   $items = array(
-    'room' => array(
-      'name' => t('Room'),
+    'page' => array(
+      'name' => t('Page'),
       'module' => 'features',
-      'description' => t('Rooms provide a location for each session.'),
+      'description' => t('Use the <em>Page</em> content type for mostly static content like the "About us" section of a website. By default, a <em>page</em> entry does not allow comments and is not featured on the site\'s home page.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'has_body' => '1',
@@ -119,10 +118,21 @@ function cod_session_node_info() {
       'min_word_count' => '0',
       'help' => '',
     ),
+    'room' => array(
+      'name' => t('Room'),
+      'module' => 'features',
+      'description' => t('Rooms provide a location for each session.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'has_body' => '1',
+      'body_label' => t('Description'),
+      'min_word_count' => '0',
+      'help' => t('What type of space is this? How is the seating arranged? Are there any other information to be shared?'),
+    ),
     'schedule_item' => array(
       'name' => t('Schedule Item'),
       'module' => 'features',
-      'description' => '',
+      'description' => t('Use schedule items for content you wish to have in the schedule but not be part of any session submission workflows. Examples include scheduling lunch or breaks.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'has_body' => '1',
@@ -138,7 +148,7 @@ function cod_session_node_info() {
       'title_label' => t('Session Title'),
       'has_body' => '1',
       'body_label' => t('Description'),
-      'min_word_count' => '0',
+      'min_word_count' => '1',
       'help' => '',
     ),
     'time_slot' => array(

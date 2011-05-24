@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_xml.inc,v 1.11 2007/02/07 13:09:25 douggreen Exp $
 
 /**
  * @file

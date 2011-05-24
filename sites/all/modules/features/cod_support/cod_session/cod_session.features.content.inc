@@ -6,6 +6,131 @@
 function cod_session_content_default_fields() {
   $fields = array();
 
+  // Exported field: field_room_capacity
+  $fields['room-field_room_capacity'] = array(
+    'field_name' => 'field_room_capacity',
+    'type_name' => 'room',
+    'display_settings' => array(
+      'weight' => '-4',
+      'parent' => '',
+      'label' => array(
+        'format' => 'inline',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => '',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'rows' => 5,
+      'size' => '60',
+      'default_value' => NULL,
+      'default_value_php' => NULL,
+      'label' => 'Capacity',
+      'weight' => '-4',
+      'description' => 'How many people does this space hold?',
+      'type' => 'text_textfield',
+      'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_room_photo
+  $fields['room-field_room_photo'] = array(
+    'field_name' => 'field_room_photo',
+    'type_name' => 'room',
+    'display_settings' => array(
+      'weight' => '-1',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'image_plain',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '1',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'png gif jpg jpeg',
+      'file_path' => '',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'max_resolution' => '0',
+      'min_resolution' => '0',
+      'alt' => '',
+      'custom_alt' => 0,
+      'title' => '',
+      'custom_title' => 0,
+      'title_type' => 'textfield',
+      'default_image' => NULL,
+      'use_default_image' => 0,
+      'label' => 'Photo',
+      'weight' => '-1',
+      'description' => '',
+      'type' => 'imagefield_widget',
+      'module' => 'imagefield',
+    ),
+  );
+
   // Exported field: field_accepted
   $fields['schedule_item-field_accepted'] = array(
     'field_name' => 'field_accepted',
@@ -43,9 +168,8 @@ function cod_session_content_default_fields() {
     'suffix' => '',
     'min' => '0',
     'max' => '2',
-    'allowed_values' => '0| Proposed
-1| Accepted
-2| Deferred',
+    'allowed_values' => '1|Accepted
+2|Declined',
     'allowed_values_php' => '',
     'widget' => array(
       'default_value' => array(
@@ -206,7 +330,7 @@ function cod_session_content_default_fields() {
     'field_name' => 'field_accepted',
     'type_name' => 'session',
     'display_settings' => array(
-      'weight' => '-2',
+      'weight' => '1',
       'parent' => 'group_schedule',
       'label' => array(
         'format' => 'inline',
@@ -238,9 +362,8 @@ function cod_session_content_default_fields() {
     'suffix' => '',
     'min' => '0',
     'max' => '2',
-    'allowed_values' => '0| Proposed
-1| Accepted
-2| Deferred',
+    'allowed_values' => '1|Accepted
+2|Declined',
     'allowed_values_php' => '',
     'widget' => array(
       'default_value' => array(
@@ -250,6 +373,68 @@ function cod_session_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Status',
+      'weight' => '1',
+      'description' => '',
+      'type' => 'optionwidgets_buttons',
+      'module' => 'optionwidgets',
+    ),
+  );
+
+  // Exported field: field_experience
+  $fields['session-field_experience'] = array(
+    'field_name' => 'field_experience',
+    'type_name' => 'session',
+    'display_settings' => array(
+      'weight' => '-2',
+      'parent' => 'group_audience',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '1',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => 'beginner|Beginner
+intermediate|Intermediate
+advanced|Advanced',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => NULL,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Experience level',
       'weight' => '-2',
       'description' => '',
       'type' => 'optionwidgets_buttons',
@@ -262,17 +447,17 @@ function cod_session_content_default_fields() {
     'field_name' => 'field_presenters',
     'type_name' => 'session',
     'display_settings' => array(
-      'weight' => '-2',
+      'weight' => '-3',
       'parent' => '',
       'label' => array(
         'format' => 'above',
       ),
       'teaser' => array(
-        'format' => 'default',
+        'format' => 'user_full_name',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
+        'format' => 'user_full_name',
         'exclude' => 0,
       ),
       '4' => array(
@@ -292,6 +477,9 @@ function cod_session_content_default_fields() {
     'active' => '1',
     'referenceable_roles' => array(
       '2' => 0,
+      '4' => 0,
+      '3' => 0,
+      '5' => 0,
     ),
     'referenceable_status' => '1',
     'advanced_view' => '',
@@ -320,7 +508,7 @@ function cod_session_content_default_fields() {
     'field_name' => 'field_session_room',
     'type_name' => 'session',
     'display_settings' => array(
-      'weight' => '1',
+      'weight' => 0,
       'parent' => 'group_schedule',
       'label' => array(
         'format' => 'inline',
@@ -378,10 +566,68 @@ function cod_session_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Room',
-      'weight' => '1',
+      'weight' => 0,
       'description' => 'Select room(s) in which the session occurs.',
       'type' => 'nodereference_buttons',
       'module' => 'nodereference',
+    ),
+  );
+
+  // Exported field: field_session_slides
+  $fields['session-field_session_slides'] = array(
+    'field_name' => 'field_session_slides',
+    'type_name' => 'session',
+    'display_settings' => array(
+      'weight' => '2',
+      'parent' => '',
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'filefield',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'filefield',
+    'active' => '1',
+    'list_field' => '0',
+    'list_default' => 1,
+    'description_field' => '0',
+    'widget' => array(
+      'file_extensions' => 'pdf',
+      'file_path' => '',
+      'progress_indicator' => 'bar',
+      'max_filesize_per_file' => '',
+      'max_filesize_per_node' => '',
+      'label' => 'Slides',
+      'weight' => '2',
+      'description' => 'Upload your slides here as a PDF, or link to them from the description. (This is typically done after your session.)',
+      'type' => 'filefield_widget',
+      'module' => 'filefield',
     ),
   );
 
@@ -460,9 +706,10 @@ function cod_session_content_default_fields() {
     'field_name' => 'field_slides',
     'type_name' => 'session',
     'display_settings' => array(
+      'weight' => '-1',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
@@ -506,7 +753,7 @@ function cod_session_content_default_fields() {
       'max_filesize_per_node' => '',
       'label' => 'Slides',
       'weight' => '-1',
-      'description' => '',
+      'description' => 'Upload your slides here as a PDF, or link to them from the description. (This is typically done after your session.)',
       'type' => 'filefield_widget',
       'module' => 'filefield',
     ),
@@ -640,7 +887,10 @@ Track 3',
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Capacity');
   t('Date and time');
+  t('Experience level');
+  t('Photo');
   t('Presenter(s)');
   t('Room');
   t('Slides');

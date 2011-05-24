@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_aggregator.inc,v 1.4 2007/03/25 21:21:47 jaza Exp $
 
 /**
  * @file

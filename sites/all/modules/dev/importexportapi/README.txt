@@ -1,4 +1,3 @@
-// $Id: README.txt,v 1.1 2006/09/08 14:56:08 jaza Exp $
 
 Readme
 ------

@@ -1,5 +1,4 @@
 <?php
-// $Id: importexportapi_db_get.inc,v 1.26 2007/02/07 13:09:25 douggreen Exp $
 
 /**
  * @file
