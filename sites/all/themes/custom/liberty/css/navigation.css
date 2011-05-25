@@ -1,7 +1,6 @@
 /* $Id: navigation.css,v 1.0 2011/4/28 00:32:00 pirog Exp $ */
 
 /* Links */
-
 ul.links {
   padding: 0;
   margin: 0;
@@ -35,23 +34,20 @@ ul.links.inline li a {
   margin-right: 10px;
 }
 
-ul.links a.active,
-ul.links li.active a {
+ul.links a.active,ul.links li.active a {
   border: none;
 }
 
 /* Tabs */
-
 #tabs {
   margin-bottom: 10px;
 }
 
-ul.tabs li {
-  /*float: left;*/
+ul.tabs li { /*float: left;*/
+  
 }
 
-ul.tabs li a:link,
-ul.tabs li a:visited {
+ul.tabs li a:link,ul.tabs li a:visited {
   padding: 2px 5px;
 }
 
@@ -60,7 +56,6 @@ ul.tabs.secondary {
 }
 
 /* Menus */
-
 ul.menu {
   margin: 0;
 }
@@ -83,7 +78,6 @@ ul.menu li li a {
 }
 
 /* Node links */
-
 .node-links ul.links li a {
   padding: 0;
   margin-right: 10px;
@@ -111,5 +105,3 @@ ul.menu li li a {
   width: auto;
   height: 40px;
 }
-
-

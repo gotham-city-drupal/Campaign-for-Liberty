@@ -7,15 +7,12 @@ if (theme_get_setting('liberty_rebuild_registry')) {
 }
 
 /**
- * Implementation of hook_theme().
+ * Modify theme variables
  */
-function liberty_theme() {
-  return array(
-    'fieldset' => array(
-      'arguments' => array('element' => array()),
-      'template' => 'fieldset',
-    ),
-  );
+function liberty_preprocess(&$variables) {
+  global $user;                                            // Get the current user
+  $variables['is_admin'] = in_array('admin', $user->roles);     // Check for Admin, logged in
+  $variables['logged_in'] = ($user->uid > 0) ? TRUE : FALSE;
 }
 
 /**
@@ -67,15 +64,16 @@ function liberty_preprocess_page(&$variables) {
   $path_to_theme = path_to_theme() . '/';
   global $user, $theme_key;
 
+  // strip sidebar classes so theme can add them
   $exploder = explode(' ', $variables['body_classes']);
   foreach($exploder as $key=>&$value){
-    //TODO: improve this if there is time
-    if(strstr($value, 'sidebar')){
-      unset($exploder[$key]);
-     }
-   }
-   $exploder = implode(' ', $exploder);
-   $variables['body_classes'] = $exploder;
+   //TODO: improve this if there is time
+   if(strstr($value, 'sidebar')){
+     unset($exploder[$key]);
+    }
+  }
+  $exploder = implode(' ', $exploder);
+  $variables['body_classes'] = $exploder;
 
   liberty_body_classes($variables);
   liberty_html_attributes($variables);
@@ -85,22 +83,11 @@ function liberty_preprocess_page(&$variables) {
   $site_name = $variables['site_name'];
   $variables['site_name_themed'] = l($site_name, '<front>', array('attributes' => array('id' => 'site-name')));
 
-  if ($variables['site_slogan']) {
-    $variables['site_slogan_themed'] = '<span id="site-slogan">'. $variables['site_slogan'] .'</span>';
-  }
-
-  if ($variables['mission']) {
-    $variables['mission_themed'] = '<span id="mission">'. $variables['mission'] .'</span>';
-  }
-
-  if ($variables['logo']) {
-    // this needs to not use preg_replace @todo: fix preg_replace
-    $logo_path = preg_replace('@'. $GLOBALS['base_url'] .'/@i', '', $variables['logo']);
-    file_exists($logo_path) ?
-      $image = theme('image', $logo_path, $site_name) :
-      $image = theme('image', $path_to_liberty .'/logo.png', $site_name);
-    $variables['logo_themed'] = l($image, '<front>', array('attributes' => array('id' => 'logo', 'rel' => 'home', 'title' => t('Return to the !site_name home page', array('!site_name' => $site_name))), 'html' => TRUE));
-  }
+  // Set IE6 & IE7 stylesheets, plus right-to-left versions
+  $theme_path = base_path() . path_to_theme();
+  $variables['ie7_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/css/ie6-fixes.css" />' . "\n";
+  $variables['ie7_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/css/ie7-fixes.css" />' . "\n";
+  $variables['ie8_styles'] = '<link type="text/css" rel="stylesheet" media="all" href="' . $theme_path . '/css/ie8-fixes.css" />' . "\n";
 
   $variables['skip_link'] = '<ul class="acc-hide">
     <li><a href="#content" class="skip-link">Skip to content</a></li>
@@ -241,6 +228,20 @@ function liberty_preprocess_block(&$variables) {
   $variables['hook'] = 'block';
   $variables['title'] = $variables['block']->subject;
   $variables['content'] = $variables['block']->content;
+
+  // First/last block position
+  $variables['position'] = ($variables['block_id'] == 1) ? 'first' : '';
+  if ($variables['block_id'] == count(block_list($block->region))) {
+    $variables['position'] = ($variables['position']) ? 'first last' : 'last';
+  }
+
+  if (user_access('administer blocks')) {
+    include_once './' . drupal_get_path('theme', 'liberty') . '/template.block-editing.inc';
+    $variables['edit_links_array'] = array();
+    $variables['edit_links'] = '';
+    liberty_preprocess_block_editing($variables, $hook);
+    $block_classes[] = 'block-editing';
+  }
 }
 
 /**
@@ -266,6 +267,15 @@ function liberty_preprocess_comment(&$variables) {
   if ($variables['zebra']) {
     $variables['attr']['class'] .= ' comment-'. $variables['zebra'];
   }
+}
+
+/**
+ * Adds a class for the style of view
+ * (e.g., node, teaser, list, table, etc.)
+ * (Requires views-view.tpl.php file in theme directory)
+ */
+function liberty_preprocess_views_view(&$variables) {
+  $variables['css_name'] = $variables['css_name'] .' view-style-'. views_css_safe(strtolower($variables['view']->type));
 }
 
 /**
@@ -317,33 +327,17 @@ function liberty_preprocess_fieldset(&$variables) {
   }
   $variables['content'] = $description . $children . $value;
 
+  // TODO: this is generating weird output on permissions page
   if (!empty($element['#title'])) {
     $variables['title'] = $element['#title'];
   }
   if (!empty($element['#collapsible']) || !empty($element['#collapsed'])) {
     $variables['title'] = l($variables['title'], $_GET['q'], array('fragment' => 'fieldset'));
   }
+
 }
 
-/**
- * Override theme_menu_local_tasks().
- *
- * Add clear-block class to ul elements.
- */
-/*
-function liberty_menu_local_tasks() {
-  $output = '<div id="tabs">';
-  if ($primary = menu_primary_local_tasks()) {
-    $output .= "<ul class='tabs primary links'>$primary</ul>";
-  }
-  if ($secondary = menu_secondary_local_tasks()) {
-    $output .= "<ul class='tabs secondary links'>$secondary</ul>";
-  }
-  $output .= '</div>';
 
-  return $output;
-}
-*/
 /**
  * Strips CSS files from a Drupal CSS array whose filenames start with
  * prefixes provided in the $match argument.
@@ -378,8 +372,9 @@ function liberty_css_stripped($match = array('modules/*'), $exceptions = NULL) {
  * Only show the breadcrumb trail if there are more items than just 'Home'.
  */
 function liberty_breadcrumb($breadcrumb) {
-  if (count($breadcrumb) > 1) {
-    return '<div class="breadcrumb">'. implode(' &raquo; ', $breadcrumb) .'</div>';
+  if (!empty($breadcrumb)) {
+    $breadcrumb[] = drupal_get_title();
+    return '<div class="breadcrumb">'. implode(' &rsaquo; ', $breadcrumb) .'</div>';
   }
 }
 

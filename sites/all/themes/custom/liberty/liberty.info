@@ -28,7 +28,6 @@ regions[footer_top_right] = Footer Top Right
 regions[footer_bottom] = Footer Bottom
 
 features[] = name
-features[] = mission
 features[] = node_user_picture
 features[] = comment_user_picture
 features[] = search

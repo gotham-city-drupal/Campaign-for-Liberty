@@ -46,6 +46,14 @@ thead th {
   padding: 10px 18px 20px;
 }
 
+#right_top .block {
+  padding: 10px 18px 20px;
+}
+
+#left_top .block {
+  padding: 10px 18px 20px;
+}
+
 #footer_top .block {
   width: 230px;
   float: left;
@@ -425,7 +433,6 @@ ul.links,.clear-block {
 }
 
 /* Views */
-
 div.view-display-id-attachment_1 h5,div.view-display-id-attachment_1 .teaser
   {
   float: left;

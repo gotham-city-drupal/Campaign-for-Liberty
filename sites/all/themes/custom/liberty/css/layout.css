@@ -53,7 +53,7 @@ a#logo {
 }
 
 #banner_main {
- padding: 10px 0;
+  padding: 10px 0;
 }
 
 #banner_content {
@@ -66,7 +66,7 @@ a#logo {
 }
 
 #page {
-  padding: 50px 0 0 0;  
+  padding: 50px 0 0 0;
 }
 
 .sidebar {
@@ -109,24 +109,24 @@ a#logo {
   float: right;
 }
 
-#left_bottom {
-  /*clear: both;*/
+#left_bottom { /*clear: both;*/
+  
 }
 
 #left_bottom .content {
   padding: 0 20px;
 }
 
-#right_bottom {
-  /*clear: both;*/
+#right_bottom { /*clear: both;*/
+  
 }
 
-#left_top {
-  /*clear: both;*/
+#left_top { /*clear: both;*/
+  
 }
 
-#right_top {
-  /*clear: both;*/
+#right_top { /*clear: both;*/
+  
 }
 
 #footer {
@@ -149,19 +149,19 @@ a#logo {
 }
 
 #footer_top_left {
-    float:left;
-    width:320px;
-    margin-right:5px;
+  float: left;
+  width: 320px;
+  margin-right: 5px;
 }
 
 #footer_top_mid {
-    float:left;
-    width:380px;
-    margin-left:15px;
+  float: left;
+  width: 380px;
+  margin-left: 15px;
 }
 
 #footer_top_right {
-    float:left;
-    width:230px;
-    margin-left:-8px;
+  float: left;
+  width: 230px;
+  margin-left: -8px;
 }

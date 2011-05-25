@@ -1,13 +1,12 @@
 /* $Id: ie-lt8.css,v 1.0 2011/4/28 00:32:00 pirog Exp $ */
 
 /* Fixes for IE < 8 */
-
 input.form-submit {
   padding: 1px;
 }
 
 #header_search .form-submit {
-  margin-left:4px;
+  margin-left: 4px;
 }
 
 /* www.aestheticallyloyal.com/public/optimize-legibility/ */
@@ -24,5 +23,3 @@ html {
   zoom: 1;
   display: block;
 }
-
-

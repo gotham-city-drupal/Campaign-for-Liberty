@@ -92,14 +92,14 @@
 <?php print $head; ?>
 <?php print $styles; ?>
 <!--[if IE 8]>
-  	<link rel="stylesheet" href="<?php print $base_path . $directory; ?>/css/ie-lt8.css" type="text/css">
-  	<![endif]-->
+  <?php print $ie8_styles; ?>
+<![endif]-->
 <!--[if IE 7]>
-  	<link rel="stylesheet" href="<?php print $base_path . $directory; ?>/css/ie-lt7.css" type="text/css">
-  <![endif]-->
+  <?php print $ie7_styles; ?>
+<![endif]-->
 <!--[if lte IE 6]>
-   	<link rel="stylesheet" href="<?php print $base_path . $directory; ?>/css/ie-lt6.css" type="text/css">
-  <![endif]-->
+  <?php print $ie6_styles; ?>
+<![endif]-->
 <?php print $scripts; ?>
 <title><?php print $head_title; ?>
 </title>

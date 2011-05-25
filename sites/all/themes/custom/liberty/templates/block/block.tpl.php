@@ -10,6 +10,8 @@
   <div class="block-content clear-block">
     <?php print $content; ?>
   </div>
+
+  <?php print $edit_links; ?>
 </div>
 
 <?php print $post; ?>
