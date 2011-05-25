@@ -147,3 +147,21 @@ a#logo {
 #footer_bottom {
   padding: 20px 0 0;
 }
+
+#footer_top_left {
+    float:left;
+    width:320px;
+    margin-right:5px;
+}
+
+#footer_top_mid {
+    float:left;
+    width:380px;
+    margin-left:15px;
+}
+
+#footer_top_right {
+    float:left;
+    width:230px;
+    margin-left:-8px;
+}

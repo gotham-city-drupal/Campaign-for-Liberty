@@ -22,7 +22,9 @@ regions[content] = Content
 regions[content_bottom] = Content Bottom
 regions[right_top] = Right Sidebar Top
 regions[right] = Right Sidebar Bottom
-regions[footer_top] = Footer Top
+regions[footer_top_left] = Footer Top Left
+regions[footer_top_mid] = Footer Top Middle
+regions[footer_top_right] = Footer Top Right
 regions[footer_bottom] = Footer Bottom
 
 features[] = name

@@ -75,6 +75,7 @@ function liberty_preprocess_page(&$variables) {
      }
    }
    $exploder = implode(' ', $exploder);
+   $variables['body_classes'] = $exploder;
 
   liberty_body_classes($variables);
   liberty_html_attributes($variables);

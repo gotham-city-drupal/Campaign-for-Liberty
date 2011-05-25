@@ -167,6 +167,7 @@
   <div id="page">
     <div class="limiter clear-block">
       <div id="main" class="clear-block">
+
         <?php if (!empty($left) || !empty($left_top)): ?>
         <div id="left" class="sidebar">
           <?php if($left_top): ?>
@@ -226,12 +227,23 @@
   <div id="footer">
   <div id="footer_main">
     <div class="limiter clear-block">
-      <div id="footer_top">
-        <?php print $footer_top; ?>
+
+      <div id="footer_top" class="clear-block">
+        <div id="footer_top_left">
+         <?php print $footer_top_left; ?>
+        </div>
+        <div id="footer_top_mid">
+          <?php print $footer_top_mid; ?>
+        </div>
+        <div id="footer_top_right">
+          <?php print $footer_top_right; ?>
+        </div>
       </div>
-      <div id="footer_bottom">
+
+      <div id="footer_bottom" class="clear-block">
         <?php print $footer_bottom; ?>
       </div>
+
       <?php print $footer_message; ?>
     </div>
   </div>
