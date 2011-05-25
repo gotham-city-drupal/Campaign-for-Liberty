@@ -1,0 +1,39 @@
+; $Id: liberty.info,v 1.0 2011/4/28 00:32:00 pirog Exp $
+
+engine = phptemplate
+
+screenshot = img/screenshot.png
+
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/htmlelements.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/navigation.css
+stylesheets[all][] = css/typography.css
+stylesheets[all][] = css/color.css
+
+scripts[] = js/liberty.js
+
+regions[header_top] = Header Top
+regions[header_bottom] = Header Bottom
+regions[left_top] = Left Sidebar Top
+regions[left] = Left Sidebar Bottom
+regions[content_top] = Content Top
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[right_top] = Right Sidebar Top
+regions[right] = Right Sidebar Bottom
+regions[footer_top] = Footer Top
+regions[footer_bottom] = Footer Bottom
+
+features[] = name
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+
+core = "6.x"
+description = "Campaign for Libety Theme"
+name = "Liberty"
+version = "6.x-2.0"
