@@ -1,0 +1,25 @@
+/* $Id: ie-lt8.css,v 1.0 2011/4/28 00:32:00 pirog Exp $ */
+
+/* Fixes for IE < 8 */
+input.form-submit {
+  padding: 1px;
+}
+
+#header_search .form-submit {
+  margin-left: 4px;
+}
+
+/* www.aestheticallyloyal.com/public/optimize-legibility/ */
+div#main-menu ul.links li a {
+  text-rendering: optimizeLegibility;
+}
+
+/* maxvoltar.com/archive/-webkit-font-smoothing */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.ie7 .views-row,.ie7 .content {
+  zoom: 1;
+  display: block;
+}
