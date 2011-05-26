@@ -132,6 +132,7 @@ ol {
 #content div.tabs ul {
   margin: 0;
   padding: 0;
+  white-space: normal;
 }
 
 #content div.tabs li {
