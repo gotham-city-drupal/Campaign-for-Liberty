@@ -146,7 +146,16 @@ function menu_links_features_export_options() {
  * Callback for generating the menu link exportable identifier.
  */
 function menu_links_features_identifier($link) {
-  return isset($link['menu_name'], $link['link_path']) ? "{$link['menu_name']}:{$link['link_path']}" : FALSE;
+  // Look up the node, if it has a uuid, we need to use that instead
+  $path = explode('/',$link['link_path']);
+  if($node = node_load(array('nid' => $path[1]))) {
+    $link['uuid'] = $node->uuid;
+  }
+  if(!empty($link['uuid'])) {
+    return isset($link['menu_name'], $link['uuid']) ? "{$link['menu_name']}:{$link['uuid']}" : FALSE;
+  } else {
+    return isset($link['menu_name'], $link['link_path']) ? "{$link['menu_name']}:{$link['link_path']}" : FALSE;
+  }
 }
 
 /**
@@ -195,9 +204,24 @@ function menu_links_features_export_render($module, $data) {
       // Replace plid with a parent path.
       if (!empty($link['plid']) && $parent = menu_link_load($link['plid'])) {
         $link['parent_path'] = $parent['link_path'];
+        // Check for uuid 
+        $parent_path = explode('/',$parent['link_path']);
+
+        if($parent_node = node_load(array('nid' => $parent_path[1]))) {
+          $link['parent_uuid'] = $parent_node->uuid;
+        }
       }
       unset($link['plid']);
       unset($link['mlid']);
+
+      // Load the uuid
+      $path = explode('/',$link['link_path']);
+
+      if($node = node_load(array('nid' => $path[1]))) {
+        $link['uuid'] = $node->uuid;
+        // Otherwise it will always be overridden
+        unset($link['link_path']);
+      }
 
       $code[] = "  // Exported menu link: {$identifier}";
       $code[] = "  \$menu_links['{$identifier}'] = ". features_var_export($link, '  ') .";";
@@ -239,13 +263,18 @@ function menu_links_features_rebuild_ordered($menu_links, $reset = FALSE) {
   if (!isset($ordered) || $reset) {
     $ordered = array();
     $unordered = features_get_default('menu_links');
-
     // Order all links by depth.
     if ($unordered) {
       do {
         $current = count($unordered);
         foreach ($unordered as $key => $link) {
-          $identifier = menu_links_features_identifier($link);
+          // This doesn't make sense just use the key?
+          // $identifier = menu_links_features_identifier($link);
+          $identifier = $key;
+          // Set the uuid system name if the parent_uuid exists
+          if($link['parent_uuid'] && $parent_node = node_get_by_uuid($link['parent_uuid'])) {
+            $link['parent_path'] = $link['parent_uuid'];
+          }
           $parent = isset($link['parent_path']) ? "{$link['menu_name']}:{$link['parent_path']}" : '';
           if (empty($parent)) {
             $ordered[$identifier] = 0;
@@ -257,28 +286,43 @@ function menu_links_features_rebuild_ordered($menu_links, $reset = FALSE) {
             $all_links[$identifier] = $link;
             unset($unordered[$key]);
           }
+          elseif (!empty($parent)) {
+            $ordered[$parent] = 0;
+            $ordered[$identifier] = $ordered[$parent] + 1;
+            $all_links[$identifier] = $link;
+            unset($unordered[$key]);
+          }
         }
       } while (count($unordered) < $current);
     }
     asort($ordered);
   }
-
   // Ensure any default menu items that do not exist are created.
   foreach (array_keys($ordered) as $identifier) {
     $link = $all_links[$identifier];
     $existing = features_menu_link_load($identifier);
-    if (!$existing || in_array($link, $menu_links)) {
+    if (!$existing || !empty($menu_links[$identifier])) {
       // Retrieve the mlid if this is an existing item.
       if ($existing) {
         $link['mlid'] = $existing['mlid'];
       }
+      // Load the actual path based on the uuid if it exists
+      if($link['uuid'] && $node = node_get_by_uuid($link['uuid'])) {
+        $link['link_path'] = 'node/' . $node->nid;
+      }
       // Retrieve the plid for a parent link.
-      if (!empty($link['parent_path']) && $parent = features_menu_link_load("{$link['menu_name']}:{$link['parent_path']}")) {
+      if (!empty($link['parent_path'])) {
+        // Load the actual path based on the uuid if it exists
+        if($link['parent_uuid'] && $parent_node = node_get_by_uuid($link['parent_uuid'])) {
+          $link['parent_path'] = $link['parent_uuid'];
+        }
+        $parent = features_menu_link_load("{$link['menu_name']}:{$link['parent_path']}");    
         $link['plid'] = $parent['mlid'];
       }
       else {
         $link['plid'] = 0;
       }
+      $link['customized'] = TRUE;
       menu_link_save($link);
     }
   }
@@ -289,6 +333,12 @@ function menu_links_features_rebuild_ordered($menu_links, $reset = FALSE) {
  */
 function features_menu_link_load($identifier) {
   list($menu_name, $link_path) = explode(':', $identifier, 2);
+
+  // If $link_path is a valid uuid, set $link_path to the real node path
+  if (module_exists('uuid') && $node = node_get_by_uuid($link_path)) {
+    $link_path = 'node/' . $node->nid;
+  }
+
   $result = db_query("SELECT menu_name, mlid, plid, link_path, router_path, link_title, options, module, hidden, external, has_children, expanded, weight FROM {menu_links} WHERE menu_name = '%s' AND link_path = '%s'", $menu_name, $link_path);
   while ($link = db_fetch_array($result)) {
     $link['options'] = unserialize($link['options']);
