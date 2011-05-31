@@ -116,6 +116,14 @@ body,table,td {
   background: url("../img/footer-bottom-bg.jpg") no-repeat center top;
 }
 
+#footer_bottom .edit a {
+  color:#FFFFFF;
+}
+
+#footer_bottom .block-block {
+  color: #C5B78E;
+}
+
 #footer a.feed-icon {
   background: url("../img/icon-rss-red.gif") center center no-repeat;
 }

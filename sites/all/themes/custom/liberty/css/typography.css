@@ -46,6 +46,18 @@ html>body,html>textarea {
   text-indent: -99999px;
 }
 
+#footer_bottom {
+  font-size: 11px;
+}
+
+#footer_bottom p {
+  margin:0;
+}
+
+#footer_bottom .edit a:hover {
+  text-decoration:underline;
+}
+
 a {
   text-decoration: none;
 }
