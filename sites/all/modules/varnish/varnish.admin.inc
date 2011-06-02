@@ -1,5 +1,4 @@
 <?php
-
 /**
  * @file
  * varnish.admin.inc
@@ -106,10 +105,10 @@ function varnish_admin_settings_form_validate($form, &$form_state) {
  */
 function varnish_admin_reports_page() {
   // connect to varnish and do a full status report
-  $status = _varnish_terminal_run('stats');
+  $status = _varnish_terminal_run(array('stats'));
   $output = '';
-  foreach ($status as $stat) {
-    $output .= '<pre>'. $stat['msg'] .'</pre>';
+  foreach ($status as $terminal => $stat) {
+    $output .= '<pre>'. $stat['stats']['msg'] .'</pre>';
   }
   return $output;
 }

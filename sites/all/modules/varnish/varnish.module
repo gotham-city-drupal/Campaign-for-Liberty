@@ -69,19 +69,19 @@ function varnish_perm() {
 /**
  * Implementation of hook_requirements()
  *
- * Insure that varnish's connection is good.
+ * Ensure that varnish's connection is good.
  */
 function varnish_requirements($phase) {
   if ($phase == 'runtime') {
     $requirements = array('varnish');
     $requirements['varnish']['title'] = t('Varnish status');
     // try a varnish admin connect, report results
-    $status = _varnish_terminal_run('status');
+    $status = _varnish_terminal_run(array('status'));
     $terminals = explode(' ', variable_get('varnish_control_terminal', '127.0.0.1:6082'));
     foreach ($terminals as $term) {
       list($server, $port) = explode(':', $term);
       $stat = array_shift($status);
-      if ($stat['code'] === FALSE) {
+      if ($stat['status']['code'] === FALSE) {
         $requirements['varnish']['value'] = t('Varnish connection broken');
         $requirements['varnish']['severity'] = REQUIREMENT_ERROR;
         $requirements['varnish']['description'] = t('The Varnish control terminal is not responding at %server on port %port.', array('%server' => $server, '%port' => $port));
@@ -144,7 +144,7 @@ function varnish_expire_cache($paths) {
   $host = _varnish_get_host();
   $base = base_path();
   $purge = implode('$|^'. $base, $paths);
-   _varnish_terminal_run('purge req.http.host ~ '. $host .' && req.url ~ "^'. $base . $purge .'$"');
+  _varnish_terminal_run(array('purge req.http.host ~ '. $host .' && req.url ~ "^'. $base . $purge .'$"'));
 }
 
 /**
@@ -206,11 +206,11 @@ function varnish_get_status() {
   static $results = NULL;
   if (is_null($results)) {
     $results = array();
-    $status = _varnish_terminal_run('status');
+    $status = _varnish_terminal_run(array('status'));
     $terminals = explode(' ', variable_get('varnish_control_terminal', '127.0.0.1:6082'));
     foreach ($terminals as $terminal) {
       $stat = array_shift($status);
-      $results[$terminal] = ($stat['code'] == 200) ? VARNISH_SERVER_STATUS_UP : VARNISH_SERVER_STATUS_DOWN;
+      $results[$terminal] = ($stat['status']['code'] == 200) ? VARNISH_SERVER_STATUS_UP : VARNISH_SERVER_STATUS_DOWN;
     }
   }
   return $results;
@@ -250,10 +250,14 @@ function _varnish_get_host() {
  *
  * Utilizes sockets to talk to varnish terminal.
  */
-function _varnish_terminal_run($command) {
+function _varnish_terminal_run($commands) {
   if (!extension_loaded('sockets')) {
     // Prevent fatal errors if people don't have requirements.
     return FALSE;
+  }
+  // Convert single commands to an array so we can handle everything in the same way.
+  if (!is_array($commands)) {
+    $commands = array($commands);
   }
   $ret = array();
   $terminals = explode(' ', variable_get('varnish_control_terminal', '127.0.0.1:6082'));
@@ -291,23 +295,27 @@ function _varnish_terminal_run($command) {
         }
       }
     }
-
-    // Send command and get response.
-    $result = socket_write($client, "$command\n");
-    $status = _varnish_read_socket($client);
-
-    if ($status['code'] != 200) {
-      watchdog('varnish', 'Recieved status code !code running %command. Full response text: !error', array('!code' => $status['code'], '%command' => $command, '!error' => $status['msg']), WATCHDOG_ERROR);
-      $ret[] = FALSE;
+    foreach ($commands as $command) {
+      if ($status = _varnish_execute_command($client, $command)) {
+        $ret[$terminal][$command] = $status;
+      }
     }
-    else {
-      // successful connection
-      $ret[] = $status;
-    }
-    socket_close($client);
   }
-  
   return $ret;
+}
+
+function _varnish_execute_command($client, $command) {
+  // Send command and get response.
+  $result = socket_write($client, "$command\n");
+  $status = _varnish_read_socket($client);
+  if ($status['code'] != 200) {
+     watchdog('varnish', 'Recieved status code !code running %command. Full response text: !error', array('!code' => $status['code'], '%command' => $command, '!error' => $status['msg']), WATCHDOG_ERROR);
+     return FALSE;
+  }
+  else {
+    // successful connection
+    return $status;
+  }
 }
 
 /**
