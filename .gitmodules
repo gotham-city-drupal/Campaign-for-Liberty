@@ -1,0 +1,3 @@
+[submodule "sites/all/themes/custom/liberty"]
+	path = sites/all/themes/custom/liberty
+	url = https://pirog@github.com/pirog/liberty.git
