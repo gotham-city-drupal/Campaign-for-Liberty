@@ -92,6 +92,7 @@ class VarnishTestCase extends DrupalWebTestCase {
     $user = $old_user;
     return $result;
   }
+
   /**
    * Delete a drupal comment.
    * @param $comment the comment object or array.
@@ -120,15 +121,18 @@ class VarnishTestCase extends DrupalWebTestCase {
     // Clear the cache so an anonymous user sees that his comment was deleted.
     cache_clear_all();
   }
+
   /**
    * Run a varnish command and make sure it worked for us.
    * @param string $cmd the command to execute.
    */
-  function assertVarnishCommand($cmd) {
-    $statuses = _varnish_terminal_run($cmd);
-    foreach ($statuses as $status) {
-      $this->assertEqual($status['code'], '200', t('Command: %command
-        was executed properly.', array('%command' => $cmd)));
+  function assertVarnishCommand($cmds) {
+    $statuses = _varnish_terminal_run($cmds);
+    foreach ($statuses as $terminal => $commands) {
+      foreach ($commands as $command => $status) {
+        $this->assertEqual($status['code'], '200', t('Command: %command
+          was executed properly.', array('%command' => $command)));
+      }
     }
   }
 }
@@ -146,11 +150,15 @@ class VarnishConnectionTestCase extends VarnishTestCase {
   }
 
   function testVarnishStatus() {
-    $this->assertVarnishCommand('status');
+    $this->assertVarnishCommand(array('status'));
   }
 
   function testVarnishStats() {
-    $this->assertVarnishCommand('stats');
+    $this->assertVarnishCommand(array('stats'));
+  }
+
+  function testMultipleCommands() {
+    $this->assertVarnishCommand(array('stats', 'status'));
   }
 }
 
