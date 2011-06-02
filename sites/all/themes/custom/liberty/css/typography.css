@@ -24,7 +24,7 @@ html>body,html>textarea {
   font-size: 13px;
 }
 
-.header_links .header_links .block-menu a:hover {
+.header_links, .header_links .block-menu a:hover {
   text-decoration: underline;
 }
 
@@ -50,6 +50,22 @@ html>body,html>textarea {
 #right_bottom {
   font-size: 13px;
   line-height: 17px;;
+}
+
+#footer_bottom .block-menu li a {
+  line-height: 11px;
+}
+
+#footer_bottom .block-menu li a:hover {
+  text-decoration: underline;
+}
+
+#footer_bottom .block-menu li {
+  display: inline;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
 }
 
 #footer #footer_main {

@@ -34,7 +34,7 @@ body,table,td {
   color: #333;
 }
 
-.header_links .header_links .block-menu a:hover {
+.header_links, .header_links .block-menu a:hover {
   color: #473f29;
 }
 
@@ -147,6 +147,12 @@ body,table,td {
 #footer_bottom .block-block {
   color: #C5B78E;
 }
+
+#footer_bottom .block-menu li a {
+  color: #c5b78e;
+  border-right: 1px solid #6f605d;
+}
+
 
 #footer a.feed-icon {
   background: url("../img/icon-rss-red.gif") center center no-repeat;

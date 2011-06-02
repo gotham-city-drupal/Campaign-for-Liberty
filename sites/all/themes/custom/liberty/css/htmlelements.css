@@ -83,6 +83,37 @@ thead th {
   padding-top: 15px;
 }
 
+#footer_bottom .block-menu {
+  margin-top: 0;
+}
+
+#footer_bottom .block-menu li.last a {
+  border:0;
+}
+
+#footer_bottom .block-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#footer_bottom .block-menu li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#footer_bottom .block-menu ul.menu li a {
+  display:inline;
+}
+
+#footer_bottom .block-menu li a {
+  padding: 0 10px 0 5px;
+}
+
+#footer_bottom .block-menu li.first a {
+  padding-left:0;
+}
+
 /* Boxes */
 #comments .comment .content {
   padding: 1em;
