@@ -19,6 +19,20 @@ html>body,html>textarea {
   font-size: 18px;
 }
 
+.header_links {
+  font-family: "Lucida Sans", "Lucida Grande", Lucida, sans-serif;
+  font-size: 13px;
+}
+
+.header_links .header_links .block-menu a:hover {
+  text-decoration: underline;
+}
+
+.header_links .block-menu ul li,.header_links .block-menu ul.menu li.leaf,.header_links .block-menu ul.menu li.collapsed,.header_links .block-menu ul.menu li.expanded,.header_links .block-menu .item-list ul li {
+  list-style-type: none;
+  list-style-image: none;
+}
+
 #breadcrumb {
   font-size: 13px;
 }
@@ -52,10 +66,6 @@ html>body,html>textarea {
 
 #footer_bottom p {
   margin:0;
-}
-
-#footer_bottom .edit a:hover {
-  text-decoration:underline;
 }
 
 a {
@@ -94,6 +104,10 @@ blockquote {
 
 .edit {
   font-size: 10px; 
+}
+
+.edit a:hover {
+  text-decoration:underline;
 }
 
 hr {

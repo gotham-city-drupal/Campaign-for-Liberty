@@ -60,6 +60,25 @@ thead th {
   margin-right: 5px;
 }
 
+.header_links .block-menu ul li,.header_links .block-menu ul.menu li.leaf,.header_links .block-menu ul.menu li.collapsed,.header_links .block-menu ul.menu li.expanded,.header_links .block-menu .item-list ul li {
+  padding: 0;
+  float: left;
+  padding: 16px 6px 6px 11px;
+}
+
+.header_links .block-menu ul li.first,.header_links .block-menu ul.menu li.leaf.first,.header_links .block-menu ul.menu li.collapsed.first,.header_links .block-menu ul.menu li.expanded.first,.header_links .block-menu .item-list ul li.first,#block-menu-menu-authheader ul li.first,#block-menu-menu-authheader ul.menu li.leaf.first,#block-menu-menu-authheader ul.menu li.collapsed.first,#block-menu-menu-authheader ul.menu li.expanded.first,#block-menu-menu-authheader .item-list ul li.first {
+  border: none;
+}
+
+
+.header_links .block {
+  float:right;
+}
+
+.header_links .edit {
+  float:right;
+}
+
 #content .block h2 {
   padding-top: 15px;
 }

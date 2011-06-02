@@ -14,6 +14,30 @@ body,table,td {
   background: url("../img/header-bg.jpg") repeat-x left top;
 }
 
+.header_links .block-menu a {
+  color: #473f29;
+}
+
+.header_links {
+  color: #473f29;
+}
+
+.header_links a {
+  color: #473f29;
+} 
+
+.header_links .block-menu ul li,.header_links .block-menu ul.menu li.leaf,.header_links .block-menu ul.menu li.collapsed,.header_links .block-menu ul.menu li.expanded,.header_links .block-menu .item-list ul li {
+  border-left: 1px solid #e8d7a3;
+}
+
+.header_links .edit a {
+  color: #333;
+}
+
+.header_links .header_links .block-menu a:hover {
+  color: #473f29;
+}
+
 #header_main {
   background: url("../img/main-header.jpg") no-repeat center top;
 }

@@ -47,7 +47,7 @@ function liberty_preprocess_block_editing(&$vars, $hook) {
   // Display 'edit menu' for Menu blocks.
   if (($block->module == 'menu' || ($block->module == 'user' && $block->delta == 1)) && user_access('administer menu')) {
     $menu_name = ($block->module == 'user') ? 'navigation' : $block->delta;
-    $edit_links[] = l('<span>' . t('Edit menu') . '</span>', 'admin/build/menu-customize/' . $menu_name,
+    $edit_links[] = l('<span>' . t('| Edit menu') . '</span>', 'admin/build/menu-customize/' . $menu_name,
       array(
         'attributes' => array(
           'title' => t('Edit the menu that defines this block.'),
