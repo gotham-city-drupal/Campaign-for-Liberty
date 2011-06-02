@@ -243,12 +243,11 @@
       <div id="footer_bottom" class="clear-block">
         <?php print $footer_bottom; ?>
       </div>
-
-      <?php print $footer_message; ?>
     </div>
   </div>
   </div>
 
   <?php print $closure; ?>
+
 </body>
 </html>
