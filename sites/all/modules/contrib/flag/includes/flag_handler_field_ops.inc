@@ -1,5 +1,5 @@
 <?php
-// $Id: flag_handler_field_ops.inc,v 1.1.2.5.2.6 2010/12/28 00:02:32 mooffie Exp $
+// $Id: flag_handler_field_ops.inc,v 1.1.2.6 2010/01/08 04:48:43 quicksketch Exp $
 
 /**
  * @file
@@ -20,12 +20,8 @@ class flag_handler_field_ops extends views_handler_field {
    * relationship and reads its 'flag' option, which holds the flag name.
    */
   function get_flag() {
-    // When editing a view it's possible to delete the relationship (either by
-    // error or to later recreate it), so we have to guard against a missing
-    // one.
-    if (isset($this->view->relationship[$this->options['relationship']])) {
-      return $this->view->relationship[$this->options['relationship']]->get_flag();
-    }
+    $flag_name = $this->view->relationship[$this->options['relationship']]->options['flag'];
+    return flag_get_flag($flag_name);
   }
 
   /**
@@ -66,11 +62,9 @@ class flag_handler_field_ops extends views_handler_field {
    * it's flagged.
    */
   function query() {
-    if (!($flag = $this->get_flag())) {
-      return; // Error message is printed in render().
-    }
-    $info = $flag->get_views_info();
     $parent = $this->get_parent_relationship();
+    $flag = $this->get_flag();
+    $info = $flag->get_views_info();
 
     // Find out if the content is flagged. We can't just peek at some field in
     // our loaded table because it doesn't always reflect the user browsing the
@@ -86,11 +80,6 @@ class flag_handler_field_ops extends views_handler_field {
       $join->extra[] = array(
         'field' => 'uid',
         'value' => '***CURRENT_USER***',
-        'numeric' => TRUE,
-      );
-      $join->extra[] = array(
-        'field' => 'sid',
-        'value' => '***FLAG_CURRENT_USER_SID***',
         'numeric' => TRUE,
       );
     }
@@ -111,30 +100,35 @@ class flag_handler_field_ops extends views_handler_field {
    * (e.g. checking user roles) possible without causing duplicate rows.
    */
   function pre_render($values) {
-    if (!($flag = $this->get_flag())) {
-      return; // Error message is printed in render().
+    $flag = $this->get_flag();
+
+    if (!$flag->user_access()) {
+      // User has no permission to use this flag.
+      return;
     }
 
     $ids = array();
     foreach ($values as $row) {
       $content_id = $row->{$this->aliases['content_id']};
-      $is_flagged = $row->{$this->aliases['is_flagged']};
       if (isset($content_id)) {
-        $ids[$content_id] = $is_flagged ? 'unflag' : 'flag';
+        $ids[$content_id] = TRUE;
       }
     }
-    $this->flag_applies = $ids ? $flag->access_multiple($ids) : array();
+    $this->flag_applies = $ids ? $flag->applies_to_content_id_array(array_keys($ids)) : array();
   }
 
   function render($values) {
-    if (!($flag = $this->get_flag())) {
-      return t('Missing flag'); // get_flag() itself will print a more detailed message.
+    $flag = $this->get_flag();
+
+    if (!$flag->user_access()) {
+      // User has no permission to use this flag.
+      return;
     }
 
     $content_id = $values->{$this->aliases['content_id']};
     $is_flagged = $values->{$this->aliases['is_flagged']};
 
-    if (empty($this->flag_applies[$content_id])) {
+    if (!isset($this->flag_applies[$content_id])) {
       // Flag does not apply to this content.
       return;
     }

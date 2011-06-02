@@ -1,0 +1,14 @@
+; $Id: pathrules.info,v 1.1.2.2 2010/07/09 00:13:09 kaleworsley Exp $
+name=Path Rules
+description=Rules conditions based on url paths.
+core=6.x
+package = "Rules"
+dependencies[]=rules
+package = "Rules"
+
+; Information added by drupal.org packaging script on 2010-07-09
+version = "6.x-1.1"
+core = "6.x"
+project = "pathrules"
+datestamp = "1278635108"
+

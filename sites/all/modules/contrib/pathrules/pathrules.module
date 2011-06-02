@@ -1,0 +1,82 @@
+<?php
+// $Id: pathrules.module,v 1.1.2.1 2010/07/09 00:13:09 kaleworsley Exp $ 
+/**
+ * @file
+ * Rules conditions based on url paths.
+ *
+ * @author Kale Worsley (kale@egressive.com)
+ */
+
+/**
+ * Implementation of hook_rules_condition_info().
+ */
+function pathrules_rules_condition_info() {
+  return array(
+    'pathrules_checkpath' => array(
+      'label' => t('Check path'),
+      'arguments' => array(
+        'path' => array('type' => 'string', 'label' => t('Path to check')),
+        'op' => array('type' => 'string', 'label' => t('Op')),
+      ),
+      'module' => 'System',
+    ),
+  );
+}
+
+/**
+ * Rules condition form.
+ */
+function pathrules_checkpath_form($settings, &$form) {
+  $form['settings']['path'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Path'),
+    '#default_value' => $settings['path'],
+    '#description' => t('The path that is check against the URL. Beginning and trailing spaces will be stripped.'),
+  );
+  $form['settings']['op'] = array(
+    '#type' => 'select',
+    '#title' => t('Operator'),
+    '#options' => array(
+      'starts' => 'Starts with',
+      'ends' => 'Ends with',
+      'contains' => 'Contains',
+      'equal' => 'Is equal to',
+    ),
+    '#default_value' => $settings['op'],
+  );
+}
+
+/**
+ * Rules condition callback.
+ */
+function pathrules_checkpath($path, $op) {
+  $path = trim($path, '/');
+  $url = trim($_REQUEST['q'], '/');
+  switch ($op) {
+    case 'starts':
+      $pos = strpos('/'. $url, '/'. $path);
+      if ($pos !== FALSE) {
+        if ($pos == 0) {
+          return TRUE;
+        }
+      }
+      break;
+    case 'ends':
+      if (drupal_substr($url, -drupal_strlen($path), drupal_strlen($path)) == $path) {
+        return TRUE;
+      }
+      break;
+    case 'contains':
+      $pos = strpos($url, $path);
+      if ($pos !== FALSE) {
+        return TRUE;
+      }
+      break;
+    case 'equal':
+      if ($path == $url) {
+        return TRUE;
+      }
+      break;
+  }
+  return FALSE;
+}
