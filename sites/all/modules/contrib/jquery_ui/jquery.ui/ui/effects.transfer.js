@@ -1,7 +1,7 @@
 /*
- * jQuery UI Effects Transfer @VERSION
+ * jQuery UI Effects Transfer 1.6
  *
- * Copyright (c) 2009 AUTHORS.txt (http://ui.jquery.com/about)
+ * Copyright (c) 2008 AUTHORS.txt (http://ui.jquery.com/about)
  * Dual licensed under the MIT (MIT-LICENSE.txt)
  * and GPL (GPL-LICENSE.txt) licenses.
  *
@@ -31,8 +31,8 @@ $.effects.transfer = function(o) {
 		transfer.css({
 			top: position.top,
 			left: position.left,
-			height: el.outerHeight() - parseInt(transfer.css('borderTopWidth'),10) - parseInt(transfer.css('borderBottomWidth'),10),
-			width: el.outerWidth() - parseInt(transfer.css('borderLeftWidth'),10) - parseInt(transfer.css('borderRightWidth'),10),
+			height: el.outerHeight() - parseInt(transfer.css('borderTopWidth')) - parseInt(transfer.css('borderBottomWidth')),
+			width: el.outerWidth() - parseInt(transfer.css('borderLeftWidth')) - parseInt(transfer.css('borderRightWidth')),
 			position: 'absolute'
 		});
 
@@ -41,8 +41,8 @@ $.effects.transfer = function(o) {
 		animation = {
 			top: position.top,
 			left: position.left,
-			height: target.outerHeight() - parseInt(transfer.css('borderTopWidth'),10) - parseInt(transfer.css('borderBottomWidth'),10),
-			width: target.outerWidth() - parseInt(transfer.css('borderLeftWidth'),10) - parseInt(transfer.css('borderRightWidth'),10)
+			height: target.outerHeight() - parseInt(transfer.css('borderTopWidth')) - parseInt(transfer.css('borderBottomWidth')),
+			width: target.outerWidth() - parseInt(transfer.css('borderLeftWidth')) - parseInt(transfer.css('borderRightWidth'))
 		};
 
 		// Animate

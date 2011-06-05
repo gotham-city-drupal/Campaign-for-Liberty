@@ -1,20 +1,17 @@
-
 body,html {
 	margin: 0;
 	padding: 0;
 	font-size: 12px;
 	font-family: Arial;
-	background: #191919;
+	background: #000;
 }
 
 ul.effects {
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
 ul.effects li {
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	width: 120px;
@@ -27,7 +24,7 @@ ul.effects li {
 div.effect {
 	width: 120px;
 	height: 100px;
-	background: #ccc;
+	background: #333;
 	border: 5px outset #aaa;
 	float: left;
 	cursor: pointer;
@@ -35,13 +32,12 @@ div.effect {
 }
 
 div.current {
-	border: 5px outset #FF9C08;
-	background: #FF9C08;
+	border: 5px outset #FF0000;
+	background: #660000;
 }
 
 div.effect p {
-	color: #191919;
-	font-weight: bold;
+	color: #eee;
 	margin: 0px;
 	padding: 10px;
 }
