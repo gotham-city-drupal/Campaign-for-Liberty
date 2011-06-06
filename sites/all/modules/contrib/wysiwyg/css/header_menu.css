@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+
+#block-menu-menu-header ul li.first a {
+  background: url("../img/login-button.png") no-repeat scroll left top transparent;
+  display: block;
+  height: 20px;
+  text-indent: -9999px;
+  width: 66px;
+}

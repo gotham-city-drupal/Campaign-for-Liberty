@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+
+/* jcarousel styles */
+.block .jcarousel-skin-default ul,.block .jcarousel-skin-ie7 li {
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel-skin-default .jcarousel-item {
+  border: none;
+}
+
+.jcarousel-skin-default ul li {
+  list-style-type: none;
+}
+
+.jcarousel-skin-default  .jcarousel-item {
+  width: 165px;
+  height: 220px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.jcarousel-skin-default  .jcarousel-clip-horizontal {
+  width: 165px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+.jcarousel-skin-default .jcarousel-container-horizontal {
+  width: 165px;
+  height: 220px;
+  padding: 0 22px;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+}
+
+.jcarousel-skin-default .jcarousel-prev-horizontal,.jcarousel-skin-default .jcarousel-prev-horizontal:hover
+  {
+  width: 22px;
+  height: 39px;
+  left: 0;
+  top: 80px;
+  background: url("../img/arrow-left.png") center no-repeat;
+}
+
+.jcarousel-skin-default .jcarousel-next-horizontal,.jcarousel-skin-default .jcarousel-next-horizontal:hover
+  {
+  width: 22px;
+  height: 39px;
+  top: 80px;
+  right: 0;
+  background: url("../img/arrow-right.png") center no-repeat;
+}
