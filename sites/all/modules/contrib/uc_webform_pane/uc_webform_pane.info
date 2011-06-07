@@ -1,0 +1,14 @@
+name = Ubercart Webform Checkout Pane
+description = "Allows Webform nodes to be displayed as checkout panes."
+dependencies[] = uc_product
+dependencies[] = uc_store
+dependencies[] = uc_cart
+dependencies[] = webform
+package = Ubercart - extra
+
+; Information added by drupal.org packaging script on 2011-05-20
+version = "6.x-3.4"
+core = "6.x"
+project = "uc_webform_pane"
+datestamp = "1305895317"
+

@@ -1,0 +1,13 @@
+; $Id: uc_NDF.info,v 1.1 2009/02/02 17:56:57 longwave Exp $
+name = NDF
+description = Process payments using the NDF API.
+dependencies[] = uc_credit
+package = Ubercart - payment
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-02-07
+version = "6.x-1.0"
+core = "6.x"
+project = "uc_NDF"
+datestamp = "1234039549"
+

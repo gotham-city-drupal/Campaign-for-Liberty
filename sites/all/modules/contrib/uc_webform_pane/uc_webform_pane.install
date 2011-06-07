@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for uc_webform_pane.
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function uc_webform_pane_install() {
+  // Create tables.
+  drupal_install_schema('uc_webform_pane');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function uc_webform_pane_schema() {
+  $schema['uc_webform_pane'] = array(
+    'fields' => array(
+      'nid' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+      'cid_order_id' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+    ),
+    'indexes' => array(
+      'nid' => array('nid'),
+    ),
+    'primary key' => array('nid', 'cid_order_id'),
+  );
+  
+  $schema['uc_webform_pane_submissions'] = array(
+    'fields' => array(
+      'nid' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+      'sid' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+      'order_id' => array('type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE, 'default' => 0),
+    ),
+    'indexes' => array(
+      'nid' => array('nid'),
+    ),
+    'primary key' => array('nid', 'order_id'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function uc_webform_pane_uninstall() {
+  // Remove tables.
+  drupal_uninstall_schema('uc_webform_pane');
+}
+
+/**
+ * Add a new table to store webform submissions with related order ids.
+ */
+function uc_webform_pane_update_6204() {
+  $ret = array();
+
+  // Create the new table for storing submissions.
+  if (!db_table_exists('uc_webform_pane_submissions')) {
+    db_create_table($ret, 'uc_webform_pane_submissions', array(
+      'description' => 'Stores webform submissions with related order ids.',
+      'fields' => array(
+        'nid' => array(
+          'description' => 'The node identifier of a webform.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+          'default' => 0,
+        ),
+        'sid' => array(
+          'description' => 'The submission identifier.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+          'default' => 0,
+        ),
+        'order_id' => array(
+          'description' => 'The order identifier.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+          'default' => 0,
+        ),
+      ),
+      'indexes' => array('nid' => array('nid')),
+      'primary key' => array('nid', 'order_id'),
+    ));
+  }
+  
+  // Migrate old submissions to the new table.
+  $ret[] = update_sql("INSERT IGNORE INTO {uc_webform_pane_submissions} (nid, sid, order_id) SELECT w.nid, w.sid, w.data FROM {uc_webform_pane} p, {webform_submitted_data} w WHERE p.nid = w.nid AND p.cid_order_id = w.cid");
+
+  return $ret;
+}

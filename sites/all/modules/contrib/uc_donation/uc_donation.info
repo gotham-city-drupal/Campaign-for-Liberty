@@ -1,0 +1,13 @@
+; $Id: uc_donation.info,v 1.1.4.2 2009/03/13 00:05:12 greenskin Exp $
+name = Donation Product
+description = "This node module the creation of donation products."
+dependencies[] = uc_cart
+package = Ubercart - extra
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-06-08
+version = "6.x-2.0-beta3"
+core = "6.x"
+project = "uc_donation"
+datestamp = "1244475420"
+

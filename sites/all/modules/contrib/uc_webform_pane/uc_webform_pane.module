@@ -1,0 +1,514 @@
+<?php
+
+/**
+ * @file uc_webform_pane.module
+ * 
+ * Ubercart Webform Checkout Panes.
+ * 
+ * @note Webform data will be stored in database during checkout, even when order is not complete.
+ */ 
+
+/**
+ * Implementation of hook_theme().
+ */
+function uc_webform_pane_theme() {
+  $theme = array(
+    'uc_webform_pane_order_view' => array(
+      'arguments' => array('data' => NULL),
+    ),
+  );
+  
+  return $theme;
+}
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function uc_webform_pane_form_alter(&$form, &$form_state, $form_id) {
+
+  // Make sure the webform form supports files.
+  if ($form_id == 'uc_cart_checkout_form') {
+    $form['#attributes']['enctype'] = 'multipart/form-data';
+    // Support for Webform Validation module
+    if (function_exists('webform_validation_validate')) {
+      $form['#validate'][] = 'uc_webform_pane_wv_validate';
+    }
+  }
+  
+  // Add a config option to webform nodes to enable them as checkout panes.
+  if ($form_id == 'webform_configure_form') {
+    $form['advanced']['uc_webform_pane'] = array(
+      '#type' => 'checkbox',
+      '#return_value' => 1,
+      '#default_value' => uc_webform_pane_nodestatus($form['nid']['#value']),
+      '#title' => t('Generate a checkout pane'),
+      '#description' => t('Allow this form to be used as a Ubercart checkout pane.'),
+      '#weight' => -15,
+      '#access' => user_access('administer store'),
+    );
+    $form['#submit'][] = 'uc_webform_pane_webform_configure_form_submit';
+  }
+  
+  // Add access validation to all UC checkout pane webforms.
+  if (preg_match('|webform_.*_form|', $form_id)) {
+    $nid = arg(1);
+    if (uc_webform_pane_nodestatus($nid)) {
+      global $user;
+      $form['uc_access'] = array(
+        '#type' => 'hidden',
+        '#value' => user_access('administer store', $user) ? '1' : '0',
+      );
+      $form['#validate'][] = 'uc_webform_pane_access_validate';
+    }
+  }
+}
+
+/**
+ * Send the values of each Webform Pane through to Webform Validation checkers.
+ */
+function uc_webform_pane_wv_validate($form, &$form_state) {
+  $panes = $form_state['values']['panes'];
+  foreach ($panes as $paneid => $values) {
+    if (substr($paneid, 0, 11) == 'webform_nid') {
+      $nid = substr($paneid, 11);
+      
+      $pane_values = array();
+      $pane_values['op'] = t('Submit');
+      $pane_values['submitted'] = $values;
+      $pane_values['details']['nid'] = $nid;
+      
+      $pane_state = array();
+      $pane_state['values'] = $pane_values;
+      
+      webform_validation_validate($form, $pane_state);
+    }
+  }
+}
+
+/**
+ * Make sure that the user trying to modify the UC checkout pane enabled webform has adequate Ubercart permissions.
+ */
+function uc_webform_pane_access_validate($form, &$form_state) {
+  if ($form_state['values']['uc_access'] === '0') {
+    form_set_error('uc_access', t('This webform is used as an Ubercart checkout pane and cannot be accessed outside of Ubercart and/or without the appropriate Ubercart permissions.'));
+  }
+}
+
+/**
+ * Mark the webform as a potential checkout pane.
+ */ 
+function uc_webform_pane_webform_configure_form_submit($form, &$form_state) {
+  if ($form_state['values']['uc_webform_pane']) {
+    if (!db_result(db_query("SELECT nid FROM {uc_webform_pane} WHERE nid = %d", $form_state['values']['nid']))) {
+      db_query("INSERT INTO {uc_webform_pane} (nid) VALUES (%d)", $form_state['values']['nid']);
+    }
+  } else {
+    db_query("DELETE FROM {uc_webform_pane} WHERE nid = %d", $form_state['values']['nid']);
+  }
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */ 
+function uc_webform_pane_nodeapi(&$node, $op, $a3 = NULL, $a4 = NUL) { 
+  if ($node->type === 'webform') {
+    switch ($op) {
+      case 'load':
+        $node->webform['uc_webform_pane'] = uc_webform_pane_nodestatus($node->nid);
+        break;
+        
+      case 'delete':
+        db_query("DELETE FROM {uc_webform_pane} WHERE nid = %d", $node->nid);
+        break;
+    }
+  }
+}
+
+/**
+ * Check if a webform node should be selectable as a checkout pane.
+ */
+function uc_webform_pane_nodestatus($nid) {
+  $found = db_result(db_query("SELECT nid FROM {uc_webform_pane} WHERE nid = %d", $nid));
+  return $found ? TRUE : FALSE;
+}
+
+/**
+ * Implementation of hook_token_list().
+ */
+function uc_webform_pane_token_list($type = 'all') {
+  $tokens = array();
+  if ($type == 'order' || $type == 'ubercart' || $type == 'all') {
+    $webforms = _uc_webform_pane_get_nodes();
+    foreach ($webforms as $webform) {
+      $nid = $webform->nid;
+      $node = node_load($nid);
+      foreach ($node->webform['components'] as $field) {
+        $tokens['order']['uc-webform-'.$nid.'-'.str_replace('_', '-', $field['form_key'])] = $node->title.': '.$field['name'];
+      }
+    }
+  }
+  return $tokens;
+}
+
+/**
+ * Implementation of hook_token_values().
+ */
+function uc_webform_pane_token_values($type, $object = NULL) {
+  $values = array();
+  switch ($type) {
+    case 'order':
+      $webforms = _uc_webform_pane_get_nodes();
+      foreach ($webforms as $webform) {
+        $nid = $webform->nid;
+        $node = node_load($nid);
+        $data = get_object_vars(_uc_webform_pane_get_data($nid, $object->order_id));
+        foreach ($node->webform['components'] as $field) {
+          $field_data = isset($data['data'][$field['cid']]['value']) ? $data['data'][$field['cid']]['value'] : NULL;
+          $field_element = webform_component_invoke($field['type'], 'display', $field, $field_data);
+          $submission_output = theme($field_element['#theme'], $field_element);
+          $values['uc-webform-'.$nid.'-'.str_replace('_', '-', $field['form_key'])] = $submission_output;
+        }
+      }
+      break;
+  }
+  return $values;
+}
+
+/**
+ * Implementation of hook_checkout_pane().
+ */ 
+function uc_webform_pane_checkout_pane() {
+  $webforms = _uc_webform_pane_get_nodes();
+  
+  $panes = array();
+  
+  foreach ($webforms as $webform) {
+    $nid = $webform->nid;
+    $funcname = '_uc_webform_pane_' . $nid;
+    
+    // Dynamically create callback function
+    if (!function_exists($funcname)) {
+      eval('function ' . $funcname . '($op, &$arg1, $arg2) { return uc_webform_pane_checkout_pane_callback('.$nid.',$op, $arg1, $arg2); } ');  
+    }
+    
+    $node = node_load($nid);
+    $panes[] = array(
+      'id' => 'webform_nid' . $nid,
+      'callback' => $funcname,
+      'title' => t($node->title),
+      'desc' => t($node->body),
+      'weight' => 0,
+      'enabled' => FALSE,
+      'process' => TRUE,
+      'collapsible' => TRUE,
+    );  
+  }
+  
+  return $panes;
+} 
+
+/**
+ * Checkout Pane callback for dynamic callback function.
+ * 
+ * @link http://www.ubercart.org/docs/developer/245/checkout.
+ * @param $arg1 is the current order object if it exists.
+ * @param $arg2 is the contents of the array of the submitted form information for that pane. 
+ */   
+function uc_webform_pane_checkout_pane_callback($nid, $op, &$arg1, $arg2) {
+  switch ($op) {
+    case 'view':
+      $form = _uc_webform_pane_edit_form($nid, $arg1->order_id, 'checkout');
+      $node = node_load($nid);
+      return array(
+        'contents' => $form,
+        'description' => t($node->body),
+      );
+      break;
+    case 'process':
+      _uc_webform_pane_save($nid, $arg1->order_id, $arg2); // save to database
+      return TRUE;
+      break;
+    case 'review':
+      return _uc_webform_pane_render($nid, $arg1->order_id);
+      break;
+    default:
+      break;
+  }
+}
+
+/**
+ * Implementation of drupal_alter('checkout_pane', $panes).
+ */
+function uc_webform_pane_checkout_pane_alter(&$panes) {
+  // Validate all the webform panes individually during the checkout process
+  foreach ($panes as $pid => $pane) {
+    if (substr($pane['id'], 0, 11) == 'webform_nid') {
+      $nid = substr($pane['id'], 11);
+      $node = node_load($nid);
+      
+      // Check if the webform submission limit has already been reached
+      if ($node->webform['submit_limit'] != -1) {
+        include_once(drupal_get_path('module', 'webform') ."/includes/webform.submissions.inc");
+        
+        global $user;
+        if (_webform_submission_limit_check($node) && ($user->uid != 0 || variable_get('cache', 0) == 0)) {
+          $panes[$pid]['enabled'] = FALSE;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implementation of hook_order_pane().
+ */
+function uc_webform_pane_order_pane() {
+  $webforms = _uc_webform_pane_get_nodes();
+  
+  $panes = array();
+  
+  foreach($webforms as $webform) {
+    $nid = $webform->nid;
+    $funcname = '_uc_webform_order_pane_' . $nid;
+    
+    // Dynamically create callback function
+    if (!function_exists($funcname)) {
+      eval('function ' . $funcname . '($op, $arg1) { return uc_webform_pane_order_pane_callback('.$nid.',$op, $arg1); } ');  
+    }
+    
+    $node = node_load($nid);
+    $panes[] = array(
+      'id' => 'webform_nid' . $nid ,
+      'callback' => $funcname,
+      'title' => $node->title,
+      'class' => 'abs-left',
+      'weight' => 7,
+      'show' => array('view', 'customer', 'edit'),
+    );
+  }
+  
+  return $panes;
+}
+
+/**
+ * Order Pane callback for dynamic order callback function.
+ */ 
+function uc_webform_pane_order_pane_callback($nid, $op, $arg1) {
+  switch ($op) {
+    case 'view':
+    case 'customer':
+      $data = _uc_webform_pane_render($nid, $arg1->order_id);
+      return theme('uc_webform_pane_order_view', $data);
+      break;
+    
+    case 'edit-form':
+      $webform = _uc_webform_pane_edit_form($nid, $arg1->order_id, 'order');
+      $node = node_load($nid);
+      $form['webform_nid'.$nid] = array(
+        '#type' => 'fieldset',
+        '#title' => t("Modify '".$node->title."' information"),
+        '#collapsible' => TRUE,
+        '#collapsed' => FALSE,
+      );
+      foreach ($webform as $field_id => $field_settings) {
+        $form['webform_nid'.$nid][$field_id] = $field_settings;
+      }
+      return $form;
+      break;
+    
+    case 'edit-theme':
+      drupal_add_css(drupal_get_path('module', 'uc_webform_pane') .'/uc_webform_pane.css');
+      $output = '<div id="webform-'.$nid.'-select"></div><table class="uc-webform-edit-table">';
+      foreach (element_children($arg1['webform_nid'.$nid]) as $field) {
+        if ($arg1['webform_nid'.$nid][$field]['#type'] == 'value') {
+          continue;
+        } else if ($arg1['webform_nid'.$nid][$field]['#type'] == 'hidden') {
+          $output .= drupal_render($arg1['webform_nid'.$nid][$field]);
+        } else {
+          $title = $arg1['webform_nid'.$nid][$field]['#title'];
+          $arg1['webform_nid'.$nid][$field]['#title'] = NULL;
+          $output .= '<tr><td class="uwet-label">'. $title .':</td><td>'
+                   . drupal_render($arg1['webform_nid'.$nid][$field]) .'</td></tr>';
+        }
+      }
+      $output .= '</table>';
+      return $output;
+      break;
+      
+    case 'edit-process':
+      _uc_webform_pane_save($nid, $arg1['order_id'], $arg1['webform_nid'.$nid]);
+      break;
+  }
+}
+
+/**
+ * Implementation of hook_order().
+ */
+function uc_webform_pane_order($op, &$arg1, $arg2) {  
+  switch ($op) {
+    // Delete from the database.
+    case 'delete':
+      include_once(drupal_get_path('module', 'webform') ."/includes/webform.submissions.inc");
+      $uc_wf_subs = db_query("SELECT nid, sid FROM {uc_webform_pane_submissions} WHERE order_id = %d", $arg1->order_id);
+      while ($uc_wf_sub = db_fetch_object($uc_wf_subs)) {
+        $node = node_load($uc_wf_sub->nid);
+        $submission = webform_get_submission($uc_wf_sub->nid, $uc_wf_sub->sid);
+        webform_submission_delete($node, $submission);
+      }
+      db_query("DELETE FROM {uc_webform_pane_submissions} WHERE order_id = %d", $arg1->order_id);
+      break;
+  }
+}
+
+/**
+ * Save pane values as webform submission through Webform submit handler.
+ */ 
+function _uc_webform_pane_save($nid, $order_id, $values) {
+  global $user;
+  $node = node_load($nid);
+  
+  // Filter out webform values (with the help of 'webform_'-prefixed fields)
+  foreach (array_keys($values) as $k) {
+    if (substr($k, 0, 8) == 'webform_' && webform_get_cid($node, substr($k, 8), 0)) {
+      unset($values[$k]);
+    }
+  }
+  
+  if ($sid = _uc_webform_pane_get_sid($nid, $order_id)) {
+    $form_values['details']['sid'] = $sid;
+  }
+  
+  $form_values['op'] = t('Submit');
+  $form_values['submitted'] = $values;
+  $form_values['details']['nid'] = $nid;
+  
+  $form_state = array();
+  $form_state['values'] = $form_values;
+  
+  // Perform post processing by components.
+  _webform_client_form_submit_process($node, $form_state['values']['submitted']);
+
+  // Flatten trees within the submission.
+  $form_state['values']['submitted_tree'] = $form_state['values']['submitted'];
+  $form_state['values']['submitted'] = _webform_client_form_submit_flatten($node, $form_state['values']['submitted']);
+
+  // Set a flag indicating processing should continue and be saved.
+  $form_state['webform_completed'] = TRUE;
+  
+  webform_client_form_submit(array('#node' => $node), $form_state);
+  
+  if (!$sid) {
+    $sid = $form_state['values']['details']['sid'];
+    db_query("INSERT INTO {uc_webform_pane_submissions} (nid, sid, order_id) VALUES (%d, %d, %d)", $nid, $sid, $order_id);
+  }
+}
+
+/**
+ * Return webform submission id.
+ */ 
+function _uc_webform_pane_get_sid($nid, $order_id) {
+  return db_result(db_query("SELECT sid FROM {uc_webform_pane_submissions} WHERE nid = %d AND order_id = %d", $nid, $order_id));
+}
+
+/**
+ * Return webform submission data.
+ */ 
+function _uc_webform_pane_get_data($nid, $order_id) {
+  if ($sid = _uc_webform_pane_get_sid($nid, $order_id)) {
+    include_once(drupal_get_path('module', 'webform') ."/includes/webform.submissions.inc");
+    return webform_get_submission($nid, $sid);    
+  }
+  $empty = new stdClass();
+  return $empty;
+}
+
+/**
+ * Return list of webform nodes.
+ */ 
+function _uc_webform_pane_get_nodes($join_type = 'INNER') {
+  $webforms = array();
+  
+  $q = db_query(db_rewrite_sql("SELECT n.nid
+  FROM {node} n 
+  $join_type JOIN {uc_webform_pane} uc ON (n.nid = uc.nid)
+  WHERE n.type = 'webform' AND n.status = 1 ORDER BY n.title DESC"));
+  while ($webform = db_fetch_object($q)) {
+    $webforms[] = $webform;  
+  }
+  
+  return $webforms;
+}
+
+/**
+ * Render webform submission data.
+ */ 
+function _uc_webform_pane_render($nid, $order_id) {
+  $node = node_load($nid);
+ 
+  $form_state = array();
+  $form = webform_client_form($form_state, $node, NULL);
+  $form = $form['submitted'];
+  
+  $data = get_object_vars(_uc_webform_pane_get_data($nid, $order_id));
+  $output = array();
+  foreach ($node->webform['components'] as $field) {
+    if (isset($form[$field['form_key']]) && $field['type'] != 'hidden') {     
+      $field_data = isset($data['data'][$field['cid']]['value']) ? $data['data'][$field['cid']]['value'] : NULL;
+      $field_element = webform_component_invoke($field['type'], 'display', $field, $field_data);
+      $submission_output = theme($field_element['#theme'], $field_element);
+      if ($submission_output !== NULL) {
+        $output[] = array('title' => $field['name'], 'data' => $submission_output);  
+      }
+    }
+  }
+  
+  return $output;  
+}
+
+/**
+ * Theme webform submission data on the order view page.
+ */ 
+function theme_uc_webform_pane_order_view($data) {
+  $output = '<table>';
+  foreach ($data as $row) {
+    $border = '';
+    if (isset($row['border'])) {
+      $border = ' class="row-border-'. $row['border'] .'"';
+    }
+    $output .= '<tr valign="top"'. $border .'><td class="title-col" '
+             .'nowrap>'. $row['title'] .':</td><td class="data-col">'
+             . $row['data'] .'</td></tr>';
+  }
+  $output .= '</table>';
+  return $output;
+}
+
+/**
+ * Generate a form to edit webform submission data.
+ */ 
+function _uc_webform_pane_edit_form($nid, $order_id, $pane_type) {
+  drupal_add_css(drupal_get_path('module', 'webform') .'/css/webform.css');
+  drupal_add_js(drupal_get_path('module', 'webform') .'/js/webform.js');
+  
+  $node = node_load($nid);
+  
+  if (!$node->webform['components']) {
+    return array();
+  }
+  
+  $form_state = array();
+  $submission = _uc_webform_pane_get_data($nid, $order_id);
+  $form = webform_client_form($form_state, $node, $submission);
+  $form = $form['submitted'];
+  
+  // Add an additional field to figure out which values are webform-values later
+  foreach (element_children($form) as $k) {
+    $form['webform_'.$k] = array('#type' => 'value', '#value' => $k);
+    $form[$k]["#validated"] = FALSE;
+    if ($pane_type == 'order') {
+      $form[$k]["#required"] = FALSE;
+    }
+  }
+  
+  return $form;
+}

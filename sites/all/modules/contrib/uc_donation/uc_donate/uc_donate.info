@@ -1,0 +1,13 @@
+; $Id: uc_donate.info,v 1.1.4.1 2009/01/22 17:21:11 greenskin Exp $
+name = "Donate"
+description = "Provides a page with donation products."
+dependencies[] = uc_donation
+package = Ubercart - extra
+core = 6.x
+
+; Information added by drupal.org packaging script on 2009-06-08
+version = "6.x-2.0-beta3"
+core = "6.x"
+project = "uc_donation"
+datestamp = "1244475420"
+

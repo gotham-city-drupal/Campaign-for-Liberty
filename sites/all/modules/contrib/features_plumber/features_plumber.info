@@ -1,0 +1,11 @@
+name = Features Plumber
+description = Remove unwanted components from your Features
+dependencies[] = features
+dependencies[] = ctools
+core = 6.x
+; Information added by drupal.org packaging script on 2011-05-06
+version = "6.x-1.0-alpha1"
+core = "6.x"
+project = "features_plumber"
+datestamp = "1304709415"
+

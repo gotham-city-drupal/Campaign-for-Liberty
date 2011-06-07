@@ -1,0 +1,52 @@
+# Drupal #
+##########
+sites/*/files/*
+files/*
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+._*
+.bzrignore
+/sites/default/backup_settings.php
+/sites/default/symlink-maker.app
+/sites/default/symlink-maker.app.zip
+/sites/.DS_Store
+/.DS_Store
+
+# Eclipse Project Files 
+#########################
+.buildpath
+.project
+/sites/all/modules/.DS_Store
+/sites/all/.DS_Store
+/sites/all/libraries/.DS_Store
+/sites/all/modules/contrib/.DS_Store
+/sites/all/modules/apachesolr/.DS_Store
+/sites/all/modules/apachesolr/SolrPhpClient/.DS_Store
+/sites/all/modules/pantheon/.DS_Store
+/sites/all/modules/features/.DS_Store
+/sites/default/.DS_Store
+/sites/all/modules/custom/.DS_Store
+/sites/all/modules/contrib/ubercart/.DS_Store
+/sites/all/modules/contrib/ubercart/payment/.DS_Store
+/sites/all/themes/.DS_Store
