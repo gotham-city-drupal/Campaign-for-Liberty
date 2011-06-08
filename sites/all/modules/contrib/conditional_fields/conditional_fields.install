@@ -1,5 +1,4 @@
 <?php
-// $Id$
 /**
  * @file
  * Install, update and uninstall functions for the Conditional Fields module.
@@ -14,7 +13,8 @@ function conditional_fields_install() {
   // Increase module weight to 10, over fieldgroup.module which has 9.
   db_query("UPDATE {system} SET weight = 10 WHERE name = 'conditional_fields'");
 
-  drupal_set_message(get_t('Conditional Fields installed. You should now <a href="!url">give the permission</a> to administer conditional fields to the desired roles.', array('!url' => url('admin/user/permissions', array('fragment' => 'module-conditional_fields')))));
+  $t = get_t();
+  drupal_set_message($t('Conditional Fields installed. You should now <a href="!url">give the permission</a> to administer conditional fields to the desired roles.', array('!url' => url('admin/user/permissions', array('fragment' => 'module-conditional_fields')))));
 }
 
 function conditional_fields_schema() {
@@ -40,6 +40,7 @@ function conditional_fields_schema() {
         'size' => 'medium',
         'not null' => TRUE)
         ),
+      'primary key' => array('control_field_name', 'field_name', 'type'),
     );
 
   return $schema;
@@ -56,4 +57,14 @@ function conditional_fields_uninstall() {
   db_query("DELETE FROM {variable} WHERE name LIKE 'c_fields_%'");
   cache_clear_all('variables', 'cache');
 
+}
+
+/**
+ * Add primary key to table
+ */
+function conditional_fields_update_6002() {
+  $ret = array();
+  db_add_primary_key($ret, 'conditional_fields', array('control_field_name', 'field_name', 'type'));
+  
+  return $ret;
 }

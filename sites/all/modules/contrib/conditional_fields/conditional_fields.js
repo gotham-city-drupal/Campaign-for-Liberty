@@ -1,33 +1,54 @@
-/* $Id$ */
 
 if (!Drupal.ConditionalFields) {
   Drupal.ConditionalFields = {};
 }
 
 Drupal.ConditionalFields.switchField = function(id, values, onPageReady) {
-  /* For each controlling field: find the controlled fields */
-  $.each(Drupal.settings.ConditionalFields.controlling_fields, function(controllingField, controlledFields) {
-    if (controllingField == id) {
-      /* Find the settings of the controlled field */
-      $.each(controlledFields, function(i, fieldSettings) {
-        var hideField = true;
-        /* Find the trigger values of the controlled field (for this controlling field) */
-        $.each(fieldSettings.trigger_values, function(ii, val) {
-          if (jQuery.inArray(val, values) != -1) {
-            Drupal.ConditionalFields.doAnimation(fieldSettings, 'show', onPageReady);
-            hideField = false;
-            /* Stop searching in this field */
-            return false;
-          }
-        });
-        if (hideField) {
-          Drupal.ConditionalFields.doAnimation(fieldSettings, 'hide', onPageReady);
+  // Check each controlled field
+  if (Drupal.settings.ConditionalFields.controlling_fields == undefined || Drupal.settings.ConditionalFields.controlling_fields[id] == undefined) {
+    return;
+  }
+  $.each(Drupal.settings.ConditionalFields.controlling_fields[id], function(i, controlledField) {
+    var triggers = Drupal.ConditionalFields.checkTriggered(controlledField, values);
+    // If the field was not triggered, hide it
+    if (!triggers) {
+      Drupal.ConditionalFields.doAnimation(controlledField, 'hide', onPageReady);
+    }
+    // Else check other controlling fields: if any one doesn't trigger, hide the field and stop checking
+    else {
+      var otherTriggers = true;
+      $.each(Drupal.settings.ConditionalFields.controlling_fields, function(ii, maybeControllingField) {
+        if (ii != id) {
+          $.each(maybeControllingField, function(iii, maybeControlledField) {
+            if (maybeControlledField.field_id == controlledField.field_id) {
+              otherTriggers = Drupal.ConditionalFields.checkTriggered(maybeControlledField, Drupal.ConditionalFields.findValues($(ii)));
+              if (!otherTriggers) {
+                return false;
+              }
+            }
+          });
         }
-        /* To do: Feature: Multiple controlling fields on the same field, are
-           not supported for now. Test: other controlling fields types and widgets. */
+        if (!otherTriggers) {
+          Drupal.ConditionalFields.doAnimation(controlledField, 'hide', onPageReady);
+          return false;
+        }
       });
+      if (otherTriggers) {
+        Drupal.ConditionalFields.doAnimation(controlledField, 'show', onPageReady);
+      }
     }
   });
+}
+
+Drupal.ConditionalFields.checkTriggered = function(controlledField, selectedValues) {
+  var triggers = false;
+  $.each(controlledField.trigger_values, function(ii, val) {
+    if (jQuery.inArray(val, selectedValues) !== -1) {
+      triggers = true;
+      return false;
+    }
+  });
+  return triggers;
 }
 
 Drupal.ConditionalFields.doAnimation = function(fieldSettings, showOrHide, onPageReady) {
@@ -54,6 +75,7 @@ Drupal.ConditionalFields.doAnimation = function(fieldSettings, showOrHide, onPag
     switch (Drupal.settings.ConditionalFields.ui_settings.animation) {
       case 0:
         showOrHide == 'show' ? toSwitch.show() : toSwitch.hide();
+        break;
       case 1:
         /* Don't double top and bottom margins while sliding. */
         var firstChild = toSwitch.children(':first-child');
@@ -70,6 +92,7 @@ Drupal.ConditionalFields.doAnimation = function(fieldSettings, showOrHide, onPag
             firstChild.css('margin-top', marginTop).css('margin-bottom', marginBottom);
           });
         }
+        break;
       case 2:
         showOrHide == 'show' ? toSwitch.fadeIn(Drupal.settings.ConditionalFields.ui_settings.anim_speed) :
                                toSwitch.fadeOut(Drupal.settings.ConditionalFields.ui_settings.anim_speed);
@@ -79,10 +102,8 @@ Drupal.ConditionalFields.doAnimation = function(fieldSettings, showOrHide, onPag
 
 Drupal.ConditionalFields.findValues = function(field) {
   var values = [];
-  field.find('option:selected, input:checked').each( function() {
-    if ($(this)[0].selected || $(this)[0].checked) {
-      values[values.length] = this.value;
-    }
+  field.find('option:selected, input:checked, input:text, textarea').each( function() {
+    values[values.length] = this.value;
   });
   return values;
 }       
@@ -97,7 +118,12 @@ Drupal.behaviors.ConditionalFields = function (context) {
   $('.conditional-field.controlling-field:not(.conditional-field-processed)').addClass('conditional-field-processed').each(function () {
     /* Set default state */
     Drupal.ConditionalFields.switchField('#' + $(this).attr('id'), Drupal.ConditionalFields.findValues($(this)), true);
-    /* Add events. Apparently, Explorer doesn't catch the change event? */
-    $.browser.msie == true ? $(this).click(Drupal.ConditionalFields.fieldChange) : $(this).change(Drupal.ConditionalFields.fieldChange);
+    if ($(this).find('option, input:not(:text)').length > 0) {
+      /* Apparently, Explorer doesn't catch the change event? */
+      $.browser.msie == true ? $(this).click(Drupal.ConditionalFields.fieldChange) : $(this).change(Drupal.ConditionalFields.fieldChange);
+    }
+    else if ($(this).find('textarea, input:text').length > 0) {
+      $(this).keyup(Drupal.ConditionalFields.fieldChange);
+    }
   });
 };

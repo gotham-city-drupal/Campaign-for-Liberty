@@ -1,0 +1,15 @@
+name = Media: Fox News
+description = Embedded Audio Field provider file for foxnews.com.
+core = 6.x
+dependencies[] = emvideo
+package = Media
+core = "6.x"
+project = "media_foxnews"
+
+
+; Information added by drupal.org packaging script on 2011-05-22
+version = "6.x-2.0"
+core = "6.x"
+project = "media_foxnews"
+datestamp = "1306072616"
+

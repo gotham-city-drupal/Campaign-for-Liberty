@@ -1,0 +1,13 @@
+<?php
+
+
+/**
+ *  @file
+ *  Embedded Video Field provider file for foxnews.com.
+ */
+
+function media_foxnews_emfield_providers($module, $provider = NULL) {
+  if ($module == 'emvideo') {
+    return drupal_system_listing("$provider\.inc$", drupal_get_path('module', 'media_foxnews') ."/providers", 'name', 0);
+  }
+}
