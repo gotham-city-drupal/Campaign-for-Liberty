@@ -99,13 +99,15 @@ function fe_nodequeue_queue_features_export_render($module_name = '', $data) {
       if (!empty($object->qid)) {
         $nodequeue_queue = nodequeue_load($object->qid);
 
-       // sort roles and types arrays into ascending order so that we can
-       // check for overridden db data without being affected by the
-       // order in which this array gets stored/loaded.
-       if (!empty($nodequeue_queue->roles))
-         sort($nodequeue_queue->roles);
-       if (!empty($nodequeue_queue->types))
-         sort($nodequeue_queue->types);
+        // sort roles and types arrays into ascending order so that we can 
+        // check for overridden db data without being affected by the 
+        // order in which this array gets stored/loaded.
+        if (!empty($nodequeue_queue->roles)) {
+          sort($nodequeue_queue->roles);
+        }
+        if (!empty($nodequeue_queue->types)) {
+          sort($nodequeue_queue->types);
+        }
 
         $additions = (array) $nodequeue_queue;
         unset($additions['qid']);
