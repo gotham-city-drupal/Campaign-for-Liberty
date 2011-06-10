@@ -240,7 +240,7 @@ function emvideo_foxnews_extract($parse = '') {
 
 function emvideo_foxnews_embedded_link($video_code) {
 
-  $url_id = substr($video_code, 0, 8);
+  $url_id = substr($video_code, 0, 13);
 
   return 'http://video.foxnews.com/v/'. $url_id;
 
@@ -256,7 +256,7 @@ function emvideo_foxnews_embedded_link($video_code) {
 
 function theme_emvideo_foxnews_flash($item, $width, $height, $autoplay) {
 
-  $embed_url = substr($item['value'], 0, 7);
+  $embed_url = substr($item['value'], 0, 12);
 
   $output = '';
 
