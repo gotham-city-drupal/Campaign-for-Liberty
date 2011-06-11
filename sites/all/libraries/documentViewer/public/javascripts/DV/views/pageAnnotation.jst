@@ -1,0 +1,21 @@
+<div class="DV-annotation DV-pageNote <%= orderClass %> DV-<%= access %>" style="top:<%= top %>px;" id="DV-annotation-<%= id %>">
+  <div class="DV-annotationTab">
+    <div class="DV-annotationClose DV-trigger">p. <%= pageNumber %></div>
+  </div>
+
+  <div class="DV-annotationContent">    
+    <!-- Header -->
+    <div class="DV-annotationHeader clearfix">
+      <div class="DV-pagination">
+        <span class="DV-trigger DV-annotationPrevious" title="Previous Annotation">Previous</span>
+        <span class="DV-trigger DV-annotationNext" title="Next Annotation">Next</span>
+      </div>      
+      <div class="DV-annotationGoto"><div class="DV-trigger">Go to Page <%= pageNumber %></div></div>
+      <div class="DV-annotationTitle"><%= title %></div>
+  </div>
+  <!-- Body -->
+  <div class="DV-annotationBody">
+  <%= text %>
+  </div>
+  </div>
+</div>
