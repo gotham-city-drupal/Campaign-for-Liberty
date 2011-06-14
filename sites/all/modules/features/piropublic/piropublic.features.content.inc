@@ -399,66 +399,6 @@ function piropublic_content_default_fields() {
     ),
   );
 
-  // Exported field: field_frontpage_banner_cycle
-  $fields['frontpage_banner-field_frontpage_banner_cycle'] = array(
-    'field_name' => 'field_frontpage_banner_cycle',
-    'type_name' => 'frontpage_banner',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'text',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'text',
-    'active' => '1',
-    'text_processing' => '0',
-    'max_length' => '',
-    'allowed_values' => 'off
-on|<strong>Automatically add into front page cycle rotation</strong>',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'default_value' => array(
-        '0' => array(
-          'value' => 'off',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Add to Cycle',
-      'weight' => '-2',
-      'description' => '<small>Check this box to add the new content directly into the front page banner cycle. It will appear at the top of the queue. Whether you add it now or not you can manage the queue by clicking "manage cycle order" on the front page. <b>This option is only available during initial creation.</b></small> ',
-      'type' => 'optionwidgets_onoff',
-      'module' => 'optionwidgets',
-    ),
-  );
-
   // Exported field: field_frontpage_banner_desc
   $fields['frontpage_banner-field_frontpage_banner_desc'] = array(
     'field_name' => 'field_frontpage_banner_desc',
@@ -1160,7 +1100,6 @@ other|Other (Embed Code)',
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Add to Cycle');
   t('Banner Image');
   t('Brief Description');
   t('Button Text');

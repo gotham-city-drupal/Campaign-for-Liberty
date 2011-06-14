@@ -149,11 +149,6 @@ function piropublic_form_alter(&$form, &$form_state, $form_id) {
         $form['#after_build'][] = '_piropublic_after_build';
       }
     break;
-    case 'frontpage_banner_node_form':
-      if (isset($form['nid']['#value'])) {
-        unset($form['field_frontpage_banner_cycle']);
-      }
-    break;
   }
 
 }

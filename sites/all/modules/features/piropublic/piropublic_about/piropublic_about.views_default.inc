@@ -318,7 +318,7 @@ function piropublic_about_views_default_views() {
       ),
       'relationship' => 'none',
     ),
-    'field_staff_type_value_many_to_one' => array(
+    'field_staff_board_value_many_to_one' => array(
       'operator' => 'or',
       'value' => array(
         'board' => 'board',
@@ -329,12 +329,9 @@ function piropublic_about_views_default_views() {
         'operator' => FALSE,
         'label' => '',
       ),
-      'id' => 'field_staff_type_value_many_to_one',
-      'table' => 'node_data_field_staff_type',
-      'field' => 'field_staff_type_value_many_to_one',
-      'override' => array(
-        'button' => 'Override',
-      ),
+      'id' => 'field_staff_board_value_many_to_one',
+      'table' => 'node_data_field_staff_board',
+      'field' => 'field_staff_board_value_many_to_one',
       'relationship' => 'none',
       'reduce_duplicates' => 0,
     ),
@@ -348,7 +345,7 @@ function piropublic_about_views_default_views() {
   $handler->override_option('title', 'Board of Directors');
   $handler->override_option('empty', '<?php  
 if (user_access(\'create staff content\')) {
-    drupal_set_message(t(\'A staff member has not been added yet.\') . \' \' . l(t(\'Click here to add one.\'), \'node/add/staff\'));
+    drupal_set_message(t(\'A board member has not been added yet.\') . \' \' . l(t(\'Click here to add one.\'), \'node/add/staff\'));
 }
 ?>');
   $handler->override_option('empty_format', '4');
@@ -480,8 +477,8 @@ if (user_access(\'create staff content\')) {
       'link_to_taxonomy' => 0,
       'limit' => 1,
       'vids' => array(
-        '4' => 4,
-        '3' => 0,
+        '3' => 3,
+        '2' => 0,
         '1' => 0,
       ),
       'exclude' => 1,
@@ -614,7 +611,7 @@ if (user_access(\'create staff content\')) {
       ),
       'type' => 'select',
       'limit' => TRUE,
-      'vid' => '4',
+      'vid' => '3',
       'id' => 'tid',
       'table' => 'term_node',
       'field' => 'tid',
@@ -1022,7 +1019,7 @@ drupal_set_message(t(\'There are no questions in this category. Be the first to 
       ),
       'relationship' => 'none',
     ),
-    'field_staff_type_value_many_to_one' => array(
+    'field_staff_staff_value_many_to_one' => array(
       'operator' => 'or',
       'value' => array(
         'staff' => 'staff',
@@ -1033,12 +1030,9 @@ drupal_set_message(t(\'There are no questions in this category. Be the first to 
         'operator' => FALSE,
         'label' => '',
       ),
-      'id' => 'field_staff_type_value_many_to_one',
-      'table' => 'node_data_field_staff_type',
-      'field' => 'field_staff_type_value_many_to_one',
-      'override' => array(
-        'button' => 'Override',
-      ),
+      'id' => 'field_staff_staff_value_many_to_one',
+      'table' => 'node_data_field_staff_staff',
+      'field' => 'field_staff_staff_value_many_to_one',
       'relationship' => 'none',
       'reduce_duplicates' => 0,
     ),

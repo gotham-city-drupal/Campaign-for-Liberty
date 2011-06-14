@@ -15,7 +15,6 @@ function piropublic_about_context_default_contexts() {
     'path' => array(
       'values' => array(
         'about' => 'about',
-        'contact' => 'contact',
       ),
     ),
   );
@@ -48,8 +47,8 @@ function piropublic_about_context_default_contexts() {
         ),
       ),
     ),
-    'breadcrumb' => 'node/84',
-    'menu' => 'node/84',
+    'breadcrumb' => 'node/116',
+    'menu' => 'node/116',
   );
   $context->condition_mode = 0;
 
@@ -207,8 +206,8 @@ function piropublic_about_context_default_contexts() {
         ),
       ),
     ),
-    'breadcrumb' => 'node/84',
-    'menu' => 'node/84',
+    'breadcrumb' => 'node/116',
+    'menu' => 'node/116',
   );
   $context->condition_mode = 0;
 

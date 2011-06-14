@@ -4,6 +4,7 @@
  * @file views-view-grid.tpl.php
  * Default simple view template to display a rows in a grid.
  *
+ * - $helper_links admin links
  * - $rows contains a nested array of rows. Each row contains an array of
  *   columns.
  *

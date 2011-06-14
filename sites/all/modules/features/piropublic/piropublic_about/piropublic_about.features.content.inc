@@ -67,7 +67,7 @@ function piropublic_about_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Brief Bio',
-      'weight' => '-1',
+      'weight' => 0,
       'description' => 'Please input a brief bio for this featured author. ',
       'type' => 'text_textarea',
       'module' => 'text',
@@ -134,10 +134,70 @@ function piropublic_about_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Job Title',
-      'weight' => '-3',
+      'weight' => '-2',
       'description' => 'What is your job title at C4L?',
       'type' => 'text_textfield',
       'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_staff_board
+  $fields['staff-field_staff_board'] = array(
+    'field_name' => 'field_staff_board',
+    'type_name' => 'staff',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => 'off
+board|This person is a Board Member',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => NULL,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Board Member',
+      'weight' => '-3',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -221,16 +281,16 @@ function piropublic_about_content_default_fields() {
       'use_default_image' => 1,
       'collapsible' => '2',
       'label' => 'Staff Photo',
-      'weight' => '-2',
+      'weight' => '-1',
       'description' => '',
       'type' => 'imagefield_crop_widget',
       'module' => 'imagefield_crop',
     ),
   );
 
-  // Exported field: field_staff_type
-  $fields['staff-field_staff_type'] = array(
-    'field_name' => 'field_staff_type',
+  // Exported field: field_staff_staff
+  $fields['staff-field_staff_staff'] = array(
+    'field_name' => 'field_staff_staff',
     'type_name' => 'staff',
     'display_settings' => array(
       'label' => array(
@@ -264,35 +324,36 @@ function piropublic_about_content_default_fields() {
     ),
     'widget_active' => '1',
     'type' => 'text',
-    'required' => '1',
-    'multiple' => '2',
+    'required' => '0',
+    'multiple' => '0',
     'module' => 'text',
     'active' => '1',
     'text_processing' => '0',
     'max_length' => '',
-    'allowed_values' => 'board|Board of Directors
-staff|Staff',
+    'allowed_values' => 'off
+staff|This person is a Staff Member',
     'allowed_values_php' => '',
     'widget' => array(
       'default_value' => array(
         '0' => array(
-          'value' => '',
+          'value' => NULL,
         ),
       ),
       'default_value_php' => NULL,
-      'label' => 'Board/Staff/Both?',
+      'label' => 'Staff Member',
       'weight' => '-4',
       'description' => '',
-      'type' => 'optionwidgets_buttons',
+      'type' => 'optionwidgets_onoff',
       'module' => 'optionwidgets',
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Board/Staff/Both?');
+  t('Board Member');
   t('Brief Bio');
   t('Job Title');
+  t('Staff Member');
   t('Staff Photo');
 
   return $fields;

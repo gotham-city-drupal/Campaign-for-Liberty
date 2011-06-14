@@ -525,24 +525,10 @@ function piropublic_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'image_toolkit';
-  $strongarm->value = 'gd';
-
-  $export['image_toolkit'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'image_updated';
   $strongarm->value = 1257541823;
 
   $export['image_updated'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'imageapi_image_toolkit';
-  $strongarm->value = 'imageapi_gd';
-
-  $export['imageapi_image_toolkit'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -691,6 +677,13 @@ function piropublic_strongarm() {
   $strongarm->value = TRUE;
 
   $export['jquery_update_replace'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'language_content_type_frontpage_banner';
+  $strongarm->value = '0';
+
+  $export['language_content_type_frontpage_banner'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -1140,10 +1133,12 @@ function piropublic_strongarm() {
   $strongarm->value = array(
     'frontpage_banner_node_form' => array(
       'menu' => 'menu',
+      'notifications' => 'notifications',
       'revision_information' => 'revision_information',
       'author' => 'author',
       'options' => 'options',
       'comment_settings' => 'comment_settings',
+      'xmlsitemap' => 'xmlsitemap',
       'path' => 'path',
       'group_frontpage_banner_vidgrp' => 0,
       'group_frontpage_banner_lnkgrp' => 0,
