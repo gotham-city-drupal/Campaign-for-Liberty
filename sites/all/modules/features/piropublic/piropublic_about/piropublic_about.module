@@ -84,7 +84,7 @@ function piropublic_about_theme() {
       'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
       'preprocess functions' => array(
       	'template_preprocess',
-      	'template_preprocess_views_view_unformatted',
+      	'template_preprocess_views_view_grid',
         'piropublic_about_preprocess_views_view_grid__board_of_directors',
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'rows' => NULL, 'title' => NULL),
