@@ -9,7 +9,6 @@ function piropublic_about_perm() {
   return array('manage staff page', 'manage board of directors page');
 }
 
-
 /**
  * Implementation of hook_init()
  */

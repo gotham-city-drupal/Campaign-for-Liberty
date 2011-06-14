@@ -137,14 +137,14 @@ function piropublic_about_strongarm() {
   $strongarm->name = 'content_extra_weights_staff';
   $strongarm->value = array(
     'title' => '-5',
-    'body_field' => '0',
-    'revision_information' => '2',
-    'author' => '5',
-    'options' => '6',
-    'comment_settings' => '4',
-    'menu' => '1',
-    'path' => '3',
-    'path_redirect' => '7',
+    'body_field' => '1',
+    'revision_information' => '3',
+    'author' => '6',
+    'options' => '7',
+    'comment_settings' => '5',
+    'menu' => '2',
+    'path' => '4',
+    'path_redirect' => '8',
   );
 
   $export['content_extra_weights_staff'] = $strongarm;

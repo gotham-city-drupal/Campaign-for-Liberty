@@ -785,20 +785,6 @@ function piropublic_views_default_views() {
       'field' => 'promote',
       'relationship' => 'none',
     ),
-    'status_extra' => array(
-      'operator' => '=',
-      'value' => '',
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'status_extra',
-      'table' => 'node',
-      'field' => 'status_extra',
-      'relationship' => 'none',
-    ),
     'type' => array(
       'operator' => 'in',
       'value' => array(
@@ -813,6 +799,23 @@ function piropublic_views_default_views() {
       'id' => 'type',
       'table' => 'node',
       'field' => 'type',
+      'relationship' => 'none',
+    ),
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'override' => array(
+        'button' => 'Override',
+      ),
       'relationship' => 'none',
     ),
   ));

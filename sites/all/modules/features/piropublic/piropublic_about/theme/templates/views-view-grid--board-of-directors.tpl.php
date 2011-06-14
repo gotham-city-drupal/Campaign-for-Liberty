@@ -10,7 +10,7 @@
  * @ingroup views_templates
  */
 ?>
-<?php if ($helper_links): ?>
+<?php if ($helper_links): ?>T
   <div class="helper_links">
     <?php print $helper_links; ?>
   </div>

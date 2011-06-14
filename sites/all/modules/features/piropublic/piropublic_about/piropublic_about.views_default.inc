@@ -318,7 +318,7 @@ function piropublic_about_views_default_views() {
       ),
       'relationship' => 'none',
     ),
-    'field_staff_type_value_many_to_one' => array(
+    'field_staff_board_value_many_to_one' => array(
       'operator' => 'or',
       'value' => array(
         'board' => 'board',
@@ -329,12 +329,9 @@ function piropublic_about_views_default_views() {
         'operator' => FALSE,
         'label' => '',
       ),
-      'id' => 'field_staff_type_value_many_to_one',
-      'table' => 'node_data_field_staff_type',
-      'field' => 'field_staff_type_value_many_to_one',
-      'override' => array(
-        'button' => 'Override',
-      ),
+      'id' => 'field_staff_board_value_many_to_one',
+      'table' => 'node_data_field_staff_board',
+      'field' => 'field_staff_board_value_many_to_one',
       'relationship' => 'none',
       'reduce_duplicates' => 0,
     ),
@@ -1022,7 +1019,7 @@ drupal_set_message(t(\'There are no questions in this category. Be the first to 
       ),
       'relationship' => 'none',
     ),
-    'field_staff_type_value_many_to_one' => array(
+    'field_staff_staff_value_many_to_one' => array(
       'operator' => 'or',
       'value' => array(
         'staff' => 'staff',
@@ -1033,12 +1030,9 @@ drupal_set_message(t(\'There are no questions in this category. Be the first to 
         'operator' => FALSE,
         'label' => '',
       ),
-      'id' => 'field_staff_type_value_many_to_one',
-      'table' => 'node_data_field_staff_type',
-      'field' => 'field_staff_type_value_many_to_one',
-      'override' => array(
-        'button' => 'Override',
-      ),
+      'id' => 'field_staff_staff_value_many_to_one',
+      'table' => 'node_data_field_staff_staff',
+      'field' => 'field_staff_staff_value_many_to_one',
       'relationship' => 'none',
       'reduce_duplicates' => 0,
     ),
