@@ -41,7 +41,7 @@ function piropublic_about_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '0',
-    'parent_path' => 'node/84',
+    'parent_path' => 'node/116',
     'parent_uuid' => 'fa2e7bb7-9446-11e0-88ba-e0e2cd5d67f0',
   );
   // Exported menu link: primary-links:about/faq
@@ -61,7 +61,7 @@ function piropublic_about_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-50',
-    'parent_path' => 'node/84',
+    'parent_path' => 'node/116',
     'parent_uuid' => 'fa2e7bb7-9446-11e0-88ba-e0e2cd5d67f0',
   );
   // Exported menu link: primary-links:about/staff
@@ -81,7 +81,7 @@ function piropublic_about_menu_default_menu_links() {
     'has_children' => '1',
     'expanded' => '0',
     'weight' => '-49',
-    'parent_path' => 'node/84',
+    'parent_path' => 'node/116',
     'parent_uuid' => 'fa2e7bb7-9446-11e0-88ba-e0e2cd5d67f0',
   );
   // Exported menu link: primary-links:fa2e7bb7-9446-11e0-88ba-e0e2cd5d67f0

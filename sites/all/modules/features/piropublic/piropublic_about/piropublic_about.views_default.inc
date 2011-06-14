@@ -348,7 +348,7 @@ function piropublic_about_views_default_views() {
   $handler->override_option('title', 'Board of Directors');
   $handler->override_option('empty', '<?php  
 if (user_access(\'create staff content\')) {
-    drupal_set_message(t(\'A staff member has not been added yet.\') . \' \' . l(t(\'Click here to add one.\'), \'node/add/staff\'));
+    drupal_set_message(t(\'A board member has not been added yet.\') . \' \' . l(t(\'Click here to add one.\'), \'node/add/staff\'));
 }
 ?>');
   $handler->override_option('empty_format', '4');
@@ -480,8 +480,8 @@ if (user_access(\'create staff content\')) {
       'link_to_taxonomy' => 0,
       'limit' => 1,
       'vids' => array(
-        '4' => 4,
-        '3' => 0,
+        '3' => 3,
+        '2' => 0,
         '1' => 0,
       ),
       'exclude' => 1,
@@ -614,7 +614,7 @@ if (user_access(\'create staff content\')) {
       ),
       'type' => 'select',
       'limit' => TRUE,
-      'vid' => '4',
+      'vid' => '3',
       'id' => 'tid',
       'table' => 'term_node',
       'field' => 'tid',
