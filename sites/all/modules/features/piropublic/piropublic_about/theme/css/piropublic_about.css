@@ -1,0 +1,60 @@
+@CHARSET "ISO-8859-1";
+
+/* FAQ */
+.view-faq .admin_links a {
+  padding: 5px;
+  margin:0;
+  font-size: 10px;
+}
+
+#right_top #block-views--exp-faq-page_1 .views-exposed-form {
+  margin: 0 10px 10px;
+  width: 200px;
+}
+
+.view-faq .item-list ul li {
+  list-style: none outside none;
+  margin: 0 0 0.25em 1.5em;
+  padding: 0;
+}
+
+/* Staff/Board */
+#edit-field-staff-type-value-board-wrapper {
+  display: inline;
+  margin-right: 20px;
+}
+
+#edit-field-staff-type-value-staff-wrapper {
+  display: inline;
+}
+
+.view-staff .helper_links, .view-board-of-directors .helper_links {
+  margin-bottom: 10px;
+}
+
+.view-staff .helper_links a, .view-board-of-directors .helper_links a {
+  margin-right: 10px;
+}
+
+.node-type-staff .content-left {
+  float: left;
+  font-style: italic;
+  text-align: center;
+  width: 170px;
+}
+
+.node-type-staff .content-right {
+  margin-left: 200px;
+}
+
+.view-id-staff .views-field-field-staff-photo-fid {
+  float: left;
+  padding-bottom: 20px;
+  width: 100px;
+}
+
+.view-id-staff .views-field-title a {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}

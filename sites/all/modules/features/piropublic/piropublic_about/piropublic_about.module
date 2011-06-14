@@ -1,0 +1,180 @@
+<?php
+
+include_once('piropublic_about.features.inc');
+
+/**
+ * Implementation of hook_perm()
+ */
+function piropublic_about_perm() {
+  return array('manage staff page, manage board of directors page');
+}
+
+
+/**
+ * Implementation of hook_init()
+ */
+function piropublic_about_init() {
+  drupal_add_css(drupal_get_path('module', 'piropublic_about') . '/theme/css/piropublic_about.css');
+  if (file_exists(drupal_get_path('module', 'piropublic_about') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css')) {
+    drupal_add_css(drupal_get_path('module', 'piropublic_about') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
+  }
+}
+
+/**
+* Implements hook_theme().
+*/
+function piropublic_about_theme() {
+  return array(
+    'views_view_fields__faq' => array(
+      'template' => 'views-view-fields--faq',
+      'original hook' => 'views_view_fields',
+      'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_fields',
+        'piropublic_about_preprocess_views_view_fields__faq',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+    ),
+    'views_view_fields__staff' => array(
+      'template' => 'views-view-fields--staff',
+      'original hook' => 'views_view_fields',
+      'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_fields',
+        'piropublic_about_views_view_fields__staff'
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+    ),
+    'views_view_fields__board_of_directors' => array(
+      'template' => 'views-view-fields--board-of-directors',
+      'original hook' => 'views_view_fields',
+      'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_fields',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+    ),
+    'views_view__faq' => array(
+      'template' => 'views-view--faq',
+      'original hook' => 'views_view',
+      'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view',
+        'piropublic_about_preprocess_views_view__faq',
+      ),
+      'arguments' => array('view' => NULL),
+    ),
+    'views_view_unformatted__staff' => array(
+      'template' => 'views-view-unformatted--staff',
+      'original hook' => 'views_view_unformatted',
+      'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
+      'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_unformatted',
+        'piropublic_about_preprocess_views_view_unformatted__staff',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'rows' => NULL, 'title' => NULL),
+    ),
+    'views_view_grid__board_of_directors' => array(
+      'template' => 'views-view-grid--board-of-directors',
+      'original hook' => 'views_view_grid',
+      'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
+      'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_unformatted',
+        'piropublic_about_preprocess_views_view_grid__board_of_directors',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'rows' => NULL, 'title' => NULL),
+    ),
+  );
+}
+
+function piropublic_about_theme_registry_alter(&$theme_registry) {
+  // i dont like how this is done but did it for time reasons
+  $theme_hook = 'node'; // my hook name
+  $modulepath = drupal_get_path('module', 'piropublic_about') . '/theme/templates';
+  array_unshift($theme_registry[$theme_hook]['theme paths'], $modulepath);
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_about_preprocess_views_view_fields__faq(&$variables) {
+  $variables['admin_links'] = $variables['fields']['edit_node']->content . $variables['fields']['delete_node']->content;
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_about_preprocess_views_view_fields__staff(&$variables) {
+  $variables['admin_links'] = $variables['fields']['edit_node']->content . $variables['fields']['delete_node']->content;
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_about_preprocess_views_view__faq(&$variables) {
+  drupal_add_js(drupal_get_path('module', 'piropublic_about') . '/theme/js/piropublic_about.js');
+  $variables  = $variables;
+  if (user_access('create faq content')) {
+    $variables['helper_links'] = l(t('add another frequently asked question'), 'node/add/faq');
+  }
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_about_preprocess_views_view_unformatted__staff(&$variables) {
+  if (user_access('create staff content')) {
+    $variables['helper_links'] = l(t('add another staff member'), 'node/add/staff');
+  }
+
+  // need something better than this but i had to do it because time was short
+  if (user_access('manage staff page')) {
+    $qid = (db_result(db_query("SELECT qid FROM {nodequeue_queue} WHERE name='%s' LIMIT 1", 'staff')));
+    $variables['helper_links'] .= l(t('manage staff page'), '/admin/content/nodequeue/' .$qid. '/view');
+  }
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_about_preprocess_views_view_grid__board_of_directors(&$variables) {
+  if (user_access('create staff content')) {
+    $variables['helper_links'] = l(t('add another board member'), 'node/add/staff');
+  }
+
+  // need something better than this but i had to do it because time was short
+  if (user_access('manage board of directors page')) {
+    $qid = (db_result(db_query("SELECT qid FROM {nodequeue_queue} WHERE name='%s' LIMIT 1", 'board_of_directors')));
+    $variables['helper_links'] .= l(t('mange board of directors page'), '/admin/content/nodequeue/' .$qid. '/view');
+  }
+}
+
+
+/**
+* Implements hook_uuid_node_features_export_render_alter()
+*/
+function piropublic_about_uuid_node_features_export_render_alter(&$export, $node, $module) {
+  // don't allow uuid_features to export node properties that can change on deployment
+  unset($export->changed);
+  unset($export->created);
+  unset($export->revision_uuid);
+  unset($export->last_comment_timestamp);
+  unset($export->revision_timestamp);
+  unset($export->data);
+  unset($export->picture);
+  unset($export->old_status);
+  unset($export->date);
+  // webform stores nid
+  if(isset($export->webform)) {
+    unset($export->webform['nid']);
+    foreach($export->webform['components'] as $key => $wf) {
+      unset($export->webform['components'][$key]['nid']);
+    }
+  }
+}

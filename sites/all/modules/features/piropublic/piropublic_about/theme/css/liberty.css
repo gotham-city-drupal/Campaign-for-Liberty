@@ -1,0 +1,49 @@
+@CHARSET "ISO-8859-1";
+
+/* hide page title since title is already in banner */
+.section-about .page_title {
+  display: none;
+}
+
+/* FAQ */
+#right_top #block-views--exp-faq-page_1 {
+  background-color: #F5F3EE;
+  margin-bottom: 30px;
+  padding:5px;
+}
+
+#right_top #block-views--exp-faq-page_1 h2 {
+  background: transparent;
+  color: #87774A;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0;
+  padding: 10px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#right_top #block-views--exp-faq-page_1 input#edit-submit-faq  {
+  display: none;
+}
+
+.view-faq .views-field-body {
+  background: url("../img/main-divider.jpg") no-repeat scroll center bottom transparent;
+  padding: 5px 0 10px 20px;
+}
+
+/* STAFF BOARD */
+
+.node-type-staff .field-field-staff-photo img {
+  border: 4px solid #E3DDCE;
+  margin: 0 auto;
+}
+
+.node-type-staff .content-left {
+    background-color: #F7F4E6;
+    border-bottom: 4px solid #E3DDCE;
+    font-size: 12px;
+    padding: 5px;
+}
