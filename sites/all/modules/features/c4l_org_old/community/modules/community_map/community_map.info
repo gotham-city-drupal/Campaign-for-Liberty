@@ -1,0 +1,11 @@
+; $Id: bootcamp.info,v 1.1 2008/05/25 00:02:17 Campaign For Liberty  $
+name = Community Map
+description = Community map module.
+core = 6.x 
+
+
+; Information added by drupal.org packaging script on 2008-05-29
+version = "6.x-1.0"
+core = "6.x"
+project = "communitymap"
+datestamp = "1212071414"
