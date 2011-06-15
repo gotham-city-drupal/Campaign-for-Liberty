@@ -7,6 +7,14702 @@ function community_uuid_features_default_content() {
   $nodes = array();
 
   $nodes[] = array(
+    'type' => 'state',
+    'language' => '',
+    'uid' => '1',
+    'status' => '1',
+    'comment' => '1',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'New Hampshire',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => 'admin',
+    'path' => 'community/new-hampshire',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NH',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '53044',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><b>New Hampshire</b> (<span style="white-space: nowrap;"><a href="http://upload.wikimedia.org/wikipedia/commons/7/7a/En-us-New_Hampshire.ogg" title="Listen"><img alt="Listen" height="11" src="http://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Speakerlink.svg/11px-Speakerlink.svg.png" width="11" /></a><sup><span class="IPA" style="color: rgb(0, 0, 238); font: bold 80% sans-serif; padding: 0pt 0.1em;"><a href="http://en.wikipedia.org/wiki/File:En-us-New_Hampshire.ogg" title="File:En-us-New Hampshire.ogg">i</a></span></sup> <span class="IPA" title="Representation in the International Phonetic Alphabet (IPA)"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English" title="Wikipedia:IPA for English">/</a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="\'n\' in \'nigh\'">n</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="long \'oo\' in \'food\'">uË</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="primary stress">Ë&circ;</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="\'h\' in \'high\'">h</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="short \'a\' in \'bad\'">æ</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="\'m\' in \'my\'">m</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="\'p\' in \'pie\'">p</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="\'sh\' in \'shy\'">Ê&fnof;</span></a></span><span class="IPA"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English#Key" title="Wikipedia:IPA for English"><span style="border-bottom: 1px dotted;" title="\'er\' in \'finger\'">É&trade;r</span></a></span><span class="IPA" title="Representation in the International Phonetic Alphabet (IPA)"><a href="http://en.wikipedia.org/wiki/Wikipedia:IPA_for_English" title="Wikipedia:IPA for English">/</a></span></span>) is a <a href="http://en.wikipedia.org/wiki/U.S._state" title="U.S. state">state</a> in the <a href="http://en.wikipedia.org/wiki/New_England" title="New 
+    England">New England</a> region of the <a href="http://en.wikipedia.org/wiki/Northeastern_United_States" title="Northeastern United States">northeastern</a> <a class="mw-redirect" href="http://en.wikipedia.org/wiki/United_States_of_America" title="United States of America">United States of America</a>. The state was named after the southern English <a href="http://en.wikipedia.org/wiki/Counties_of_England" title="Counties 
+    of England">county</a> of <a href="http://en.wikipedia.org/wiki/Hampshire" title="Hampshire">Hampshire</a>. It borders <a href="http://en.wikipedia.org/wiki/Massachusetts" title="Massachusetts">Massachusetts</a> to the south, <a href="http://en.wikipedia.org/wiki/Vermont" title="Vermont">Vermont</a> to the west, <a href="http://en.wikipedia.org/wiki/Maine" title="Maine">Maine</a> and the <a href="http://en.wikipedia.org/wiki/Atlantic_Ocean" title="Atlantic Ocean">Atlantic Ocean</a> to the east, and the Canadian province of <a href="http://en.wikipedia.org/wiki/Quebec" title="Quebec">Quebec</a> to the north. New Hampshire ranks 44th in land area, 46th in total area of the 50 states, and 41st in <a href="http://en.wikipedia.org/wiki/Population" title="Population">population</a>. It became the first post-<a href="http://en.wikipedia.org/wiki/European_colonization_of_the_Americas" title="European colonization of the Americas">colonial</a> <a href="http://en.wikipedia.org/wiki/Sovereignty" title="Sovereignty">sovereign</a> nation in the <a href="http://en.wikipedia.org/wiki/Americas" title="Americas">Americas</a> when it broke off from <a href="http://en.wikipedia.org/wiki/Kingdom_of_Great_Britain" title="Kingdom of Great Britain">Great Britain</a> in January 1776, and was one of the original <a href="http://en.wikipedia.org/wiki/Thirteen_Colonies" title="Thirteen 
+    Colonies">thirteen states</a> that <a href="http://en.wikipedia.org/wiki/United_States_Declaration_of_Independence" title="United States Declaration of Independence">founded</a> the United States of America six months later. In June 1788, it became the ninth state to ratify the <a href="http://en.wikipedia.org/wiki/United_States_Constitution" title="United States Constitution">United States Constitution</a>, bringing that document into effect. New Hampshire was the first U.S. state to have its own state <a href="http://en.wikipedia.org/wiki/Constitution" title="Constitution">constitution</a>. It has no general <a href="http://en.wikipedia.org/wiki/Sales_taxes_in_the_United_States" title="Sales taxes in the United States">sales tax</a>, nor is personal income (other than interest and dividends) <a href="http://en.wikipedia.org/wiki/Income_tax" title="Income tax">taxed</a> at either the state or local level.<sup class="reference" id="cite_ref-3"><a href="http://en.wikipedia.org/wiki/New_hampshire#cite_note-3"><span>[</span>4<span>]</span></a></sup> <a href="http://en.wikipedia.org/wiki/Concord,_New_Hampshire" title="Concord, New Hampshire">Concord</a> is the state capital, while <a href="http://en.wikipedia.org/wiki/Manchester,_New_Hampshire" title="Manchester, New Hampshire">Manchester</a> is the largest city in the state.</p><p>It is known internationally for the <a href="http://en.wikipedia.org/wiki/New_Hampshire_primary" title="New 
+    Hampshire primary">New Hampshire primary</a>, the first <a class="mw-redirect" href="http://en.wikipedia.org/wiki/U.S._presidential_primary" title="U.S. presidential primary">primary</a> in the quadrennial U.S. presidential election cycle.</p><p>Its license plates carry the <a class="mw-redirect" href="http://en.wikipedia.org/wiki/List_of_U.S._state_mottos" title="List of U.S. state mottos">state motto</a>: &quot;<a href="http://en.wikipedia.org/wiki/Live_Free_or_Die" title="Live Free 
+    or Die">Live Free or Die</a>.&quot; The <a class="mw-redirect" href="http://en.wikipedia.org/wiki/State_nickname" title="State 
+    nickname">state nickname</a> is &quot;The <a href="http://en.wikipedia.org/wiki/Granite" title="Granite">Granite</a> State&quot;, in reference to its geology and its tradition of self-sufficiency. To accentuate this, many state agencies and New Hampshire license plates carry the image of the <a href="http://en.wikipedia.org/wiki/Old_Man_of_the_Mountain" title="Old 
+    Man of the Mountain">Old Man of the Mountain</a>, a former granite stone face in the <a href="http://en.wikipedia.org/wiki/White_Mountains_%28New_Hampshire%29" title="White Mountains (New Hampshire)">White Mountains</a>. Several other official nicknames exist but are rarely used.<sup class="reference" id="cite_ref-4"><a href="http://en.wikipedia.org/wiki/New_hampshire#cite_note-4"><span>[</span>5<span>]</span></a></sup></p><p>Among prominent individuals from New Hampshire are <a href="http://en.wikipedia.org/wiki/Founding_Fathers_of_the_United_States" title="Founding Fathers of the United States">founding father</a> <a href="http://en.wikipedia.org/wiki/Nicholas_Gilman" title="Nicholas 
+    Gilman">Nicholas Gilman</a>, Senator <a href="http://en.wikipedia.org/wiki/Daniel_Webster" title="Daniel 
+    Webster">Daniel Webster</a>, <a href="http://en.wikipedia.org/wiki/American_Revolutionary_War" title="American Revolutionary War">Revolutionary War</a> hero <a href="http://en.wikipedia.org/wiki/John_Stark" title="John Stark">John Stark</a>, editor <a href="http://en.wikipedia.org/wiki/Horace_Greeley" title="Horace Greeley">Horace Greeley</a>, founder of the <a href="http://en.wikipedia.org/wiki/Christian_Science" title="Christian 
+    Science">Christian Science</a> religion <a href="http://en.wikipedia.org/wiki/Mary_Baker_Eddy" title="Mary Baker 
+    Eddy">Mary Baker Eddy</a>, poet <a href="http://en.wikipedia.org/wiki/Robert_Frost" title="Robert Frost">Robert Frost</a>, and author <a href="http://en.wikipedia.org/wiki/Dan_Brown" title="Dan Brown">Dan Brown</a>. New Hampshire has produced one president, <a href="http://en.wikipedia.org/wiki/Franklin_Pierce" title="Franklin Pierce">Franklin Pierce</a>.</p><p>New Hampshire&#39;s major recreational attractions include skiing, snowmobiling and other winter sports, hiking and mountaineering, observing the fall foliage, summer cottages along many lakes and the seacoast, motor sports at the <a href="http://en.wikipedia.org/wiki/New_Hampshire_Motor_Speedway" title="New Hampshire Motor Speedway">New Hampshire Motor Speedway</a>, and <a href="http://en.wikipedia.org/wiki/Laconia_Motorcycle_Week" title="Laconia Motorcycle Week">Motorcycle Week</a>, a popular motorcycle rally held in <a href="http://en.wikipedia.org/wiki/Weirs_Beach,_New_Hampshire" title="Weirs Beach, New Hampshire">Weirs Beach</a> near <a href="http://en.wikipedia.org/wiki/Laconia,_New_Hampshire" title="Laconia, New Hampshire">Laconia</a> in June. The <a href="http://en.wikipedia.org/wiki/White_Mountain_National_Forest" title="White Mountain National Forest">White Mountain National Forest</a> links the Vermont and Maine portions of the <a href="http://en.wikipedia.org/wiki/Appalachian_Trail" title="Appalachian
+     Trail">Appalachian Trail</a>, and boasts the <a href="http://en.wikipedia.org/wiki/Mount_Washington_Auto_Road" title="Mount Washington Auto Road">Mount Washington Auto Road</a>, where visitors may drive to the top of 6,288-foot (1,917&nbsp;m) <a href="http://en.wikipedia.org/wiki/Mount_Washington_%28New_Hampshire%29" title="Mount Washington (New Hampshire)">Mount Washington</a>.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.nh.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Live Free or Die',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '1',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6877cb-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => '',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Michigan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/michigan',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MI',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57408',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.michigan.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Great Lakes State',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '1',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Alaska',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/alaska',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AK',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57391',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Hello, I&#39;m your contact until we find an interim state coordinator for your state.Â&nbsp; If you know someone who would like to be interim state coordinator, please let me know!</p><p>Get to know your legislators and what they have in store for you - click &quot;State Legislature Page&quot; above for general information. Read the BILLS that will come up in the House &amp; Senate this year â&euro;&ldquo; http://www.legis.state.ak.us/basis/get_br_in_com.asp?session=26. Will they possibly affect you, your family, your friends? If so, visit the Capitol, meet your representatives, talk to them before the bill comes up in Committee, then if you are able, attend the public committee hearings and have your say. Interested in learning about how the legislation works? Talk to others who have visited the Capitol to get the scoop, or request a training session from Eagle Forum. The cost is minimal and you will learn a lot!</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'http://www.alaska.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Alaska C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c69202b-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Alabama',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/alabama',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AL',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57390',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><strong>Get to know your legislators and what they have in store for you - click &quot;State Legislature Page&quot; above. Read the BILLS that will come up in the House &amp; Senate this year - http://alisondb.legislature.state.al.us/acas/ViewPrefiledBillsACASLogin.asp. Will they affect you and your family? If so, visit the Capitol, meet your representatives, talk to them, and build relationships.</strong></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'http://www.alabama.gov/portal/index.jsp',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Alabama C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Arizona',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/arizona',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AZ',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57386',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><strong>Welcome to the Arizona Campaign for Liberty!</strong>&nbsp;&nbsp;The Grand Canyon state is on the forefront of the modern states rights battle.&nbsp; Join us to help fight national id, photo radar,&nbsp;for lower taxes, lower spending and a&nbsp;smaller, less intrustive government.&nbsp; Be an example for the rest of the&nbsp;nation!</p><p><strong>&loz; The first thing you should do</strong> is become the local coordinator of your precinct. &nbsp;The local coordinator is the backbone of the C4L mission.&nbsp; The C4L local coordinator bootcamp will give a novice to politics 2 years political experience.&nbsp; The bootcamp will strengthen your understanding and experience if you are a political veteran. &nbsp;As a local coordinator, you have access to fantastic training tools that will help you become more effective and efficient in your activities.&nbsp; <a href="/localcoordinator.php">http://www.campaignforliberty.com/localcoordinator.php</a></p><p><strong>&loz; The price of our Liberty</strong> is eternal vigilance, so join your local political party (of your choosing) and get involved with local government. &nbsp;Every position matters. &nbsp;Many C4L members are getting on their local school boards or water boards. &nbsp;</p><p><strong>&loz; Follow the Arizona C4L on Twitter and Facebook</strong></p><p><a href="http://twitter.com/azc4l">http://twitter.com/azc4l</a></p><p><a href="http://www.facebook.com/pages/Campaign-for-liberty-of-Arizona/111568317581">http://www.facebook.com/pages/Campaign-for-liberty-of-Arizona/111568317581</a></p><p><strong>&loz; Contribute Directly to the Arizona Campaign for Liberty</strong></p><p><a href="/contribute.php?for=AZ">https://www.campaignforliberty.com/contribute.php?for=AZ</a></p><p><strong>&loz; Learn about the two statewide projects the Arizona Campaign for Liberty supports</strong></p><p><a href="http://www.camerafraud.com">http://www.camerafraud.com</a>&nbsp;&nbsp;- The Anti-Photo Radar Initiative will ban photo radar (and 24x7 real time video recording) from the highways of Arizona.</p><p><a href="http://www.prop13arizona.com">http://www.prop13arizona.com</a>&nbsp; - Prop13Arizona will convert Arizona&#39;s property tax system from the most complex in the nation to the simplest, provide property tax&nbsp;&nbsp; cuts to residential and commerical properties and put a permanent cap on property tax growth for the future.</p><p>If you have any questions or concerns, please contact the state coordinator, Kelly Fink, or your county coordinator.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'http://az.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'See Introduction Below',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Arkansas',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/arkansas',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AR',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57392',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p align="CENTER" style="margin-bottom: 0in;"><span style="color: #ff0000;"><small><strong>Note: We are still working to get a set date for The Arkansas LibertyFest. As soon as we have a date worked out, we will let you know.</strong></small></span></p><p align="CENTER" style="margin-bottom: 0in;"><span style="font-size: medium;"><small><strong>2010 Arkansas Candidates for Federal Positions</strong></small></span></p><p align="CENTER" style="margin-bottom: 0in;"><small><em><strong>*Please note that this is NOT an endorsement of any candidate listed below.</strong></em> <strong>IMPORTANT </strong><span style="font-size: small;"><span style="font-weight: normal;"><strong>Reminder</strong>: <em>Because Campaign for Liberty is a 501(c)(4) organization, members are <strong>NOT</strong> allowed to electioneer under the Campaign for Liberty name or logo. If a member wishes to work toward the election of a specific candidate, the member must use the candidate&#39;s </em></span></span><em><strong><span style="font-size: small;"><span style="text-decoration: underline;"><span style="font-weight: normal;">OWN</span></span></span></strong><span style="font-size: small;"><span style="font-weight: normal;"> voter data in any and all Get Out The Vote (GOTV) efforts.</span></span></em></small></p><p align="LEFT" style="margin-bottom: 0in;"><span style="font-size: small;"><span style="font-weight: normal;"><small>If you know of anyone that has already filed and are not listed below, please let me know and I will make the appropriate changes. If you have any questions about the listed candidates, please let me know. Also, although the updated list will show in your email, it may take an hour or two for the update to show on our <a href="/usa/AR" target="_self" title="ARC4L State page"><strong>state page</strong></a>.</small></span></span></p><p align="LEFT" style="margin-bottom: 0in;"><span style="font-size: small;"><small><strong>US SENATE</strong></small></span></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.blancheforsenate.com/" name="Blanche   Lincolon">Incumbent Blanche Lincoln (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.jimholt2010.com/" name="Jim Holt">Jim Holt (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://curtiscoleman.com/" name="Curtis   Coleman">Curtis Coleman (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.boozman.house.gov/" name="John   Boozman">John Boozman (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.alexanderforsenate.org/" name="Randy   Alexander">Randy Alexander (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.voteconrad.com/" name="Conrad">Conrad Reynolds (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.buddyforarkansas.com/" name="Buddy   Rogers">Buddy Rogers (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://senatorgilbertbaker.com/" name="Gilbert">Gilbert Baker (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.trevordrown.com/" name="Trevor   Drown">Trevor Drown (I) </a></small></p><p align="LEFT" style="margin-bottom: 0in;"><a href="http://www.nogy4senate.com/" target="_blank" title="Chris Nogy">Chris Nogy (I)</a></p><p align="LEFT" style="margin-bottom: 0in;"><span style="font-size: small;"><small><strong>US Congress- 1</strong></small></span><small><sup><span style="font-size: small;"><strong>st</strong></span></sup><span style="font-size: small;"><strong> District-incumbent Marion Berry not running</strong></span></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.meetrickcrawford.com/" name="Crawford">Rick Crawford (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.princellasmith.com/" name="Smith">Princella Smith (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.chadcauseyforcongress.org/" name="Chad">Chad Causey (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.davidcookforcongress.com/" name="Cook">David Cook (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.timwooldridge.com/" name="Tim">Tim Wooldridge (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><span style="font-size: small;"><small><strong>US Congress- 2<sup>nd</sup> District-incumbent Snyder not running</strong></small></span></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.timgriffinforcongress.com/" name="Griffin">Tim Griffin (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://scottwallace2010.com/" name="Wallace">Scott Wallace (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.elliottforcongress.com/" target="_blank" title="Joyce   Elliot">Joyce Elliot (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.robbiewills.com/" name="Wills">Robbie Wills (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.votejohnadams.org/" target="_blank" title="John Adams">John Adams (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.bolingforcongress.com/" target="_blank" title="David   Boling">David Boling (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><span style="font-size: small;"><small><strong>US Congress- 3<sup>rd</sup> District-incumbent Boozman running for US Senate</strong></small></span></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.womackforcongress.com/index.htm" name="Womack">Steve Womack (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.cecilelistens.com/" name="Cecile">Cecile Bledsoe (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.mikemooreforcongress.com/" name="Moore">Mike Moore (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://whitakerforcongress.com/" name="Whitaker">David Whitaker (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://jerryforcongress.com/" name="Coon">Jerry Coon (I)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.gunnerforcongress.com/" target="_blank" title="Gunner   Delay">Gunner Delay (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.stevelowryforcongress.com/" target="_blank" title="Steve   Lowry">Steve Lowry (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.skoch2010.com/" target="_blank" title="Bernie   Skoch">Bernie Skoch (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://maddoxforcongress.com/" target="_blank" title="Kurt   Maddox">Kurt Maddox (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><span style="font-size: small;"><small><strong>US Congress- 4<sup>th</sup> District</strong></small></span></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.ross4congress.com/" name="Ross">Incumbent Mike Ross (D)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.marcrosson.com/" name="Rosson">Marc Rosson (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.gallasforcongress.com/" target="_blank" title="Glenn   Gallas for Congress">Glenn Gallas (R)</a>-</small></p><p align="LEFT" style="margin-bottom: 0in;"><small><a href="http://www.bethanne.net/" target="_blank" title="Beth Anne   Rankin">Beth Anne Rankin (R)</a></small></p><p align="LEFT" style="margin-bottom: 0in;"><small>In Liberty,</small></p><p align="LEFT" style="margin-bottom: 0in;"><small>Caleb Kinley, AR Interim State Coordinator</small></p><p align="LEFT" style="margin-bottom: 0in;"><small>Campaign for Liberty</small></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'http://portal.arkansas.gov/Pages/default.aspx',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Arkansas C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c69638f-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'California',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/california',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57393',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><span style="font-size: medium;">Liberty County Central Committees members needed</span></p><p><span style="font-size: medium;">all over California.&nbsp; Contact your countyand regional coordinators</span></p><p><span style="font-size: medium;">for more information.&nbsp; Get Involved!</span></p><p><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="350" width="425"> <param name="src" value="http://www.youtube.com/v/dLv69jIF9S0" /><embed height="350" src="http://www.youtube.com/v/dLv69jIF9S0" type="application/x-shockwave-flash" width="425"></embed> </object></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ca.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'California C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Colorado',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/colorado',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CO',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57394',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;"><span style="text-decoration: underline;"><em><strong><span style="color: #ff0000;"><span style="font-size: xx-large;"><span style="color: #800080;">STATE ISSUES:</span></span></span></strong></em></span></p><div style="text-align: center;"><span style="color: #0000bf; font-family: times new roman,new york,times,serif;">Education is <em><span class="Apple-style-span" style="color: #ff0000;">POWER</span></em>!</span><span style="color: #0000bf; font-family: times new roman,new york,times,serif; font-style: italic;">&nbsp;</span><span style="color: #0000bf; font-family: times new roman,new york,times,serif; font-style: italic;">&nbsp;&nbsp;<br />
+    <span class="Apple-style-span" style="font-style: normal;">Power is&nbsp;</span><span class="Apple-style-span" style="color: #ff0000;">Information</span></span><span style="color: #0000bf;">!</span></div><div style="text-align: center;"><span style="color: #0000bf; font-family: times new roman,new york,times,serif; font-style: italic;">See the links below</span></div><div style="text-align: center;">&nbsp;</div><div style="text-align: center;"><a rel="nofollow" target="_blank"><span style="color: #ff0000;">www.Colorado.TenthAmendmentCenter.com</span></a></div><p style="text-align: center;">PLEASE become in informed juror, and share with others:<br style="font-family: garamond,new york,times,serif;" />
+    <span style="font-family: garamond,new york,times,serif;"><a href="http://fija.org/" rel="nofollow" target="_blank"><span class="Apple-style-span" style="color: #0000ff;">www.fija.org</span></a><span class="Apple-style-span" style="color: #0000ff;"> </span><span class="Apple-style-span" style="background-color: #ffffff;"><span class="Apple-style-span" style="color: #0000ff;">(<em>Fully Informed Jury Association)</em></span></span></span></p><p style="text-align: center;">Teach our children about the Constitution:<br />
+    <span style="color: #ff0000; font-family: garamond,new york,times,serif;"><a href="http://www.libertyday.org/" rel="nofollow" style="color: #ff0000;" target="_blank">www.LibertyDay.org</a> <em>(Constitutional Education of children)</em></span></p><p style="text-align: center;"><span style="color: #ffffff;"><a name="10"></a></span><strong><span style="font-size: 10pt; font-family: ">_____________________________________________________________________________</span></strong></p><div><p style="text-align: center;"><em><span style="color: #ff0000;"><span style="font-size: xx-large;"><strong>FURIOUS ABOUT OBAMA CARE?</strong></span></span></em></p><p style="text-align: center;"><em><span style="font-size: xx-large;"><strong><span style="color: #0000ff;">You</span> can stop it here in Colorado!</strong></span></em></p><p style="text-align: center;"><em><span style="color: #008000;"><span style="font-size: xx-large;"><strong>HOW?</strong></span></span></em></p><p style="text-align: center;">If you are one of the people that is against the new health care being forced upon us, please read the message below from Jon Caldara, leader of the ballot petition drive to make it so Coloradoan&#39;s do <span style="text-decoration: underline;"><strong>NOT</strong></span> have to be forced to take Federally run health care.</p><p style="text-align: center;"><em><strong><span style="font-size: large;">If you agree with this, <span style="color: #ff0000;"><span style="text-decoration: underline;">please send out to all you know</span>. </span></span></strong></em><br />
+    <br />
+    &quot;<strong>FINALLY! They are at the printers!</strong> After weeks and weeks of bureaucratic hurdles and opposition challenges, the petition to get our &quot;Right to Health Care Choice&quot; amendment on the ballot is being printed. And we are going to need an army of volunteer circulators to get the job done. Please go <a href="http://www.patientpowernow.org/2010/03/21/defend-colorado-obamacare/" rel="nofollow" target="_blank"><span style="color: blue;">here</span></a> to sign up to help. And join our &quot;Defend Colorado from Obamacare&quot; Facebook page <a href="http://www.facebook.com/pages/Golden-CO/Defend-Colorado-from-ObamaCare/228168593599?ref=ts" rel="nofollow" target="_blank"><span style="color: blue;">here</span></a>.&quot;</p><p style="text-align: center;">__________________________________________________________________________</p></div><p style="text-align: center;"><span style="color: #00ccff;"><em><strong><span style="font-size: x-large;"><span style="font-size: xx-large;">November 2010 ballot initatives!</span></span></strong></em></span></p><p style="text-align: center;"><span style="color: #00ccff;"><em><strong><span style="font-size: x-large;"><span style="font-size: xx-large;"><span style="color: #0000ff;"><span style="font-size: large;">Want to lower your taxes?</span></span></span></span></strong></em></span></p><p style="text-align: center;"><span style="font-size: x-large;">Read how to do it right here</span></p><p style="text-align: center;"><span style="font-size: x-small;">Review Opposition Funding, Flier, and Volunteer.</span></p><p>As C4L members, we believe in reducing taxes and wanting a smaller Federal and State government.&nbsp; Below are Colorado State ballot initatives that will be on the ballot in November.&nbsp; Check them out!&nbsp;</p><p><strong>#60</strong> - Limit Property Tax - VOTE <span style="color: #0000ff;"><span style="text-decoration: underline;"><strong>YES</strong></span></span> on 60!</p><p>This simple, half-page plan is both Tax Reform and Tax Relief. It makes the system more fair and more rational. It limits tax rates (mill levies). It stops illegal types of property tax. For more information click <span style="text-decoration: underline;"><a href="http://cotaxreforms.com/" target="_blank">here</a></span>.</p><p><strong>#61</strong> - Limit Colorado Debt - VOTE <strong><span style="text-decoration: underline;"><span style="color: #0000ff;">YES</span></span></strong> on 61!</p><p>No debt, no borrowing, no loans&mdash; require a balanced state budget that protects all citizens from repaying overspending by irresponsible state politicians. For more information click<a href="http://cotaxreforms.com/" target="_blank"> <span style="text-decoration: underline;">here</span></a>.</p><p><strong>Prop #101</strong> - Colo. Tax Reform - VOTE <span style="text-decoration: underline;"><strong><span style="color: #0000ff;">YES</span></strong></span> on 101!</p><p>Denver politicians recently DOUBLED registration &quot;fees,&quot; already way above the true cost of registering cars. They spend the money elsewhere. That&#39;s a $265 million <span style="color: #ff0000;"><em> yearly</em></span> tax increase. Voters <span style="color: #ff0000;"><em><strong>never</strong></em></span> approved that tax, as the <span style="text-decoration: underline;">constitution requires</span>. Proposition 101 makes that annual &quot;fee&quot; a simple, flat $10 per vehicle. For more information click <span style="text-decoration: underline;"><a href="http://cotaxreforms.com/" target="_blank">here</a></span>.</p><p>As more initatives are approved, we will post them here for you to research.</p><p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><p style="text-align: center;"><span style="font-size: large;"><em><strong><span style="color: #ff0000;">Colorado Campaign for Liberty&#39;s</span> </strong></em></span></p><p style="text-align: center;"><span style="font-size: large;"><em><strong>Adopt a State Legislator Program is here!</strong></em></span><br />
+    <br />
+    <span style="color: #ff0000;">C4L</span> is looking for the following:<br />
+    <br />
+    <em>Citizen Lobbyist For the Tenth Amendment for our Adopt a State Legislator program:</em> Must be willing to meet your State Rep or State Senator to bring their attention to 10th Amendment issues. You must also be willing to meet your neighbors to have them sign these <a href="/files/10petition.pdf" target="_blank"><span style="text-decoration: underline;"><span style="font-family: mceinline;">petitions</span></span></a> so that you may show your adopted state legislator how many of their constituents share your concerns.<br />
+    <br />
+    <em>Colorado <span style="color: #ff0000;">C4L</span> member:</em> Willing to meet with other Tenther activists in your area (local coordinator) to discuss your progress, and brainstorm some new ideas. Actively recruit new members and spread the word about Colorado <span style="color: #ff0000;">C4L</span>.<br />
+    <br />
+    <em>Colorado County Coordinator and Regional Coordinator:</em> Be willing to run the meetings for the <span style="color: #ff0000;">C4L </span>group that you are in and lead the local coordinators in your County or Region.<br />
+    <br />
+    If you are willing to fill one or more of these roles e-mail Bonnie Solan-Cannon, C4L CO State Organizer, with your name, contact information, where you live, your State Senate and House district numbers, and what position you are looking to fill.</p><p style="text-align: center;">If you need help finding your elected district, use this website!&nbsp; It&#39;s quite informative!</p><p style="text-align: center;"><a href="http://www.comaps.org/allsearch.html" target="_blank">CoMaps.org</a></p><p style="text-align: center;">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p><p style="text-align: center;"><strong><span style="font-size: xx-large;"><span style="color: #ff0000;">&quot;I resign&quot;</span></span></strong></p><p style="text-align: center;"><span style="font-size: x-small;"><em><strong>A letter to all C4L members from Bonnie Cannon, CO State Interim Coordinator</strong></em></span></p><p style="text-align: center;"><span style="font-size: medium;">&quot;I resign&quot; is not what I want to hear from Campaign for Liberty lovers - I&#39;ll keep working for liberty <span style="text-decoration: underline;"><em>if <span style="color: #008000;"><strong>YOU</strong></span> do too!</em></span></span></p><p style="text-align: center;"><span style="color: #0000ff;"><em><strong><span style="font-size: medium;">BUT THESE UNITED STATES NEEDS <span style="color: #008000;">YOUR</span> HELP NOW MORE THAN EVER!</span></strong></em></span></p><p style="text-align: center;"><span style="font-size: medium;"><span style="color: #008000;"><strong>YOU</strong></span> provided the r<span style="color: #ff0000;">3VOL</span>utionary push to the many other liberty and fiscally minded groups, and <span style="color: #008000;"><strong>you&#39;re</strong></span> the only ones who can give purposeful direction to this momentum.&nbsp; <span style="color: #008000;"><strong>You&#39;re</strong></span> among a select few who have the Constitutional knowledge needed to turn populist anger into real liberty!</span></p><p style="text-align: center;"><span style="font-size: medium;">I have a two-point plan, one federal and one state/local.</span></p><p style="text-align: center;"><span style="font-size: medium;"><strong>Federal</strong> - Work as hard as possible to get the Audit the Fed bill, S 604, passed through the Senate.&nbsp; This would be a major roadblock on the government&#39;s road to serfdom.</span></p><p style="text-align: center;"><span style="font-size: medium;"><strong>State &amp; Local</strong> - Make it a requirement for all state and local candidates to promote specific 10th Amendment legislation to get <em><strong>nominated</strong></em>.&nbsp; I<em>f they&#39;re unaware, then politely educate them by directing them to TenthAmendmentCenter.com.</em></span></p><p style="text-align: center;"><span style="font-size: medium;">After a candidate hears 50 different voters mention &quot;<strong>10th Amendment Center</strong>&quot; - they&#39;re going to learn about it fast.</span></p><p style="text-align: center;"><span style="text-decoration: underline;"><em><span style="font-size: medium;">Make candidates for <span style="color: #ff6600;">Sheriff</span> and <span style="color: #ff6600;">State Attorney General</span> <strong>publicly</strong> take a stance for specific 10th Amendment legislation.</span></em></span></p><p style="text-align: center;"><span style="font-size: medium;">If no candidates are running, find one in any party!</span></p><p style="text-align: center;"><span style="text-decoration: underline;"><em><span style="font-size: medium;">Make candidates for <span style="color: #ff6600;">Governor</span> <strong>publicly</strong> take a stance for specific 10th Amendment legislation.</span></em></span></p><p style="text-align: center;"><span style="text-decoration: underline;"><em><span style="font-size: medium;">Make candidates for <span style="color: #ff6600;">local</span> office <strong>publicly</strong> take a stance for specific 10th Amendment legislation.</span></em></span></p><p style="text-align: center;"><span style="color: #ff0000;"><em><strong><span style="font-size: medium;">Why?</span></strong></em></span></p><p style="text-align: center;"><span style="font-size: medium;">If the nation collapses, we must have a Constitutional Mayor, Town Council and County Commissioners elected to keep our County&#39;s safe.</span></p><p style="text-align: center;"><span style="font-size: medium;"><span style="text-decoration: underline;"><em>Make sure <span style="color: #008000;"><strong>your</strong></span> <span style="color: #ff6600;">Sheriff</span> joins <strong>Oath Keepers</strong></em></span> (OathKeepers.org) and pass out information about that organization to all &quot;peacekeepers&quot; (sheriffs, military, veterans, police, etc.) and thank them for protecting, defending, and upholding their oath to the Constitution.</span></p><p style="text-align: center;"><span style="text-decoration: underline;"><em><span style="font-size: medium;">Make candidates for <span style="color: #ff6600;">State Senate</span> and <span style="color: #ff6600;">State House</span> <strong>publicly</strong> take a stance for specific 10th Amendment legislation.</span></em></span></p><p style="text-align: center;"><span style="font-size: medium;">The Colorado 10th Amendment Center website has 7 or 8 more bills that need sponsors.</span></p><p style="text-align: center;"><strong><span style="font-size: medium;">Can <span style="color: #008000;">you</span> find a State Senator or Representative to do this?</span></strong></p><p style="text-align: center;"><span style="font-size: medium;">State and Federal pledges are also available at www.Colorado.TenthAmendmentCenter.com</span></p><p style="text-align: center;"><span style="font-size: medium;">Look for the 10-4 pledge page for both State and Federal candidate pledge forms</span></p><p style="text-align: center;"><span style="font-size: medium;">The 10th Amendment (notice a pattern here?) is rapidly gaining popularity among the grassroots - including people who don&#39;t necessarily agree with us - because it is the Swiss Army Knife of politics.&nbsp; This is great news because this is the beginning of a broad-based movement.&nbsp; Pay attention because <span style="color: #008000;"><strong>you</strong></span> may begin to notice how more and more people begin using the words &quot;<strong>Tenth Amendment</strong>&quot; and &quot;<strong>nullification</strong>&quot; in everyday political discussion.&nbsp; Remember the word &quot;<strong>blowback</strong>&quot;?</span></p><p style="text-align: center;"><span style="font-size: medium;">Once we get a state government that actively promotes the 10th Amendment, then we&#39;ll have a powerful team on our side.</span></p><p style="text-align: center;"><span style="font-size: medium;">Think of the &quot;V&quot; formation in football:</span></p><p style="text-align: center;"><em><span style="font-size: medium;">The <span style="color: #ff6600;">Governor</span> leads the way by &quot;Just saying NO&quot; to the Federal Government.</span></em></p><p style="text-align: center;"><em><span style="font-size: medium;">Our county <span style="color: #ff6600;">Sheriffs</span> flank the Governor by telling Federal agents that they do not have permission to enforce their laws here.</span></em></p><p style="text-align: center;"><em><span style="font-size: medium;">Our <span style="color: #ff6600;">State Senators</span> and <span style="color: #ff6600;">Representatives</span> pass laws to give the legal support that good Sheriffs need.</span></em></p><p style="text-align: center;"><em><span style="font-size: medium;">And our <span style="color: #ff6600;">State Attorney General</span> sues the pants off the Feds until they decide it&#39;s easier to repeal laws instead.</span></em></p><p style="text-align: center;"><span style="color: #ff0000;"><strong><span style="font-size: medium;">Do <span style="color: #008000;">you</span> spend 10 or more hours per week blogging for freedom and liberty?</span></strong></span></p><p style="text-align: center;"><span style="font-size: medium;">Imagine spending some of that time doing one of the more effective following instead:</span></p><p style="text-align: center;"><span style="font-size: medium;">Go out, in person, and <span style="text-decoration: underline;">ask every candidate <span style="color: #008000;"><strong>you</strong></span> meet</span> if they support (<em>insert <span style="color: #008000;"><strong>your</strong></span> favorite 10th Amendment legislation here</em>).</span></p><p style="text-align: center;"><span style="font-size: medium;">This will be 100 times more effective than blogging.&nbsp; <strong>Why?</strong>&nbsp; Elected officials and candidates listen <span style="color: #ff0000;"><strong>BEST</strong></span> when <span style="color: #008000;"><strong>YOU</strong></span> are there <strong>in person</strong> and their jobs are on the line.&nbsp; Let them know that <span style="color: #008000;"><strong>you</strong></span> mean business by making this the single <strong>make-or-break</strong> issue for <span style="text-decoration: underline;"><span style="color: #008000;"><strong>your</strong></span></span> vote and <span style="color: #008000;"><span style="text-decoration: underline;"><strong>your</strong></span></span> money.</span></p><p style="text-align: center;"><strong><em><span style="font-size: medium;">Best of all?</span></em></strong></p><p style="text-align: center;"><span style="font-size: medium;">They will begin to recognize <span style="color: #008000;"><strong>YOU</strong></span> as a <em>major</em> political activist because we&#39;re all communicating a common message by sending them to the same website of TenthAmendmentCenter.com.</span></p><p style="text-align: center;"><strong><span style="font-size: medium;">WE NEED <span style="color: #008000;">YOU</span> TO HELP IN WHATEVER WAY <span style="color: #008000;">YOU</span> LIKE TO:</span></strong></p><p style="text-align: center;"><span style="font-size: medium;">Make a big showing at the Capitol for rallies and sign waves for/against a bill or testimony for a bill.</span></p><p style="text-align: center;"><span style="font-size: medium;">Get to know <strong><span style="color: #008000;">your</span></strong> elected officials, <strong>face-to-face</strong>. (Sheriff, Mayor, State Senator and Representative, Town Council, County Commissioners, etc.)</span></p><p style="text-align: center;"><span style="font-size: medium;">Become a Precinct Committee person (if interested, email me and I&#39;ll explain the 5 hours of work you would need to do for the <span style="text-decoration: underline;">whole year</span>)</span></p><p style="text-align: center;"><span style="font-size: medium;">Learn more about 10h Amendment strategies and talk to people in <span style="color: #008000;"><strong>your</strong></span> community.&nbsp; Enlighten them to the beauty of the Constitution and The 110th Amendment Center!</span></p><p style="text-align: center;"><span style="font-size: medium;">If <span style="color: #008000;"><strong>YOU</strong></span> bring in just one new person per month to Campaign for Liberty, and they do the same, and so on, <span style="color: #008000;"><strong>you</strong></span> could be directly responsible for over <strong><em>A QUARTER MILLION</em></strong> new members in one year.</span></p><p style="text-align: center;"><span style="font-size: medium;">250,000 x 863 (members of this group) = 215,750,000 new liberty lovers!</span></p><p style="text-align: center;"><span style="font-size: medium;">Do <span style="color: #008000;"><strong>you</strong></span> think <span style="color: #0000ff;"><em><strong>CAMPAIGN FOR LIBERTY</strong></em></span> would have some political <strong><span style="text-decoration: underline;"><span style="color: #ff0000;">CLOUT</span></span></strong> then?</span></p><p style="text-align: center;"><span style="color: #0000ff;"><strong><span style="font-size: xx-large;"><span style="color: #000000;">Holy</span> F<span style="color: #ff0000;">r</span>e<span style="color: #ff0000;">e</span>d<span style="color: #ff0000;">o</span>m <span style="color: #000000;">Batman!</span></span></strong></span></p><p style="text-align: center;"><span style="font-size: medium;">Do <span style="color: #008000;"><strong>YOU</strong></span> know 12 people that might be interested in Campaign for Liberty and the 10h Amendment?</span></p><p style="text-align: center;"><em><span style="font-size: medium;">Would <strong><span style="color: #008000;">YOU</span></strong> resolve, in the New Year, that <span style="color: #008000;"><strong>you</strong></span> are going to <span style="text-decoration: underline;">dedicate <span style="color: #008000;"><strong>yourself</strong></span> to restoring <span style="color: #0000ff;">l<span style="color: #ff0000;">i</span>b<span style="color: #ff0000;">e</span>r<span style="color: #ff0000;">t</span>y</span></span>?</span></em></p><p style="text-align: center;"><span style="font-size: medium;">If Yes!&nbsp; then please come to the event on <strong>Sunday, Jan. 17th at 1:00 pm</strong> and watch the movie &quot;<em>For Liberty: How the Ron Paul R3voLution Watered the Withered Tree of Liberty</em>&quot; and learn afterwards the easy strategy we have planned for our glorious state!</span></p><p style="text-align: center;"><span style="font-size: medium;">Email me (Bonnie), and I will send <span style="color: #008000;"><strong>you</strong></span> the address and details of the event.</span></p><p style="text-align: center;"><span style="font-size: medium;">If you believe liberty comes through apathy, then freedom is hopeless and tyranny will take over...period.&nbsp; Without <strong><span style="color: #008000;">you</span></strong>, I am only one and we need thousands...millions.</span></p><p style="text-align: center;"><span style="font-size: medium;">The only reason why most major candidates in the state knows my name is because I&#39;m trying to represent <span style="color: #008000;"><strong>YOU</strong></span>, and I&#39;m there <em>face-to-face</em> with <em>them</em>.</span></p><p style="text-align: center;"><span style="font-size: medium;">A r<span style="color: #ff0000;">3voL</span>ution is a movement of many, active, <em>passionate</em> people, and I will do my best if <span style="color: #008000;"><strong>you</strong></span> stand up to help <span style="text-decoration: underline;">whenever</span> <span style="color: #008000;"><strong>you</strong></span> can, and sometime when it&#39;s difficult.&nbsp; If it were easy, we&#39;d be done by now.</span></p><p style="text-align: center;"><span style="font-size: medium;">Our job is actually getting easier because others are coming around to our view.&nbsp; If we only focus <strong>Federally</strong> on the Audit the Fed bill, (S 604), and <strong>locally/state wide</strong>, on the 10th Amendment movement, it simplifies our approach so <span style="color: #008000;"><strong>you </strong></span>will not be overwhelmed with so many items to work for or against.</span></p><p style="text-align: center;"><span style="font-size: medium;">We can do this...<span style="color: #008000;"><strong>YOU</strong></span> can do this.&nbsp; All we need is <span style="color: #008000;"><strong>YOU</strong></span> to help grow the Liberty Tree stronger than it&#39;s ever been.&nbsp; Washington D.C. and the MSM are the fertilizer, <span style="color: #008000;"><strong>YOU</strong></span> be the <span style="color: #0000ff;">water</span>!&nbsp; Let&#39;s make the tree of liberty grow tall, proud and free.</span></p><p style="text-align: left;"><span style="font-size: medium;">Yours in Liberty,</span></p><p style="text-align: left;"><span style="font-size: medium;">Bonnie Cannon, CO Interim State Coordinator</span></p><p style="text-align: center;"></p><p><span style="font-size: large;"><strong>____________________________________________________________</strong></span></p><p style="text-align: center;"><span style="font-size: xx-large;"><strong><em><span style="text-decoration: underline;"><span style="color: #800080;">FEDERAL ISSUES:</span></span></em></strong></span></p><p style="text-align: center;">S 604 is the only Federal issue we will be dealing with in 2010.&nbsp; All other issues that the Fed&#39;s try to &quot;bog&quot; us down with, that can be dealth with at the State level, will be directed to our 10th Amemdment movement here in Colorado.</p><p style="text-align: center;">This helps us promote the K.I.S.S. (Keep It Simple Stupid) method of getting things done and hopefully, keeps you from becoming overwhelmed.</p><p style="text-align: left;">&nbsp;</p><p>&nbsp;</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.colorado.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Colorado C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Connecticut',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/connecticut',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CT',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57395',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: left;">Hello, I&#39;m your contact until we find an interim state coordinator for your state. If you know someone who would like to be interim state coordinator, please let me know.</p><p style="text-align: left;">In 2010, State Legislators will be in Session from February-May.&nbsp; Get to know your legislators and what they have in store for you - click &quot;State Legislature Page&quot; above for general information.&nbsp; Frequently asked questions are answered <a href="http://www.cga.ct.gov/asp/content/FAQs.asp">here</a>.&nbsp; Read the BILLS that will come up in the House &amp; Senate this year - search <a href="http://www.cga.ct.gov/asp/CGABillInfo/CGABillInfoRequest.asp" target="_blank">here</a>.&nbsp; Will they possibly affect you, your family, your friends?&nbsp; If so, visit the State Capitol, meet your representatives, talk to them before the bill comes up in Committee, then if you are able, attend the public committee hearings and have your say.</p><p style="text-align: left;">Interested in learning about how legislation works and what you can do? Consider attending one of Campaign for Liberty&#39;s Regional Conferences. Sign up as a member and receive notifications of upcoming Conferences.</p><p style="text-align: center;"><span style="font-size: large;"><span style="color: #0000ff;"><strong>Welcome to the C4L Connecticut page - We are the Constitution State!</strong></span></span></p><p style="text-align: center;">&nbsp;</p><p style="text-align: left;"><span style="color: #3366ff;"><strong><span style="font-size: medium;"><a href="http://www.ct.gov/GovernorRell/site/default.asp" target="_blank"><span style="font-size: small; color: #000000;">Our Governor is Jodi Rell (R).</span></a></span></strong></span></p><p style="text-align: left;"><span style="color: #3366ff;"><strong><span style="font-size: medium;"><span style="font-size: small; color: #000000;">Other state officials are currently as follows:</span></span></strong></span></p><ul><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><a href="http://www.ct.gov/otlg"><span style="color: #000080;">Office of Lt. Governor Michael Fedele</span></a></span></div></li><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><a href="http://www.state.ct.us/ott/"><span style="color: #000080;">Office of the State Treasurer, Denise Nappier</span></a></span></div></li><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><a href="http://www.osc.state.ct.us/"><span style="color: #000080;">Office of the State Comptroller, Nancy Wyman</span></a></span></div></li><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><a href="http://www.cslib.org/attygenl/"><span style="color: #000080;">Office of the Connecticut Attorney General, Richard Blumenthal</span></a></span></div></li><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><a href="http://www.sots.state.ct.us/"><span style="color: #000080;">Office of the Secretary of the State, Susan Bysiewicz</span></a></span></div></li></ul><p><strong>State Maps:</strong></p><p style="text-align: left;">&nbsp;</p><ul><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><span style="font-size: small;"><strong>CT Congressional Districts ( <a href="http://www.ctn.state.ct.us/civics/maps/congressional.pdf">pdf</a> | <a href="http://www.ctn.state.ct.us/civics/maps/congressional.gif" target="_blank">gif</a> ) </strong></span></span></div></li><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><span style="font-size: small;"><strong>CT State Senate Districts ( <a href="http://www.ctn.state.ct.us/civics/maps/senate.pdf">pdf</a> | <a href="http://www.ctn.state.ct.us/civics/maps/senate.gif" target="_blank">gif</a> )</strong></span></span></div></li><li><div><span style="font-family: Verdana,Arial,Geneva; font-size: x-small;"><span style="font-size: small;"><strong>CT House of Representatives Districts ( <a href="http://www.ctn.state.ct.us/civics/maps/House%20of%20Reps.pdf">pdf</a> | <a href="http://www.ctn.state.ct.us/civics/maps/House%20of%20Reps.gif" target="_blank">gif</a> )</strong></span></span></div></li></ul><p style="text-align: left;">&nbsp;</p><div>&nbsp;</div><div>&nbsp;</div><div><strong><span style="font-size: medium;"><a href="http://www.ct.gov/sots/lib/sots/capitol/bdscomms/bdscomms/gr2007supptbl.pdf" target="_blank">Click here for Connecticut State Boards and Commissions.</a></span></strong></div><div>&nbsp;</div><div><strong><span style="font-size: medium;"><a href="http://www.cslib.org/law.htm" target="_blank">Connecticut State Library - State Laws and Legislation</a></span></strong></div><div>&nbsp;</div><div><strong><span style="font-size: medium;"><a href="http://www.ct.gov/governorrell/cwp/view.asp?a=1317&amp;q=425180" target="_blank">Connecticut Budget Homepage</a></span></strong></div><div><strong><span style="font-size: medium;"><a href="http://www.ctn.state.ct.us/daily_schedule.asp" target="_blank">CT-N Daily Schedule</a></span></strong></div><div><strong><span style="font-size: medium;"><a href="http://www.ct.gov/sots/cwp/view.asp?a=3176&amp;q=391916" target="_blank">Getting appointed to a Connecticut Board or Commission</a></span></strong></div><div><strong><span style="font-size: medium;"><a href="/blog.php?view=9625" target="_blank">How to track a state bill or state congressman.</a></span></strong></div><p>&nbsp;</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p><p><strong>Connecticut Political Parties:</strong></p><ul><li><a href="http://www.ctgop.org/" target="_blank">Republican Party</a></li><li><a href="http://www.ctdems.org/" target="_blank">Democratic Party</a></li><li><a href="http://www.lpct.org/" target="_blank">Libertarian Party</a></li><li><a href="http://www.ctgreens.org/index.shtml" target="_blank">Green Party</a></li></ul>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ct.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Connecticut C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c69acbd-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Delaware',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/delaware',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DE',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57396',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;"><strong>Get involved!</strong></p><p style="text-align: left;">Attend the next meeting in your county.&nbsp; Contact your county coordinator to find out what&#39;s going on in your area.&nbsp; Create a membership and start using the tools available to you - fill out your skills, fill in your precinct data, and sign up to become a local coordinator!</p><p>It&#39;s an election year, so <a href="/blog.php?view=33142"><strong>pick a party and get involved!</strong></a>&nbsp; There are resources on this website about how to&nbsp; get involved with all of the political parties in Delaware.</p><p>If you have questions or suggestions, please drop me an email through this site, or email me at lauren.crissman@campaignforliberty.com</p><p>Peace &amp; liberty,</p><p>Lauren Crissman<br />
+    Interim State Coordinator</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.delaware.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Delaware C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c69c7f6-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'District of Columbia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/district-columbia',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DC',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57431',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.dc.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'DC C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c69e17e-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Florida',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/florida',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FL',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57397',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><img alt="flc4l" height="148" src="http://www1.gotomeeting.com/g2w/images/315143096/16713233326450311//embed.jpg" width="225" /></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.myflorida.com/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Florida C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Georgia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/georgia',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57398',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><strong>Welcome to Georgia!</strong></p><p>The <a href="http://georgia.gov/">State of Georgia</a> is comprised of 13 Congressional Districts (see sidebar) and <a href="http://sos.georgia.gov/elections/polllocator/PollLocator.aspx" target="_blank">3274 precincts</a>. As one of the original 13 colonies, Georgia sent a delegation to the 2nd <span class="medium">Continental Congress for the signing of the Declaration of Independence. Georgia ratified the U.S. Constitution on January 2, 1788, becoming the fourth state to do so.</span></p><p><img alt="Georgia Congressional Districts" height="489" src="/usa/GA/georgia-cd.png" style="float: right; border: 0;" width="437" /></p><p><strong>Political Parties</strong></p><ul><li><a href="http://www.gaconstitutionparty.org/">Constitution Party of Georgia</a></li><li><a href="http://democraticpartyofgeorgia.org/">Democratic Party of Georgia </a><ul><li><a href="http://georgiayds.org/">Young Democrats of Georgia</a></li></ul></li><li><a href="http://lpgeorgia.com/">Libertarian Party of Georgia</a></li><li><a href="http://www.gagop.org/">Republican Party of Georgia</a><ul><li><a href="http://www.gopliberty.org/">Republican Liberty Caucus of Georgia</a></li><li><a href="http://www.georgiayr.com/">Young Republicans of Georgia</a></li></ul></li></ul><p><strong>Grassroots Organizations</strong></p><ul><li>Young Americans for Liberty Chapters<ul><li><a href="http://www.facebook.com/group.php?gid=17356649998&amp;ref=search&amp;sid=1486002681.3898199164..1&amp;v=info">UGA</a></li><li><a href="http://www.facebook.com/group.php?gid=30097652093&amp;ref=search&amp;sid=1486002681.2530581998..1&amp;v=info#!/group.php?gid=139630611778&amp;ref=search&amp;sid=1486002681.275159368..1">Georgia Southern University</a></li><li><a href="http://www.facebook.com/group.php?gid=30097652093&amp;ref=search&amp;sid=1486002681.2530581998..1&amp;v=info">Emory</a></li><li><a href="http://www.facebook.com/group.php?gid=30097652093&amp;ref=search&amp;sid=1486002681.2530581998..1&amp;v=info#!/group.php?gid=154418673233&amp;ref=search&amp;sid=1486002681.2836706366..1">Clayton State University</a></li><li><a href="http://www.yaliberty.org/chapters/chapter/1884">Southern Polytechnic State University</a></li></ul></li><li>Civil Liberty Organizations<ul><li><a href="http://www.acluga.org/">ACLU of Georgia</a></li><li><a href="http://www.georgiacarry.org/">Georgia Carry</a></li><li><a href="http://www.gfodl.org/">Georgia Firearm Owners Defense League</a></li><li><a href="http://www.georgiapacking.org/">GeorgiaPacking.org</a></li></ul></li><li>Education Freedom Organizations<ul><li><a href="http://www.ghea.org/">Georgia Home Education Association</a></li></ul></li><li>Economics Organizations<ul><li><a href="http://www.gppf.org/">Georgia Public Policy Foundation</a></li></ul></li></ul><p>Members may wish to join the following:</p><p><img alt="" height="16" src="http://www.google.com/favicon.ico" style="vertical-align: text-bottom;" width="16" /> Mailing list: <a href="http://groups.google.com/group/campaignforliberty-ga">campaignforliberty-ga</a></p><p><img alt="" height="16" src="http://b.static.ak.fbcdn.net/images/icons/favicon.gif" style="vertical-align: text-bottom;" width="16" /> Facebook: <a href="http://www.facebook.com/group.php?gid=74189006232&amp;ref=nf">Campaign for Liberty - Georgia</a></p><ul></ul>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.georgia.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Georgia C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Hawaii',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/hawaii',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'HI',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57399',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Hawaii&#39;s Campaign For Liberty membership grows larger every week! We have members in every Congressional District, and in all four major counties of our state. We have Local Coordinators in each Congressional District just as most of our counties. If you&#39;re interested in taking on a leadership role, you&#39;ll need to first join as a Local Coordinator and progress through the Local Coordinator training. &nbsp;After you&#39;ve done that, contact your District Coordinator or the Interim State Coordinator. We will begin developing criteria for the appointment of more County Coordinators soon. You should be aware that ALL Coordinator appointments are considered &quot;interim&quot;--at such point as the state has adequate leadership to become a chartered organization, there will be elections. For the time being, members in counties who do not currently have appointed coordinators are encouraged to nominate those who seem to be strong leaders. The Interim District and State Coordinators will then confer on the selection. In some counties, if two people seem to be compatible, co-coordinators may be chosen. State, District and County Coordinators track training progress, as well as how many &quot;recruits&quot; Precinct Leaders have been successful with. Since this is an organization designed to &quot;do&quot;, it will be important for coordinators in the future to demonstrate some evidence of action.</p><p>Once you&#39;ve joined the Campaign For Liberty in Hawaii, be sure to CHECK BACK OFTEN, log in and check your messages, and return to this state page (as well as your district and county pages)--this site is a social networking site for liberty lovers, and this will be the best way for us to share information with you--but YOU&#39;VE got to sign in so that you can read it.</p><p>Finally, be sure to try your hand at the blogging tool--all members can blog on the site, and the best ones will be featured on the home page. We&#39;ll also post the best blogs that we can find on our district and state pages, so that everyone has the opportunity to take a look at them. For those who like Facebook, we also have a <a href="http://www.facebook.com/group.php?gid=88216373580&amp;ref=ts" target="_blank">Facebook page</a> for our state group that you can join.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ehawaii.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Hawaii C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6a2ddf-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Idaho',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/idaho',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ID',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57400',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>&nbsp;</p><div style="margin: 0in 0in 0pt"><p>Welcome to the Idaho Campaign for Liberty</p></div><p>&nbsp;</p><p>The Campaign for Liberty mission is &quot;To promote and defend the great American principles of individual liberty, constitutional government, sound money, free markets, and a noninterventionist foreign policy, by means of educational and political activity.&quot;&nbsp;&nbsp;&nbsp;</p><p>We are in the process of building a network of patriotic Americans, in every county, that are willing to work towards this mission. You are invited to join us as a member of the Campaign for Liberty to help restore our Constitutional Republic! &nbsp;</p><p>This is a call to action!&nbsp; We must protect the soul of America-we must return to a love and respect for the basic principles upon which this nation has been established. We must study the Constitution and the writings of the founding fathers.</p><p>We must move away from unsound economic policies which encourage socialism and its companion, communism. We must as a nation live within our means, balance our budgets, and pay our debts. We must establish sound monetary policies and take needed steps to compete in world markets.&nbsp; We must return to those principles that made America great if we are to return to that greatness.</p><p>Will you help us?&nbsp; We have the tools to succeed; all we need is the grassroots labor to use them.&nbsp; Join today to ensure liberty is preserved and/or restored in your county!</p><p>You are welcome to contact me if you have any questions about C4L and how you can help.</p><p>Anything for liberty,</p><p>Alanna Grimm</p><p>Interim State Coordinator Idaho Campaign for Liberty</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.idaho.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Idaho C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6a458d-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Illinois',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/illinois',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IL',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57401',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<div><div><strong>NOTE: <a href="/candidatesurvey.php?state=IL">Illinois Candidate Survey Results can be found here</a></strong></div><div>&nbsp;</div><div><span style="font-size: medium;"><strong><span style="text-decoration: underline;">Illinois Campaign for Liberty Goes Social!</span></strong></span></div><div>&nbsp;</div><div style="padding-left: 30px;"><span style="font-size: small;"><strong><a href="http://www.twitter.com/Illinois_C4L" target="_blank"><img alt="" height="47" src="http://www.worldradio.ch/wrs/bm~pix/twittericon.png" style="border: 0pt none;" width="47" /></a>&nbsp;<a href="http://www.facebook.com/pages/Illinois-Campaign-for-Liberty/123871996908"><img alt="" height="47" src="http://www.worldradio.ch/wrs/bm~pix/facebook-icon.png" style="border: 0pt none;" width="47" /></a>&nbsp;</strong></span></div><div>&nbsp;</div><div><span style="font-size: medium;"><strong><span style="text-decoration: underline;">Educate yourself</span></strong></span></div><div>&nbsp;</div><div><ul><li><span style="font-size: small;"><a href="http://legistalker.org/"><strong>Get to know your Representatives</strong></a><strong>&nbsp; |&nbsp; <span style="color: rgb(0, 0, 128);"><a href="http://durbin.senate.gov/" target="_blank">Senator Dick Durbin</a>&nbsp; |</span><span style="color: rgb(0, 0, 128);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(0, 0, 128);">&nbsp; <a href="http://burris.senate.gov/" target="_blank">Senator Roland Burris</a></span></span></span></strong></span></li><li><span style="font-size: small; color: rgb(0, 0, 128);"><span style="color: rgb(0, 0, 0);">See </span><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 128);"><span style="color: rgb(0, 0, 0);">what is happening in the <strong><a href="http://www.senate.gov/" target="_blank">U.S. Senate</a></strong> and the <strong><a href="http://www.house.gov/" target="_blank">U.S. House of Representatives</a></strong></span></span></span></span></li><li><span style="font-size: small;">Read your <strong><a href="http://www.cyberdriveillinois.com/publications/handbook/ilconstitution.pdf">Illinois State Consitution</a></strong></span></li></ul></div><div>&nbsp;</div><div><span style="font-size: medium;"><strong><span style="text-decoration: underline;">Local Action</span></strong></span></div><div>&nbsp;</div><div style="padding-left: 30px;"><span style="font-size: large;"><span style="font-size: small;"><span style="color: rgb(0, 0, 0);">Become a <strong><a href="/faq.php#plq">local coordinator</a></strong></span></span></span></div><p style="text-align: left;"><span style="font-size: medium;"><strong><span style="text-decoration: underline;">State Action</span></strong></span></p></div><p>&nbsp;</p><p style="padding-left: 30px;"><span style="font-family: mceinline;">HB6842 - From the bill: &quot;SYNOPSIS AS INTRODUCED: 215 ILCS 5/1417 new Amends the Illinois Insurance Code. Provides that no resident of the State, regardless of whether he has or is eligible for health insurance coverage under any policy or program provided by or through his employer, or a plan sponsored by the State or the federal government, shall be required to obtain or maintain a policy of individual insurance coverage except as required by a court or a State agency or department where an individual is named a party in a judicial or administrative proceeding. Provides that no provision of the Act shall render a resident of this State liable for any penalty, assessment, fee, or fine as a result of his failure to procure or obtain health insurance coverage. Provides that the Act shall not apply to individuals voluntarily applying for coverage under a State-administered program pursuant to the federal Social Security Act. Provides that the provisions concerning health insurance coverage not required shall not apply to students being required by an institution of higher education to obtain and maintain health insurance as a condition of enrollment. Provides that nothing in the provisions concerning health insurance coverage not required shall impair the rights of persons to privately contract for health insurance for family members or former family members. Effective immediately.&quot;</span></p><p style="padding-left: 30px;"><span style="font-family: mceinline;">Read the bill&#39;s text at the </span><a href="http://www.ilga.gov/legislation/billstatus.asp?DocNum=6842&amp;GAID=10&amp;GA=96&amp;DocTypeID=HB&amp;LegID=53236&amp;SessionID=76" target="_blank" title="Illinois GA Website"><span style="font-family: mceinline;">Illinois General Assembly&#39;s website</span></a><span style="font-family: mceinline;">.</span></p><div><p style="text-align: left;"><span style="font-size: medium;"><strong><span style="color: rgb(0, 0, 0);"><span style="font-size: large;"><span style="text-decoration: underline;"><span style="font-family: mceinline;">National Action</span></span></span></span></strong></span></p><ul><li><strong><span style="font-size: small;"><a href="http://www.auditthefed.com/">Audit the Fed</a></span></strong></li></ul><p style="text-align: left; padding-left: 30px;"><span style="font-size: small;"><span style="background-color: rgb(255, 255, 255);"><span style="color: rgb(0, 0, 0);"><a href="http://twitter.com/AuditTheFed_IL"><img alt="" height="47" src="http://www.worldradio.ch/wrs/bm~pix/twittericon.png" style="border: 0pt none;" width="47" /></a><a href="http://www.facebook.com/group.php?gid=143720007994"><img alt="" height="47" src="http://www.worldradio.ch/wrs/bm~pix/facebook-icon.png" style="border: 0pt none;" width="47" /></a><a href="http://digg.com/politics/BREAKING_AuditTheFed_com_Website"><img alt="" height="47" src="http://batteryinyourleg.com/blog/wp-content/themes/indy-premium/images/icon_digg256.png" style="border: 0pt none;" width="47" /></a></span></span></span></p><p style="text-align: left; padding-left: 30px;"><span style="font-size: small;">Sign the Petitions:<strong>&nbsp; <a href="http://dupageliberty.googlegroups.com/web/Petition.doc" target="_blank">H.R. 1207</a>&nbsp;&nbsp; |&nbsp;&nbsp; <a href="http://dupageliberty.googlegroups.com/web/Petition+Durbin.doc?gda=ZPJn4EUAAADMpc1wn3xPATkoNWYtiK7uEo7zNzAObei_vu3LCLKN_AJe0_IVZCk-uPdLqVDT9OZbNl8wi2yIucJk5oIH-yH0Gu1iLHeqhw4ZZRj3RjJ_-A" target="_blank">S. 604 (Durbin)</a>&nbsp; |&nbsp; <a href="http://dupageliberty.googlegroups.com/web/Petition+Burris.doc?gda=5IPPbUUAAADMpc1wn3xPATkoNWYtiK7uEo7zNzAObei_vu3LCLKN_NOdSqyyb7XZtk7xI5jTglVbNl8wi2yIucJk5oIH-yH0Gu1iLHeqhw4ZZRj3RjJ_-A" target="_blank">S. 604 (Burris)</a></strong></span></p><ul><li><span style="font-size: small;"><strong><a href="http://www.operationhealthfreedom.com/">Operation Health Freedom</a></strong></span></li></ul><p style="text-align: left; padding-left: 30px;"><span style="font-size: small;">Sign the petitions: <strong><a href="http://dupageliberty.googlegroups.com/web/Durbin%20HC%20petition(PDF).pdf?gda=eEn4GFkAAADMpc1wn3xPATkoNWYtiK7uKRlwhjXty0nYogSDn6zCBdz0ECYKx2pCPQ7C21TsqDYXjVvKBRLdA1uLGZnwwKYLJHYK0JRRbVJXuTUKmf6ps4QIqBBuatoZ3GVm6VpieyE" target="_blank">Healthcare</a></strong></span></p><p style="text-align: left;"><span style="font-size: small;"><strong><span style="text-decoration: underline;"><span style="font-family: mceinline;">Committees&nbsp;</span></span></strong></span></p><p style="text-align: left;">&nbsp;</p><table border="0" style="height: 422px;" width="790"><tbody><tr><td><p><span style="color: rgb(0, 0, 0);"><strong><span style="font-size: small;"><a href="/blog.php?view=32962" target="_blank"><span style="font-size: medium;">Legislative</span></a></span></strong></span></p><p><span style="color: rgb(0, 0, 0);"><strong><span style="font-size: small;">Liaison: <a href="/profile.php?member=Matt_Phillips">Matt Phillips</a></span></strong></span></p></td><td><span style="font-size: small;">This committee will research pending legislation here in Illinois and provide important details about issues important to us. They will zone in on legislation we need to address, provide information that will help direct our efforts, and track the progress of the bills. For more details, please contact <strong><a href="/profile.php?member=Matt_Phillips">Matt Phillips</a>. </strong>Other team members of the committee are <a href="/profile.php?member=whohannah" target="_blank" title="Hannah Landis">Hannah Landis</a> and <a href="/profile.php?member=sjaye" target="_blank">Stephen Jaye</a>.</span></td></tr><tr><td><p><span style="font-size: medium;"><strong>Literature</strong></span></p><p><strong><span style="font-size: small;">Team Leader: <a href="/profile.php?member=GregBishop" target="_blank" title="Greg Bishop">Greg Bishop</a></span></strong></p></td><td><span style="font-size: small;">The Literature committee will receive research on legislation from the Legislative Committee. They will use the research to create pamphlets, flyers, petitions, videos, and other media to effectively communicate our message.&nbsp; If you are interested in participarting in this committee, please contact <a href="/profile.php?member=GregBishop" target="_blank" title="Greg Bishop">Greg Bishop</a>.</span></td></tr><tr><td><p><span style="color: rgb(0, 0, 0);"><strong><span style="font-size: small;"><span style="font-size: medium;">Editorial/Media Outreach&nbsp;</span></span></strong></span></p><p><span style="color: rgb(0, 0, 0);"><strong><span style="font-size: small;">Team Leader:&nbsp;<a href="/profile.php?member=lisaw" target="_blank" title="Lisa Wogan"> Lisa Wogan</a></span></strong></span></p></td><td><span style="font-size: small;">The Editorial/Media Outreach committee will work on press releases for Illinois and writing blog posts which will include updates from around the state as well as our future plans. If you are interested in participating on this team.<strong>&nbsp;&nbsp;</strong>Media Liaison: <a href="/profile.php?member=jcesarone" target="_blank" title="Joe Cesarone">Joe Cesarone</a>, Contact: <a href="/profile.php?member=lisaw" target="_blank" title="Lisa Wogan">Lisa Wogan</a></span></td></tr><tr><td><p><span style="font-size: medium;"><span style="color: rgb(0, 0, 0);"><strong>Events</strong></span></span></p><p><span style="color: rgb(0, 0, 0);"><strong><span style="font-size: small;">Team Leader: TBD</span></strong></span></p><p>&nbsp;</p></td><td><span style="font-size: small;">The Events Committee will be responsible for coordinating plans for state-wide events, such as meetings, conferences, the annual barbecue, and rallies (to name a few). Their first order of business will be to coordinate our efforts for the Spring Regional Conference and State meeting at the close of the conference.&nbsp; If you are interested in leading this committee, please contact <strong><a href="/profile.php?member=Heather_D">Heather.</a></strong></span></td></tr></tbody></table></div><div><p style="text-align: left;"><strong><span style="font-size: small;"><span style="text-decoration: underline;">Upcoming Training and Conferences</span></span></strong></p><p style="text-align: left;"><span style="font-size: small;"><span style="font-family: mceinline;">For</span><span style="font-size: small;"><span style="font-family: mceinline;">&nbsp;details on our Spring Regional Conference Scholarship Program, please </span></span><a href="/blog.php?view=31352" target="_blank"><span style="font-size: small;"><span style="font-family: mceinline;">click here</span></span></a><span style="font-size: small;"><span style="font-family: mceinline;">.</span></span></span><br />
+    <span style="font-size: small;"><span style="font-family: mceinline;">The&nbsp;</span></span><a href="/blog.php?view=34772" target="_self" title="Activist School"><span style="font-family: mceinline;">Chicago One Day Activist School</span></a><span style="font-size: small;"><span style="font-family: mceinline;">&nbsp;takes place April 25, from 9 A.M. to 3:30 P.M. at Chicago O&#39;Hare Holiday Inn and Suites.</span></span></p><p style="text-align: left;"><span style="font-size: small;"><span style="font-size: medium;"><span style="font-family: mceinline;">Purchase your tickets </span></span><a href="/event/tickets-states.php" target="_self" title="Purchase Activist Training School Tickets"><span style="font-size: medium;"><span style="font-family: mceinline;">here</span></span></a><span style="font-size: medium;"><span style="font-family: mceinline;">.</span></span></span></p><p style="text-align: left;"><span style="font-size: medium;"><span style="font-size: small;"><span style="font-family: mceinline;">Another great Campai</span></span><span style="font-family: mceinline;">gn for Liberty Regional Conference is planned for Friday, May 14th through Sunday, May 16th in Iowa. &nbsp;Registration is only $59 and that includes 3 days of great speeches and the best political training, all conference and training materials and lunch on Saturday. &nbsp;Get more information about the Iowa regional conference and reserve your tickets&nbsp;</span><a href="/event/2010iowa.php?page=registration" target="_blank" title="Iowa Regional Conference"><span style="font-family: mceinline;">at this link</span></a><span style="font-family: mceinline;">.</span></span></p></div>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.illinois.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Illinois C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Indiana',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/indiana',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IN',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57402',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;"><span style="font-size: xx-large;">Welcome to Indiana&#39;s <span style="color: #ff0000;">Campaign for Liberty</span> page!&nbsp;</span></p><p style="text-align: center;"><span style="font-size: xx-large;"><span style="font-size: medium;">Take a look around.&nbsp; Below are some informational links about The Hoosier State, followed by our state&#39;s calendar of events, followed by our state&#39;s blog (comprised of blogs posted by CFL members from across the state).&nbsp; On the right, you will find our state leadership and prolific bloggers.&nbsp; Indiana is on the frontlines of the<strong> <span style="color: #ff0000;">Campaign for Liberty</span></strong>, so if you are a Hoosier, sign up, become a local coordinator, and <strong>join the fight!</strong></span></span></p><p style="text-align: center;"><span style="font-size: xx-large;"><span style="font-size: x-small;"><span style="font-size: large;"><span style="text-decoration: underline;">Indiana Government:</span></span></span></span></p><p style="text-align: right;"><span style="font-size: xx-large;"><span style="font-size: x-small;"><img alt="Map of IN CDs " height="453" src="http://www.stats.indiana.edu/maptools/maps/boundary/congressional%20districts.gif" style="float: right;" width="310" /></span></span></p><p style="text-align: center;"><span style="font-size: small;"><strong>US Congress</strong></span></p><p style="text-align: center;"><a href="http://www.house.gov/visclosky/" title="Rep. Visclosky\'s site"><span style="font-size: small;">CD 1 - Pete Visclosky - (D)</span></a></p><p style="text-align: center;"><a href="http://donnelly.house.gov/" title="Rep. Donnelly\'s site"><span style="font-size: small;">CD 2 - Joe Donnelly- (D)</span></a></p><p style="text-align: center;"><span style="font-size: small;"><a href="http://souder.house.gov/" title="Rep. Souder\'s website">CD 3 - Mark Souder - (R)</a></span></p><p style="text-align: center;"><a href="http://stevebuyer.house.gov/" title="Rep. Buyer\'s site"><span style="font-size: small;">CD 4 - Steve Buyer - (R)</span></a></p><p style="text-align: center;"><a href="http://burton.house.gov/" title="Rep. Burton\'s site"><span style="font-size: small;">CD 5 - Dan Burton - (R)</span></a></p><p style="text-align: center;"><a href="http://www.mikepence.house.gov/" title="Rep. Pence\'s site"><span style="font-size: small;">CD 6 - Mike Pence - (R)</span></a></p><p style="text-align: center;"><a href="http://carson.house.gov/" title="Rep. Carson\'s website"><span style="font-size: small;">CD 7 - Andre Carson - (D)</span></a></p><p style="text-align: center;"><a href="http://www.ellsworth.house.gov/" title="Rep. Ellsworth\'s site"><span style="font-size: small;">CD 8 - Brad Ellsworth - (D)</span></a></p><p style="text-align: center;"><a href="http://baronhill.house.gov/" title="Rep. Hill\'s site"><span style="font-size: xx-large;"><span style="font-size: x-small;"><span style="font-size: small;">CD 9 - Baron Hill - (D)</span></span></span></a></p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;"><strong>US Senate</strong></p><p style="text-align: center;"><a href="http://bayh.senate.gov/" title="Sen. Bayh\'s website">Evan Bayh (D)</a></p><p style="text-align: center;"><a href="http://lugar.senate.gov/" title="Sen. Lugar\'s website">Richard Lugar (R)</a></p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;"><span style="font-size: large;"><span style="text-decoration: underline;">Indiana State Government</span></span>:</p><p style="text-align: center;"><strong>Legislative Branch:</strong></p><p style="text-align: center;"><img alt="IN State senate districts" height="311" src="http://www.bloomington.in.us/~scan/state-senate-districts.gif" style="float: right;" width="216" /></p><p><img alt="Senate Districts" height="312" src="http://www.stats.indiana.edu/maptools/maps/boundary/legislative/state%20house%20districts.gif" style="float: right;" width="223" /></p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">Indiana&#39;s General Assembly is comprised of 100 Representatives and 50 Senators.</p><p style="text-align: center;">Find your State representative or Senator:</p><p style="text-align: center;"><a href="http://www.in.gov/apps/sos/legislator/search/" target="_blank" title="IN legislator search">http://www.in.gov/apps/sos/legislator/search/</a></p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p><p style="text-align: center;"><strong>Executive branch:</strong></p><p style="text-align: center;"><a href="http://www.in.gov/gov/" title="Governor of Indiana">Governor: Mitch Daniels</a></p><p style="text-align: center;"><a href="http://www.in.gov/lg/" title="Lt. Gov of Indiana">Lt. Governor: Becky Skillman</a></p><p style="text-align: center;"><a href="http://www.in.gov/attorneygeneral/" title="IN Attorney General">Attorney General: Greg Zoeller</a></p><p style="text-align: center;"><a href="http://www.state.in.us/auditor/" title="IN auditor">Auditor: Tim Berry</a></p><p style="text-align: center;"><a href="http://www.in.gov/sos/" title="IN sos">Secretary of State: Todd Rokita</a></p><p style="text-align: center;"><a href="http://www.in.gov/tos/" title="IN Treasurer">Treasurer: Richard Mourdock</a></p><p style="text-align: center;"><a href="http://www.doe.in.gov/" title="IN Superindendent of Public Instruction">Superintendent of Public Instruction: Tony Bennett</a></p><p style="text-align: center;"><strong>Judicial Branch:</strong></p><p style="text-align: center;">Find out about the courts of Indiana here:</p><p style="text-align: center;"><a href="http://www.in.gov/judiciary/" title="IN courts">http://www.in.gov/judiciary</a></p><p style="text-align: center;">Find out about the Supreme Court here:</p><p style="text-align: center;"><a href="http://www.in.gov/judiciary/supreme/" title="IN Supreme Court">http://www.in.gov/judiciary/supreme</a></p><p style="text-align: center;"><img alt="IN Supreme Court Judges" height="251" src="http://www.in.gov/judiciary/images/judges-map-2004-175px.gif" width="175" /></p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">&nbsp;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.in.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Indiana C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Iowa',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/iowa',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57403',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><span style="font-size: large;"><span style="color: #ff0000;"><span style="color: #0000ff;"><span style="text-decoration: underline;">CAMPAIGN FOR LIBERTY MISSION STATEMENT</span>:</span></span></span></p><p><span style="font-size: large;"><span style="color: #ff0000;"><span style="color: #0000ff;"><em>To promote and defend the great American principles of Individual Liberty, Constitutional Government, Sound Money, Free Markets, and a Noninterventionist Foreign Policy, by means of educational and political activity</em></span><em><span style="color: #0000ff;">.</span></em></span></span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><span style="color: #ff0000;"><strong><span style="font-size: large;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **** JOIN US!&nbsp; CLICK </span></strong></span><span style="color: #ff0000;"><span style="text-decoration: underline;"><span style="color: #ff0000;"><a href="/signup.php" target="_blank" title="Join Us!"><strong><span style="font-size: large;">HERE</span></strong></a></span></span><strong><span style="font-size: large;"> </span></strong></span><span style="color: #ff0000;"><strong><span style="font-size: large;">TO JOIN YOUR FELLOW IOWANS NOW! **** &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; ****&nbsp;BE A PART OF IT! ****</span></strong></span></p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p><span style="font-size: medium;"><span style="color: #000000;">Click </span><span style="color: #ff0000;"><a href="http://www.legis.state.ia.us/FindLeg/" target="_blank" title="Find your Iowa Representative and Senator"><strong><span style="text-decoration: underline;">HERE</span></strong></a></span><span style="color: #000000;"> to Find Contact Info for your Iowa Senator and Represenative.</span></span></p><p>&nbsp;</p><p>&nbsp;</p><p><span style="font-size: medium;"><span style="text-decoration: underline;"><strong>Make Your Own Campaign For Liberty Business Cards to Hand Out:</strong></span> </span></p><p>&nbsp;</p><p><span style="color: #000000;"><span style="font-size: small;">Buy some blank business card stock (Avery #8871 or equivalent), print cards (both sides) using the pdf files at these links: (<a href="/usa/IA/C4Lpromocard-front.pdf" title="Card Front">Front</a>, <a href="/usa/IA/C4Lpromocard-back.pdf" title="Card Back">Back</a>) and pass them out to recruit people into Campaign For Liberty!</span></span></p><p>&nbsp;</p><p style="text-align: center;"><strong><span style="color: #ff0000;"><span style="font-size: medium;">Congressman Ron Paul shaking hands with some of the 1,000 young Iowans who showed up to hear him speak in Ames on November 13:</span></span></strong></p><p style="text-align: center;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="328" width="397"> <param name="src" value="http://www.youtube.com/v/mkMdPug7ekQ" /><embed height="328" src="http://www.youtube.com/v/mkMdPug7ekQ" type="application/x-shockwave-flash" width="397"></embed> </object></p><p style="text-align: center;">(Winners of the autographed copies of Dr. Paul&#39;s &quot;End The Fed&quot; were Shawn D. and Becky H.)</p><p>&nbsp;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.iowa.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Iowa C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6a91a2-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Kansas',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/kansas',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KS',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57387',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><strong>WELCOME TO KANSAS CAMPAIGN FOR LIBERTY!</strong></p><p style="margin: 0in 0in 10pt; text-align: justify;">The Kansas Campaign for Liberty is dedicated to the principles of individual liberty, personal responsibility, ethical constitutional government, sound money, free markets, a non-interventionist foreign policy and the rule of law.&nbsp; We are committed to creative grassroots political activity to foster a return to the guiding constitutional principles that made this country great.&nbsp; We are patriots devoting ourselves to the higher cause of life, liberty and Country.&nbsp; If you share this mission, join us.&nbsp; Join the Campaign for Liberty.</p><p style="margin: 0in 0in 10pt; text-align: justify;"><strong style="">To get started - Register</strong> and explore the grassroots organizing tools available to you.&nbsp; Learn more about governmental principles.&nbsp; Network with campaign members in your area.&nbsp; Become a <strong>Local Coordinator</strong> for Campaign for Liberty and learn about educating and organizing your neighbors.&nbsp; Become a <strong style="">Precinct Leader</strong> for your preferred political party and train to become politically active in your neighborhood.&nbsp; Attend local political meetings and events.&nbsp; Visit the County Clerk and County Party Chairmen.&nbsp;&nbsp;&nbsp;</p><p style="margin: 0in 0in 10pt; text-align: justify;">USEFUL WEBSITES</p><p style="margin: 0in 0in 10pt; text-align: justify;">Kansas Secretary of State at <a href="/" target="_blank" title="https://myvoteinfo.voteks.org/">https://myvoteinfo.voteks.org/</a></p><p style="margin: 0in 0in 10pt; line-height: normal; text-align: justify;">Kansas Republican Party&nbsp;at <a href="http://www.ksgop.org"><span style="text-decoration: underline;">http://www.ksgop.org</span></a></p><p style="margin: 0in 0in 10pt; line-height: normal; text-align: justify;">Kansas&nbsp;Democrat Party&nbsp;at <a href="http://www.ksdp.org"><span style="text-decoration: underline;">http://www.ksdp.org</span></a></p><p style="margin: 0in 0in 10pt; line-height: normal; text-align: justify;">Kansas Libertarian Party at <a href="/" target="_blank" title="http://www.lpks.org"><span style="text-decoration: underline;">http://www.lpks.org</span></a></p><p>Kansas Reform Party at <a href="/" target="_blank" title="http://www.votekansas.org"><span style="text-decoration: underline;">http://www.votekansas.org</span></a></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.kansas.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Kansas C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6aab82-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Kentucky',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/kentucky',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KY',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57404',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.kentucky.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Kentucky C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Louisiana',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/louisiana',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57405',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Home of the Cajun Sheepdogs.</p><p>&nbsp;</p><p>The word republic is from the Latin <strong>res</strong>, which means thing, affair or interest, and <strong>publica</strong> which means of everybody. It literally means everybody&#39;s thing or interest.</p><p>The essence of a republic is the rule of law, by which is meant the common or scientific law, which is certain and unchangeable. This law is discovered, not made, in that the tendency is to find the freedoms and restraints imposed by natural law, and base decisions upon them. (&quot;Man cannot make principles, he can only discover them,&quot; wrote Tom Paine.) Since human nature doesn&#39;t change, what was right yesterday should be so today and tomorrow. Courts seek out and enforce a higher law as opposed to political or man-made law. As a result, the law seeks truth, transcends politics, is reasonable, consistent, predictable, and reflects or approximates natural justice. Government acts like a shield punishing the abuses of freedoms - assaults against the life, liberty, and property of innocent people - not the freedoms themselves. For example, the misuse of a firearm which results in injury to an innocent party would be punished rather than the mere possession of such a weapon. Officers of the law are appropriately called peace officers, for they do not enforce political law, but protect everyone equally from force and fraud. The military is used as a last resort to protect the nation. Moral authority rests outside the political class who are held to a high moral standard through public pressure. Government&#39;s purpose is to protect rights and defend freedom. Taxes are voluntary assessments used to fund legitimate government functions serving the common good (in obedience to John Adams&#39; dictum that &quot;No man may be taxed against his will. . . .&quot; ).</p><p><em>Benedict D. LaRosa</em></p><h1><a href="http://www.primum-mobile.net/009/his1.html"><span style="font-size: 12pt;">http://www.primum-mobile.net/009/his1.html</span></a></h1><p>&nbsp;</p><p>&nbsp;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.louisiana.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Louisiana C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Maine',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/maine',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ME',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57406',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Get to know your legislators and what they have in store for you - click &quot;State Legislature Page&quot; above for general information.</p><p>Read the BILLS that will come up in the House &amp; Senate this year - <a href="http://www.mainelegislature.org/legis/bills/bills_124th/billtexts/" target="_blank">http://www.mainelegislature.org/legis/bills/bills_124th/billtexts/</a>. Will they possibly affect you, your family, your friends? If so, visit the Capitol, meet your representatives, talk to them before the bill comes up in Committee, then if you are able, attend the public committee hearings and have your say.</p><p>Interested in learning about how the legislation works? Talk to others who have visited the Capitol to get the scoop, or request a training session from Eagle Forum. The cost is minimal and you will learn a lot.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.maine.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Maine C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6af732-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Maryland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/maryland',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MD',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57407',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.maryland.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Maryland C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Massachusetts',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/massachusetts',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57384',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Welcome to the People&#39;s Republic of Massachusetts.</p><p>Taking back the Commonwealth, one precinct at a time.</p><p>Good Resources = www.masslpa.org (Local Massachusetts Liberty Preservation Association site)</p><p>Please make sure to VOTE in US Senate Primary on Dec 8th!&nbsp; Scott Brown has stated he is in favor of Auditing the Fed, and Jack E Robinson even SPOKE at the End the Fed Rally.&nbsp; <a href="http://www.jackerobinson.com/Audit_The_Fed.aspx">http://www.jackerobinson.com/Audit_The_Fed.aspx</a></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.mass.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Massachusetts',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Minnesota',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/minnesota',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MN',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57409',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Continue to call Senators Klobuchar and Franken, urging them to co-sponsor S 604, the Federal Reserve Sunshine Act.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.state.mn.us/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Minnesota C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Missouri',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/missouri',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MO',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57388',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;">&nbsp;</p><p style="text-align: center;"><strong>JOIN CAMPAIGN FOR LIBERTY TODAY</strong></p><p>Thoughtfully consider how you can help to restore the Republic, preserve what freedoms we have, and reclaim those we have lost. Thomas Paine once said, &quot;Those who expect to reap the blessings of freedom, must, like men, undergo the fatigues of supporting it.&quot; Decide now to DO SOMETHING in the Missouri <strong>Campaign for Liberty</strong>. Decide now to devote some time each day or week in the cause of freedom. Decide now to be a person of influence in your precinct.</p><p>Read more <a href="http://www.moc4l.com/temp/Join_Today_Front_Page.doc" target="_blank">here</a>.</p><p style="text-align: center;">* * * * * * * *</p><p>Above you&#39;ll find references to important information about the State of Missouri.&nbsp; See Missouri&#39;s Congressional District map <a href="http://nationalatlas.gov/printable/images/pdf/congdist/pagecgd110_mo.pdf" target="_blank">here</a>.&nbsp; Additional references can be found <a href="http://www.moc4l.com/temp/References_Front_Page.doc" target="_blank">here</a>.</p><p style="text-align: center;">* * * * * * * *</p><p><span style="font-size: medium;"><strong><em>Audit the Fed, Then End It!</em> </strong>by Congressman Ron Paul. Click <a href="http://www.house.gov/paul/index.shtml" target="_blank">here</a> to read the full article.</span></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.mo.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'The Show Me State',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mississippi',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/mississippi',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MS',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57410',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Hello, I&#39;m your contact until we find an interim state coordinator for your state.&nbsp; If you know someone who would like to be interim state coordinator, please let me know!</p><p>Get to know your legislators and what they have in store for you - click &quot;State Legislature Page&quot; above for general information.</p><p>Read the BILLS that will come up in the House &amp; Senate this year - <a href="http://billstatus.ls.state.ms.us/2010/pdf/all_measures/notdead.xml" target="_blank">http://billstatus.ls.state.ms.us/2010/pdf/all_measures/notdead.xml</a>. Will they possibly affect you, your family, your friends? If so, visit the Capitol, meet your representatives, talk to them before the bill comes up in Committee, then if you are able, attend the public committee hearings and have your say.</p><p>Interested in learning about how the legislation works? Talk to others who have visited the Capitol to get the scoop, or request a training session from a trusted source.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.mississippi.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Mississippi C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6b7256-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Montana',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/montana',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MT',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57411',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.mt.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Montana C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6b8975-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Nebraska',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/nebraska',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NE',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57412',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Nebraska&#39;s Campaign For Liberty membership gets larger every day! We have members in every Congressional District, and in many of the counties of the state. We have District Coordinators in each of the Congressional Districts, and several of our counties have County Coordinators. <strong><span style="color: #ff0000;">PLEASE SIGN UP IF YOU&#39;RE A VISITOR HERE</span></strong>--it will give you access to far more information, and regular updates--and basic membership costs NOTHING. &nbsp;You can sign up by clicking on the appropriate text on the top right of this page.</p><p>The Nebraska Campaign for Liberty recently incorporated as a 501c4, which will allow us to take a much more proactive--and independent--effort in our state. &nbsp;We are partnering with other organizations to petition our state government to CUT SPENDING during the special legislative session coming up, rather than raising taxes to balance the budget due to shortfalls from the foundering economy.</p><p>We will begin posting more events that may be of interest on this page in the coming weeks. &nbsp;Some of those events are not sponsored by the Campaign for Liberty, but rather by groups that we can or will work with on many issues. &nbsp;The posting of these events does not necessarily represent an endorsement, but rather a point of information that you may want to check out if the event is in your area. &nbsp;</p><p>Watch this site, and if you&#39;re a member, be sure to check your daily e-mail updates for new calendar events--things are happening in Nebraska!</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.nebraska.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Nebraska C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6ba2b3-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Nevada',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/nevada',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NV',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57413',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><strong>Welcome to the Nevada Campaign for Liberty!</strong>&nbsp;&nbsp;The Battle Born State has a proud tradition of individualism and independence, and we&#39;re using that tradition to restore our republic and strengthen state sovereignty. &nbsp;Please join us in every way you can!</p><p><strong>&loz; The first thing you should do</strong> is become the local coordinator of your precinct. &nbsp;It sounds like a lot of work, but if you take your time and break it up into smaller chunks, you&#39;ll be done before you know it. &nbsp;All of the information-gathering and organization we do now will make our job at election-time so much easier and more successful! &nbsp;Additionally, as a local coordinator, you have access to fantastic training tools that will help you become more effective and efficient in your activities.</p><p><strong>&loz; The price of our Liberty</strong> is eternal vigilance, so join your local political party (of your choosing) and get involved with local government. &nbsp;Every position matters. &nbsp;Many C4L members are getting on their local school boards or water boards. &nbsp;</p><p><strong>&loz; Please remember that this is fun! </strong>&nbsp;The message of freedom is a message of joy. &nbsp;Meeting and connecting with other Liberty-loving people is deeply satisfying and it helps to know that you&#39;re not the only one out there who desires a rational government!</p><p>If you have any questions or concerns, please contact the interim state coordinator, Kelly Edinger, or your county coordinator.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.nv.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Nevada C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6bbc10-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'New Jersey',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/new-jersey',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NJ',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57414',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;"><span style="font-size: small;">&nbsp;&nbsp;<strong>Welcome to New Jersey&#39;s Campaign for Liberty!</strong></span></p><p>Please join our team of dedicated activists to take our country back. We will focus our political activism primarily on local politics.&nbsp; We will influence state and federal legislation through emails, calls and petitions; but, taking back our local governments is a necessity for true representation.&nbsp; This is how we can Save our Republic.</p><ul type="disc"><li>Along with all your County and Regional coordinators, you State coordinators are:</li><li><a href="/profile.php?member=Dan_Krause">Dave Wallace</a></li><li><a href="/profile.php?member=Dan_Krause">Dan Krause</a></li><li><a href="/profile.php?member=GloriaL" target="_blank">Gloria Leustek</a></li></ul><p>We also have assisting coordinators:</p><ul><li><a href="/profile.php?member=c88k5blazer">Joe Baratelli</a>- Events Coordinator</li><li><a href="/profile.php?member=davidsimchock">David Simchock</a> - Events Coordinator</li><li><a href="/profile.php?member=Libertybelle">Alli Coleman</a> &nbsp;- Media Coordinator</li><li><a href="/profile.php?member=Man_is_Truth">Girard Falzon</a> - Media Coordinator</li></ul><p align="center"><strong><span style="font-size: small;">WANT TO BE A PART OF A WINNING TEAM? </span></strong></p><p><strong>Local Grassroots Development </strong></p><p><strong>&loz; Become a C4L Local Coordinator</strong></p><p>Take ownership of the Campaign for Liberty and its place in politics by paying your annual dues.&nbsp; Then, become a local coordinator. This crucial step allows for you to receive grassroots training; which provides an opportunity to understand your local political landscape while teaching you how to win.&nbsp; This is accessible through the dashboard of all local coordinators.</p><p><strong>&loz; Attend Meetings</strong></p><p>Attend local political parties, school boards, city/town councils, etc... . &nbsp;Place your meeting&#39;s information on your county calendar on this C4L website and the <a href="http://ronpaul.meetup.com/605/">Meetup.com New Jersey Campaign For Liberty group</a></p><p><strong>&loz; Dress for Success</strong></p><p>It never hurts to be the best dressed in the room, but it does to be the worst dressed</p><p><strong>&loz; Leave controversial issues that will marginalize you at the door </strong></p><p>Do not discuss issues that have little or no relevance to governance or local issues</p><p><strong>&loz; Be professional and respectful</strong></p><p>What you say or do as a representative of Campaign for Liberty is a reflection of the organization.</p><p><strong>&loz; Get the local C4L members to attend with you</strong></p><p>Be successful in encouraging C4L members and friends to attend your meeting.&nbsp; Begin by attending yourself and reporting back to C4L with a blog.&nbsp; Blogs are read by&nbsp;a lot&nbsp;of people and your encouraging words will persuade others to do the same.&nbsp; Email and call to remind members about meeting time and place</p><p><strong>&loz; Get to know your local issues </strong></p><p>Recognize the leaders in the room, and get to know them on a personal level through personal conversation.&nbsp; Recognize local issues that you have in common, like taxes, property rights, civil liberties, water issues, etc..., and develop alliances with members</p><p><strong>&loz; Organize political activities around local issues</strong></p><p>Be a leader and organize political activities around these common local issues.&nbsp; Walk your local streets with informational flyers, about these local issues, have informational booths at farmer&#39;s markets and community events.&nbsp; Report back your success to the members of your meetings, write a blog and tell C4L about it.</p><p>If you are active in a political party&nbsp;work for it, find those issues and candidates that you can agree with and focus your political activities on them.&nbsp; You will earn the respect and trust of the established local party leadership for your organizing.&nbsp; Work harder than anyone.</p><p><strong>&loz; Influence your local governance</strong></p><p>Be your local political activists for the cause of Liberty. &nbsp;When there are local issues, be known as the group that is willing to hit the streets and make a real difference.&nbsp; Whenever there is an issue of importance, let the local establishment know that there will be local grassroots organizing.&nbsp; With a few local victories, you will have successfully influenced your local governance.&nbsp; With influencing local politics, you have established yourself as a local leader; your neighbors and friends will expect you to have information about local issues. &nbsp;You will be expected to lead.&nbsp; You are now a political leader. &nbsp;This is the key</p><p>Should&nbsp;you become the precinct walkers and political activists of your local party, you will have real influence on party politics.&nbsp; The local party can only mobilize on issues that are in alignment with you and Liberty.</p><p><strong>&loz; A true leader makes more leaders</strong></p><p>Encourage others to do the same.&nbsp; Find the other &quot;go getters&quot; and encourage them to organize in their local districts.&nbsp; Compare notes with them, on what works and what doesn&#39;t work.&nbsp; Learn from each other&#39;s mistakes to build and forge stronger relationships.</p><hr /><p>Get to know your legislators and what they have in store for you - click &quot;State Legislature Page&quot; above for general information.</p><p>Read the BILLS that will come up in the House &amp; Senate this year - <a href="http://www.njleg.state.nj.us/bills/bills0001.asp" target="_blank">http://www.njleg.state.nj.us/bills/bills0001.asp</a>. Will they possibly affect you, your family, your friends? If so, visit the Capitol, meet your representatives, talk to them before the bill comes up in Committee, then if you are able, attend the public committee hearings and have your say.</p><p>Interested in learning about how the legislation works? Talk to others who have visited the Capitol to get the scoop, or request a training session from Eagle Forum. The cost is minimal and you will learn a lot.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.state.nj.us/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'New Jersey C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'New Mexico',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/new-mexico',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NM',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57415',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>&nbsp;</p><p><strong>NEW! Contribute Directly to the&nbsp;New Mexico&nbsp;C4L!</strong></p><p><a href="/contribute.php?for=NM"><span style="font-size: small;">https://www.campaignforliberty.com/contribute.php?for=NM</span></a></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><span style="font-size: medium;"><span style="text-decoration: underline;"><strong>New!&nbsp;Audit the Fed Mass Action Month!</strong></span></span></p><p>Please check our Audit the Fed website to see if your congressmen and senators are co-sponsors of HR1207/S604.</p><p>If your representative or senator is not a co-sponsor, please sign the house or senate petitions located on our Audit the Fed website:</p><p><a href="/campaigns/hr1207home.php">http://www.campaignforliberty.com/campaigns/hr1207home.php</a></p><p>Additional information will be forthcoming regarding Audit the Fed mass action day rallies.&nbsp; Look for it in your email!</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.newmexico.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'New Mexico C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6beed5-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'New York',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/new-york',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NY',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57416',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;"><strong><span style="font-family: mceinline;">NY State Campaign for Liberty</span></strong></p><p><span style="font-family: mceinline;">Welcome to the NY State Page. &nbsp;Our mission is to bring responsible, accountable, and Constitutionally-limited government back to the Empire State and turn it into the Liberty State. &nbsp;Our Goals are to:</span></p><p>&nbsp;</p><ul><li><span style="font-family: mceinline;">Identify and encourage liberty candidates to run (but as a 501c4, not endorse)</span></li><li><span style="font-family: mceinline;">Educate and mobilize your neighbors on liberty issues</span></li><li><span style="font-family: mceinline;">Be proactive and reactive on major Federal, State, and Local Legislation</span></li><li><span style="font-family: mceinline;">Encourage members to join their local Republican, Democratic, Libertarian, or any other party&#39;s County Central Committee</span></li><li><span style="font-family: mceinline;">Build up the membership and encourage them to become Local Coordinators</span></li></ul><p>&nbsp;</p><p><span style="font-family: mceinline;">There are a number of active legislation we are working to support such as stopping the implementation of Real-ID in NY and State Sovereignty, and others that we are fighting against including violations of our civil rights (including our 2nd Amendment rights) and irresponsible government that pushes the nanny state on the overtaxed NY State population.</span></p><p><span style="font-family: mceinline;">There are a number of major Campaign for Liberty Meetup Sites across the state. &nbsp;Sign up to your local Meetup, but also be sure to post events and announcements on this site for all members who are not on meetup.</span></p><p><span style="font-family: mceinline;">Albany Capital District (Albany, Troy, Schenectady): <a href="http://www.albanycampaignforliberty.com">http://www.albanycampaignforliberty.com</a></span></p><p><span style="font-family: mceinline;">Binghamton: <a href="http://ronpaul.meetup.com/559/">http://ronpaul.meetup.com/559</a>/&nbsp;</span></p><p><span style="font-family: mceinline;">Buffalo: <a href="http://ronpaul.meetup.com/258/">http://ronpaul.meetup.com/258/</a></span></p><p><span style="font-family: mceinline;">Columbia County/ Hudson Valley: <a href="http://www.meetup.com/HudsonValleyC4L/">http://www.meetup.com/HudsonValleyC4L/</a>&nbsp;</span></p><p><span style="font-family: mceinline;">Dutchess County: <a href="http://www.meetup.com/NorthernDutchessC4L/">http://www.meetup.com/NorthernDutchessC4L/&nbsp;</a></span></p><p><span style="font-family: mceinline;">Ithaca: <a href="http://www.meetup.com/Ithaca-Liberty/">http://www.meetup.com/Ithaca-Liberty/&nbsp;</a></span></p><p><span style="font-family: mceinline;">Long Island (Nassau/Suffolk): <a href="http://www.meetup.com/Campaign-for-Liberty-suffolk-county-long-island-chapter/">http://www.meetup.com/Campaign-for-Liberty-suffolk-county-long-island-chapter/</a></span></p><p><span style="font-family: mceinline;">Greater NYC: <a href="http://www.meetup.com/campaignforlibertynyc/">http://www.meetup.com/campaignforlibertynyc/</a></span></p><p><span style="font-family: mceinline;">Rochester/Monroe County: <a href="http://ronpaul.meetup.com/346/">http://ronpaul.meetup.com/346/</a> &nbsp;</span></p><p><span style="font-family: mceinline;">Saratoga County: <a href="http://www.meetup.com/Saratoga-Campaign-For-Liberty/">http://www.meetup.com/Saratoga-Campaign-For-Liberty/&nbsp;</a></span></p><p><span style="font-family: mceinline;">Syracuse/Central NY: <a href="http://www.meetup.com/campaignforliberty-cny/">http://www.meetup.com/campaignforliberty-cny/&nbsp;</a></span></p><p><span style="font-family: mceinline;">If you have any other meetups to list or would like to see your blog post on the NYS page, email me at steven.vasquez at campaignforliberty.com.</span></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ny.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'New York C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'North Carolina',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/north-carolina',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NC',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57417',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Thank you for becoming a part of the North Carolina division of the Campaign for Liberty! We hope you will not only join but be a very active citizen/voter/activist in the party of your choice.&nbsp;The Campaign for Libery (C4L)&nbsp;objective is to provide&nbsp;tools to our&nbsp;members that will aid them in&nbsp;organizing for the cause of liberty and expand their voice and influence beyond just voting at the polls. We hope that each of you will become more effective Republicans, Democrats, Libertarians, and Independents as the message of peace, freedom, and prosperity is spread to our fellow citizens.</p><p>As a non-partisan, non-profit, educational group we will be making available as much information&nbsp;as we can regarding specific political parties, how they work, important upcoming opportunities within them, and even training and suggestions on what to do and how to be more effective in your chosen party. Please share your&nbsp;knowledge and experience with others so that we can all work together to help heal our republic and revive our US Constitution. Please forward any important announcements regarding your party to the appropriate Coordinator.&nbsp; If you are registered in a specific party, we are encouraging you to contact that party&#39;s&nbsp;offices and find out all you can in order to take the voice of liberty&nbsp;into them.&nbsp;</p><p>There is no better place to maximize your voice,&nbsp;than to join with your other C4L members as they become voting delegates within their party.&nbsp; Your vote will help elect them to influential positions within the party or&nbsp;lead you to be&nbsp;one yourself.&nbsp; There are changes that need to occur and we need your help.</p><p style="text-align: center;">Link to a list of each county&#39;s GOP Chairman and contact info: <a href="http://www.ncgop.org/info_county.jsp">http://www.ncgop.org/info_county.jsp</a></p><p style="text-align: center;">NC-BOE voter&nbsp;registration lookup site:&nbsp;<a href="http://www.sboe.state.nc.us/VoterLookup.aspx">http://www.sboe.state.nc.us/VoterLookup.aspx</a>&nbsp;&nbsp;&nbsp;</p><p style="text-align: center;">(This is where you will find out if you are registered to vote correctly, including voter information about your District and County.}</p><p style="text-align: center;"><strong>SPECIAL REQUESTS TO ALL MEMBERS:</strong>&nbsp;&nbsp;</p><p style="text-align: center;">1)&nbsp; We would like to post here the same links for the other parties if someone would contact&nbsp;us directly via My Dashboard / Mailbox or just click &quot;message&quot; next to the State Coordinator at the top of the North Carolina page.</p><p style="text-align: center;">2)&nbsp; If you are a Liberty Candidate or know of a Liberty Candidate, here in NC, please post on your blog and notify&nbsp;us and we&#39;ll post your blog on our State Page.&nbsp; Please support our North Carolina Liberty Candidates.</p><p style="text-align: center;">----------------------------------------------------------------------------------------------------------------------------------------------</p><p style="text-align: center;">&nbsp;</p><p></p><p style="text-align: center;"><strong><span style="color: #000000;">MAKE THE COMMITMENT TODAY TO BE ACTIVE IN YOUR CHOSEN PARTY!</span></strong></p><p style="text-align: center;"><strong><span style="background-color: #ffffff;"><span style="color: #000000;">KNOW&nbsp;YOUR FELLOW LIBERTY FIGHTERS - JOIN THE C4L AND CALL YOUR COUNTY OR REGIONAL COORDINATOR FOR INFORMATION.</span></span></strong></p><p style="text-align: center;"><strong><span style="background-color: #ffffff;"><span style="color: #ff6600;"><span style="color: #ff0000;">THE&nbsp;GENERATION YOU SAVE MAY BE YOUR OWN.</span>&nbsp;</span></span></strong></p><p style="text-align: center;">-----------------------------------------------------------------------------------------------------------------------------------------------&nbsp;&nbsp;</p><p>&nbsp;</p><p style="text-align: center;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="250" width="203"> <param name="id" value="kickWidget_115679_216903" /> <param name="FlashVars" value="affiliateSiteId=115679&amp;widgetId=216903&amp;width=203&amp;height=250&amp;kaShare=1&amp;autoPlay=0&amp;playOnLoad=0&amp;revision=35" /> <param name="wmode" value="transparent" /> <param name="allowFullScreen" value="true" /> <param name="allowScriptAccess" value="always" /> <param name="src" value="http://serve.a-widget.com/service/getWidgetSwf.kickAction" /><embed allowfullscreen="true" allowscriptaccess="always" flashvars="affiliateSiteId=115679&amp;widgetId=216903&amp;width=203&amp;height=250&amp;kaShare=1&amp;autoPlay=0&amp;playOnLoad=0&amp;revision=35" height="250" id="kickWidget_115679_216903" src="http://serve.a-widget.com/service/getWidgetSwf.kickAction" type="application/x-shockwave-flash" width="203" wmode="transparent"></embed> </object></p><p style="text-align: center;"><em><span style="font-size: small;"><strong>Senator Burr has signed up as a cosponsor of S604 so let&#39;s get busy on Senator Hagen!</strong>&nbsp; </span></em></p><p style="text-align: center;"><span style="font-size: small;">Please visit the NC C4L Forum for all the latest&nbsp;meetings, rallys and petition opportunities!&nbsp;</span></p><p style="text-align: center;"><strong><span style="background-color: #ffffff;"><span style="color: #ff6600;"><span style="font-size: small;">source:&nbsp; </span><a href="http://www.congress.org/congressorg/issues/bills/?billnum=H.R.1207&amp;congress=111&amp;size=full"><span style="font-size: small;">http://www.congress.org/congressorg/issues/bills/?billnum=H.R.1207&amp;congress=111&amp;size=full</span></a><span style="font-size: small;">&nbsp;</span></span></span></strong></p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><h2 style="text-align: center;">&nbsp;</h2><h2><span style="font-size: x-small;"><span style="font-size: small;">These NC&nbsp;Representatives have signed on as cosponsors for HR1207 as of 9/25/09:</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Name--------------Party--State-District-Term------HFSC----Hometown-------Signed</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Howard Coble--R-----NC-----6th-----13th------------------Greensboro------6/11/09</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Virginia Foxx---R-----NC-----5th------3rd-------------------Grandfather------3/10/09</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Walter Jones---R-----NC-----3rd------8th--------(HFSC)---Farmville---------2/26/09</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Mike McIntyre--D-----NC-----7th------7th-------------------Lumberton-------6/10/09</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Patrick McHenry--R--NC-----10th----3rd--------(HFSC)--Cherryville--------4/30/09</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Sue Myrick------R----NC----9th------8th------------------Charlotte----------4/28/09</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Heath Shuler----D-----NC-----11th----2nd------------------Waynesville-------6/12/09</span></span></h2><h2><span style="font-size: x-small;"><span style="font-size: small;">Rep. Brad Miller------D-----NC-----13th----4th------------------Greensboro-------9/22/09</span></span></h2><h2 style="text-align: center;"><span style="font-size: x-small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="color: #800080;"><span style="font-size: small;">These NC&nbsp;Representatives have NOT signed on as cosponsors for HR1207 as of 9/25/09:</span></span></span></span></span></h2><h2 style="text-align: center;"><span style="font-size: x-small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="color: #ff0000;"><span style="font-size: small;">Rep. Melvin Watt-------D--NC----12th----9th----(HFSC)-----Charlotte---------</span></span></span></span></span></h2><h2 style="text-align: center;"><span style="font-size: x-small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="color: #800080;"><span style="font-size: small;">Rep. Mike McIntyre----D--NC-----7th----7th------------------Lumberton-------</span></span></span></span></span></h2><h2 style="text-align: center;"><span style="font-size: x-small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="color: #800080;"><span style="font-size: small;">Rep. Larry Kissell------D--NC-----8th----1st-------------------Biscoe------------</span></span></span></span></span></h2><h2 style="text-align: center;"><span style="font-size: x-small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="color: #800080;"><span style="font-size: small;">Rep. David Price-------D--NC-----4th---11th------------------Chapel Hill-------</span></span></span></span></span></h2><h2 style="text-align: center;"><span style="font-size: x-small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="color: #800080;"><span style="font-size: small;">Rep. G.K. Butterfield-D--NC------1st----4th------------------Wilson------------</span></span></span></span></span></h2><h2 style="text-align: center;"><span style="font-size: x-small;"><span style="color: #ff0000;"><span style="font-size: small;"><span style="color: #800080;"><span style="font-size: small;">Rep. Bob Etheridge---D--NC-----2nd----7th------------------Lillington---------</span></span></span></span></span></h2>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ncgov.com/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'North Carolina C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'North Dakota',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/north-dakota',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ND',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57418',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><span style="color: #0000ff;"><span style="font-size: x-large;">UPDATED!</span></span>&nbsp; W just found out that Senator Dorgan has signed on to S604, so we will direct all our attention to Senator Conrad.</p><p>&nbsp;</p><p><span style="font-size: x-large;">Join us <span style="color: #800000;">September 15th</span> at <span style="color: #800000;">3:45 PM</span> as we present Audit the Fed Petitions to our Senator.</span></p><p>In Fargo, we will meet at Senator Conrad&#39;s office:</p><p>Federal Building<br />
+    657 2nd Ave. N.<br />
+    Fargo</p><p>We are meeting 15 minutes early to allow for delays caused by security checks.&nbsp; This is in the federal building, so are metal detectors and you will have to present picture ID, so be prepared.&nbsp;</p><p>Pass the word along and let&#39;s have a big crowd of people there.</p><p>&nbsp;</p><p>&nbsp;</p><p><span style="font-size: large;"><span style="color: #800000;"><strong><span style="text-decoration: underline;">Welcome to the North Dakota Campaign for Liberty website!</span></strong></span></span></p><p>The Campaign for Liberty is a grassroots organization, working for change beginning at the most local level: the precinct.&nbsp; Precinct Leader are the foundation of the success of Campaign for Liberty.&nbsp; My job as Interim State Coordinator is to give you the tools you need to be an effective citizen activist. But you are key to the success of Campaign for Liberty.&nbsp; You are the ones who will communicate with voters in your precinct about the important issues of the day.&nbsp; Your participation in working toward our goals is essential and truly appreciated.</p><p>The people who are running our country would like nothing more than to keep your attention on CSPAN and the evening news, to worry and complain about what goes on in Washington.&nbsp; Like the magician who doesn&#39;t want you to see what&#39;s really going on, they keep our attention on things we can&#39;t control or influence so that we neglect the one area we <span style="text-decoration: underline;">can</span> influence: our neighborhood.</p><p>The fact is the folks in Washington DC are doing exactly what we have trained them to do for the past 10-15-20 years.&nbsp; They first ran for school board and adopted all-day kindergarten and built extravagant, state-of-the-art schools when the student population was declining.&nbsp; And what did we do?&nbsp; We re-elected them.&nbsp;</p><p>Then they ran for county commission and increased our property taxes and neglected the township roads and bridges.&nbsp; Most of us grumbled and called the radio show to complain.&nbsp; And then we re-elected them.</p><p>Then they ran for state legislature where they increased state spending, subsidized their pet industries, and raised our taxes.&nbsp;&nbsp; Those who paid attention didn&#39;t like it.&nbsp; But what did we do 1&frac12;&nbsp; years later?&nbsp; We put them back into office.&nbsp; So by the time these guys got to Washington they had just spent the last dozen or so years learning that they could do whatever they wanted and still get elected.&nbsp; That&#39;s why they voted for a bailout even though constituents&#39; calls were 100 to 1 against it.&nbsp; Because they knew we wouldn&#39;t do a thing abut it.</p><p>It&#39;s time to put a stop rewarding them, stop training them to be tyrants.&nbsp; It&#39;s time to teach them a different lesson.&nbsp; We must teach them that there is a price to pay when they erode our freedoms and take our hard-earned money.&nbsp; We&#39;re the ones who will change Washington, but we will only do it after we&#39;ve cleaned out City Hall.&nbsp; And the County Commission.&nbsp; And the State Legislature.</p><p>Our work starts now.&nbsp; The legislative session begins in a matter of weeks.&nbsp; We need to be informed and prepared.&nbsp; We need to inform our friends and neighbors and get them involved.&nbsp; Don&#39;t look at the magician&#39;s tricks.&nbsp; Instead, pay attention to what&#39;s up his sleeve.</p><p>The power is in your hands to make a change.&nbsp; Take charge of your precinct today.&nbsp; I encourage you to use all the tools that Campaign for Liberty has to offer.&nbsp; Precinct Leader Training is a great tool as well as the C4L online education and local meetings and training.&nbsp; I look forward to working with you sot that together we can become an force that cannot be ignored.</p><p>&nbsp;</p><p><a href="http://www.legis.nd.gov/assembly/60-2007/maps-new-district/index.html " target="_blank" title="map">Map to find your Legislative District</a></p><p><a href="http://www.legis.nd.gov/  " target="_blank" title="contact">Contact information for your legislators</a></p><p><a href="http://www.legis.nd.gov/docs/pdf/legcalendar.pdf " target="_blank" title="calendar">Legislative Calendar</a></p><p><a href="http://www.legis.nd.gov/assembly/61-2009/leginfo/bills-res-jour/index.html " target="_blank" title="legislation">Current legislation being introduced</a></p><p><a href="http://www.legis.nd.gov/information/statutes/cent-code.html " target="_blank" title="laws">ND Century Code</a> (All state laws)</p><p><strong><span style="color: #800000;"><span style="font-size: medium;">Links to your county government:</span></span></strong></p><p>&nbsp;</p><p>&nbsp;</p><table align="left" border="3" cellpadding="0" cellspacing="0" width="575"><tbody><tr><td style="width: 95px;" valign="top"><p>Adams</p><p><a href="http://www.co.barnes.nd.us/ " target="_blank" title="Barnes">Barnes</a></p><p>Benson</p><p><a href="http://www.billingscountynd.gov/ " target="_blank" title="Billings">Billings</a></p><p><a href="http://www.bottineau.com/  " target="_blank" title="Bottineau">Bottineau</a></p><p><a href="http://www.bowmannd.com/ " target="_blank" title="Bowman">Bowman</a></p><p><a href="http://www.burkecountynd.com/  " title="Burke">Burke</a></p><p><a href="http://www.co.burleigh.nd.us/ " target="_blank" title="Burleigh">Burleigh</a></p><p><a href="http://www.casscountynd.gov/ " target="_blank" title="Cass">Cass</a></p><p>Cavalier</p><p>Dickey</p><p>Divide</p><p>Dunn</p><p>Eddy</p><p>Emmons</p><p><a href="https://mylocalgov.com/FosterCountyND/index.asp " target="_blank" title="Foster">Foster</a></p><p><a href="http://www.beachnd.com/home.php" target="_blank" title="Golden Valley">Golden Valley</a></p><p><a href="http://www.grandforkscountygov.com/homepage.htm " target="_blank" title="Grand Forks">Grand Forks</a></p></td><td style="width: 95px;" valign="top"><p><a href="http://www.grantcountynd.com/" target="_blank" title="Grant">Grant</a></p><p>Griggs</p><p><a href="http://www.hettingercounty.org/ " target="_blank" title="Hettinger">Hettinger</a></p><p>Kidder</p><p>LaMoure</p><p>Logan</p><p><a href="http://www.mchenrycountynd.com/ " target="_blank" title="McHenry">McHenry</a></p><p>McIntosh</p><p>McKenzie</p><p><a href="http://www.visitmcleancounty.com/" target="_blank" title="McLean">McLean</a></p><p><a href="http://www.mercercountynd.com/ " target="_blank" title="Mercer">Mercer</a></p><p><a href="http://www.co.morton.nd.us/ " target="_blank" title="Morton">Morton</a></p><p>Mountrail</p><p><a href="http://www.nelsonco.org/ " target="_blank" title="Nelson">Nelson</a></p><p>Oliver</p><p><a href="http://pembinacountynd.gov/ " target="_blank" title="Pembina">Pembina</a></p><p>Pierce</p></td><td style="width: 95px;" valign="top"><p>Ramsey</p><p><a href="http://www.ransomcountynd.com/ " target="_blank" title="Ransom">Ransom</a></p><p><a href="http://renvillecountynd.org/ " target="_blank" title="Renville">Renville</a></p><p><a href="https://mylocalgov.com/richlandcountynd/ " target="_blank" title="Richland">Richland</a></p><p><a href="http://www.rolettecounty.com/ " target="_blank" title="Rollette">Rolette</a></p><a href="https://mylocalgov.com/SargentCountyND/index.asp" target="_blank" title="Sargent">Sargent</a><p><a href="https://mylocalgov.com/SheridanCountyND/index.asp" target="_blank" title="Sheridan">Sheridan</a></p><p>Sioux</p><p>Slope</p><p><a href="https://mylocalgov.com/starkcountynd/index.asp " target="_blank" title="Stark">Stark</a></p><p>Steele</p><p><a href="http://www.co.stutsman.nd.us/ " target="_blank" title="Stutsman">Stutsman</a></p><p>Towner</p><p>Traill</p><p><a href="http://www.co.walsh.nd.us/ " target="_blank" title="Walsh">Walsh</a></p><p><a href="http://www.co.ward.nd.us/ " target="_blank" title="Ward">Ward</a></p><p><a href="https://mylocalgov.com/wellscountynd/index.asp " target="_blank" title="Wells">Wells</a></p><p><a href="http://www.williamsnd.com/" target="_blank" title="Williams">Williams</a></p></td></tr></tbody></table><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p><strong>Be sure to check back often as we update and bring you the latest political news.</strong></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.nd.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'North Dakota C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c3e5d-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Ohio',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/ohio',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'OH',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57419',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><img alt="" src="file:///C:/DOCUME~1/Customer/LOCALS~1/Temp/moz-screenshot-1.png" /></p><p><img alt="" src="file:///C:/DOCUME~1/Customer/LOCALS~1/Temp/moz-screenshot.png" /></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ohio.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Ohio C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Oklahoma',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/oklahoma',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'OK',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57420',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ok.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Oklahoma C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c5c4e-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Oregon',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/oregon',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'OR',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57421',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>&nbsp;</p><p>&nbsp;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.oregon.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Oregon C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c6831-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Pennsylvania',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/pennsylvania',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57422',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;">&nbsp;</p><p><a href="/signup.php" target="_blank"><strong>If your not a member of the Campaign for Liberty, click Here to Signup. &nbsp;Be a part it.</strong></a></p><p>&nbsp;</p><p style="text-align: left;"><strong>1. FIND your COUNTY........by looking in the column on the right. &nbsp;If you don&#39;t see a coordinator listed, please nominate someone you believe would make a good county or district coordinator. &nbsp;Members can nominate someone via links toward the bottom right hand corner of your dashboard page at <a href="/grassroots-home.php" target="_self">http://www.campaignforliberty.com/grassroots-home.php</a></strong></p><p style="text-align: left;"><strong>2. See how your congressman Voted on the Bailouts by scrolling toward the bottom of this page. &nbsp;Then </strong><strong>CONTACT your U.S. CONGRESSMAN and SENATORS and let them know how you feel.</strong></p><p style="text-align: left;"><strong>3. Find your State Representative or State Senator by entering your zip code in the box at the top right corner of <a href="http://www.legis.state.pa.us/" target="_blank">this page.</a>&nbsp;</strong></p><p style="text-align: left;"><strong>&nbsp;</strong></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.pa.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Pennsylvania C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Rhode Island',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/rhode-island',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'RI',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57423',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Hello, I&#39;m your contact until we find an interim state coordinator for your state.&nbsp; If you know someone who would like to be interim state coordinator, please let me know!</p><p>Get to know your legislators and what they have in store for you - click &quot;State Legislature Page&quot; above for general information.</p><p>Read the BILLS that will come up in the House &amp; Senate this year &mdash; <a href="http://www.rilin.state.ri.us/search/search.idq?CiRestriction=&amp;CiMaxRecordsPerPage=100&amp;CiScope=%2FBilltext09%2F&amp;CiSort=DocTitle[a]&amp;HTMLQueryForm=%2Fsearch%2Fsearch.asp&amp;Abstractt=1" target="_blank">[Link]</a>.</p><p>Will they possibly affect you, your family, your friends? If so, visit the Capitol, meet your representatives, talk to them before the bill comes up in Committee, then if you are able, attend the public committee hearings and have your say.</p><p>Interested in learning about how the legislation works? Talk to others who have visited the Capitol to get the scoop, or request a training session from Eagle Forum. The cost is minimal and you will learn a lot.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.ri.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Rhode Island C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c8021-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'South Carolina',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/south-carolina',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SC',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57424',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>&nbsp;</p><p>Some well intentioned folks in South Carolina are calling for a constitutional convention in order to solve our problems with the federal government.&nbsp; This YouTube video is a &quot;must see&quot; to understand the terrifying dangers of a constitutional convention!</p><p>Its a four part series of about 10 minutes each, and though the basic overview is covered in the first part, the real subtle dangers are covered in the remaining parts.</p><p>Please watch!</p><p>&nbsp;</p><p>&nbsp; <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="350" width="425"> <param name="src" value="http://www.youtube.com/v/za8_pdJ1dPo&amp;feature" /><embed height="350" src="http://www.youtube.com/v/za8_pdJ1dPo&amp;feature" type="application/x-shockwave-flash" width="425"></embed> </object></p><p><span style="font-size: x-large;"><a href="/contribute.php?projid=181" target="_blank">Click here to donate</a> to help Campaign for Liberty make South Carolina&#39;s Legislature Accountable</span> - This fund is set aside for the exclusive purpose of holding SC&#39;s state legislators accountable</p><p><a href="/blog.php?view=31266" target="_blank"><em><span style="font-size: x-large;">Click for latest on Legislative Accountability in SC</span></em></a></p><p><a href="/blog.php?view=31267" target="_blank"><em><span style="font-size: x-large;">Click for latest on State Sovereignty in SC</span></em></a></p><p><a href="http://www.scpolicycouncil.com/" target="_blank">Click Here</a> for the SC Policy Council</p><p><a href="http://www.sciway.net/maps/south-carolina-congressional-districts.html" target="_blank">Click for Congressional District Maps</a></p><p><a href="http://www.rinohunt.net" target="_blank">Click for Rino Hunt</a></p><p><a href="http://www.standupsc.com/" target="_blank">Click for Stand UP SC</a></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.sc.gov',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'South Carolina C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'South Dakota',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/south-dakota',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SD',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57425',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.sd.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'South Dakota C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6c98de-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Tennessee',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/tennessee',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TN',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57426',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>&nbsp;</p><p style="text-align: center;"><em><strong>&nbsp;&quot;The Sun never shined on a cause of greater worth.&quot;<br />
+    Thomas Paine, Common Sense</strong></em></p><p>&nbsp;</p><p>&nbsp;</p><p>February 2009</p><p>&nbsp;</p><p>If you revere the <em>Declaration of Independence</em>, the <em>Constitution of the United States</em>, and the principles of liberty upon which this country was founded; but see a national government exceeding its constitutional bounds with an interventionist foreign policy, burdensome regulations, suffocating taxes, and irresponsible spending; then please join Texas Congressman Ron Paul&#39;s <strong>Campaign for Liberty</strong>. Dr. Ron Paul is a <strong>true statesman</strong>, a &quot;Champion of the Constitution,&quot; a <em>Thomas Jefferson</em> of our generation.</p><p>The <strong>Campaign for Liberty</strong> needs you! Citizens like you help to govern the county, state and national parties. Party delegates make the rules, influence their peers, and choose candidates for the General Election! In every step of the process, it is essential that liberty-minded activists are engaged, active and numerous. Please sign up now with the <strong>Campaign for Liberty</strong>!</p><p>Thoughtfully consider how you can help to restore the Republic, preserve what freedoms we have, and reclaim those we have lost. Thomas Paine once said, <em>&quot;Those who expect to reap the blessings of freedom, must, like men, undergo the fatigues of supporting it.&quot;</em> Decide now to DO SOMETHING in the <strong>Campaign for Liberty</strong>. Decide now to devote some time each day or week in the cause of freedom. Decide now to be a person of influence in your precinct.</p><p>In these web pages, you will find educational material well worth reading, activist tools well worth your time, and a Local Coordinator Training Program well worth your efforts. Yes, this campaign will require time and effort. As Ron Paul said, <em>&quot;Elections are short-term efforts. Revolutions are long-term projects.&quot;</em> But it will be worth it. Your neighbor cannot do it all. I cannot do it all. No single person can guarantee our liberties. However, many good citizens throughout the country, each doing a little, CAN have the impact necessary to sustain freedom and guarantee our liberties.</p><p>In this <strong>campaign</strong>, we shoulder a four-fold mission: recruit, train, equip, and mobilize.</p><p>Recruit. We must recruit our fellow citizens to join us in this effort. There are about&nbsp;2250 precincts in Tennessee. We need at least one leader in each precinct, and preferably two or three. Invite your civic-minded friends to join this campaign. (They can browse this web site without joining.) If they agree with what they find here, then they will naturally be inclined to join.</p><p>Train. Once you have joined the <strong>Campaign for Liberty</strong>, become a Local Coordinator, and begin the LC Boot Camp (web pages that help you to understand how politics works here in Tennessee). You will not be able to complete the Boot Camp in a single sitting. It will require time and effort. Once completed, however, your research will become a gold mine of information you will be able to reference at will as you stand up for liberty in this campaign.</p><p>Equip. This web site will equip you to be an effective activist. It is an infrastructure that enables us to prepare for various activities that will <strong>promote liberty</strong>. It helps us coordinate our activities. It helps us to share information and encouragement.</p><p>Mobilize. When your help is needed, you will be invited (usually via email or by general announcement on this web site) to help. It may be to attend a rally, host a book club, walk your precinct, attend a political meeting, or talk to a legislator. Whatever it is, I hope you will embrace the opportunity with enthusiasm. And if you feel as though you are not doing enough, then organize something in your neighborhood, community, or county, and <strong>promote liberty</strong>.</p><p>A number of good people already are making good things happen--throughout the state. Please join us. Be a part of it. Make history.</p><p>JBMcCord</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.tennesseeanytime.org/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Tennessee C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '1',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Texas',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/texas',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TX',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57385',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><span style="font-size: medium;">Our website is ready for sign ups!!!&nbsp;&nbsp; </span><a href="http://www.txlc.org"><span style="font-size: medium;">www.txlc.org</span></a></p><p>We do things bigger and better in Texas and so sometimes that means things take us a little longer! We are getting organized and WE WILL have a powerful state organization. For now, the executive board and committees are busy and you are welcome to join a meeting conference call or volunteer for a committee. We&#39;d like your input!</p><p>&nbsp;I&#39;ll update with news on the Texas Liberty Campaign as it becomes available.</p><p>Working Tirelessly for Liberty!</p><p>Debbie McKee</p><p>Interim CFL Coordinator</p>',
+        'format' => '1',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.texas.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Texas is a state.',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Utah',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/utah',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'UT',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57427',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;"><span style="font-size: large;"><span style="text-decoration: underline;">Welcome to the Campaign for Liberty in Utah</span>!</span></p><p style="text-align: center;">April 2010</p><blockquote><p style="text-align: center;">Getting a Local Coordinator in every Precinct in Utah!</p></blockquote><p>We need Local Coordinators whose job is to capture their voting precincts (their own turf). And we need County (or House District) Coordinators whose job is to identify Local Coordinators. Let&#39;s examine both roles more closely.</p><p><strong>LOCAL COORDINATORS</strong></p><p>The primary sphere of activity for an active member of the Campaign for Liberty is his own precinct:</p><p>1. Determine your voting precinct by visiting the <a class="hr" href="https://gva1.utah.gov/elections/polling.aspx" target="_blank" title="Lt. Governor\'s Voter Information Web Site">Lt. Governor&#39;s web site</a>.</p><p>2. Email your name and your precinct to your county coordinator (or to your <a class="hr-blue" href="/profile.php?member=Lowell_Nelson" target="_blank" title="Lowell Nelson C4L Profile">state coordinator</a> if you don&#39;t have a county coordinator).</p><p>3. Create an account on the Campaign for Liberty web site. Become a dues-paying member, and sign the nondisclosure agreement to become a Local Coordinator.</p><p>4. Identify liberty-minded citizens (neighbors) in your precinct who will be willing to attend the caucus in March and support you.</p><p>5. Attend a caucus training session to learn how a caucus works, what is expected of a delegate, and how to get elected.</p><p>6. Attend the March 23, 2010 caucus, and get elected as a delegate to the state and/or county conventions.</p><p>Local Coordinators are responsible for educating their precincts, keeping them informed, and recruiting for the Campaign for Liberty. This might entail canvassing (to distribute pamphlets, office-holder voting records, news articles, etc.), inviting people to events in person or by telephone, etc.</p><p><strong>COUNTY (or HOUSE DISTRICT) COORDINATORS</strong></p><p>A secondary sphere of activity for an enthusiastic member of the Campaign for Liberty is his own county (or his house district, in a more populous county):</p><p>1. Determine your house district by visiting <a class="hr-blue" href="http://www.congress.org/" target="_blank" title="Delegate Information Web site">this web site</a>.</p><p>2. Email your interest in coordinating C4L activity in your county (or house district) to your county coordinator (or to your <a class="hr-blue" href="/profile.php?member=Lowell_Nelson" target="_blank" title="Lowell Nelson C4L Profile">state coordinator</a> if you don&#39;t have a county coordinator).</p><p>3. Become a dues-paying member of the C4L ($35), and sign the nondisclosure agreement to become a Local Coordinator.</p><p>4. Identify liberty-minded citizens in each precinct in your county (or district)--citizens who will be willing to attend the caucus in March.</p><p>5. Host caucus training sessions to help others learn how a caucus works, what is expected of a delegate, and how to get elected.</p><p>6. Coordinate your efforts with your county coordinator and/or other house district coordinators.</p><p>The primary role of a <em>County (or House District) Coordinator </em>is to identify, organize, and lead <em>Local Coordinators </em>in the county (or house district). Names and contact information of C4L members living in each county (or house district) will be made available to <em>County (or House District) Coordinators</em>, who can then contact these members about being <em>Local Coordinators</em>. Utah Campaign for Liberty Training materials will be provided so that <em>County (and House District) Coordinators </em>throughout the state can provide essentially the same information in the training sessions they host.</p><p><strong>OVERALL OBJECTIVES</strong></p><p>The Utah Campaign for Liberty is endeavoring to accomplish the following:</p><p>1. Identify a <em>Local Coordinator </em>in each voting precinct.</p><p>2. Identify a <em>House District Coordinator </em>in each house district in Utah.</p><p>3. Identify a <em>County Coordinator </em>in each county in Utah.</p><p>4. Identify a <em>Regional Coordinator</em> for each congressional district in Utah.</p><p>5. Be fully organized (&quot;staffed&quot;) by the end of January 2010.</p><p>6. Encourage local coordinators to meet, plan, train, and mobilize during January, February, and March.</p><p>7. Encourage local coordinators to attend their precinct caucuses on Tuesday, March 23, 2010, at 7:00 PM.</p><p>8. Encourage local coordinators to get elected as state and/or county delegates at their precinct caucuses.</p><p>9. Encourage state and county delegates to nominate liberty-minded candidates in their respective party conventions.</p><p><strong>NOTES</strong></p><p>A precinct contains no more than 1250 registered voters. It is geographically small (several hundred households, usually). Typically, a precinct contains only a dozen or more citizens who are interested in politics.</p><p>A house district contains about 20 precincts, on average. There are 75 house districts in Utah. There are 29 counties in Utah.</p><p><strong>BECOMING A CANDIDATE FOR STATE OFFICE</strong></p><p>You may become a candidate for state office if you meet <a class="hr" href="http://www.elections.utah.gov/howtobecomeacandidateforstateoffice.html" target="_blank" title="State Office Candidate Requirements">these requirements</a>.</p><p><strong>PLEA</strong></p><p>If you want to help in this awesome Campaign for Liberty, become a Local Coordinator or a County (or a House District) Coordinator. Create an account, pay your dues (that may be the best $35 investment you will ever make), and sign the non-disclosure agreement.</p><blockquote><p style="text-align: center;">More background on the Campaign for Liberty for you first-time visitors to this site:</p></blockquote><p>If you revere the <em>Declaration of Independence</em>, the <em>Constitution of the United States</em>, and the principles of liberty upon which this country was founded; but see a national government exceeding its constitutional bounds with an interventionist foreign policy, a fiat monetary system, burdensome regulations, suffocating taxes, and irresponsible spending; then please join Texas Congressman Ron Paul&#39;s <strong>Campaign for Liberty</strong>. Dr. Ron Paul is a <strong>true statesman</strong>, a &quot;Champion of the Constitution,&quot; a <em>Thomas Jefferson</em> of our generation.</p><p>The <strong>Campaign for Liberty</strong> needs you! Citizens like you help to govern the county, state and national parties. Party delegates make the rules, influence their peers, and choose candidates for the General Election! In every step of the process, it is essential that liberty-minded activists are engaged, active and numerous. Please sign up now with the <strong>Campaign for Liberty</strong>!</p><p>Thoughtfully consider how you can help to restore the Republic, preserve what freedoms we have, and reclaim those we have lost. Thomas Paine once said, <em>&quot;Those who expect to reap the blessings of freedom, must, like men, undergo the fatigues of supporting it.&quot;</em> Decide now to DO SOMETHING in the <strong>Campaign for Liberty</strong>. Decide now to devote some time each day or week in the cause of freedom. Decide now to be a person of influence in your precinct.</p><p>In these web pages, you will find educational material well worth reading, activist tools well worth your time, and a Precinct Leader Training Program well worth your efforts. Yes, this campaign will require time and effort. As Ron Paul said, <em>&quot;Elections are short-term efforts. Revolutions are long-term projects.&quot;</em> But it will be worth it. Your neighbor cannot do it all. I cannot do it all. No single person can guarantee our liberties. However, many good citizens throughout the country, each doing a little, CAN have the impact necessary to sustain freedom and guarantee our liberties.</p><blockquote><p style="text-align: center;">NEW! Contribute Directly to the Utah C4L!</p><p style="text-align: center;"><a class="hr" href="/contribute.php?for=UT" target="_blank" title="Contribute to Utah C4L">https://www.campaignforliberty.com/contribute.php?for=UT</a></p></blockquote><p>In this <strong>campaign</strong>, we shoulder a four-fold mission: recruit, train, equip, and mobilize.</p><p><span style="text-decoration: underline;">Recruit</span>. We must recruit our fellow citizens to join us in this effort. There are about 1725 precincts in Utah. We need at least one leader in each precinct, and preferably two or three. Invite your civic-minded friends to join this campaign. (They can browse this web site without joining.) If they agree with what they find here, then they will be inclined naturally to join. We would like to have 100 such Precinct Leaders by the end of June, 2009.</p><p><span style="text-decoration: underline;">Train</span>. Once you have joined the <strong>Campaign for Liberty</strong>, become a Precinct Leader, and begin the PL Boot Camp (web pages that help you to understand how politics works here in Utah). You will not be able to complete the Boot Camp in a single sitting. It will require time and effort. Once completed, however, your research will become a gold mine of information you will be able to reference at will as you stand up for liberty in this campaign.</p><p><span style="text-decoration: underline;">Equip</span>. This web site will equip you to be an effective activist. It is an infrastructure that enables us to prepare for various activities that will <strong>promote liberty</strong>. It helps us coordinate our activities. It helps us to share information and encouragement. If you notice that something is missing here, please let me know, and I will work to make it available (or show you where it is :--).</p><p><span style="text-decoration: underline;">Mobilize</span>. When your help is needed, you will be invited (usually via email or by general announcement on this web site) to help. It may be to attend a rally, host a book club, walk your precinct, attend a political meeting, or talk to a legislator. Whatever it is, I hope you will embrace the opportunity with enthusiasm. And if you feel as though you are not doing enough, then organize something in your neighborhood, community, or county, and <strong>promote liberty</strong>.</p><p>A number of good people already are making good things happen--throughout the state. Please join us. Be a part of it. Make history.</p><p style="text-align: center;">Other Upcoming Events</p><p>Monthly Meetings. If you have not been invited to attend a meeting in your county (or your house district if you live in a populous county), please schedule a meeting and invite others to attend. Schedule your meeting a couple of weeks out, then invite everyone three times (via email, say): once two weeks in advance, again one week away, and then again a day or two before your meeting. I would be happy to attend your first meeting if you like.</p><p>Respectfully,</p><p>Lowell Nelson, Interim State Coordinator, Utah C4L</p><p style="text-align: center;">Housekeeping</p><p>These (state) C4L pages are updated several times a week in one way or another. Various calendar events, news items, blog entries, and so forth are added, updated, or removed. So please visit this site at least once each week. The main C4L web page changes daily.</p><p>If you have something of interest to other <strong>Campaign for Liberty</strong> members in Utah, please let me know. If I agree, I will be happy to share it via these web pages.</p><p>Some people have mentioned that this web site runs faster in Firefox than in Internet Explorer. If you are navigating this site with IE, and you find it slow going, then please try Firefox (or another alternative browser).</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.utah.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Utah C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6ccd38-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Vermont',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/vermont',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VT',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57429',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>&ldquo;If the spirit of liberty should vanish in other parts of the union and support of our institutions should languish, it could all be replenished from the generous store held by the people of this brave little state of Vermont.&rdquo;&nbsp; Calvin Coolidge</p><p>Chapter One, Article 18 of the Vermont Constitution: &ldquo;That frequent recurrence to fundamental principles, and a firm adherence to justice, moderation, temperance, industry, and frugality, are absolutely necessary to preserve the blessings of liberty, and keep government free; the people ought, therefore to pay particular attention to these points, in the choice of officers and representatives, and have a right, in a legal way, to exact a due and constant regard to them, from their legislators and magistrates, in making and executing such laws as are necessary for the good government of the State.&rdquo;</p><p>The Vermont Campaign for Liberty is guided by the sentiments&nbsp;quoted above and the philosophy of our founding fathers.&nbsp; Our motto is &quot;educate, empower, and motivate&quot;.&nbsp; We seek to create a political environment here in the Green Mountains where liberty-minded candidates will find a welcomed reception and a receptive audience.&nbsp; Change will happen not in Montpelier until change happens in the small towns and cities of the Green Mountain State.&nbsp; We dedicate ourselves to educate our fellow citizens in the message of liberty, empower them to resume their sovereignty over their government, and motivate them to act on their new found power and elect a government worthy of the title &quot;republic&quot;.&nbsp; Liberty is not easy or without costs, but it is the only condition that allows us all to be the best we can be.&nbsp;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.vermont.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Vermont C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6ce5a9-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Virginia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/virginia',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57428',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p><strong><span style="font-size: large;">Welcome to Virginia&#39;s Campaign for Liberty!</span></strong></p><p><span style="font-size: medium;">Please join our team of dedicated activists to take our country back.</span> We will focus our political activism primarily on local politics.&nbsp; We will influence state and federal legislation through emails, calls and petitions; but, taking back our local governments is a necessity for true representation.&nbsp; This is how we can Save our Republic.</p><p><strong>Local Grassroots Development </strong></p><p><strong>&loz; Become a C4L Local Coordinator</strong></p><p>Take ownership of the Campaign for Liberty and its place in politics by paying your annual dues.&nbsp; Then, become a local coordinator. This crucial step allows for you to receive grassroots training; which provides an opportunity to understand your local political landscape while teaching you how to win.&nbsp; This is accessible through the dashboard of all local coordinators.</p><p><strong>&loz; Attend Meetings</strong></p><p>Attend local political parties, school boards, water boards, city/town councils, etc... . &nbsp;Place your meeting&#39;s information on your county calendar on this C4L website and the Meetup.com Virginia Campaign For Liberty group--<a href="http://www.meetup.com/Virginia-Campaign-for-Liberty/">http://www.meetup.com/Virginia-Campaign-for-Liberty/</a>&nbsp;.</p><p><strong>&loz; Dress for Success</strong></p><p>It never hurts to be the best dressed in the room, but it does to be the worst dressed</p><p><strong>&loz; Leave controversial issues that will marginalize you at the door </strong></p><p>Do not discuss issues that have little or no relevance to governance or local issues</p><p><strong>&loz; Be professional and respectful</strong></p><p>What you say or do as a representative of Campaign for Liberty is a reflection of the organization.</p><p><strong>&loz; Get the local C4L members to attend with you</strong></p><p>Be successful in encouraging C4L members and friends to attend your meeting.&nbsp; Begin by attending yourself and reporting back to C4L with a blog.&nbsp; Blogs are read by&nbsp;a lot&nbsp;of people and your encouraging words will persuade others to do the same.&nbsp; Email and call to remind members about meeting time and place</p><p><strong>&loz; Get to know your local issues </strong></p><p>Recognize the leaders in the room, and get to know them on a personal level through personal conversation.&nbsp; Recognize local issues that you have in common, like taxes, property rights, civil liberties, water issues, etc..., and develop alliances with members</p><p><strong>&loz; Organize political activities around local issues</strong></p><p>Be a leader and organize political activities around these common local issues .&nbsp; Walk your local streets with informational flyers, about these local issues, have informational booths at farmer&#39;s markets and community events.&nbsp; Report back your success to the members of your meetings, write a blog and tell C4L about it.</p><p>If you are active in a political party&nbsp;work for it, find those issues and candidates that your can agree with and focus your political activities on them.&nbsp; You will earn the respect and trust of the established local party leadership for your organizing.&nbsp; Work harder then anyone.</p><p><strong>&loz; Influence your local governance</strong></p><p>Be your local political activists for the cause of Liberty. &nbsp;When there are local issues, be known as the group that is willing to hit the streets and make a real difference.&nbsp; When ever there is an issue of importance, let the local establishment know that there will be local grassroots organizing.&nbsp; With a few local victories, you will have successfully influenced your local governance.&nbsp; With influencing local politics, you have established yourself as a local leader, your neighbors and friends will expect you to have information about local issues. &nbsp;You will be expected to lead.&nbsp; You are now a political leader. &nbsp;This is the key</p><p>Should&nbsp;you become the precinct walkers and political activists of your local party, you will have real influence on party politics.&nbsp; The local party can only mobilize on issues that are in alignment with you and Liberty.</p><p><strong>&loz; A true leader makes more leaders</strong></p><p>Encourage others to do the same.&nbsp; Find the other &quot;go getters&quot; and encourage them to organize in their local districts.&nbsp; Compare notes with them, on what works and what doesn&#39;t work.&nbsp; Learn from each others mistakes to build and forge stronger relationships.</p><p>&nbsp;</p><p><span style="font-family: Verdana; color: #999999; font-size: xx-small;"><a href="http://vids.myspace.com/index.cfm?fuseaction=vids.individual&amp;videoid=21689194" style="font: Verdana">The Star Spangled Banner, like you&#39;ve </a></span></p><p>&nbsp;</p><p>&nbsp;</p><p><span style="font-family: Verdana; color: #999999; font-size: xx-small;"><a href="http://vids.myspace.com/index.cfm?fuseaction=vids.individual&amp;videoid=21689194" style="font: Verdana">never heard it</a> <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="360" width="425"> <param name="allowFullScreen" value="true" /> <param name="wmode" value="transparent" /> <param name="src" value="http://mediaservices.myspace.com/services/media/embed.aspx/m=21689194,t=1,mt=video" /><embed allowfullscreen="true" height="360" src="http://mediaservices.myspace.com/services/media/embed.aspx/m=21689194,t=1,mt=video" type="application/x-shockwave-flash" width="425" wmode="transparent"></embed> </object> </span></p><p><span style="font-family: Verdana; color: #999999; font-size: xx-small;"><a href="http://profile.myspace.com/index.cfm?fuseaction=user.viewprofile&amp;friendid=7155081" style="font: Verdana">Smittys Place</a> | <a href="http://vids.myspace.com " style="font: Verdana">MySpace Video</a></span></p><p>&nbsp;</p><p><strong><span style="font-size: large;">Ron Paul - Youtube Greatest Hits</span></strong></p><p><strong><span style="font-size: large;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="350" width="425"> <param name="src" value="http://www.youtube.com/v/zp4YJkt08h4" /><embed height="350" src="http://www.youtube.com/v/zp4YJkt08h4" type="application/x-shockwave-flash" width="425"></embed> </object> </span></strong></p><p><span style="font-size: medium;"><strong>View &quot;upcoming elections in VA here: <a href="http://www.sbe.virginia.gov/cms/Election_Information/Election_Calendar_Schedule.html" target="_blank">http://www.sbe.virginia.gov/cms/Election_Information/Election_Calendar_Schedule.html</a></strong></span></p><p><span style="font-size: large;"><strong>Please <a href="/contribute.php?for=VA">contribute</a> to our cause for freedom in Virginia!</strong></span></p><p>&lt;script src=&quot;http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js&quot; type=&quot;text/javascript&quot;&gt; &lt;script type=&quot;text/javascript&quot;&gt;&lt;!-- if (WIDGETBOX) WIDGETBOX.renderWidget(&#39;57868cfe-6913-4be6-8433-d384943d1277&#39;); // --&gt;</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.virginia.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Virginia C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Washington',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/washington',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'WA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57389',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'http://access.wa.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Washington\'s Campaign for Liberty',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'West Virginia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/west-virginia',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'WV',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57430',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p style="text-align: center;">&nbsp;</p><p style="text-align: center;"><em><span style="font-family: mceinline;"><span style="font-family: mceinline;"><strong><span style="font-family: mceinline;">Montani Semper Liberi</span></strong></span></span></em></p><p style="margin-bottom: 0in; text-align: center;"><small>is our motto ~ to make it a truth in reality is our aim</small></p><p style="margin-bottom: 0in;">&nbsp;</p><div style="text-align: center;">For all Americans, all West Virginians, all registered voters independent &amp; of any Party, we are</div><div style="text-align: center;"><span style="color: #0000ff;"><span style="font-size: x-large;"><span style="color: #000080;">&quot;Calling the GOP back to it&#39;s Roots&quot;</span></span></span></div><div style="text-align: center;">&nbsp;</div><div style="text-align: left;">We here in West Virginia are pressing ever forward.&nbsp; We shall never give up. We shall never surrender.&nbsp;&nbsp; It is as Dr. Paul said,</div><div style="text-align: center;"><span style="font-size: medium;">&quot;<em><strong><span style="color: darkblue;">...the campaign is never over.</span></strong></em>&quot;</span></div><div style="text-align: center;">&nbsp;</div><div style="text-align: justify;">And so it is here in West Virginia. As a result of many hours of hard <a href="http://www.huntingtonnews.net/political/080131-rutherford-politicalronpaul.html" target="_blank">work by hundreds</a> and the cooperation of <a href="http://www.huntingtonnews.net/political/080207-rutherford-politicalronpaulhuckabee.html" target="_blank">Republican friends and allies</a> that we have made along the way, the <a href="http://www.wsaz.com/home/headlines/15310801.html?source=enews&amp;c=y" target="_blank">ground we gained</a> here in West Virginia on <a href="http://ronpaul2008.typepad.com/ron_paul_2008/2008/02/ron-paul-secure.html" target="_blank">Super Tuesday &#39;08</a> is being built upon, and we are growing day by day. We are and shall be &quot;a force to be reckoned with.&quot;</div><div style="text-align: center;"><p style="margin-bottom: 0in; text-align: justify;">There is a role for YOU in the West Virginia Campaign for Liberty as; one who helps and assists others, a supporter, a financial supporter, a member, a dues-paying voting member, an active member in your County, a doer, a leader in your comunity, a Leader who has committed yourself to the responsibilities of being a C4L Leader and to the responsibilities of leadership, to lead as Ron Paul leads, by example. YOUR contribution, no matter how great or small, no matter at any level, no matter in what capacity, WILL make a difference...</p><p style="margin-bottom: 0in; text-align: justify;">&nbsp;</p><span style="font-size: large;"><em><strong><span style="color: darkblue;">&quot;...but <a href="http://www.youtube.com/watch?v=nWJ34YANTYU" target="_blank">let it not be said</a> that we did nothing.&quot; </span></strong></em><strong><span style="color: darkblue;">~Congressman Ron Paul</span></strong></span><p style="margin-bottom: 0in; text-align: justify;">&nbsp;</p><p style="margin-bottom: 0in; text-align: justify;"><strong>JOIN US</strong> as we restore the once and future constitutional republics of America, Neighborhood by Neighborhood, County by County, Regional District by&nbsp;Regional District , State by State...</p><p style="margin-bottom: 0in; text-align: justify;">The winds of revolution and change are blowing. And we are that wind of change, real change, not just political spin speak, meaningful change toward that path America never should have strayed from, that path set out for us by our Patriot Forefathers at great sacrifice. Dr. Paul said of our forefathers,</p><span style="font-size: medium;"><em><strong><span style="color: darkblue;">&quot;...they would be ashamed of us for what we are putting up with.&quot;</span></strong></em></span><p style="margin-bottom: 0in; text-align: justify;">But rolling in their graves as our Patriot Forefathers must be, we shall give them cause for rest. Join us and <a href="/signup.php">be a part of it</a>.</p><p style="margin-bottom: 0in;">&nbsp;</p><p style="margin-bottom: 0in;">&nbsp;</p><div style="text-align: center;"><span style="font-size: x-large;"><em><strong><span style="color: darkblue;">&quot;I firmly believe now, our day is coming.&quot; </span></strong></em></span></div><div style="text-align: center;"><span style="font-size: small;"><span style="color: darkblue;">~Ron Paul, Rally for the Republic</span></span></div><p>&nbsp;</p><p>America is awakening - so is West Virginia.</p><p style="margin-bottom: 0in;">&nbsp;</p><hr /></div><blockquote><div style="text-align: center;"><span style="font-size: medium;">&quot;Concentrated power has always been the enemy of liberty.&quot; ~ Ronald Reagan</span></div><p style="text-align: center;"><span style="font-size: medium;">&quot;I would remind you that extremism in the defense of liberty is no vice! And let me remind you also that moderation in the pursuit of justice is no virtue.&quot;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; ~ Barry Goldwater</span></p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;"><span style="font-size: medium;">&quot;No great nation that went off the gold standard, remained great.&quot; ~ Ronald Reagan</span></p><p style="text-align: center;"><span style="font-size: medium;">&quot;I believe the very heart and soul of conservatism is libertarianism&quot; ~ Ronald Reagan</span></p></blockquote><div style="text-align: center;"><hr /></div><p style="text-align: center;">wash your mind of the Socialist poison</p><div style="margin: auto; background: #eeeeee none repeat scroll 0% 0%; text-align: center; width: 425px; height: 350px;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="350" width="425"> <param name="wmode" value="transparent" /> <param name="src" value="http://www.youtube.com/v/e26FhQo_2JY" /><embed height="350" src="http://www.youtube.com/v/e26FhQo_2JY" type="application/x-shockwave-flash" width="425" wmode="transparent"></embed> </object></div><p style="margin-bottom: 0in; text-align: center;"><span style="font-size: large;">exercitus sine duce corpus est sine spiritu</span></p><p style="margin-bottom: 0in; text-align: center;"><em>Taft - Goldwater - Reagan - Paul</em></p><p style="margin-bottom: 0in; text-align: center;">&nbsp;</p><hr /><p style="margin-bottom: 0in;">&nbsp;</p><p style="margin-bottom: 0in; text-align: justify;">Note, sit up and take notice, Hear Ye Hear Ye, those in Congress that vote with Ron Paul are growing, and so it is with one of our Representatives. Ron Paul and we that support the good doctor&#39;s work ARE making an impact on the political landscape, both here and in Washington, DC Members of Congress are sitting up and taking notice, and some are finding the strength to do the right thing - <em>encourage it!</em></p><p style="margin-bottom: 0in; text-align: center;">It&#39;s time to be heard.</p><p style="text-align: justify;">Encourage our Representatives, and those who want be, to represent us! -we the people of America <span style="text-decoration: underline;">and no one else</span>. Join your voice with ours, and together we shall be heard. Together we will make a difference. Together we shall take responsibility. &quot;Together, let us continue to lay the foundations for an America worthy of our Founding Fathers.&quot; <span style="font-size: x-small;">~Ron Paul 13 June 2008</span></p><p>&nbsp;</p><hr /><p>A Favorite Quote from member Jebzmom:</p><p style="text-align: center;">&nbsp;</p><p style="text-align: center;"><span style="font-size: medium;"><em>&quot;I will not let anyone tell me that we must spend more money.&quot;</em></span></p><p style="text-align: center;">-German Chancellor Angela Merkel</p><p>&nbsp;</p><p><span style="font-size: x-small;">(Editorial Note: The Germans have &quot;been there, done that&quot; and painfuly know what is down Obama&#39;s road.)</span></p><p style="text-align: right;"><span style="font-size: small;">send your favorite quote to your <a href="/mailbox.php?s=Edward_Burgess" target="_self">State Coordinator</a> - Subject: A Favorite Quote</span></p><hr /><p style="margin-bottom: 0in;"><em>Off Site Links Of Interest:</em></p><p><a href="http://www.rlc.org/" target="_blank">Republican Liberty Caucus</a>, <a href="http://www.wvcdl.org/" target="_blank">West Virginia Citizens Defense League</a>, <a href="http://westvirginiapolicy.com/index.html" target="_blank">The Public Policy Foundation of West Virginia</a>,&nbsp;<a href="http://www.be.wvu.edu/divecon/econ/sobel/UnleashingCapitalism/" target="_blank">Unleashing Capitalism: Why Prosperity Stops at the West Virginia Border and How to Fix It.</a>, <a href="http://www.be.wvu.edu/divecon/econ/sobel/UnleashingCapitalism/" target="_blank">The Rule of Law: Perspectives on Legal and Judicial Reform in West Virginia</a>, <a href="http://www.wvgopthinktank.org/" target="_blank">WVGOP Think Tank</a>, <a href="http://www.wvared.com/" target="_blank">West Virginia Red</a>, <a href="http://phconservative.blogspot.com/" target="_blank">The Potomac Highlands Conservative</a>, <a href="http://www.patriotslaststand.com/" target="_blank">Patriots Last Stand</a>, <a href="http://www.examinewv.com" target="_blank">The West Virginia Examiner</a>, <a href="http://www.wvrecord.com/" target="_blank">The West Virginia Record</a>,</p><p><a href="http://mises.org/" target="_blank">Ludwig von Mises Institute</a>, <a href="http://www.thomasewoods.com/" target="_blank">Thomas E. Woods, Jr.</a>,&nbsp;<a href="http://gunowners.org/" target="_blank">Gun Owners of America</a>, <a href="http://www.libertypac.net/" target="_blank">Liberty PAC</a>,&nbsp;<a href="http://www.judgenap.com/index.html" target="_blank">Judge Andrew Napolitano</a>, <a href="http://www.free-nefl.com/" target="_blank">The Foundation for Rational Economics and Education and National Endowment for Liberty</a>,&nbsp;<a href="http://www.roberttaft.org/" target="_blank">The Robert A Taft Club</a>,&nbsp;<a href="http://rockfordinstitute.org/events/?cat=5" target="_blank">John Randolph Club</a>,&nbsp;<a href="http://www.chroniclesmagazine.org/" target="_blank">Chronicles</a>,&nbsp;<a href="http://groups.google.com/group/congressman-lindbergh-club?pli=1" target="_blank">Congressman Lindbergh Club</a>,&nbsp;<a href="http://www.peterschiffchannel.com/" target="_blank">Peter Schiff</a>,&nbsp;<a href="http://www.lewrockwell.com/" target="_blank">Lew Rockwell</a>,&nbsp;<a href="http://blogs.telegraph.co.uk/Daniel_Hannan" target="_blank">Daniel Hannan</a>,&nbsp;<a href="http://freedomwatchonfox.com/" target="_blank">Freedom Watch with the Judge</a>, <a href="http://www.usslibertyveterans.org/index.html" target="_blank">USS Liberty Veterans Association</a>, <a href="http://www.studentsforliberty.org/" target="_blank">Students For Liberty</a>,&nbsp;<a href="http://www.saf.org/" target="_blank">Second Amendment Foundation</a>, <a href="http://www.morallaw.org/" target="_blank">Roy Moore&#39;s Foundation For Moral Law</a>, <a href="http://www.appleseedinfo.org/" target="_blank">The Appleseed Project</a>,&nbsp;<a href="http://thepatrickhenrycaucus.org/" target="_blank">The Patrick Henry Caucus</a>,&nbsp;<a href="http://www.thefire.org/" target="_blank">Foundation for Individual Rights in Education (FIRE)</a>, <a href="http://www.judgenap.com/index.html" target="_blank"> </a></p><p style="margin-bottom: 0in;">&nbsp;</p><hr /><p>To contact West Virginia&#39;s Campaign For Liberty email: WV@campaignforliberty.com</p><p style="text-align: right;">Media contacts will be responded to - Email Subject: &quot;Media Request:&quot;</p><p>&nbsp;</p><hr style="text-align: right;" /><p>&nbsp;</p><p style="text-align: left;"><a href="http://twitter.com/WVC4L" target="_blank">WVC4L on Twitter</a></p><p style="text-align: center;"><a href="/store/index.php" target="_self"><img alt="" height="250" src="/img/store-ad.jpg" width="500" /></a></p><p style="text-align: center;"><img alt="" src="/store/index.php" /></p><p style="text-align: center;"><img alt="" src="file:///C:/Users/Edward_2/AppData/Local/Temp/moz-screenshot-10.jpg" /><img alt="" src="file:///C:/Users/Edward_2/AppData/Local/Temp/moz-screenshot-8.jpg" /><img alt="" src="file:///C:/Users/Edward_2/AppData/Local/Temp/moz-screenshot-9.jpg" /></p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.wv.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'West Virginia C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6d238f-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Wisconsin',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/wisconsin',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'WI',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57432',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<div style="text-align: center; font-size: 18px;"><table border="0" cellpadding="5" cellspacing="5" width="95%"><tbody><tr><td style="text-align: center;"><p><span style="font-size: large;"><span style="font-size: small;"><strong><span style="text-decoration: underline;">Wisconsin Candidate Questionnaire</span></strong></span></span></p><p><span style="font-size: large;"><span style="font-size: small;">We will be sending out a candidate questionnaire that will allow us all to see where Wisconsin candidates stand.&nbsp;</span></span></p><p><span style="font-size: large;"><span style="font-size: small;"><a href="/blog.php?view=34307">&nbsp;View the questionnaire here</a></span></span></p></td><td style="text-align: center;"><a href="http://www.facebook.com/group.php?gid=127941343411"><img alt="Wisconsin Campaign for Liberty on Facebook" height="75" src="http://tcteks.com/images/facebook_icon.png" style="border: 0; margin: 5px;" width="75" /><br />
+    <span style="font-size: small;">WI C4L Facebook</span></a></td></tr><tr><td><p style="text-align: center;"><span style="font-size: small;"><strong><span style="text-decoration: underline;">Issues we are working on</span></strong></span></p><p><span style="font-size: small;"><strong>Legalize Raw Milk</strong> - <a href="/blog.php?view=33998">Get more information here</a></span></p><p style="text-align: center;"><span style="font-size: small;"><strong>Legalize Concealed Carry</strong> - More Information coming soon&nbsp;</span></p></td><td><p style="text-align: center;"><span style="font-size: small;"><strong>The Philosophy of Liberty Video</strong></span></p><p style="text-align: center;"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="212" width="259"> <param name="src" value="http://www.youtube.com/v/muHg86Mys7I" /><embed height="212" src="http://www.youtube.com/v/muHg86Mys7I" type="application/x-shockwave-flash" width="259"></embed> </object></p></td></tr></tbody></table></div>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.wisconsin.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Wisconsin C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Wyoming',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '0',
+    'name' => '',
+    'path' => 'community/wyoming',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'WY',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '57433',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => 'www.wyoming.gov/',
+        'title' => NULL,
+        'attributes' => array(),
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => 'Wyoming C4L',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6d556a-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'US Armed Forces Paci',
+    'body' => '<p>Welcome to the Campaign For Liberty page for active duty Armed Forces personnel.  Use this page as a way to get in contact with fellow service members.  Check back for more information soon.</p>',
+    'teaser' => '<p>Welcome to the Campaign For Liberty page for active duty Armed Forces personnel.  Use this page as a way to get in contact with fellow service members.  Check back for more information soon.</p>',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/us-armed-forces-paci',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AP',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '0',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => '<p>Welcome to the Campaign For Liberty page for active duty Armed Forces personnel.  Use this page as a way to get in contact with fellow service members.  Check back for more information soon.</p>',
+        'format' => '2',
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => NULL,
+        'title' => NULL,
+        'attributes' => FALSE,
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6d6db3-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'US Armed Forces Euro',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/us-armed-forces-euro',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AE',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '0',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => NULL,
+        'title' => NULL,
+        'attributes' => FALSE,
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6d85fb-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'state',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'US Armed Forces Amer',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/us-armed-forces-amer',
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AA',
+      ),
+    ),
+    'field_og_location' => array(
+      '0' => array(
+        'lid' => '0',
+        'province_name' => '',
+        'country_name' => '',
+      ),
+    ),
+    'field_og_prof' => array(
+      '0' => array(
+        'value' => NULL,
+        'format' => NULL,
+      ),
+    ),
+    'field_og_grouplink' => array(
+      '0' => array(
+        'url' => NULL,
+        'title' => NULL,
+        'attributes' => FALSE,
+      ),
+    ),
+    'field_og_pic' => array(),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '6c6d9f83-976b-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => '',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Temp Country',
+    'body' => 'country profile here for you, eh?<br />
+    ',
+    'teaser' => 'country profile here for you, eh?<br />
+    ',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/temp-country',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'JH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'JHG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'brief country description<br />
+    ',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => 'description in a text box line',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '1',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844cfde8-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Afghanistan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/afghanistan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'AFG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Afghanistan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844d182c-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Albania',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/albania',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AL',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ALB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Albania',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844d2eba-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Algeria',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/algeria',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'DZA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Algeria',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844d47b6-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'American Samoa',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/american-samoa',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AS',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ASM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'American Samoa',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844d5fce-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Andorra',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/andorra',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AD',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'AND',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Andorra',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844d7760-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Angola',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/angola',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'AGO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Angola',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844d8402-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Anguilla',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/anguilla',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'AIA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Anguilla',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844d9809-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Antarctica',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/antarctica',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AQ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ATA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Antarctica',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844dacd5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Antigua and Barbuda',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/antigua-and-barbuda',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ATG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Antigua and Barbuda',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844dc8d3-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Argentina',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/argentina',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ARG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Argentina',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844de20d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Armenia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/armenia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ARM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Armenia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844dfc0a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Aruba',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/aruba',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ABW',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Aruba',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844e134c-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Australia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/australia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'AUS',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Australia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844e213e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Austria',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/austria',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'AUT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Austria',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844e3ac3-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Azerbaijan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/azerbaijan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'AZE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Azerbaijan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844e5551-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bahamas',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bahamas',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BS',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BHS',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bahamas',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844e6f92-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bahrain',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bahrain',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BHR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bahrain',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844e86e8-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bangladesh',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bangladesh',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BD',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BGD',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bangladesh',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844e9d60-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Barbados',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/barbados',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BB',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BRB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Barbados',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844eb6ea-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Belarus',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/belarus',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BLR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Belarus',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844ecd34-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Belgium',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/belgium',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BEL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Belgium',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844ee4f1-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Belize',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/belize',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BLZ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Belize',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844efc00-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Benin',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/benin',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BJ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BEN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Benin',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f0908-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bermuda',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bermuda',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BMU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bermuda',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f1565-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bhutan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bhutan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BTN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bhutan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f21d1-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bolivia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bolivia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BOL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bolivia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f2e36-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bosnia and Herzegowina',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bosnia-and-herzegowina',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BIH',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bosnia and Herzegowina',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f3af7-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Botswana',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/botswana',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BWA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Botswana',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f47b6-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bouvet Island',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bouvet-island',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BV',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BVT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bouvet Island',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f5485-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Brazil',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/brazil',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BRA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Brazil',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f6a40-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'British Indian Ocean Territory',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/british-indian-ocean-territory',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'IOT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'British Indian Ocean Territory',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f819c-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Brunei Darussalam',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/brunei-darussalam',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BRN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Brunei Darussalam',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844f9aa6-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Bulgaria',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/bulgaria',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BGR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Bulgaria',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844fb434-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Burkina Faso',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/burkina-faso',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BFA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Burkina Faso',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844fcdf2-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Burundi',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/burundi',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'BI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'BDI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Burundi',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '844fe7b5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cambodia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cambodia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KHM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cambodia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845001d4-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cameroon',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cameroon',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CMR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cameroon',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84501d63-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Canada',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/canada',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CAN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Canada',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84503684-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cape Verde',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cape-verde',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CV',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CPV',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cape Verde',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84504f2d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cayman Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cayman-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CYM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cayman Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845068cc-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Central African Republic',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/central-african-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CAF',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Central African Republic',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84508963-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Chad',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/chad',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TD',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TCD',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Chad',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8450a360-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Chile',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/chile',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CL',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CHL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Chile',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8450bb3c-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'China',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/china',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CHN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'China',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8450d606-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Christmas Island',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/christmas-island',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CX',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CXR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Christmas Island',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8450efc7-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cocos (Keeling) Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cocos-keeling-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CCK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cocos (Keeling) Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845105e0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Colombia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/colombia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'COL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Colombia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84512005-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Comoros',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/comoros',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'COM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Comoros',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8451395f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Congo',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/congo',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'COG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Congo',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84515568-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cook Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cook-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'COK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cook Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84516e34-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Costa Rica',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/costa-rica',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CRI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Costa Rica',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8451870b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cote D\'Ivoire',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cote-divoire',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CIV',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cote D\'Ivoire',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84519935-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Croatia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/croatia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'HR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'HRV',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Croatia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8451a5f9-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cuba',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cuba',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CUB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cuba',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8451bb37-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Cyprus',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/cyprus',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CYP',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Cyprus',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8451ca0d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Czech Republic',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/czech-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CZE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Czech Republic',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8451e387-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Denmark',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/denmark',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'DNK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Denmark',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8451fccd-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Djibouti',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/djibouti',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DJ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'DJI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Djibouti',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84521647-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Dominica',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/dominica',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'DMA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Dominica',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84522fb2-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Dominican Republic',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/dominican-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'DOM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Dominican Republic',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84524995-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'East Timor',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/east-timor',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TP',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TMP',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'East Timor',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845263fb-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Ecuador',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/ecuador',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'EC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ECU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Ecuador',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84527ffc-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Egypt',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/egypt',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'EG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'EGY',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Egypt',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84529d9d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'El Salvador',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/el-salvador',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SV',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SLV',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'El Salvador',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8452b693-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Equatorial Guinea',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/equatorial-guinea',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GQ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GNQ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Equatorial Guinea',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8452d236-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Eritrea',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/eritrea',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ER',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ERI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Eritrea',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8452ec74-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Estonia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/estonia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'EE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'EST',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Estonia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8452fe7a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Ethiopia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/ethiopia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ET',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ETH',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Ethiopia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84531aa8-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Falkland Islands (Malvinas)',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/falkland-islands-malvinas',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'FLK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Falkland Islands (Malvinas)',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8453361d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Faroe Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/faroe-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'FRO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Faroe Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8453548f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Fiji',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/fiji',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FJ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'FJI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Fiji',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845371da-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Finland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/finland',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'FIN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Finland',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84538b1b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'France',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/france',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'FRA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'France',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8453a192-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'France, Metropolitan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/france-metropolitan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FX',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'FXX',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'France, Metropolitan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8453bca9-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'French Guiana',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/french-guiana',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GUF',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'French Guiana',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8453d792-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'French Polynesia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/french-polynesia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PYF',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'French Polynesia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8453ef52-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'French Southern Territories',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/french-southern-territories',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ATF',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'French Southern Territories',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845409cc-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Gabon',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/gabon',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GAB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Gabon',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8454234b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Gambia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/gambia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GMB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Gambia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84543640-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Georgia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/georgia-0',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GEO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Georgia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845450dd-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Germany',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/germany',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'DE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'DEU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Germany',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84546950-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Ghana',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/ghana',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GHA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Ghana',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845485d7-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Gibraltar',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/gibraltar',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GIB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Gibraltar',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8454a0c3-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Greece',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/greece',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GRC',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Greece',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8454ba3f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Greenland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/greenland',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GL',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GRL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Greenland',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8454d5c5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Grenada',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/grenada',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GD',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GRD',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Grenada',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8454f079-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Guadeloupe',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/guadeloupe',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GP',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GLP',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Guadeloupe',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84550a1a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Guam',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/guam',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GUM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Guam',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845524d0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Guatemala',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/guatemala',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GTM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Guatemala',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84553f1a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Guinea',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/guinea',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GIN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Guinea',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84555a86-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Guinea-bissau',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/guinea-bissau',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GNB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Guinea-bissau',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845576eb-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Guyana',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/guyana',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GUY',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Guyana',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84559101-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Haiti',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/haiti',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'HT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'HTI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Haiti',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8455aae1-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Heard and Mc Donald Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/heard-and-mc-donald-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'HM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'HMD',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Heard and Mc Donald Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8455c670-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Honduras',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/honduras',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'HN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'HND',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Honduras',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8455dfbe-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Hong Kong',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/hong-kong',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'HK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'HKG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Hong Kong',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8455fa83-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Hungary',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/hungary',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'HU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'HUN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Hungary',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845613da-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Iceland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/iceland',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IS',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ISL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Iceland',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84562d15-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'India',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/india',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'IND',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'India',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84564761-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Indonesia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/indonesia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ID',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'IDN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Indonesia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845660d5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Iran (Islamic Republic of)',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/iran-islamic-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'IRN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Iran (Islamic Republic of)',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84567b85-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Iraq',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/iraq',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IQ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'IRQ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Iraq',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8456932b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Ireland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/ireland',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'IRL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Ireland',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8456a2eb-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Israel',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/israel',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IL',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ISR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Israel',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8456bf55-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Italy',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/italy',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'IT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ITA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Italy',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8456d94c-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Jamaica',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/jamaica',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'JM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'JAM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Jamaica',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8456f0f5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Japan',
+    'body' => '<p>
+    	See Japan&#39;s government website <a href="http://websearch.e-gov.go.jp" target="_blank">here</a> then click &quot;English&quot; to view the English version.</p>
+    <p>
+    	Japan&#39;s current Constitution: <a href="http://www.kantei.go.jp/foreign/constitution_and_government/frame_01.html" target="_blank">http://www.kantei.go.jp/foreign/constitution_and_government/frame_01.html</a> (provided by member, Linda).</p>
+    <p>
+    	Read an interesting blog regarding the Japanese Constitution here: <a href="/blog.php?view=10956" target="_blank">http://www.campaignforliberty.com/blog.php?view=10956</a>.</p>',
+    'teaser' => '<p>
+    	See Japan&#39;s government website <a href="http://websearch.e-gov.go.jp" target="_blank">here</a> then click &quot;English&quot; to view the English version.</p>
+    <p>
+    	Japan&#39;s current Constitution: <a href="http://www.kantei.go.jp/foreign/constitution_and_government/frame_01.html" target="_blank">http://www.kantei.go.jp/foreign/constitution_and_government/frame_01.html</a> (provided by member, Linda).</p>',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/japan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'JP',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'JPN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Japan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => 'some description here',
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8456fe17-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Jordan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/jordan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'JO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'JOR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Jordan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84570a44-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Kazakhstan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/kazakhstan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KAZ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Kazakhstan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845716af-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Kenya',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/kenya',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KEN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Kenya',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8457227e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Kiribati',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/kiribati',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KIR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Kiribati',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84573959-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Korea, Democratic People\'s Republic of',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/korea-democratic-peoples-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KP',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PRK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Korea, Democratic People\'s Republic of',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84575300-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Korea, Republic of',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/korea-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KOR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Korea, Republic of',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84576cb0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Kuwait',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/kuwait',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KWT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Kuwait',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8457872d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Kyrgyzstan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/kyrgyzstan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KGZ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Kyrgyzstan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8457a119-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Lao People\'s Democratic Republic',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/lao-peoples-democratic-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LAO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Lao People\'s Democratic Republic',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8457b7cf-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Latvia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/latvia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LV',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LVA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Latvia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8457cf05-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Lebanon',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/lebanon',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LB',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LBN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Lebanon',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8457df26-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Lesotho',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/lesotho',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LS',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LSO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Lesotho',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8457fd7e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Liberia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/liberia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LBR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Liberia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845815a1-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Libyan Arab Jamahiriya',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/libyan-arab-jamahiriya',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LBY',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Libyan Arab Jamahiriya',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84582716-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Liechtenstein',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/liechtenstein',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LIE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Liechtenstein',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845833cb-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Lithuania',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/lithuania',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LTU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Lithuania',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845840c0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Luxembourg',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/luxembourg',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LUX',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Luxembourg',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84584d9a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Macau',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/macau',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MAC',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Macau',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84585a97-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Macedonia, The Former Yugoslav Republic of',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/macedonia-former-yugoslav-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MKD',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Macedonia, The Former Yugoslav Republic of',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8458679a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Madagascar',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/madagascar',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MDG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Madagascar',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845874a5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Malawi',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/malawi',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MWI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Malawi',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845881bc-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Malaysia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/malaysia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MYS',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Malaysia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845899ed-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Maldives',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/maldives',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MV',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MDV',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Maldives',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8458b333-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mali',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/mali',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ML',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MLI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Mali',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8458cd0e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Malta',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/malta',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MLT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Malta',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8458e5c5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Marshall Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/marshall-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MHL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Marshall Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8458f326-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Martinique',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/martinique',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MQ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MTQ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Martinique',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84590101-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mauritania',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/mauritania',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MRT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Mauritania',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84592b3e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mauritius',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/mauritius',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MUS',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Mauritius',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84593c8b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mayotte',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/mayotte',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'YT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MYT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Mayotte',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8459495a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mexico',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/mexico',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MX',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MEX',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Mexico',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845958bc-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Micronesia, Federated States of',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/micronesia-federated-states',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'FM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'FSM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Micronesia, Federated States of',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84597330-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Moldova, Republic of',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/moldova-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MD',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MDA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Moldova, Republic of',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84598b87-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Monaco',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/monaco',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MCO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Monaco',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8459a58f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mongolia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/mongolia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MNG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Mongolia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8459bff5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Montserrat',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/montserrat',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MS',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MSR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Montserrat',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8459d93e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Morocco',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/morocco',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MAR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Morocco',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8459f37c-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Mozambique',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/mozambique',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MOZ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Mozambique',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845a0df9-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Myanmar',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/myanmar',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MMR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Myanmar',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845a23da-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Namibia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/namibia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NAM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Namibia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845a3f3b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Nauru',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/nauru',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NRU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Nauru',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845a5842-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Nepal',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/nepal',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NP',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NPL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Nepal',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845a73c9-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Netherlands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/netherlands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NL',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NLD',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Netherlands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845a8e40-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Netherlands Antilles',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/netherlands-antilles',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ANT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Netherlands Antilles',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845aa7a0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'New Caledonia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/new-caledonia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NCL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'New Caledonia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ac203-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'New Zealand',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/new-zealand',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NZL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'New Zealand',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ad9f0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Nicaragua',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/nicaragua',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NIC',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Nicaragua',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845af1ee-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Niger',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/niger',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NER',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Niger',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b0c35-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Nigeria',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/nigeria',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NGA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Nigeria',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b26f4-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Niue',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/niue',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NIU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Niue',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b40b1-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Norfolk Island',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/norfolk-island',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NFK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Norfolk Island',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b5afb-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Northern Mariana Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/northern-mariana-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'MP',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'MNP',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Northern Mariana Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b6c17-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Norway',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/norway',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'NO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'NOR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Norway',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b774f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Oman',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/oman',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'OM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'OMN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Oman',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b8280-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Pakistan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/pakistan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PAK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Pakistan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b8e13-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Palau',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/palau',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PLW',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Palau',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845b993c-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Panama',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/panama',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PAN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Panama',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ba4b3-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Papua New Guinea',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/papua-new-guinea',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PNG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Papua New Guinea',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845baffb-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Paraguay',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/paraguay',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PRY',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Paraguay',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845bbd95-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Peru',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/peru',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PER',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Peru',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845bc964-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Philippines',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/philippines',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PHL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Philippines',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845bd4c0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Pitcairn',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/pitcairn',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PCN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Pitcairn',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845be006-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Poland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/poland',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PL',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'POL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Poland',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845beb2f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Portugal',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/portugal',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PRT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Portugal',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845bf6ca-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Puerto Rico',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/puerto-rico',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'PRI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Puerto Rico',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845c0c4a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Qatar',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/qatar',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'QA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'QAT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Qatar',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845c2549-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Reunion',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/reunion',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'RE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'REU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Reunion',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845c3d8b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Romania',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/romania',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'RO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ROM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Romania',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845c5282-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Russian Federation',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/russian-federation',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'RU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'RUS',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Russian Federation',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845c6cb5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Rwanda',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/rwanda',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'RW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'RWA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Rwanda',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845c8718-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Saint Kitts and Nevis',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/saint-kitts-and-nevis',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'KN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'KNA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Saint Kitts and Nevis',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ca067-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Saint Lucia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/saint-lucia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LCA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Saint Lucia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845cbaea-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Saint Vincent and the Grenadines',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/saint-vincent-and-grenadines',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'VCT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Saint Vincent and the Grenadines',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845cd50b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Samoa',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/samoa',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'WS',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'WSM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Samoa',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845cf080-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'San Marino',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/san-marino',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SMR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'San Marino',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845d0d0d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Sao Tome and Principe',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/sao-tome-and-principe',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ST',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'STP',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Sao Tome and Principe',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845d26fe-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Saudi Arabia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/saudi-arabia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SAU',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Saudi Arabia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845d428d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Senegal',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/senegal',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SEN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Senegal',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845d5bab-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Seychelles',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/seychelles',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SYC',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Seychelles',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845d7600-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Sierra Leone',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/sierra-leone',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SL',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SLE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Sierra Leone',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845d8ee0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Singapore',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/singapore',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SGP',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Singapore',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845dac78-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Slovakia (Slovak Republic)',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/slovakia-slovak-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SVK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Slovakia (Slovak Republic)',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845dc454-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Slovenia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/slovenia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SVN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Slovenia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845de416-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Solomon Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/solomon-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SB',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SLB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Solomon Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845dfee8-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Somalia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/somalia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SOM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Somalia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845e1957-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'South Africa',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/south-africa',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ZA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ZAF',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'South Africa',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845e33a6-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'South Georgia and the South Sandwich Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/south-georgia-and-south-sandwich-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GS',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SGS',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'South Georgia and the South Sandwich Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845e4f3e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Spain',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/spain',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ES',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ESP',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Spain',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845e6834-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Sri Lanka',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/sri-lanka',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'LK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'LKA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Sri Lanka',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845e81b9-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'St. Helena',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/st-helena',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SHN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'St. Helena',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845e9450-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'St. Pierre and Miquelon',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/st-pierre-and-miquelon',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'PM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SPM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'St. Pierre and Miquelon',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ea11a-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Sudan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/sudan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SD',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SDN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Sudan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845eae00-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Suriname',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/suriname',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SUR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Suriname',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ebabe-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Svalbard and Jan Mayen Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/svalbard-and-jan-mayen-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SJ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SJM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Svalbard and Jan Mayen Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ec762-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Swaziland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/swaziland',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SWZ',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Swaziland',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ed490-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Sweden',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/sweden',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SWE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Sweden',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ee195-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Switzerland',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/switzerland',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'CH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'CHE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Switzerland',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845eee5f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Syrian Arab Republic',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/syrian-arab-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'SY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'SYR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Syrian Arab Republic',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845efb67-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Taiwan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/taiwan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TWN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Taiwan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f0940-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Tajikistan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/tajikistan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TJ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TJK',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Tajikistan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f15f8-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Tanzania, United Republic of',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/tanzania-united-republic',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TZA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Tanzania, United Republic of',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f2be4-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Thailand',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/thailand',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'THA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Thailand',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f3b4e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Togo',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/togo',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TGO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Togo',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f485f-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Tokelau',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/tokelau',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TK',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TKL',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Tokelau',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f5565-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Tonga',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/tonga',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TO',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TON',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Tonga',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f624e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Trinidad and Tobago',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/trinidad-and-tobago',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TT',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TTO',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Trinidad and Tobago',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f6f20-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Tunisia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/tunisia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TUN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Tunisia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f7c34-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Turkey',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/turkey',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TUR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Turkey',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f88ef-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Turkmenistan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/turkmenistan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TKM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Turkmenistan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845f95c1-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Turks and Caicos Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/turks-and-caicos-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TC',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TCA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Turks and Caicos Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845fa29e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Tuvalu',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/tuvalu',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'TV',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'TUV',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Tuvalu',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845faf6e-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Uganda',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/uganda',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'UG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'UGA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Uganda',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845fbc18-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Ukraine',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/ukraine',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'UA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'UKR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Ukraine',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845fc8ea-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'United Arab Emirates',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/united-arab-emirates',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'AE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ARE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'United Arab Emirates',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845fd5a0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Great Britain',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/great-britain',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'GB',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'GBR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Great Britain',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845fe56b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'United States',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/united-states',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'US',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'USA',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'United States',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845ff2e6-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'United States Minor Outlying Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/united-states-minor-outlying-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'UM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'UMI',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'United States Minor Outlying Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '845fffa4-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Uruguay',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/uruguay',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'UY',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'URY',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Uruguay',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84600c73-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Uzbekistan',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/uzbekistan',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'UZ',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'UZB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Uzbekistan',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8460194b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Vanuatu',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/vanuatu',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'VUT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Vanuatu',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '846025fb-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Vatican City State (Holy See)',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/vatican-city-state-holy-see',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VA',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'VAT',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Vatican City State (Holy See)',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '846032b6-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Venezuela',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/venezuela',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'VEN',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Venezuela',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84603f94-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Viet Nam',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/viet-nam',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VN',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'VNM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Viet Nam',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84604ca4-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Virgin Islands (British)',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/virgin-islands-british',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VG',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'VGB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Virgin Islands (British)',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '846059f7-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Virgin Islands (U.S.)',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/virgin-islands-us',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'VI',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'VIR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Virgin Islands (U.S.)',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '846066cc-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Wallis and Futuna Islands',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/wallis-and-futuna-islands',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'WF',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'WLF',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Wallis and Futuna Islands',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '846073b5-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Western Sahara',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/western-sahara',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'EH',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ESH',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Western Sahara',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8460807b-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Yemen',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/yemen',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'YE',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'YEM',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Yemen',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84608d48-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Yugoslavia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/yugoslavia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'YU',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'YUG',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Yugoslavia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '84609a03-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Zaire',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/zaire',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ZR',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ZAR',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Zaire',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8460aa46-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Zambia',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/zambia',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ZM',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ZMB',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Zambia',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8460b72d-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
+    'type' => 'country',
+    'language' => 'en',
+    'uid' => '0',
+    'status' => '1',
+    'comment' => '0',
+    'promote' => '0',
+    'moderate' => '0',
+    'sticky' => '0',
+    'tnid' => '0',
+    'translate' => '0',
+    'revision_uid' => '1',
+    'title' => 'Zimbabwe',
+    'body' => '',
+    'teaser' => '',
+    'log' => '',
+    'format' => '2',
+    'name' => '',
+    'path' => 'community/zimbabwe',
+    'field_og_pic' => array(),
+    'field_og_2abbrev' => array(
+      '0' => array(
+        'value' => 'ZW',
+      ),
+    ),
+    'field_og_3abbrev' => array(
+      '0' => array(
+        'value' => 'ZWE',
+      ),
+    ),
+    'field_og_des' => array(
+      '0' => array(
+        'value' => 'Zimbabwe',
+      ),
+    ),
+    'og_selective' => '0',
+    'og_description' => NULL,
+    'og_theme' => NULL,
+    'og_register' => '0',
+    'og_directory' => '0',
+    'og_language' => '',
+    'og_private' => '0',
+    'last_comment_name' => NULL,
+    'comment_count' => '0',
+    'taxonomy' => array(),
+    'uuid' => '8460c3f0-9779-11e0-88ba-e0e2cd5d67f0',
+    'pathauto_perform_alias' => TRUE,
+  );
+  $nodes[] = array(
     'type' => 'page',
     'language' => '',
     'uid' => '0',
@@ -20,323 +14716,323 @@ function community_uuid_features_default_content() {
     'revision_uid' => '1',
     'title' => 'Community',
     'body' => '<?php
-  
-    $mod_path = drupal_get_path(\'module\', \'community_map\');
-    global $base_path;
-    drupal_add_js($mod_path . \'/community_map.js\');
-  
-    ?>
-  
-    <h2>Select Your State</h2>
-    <div id="floatingnamediv" ><h3>&nbsp;</h3>
-    </div>
-  
-    <img src="<?php print $base_path . $mod_path;?>/Community-Map.jpg" width="950" height="830" border="0" usemap="#map" />
-  
-    <map name="map">
-    <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-    <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-    <!-- #$-:Please do not edit lines starting with "#$" -->
-    <!-- #$VERSION:2.3 -->
-    <!-- #$AUTHOR: -->
-    <area shape="poly" class="community_map_area" coords="212,99,207,117,211,126,209,130,221,148,217,165,219,169,225,167,234,192,260,194,262,185,349,196,356,122,281,113,212,100" alt="Montana" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="367,123,363,179,460,185,460,174,457,170,456,151,453,143,452,127,368,122" alt="North Dakota" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="361,187,357,242,430,246,437,251,446,250,458,256,459,203,454,199,458,196,458,191,361,187" alt="South Dakota" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="462,125,490,126,504,132,512,132,532,141,540,137,556,141,556,144,543,151,527,169,526,180,520,185,522,189,521,201,526,204,541,217,541,226,471,227,471,194,465,187,470,182,469,175,466,161,467,152,463,142,463,125" alt="Minnesota" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="566,156,567,163,564,164,567,166,595,175,600,179,604,191,609,182,614,184,608,197,605,211,603,224,604,239,566,241,564,238,560,238,557,229,558,226,555,224,555,218,554,216,536,202,535,190,537,189,537,188,533,186,533,182,541,176,541,165,544,162,547,164,558,157,566,157" alt="Wisconsin" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="601,120,591,120,584,128,578,133,574,132,566,138,570,146,591,150,594,150,598,154,600,164,606,166,610,154,612,154,615,158,617,154,623,148,630,155,621,164,618,180,618,190,624,206,618,223,665,219,669,208,670,208,671,202,676,201,676,191,669,174,663,174,660,173,660,156,643,145,655,145,655,140,651,138,648,138,647,132,635,133,636,128,629,128,628,131,619,132,616,135,606,135,596,128,602,122" alt="Michigan" href="#mapanchor"   />
-    <area shape="poly" class="community_map_area" coords="107,238,187,256,166,362,161,364,157,361,155,377,152,382,93,292,107,237" alt="Nevada" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="258,199,350,209,344,285,247,273" alt="Wyoming" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="272,293,368,303,364,378,262,368,272,293" alt="Colorado" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="40,226,96,242,82,295,139,382,144,397,140,400,137,401,136,407,133,412,132,415,135,418,134,421,132,425,91,420,90,407,83,395,78,395,78,389,74,388,67,384,67,380,56,375,51,375,50,371,50,366,51,360,49,358,50,355,49,354,42,336,40,329,43,328,45,325,40,323,37,319,38,305,35,297,29,284,30,273,32,271,32,266,28,258,28,252,35,246,38,238,37,231" alt="California" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="196,258,238,265,235,283,262,287,251,362,178,350" alt="Utah" href="#mapanchor"   />
-    <area shape="poly" class="community_map_area" coords="248,377,234,481,201,476,148,446,150,438,154,439,155,437,153,436,152,432,153,427,157,424,157,419,161,415,164,416,164,414,161,411,161,407,159,402,161,396,162,379,169,379,172,383,175,365" alt="Arizona" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="256,384,344,394,337,487,285,482,285,486,259,483,258,490,242,489" alt="New Mexico" href="#mapanchor"   />
-    <area shape="poly" class="community_map_area" coords="360,393,483,396,485,421,485,460,478,459,474,455,461,456,456,459,452,457,447,456,444,459,442,457,437,454,435,456,431,455,429,451,427,451,423,451,418,450,416,449,413,449,413,446,406,446,401,441,403,407,361,405" alt="Oklahoma" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="486,548,479,550,472,554,462,563,440,576,432,588,432,599,434,606,434,614,431,615,429,616,422,613,413,612,400,605,394,590,394,583,390,583,382,570,376,554,366,545,348,543,346,552,339,557,317,542,315,535,313,526,290,501,290,495,344,499,350,419,396,422,396,456,398,459,403,458,407,463,410,464,422,465,424,468,438,469,445,470,446,472,460,469,464,468,473,474,482,476,483,505,487,508,487,513,491,519,491,528,489,530,489,540,486,545" alt="Texas" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="377,322,373,381,481,384,482,341,478,340,477,337,475,335,478,333,478,329,471,326" alt="Kansas" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="354,253,430,258,434,261,445,260,456,266,463,285,465,301,468,307,473,315,376,313,377,294,351,292" alt="Nebraska" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="496,462,542,461,546,474,541,485,537,496,565,496,565,503,568,511,573,510,580,515,578,532,570,537,569,531,563,530,558,534,545,534,539,531,539,527,519,527,509,523,501,526,498,521,502,515,500,510,503,503,503,497,499,491,498,485,496,483" alt="Louisiana" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="490,391,557,389,556,396,557,398,563,397,565,401,562,405,559,411,557,418,552,431,547,437,546,443,546,456,498,457,499,448,492,445,493,412" alt="Arkansas" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="528,300,534,306,534,316,544,325,545,329,554,332,550,343,562,353,564,361,570,366,569,374,565,375,561,385,550,385,553,378,488,379,489,331,481,324,484,319,477,314,475,310,473,303,497,303" alt="Missouri" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="464,235,465,242,466,244,463,250,470,267,470,274,473,275,473,279,473,286,476,291,529,290,534,294,540,289,543,278,540,274,540,273,546,273,550,269,552,264,552,259,543,248,540,247,537,243,539,240,536,234" alt="Iowa" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="555,256,595,253,595,258,601,267,603,314,605,321,604,325,600,332,599,341,599,343,598,345,594,348,594,354,589,354,586,352,583,357,579,357,575,351,576,347,573,342,569,342,562,335,565,326,565,322,560,324,557,316,546,307,545,296,546,291,551,289,552,284,550,280,552,274,556,275,559,272,561,269,561,266" alt="Illinois" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="650,242,622,245,617,249,612,245,615,296,616,300,611,311,611,320,618,320,620,318,625,320,628,316,631,319,635,313,641,316,643,309,649,303,649,301,651,300,657,298" alt="Indiana" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="181,94,112,76,110,81,104,84,108,88,108,92,96,87,88,80,85,86,84,90,86,94,85,106,83,119,87,123,95,127,96,137,101,141,111,141,117,144,145,144,170,150,171,137" alt="Washington" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="76,136,92,141,91,150,97,153,105,152,110,155,139,156,161,162,166,170,158,183,152,189,155,196,145,235,50,210,50,198,52,196,50,192,56,185,62,177" alt="Oregon" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="185,112,199,114,196,133,198,139,198,144,208,159,211,159,209,167,206,179,211,177,214,180,217,194,220,195,221,201,236,202,240,199,245,205,237,252,157,237,164,202,167,199,167,197,164,195,164,190,170,184,178,173,178,171,174,167,174,163" alt="Idaho" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="42,567,63,545,90,548,152,572,213,598,246,618,288,659,304,680,261,714,44,573" alt="Hawaii" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="706,687,712,686,714,684,720,685,720,688,733,700,735,696,741,686,748,689,749,691,754,694,754,696,760,699,779,719,786,722,796,725,799,738,796,746,787,746,786,751,782,750,779,753,772,746,768,746,766,742,767,739,764,741,751,728,747,728,747,723,740,716,740,713,736,711,715,700,702,697,698,696,691,696,682,701,680,698,681,696,677,694,671,695,665,697,662,703,651,702,651,706,647,706,634,715,633,735,621,745,617,748,607,755,576,767,496,780,432,773,409,771,397,764,362,728,356,715,367,718,403,753,457,768,493,770,527,761,537,756,546,755,547,750,554,750,558,746,563,745,569,745,582,736,590,728,593,718,589,717,585,720,581,718,581,715,577,716,567,717,560,713,563,708,562,702,565,699,564,697,561,695,559,697,553,697,549,690,545,690,539,694,530,686,529,681,544,681,547,680,547,678,544,677,543,674,542,669,542,665,544,664,544,660,548,659,554,654,558,648,560,645,567,650,568,648,569,643,574,643,577,646,579,646,579,640,576,634,572,638,566,635,558,634,549,630,548,623,546,618,542,613,546,608,549,608,557,605,572,604,570,593,558,580,561,575,563,570,566,570,567,571,574,571,578,566,580,559,587,555,594,553,601,548,605,548,608,548,614,542,624,549,634,550,636,554,636,556,641,553,647,554,653,555,660,558,665,560,668,559,674,557,687,563" alt="Alaska" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="648,490,692,486,694,491,734,489,733,485,737,482,740,483,746,484,749,496,758,512,767,522,767,528,778,547,781,570,779,573,781,574,780,578,772,588,764,592,751,597,748,596,749,592,754,594,757,590,767,588,774,583,763,585,761,580,760,576,757,573,750,573,748,565,744,565,741,562,740,556,730,546,728,539,728,532,729,532,729,526,727,524,727,519,722,519,710,505,704,505,702,509,692,516,688,514,685,514,683,508,674,504,668,503,656,506,652,506,652,500,650,496" alt="Florida" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="882,59,888,59,889,63,896,58,904,61,911,84,916,86,918,91,922,93,927,98,919,110,914,118,908,121,906,123,897,129,894,131,887,143,882,140,880,139,871,103,874,99,877,94,876,87" alt="Maine" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="866,109,877,144,881,148,881,154,878,155,875,159,857,163,855,159,855,145,855,142,856,141,856,131,859,129,860,127,861,126,861,124,859,124,860,112" alt="New Hampshire" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="853,112,856,123,851,129,851,154,852,159,839,160,836,146,833,146,831,135,833,132,831,118" alt="Vermont" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="849,170,875,165,879,160,884,162,887,164,885,170,884,171,888,172,892,178,894,177,892,173,893,170,901,178,901,187,889,191,877,181,850,186" alt="Massachusetts" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="866,188,873,184,881,194,874,202,869,202" alt="Rhode Island" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="872,204,875,220,861,226,851,233,848,229,850,226,848,210" alt="Connecticut" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="842,261,854,260,854,254,852,250,849,249,843,239,844,235,842,233,836,237,840,251" alt="Delaware" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="813,205,829,210,826,219,830,221,830,236,828,241,824,249,822,252,819,251,819,247,810,244,808,239,810,234,817,229,809,221" alt="New Jersey" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="751,204,807,192,812,195,815,200,830,205,831,213,837,212,852,204,860,197,860,194,851,194,848,199,843,199,840,203,838,202,838,199,840,198,837,196,836,170,833,157,828,150,827,146,829,146,829,143,826,139,825,130,802,135,793,149,787,155,787,161,792,164,786,170,780,171,778,171,766,171,756,177,759,185,758,187,752,195" alt="New York" href="#mapanchor"/>
-    <area shape="poly" class="community_map_area" coords="780,262,781,276,786,273,788,270,791,269,791,267,795,268,799,265,802,264,806,268,808,268,808,271,815,274,814,282,830,287,832,283,835,289,847,284,848,273,838,274,832,253" alt="Maryland" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="655,227,676,223,680,226,683,223,687,226,689,228,691,228,693,225,697,225,714,213,718,239,717,258,707,268,707,274,702,276,701,284,696,285,690,282,689,281,685,282,678,283,675,281,670,281,668,277,661,276" alt="Ohio" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="724,214,735,205,737,211,793,200,798,203,801,209,805,209,805,212,802,218,801,224,810,232,802,242,798,243,798,245,731,257" alt="Pennsylvania" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="714,397,717,391,727,386,750,384,754,388,770,386,788,401,782,410,781,417,760,440,755,441,753,439,753,436,750,433,747,432,747,428,744,425,741,424,738,420,738,418,735,416,734,416" alt="South Carolina" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="733,346,766,342,816,332,825,346,826,357,821,361,816,368,814,372,809,371,806,372,799,379,798,384,798,389,794,389,792,388,789,388,786,391,768,377,750,379,749,375,731,375,719,381,699,383,698,375,702,373,707,368,710,368,716,363,717,360,722,357,725,357,727,354,730,354,731,351,733,350" alt="North Carolina" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="706,343,706,340,711,337,717,333,729,320,731,320,733,324,734,325,735,324,737,323,741,322,750,318,750,312,754,308,756,301,757,296,759,296,762,298,764,290,771,285,772,277,779,281,781,279,787,279,788,282,795,286,795,290,792,293,796,293,796,296,808,300,822,294,817,315,815,317,820,325,778,334,742,339" alt="Virginia" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="701,303,701,296,705,295,707,292,705,288,708,284,710,284,712,278,715,275,718,275,721,271,722,256,721,254,723,252,726,252,727,257,729,268,743,265,744,272,751,267,760,263,767,268,766,276,760,273,756,281,752,286,749,292,743,292,741,300,739,305,738,311,727,316,718,319" alt="West Virginia" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="598,358,600,354,603,353,604,345,608,341,612,344,614,339,618,337,618,333,621,329,625,327,631,328,637,326,639,327,643,321,647,325,648,321,653,317,653,311,660,310,662,303,669,303,673,307,680,308,685,309,689,306,694,310,696,312,698,318,701,324,708,327,698,338,685,350,635,354,625,355,622,358" alt="Kentucky" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="578,401,578,397,581,395,580,392,580,389,582,388,583,384,586,384,588,370,609,369,609,366,652,363,702,356,702,365,698,365,698,369,693,368,691,372,687,372,679,381,674,381,670,387,668,388,668,393" alt="Tennessee" href="#mapanchor"/>
-    <area shape="poly" class="community_map_area" coords="569,406,568,410,566,411,566,419,564,419,561,422,559,425,558,430,556,432,556,438,558,439,559,464,554,471,553,483,581,482,581,488,587,496,590,494,591,492,594,495,597,495,597,494,606,494,606,481,604,467,604,406" alt="Mississippi" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="615,405,618,410,617,467,619,490,622,494,633,493,638,490,639,483,634,479,647,479,674,476,673,471,672,468,672,462,671,458,672,453,673,451,672,449,668,442,664,428,658,403" alt="Alabama" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="666,401,706,397,706,399,703,403,705,404,710,406,717,416,720,416,728,423,734,430,743,444,747,445,747,448,744,452,743,458,741,463,740,472,734,472,733,473,733,479,728,480,727,477,687,479,685,479,681,469,681,463,678,460,680,456,680,450,680,446,677,443" alt="Georgia" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="798,280,801,275,805,279,804,284" alt="District of Columbia" href="#mapanchor" />
-  
-    </map>
-  
-    <form action="#" method="post" onsubmit="return false;">
-  
-    Or select state with this pull-down: <select id="communitymapstateselect">
-  
-    <option value=""></option>
-    <option value="Alabama">Alabama</option>
-    <option value="Alaska">Alaska</option>
-    <option value="Arizona">Arizona</option>
-    <option value="Arkansas">Arkansas</option>
-    <option value="California">California</option>
-    <option value="Colorado">Colorado</option>
-    <option value="Connecticut">Connecticut</option>
-    <option value="Delaware">Delaware</option>
-    <option value="District of Columbia">District of Columbia</option>
-    <option value="Florida">Florida</option>
-    <option value="Georgia">Georgia</option>
-    <option value="Hawaii">Hawaii</option>
-    <option value="Idaho">Idaho</option>
-    <option value="Illinois">Illinois</option>
-    <option value="Indiana">Indiana</option>
-    <option value="Iowa">Iowa</option>
-    <option value="Kansas">Kansas</option>
-    <option value="Kentucky">Kentucky</option>
-    <option value="Louisiana">Louisiana</option>
-    <option value="Maine">Maine</option>
-    <option value="Maryland">Maryland</option>
-    <option value="Massachusetts">Massachusetts</option>
-    <option value="Michigan">Michigan</option>
-    <option value="Minnesota">Minnesota</option>
-    <option value="Mississippi">Mississippi</option>
-    <option value="Missouri">Missouri</option>
-    <option value="Montana">Montana</option>
-    <option value="Nebraska">Nebraska</option>
-    <option value="Nevada">Nevada</option>
-    <option value="New Hampshire">New Hampshire</option>
-    <option value="New Jersey">New Jersey</option>
-    <option value="New Mexico">New Mexico</option>
-    <option value="New York">New York</option>
-    <option value="North Carolina">North Carolina</option>
-    <option value="North Dakota">North Dakota</option>
-    <option value="Ohio">Ohio</option>
-    <option value="Oklahoma">Oklahoma</option>
-    <option value="Oregon">Oregon</option>
-    <option value="Pennsylvania">Pennsylvania</option>
-    <option value="Rhode Island">Rhode Island</option>
-    <option value="South Carolina">South Carolina</option>
-    <option value="South Dakota">South Dakota</option>
-    <option value="Tennessee">Tennessee</option>
-    <option value="Texas">Texas</option>
-    <option value="Utah">Utah</option>
-    <option value="Vermont">Vermont</option>
-    <option value="Virginia">Virginia</option>
-    <option value="Washington">Washington</option>
-    <option value="West Virginia">West Virginia</option>
-    <option value="Wisconsin">Wisconsin</option>
-    <option value="Wyoming">Wyoming</option>
-  
-    </select>
-  
-    </form>
-  
-    <a name="mapanchor" id="mapanchor" />
-    <div id="communitymapstatelistdiv" style="display: none;">
-    <h3>State Group</h3>
-    <ul id="communitymapstatelist">
-  
-    </ul>
-  
-    </div>
-  
-  
-    <div id="communitymapdistrictlistdiv" style="display: none;">
-    <h3>Region Groups</h3>
-  
-  
-    </div>
-  
-  
-    <div id="communitymapcountylistdiv" style="display: none;">
-    <h3>County Groups</h3>
-  
-  
-    </div>
-    ',
+    
+      $mod_path = drupal_get_path(\'module\', \'community_map\');
+      global $base_path;
+      drupal_add_js($mod_path . \'/community_map.js\');
+    
+      ?>
+    
+      <h2>Select Your State</h2>
+      <div id="floatingnamediv" ><h3>&nbsp;</h3>
+      </div>
+    
+      <img src="<?php print $base_path . $mod_path;?>/Community-Map.jpg" width="950" height="830" border="0" usemap="#map" />
+    
+      <map name="map">
+      <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+      <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+      <!-- #$-:Please do not edit lines starting with "#$" -->
+      <!-- #$VERSION:2.3 -->
+      <!-- #$AUTHOR: -->
+      <area shape="poly" class="community_map_area" coords="212,99,207,117,211,126,209,130,221,148,217,165,219,169,225,167,234,192,260,194,262,185,349,196,356,122,281,113,212,100" alt="Montana" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="367,123,363,179,460,185,460,174,457,170,456,151,453,143,452,127,368,122" alt="North Dakota" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="361,187,357,242,430,246,437,251,446,250,458,256,459,203,454,199,458,196,458,191,361,187" alt="South Dakota" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="462,125,490,126,504,132,512,132,532,141,540,137,556,141,556,144,543,151,527,169,526,180,520,185,522,189,521,201,526,204,541,217,541,226,471,227,471,194,465,187,470,182,469,175,466,161,467,152,463,142,463,125" alt="Minnesota" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="566,156,567,163,564,164,567,166,595,175,600,179,604,191,609,182,614,184,608,197,605,211,603,224,604,239,566,241,564,238,560,238,557,229,558,226,555,224,555,218,554,216,536,202,535,190,537,189,537,188,533,186,533,182,541,176,541,165,544,162,547,164,558,157,566,157" alt="Wisconsin" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="601,120,591,120,584,128,578,133,574,132,566,138,570,146,591,150,594,150,598,154,600,164,606,166,610,154,612,154,615,158,617,154,623,148,630,155,621,164,618,180,618,190,624,206,618,223,665,219,669,208,670,208,671,202,676,201,676,191,669,174,663,174,660,173,660,156,643,145,655,145,655,140,651,138,648,138,647,132,635,133,636,128,629,128,628,131,619,132,616,135,606,135,596,128,602,122" alt="Michigan" href="#mapanchor"   />
+      <area shape="poly" class="community_map_area" coords="107,238,187,256,166,362,161,364,157,361,155,377,152,382,93,292,107,237" alt="Nevada" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="258,199,350,209,344,285,247,273" alt="Wyoming" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="272,293,368,303,364,378,262,368,272,293" alt="Colorado" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="40,226,96,242,82,295,139,382,144,397,140,400,137,401,136,407,133,412,132,415,135,418,134,421,132,425,91,420,90,407,83,395,78,395,78,389,74,388,67,384,67,380,56,375,51,375,50,371,50,366,51,360,49,358,50,355,49,354,42,336,40,329,43,328,45,325,40,323,37,319,38,305,35,297,29,284,30,273,32,271,32,266,28,258,28,252,35,246,38,238,37,231" alt="California" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="196,258,238,265,235,283,262,287,251,362,178,350" alt="Utah" href="#mapanchor"   />
+      <area shape="poly" class="community_map_area" coords="248,377,234,481,201,476,148,446,150,438,154,439,155,437,153,436,152,432,153,427,157,424,157,419,161,415,164,416,164,414,161,411,161,407,159,402,161,396,162,379,169,379,172,383,175,365" alt="Arizona" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="256,384,344,394,337,487,285,482,285,486,259,483,258,490,242,489" alt="New Mexico" href="#mapanchor"   />
+      <area shape="poly" class="community_map_area" coords="360,393,483,396,485,421,485,460,478,459,474,455,461,456,456,459,452,457,447,456,444,459,442,457,437,454,435,456,431,455,429,451,427,451,423,451,418,450,416,449,413,449,413,446,406,446,401,441,403,407,361,405" alt="Oklahoma" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="486,548,479,550,472,554,462,563,440,576,432,588,432,599,434,606,434,614,431,615,429,616,422,613,413,612,400,605,394,590,394,583,390,583,382,570,376,554,366,545,348,543,346,552,339,557,317,542,315,535,313,526,290,501,290,495,344,499,350,419,396,422,396,456,398,459,403,458,407,463,410,464,422,465,424,468,438,469,445,470,446,472,460,469,464,468,473,474,482,476,483,505,487,508,487,513,491,519,491,528,489,530,489,540,486,545" alt="Texas" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="377,322,373,381,481,384,482,341,478,340,477,337,475,335,478,333,478,329,471,326" alt="Kansas" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="354,253,430,258,434,261,445,260,456,266,463,285,465,301,468,307,473,315,376,313,377,294,351,292" alt="Nebraska" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="496,462,542,461,546,474,541,485,537,496,565,496,565,503,568,511,573,510,580,515,578,532,570,537,569,531,563,530,558,534,545,534,539,531,539,527,519,527,509,523,501,526,498,521,502,515,500,510,503,503,503,497,499,491,498,485,496,483" alt="Louisiana" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="490,391,557,389,556,396,557,398,563,397,565,401,562,405,559,411,557,418,552,431,547,437,546,443,546,456,498,457,499,448,492,445,493,412" alt="Arkansas" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="528,300,534,306,534,316,544,325,545,329,554,332,550,343,562,353,564,361,570,366,569,374,565,375,561,385,550,385,553,378,488,379,489,331,481,324,484,319,477,314,475,310,473,303,497,303" alt="Missouri" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="464,235,465,242,466,244,463,250,470,267,470,274,473,275,473,279,473,286,476,291,529,290,534,294,540,289,543,278,540,274,540,273,546,273,550,269,552,264,552,259,543,248,540,247,537,243,539,240,536,234" alt="Iowa" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="555,256,595,253,595,258,601,267,603,314,605,321,604,325,600,332,599,341,599,343,598,345,594,348,594,354,589,354,586,352,583,357,579,357,575,351,576,347,573,342,569,342,562,335,565,326,565,322,560,324,557,316,546,307,545,296,546,291,551,289,552,284,550,280,552,274,556,275,559,272,561,269,561,266" alt="Illinois" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="650,242,622,245,617,249,612,245,615,296,616,300,611,311,611,320,618,320,620,318,625,320,628,316,631,319,635,313,641,316,643,309,649,303,649,301,651,300,657,298" alt="Indiana" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="181,94,112,76,110,81,104,84,108,88,108,92,96,87,88,80,85,86,84,90,86,94,85,106,83,119,87,123,95,127,96,137,101,141,111,141,117,144,145,144,170,150,171,137" alt="Washington" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="76,136,92,141,91,150,97,153,105,152,110,155,139,156,161,162,166,170,158,183,152,189,155,196,145,235,50,210,50,198,52,196,50,192,56,185,62,177" alt="Oregon" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="185,112,199,114,196,133,198,139,198,144,208,159,211,159,209,167,206,179,211,177,214,180,217,194,220,195,221,201,236,202,240,199,245,205,237,252,157,237,164,202,167,199,167,197,164,195,164,190,170,184,178,173,178,171,174,167,174,163" alt="Idaho" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="42,567,63,545,90,548,152,572,213,598,246,618,288,659,304,680,261,714,44,573" alt="Hawaii" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="706,687,712,686,714,684,720,685,720,688,733,700,735,696,741,686,748,689,749,691,754,694,754,696,760,699,779,719,786,722,796,725,799,738,796,746,787,746,786,751,782,750,779,753,772,746,768,746,766,742,767,739,764,741,751,728,747,728,747,723,740,716,740,713,736,711,715,700,702,697,698,696,691,696,682,701,680,698,681,696,677,694,671,695,665,697,662,703,651,702,651,706,647,706,634,715,633,735,621,745,617,748,607,755,576,767,496,780,432,773,409,771,397,764,362,728,356,715,367,718,403,753,457,768,493,770,527,761,537,756,546,755,547,750,554,750,558,746,563,745,569,745,582,736,590,728,593,718,589,717,585,720,581,718,581,715,577,716,567,717,560,713,563,708,562,702,565,699,564,697,561,695,559,697,553,697,549,690,545,690,539,694,530,686,529,681,544,681,547,680,547,678,544,677,543,674,542,669,542,665,544,664,544,660,548,659,554,654,558,648,560,645,567,650,568,648,569,643,574,643,577,646,579,646,579,640,576,634,572,638,566,635,558,634,549,630,548,623,546,618,542,613,546,608,549,608,557,605,572,604,570,593,558,580,561,575,563,570,566,570,567,571,574,571,578,566,580,559,587,555,594,553,601,548,605,548,608,548,614,542,624,549,634,550,636,554,636,556,641,553,647,554,653,555,660,558,665,560,668,559,674,557,687,563" alt="Alaska" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="648,490,692,486,694,491,734,489,733,485,737,482,740,483,746,484,749,496,758,512,767,522,767,528,778,547,781,570,779,573,781,574,780,578,772,588,764,592,751,597,748,596,749,592,754,594,757,590,767,588,774,583,763,585,761,580,760,576,757,573,750,573,748,565,744,565,741,562,740,556,730,546,728,539,728,532,729,532,729,526,727,524,727,519,722,519,710,505,704,505,702,509,692,516,688,514,685,514,683,508,674,504,668,503,656,506,652,506,652,500,650,496" alt="Florida" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="882,59,888,59,889,63,896,58,904,61,911,84,916,86,918,91,922,93,927,98,919,110,914,118,908,121,906,123,897,129,894,131,887,143,882,140,880,139,871,103,874,99,877,94,876,87" alt="Maine" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="866,109,877,144,881,148,881,154,878,155,875,159,857,163,855,159,855,145,855,142,856,141,856,131,859,129,860,127,861,126,861,124,859,124,860,112" alt="New Hampshire" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="853,112,856,123,851,129,851,154,852,159,839,160,836,146,833,146,831,135,833,132,831,118" alt="Vermont" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="849,170,875,165,879,160,884,162,887,164,885,170,884,171,888,172,892,178,894,177,892,173,893,170,901,178,901,187,889,191,877,181,850,186" alt="Massachusetts" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="866,188,873,184,881,194,874,202,869,202" alt="Rhode Island" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="872,204,875,220,861,226,851,233,848,229,850,226,848,210" alt="Connecticut" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="842,261,854,260,854,254,852,250,849,249,843,239,844,235,842,233,836,237,840,251" alt="Delaware" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="813,205,829,210,826,219,830,221,830,236,828,241,824,249,822,252,819,251,819,247,810,244,808,239,810,234,817,229,809,221" alt="New Jersey" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="751,204,807,192,812,195,815,200,830,205,831,213,837,212,852,204,860,197,860,194,851,194,848,199,843,199,840,203,838,202,838,199,840,198,837,196,836,170,833,157,828,150,827,146,829,146,829,143,826,139,825,130,802,135,793,149,787,155,787,161,792,164,786,170,780,171,778,171,766,171,756,177,759,185,758,187,752,195" alt="New York" href="#mapanchor"/>
+      <area shape="poly" class="community_map_area" coords="780,262,781,276,786,273,788,270,791,269,791,267,795,268,799,265,802,264,806,268,808,268,808,271,815,274,814,282,830,287,832,283,835,289,847,284,848,273,838,274,832,253" alt="Maryland" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="655,227,676,223,680,226,683,223,687,226,689,228,691,228,693,225,697,225,714,213,718,239,717,258,707,268,707,274,702,276,701,284,696,285,690,282,689,281,685,282,678,283,675,281,670,281,668,277,661,276" alt="Ohio" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="724,214,735,205,737,211,793,200,798,203,801,209,805,209,805,212,802,218,801,224,810,232,802,242,798,243,798,245,731,257" alt="Pennsylvania" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="714,397,717,391,727,386,750,384,754,388,770,386,788,401,782,410,781,417,760,440,755,441,753,439,753,436,750,433,747,432,747,428,744,425,741,424,738,420,738,418,735,416,734,416" alt="South Carolina" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="733,346,766,342,816,332,825,346,826,357,821,361,816,368,814,372,809,371,806,372,799,379,798,384,798,389,794,389,792,388,789,388,786,391,768,377,750,379,749,375,731,375,719,381,699,383,698,375,702,373,707,368,710,368,716,363,717,360,722,357,725,357,727,354,730,354,731,351,733,350" alt="North Carolina" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="706,343,706,340,711,337,717,333,729,320,731,320,733,324,734,325,735,324,737,323,741,322,750,318,750,312,754,308,756,301,757,296,759,296,762,298,764,290,771,285,772,277,779,281,781,279,787,279,788,282,795,286,795,290,792,293,796,293,796,296,808,300,822,294,817,315,815,317,820,325,778,334,742,339" alt="Virginia" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="701,303,701,296,705,295,707,292,705,288,708,284,710,284,712,278,715,275,718,275,721,271,722,256,721,254,723,252,726,252,727,257,729,268,743,265,744,272,751,267,760,263,767,268,766,276,760,273,756,281,752,286,749,292,743,292,741,300,739,305,738,311,727,316,718,319" alt="West Virginia" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="598,358,600,354,603,353,604,345,608,341,612,344,614,339,618,337,618,333,621,329,625,327,631,328,637,326,639,327,643,321,647,325,648,321,653,317,653,311,660,310,662,303,669,303,673,307,680,308,685,309,689,306,694,310,696,312,698,318,701,324,708,327,698,338,685,350,635,354,625,355,622,358" alt="Kentucky" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="578,401,578,397,581,395,580,392,580,389,582,388,583,384,586,384,588,370,609,369,609,366,652,363,702,356,702,365,698,365,698,369,693,368,691,372,687,372,679,381,674,381,670,387,668,388,668,393" alt="Tennessee" href="#mapanchor"/>
+      <area shape="poly" class="community_map_area" coords="569,406,568,410,566,411,566,419,564,419,561,422,559,425,558,430,556,432,556,438,558,439,559,464,554,471,553,483,581,482,581,488,587,496,590,494,591,492,594,495,597,495,597,494,606,494,606,481,604,467,604,406" alt="Mississippi" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="615,405,618,410,617,467,619,490,622,494,633,493,638,490,639,483,634,479,647,479,674,476,673,471,672,468,672,462,671,458,672,453,673,451,672,449,668,442,664,428,658,403" alt="Alabama" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="666,401,706,397,706,399,703,403,705,404,710,406,717,416,720,416,728,423,734,430,743,444,747,445,747,448,744,452,743,458,741,463,740,472,734,472,733,473,733,479,728,480,727,477,687,479,685,479,681,469,681,463,678,460,680,456,680,450,680,446,677,443" alt="Georgia" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="798,280,801,275,805,279,804,284" alt="District of Columbia" href="#mapanchor" />
+    
+      </map>
+    
+      <form action="#" method="post" onsubmit="return false;">
+    
+      Or select state with this pull-down: <select id="communitymapstateselect">
+    
+      <option value=""></option>
+      <option value="Alabama">Alabama</option>
+      <option value="Alaska">Alaska</option>
+      <option value="Arizona">Arizona</option>
+      <option value="Arkansas">Arkansas</option>
+      <option value="California">California</option>
+      <option value="Colorado">Colorado</option>
+      <option value="Connecticut">Connecticut</option>
+      <option value="Delaware">Delaware</option>
+      <option value="District of Columbia">District of Columbia</option>
+      <option value="Florida">Florida</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Hawaii">Hawaii</option>
+      <option value="Idaho">Idaho</option>
+      <option value="Illinois">Illinois</option>
+      <option value="Indiana">Indiana</option>
+      <option value="Iowa">Iowa</option>
+      <option value="Kansas">Kansas</option>
+      <option value="Kentucky">Kentucky</option>
+      <option value="Louisiana">Louisiana</option>
+      <option value="Maine">Maine</option>
+      <option value="Maryland">Maryland</option>
+      <option value="Massachusetts">Massachusetts</option>
+      <option value="Michigan">Michigan</option>
+      <option value="Minnesota">Minnesota</option>
+      <option value="Mississippi">Mississippi</option>
+      <option value="Missouri">Missouri</option>
+      <option value="Montana">Montana</option>
+      <option value="Nebraska">Nebraska</option>
+      <option value="Nevada">Nevada</option>
+      <option value="New Hampshire">New Hampshire</option>
+      <option value="New Jersey">New Jersey</option>
+      <option value="New Mexico">New Mexico</option>
+      <option value="New York">New York</option>
+      <option value="North Carolina">North Carolina</option>
+      <option value="North Dakota">North Dakota</option>
+      <option value="Ohio">Ohio</option>
+      <option value="Oklahoma">Oklahoma</option>
+      <option value="Oregon">Oregon</option>
+      <option value="Pennsylvania">Pennsylvania</option>
+      <option value="Rhode Island">Rhode Island</option>
+      <option value="South Carolina">South Carolina</option>
+      <option value="South Dakota">South Dakota</option>
+      <option value="Tennessee">Tennessee</option>
+      <option value="Texas">Texas</option>
+      <option value="Utah">Utah</option>
+      <option value="Vermont">Vermont</option>
+      <option value="Virginia">Virginia</option>
+      <option value="Washington">Washington</option>
+      <option value="West Virginia">West Virginia</option>
+      <option value="Wisconsin">Wisconsin</option>
+      <option value="Wyoming">Wyoming</option>
+    
+      </select>
+    
+      </form>
+    
+      <a name="mapanchor" id="mapanchor" />
+      <div id="communitymapstatelistdiv" style="display: none;">
+      <h3>State Group</h3>
+      <ul id="communitymapstatelist">
+    
+      </ul>
+    
+      </div>
+    
+    
+      <div id="communitymapdistrictlistdiv" style="display: none;">
+      <h3>Region Groups</h3>
+    
+    
+      </div>
+    
+    
+      <div id="communitymapcountylistdiv" style="display: none;">
+      <h3>County Groups</h3>
+    
+    
+      </div>
+      ',
     'teaser' => '<?php
-  
-    $mod_path = drupal_get_path(\'module\', \'community_map\');
-    global $base_path;
-    drupal_add_js($mod_path . \'/community_map.js\');
-  
-    ?>
-  
-    <h2>Select Your State</h2>
-    <div id="floatingnamediv" ><h3>&nbsp;</h3>
-    </div>
-  
-    <img src="<?php print $base_path . $mod_path;?>/Community-Map.jpg" width="950" height="830" border="0" usemap="#map" />
-  
-    <map name="map">
-    <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-    <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-    <!-- #$-:Please do not edit lines starting with "#$" -->
-    <!-- #$VERSION:2.3 -->
-    <!-- #$AUTHOR: -->
-    <area shape="poly" class="community_map_area" coords="212,99,207,117,211,126,209,130,221,148,217,165,219,169,225,167,234,192,260,194,262,185,349,196,356,122,281,113,212,100" alt="Montana" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="367,123,363,179,460,185,460,174,457,170,456,151,453,143,452,127,368,122" alt="North Dakota" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="361,187,357,242,430,246,437,251,446,250,458,256,459,203,454,199,458,196,458,191,361,187" alt="South Dakota" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="462,125,490,126,504,132,512,132,532,141,540,137,556,141,556,144,543,151,527,169,526,180,520,185,522,189,521,201,526,204,541,217,541,226,471,227,471,194,465,187,470,182,469,175,466,161,467,152,463,142,463,125" alt="Minnesota" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="566,156,567,163,564,164,567,166,595,175,600,179,604,191,609,182,614,184,608,197,605,211,603,224,604,239,566,241,564,238,560,238,557,229,558,226,555,224,555,218,554,216,536,202,535,190,537,189,537,188,533,186,533,182,541,176,541,165,544,162,547,164,558,157,566,157" alt="Wisconsin" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="601,120,591,120,584,128,578,133,574,132,566,138,570,146,591,150,594,150,598,154,600,164,606,166,610,154,612,154,615,158,617,154,623,148,630,155,621,164,618,180,618,190,624,206,618,223,665,219,669,208,670,208,671,202,676,201,676,191,669,174,663,174,660,173,660,156,643,145,655,145,655,140,651,138,648,138,647,132,635,133,636,128,629,128,628,131,619,132,616,135,606,135,596,128,602,122" alt="Michigan" href="#mapanchor"   />
-    <area shape="poly" class="community_map_area" coords="107,238,187,256,166,362,161,364,157,361,155,377,152,382,93,292,107,237" alt="Nevada" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="258,199,350,209,344,285,247,273" alt="Wyoming" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="272,293,368,303,364,378,262,368,272,293" alt="Colorado" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="40,226,96,242,82,295,139,382,144,397,140,400,137,401,136,407,133,412,132,415,135,418,134,421,132,425,91,420,90,407,83,395,78,395,78,389,74,388,67,384,67,380,56,375,51,375,50,371,50,366,51,360,49,358,50,355,49,354,42,336,40,329,43,328,45,325,40,323,37,319,38,305,35,297,29,284,30,273,32,271,32,266,28,258,28,252,35,246,38,238,37,231" alt="California" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="196,258,238,265,235,283,262,287,251,362,178,350" alt="Utah" href="#mapanchor"   />
-    <area shape="poly" class="community_map_area" coords="248,377,234,481,201,476,148,446,150,438,154,439,155,437,153,436,152,432,153,427,157,424,157,419,161,415,164,416,164,414,161,411,161,407,159,402,161,396,162,379,169,379,172,383,175,365" alt="Arizona" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="256,384,344,394,337,487,285,482,285,486,259,483,258,490,242,489" alt="New Mexico" href="#mapanchor"   />
-    <area shape="poly" class="community_map_area" coords="360,393,483,396,485,421,485,460,478,459,474,455,461,456,456,459,452,457,447,456,444,459,442,457,437,454,435,456,431,455,429,451,427,451,423,451,418,450,416,449,413,449,413,446,406,446,401,441,403,407,361,405" alt="Oklahoma" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="486,548,479,550,472,554,462,563,440,576,432,588,432,599,434,606,434,614,431,615,429,616,422,613,413,612,400,605,394,590,394,583,390,583,382,570,376,554,366,545,348,543,346,552,339,557,317,542,315,535,313,526,290,501,290,495,344,499,350,419,396,422,396,456,398,459,403,458,407,463,410,464,422,465,424,468,438,469,445,470,446,472,460,469,464,468,473,474,482,476,483,505,487,508,487,513,491,519,491,528,489,530,489,540,486,545" alt="Texas" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="377,322,373,381,481,384,482,341,478,340,477,337,475,335,478,333,478,329,471,326" alt="Kansas" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="354,253,430,258,434,261,445,260,456,266,463,285,465,301,468,307,473,315,376,313,377,294,351,292" alt="Nebraska" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="496,462,542,461,546,474,541,485,537,496,565,496,565,503,568,511,573,510,580,515,578,532,570,537,569,531,563,530,558,534,545,534,539,531,539,527,519,527,509,523,501,526,498,521,502,515,500,510,503,503,503,497,499,491,498,485,496,483" alt="Louisiana" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="490,391,557,389,556,396,557,398,563,397,565,401,562,405,559,411,557,418,552,431,547,437,546,443,546,456,498,457,499,448,492,445,493,412" alt="Arkansas" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="528,300,534,306,534,316,544,325,545,329,554,332,550,343,562,353,564,361,570,366,569,374,565,375,561,385,550,385,553,378,488,379,489,331,481,324,484,319,477,314,475,310,473,303,497,303" alt="Missouri" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="464,235,465,242,466,244,463,250,470,267,470,274,473,275,473,279,473,286,476,291,529,290,534,294,540,289,543,278,540,274,540,273,546,273,550,269,552,264,552,259,543,248,540,247,537,243,539,240,536,234" alt="Iowa" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="555,256,595,253,595,258,601,267,603,314,605,321,604,325,600,332,599,341,599,343,598,345,594,348,594,354,589,354,586,352,583,357,579,357,575,351,576,347,573,342,569,342,562,335,565,326,565,322,560,324,557,316,546,307,545,296,546,291,551,289,552,284,550,280,552,274,556,275,559,272,561,269,561,266" alt="Illinois" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="650,242,622,245,617,249,612,245,615,296,616,300,611,311,611,320,618,320,620,318,625,320,628,316,631,319,635,313,641,316,643,309,649,303,649,301,651,300,657,298" alt="Indiana" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="181,94,112,76,110,81,104,84,108,88,108,92,96,87,88,80,85,86,84,90,86,94,85,106,83,119,87,123,95,127,96,137,101,141,111,141,117,144,145,144,170,150,171,137" alt="Washington" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="76,136,92,141,91,150,97,153,105,152,110,155,139,156,161,162,166,170,158,183,152,189,155,196,145,235,50,210,50,198,52,196,50,192,56,185,62,177" alt="Oregon" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="185,112,199,114,196,133,198,139,198,144,208,159,211,159,209,167,206,179,211,177,214,180,217,194,220,195,221,201,236,202,240,199,245,205,237,252,157,237,164,202,167,199,167,197,164,195,164,190,170,184,178,173,178,171,174,167,174,163" alt="Idaho" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="42,567,63,545,90,548,152,572,213,598,246,618,288,659,304,680,261,714,44,573" alt="Hawaii" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="706,687,712,686,714,684,720,685,720,688,733,700,735,696,741,686,748,689,749,691,754,694,754,696,760,699,779,719,786,722,796,725,799,738,796,746,787,746,786,751,782,750,779,753,772,746,768,746,766,742,767,739,764,741,751,728,747,728,747,723,740,716,740,713,736,711,715,700,702,697,698,696,691,696,682,701,680,698,681,696,677,694,671,695,665,697,662,703,651,702,651,706,647,706,634,715,633,735,621,745,617,748,607,755,576,767,496,780,432,773,409,771,397,764,362,728,356,715,367,718,403,753,457,768,493,770,527,761,537,756,546,755,547,750,554,750,558,746,563,745,569,745,582,736,590,728,593,718,589,717,585,720,581,718,581,715,577,716,567,717,560,713,563,708,562,702,565,699,564,697,561,695,559,697,553,697,549,690,545,690,539,694,530,686,529,681,544,681,547,680,547,678,544,677,543,674,542,669,542,665,544,664,544,660,548,659,554,654,558,648,560,645,567,650,568,648,569,643,574,643,577,646,579,646,579,640,576,634,572,638,566,635,558,634,549,630,548,623,546,618,542,613,546,608,549,608,557,605,572,604,570,593,558,580,561,575,563,570,566,570,567,571,574,571,578,566,580,559,587,555,594,553,601,548,605,548,608,548,614,542,624,549,634,550,636,554,636,556,641,553,647,554,653,555,660,558,665,560,668,559,674,557,687,563" alt="Alaska" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="648,490,692,486,694,491,734,489,733,485,737,482,740,483,746,484,749,496,758,512,767,522,767,528,778,547,781,570,779,573,781,574,780,578,772,588,764,592,751,597,748,596,749,592,754,594,757,590,767,588,774,583,763,585,761,580,760,576,757,573,750,573,748,565,744,565,741,562,740,556,730,546,728,539,728,532,729,532,729,526,727,524,727,519,722,519,710,505,704,505,702,509,692,516,688,514,685,514,683,508,674,504,668,503,656,506,652,506,652,500,650,496" alt="Florida" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="882,59,888,59,889,63,896,58,904,61,911,84,916,86,918,91,922,93,927,98,919,110,914,118,908,121,906,123,897,129,894,131,887,143,882,140,880,139,871,103,874,99,877,94,876,87" alt="Maine" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="866,109,877,144,881,148,881,154,878,155,875,159,857,163,855,159,855,145,855,142,856,141,856,131,859,129,860,127,861,126,861,124,859,124,860,112" alt="New Hampshire" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="853,112,856,123,851,129,851,154,852,159,839,160,836,146,833,146,831,135,833,132,831,118" alt="Vermont" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="849,170,875,165,879,160,884,162,887,164,885,170,884,171,888,172,892,178,894,177,892,173,893,170,901,178,901,187,889,191,877,181,850,186" alt="Massachusetts" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="866,188,873,184,881,194,874,202,869,202" alt="Rhode Island" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="872,204,875,220,861,226,851,233,848,229,850,226,848,210" alt="Connecticut" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="842,261,854,260,854,254,852,250,849,249,843,239,844,235,842,233,836,237,840,251" alt="Delaware" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="813,205,829,210,826,219,830,221,830,236,828,241,824,249,822,252,819,251,819,247,810,244,808,239,810,234,817,229,809,221" alt="New Jersey" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="751,204,807,192,812,195,815,200,830,205,831,213,837,212,852,204,860,197,860,194,851,194,848,199,843,199,840,203,838,202,838,199,840,198,837,196,836,170,833,157,828,150,827,146,829,146,829,143,826,139,825,130,802,135,793,149,787,155,787,161,792,164,786,170,780,171,778,171,766,171,756,177,759,185,758,187,752,195" alt="New York" href="#mapanchor"/>
-    <area shape="poly" class="community_map_area" coords="780,262,781,276,786,273,788,270,791,269,791,267,795,268,799,265,802,264,806,268,808,268,808,271,815,274,814,282,830,287,832,283,835,289,847,284,848,273,838,274,832,253" alt="Maryland" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="655,227,676,223,680,226,683,223,687,226,689,228,691,228,693,225,697,225,714,213,718,239,717,258,707,268,707,274,702,276,701,284,696,285,690,282,689,281,685,282,678,283,675,281,670,281,668,277,661,276" alt="Ohio" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="724,214,735,205,737,211,793,200,798,203,801,209,805,209,805,212,802,218,801,224,810,232,802,242,798,243,798,245,731,257" alt="Pennsylvania" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="714,397,717,391,727,386,750,384,754,388,770,386,788,401,782,410,781,417,760,440,755,441,753,439,753,436,750,433,747,432,747,428,744,425,741,424,738,420,738,418,735,416,734,416" alt="South Carolina" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="733,346,766,342,816,332,825,346,826,357,821,361,816,368,814,372,809,371,806,372,799,379,798,384,798,389,794,389,792,388,789,388,786,391,768,377,750,379,749,375,731,375,719,381,699,383,698,375,702,373,707,368,710,368,716,363,717,360,722,357,725,357,727,354,730,354,731,351,733,350" alt="North Carolina" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="706,343,706,340,711,337,717,333,729,320,731,320,733,324,734,325,735,324,737,323,741,322,750,318,750,312,754,308,756,301,757,296,759,296,762,298,764,290,771,285,772,277,779,281,781,279,787,279,788,282,795,286,795,290,792,293,796,293,796,296,808,300,822,294,817,315,815,317,820,325,778,334,742,339" alt="Virginia" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="701,303,701,296,705,295,707,292,705,288,708,284,710,284,712,278,715,275,718,275,721,271,722,256,721,254,723,252,726,252,727,257,729,268,743,265,744,272,751,267,760,263,767,268,766,276,760,273,756,281,752,286,749,292,743,292,741,300,739,305,738,311,727,316,718,319" alt="West Virginia" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="598,358,600,354,603,353,604,345,608,341,612,344,614,339,618,337,618,333,621,329,625,327,631,328,637,326,639,327,643,321,647,325,648,321,653,317,653,311,660,310,662,303,669,303,673,307,680,308,685,309,689,306,694,310,696,312,698,318,701,324,708,327,698,338,685,350,635,354,625,355,622,358" alt="Kentucky" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="578,401,578,397,581,395,580,392,580,389,582,388,583,384,586,384,588,370,609,369,609,366,652,363,702,356,702,365,698,365,698,369,693,368,691,372,687,372,679,381,674,381,670,387,668,388,668,393" alt="Tennessee" href="#mapanchor"/>
-    <area shape="poly" class="community_map_area" coords="569,406,568,410,566,411,566,419,564,419,561,422,559,425,558,430,556,432,556,438,558,439,559,464,554,471,553,483,581,482,581,488,587,496,590,494,591,492,594,495,597,495,597,494,606,494,606,481,604,467,604,406" alt="Mississippi" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="615,405,618,410,617,467,619,490,622,494,633,493,638,490,639,483,634,479,647,479,674,476,673,471,672,468,672,462,671,458,672,453,673,451,672,449,668,442,664,428,658,403" alt="Alabama" href="#mapanchor"  />
-    <area shape="poly" class="community_map_area" coords="666,401,706,397,706,399,703,403,705,404,710,406,717,416,720,416,728,423,734,430,743,444,747,445,747,448,744,452,743,458,741,463,740,472,734,472,733,473,733,479,728,480,727,477,687,479,685,479,681,469,681,463,678,460,680,456,680,450,680,446,677,443" alt="Georgia" href="#mapanchor" />
-    <area shape="poly" class="community_map_area" coords="798,280,801,275,805,279,804,284" alt="District of Columbia" href="#mapanchor" />
-  
-    </map>
-  
-    <form action="#" method="post" onsubmit="return false;">
-  
-    Or select state with this pull-down: <select id="communitymapstateselect">
-  
-    <option value=""></option>
-    <option value="Alabama">Alabama</option>
-    <option value="Alaska">Alaska</option>
-    <option value="Arizona">Arizona</option>
-    <option value="Arkansas">Arkansas</option>
-    <option value="California">California</option>
-    <option value="Colorado">Colorado</option>
-    <option value="Connecticut">Connecticut</option>
-    <option value="Delaware">Delaware</option>
-    <option value="District of Columbia">District of Columbia</option>
-    <option value="Florida">Florida</option>
-    <option value="Georgia">Georgia</option>
-    <option value="Hawaii">Hawaii</option>
-    <option value="Idaho">Idaho</option>
-    <option value="Illinois">Illinois</option>
-    <option value="Indiana">Indiana</option>
-    <option value="Iowa">Iowa</option>
-    <option value="Kansas">Kansas</option>
-    <option value="Kentucky">Kentucky</option>
-    <option value="Louisiana">Louisiana</option>
-    <option value="Maine">Maine</option>
-    <option value="Maryland">Maryland</option>
-    <option value="Massachusetts">Massachusetts</option>
-    <option value="Michigan">Michigan</option>
-    <option value="Minnesota">Minnesota</option>
-    <option value="Mississippi">Mississippi</option>
-    <option value="Missouri">Missouri</option>
-    <option value="Montana">Montana</option>
-    <option value="Nebraska">Nebraska</option>
-    <option value="Nevada">Nevada</option>
-    <option value="New Hampshire">New Hampshire</option>
-    <option value="New Jersey">New Jersey</option>
-    <option value="New Mexico">New Mexico</option>
-    <option value="New York">New York</option>
-    <option value="North Carolina">North Carolina</option>
-    <option value="North Dakota">North Dakota</option>
-    <option value="Ohio">Ohio</option>
-    <option value="Oklahoma">Oklahoma</option>
-    <option value="Oregon">Oregon</option>
-    <option value="Pennsylvania">Pennsylvania</option>
-    <option value="Rhode Island">Rhode Island</option>
-    <option value="South Carolina">South Carolina</option>
-    <option value="South Dakota">South Dakota</option>
-    <option value="Tennessee">Tennessee</option>
-    <option value="Texas">Texas</option>
-    <option value="Utah">Utah</option>
-    <option value="Vermont">Vermont</option>
-    <option value="Virginia">Virginia</option>
-    <option value="Washington">Washington</option>
-    <option value="West Virginia">West Virginia</option>
-    <option value="Wisconsin">Wisconsin</option>
-    <option value="Wyoming">Wyoming</option>
-  
-    </select>
-  
-    </form>
-  
-    <a name="mapanchor" id="mapanchor" />
-    <div id="communitymapstatelistdiv" style="display: none;">
-    <h3>State Group</h3>
-    <ul id="communitymapstatelist">
-  
-    </ul>
-  
-    </div>
-  
-  
-    <div id="communitymapdistrictlistdiv" style="display: none;">
-    <h3>Region Groups</h3>
-  
-  
-    </div>
-  
-  
-    <div id="communitymapcountylistdiv" style="display: none;">
-    <h3>County Groups</h3>
-  
-  
-    </div>
-    ',
+    
+      $mod_path = drupal_get_path(\'module\', \'community_map\');
+      global $base_path;
+      drupal_add_js($mod_path . \'/community_map.js\');
+    
+      ?>
+    
+      <h2>Select Your State</h2>
+      <div id="floatingnamediv" ><h3>&nbsp;</h3>
+      </div>
+    
+      <img src="<?php print $base_path . $mod_path;?>/Community-Map.jpg" width="950" height="830" border="0" usemap="#map" />
+    
+      <map name="map">
+      <!-- #$-:Image map file created by GIMP Image Map plug-in -->
+      <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+      <!-- #$-:Please do not edit lines starting with "#$" -->
+      <!-- #$VERSION:2.3 -->
+      <!-- #$AUTHOR: -->
+      <area shape="poly" class="community_map_area" coords="212,99,207,117,211,126,209,130,221,148,217,165,219,169,225,167,234,192,260,194,262,185,349,196,356,122,281,113,212,100" alt="Montana" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="367,123,363,179,460,185,460,174,457,170,456,151,453,143,452,127,368,122" alt="North Dakota" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="361,187,357,242,430,246,437,251,446,250,458,256,459,203,454,199,458,196,458,191,361,187" alt="South Dakota" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="462,125,490,126,504,132,512,132,532,141,540,137,556,141,556,144,543,151,527,169,526,180,520,185,522,189,521,201,526,204,541,217,541,226,471,227,471,194,465,187,470,182,469,175,466,161,467,152,463,142,463,125" alt="Minnesota" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="566,156,567,163,564,164,567,166,595,175,600,179,604,191,609,182,614,184,608,197,605,211,603,224,604,239,566,241,564,238,560,238,557,229,558,226,555,224,555,218,554,216,536,202,535,190,537,189,537,188,533,186,533,182,541,176,541,165,544,162,547,164,558,157,566,157" alt="Wisconsin" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="601,120,591,120,584,128,578,133,574,132,566,138,570,146,591,150,594,150,598,154,600,164,606,166,610,154,612,154,615,158,617,154,623,148,630,155,621,164,618,180,618,190,624,206,618,223,665,219,669,208,670,208,671,202,676,201,676,191,669,174,663,174,660,173,660,156,643,145,655,145,655,140,651,138,648,138,647,132,635,133,636,128,629,128,628,131,619,132,616,135,606,135,596,128,602,122" alt="Michigan" href="#mapanchor"   />
+      <area shape="poly" class="community_map_area" coords="107,238,187,256,166,362,161,364,157,361,155,377,152,382,93,292,107,237" alt="Nevada" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="258,199,350,209,344,285,247,273" alt="Wyoming" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="272,293,368,303,364,378,262,368,272,293" alt="Colorado" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="40,226,96,242,82,295,139,382,144,397,140,400,137,401,136,407,133,412,132,415,135,418,134,421,132,425,91,420,90,407,83,395,78,395,78,389,74,388,67,384,67,380,56,375,51,375,50,371,50,366,51,360,49,358,50,355,49,354,42,336,40,329,43,328,45,325,40,323,37,319,38,305,35,297,29,284,30,273,32,271,32,266,28,258,28,252,35,246,38,238,37,231" alt="California" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="196,258,238,265,235,283,262,287,251,362,178,350" alt="Utah" href="#mapanchor"   />
+      <area shape="poly" class="community_map_area" coords="248,377,234,481,201,476,148,446,150,438,154,439,155,437,153,436,152,432,153,427,157,424,157,419,161,415,164,416,164,414,161,411,161,407,159,402,161,396,162,379,169,379,172,383,175,365" alt="Arizona" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="256,384,344,394,337,487,285,482,285,486,259,483,258,490,242,489" alt="New Mexico" href="#mapanchor"   />
+      <area shape="poly" class="community_map_area" coords="360,393,483,396,485,421,485,460,478,459,474,455,461,456,456,459,452,457,447,456,444,459,442,457,437,454,435,456,431,455,429,451,427,451,423,451,418,450,416,449,413,449,413,446,406,446,401,441,403,407,361,405" alt="Oklahoma" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="486,548,479,550,472,554,462,563,440,576,432,588,432,599,434,606,434,614,431,615,429,616,422,613,413,612,400,605,394,590,394,583,390,583,382,570,376,554,366,545,348,543,346,552,339,557,317,542,315,535,313,526,290,501,290,495,344,499,350,419,396,422,396,456,398,459,403,458,407,463,410,464,422,465,424,468,438,469,445,470,446,472,460,469,464,468,473,474,482,476,483,505,487,508,487,513,491,519,491,528,489,530,489,540,486,545" alt="Texas" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="377,322,373,381,481,384,482,341,478,340,477,337,475,335,478,333,478,329,471,326" alt="Kansas" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="354,253,430,258,434,261,445,260,456,266,463,285,465,301,468,307,473,315,376,313,377,294,351,292" alt="Nebraska" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="496,462,542,461,546,474,541,485,537,496,565,496,565,503,568,511,573,510,580,515,578,532,570,537,569,531,563,530,558,534,545,534,539,531,539,527,519,527,509,523,501,526,498,521,502,515,500,510,503,503,503,497,499,491,498,485,496,483" alt="Louisiana" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="490,391,557,389,556,396,557,398,563,397,565,401,562,405,559,411,557,418,552,431,547,437,546,443,546,456,498,457,499,448,492,445,493,412" alt="Arkansas" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="528,300,534,306,534,316,544,325,545,329,554,332,550,343,562,353,564,361,570,366,569,374,565,375,561,385,550,385,553,378,488,379,489,331,481,324,484,319,477,314,475,310,473,303,497,303" alt="Missouri" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="464,235,465,242,466,244,463,250,470,267,470,274,473,275,473,279,473,286,476,291,529,290,534,294,540,289,543,278,540,274,540,273,546,273,550,269,552,264,552,259,543,248,540,247,537,243,539,240,536,234" alt="Iowa" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="555,256,595,253,595,258,601,267,603,314,605,321,604,325,600,332,599,341,599,343,598,345,594,348,594,354,589,354,586,352,583,357,579,357,575,351,576,347,573,342,569,342,562,335,565,326,565,322,560,324,557,316,546,307,545,296,546,291,551,289,552,284,550,280,552,274,556,275,559,272,561,269,561,266" alt="Illinois" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="650,242,622,245,617,249,612,245,615,296,616,300,611,311,611,320,618,320,620,318,625,320,628,316,631,319,635,313,641,316,643,309,649,303,649,301,651,300,657,298" alt="Indiana" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="181,94,112,76,110,81,104,84,108,88,108,92,96,87,88,80,85,86,84,90,86,94,85,106,83,119,87,123,95,127,96,137,101,141,111,141,117,144,145,144,170,150,171,137" alt="Washington" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="76,136,92,141,91,150,97,153,105,152,110,155,139,156,161,162,166,170,158,183,152,189,155,196,145,235,50,210,50,198,52,196,50,192,56,185,62,177" alt="Oregon" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="185,112,199,114,196,133,198,139,198,144,208,159,211,159,209,167,206,179,211,177,214,180,217,194,220,195,221,201,236,202,240,199,245,205,237,252,157,237,164,202,167,199,167,197,164,195,164,190,170,184,178,173,178,171,174,167,174,163" alt="Idaho" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="42,567,63,545,90,548,152,572,213,598,246,618,288,659,304,680,261,714,44,573" alt="Hawaii" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="706,687,712,686,714,684,720,685,720,688,733,700,735,696,741,686,748,689,749,691,754,694,754,696,760,699,779,719,786,722,796,725,799,738,796,746,787,746,786,751,782,750,779,753,772,746,768,746,766,742,767,739,764,741,751,728,747,728,747,723,740,716,740,713,736,711,715,700,702,697,698,696,691,696,682,701,680,698,681,696,677,694,671,695,665,697,662,703,651,702,651,706,647,706,634,715,633,735,621,745,617,748,607,755,576,767,496,780,432,773,409,771,397,764,362,728,356,715,367,718,403,753,457,768,493,770,527,761,537,756,546,755,547,750,554,750,558,746,563,745,569,745,582,736,590,728,593,718,589,717,585,720,581,718,581,715,577,716,567,717,560,713,563,708,562,702,565,699,564,697,561,695,559,697,553,697,549,690,545,690,539,694,530,686,529,681,544,681,547,680,547,678,544,677,543,674,542,669,542,665,544,664,544,660,548,659,554,654,558,648,560,645,567,650,568,648,569,643,574,643,577,646,579,646,579,640,576,634,572,638,566,635,558,634,549,630,548,623,546,618,542,613,546,608,549,608,557,605,572,604,570,593,558,580,561,575,563,570,566,570,567,571,574,571,578,566,580,559,587,555,594,553,601,548,605,548,608,548,614,542,624,549,634,550,636,554,636,556,641,553,647,554,653,555,660,558,665,560,668,559,674,557,687,563" alt="Alaska" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="648,490,692,486,694,491,734,489,733,485,737,482,740,483,746,484,749,496,758,512,767,522,767,528,778,547,781,570,779,573,781,574,780,578,772,588,764,592,751,597,748,596,749,592,754,594,757,590,767,588,774,583,763,585,761,580,760,576,757,573,750,573,748,565,744,565,741,562,740,556,730,546,728,539,728,532,729,532,729,526,727,524,727,519,722,519,710,505,704,505,702,509,692,516,688,514,685,514,683,508,674,504,668,503,656,506,652,506,652,500,650,496" alt="Florida" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="882,59,888,59,889,63,896,58,904,61,911,84,916,86,918,91,922,93,927,98,919,110,914,118,908,121,906,123,897,129,894,131,887,143,882,140,880,139,871,103,874,99,877,94,876,87" alt="Maine" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="866,109,877,144,881,148,881,154,878,155,875,159,857,163,855,159,855,145,855,142,856,141,856,131,859,129,860,127,861,126,861,124,859,124,860,112" alt="New Hampshire" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="853,112,856,123,851,129,851,154,852,159,839,160,836,146,833,146,831,135,833,132,831,118" alt="Vermont" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="849,170,875,165,879,160,884,162,887,164,885,170,884,171,888,172,892,178,894,177,892,173,893,170,901,178,901,187,889,191,877,181,850,186" alt="Massachusetts" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="866,188,873,184,881,194,874,202,869,202" alt="Rhode Island" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="872,204,875,220,861,226,851,233,848,229,850,226,848,210" alt="Connecticut" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="842,261,854,260,854,254,852,250,849,249,843,239,844,235,842,233,836,237,840,251" alt="Delaware" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="813,205,829,210,826,219,830,221,830,236,828,241,824,249,822,252,819,251,819,247,810,244,808,239,810,234,817,229,809,221" alt="New Jersey" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="751,204,807,192,812,195,815,200,830,205,831,213,837,212,852,204,860,197,860,194,851,194,848,199,843,199,840,203,838,202,838,199,840,198,837,196,836,170,833,157,828,150,827,146,829,146,829,143,826,139,825,130,802,135,793,149,787,155,787,161,792,164,786,170,780,171,778,171,766,171,756,177,759,185,758,187,752,195" alt="New York" href="#mapanchor"/>
+      <area shape="poly" class="community_map_area" coords="780,262,781,276,786,273,788,270,791,269,791,267,795,268,799,265,802,264,806,268,808,268,808,271,815,274,814,282,830,287,832,283,835,289,847,284,848,273,838,274,832,253" alt="Maryland" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="655,227,676,223,680,226,683,223,687,226,689,228,691,228,693,225,697,225,714,213,718,239,717,258,707,268,707,274,702,276,701,284,696,285,690,282,689,281,685,282,678,283,675,281,670,281,668,277,661,276" alt="Ohio" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="724,214,735,205,737,211,793,200,798,203,801,209,805,209,805,212,802,218,801,224,810,232,802,242,798,243,798,245,731,257" alt="Pennsylvania" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="714,397,717,391,727,386,750,384,754,388,770,386,788,401,782,410,781,417,760,440,755,441,753,439,753,436,750,433,747,432,747,428,744,425,741,424,738,420,738,418,735,416,734,416" alt="South Carolina" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="733,346,766,342,816,332,825,346,826,357,821,361,816,368,814,372,809,371,806,372,799,379,798,384,798,389,794,389,792,388,789,388,786,391,768,377,750,379,749,375,731,375,719,381,699,383,698,375,702,373,707,368,710,368,716,363,717,360,722,357,725,357,727,354,730,354,731,351,733,350" alt="North Carolina" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="706,343,706,340,711,337,717,333,729,320,731,320,733,324,734,325,735,324,737,323,741,322,750,318,750,312,754,308,756,301,757,296,759,296,762,298,764,290,771,285,772,277,779,281,781,279,787,279,788,282,795,286,795,290,792,293,796,293,796,296,808,300,822,294,817,315,815,317,820,325,778,334,742,339" alt="Virginia" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="701,303,701,296,705,295,707,292,705,288,708,284,710,284,712,278,715,275,718,275,721,271,722,256,721,254,723,252,726,252,727,257,729,268,743,265,744,272,751,267,760,263,767,268,766,276,760,273,756,281,752,286,749,292,743,292,741,300,739,305,738,311,727,316,718,319" alt="West Virginia" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="598,358,600,354,603,353,604,345,608,341,612,344,614,339,618,337,618,333,621,329,625,327,631,328,637,326,639,327,643,321,647,325,648,321,653,317,653,311,660,310,662,303,669,303,673,307,680,308,685,309,689,306,694,310,696,312,698,318,701,324,708,327,698,338,685,350,635,354,625,355,622,358" alt="Kentucky" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="578,401,578,397,581,395,580,392,580,389,582,388,583,384,586,384,588,370,609,369,609,366,652,363,702,356,702,365,698,365,698,369,693,368,691,372,687,372,679,381,674,381,670,387,668,388,668,393" alt="Tennessee" href="#mapanchor"/>
+      <area shape="poly" class="community_map_area" coords="569,406,568,410,566,411,566,419,564,419,561,422,559,425,558,430,556,432,556,438,558,439,559,464,554,471,553,483,581,482,581,488,587,496,590,494,591,492,594,495,597,495,597,494,606,494,606,481,604,467,604,406" alt="Mississippi" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="615,405,618,410,617,467,619,490,622,494,633,493,638,490,639,483,634,479,647,479,674,476,673,471,672,468,672,462,671,458,672,453,673,451,672,449,668,442,664,428,658,403" alt="Alabama" href="#mapanchor"  />
+      <area shape="poly" class="community_map_area" coords="666,401,706,397,706,399,703,403,705,404,710,406,717,416,720,416,728,423,734,430,743,444,747,445,747,448,744,452,743,458,741,463,740,472,734,472,733,473,733,479,728,480,727,477,687,479,685,479,681,469,681,463,678,460,680,456,680,450,680,446,677,443" alt="Georgia" href="#mapanchor" />
+      <area shape="poly" class="community_map_area" coords="798,280,801,275,805,279,804,284" alt="District of Columbia" href="#mapanchor" />
+    
+      </map>
+    
+      <form action="#" method="post" onsubmit="return false;">
+    
+      Or select state with this pull-down: <select id="communitymapstateselect">
+    
+      <option value=""></option>
+      <option value="Alabama">Alabama</option>
+      <option value="Alaska">Alaska</option>
+      <option value="Arizona">Arizona</option>
+      <option value="Arkansas">Arkansas</option>
+      <option value="California">California</option>
+      <option value="Colorado">Colorado</option>
+      <option value="Connecticut">Connecticut</option>
+      <option value="Delaware">Delaware</option>
+      <option value="District of Columbia">District of Columbia</option>
+      <option value="Florida">Florida</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Hawaii">Hawaii</option>
+      <option value="Idaho">Idaho</option>
+      <option value="Illinois">Illinois</option>
+      <option value="Indiana">Indiana</option>
+      <option value="Iowa">Iowa</option>
+      <option value="Kansas">Kansas</option>
+      <option value="Kentucky">Kentucky</option>
+      <option value="Louisiana">Louisiana</option>
+      <option value="Maine">Maine</option>
+      <option value="Maryland">Maryland</option>
+      <option value="Massachusetts">Massachusetts</option>
+      <option value="Michigan">Michigan</option>
+      <option value="Minnesota">Minnesota</option>
+      <option value="Mississippi">Mississippi</option>
+      <option value="Missouri">Missouri</option>
+      <option value="Montana">Montana</option>
+      <option value="Nebraska">Nebraska</option>
+      <option value="Nevada">Nevada</option>
+      <option value="New Hampshire">New Hampshire</option>
+      <option value="New Jersey">New Jersey</option>
+      <option value="New Mexico">New Mexico</option>
+      <option value="New York">New York</option>
+      <option value="North Carolina">North Carolina</option>
+      <option value="North Dakota">North Dakota</option>
+      <option value="Ohio">Ohio</option>
+      <option value="Oklahoma">Oklahoma</option>
+      <option value="Oregon">Oregon</option>
+      <option value="Pennsylvania">Pennsylvania</option>
+      <option value="Rhode Island">Rhode Island</option>
+      <option value="South Carolina">South Carolina</option>
+      <option value="South Dakota">South Dakota</option>
+      <option value="Tennessee">Tennessee</option>
+      <option value="Texas">Texas</option>
+      <option value="Utah">Utah</option>
+      <option value="Vermont">Vermont</option>
+      <option value="Virginia">Virginia</option>
+      <option value="Washington">Washington</option>
+      <option value="West Virginia">West Virginia</option>
+      <option value="Wisconsin">Wisconsin</option>
+      <option value="Wyoming">Wyoming</option>
+    
+      </select>
+    
+      </form>
+    
+      <a name="mapanchor" id="mapanchor" />
+      <div id="communitymapstatelistdiv" style="display: none;">
+      <h3>State Group</h3>
+      <ul id="communitymapstatelist">
+    
+      </ul>
+    
+      </div>
+    
+    
+      <div id="communitymapdistrictlistdiv" style="display: none;">
+      <h3>Region Groups</h3>
+    
+    
+      </div>
+    
+    
+      <div id="communitymapcountylistdiv" style="display: none;">
+      <h3>County Groups</h3>
+    
+    
+      </div>
+      ',
     'log' => '',
-    'format' => '4',
+    'format' => '3',
     'name' => '',
     'path' => 'community',
     'og_groups_both' => array(),
@@ -345,7 +15041,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'fa2f83a9-9446-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => FALSE,
+    'pathauto_perform_alias' => TRUE,
   );
   return $nodes;
 }
