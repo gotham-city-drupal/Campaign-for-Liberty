@@ -38,14 +38,47 @@
   margin-left: 200px;
 }
 
-.view-id-staff .views-field-field-staff-photo-fid {
-  float: left;
+#staff-board-teaser {
+  width: 320px;
   padding-bottom: 20px;
-  width: 100px;
+  margin-bottom: 20px;
+  min-height: 110px;
 }
 
-.view-id-staff .views-field-title a {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 18px;
+.staff-board-teaser-left {
+  float:left;
+}
+
+.staff-board-teaser-right {
+  margin-left: 100px;
+}
+
+#staff-board-teaser .views-field-field-job-title-value {
+  font-style: italic;
+  font-size: 12px;
+}
+
+#staff-board-teaser .views-field-field-brief-bio-value {
+  margin-top: 5px;
+}
+
+#staff-board-teaser .views-field-view-node {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* HELPER LINKS */
+.cycle_links ul.links li a {
+  font-size: 12px;
+  padding-right: 5px;
+  border-right: 1px solid #ccc;
+}
+
+.cycle_links ul.links li.last a {
+  border: 0;
+}
+
+#staff-board-teaser .admin_links a {
+  font-size: 12px;
+  padding-left: 5px;
 }

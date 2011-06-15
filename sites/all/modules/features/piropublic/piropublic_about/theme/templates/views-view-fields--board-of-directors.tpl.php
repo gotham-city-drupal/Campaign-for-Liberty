@@ -3,7 +3,7 @@
 /**
  * @file views-view-fields.tpl.php
  * Default simple view template to all the fields as a row.
- *
+ * - $admin_links: admin links
  * - $view: The view in use.
  * - $fields: an array of $field objects. Each one contains:
  *   - $field->content: The output of the field.
@@ -18,22 +18,36 @@
  *
  * @ingroup views_templates
  */
-?>
-<?php foreach ($fields as $id => $field): ?>
-  <?php if (!empty($field->separator)): ?>
-    <?php print $field->separator; ?>
-  <?php endif; ?>
 
-  <<?php print $field->inline_html;?> class="views-field-<?php print $field->class; ?>">
-    <?php if ($field->label): ?>
-      <label class="views-label-<?php print $field->class; ?>">
-        <?php print $field->label; ?>:
-      </label>
+?>
+<?php if ($fields['nodequeue_links']): ?>
+  <div class="cycle_links">
+    <?php print $fields['nodequeue_links']->content; ?>
+  </div>
+<?php endif; ?>
+
+<div id="staff-board-teaser">
+  <div class="staff-board-teaser-left">
+    <?php print $fields['field_staff_photo_fid']->content; ?>
+    <?php if ($admin_links): ?>
+      <div class="admin_links">
+        <?php print $admin_links; ?>
+      </div>
     <?php endif; ?>
-      <?php
-      // $field->element_type is either SPAN or DIV depending upon whether or not
-      // the field is a 'block' element type or 'inline' element type.
-      ?>
-      <<?php print $field->element_type; ?> class="field-content"><?php print $field->content; ?></<?php print $field->element_type; ?>>
-  </<?php print $field->inline_html;?>>
-<?php endforeach; ?>
+  </div>
+  <div class="staff-board-teaser-right">
+    <div class="views-field-<?php print $fields['title']->class; ?>">
+      <?php print $fields['title']->content; ?>
+    </div>
+    <div class="views-field-<?php print $fields['field_job_title_value']->class; ?>">
+      <?php print $fields['field_job_title_value']->content; ?>
+    </div>
+    <div class="views-field-<?php print $fields['field_brief_bio_value']->class; ?>">
+      <?php print $fields['field_brief_bio_value']->content; ?>
+    </div>
+    <div class="views-field-<?php print $fields['view_node']->class; ?>">
+      <?php print $fields['view_node']->content; ?>
+    </div>
+  </div>
+</div>
+<div style="clear:both;"></div>
