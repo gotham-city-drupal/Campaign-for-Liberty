@@ -74,7 +74,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6877cb-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -132,7 +132,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -190,7 +190,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -248,7 +248,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -306,7 +306,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c69638f-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -364,7 +364,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -437,7 +437,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -495,7 +495,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c69acbd-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -553,7 +553,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -611,7 +611,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -669,7 +669,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6a2ddf-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -727,7 +727,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6a458d-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -786,7 +786,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -844,7 +844,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -902,7 +902,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6a91a2-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -960,7 +960,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6aab82-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1018,7 +1018,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1076,7 +1076,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1134,7 +1134,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6af732-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1192,7 +1192,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1250,7 +1250,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1308,7 +1308,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1366,7 +1366,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1424,7 +1424,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6b7256-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1482,7 +1482,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6ba2b3-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1540,7 +1540,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6bbc10-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1598,7 +1598,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1656,7 +1656,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6beed5-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1714,7 +1714,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1772,7 +1772,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1830,7 +1830,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1888,7 +1888,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c5c4e-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -1946,7 +1946,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c6831-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2004,7 +2004,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2062,7 +2062,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c8021-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2120,7 +2120,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2179,7 +2179,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2237,7 +2237,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2295,7 +2295,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6ccd38-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2353,7 +2353,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2411,7 +2411,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2469,7 +2469,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6d238f-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'state',
@@ -2528,7 +2528,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2567,7 +2567,9 @@ function community_uuid_features_default_content() {
         'value' => 'brief description here, eh?<br />',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'description on the line',
     'og_theme' => NULL,
@@ -2579,7 +2581,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8cb81d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2618,7 +2620,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AL_1',
     'og_theme' => NULL,
@@ -2630,7 +2634,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d2206-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2669,7 +2673,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AL_2',
     'og_theme' => NULL,
@@ -2681,7 +2687,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d3263-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2735,7 +2741,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AL_3',
     'og_theme' => NULL,
@@ -2747,7 +2755,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d3fe8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2786,7 +2794,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AL_4',
     'og_theme' => NULL,
@@ -2798,7 +2808,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d4ecd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2837,7 +2847,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AL_5',
     'og_theme' => NULL,
@@ -2849,7 +2861,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d5db4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2888,7 +2900,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AL_6',
     'og_theme' => NULL,
@@ -2900,7 +2914,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d6ce6-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2939,7 +2953,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c693974-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AL_7',
     'og_theme' => NULL,
@@ -2951,7 +2967,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d7bbf-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -2990,7 +3006,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_1',
     'og_theme' => NULL,
@@ -3002,7 +3020,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d8877-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3041,7 +3059,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_2',
     'og_theme' => NULL,
@@ -3053,7 +3073,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8d973d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3092,7 +3112,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_3',
     'og_theme' => NULL,
@@ -3104,7 +3126,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8da616-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3143,7 +3165,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_4',
     'og_theme' => NULL,
@@ -3155,7 +3179,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8db88b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3194,7 +3218,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_5',
     'og_theme' => NULL,
@@ -3206,7 +3232,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8dc778-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3304,7 +3330,9 @@ function community_uuid_features_default_content() {
     <p><img src="file:///C:/Users/annette/AppData/Local/Temp/moz-screenshot-1.jpg" alt="" /><img src="file:///C:/Users/annette/AppData/Local/Temp/moz-screenshot-2.jpg" alt="" /></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_6',
     'og_theme' => NULL,
@@ -3316,7 +3344,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8dd670-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3355,7 +3383,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_7',
     'og_theme' => NULL,
@@ -3367,7 +3397,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8de54f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3406,7 +3436,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6949fb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AZ_8',
     'og_theme' => NULL,
@@ -3418,7 +3450,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8df210-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3457,7 +3489,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69638f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AR_1',
     'og_theme' => NULL,
@@ -3469,7 +3503,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8dff15-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3514,7 +3548,9 @@ function community_uuid_features_default_content() {
     <p>If you know of any upcoming events which you would like to have added to the calendar, please message me and I will add them.  You may also visit the Central Arkansas Campaign for Liberty group at <a title="Link to Central AR C4L" href="http://www.meetup.com/central-arkansas-campaign-for-liberty/" target="_blank">MeetUp.com</a>.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69638f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AR_2',
     'og_theme' => NULL,
@@ -3526,7 +3562,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e0e3e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3565,7 +3601,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69638f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AR_3',
     'og_theme' => NULL,
@@ -3577,7 +3615,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e1d29-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3616,7 +3654,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69638f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'AR_4',
     'og_theme' => NULL,
@@ -3628,7 +3668,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e2c10-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3667,7 +3707,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_1',
     'og_theme' => NULL,
@@ -3679,7 +3721,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e3af2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3718,7 +3760,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_2',
     'og_theme' => NULL,
@@ -3730,7 +3774,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e49ba-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3769,7 +3813,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_3',
     'og_theme' => NULL,
@@ -3781,7 +3827,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e5898-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3827,7 +3873,9 @@ function community_uuid_features_default_content() {
     <p style="text-align: center;"><span style="font-size: large;"><span style="font-size: medium;"><a href="/usa/CA/Placer/">Placer County C4L</a>&nbsp;&nbsp; <a href="/usa/CA/Plumas/">Plumas County C4L</a>&nbsp;&nbsp; <a href="/usa/CA/Sierra/">Sierra County C4L</a><br /></span></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_4',
     'og_theme' => NULL,
@@ -3839,7 +3887,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e675e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3878,7 +3926,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_5',
     'og_theme' => NULL,
@@ -3890,7 +3940,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e764b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -3966,7 +4016,9 @@ function community_uuid_features_default_content() {
     <p>We are pleased to announce Jason Brown as the Sonoma County Interim Coordinator. Jason has completed his online C4L Leadership training and requested this responsibility for Sonoma County. As county coordinator, Jason will help bring and encourage other activists become registered Campaign for Liberty Local Coordinators and take the online C4L <a href="/training.php">video</a> and <a href="/localcoordinator.php">Precinct Leadership</a> training. We are continuing to work on identifying&nbsp;regional and&nbsp;county coordinators across California.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_6',
     'og_theme' => NULL,
@@ -3978,7 +4030,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e855a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4050,7 +4102,9 @@ function community_uuid_features_default_content() {
     <p>Concord, Clayton, Pittsburg</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_7',
     'og_theme' => NULL,
@@ -4062,7 +4116,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8e9430-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4101,7 +4155,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_8',
     'og_theme' => NULL,
@@ -4113,7 +4169,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8ea18e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4152,7 +4208,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_9',
     'og_theme' => NULL,
@@ -4164,7 +4222,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8eb078-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4203,7 +4261,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_10',
     'og_theme' => NULL,
@@ -4215,7 +4275,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8ebf9e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4254,7 +4314,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_11',
     'og_theme' => NULL,
@@ -4266,7 +4328,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8ecf39-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4305,7 +4367,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_12',
     'og_theme' => NULL,
@@ -4317,7 +4381,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8edc6a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4356,7 +4420,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_13',
     'og_theme' => NULL,
@@ -4368,7 +4434,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8eea7e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4407,7 +4473,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_14',
     'og_theme' => NULL,
@@ -4419,7 +4487,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8ef86d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4458,7 +4526,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_15',
     'og_theme' => NULL,
@@ -4470,7 +4540,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f0553-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4509,7 +4579,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_16',
     'og_theme' => NULL,
@@ -4521,7 +4593,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f1275-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4560,7 +4632,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_17',
     'og_theme' => NULL,
@@ -4572,7 +4646,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f216e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4611,7 +4685,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_18',
     'og_theme' => NULL,
@@ -4623,7 +4699,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f2e51-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4662,7 +4738,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_19',
     'og_theme' => NULL,
@@ -4674,7 +4752,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f3bdf-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4713,7 +4791,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_20',
     'og_theme' => NULL,
@@ -4725,7 +4805,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f48bd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4764,7 +4844,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_21',
     'og_theme' => NULL,
@@ -4776,7 +4858,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f55a3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4815,7 +4897,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_22',
     'og_theme' => NULL,
@@ -4827,7 +4911,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f68f6-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4866,7 +4950,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_23',
     'og_theme' => NULL,
@@ -4878,7 +4964,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f83af-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4917,7 +5003,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_24',
     'og_theme' => NULL,
@@ -4929,7 +5017,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8f9bd5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -4968,7 +5056,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_25',
     'og_theme' => NULL,
@@ -4980,7 +5070,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8fb6d8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5019,7 +5109,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_26',
     'og_theme' => NULL,
@@ -5031,7 +5123,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8fd066-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5070,7 +5162,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_27',
     'og_theme' => NULL,
@@ -5082,7 +5176,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af8fe8a3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5121,7 +5215,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_28',
     'og_theme' => NULL,
@@ -5133,7 +5229,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af900157-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5172,7 +5268,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_29',
     'og_theme' => NULL,
@@ -5184,7 +5282,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9019a3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5223,7 +5321,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_30',
     'og_theme' => NULL,
@@ -5235,7 +5335,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9033b3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5274,7 +5374,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_31',
     'og_theme' => NULL,
@@ -5286,7 +5388,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af904da2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5325,7 +5427,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_32',
     'og_theme' => NULL,
@@ -5337,7 +5441,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9064f5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5376,7 +5480,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_33',
     'og_theme' => NULL,
@@ -5388,7 +5494,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af90763e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5427,7 +5533,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_34',
     'og_theme' => NULL,
@@ -5439,7 +5547,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af909038-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5478,7 +5586,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_35',
     'og_theme' => NULL,
@@ -5490,7 +5600,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af90aba5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5529,7 +5639,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_36',
     'og_theme' => NULL,
@@ -5541,7 +5653,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af90c60b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5580,7 +5692,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_37',
     'og_theme' => NULL,
@@ -5592,7 +5706,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af90dea6-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5631,7 +5745,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_38',
     'og_theme' => NULL,
@@ -5643,7 +5759,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af90f8ed-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5682,7 +5798,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_39',
     'og_theme' => NULL,
@@ -5694,7 +5812,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9112c1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5733,7 +5851,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_40',
     'og_theme' => NULL,
@@ -5745,7 +5865,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af912d1c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5809,7 +5929,9 @@ function community_uuid_features_default_content() {
     <p>Our county and local coordinators do a great job of keeping our meetup calendar up to date. Please head on over to join and get involved! <a href="http://www.meetup.com/InlandEmpireC4L/" target="_blank">Inland Empire C4L</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_41',
     'og_theme' => NULL,
@@ -5821,7 +5943,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af914570-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5860,7 +5982,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_42',
     'og_theme' => NULL,
@@ -5872,7 +5996,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af915fbf-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5911,7 +6035,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_43',
     'og_theme' => NULL,
@@ -5923,7 +6049,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af917991-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -5962,7 +6088,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_44',
     'og_theme' => NULL,
@@ -5974,7 +6102,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af918c5c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6013,7 +6141,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_45',
     'og_theme' => NULL,
@@ -6025,7 +6155,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af91b602-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6064,7 +6194,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_46',
     'og_theme' => NULL,
@@ -6076,7 +6208,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af91c770-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6115,7 +6247,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_47',
     'og_theme' => NULL,
@@ -6127,7 +6261,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af91e257-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6166,7 +6300,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_48',
     'og_theme' => NULL,
@@ -6178,7 +6314,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af91fc78-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6217,7 +6353,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_49',
     'og_theme' => NULL,
@@ -6229,7 +6367,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af921706-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6268,7 +6406,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_50',
     'og_theme' => NULL,
@@ -6280,7 +6420,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af923175-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6319,7 +6459,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_51',
     'og_theme' => NULL,
@@ -6331,7 +6473,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af924adb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6370,7 +6512,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_52',
     'og_theme' => NULL,
@@ -6382,7 +6526,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92639e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6421,7 +6565,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c697bdf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CA_53',
     'og_theme' => NULL,
@@ -6433,7 +6579,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af927e07-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6472,7 +6618,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CO_1',
     'og_theme' => NULL,
@@ -6484,7 +6632,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9295fc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6529,7 +6677,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CO_2',
     'og_theme' => NULL,
@@ -6541,7 +6691,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92a2ac-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6623,7 +6773,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CO_3',
     'og_theme' => NULL,
@@ -6635,7 +6787,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92af56-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6674,7 +6826,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CO_4',
     'og_theme' => NULL,
@@ -6686,7 +6840,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92bbea-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6761,7 +6915,9 @@ function community_uuid_features_default_content() {
     <p><span style="font-size: large;"><strong></strong></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CO_5',
     'og_theme' => NULL,
@@ -6773,7 +6929,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92c86c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6812,7 +6968,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CO_6',
     'og_theme' => NULL,
@@ -6824,7 +6982,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92d7b4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6863,7 +7021,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6992da-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CO_7',
     'og_theme' => NULL,
@@ -6875,7 +7035,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92e4e5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6914,7 +7074,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69acbd-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CT_1',
     'og_theme' => NULL,
@@ -6926,7 +7088,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af92f1d9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -6965,7 +7127,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69acbd-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CT_2',
     'og_theme' => NULL,
@@ -6977,7 +7141,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af930761-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7016,7 +7180,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69acbd-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CT_3',
     'og_theme' => NULL,
@@ -7028,7 +7194,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af93145e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7067,7 +7233,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69acbd-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CT_4',
     'og_theme' => NULL,
@@ -7079,7 +7247,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af932a58-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7118,7 +7286,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69acbd-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'CT_5',
     'og_theme' => NULL,
@@ -7130,7 +7300,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af934153-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7169,7 +7339,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_1',
     'og_theme' => NULL,
@@ -7181,7 +7353,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af93597c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7234,7 +7406,9 @@ function community_uuid_features_default_content() {
     <p>Okaloosa/Walton County - http://ronpaul.meetup.com/959/</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_2',
     'og_theme' => NULL,
@@ -7246,7 +7420,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af93771d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7285,7 +7459,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_3',
     'og_theme' => NULL,
@@ -7297,7 +7473,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af939144-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7336,7 +7512,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_4',
     'og_theme' => NULL,
@@ -7348,7 +7526,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af93aaeb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7387,7 +7565,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_5',
     'og_theme' => NULL,
@@ -7399,7 +7579,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af93c50a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7438,7 +7618,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_6',
     'og_theme' => NULL,
@@ -7450,7 +7632,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af93e31d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7489,7 +7671,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_7',
     'og_theme' => NULL,
@@ -7501,7 +7685,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af93fcc5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7540,7 +7724,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_8',
     'og_theme' => NULL,
@@ -7552,7 +7738,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af940e8c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7605,7 +7791,9 @@ function community_uuid_features_default_content() {
     </blockquote>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_9',
     'og_theme' => NULL,
@@ -7617,7 +7805,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af942207-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7745,7 +7933,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_10',
     'og_theme' => NULL,
@@ -7757,7 +7947,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af943c3f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7796,7 +7986,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_11',
     'og_theme' => NULL,
@@ -7808,7 +8000,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af945488-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7916,7 +8108,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_12',
     'og_theme' => NULL,
@@ -7928,7 +8122,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9470d8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -7977,7 +8171,9 @@ function community_uuid_features_default_content() {
     <p><em></em></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_13',
     'og_theme' => NULL,
@@ -7989,7 +8185,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af948adb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8028,7 +8224,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_14',
     'og_theme' => NULL,
@@ -8040,7 +8238,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af94a37e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8079,7 +8277,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_15',
     'og_theme' => NULL,
@@ -8091,7 +8291,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af94bbb8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8176,7 +8376,9 @@ function community_uuid_features_default_content() {
     <p><strong></strong></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_16',
     'og_theme' => NULL,
@@ -8188,7 +8390,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af94d730-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8227,7 +8429,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_17',
     'og_theme' => NULL,
@@ -8239,7 +8443,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af94f060-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8278,7 +8482,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_18',
     'og_theme' => NULL,
@@ -8290,7 +8496,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af950948-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8329,7 +8535,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_19',
     'og_theme' => NULL,
@@ -8341,7 +8549,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af952372-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8380,7 +8588,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_20',
     'og_theme' => NULL,
@@ -8392,7 +8602,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af953fcb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8431,7 +8641,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_21',
     'og_theme' => NULL,
@@ -8443,7 +8655,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af954f8e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8482,7 +8694,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_22',
     'og_theme' => NULL,
@@ -8494,7 +8708,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9568a1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8533,7 +8747,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_23',
     'og_theme' => NULL,
@@ -8545,7 +8761,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af958313-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8584,7 +8800,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_24',
     'og_theme' => NULL,
@@ -8596,7 +8814,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af959e3b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8709,7 +8927,9 @@ function community_uuid_features_default_content() {
     <p style="text-align: center;">&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c69fafa-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'FL_25',
     'og_theme' => NULL,
@@ -8721,7 +8941,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af95b5fd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8760,7 +8980,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_1',
     'og_theme' => NULL,
@@ -8772,7 +8994,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af95cfc3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -8989,7 +9211,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_2',
     'og_theme' => NULL,
@@ -9001,7 +9225,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af95e9fc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -9040,7 +9264,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_3',
     'og_theme' => NULL,
@@ -9052,7 +9278,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9602b1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -9124,7 +9350,9 @@ function community_uuid_features_default_content() {
     <p>Rockdale County has less than 80,000 residents therefore it\'s mass meetings will be held on March 14th prior to the county convention.&nbsp; They will start promptly at 9am.&nbsp; Delegates will be chosen and then the county convention will be held.&nbsp; Stay tuned for info on the location for the Rockdale county convention.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_4',
     'og_theme' => NULL,
@@ -9136,7 +9364,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af961c80-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -9175,7 +9403,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_5',
     'og_theme' => NULL,
@@ -9187,7 +9417,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9635c0-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -9233,7 +9463,9 @@ function community_uuid_features_default_content() {
     <p>Overall the 6th District is an extremely active area for politics. Georgia Senate Majority leader Chip Rodgers is from Cherokee county.  Secretary of State Karen Handel is also from Roswell.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_6',
     'og_theme' => NULL,
@@ -9245,7 +9477,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af964f56-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -9318,7 +9550,9 @@ function community_uuid_features_default_content() {
     </ul>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_7',
     'og_theme' => NULL,
@@ -9330,7 +9564,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96693c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -9423,7 +9657,9 @@ function community_uuid_features_default_content() {
     Worth',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_8',
     'og_theme' => NULL,
@@ -9435,7 +9671,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af967b2b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -10113,7 +10349,9 @@ function community_uuid_features_default_content() {
     ',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_9',
     'og_theme' => NULL,
@@ -10125,7 +10363,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9687d5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -10164,7 +10402,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_10',
     'og_theme' => NULL,
@@ -10176,7 +10416,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af969471-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -10287,7 +10527,9 @@ function community_uuid_features_default_content() {
     <p><a href="http://g.imageshack.us/img379/spirit2mj8.jpg/1/"></a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_11',
     'og_theme' => NULL,
@@ -10299,7 +10541,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96a163-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12060,7 +12302,9 @@ function community_uuid_features_default_content() {
     ',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_12',
     'og_theme' => NULL,
@@ -12072,7 +12316,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96add9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12126,7 +12370,9 @@ function community_uuid_features_default_content() {
     Lets get this out for everyone to see ',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a1463-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'GA_13',
     'og_theme' => NULL,
@@ -12138,7 +12384,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96ba6d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12177,7 +12423,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a2ddf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'HI_1',
     'og_theme' => NULL,
@@ -12189,7 +12437,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96c6ec-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12228,7 +12476,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a2ddf-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'HI_2',
     'og_theme' => NULL,
@@ -12240,7 +12490,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96d371-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12299,7 +12549,9 @@ function community_uuid_features_default_content() {
     <p>Idaho Campaign for Liberty Interim State Coordinator</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a458d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'ID_1',
     'og_theme' => NULL,
@@ -12311,7 +12563,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96e06e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12372,7 +12624,9 @@ function community_uuid_features_default_content() {
     <p>Idaho Campaign for Liberty Interim State Coordinator</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a458d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'ID_2',
     'og_theme' => NULL,
@@ -12384,7 +12638,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96eceb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12599,7 +12853,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_1',
     'og_theme' => NULL,
@@ -12611,7 +12867,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af96f973-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12674,7 +12930,9 @@ function community_uuid_features_default_content() {
     <p><span style="color: #000080;"><em>&nbsp; </em></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_2',
     'og_theme' => NULL,
@@ -12686,7 +12944,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9705f5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -12899,7 +13157,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_3',
     'og_theme' => NULL,
@@ -12911,7 +13171,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af971275-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13071,7 +13331,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_4',
     'og_theme' => NULL,
@@ -13083,7 +13345,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af971ef7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13129,7 +13391,9 @@ function community_uuid_features_default_content() {
     <p>Whether gathering support for HR 1207, the senate version of the bill, or educating citizens on the false promise of government run healthcare we are gradually converting the Fighting 5th into the "Liberty District"!</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_5',
     'og_theme' => NULL,
@@ -13141,7 +13405,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af972b82-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13193,7 +13457,9 @@ function community_uuid_features_default_content() {
     <p><span style="color: #0000ff;"><em><span style="color: #ff0000;"><span style="color: #000080;">If you would like more information about becoming a Local Coordinator, please click<a href="faq.php#plq" target="_blank"> here</a></span></span></em></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_6',
     'og_theme' => NULL,
@@ -13205,7 +13471,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9744bc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13307,7 +13573,9 @@ function community_uuid_features_default_content() {
     </blockquote>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_7',
     'og_theme' => NULL,
@@ -13319,7 +13587,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af97521a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13378,7 +13646,9 @@ function community_uuid_features_default_content() {
     <p><span style="color: #0000ff;"><em><span style="color: #ff0000;"><span style="color: #000080;">If you would like more information about becoming a Local Coordinator, please click<a href="faq.php#plq" target="_blank"> here</a></span></span></em></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_8',
     'og_theme' => NULL,
@@ -13390,7 +13660,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af976001-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13436,7 +13706,9 @@ function community_uuid_features_default_content() {
     <p>Please visit the <a href="/forums/?state=IL&amp;region=9" target="_self">Illinois Region 9 forum</a> on Campaign for Liberty and the Illinois Region 9 Campaign for Liberty group on <a href="http://www.facebook.com/home.php#/group.php?gid=85275853908" target="_self">Facebook</a>.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_9',
     'og_theme' => NULL,
@@ -13448,7 +13720,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af97797d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13499,7 +13771,9 @@ function community_uuid_features_default_content() {
     <p>Townships:&nbsp; Libertyville, Moraine, New Trier, Northfield, Palatine, Shields, Vernon, Warren, West Deerfield, Wheeling</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_10',
     'og_theme' => NULL,
@@ -13511,7 +13785,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9793e1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13580,7 +13854,9 @@ function community_uuid_features_default_content() {
     <address><em><strong></strong></em></address></div>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_11',
     'og_theme' => NULL,
@@ -13592,7 +13868,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af97ae5e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13667,7 +13943,9 @@ function community_uuid_features_default_content() {
     </div>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_12',
     'og_theme' => NULL,
@@ -13679,7 +13957,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af97c941-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13889,7 +14167,9 @@ function community_uuid_features_default_content() {
     <p style="text-align: center;"><span style="color: #0000ff;"><em><span style="color: #ff0000;">We have an ongoing need for Local Coordinators. Our Local Coordinator training will assist you in learning the ins and outs of the political landscape at every level of government, and it is an invaluable step in the process of bringing our country back to it\'s Constitutional roots. </span></em></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_13',
     'og_theme' => NULL,
@@ -13901,7 +14181,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af97e273-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -13962,7 +14242,9 @@ function community_uuid_features_default_content() {
     <p><span style="color: #0000ff;"><em><span style="color: #ff0000;"><span style="color: #000080;">If you would like more information about becoming a Local Coordinator, please click<a href="faq.php#plq" target="_blank"> here</a></span></span></em></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_14',
     'og_theme' => NULL,
@@ -13974,7 +14256,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af97fd3b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14185,7 +14467,9 @@ function community_uuid_features_default_content() {
     <p><span style="color: #0000ff;"><em><span style="color: #ff0000;"><span style="color: #000080;">We also have many County and Regional Coordinator positions open. If you have any questions, or would like to fill any of these positions, please contact <a href="/profile.php?member=Heather_D" target="_blank">Heather Danielowski </a>or<a href="/profile.php?member=Doug.Bach" target="_blank"> Doug Bach.</a></span></span></em></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_15',
     'og_theme' => NULL,
@@ -14197,7 +14481,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9817f3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14254,7 +14538,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_16',
     'og_theme' => NULL,
@@ -14266,7 +14552,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af983246-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14310,7 +14596,9 @@ function community_uuid_features_default_content() {
     <p><strong><span style="font-size: medium;"><span style="color: #000080;">Federal Representatives:</span></span></strong><em><strong>Congressman:</strong></em>17th Congressional DistrictPhil Hare<a href="http://hare.house.gov/">http://hare.house.gov/</a> <a href="http://en.wikipedia.org/wiki/United_States_House_of_Representatives,_Illinois_District_17">http://en.wikipedia.org/wiki/United_States_House_of_Representatives,_Illinois_District_17</a> <em>Senators:</em>Roland Burris<a href="http://burris.senate.gov/">http://burris.senate.gov/</a>Dick Durbin <a href="http://www.durbin.senate.gov/">http://www.durbin.senate.gov/</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_17',
     'og_theme' => NULL,
@@ -14322,7 +14610,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af984c15-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14504,7 +14792,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_18',
     'og_theme' => NULL,
@@ -14516,7 +14806,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af986617-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14566,7 +14856,9 @@ function community_uuid_features_default_content() {
     <p>Please contact Greg Bishop with any questions at 217.633.4030 or email bishoponair@gmail.com</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a6071-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IL_19',
     'og_theme' => NULL,
@@ -14578,7 +14870,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9880b6-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14617,7 +14909,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_1',
     'og_theme' => NULL,
@@ -14629,7 +14923,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9898d4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14881,7 +15175,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_2',
     'og_theme' => NULL,
@@ -14893,7 +15189,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af98b191-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14932,7 +15228,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_3',
     'og_theme' => NULL,
@@ -14944,7 +15242,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af98cc08-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -14983,7 +15281,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_4',
     'og_theme' => NULL,
@@ -14995,7 +15295,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af98e6fa-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15034,7 +15334,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_5',
     'og_theme' => NULL,
@@ -15046,7 +15348,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af99016c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15164,7 +15466,9 @@ function community_uuid_features_default_content() {
     <p style="text-align: center;">&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_6',
     'og_theme' => NULL,
@@ -15176,7 +15480,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af991d11-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15363,7 +15667,9 @@ function community_uuid_features_default_content() {
     <p style="text-align: center;"><span style="font-size: medium;">Join the Campaign for Liberty in this historic endeavor to take back our country and restore sanity to local, state and national governments. Become a member, make a contribution, and get involved in your community.</span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_7',
     'og_theme' => NULL,
@@ -15375,7 +15681,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af993739-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15414,7 +15720,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_8',
     'og_theme' => NULL,
@@ -15426,7 +15734,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9950e5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15471,7 +15779,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a77a8-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IN_9',
     'og_theme' => NULL,
@@ -15483,7 +15793,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af996b62-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15522,7 +15832,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a91a2-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IA_1',
     'og_theme' => NULL,
@@ -15534,7 +15846,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af998394-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15573,7 +15885,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a91a2-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IA_2',
     'og_theme' => NULL,
@@ -15585,7 +15899,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af999db3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15624,7 +15938,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a91a2-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IA_3',
     'og_theme' => NULL,
@@ -15636,7 +15952,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af99b819-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15675,7 +15991,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a91a2-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IA_4',
     'og_theme' => NULL,
@@ -15687,7 +16005,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af99d673-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15726,7 +16044,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6a91a2-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'IA_5',
     'og_theme' => NULL,
@@ -15738,7 +16058,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af99efa8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15777,7 +16097,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6aab82-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KS_1',
     'og_theme' => NULL,
@@ -15789,7 +16111,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a0ae2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15828,7 +16150,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6aab82-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KS_2',
     'og_theme' => NULL,
@@ -15840,7 +16164,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a226e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15879,7 +16203,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6aab82-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KS_3',
     'og_theme' => NULL,
@@ -15891,7 +16217,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a2f68-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -15930,7 +16256,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6aab82-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KS_4',
     'og_theme' => NULL,
@@ -15942,7 +16270,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a3c0c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16003,7 +16331,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KY_1',
     'og_theme' => NULL,
@@ -16015,7 +16345,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a48ab-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16054,7 +16384,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KY_2',
     'og_theme' => NULL,
@@ -16066,7 +16398,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a5575-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16105,7 +16437,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KY_3',
     'og_theme' => NULL,
@@ -16117,7 +16451,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a6222-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16168,7 +16502,9 @@ function community_uuid_features_default_content() {
     <p><strong>Scroll down for more!</strong></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KY_4',
     'og_theme' => NULL,
@@ -16180,7 +16516,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a6f08-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16219,7 +16555,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KY_5',
     'og_theme' => NULL,
@@ -16231,7 +16569,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a7c0d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16270,7 +16608,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ac52c-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'KY_6',
     'og_theme' => NULL,
@@ -16282,7 +16622,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a8971-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16321,7 +16661,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'LA_1',
     'og_theme' => NULL,
@@ -16333,7 +16675,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9a969b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16372,7 +16714,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'LA_2',
     'og_theme' => NULL,
@@ -16384,7 +16728,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9aaef2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16423,7 +16767,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'LA_3',
     'og_theme' => NULL,
@@ -16435,7 +16781,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9abc50-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16474,7 +16820,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'LA_4',
     'og_theme' => NULL,
@@ -16486,7 +16834,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9ac9fe-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16525,7 +16873,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'LA_5',
     'og_theme' => NULL,
@@ -16537,7 +16887,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9adcf0-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16595,7 +16945,9 @@ function community_uuid_features_default_content() {
     <p>United We Stand!</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'LA_6',
     'og_theme' => NULL,
@@ -16607,7 +16959,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9aeb85-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16646,7 +16998,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6adcbb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'LA_7',
     'og_theme' => NULL,
@@ -16658,7 +17012,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9b014b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16697,7 +17051,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6af732-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'ME_1',
     'og_theme' => NULL,
@@ -16709,7 +17065,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9b1aa8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16748,7 +17104,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6af732-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'ME_2',
     'og_theme' => NULL,
@@ -16760,7 +17118,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9b308c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16799,7 +17157,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_1',
     'og_theme' => NULL,
@@ -16811,7 +17171,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9b4b83-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16850,7 +17210,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_2',
     'og_theme' => NULL,
@@ -16862,7 +17224,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9b6346-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16901,7 +17263,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_3',
     'og_theme' => NULL,
@@ -16913,7 +17277,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9b7d84-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -16952,7 +17316,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_4',
     'og_theme' => NULL,
@@ -16964,7 +17330,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9b97f5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17003,7 +17369,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_5',
     'og_theme' => NULL,
@@ -17015,7 +17383,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9bb14d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17054,7 +17422,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_6',
     'og_theme' => NULL,
@@ -17066,7 +17436,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9bc61e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17105,7 +17475,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_7',
     'og_theme' => NULL,
@@ -17117,7 +17489,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9bd2cb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17156,7 +17528,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b1165-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MD_8',
     'og_theme' => NULL,
@@ -17168,7 +17542,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9bdfdc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17207,7 +17581,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_1',
     'og_theme' => NULL,
@@ -17219,7 +17595,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9bec9d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17258,7 +17634,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_2',
     'og_theme' => NULL,
@@ -17270,7 +17648,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9bf94d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17309,7 +17687,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_3',
     'og_theme' => NULL,
@@ -17321,7 +17701,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c0650-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17360,7 +17740,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_4',
     'og_theme' => NULL,
@@ -17372,7 +17754,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c1344-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17417,7 +17799,9 @@ function community_uuid_features_default_content() {
     <p>Who is your state senator and representative? <a href="http://www.mass.gov/legis/city_town.htm">http://www.mass.gov/legis/city_town.htm</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_5',
     'og_theme' => NULL,
@@ -17429,7 +17813,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c2052-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17468,7 +17852,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_6',
     'og_theme' => NULL,
@@ -17480,7 +17866,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c3920-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17519,7 +17905,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_7',
     'og_theme' => NULL,
@@ -17531,7 +17919,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c55b0-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17570,7 +17958,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_8',
     'og_theme' => NULL,
@@ -17582,7 +17972,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c62d2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17621,7 +18011,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_9',
     'og_theme' => NULL,
@@ -17633,7 +18025,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c6faf-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17672,7 +18064,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b29cc-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MA_10',
     'og_theme' => NULL,
@@ -17684,7 +18078,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c84d3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17880,7 +18274,9 @@ function community_uuid_features_default_content() {
     </table>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_1',
     'og_theme' => NULL,
@@ -17892,7 +18288,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9c9dd2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -17950,7 +18346,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_2',
     'og_theme' => NULL,
@@ -17962,7 +18360,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9cab75-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18018,7 +18416,9 @@ function community_uuid_features_default_content() {
     <p>Use the above links for phone banks and to get to know your representitives.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_3',
     'og_theme' => NULL,
@@ -18030,7 +18430,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9cb8bc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18069,7 +18469,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_4',
     'og_theme' => NULL,
@@ -18081,7 +18483,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9cc55d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18120,7 +18522,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_5',
     'og_theme' => NULL,
@@ -18132,7 +18536,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9cd20d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18171,7 +18575,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_6',
     'og_theme' => NULL,
@@ -18183,7 +18589,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9cdeb7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18226,7 +18632,9 @@ function community_uuid_features_default_content() {
     <p>Thanks!</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_7',
     'og_theme' => NULL,
@@ -18238,7 +18646,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9ceb6d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18277,7 +18685,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>The fightin\' 8th!</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_8',
     'og_theme' => NULL,
@@ -18289,7 +18699,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9cf8b4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18336,7 +18746,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_9',
     'og_theme' => NULL,
@@ -18348,7 +18760,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d05bc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18387,7 +18799,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_10',
     'og_theme' => NULL,
@@ -18399,7 +18813,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d130c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18438,7 +18852,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>New regional profile coming soon.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_11',
     'og_theme' => NULL,
@@ -18450,7 +18866,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d202b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18489,7 +18905,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>Profile coming soon.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_12',
     'og_theme' => NULL,
@@ -18501,7 +18919,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d2d7d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18556,7 +18974,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_13',
     'og_theme' => NULL,
@@ -18568,7 +18988,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d3aa8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18607,7 +19027,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_14',
     'og_theme' => NULL,
@@ -18619,7 +19041,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d4934-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18658,7 +19080,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>The fightin\' 15th!</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c690569-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MI_15',
     'og_theme' => NULL,
@@ -18670,7 +19094,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d5ceb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18801,7 +19225,9 @@ function community_uuid_features_default_content() {
     </ul>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_1',
     'og_theme' => NULL,
@@ -18813,7 +19239,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d74cd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18852,7 +19278,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_2',
     'og_theme' => NULL,
@@ -18864,7 +19292,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9d8e58-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18903,7 +19331,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>Welcome to the Third Congressional District!  Thank you for your interest.</p><h3>Campaign for Liberty Subscriber</h3><p>As a subscriber, you will receive information and updates on C4L events in the third district.  It\'s great to take this step, but we hope you\'ll consider joining as a Precinct Leader.  It\'s the difference between being informed and involved.</p><h3>Precinct Leader</h3><p>Precinct leaders must pay the $35 annual dues (under 10 cents a day!) to get access to the precinct leader tools. After you\'re signed up and logged in, you can nominate yourself to be a county coordinator. Once that\'s done, we\'ll be able to approve you and make you the official county coordinator. As a CC, your focus is to recruit other precinct leaders for your county, and help to coordinate any events or activities that you and other local supporters might do.</p><p>Whatever you choose to do, thank you for signing up to the Campaign for Liberty.  Whether you\'re informed or involved, we will work together to return government to the people.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_3',
     'og_theme' => NULL,
@@ -18915,7 +19345,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9da8a7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -18954,7 +19384,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_4',
     'og_theme' => NULL,
@@ -18966,7 +19398,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9dc2da-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19005,7 +19437,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_5',
     'og_theme' => NULL,
@@ -19017,7 +19451,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9dd5be-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19056,7 +19490,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_6',
     'og_theme' => NULL,
@@ -19068,7 +19504,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9de28a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19107,7 +19543,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_7',
     'og_theme' => NULL,
@@ -19119,7 +19557,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9def5f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19164,7 +19602,9 @@ function community_uuid_features_default_content() {
     <p>Hope to see you there!</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b4142-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MN_8',
     'og_theme' => NULL,
@@ -19176,7 +19616,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e0568-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19627,7 +20067,9 @@ function community_uuid_features_default_content() {
     &nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_1',
     'og_theme' => NULL,
@@ -19639,7 +20081,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e1231-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19707,7 +20149,9 @@ function community_uuid_features_default_content() {
     <p>Ballwin 	<a href="http://http//www.ballwin.mo.us" target="_blank">http://www.ballwin.mo.us<br /></a>Chesterfield 	<a href="http://www.chesterfield.mo.us/site/home.jsp" target="_blank">http://www.chesterfield.mo.us/site/home.jsp<br /></a>City of Troy 	<a href="http://www.cityoftroymissouri.com" target="_blank">http://www.cityoftroymissouri.com<br /></a>Creve Coeur 	<a href="http://www.creve-coeur.org" target="_blank">http://www.creve-coeur.org<br /></a>Des Peres 	<a href="http://www.desperesmo.org/cgi-local/index.cgi" target="_blank">http://www.desperesmo.org/cgi-local/index.cgi</a>/<br />Ellisville 	<a href="http://www.ellisville.mo.us" target="_blank">http://www.ellisville.mo.us<br /></a>Eureka 	<a href="http://www.eureka.mo.us" target="_blank">http://www.eureka.mo.us</a><br />Florissant 	<a href="http://www.florissantmo.com" target="_blank">http://www.florissantmo.com</a><br />Hazelwood 	<a href="http://www.hazelwoodmo.org" target="_blank">http://www.hazelwoodmo.org</a><br />Kirkwood 	<a href="http://www.ci.kirkwood.mo.us" target="_blank">http://www.ci.kirkwood.mo.us</a><br />Lincoln County 	<a href="http://www.lcmo.us/" target="_blank">http://www.lcmo.us/</a><br />Manchester 	<a href="http://www.ci.manchester.mo.us" target="_blank">http://www.ci.manchester.mo.us</a><br />Maryland Heights 	<a href="http://www.marylandheights.com" target="_blank">http://www.marylandheights.com</a><br />O&rsquo;Fallon 	<a href="http://www.ofallon.mo.us/" target="_blank">http://www.ofallon.mo.us/</a><br />Olivette 	<a href="http://www.olivettemo.com" target="_blank">http://www.olivettemo.com</a><br />St. Charles County 	<a href="http://www.saintcharlescounty.org/" target="_blank">http://www.saintcharlescounty.org/</a><br />St. Charles 	<a href="http://www.stcharlescity.com" target="_blank">http://www.stcharlescity.com</a><br />St. Louis County 	<a href="http://www.stlouisco.com" target="_blank">http://www.stlouisco.com</a><br />St. Peters 	<a href="http://www.stpetersmo.net" target="_blank">http://www.stpetersmo.net</a><br />Town &amp; Country 	<a href="http://www.town-and-country.org" target="_blank">http://www.town-and-country.org</a><br />Wentzville 	<a href="http://www.wentzvillemo.org" target="_blank">http://www.wentzvillemo.org</a><br />Valley Park 	<a href="http://www.valleyparkmo.org/" target="_blank">http://www.valleyparkmo.org/<br /></a>Fenton 	<a href="http://www.fentonmo.org/" target="_blank">http://www.fentonmo.org/</a><br />Sunset Hills 	<a href="http://www.sunset-hills.com/" target="_blank">http://www.sunset-hills.com/<br /></a>Crestwood 	<a href="http://www.ci.crestwood.mo.us/" target="_blank">http://www.ci.crestwood.mo.us/<br /></a>Grantwood Village 	<a href="http://www.grantwoodvillage.com/" target="_blank">http://www.grantwoodvillage.com/</a><br />Warson Woods 	<a href="http://www.warsonwoods.com/" target="_blank">http://www.warsonwoods.com/</a><br />Frontenac 	<a href="http://www.cityoffrontenac.org/" target="_blank">http://www.cityoffrontenac.org/</a><br />Clayton 	<a href="http://www.ci.clayton.mo.us/" target="_blank">http://www.ci.clayton.mo.us/</a><br />Clarkson Valley 	<a href="http://www.clarksonvalley.org/" target="_blank">http://www.clarksonvalley.org/</a><br />Cottleville 	<a href="http://www.cityofcottleville.com/" target="_blank">http://www.cityofcottleville.com/</a><br />St. Paul 	<a href="http://www.stpaulmissouri.com/" target="_blank">http://www.stpaulmissouri.com/</a><br />Weldon Spring 	<a href="http://www.weldonspring.org/" target="_blank">http://www.weldonspring.org/</a><br />Dardenne Prairie 	<a href="http://www.dardenneprairie.org/" target="_blank">http://www.dardenneprairie.org/<br /></a>Twin Oaks 	<a href="http://vil.twin-oaks.mo.us/" target="_blank">http://vil.twin-oaks.mo.us/</a><br />Winchester 	<a href="http://www.winchestermissouri.com/" target="_blank">http://www.winchestermissouri.com/</a><br />Crystal Lake Park 	<a href="http://www.crystallakepark.org/" target="_blank">http://www.crystallakepark.org/<br /></a>Brentwood 	<a href="http://www.brentwoodmo.org/" target="_blank">http://www.brentwoodmo.org/</a><br />Glendale 	<a href="http://www.glendalemo.org/" target="_blank">http://www.glendalemo.org/</a><br />Richmond Heights 	<a href="http://www.richmondheights.org/" target="_blank">http://www.richmondheights.org</a><br />Wildwood 	<a href="http://www.cityofwildwood.com" target="_blank">http://www.cityofwildwood.com</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_2',
     'og_theme' => NULL,
@@ -19719,7 +20163,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e1fa6-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19811,7 +20255,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_3',
     'og_theme' => NULL,
@@ -19823,7 +20269,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e2e93-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19886,7 +20332,9 @@ function community_uuid_features_default_content() {
     <p>*Counties overlap with other Districts.&nbsp; Part of Camden (NE corner) is also in District 9, Jackson overlaps with District 5 to the West, the Northern part of Cass is also in District 5, and a large part of the Southeast area of Polk is in District 7.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_4',
     'og_theme' => NULL,
@@ -19898,7 +20346,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e3bdd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -19961,7 +20409,9 @@ function community_uuid_features_default_content() {
     <p>Thanks for all that you do for liberty!&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_5',
     'og_theme' => NULL,
@@ -19973,7 +20423,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e5640-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20042,7 +20492,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_6',
     'og_theme' => NULL,
@@ -20054,7 +20506,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e7171-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20110,7 +20562,9 @@ function community_uuid_features_default_content() {
     <p>The monied interests have been taking our freedom a little at a time by starting so many fires we cannot possibly put them all out. We need to use the same technique to get our freedom back: have so many efforts on so many fronts pushing from so many directions: <strong>private charity and personnal compassion, sustainable and fiscally responsible community, sound money, home school and private education, free speech and freedom to practice our religion, protection of the second amendment and training of citizens to use it responsibly. citizen initiatives and referenda, strong local candidates for office</strong>, that they cannot possibly stomp them all out. Only that way can we save our troubled national government and only that way does it cease to matter one way or another what they do in Washington.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_7',
     'og_theme' => NULL,
@@ -20122,7 +20576,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9e8bc9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20161,7 +20615,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_8',
     'og_theme' => NULL,
@@ -20173,7 +20629,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9ea56a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20212,7 +20668,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b5aa7-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MO_9',
     'og_theme' => NULL,
@@ -20224,7 +20682,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9ec269-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20263,7 +20721,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b7256-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MS_1',
     'og_theme' => NULL,
@@ -20275,7 +20735,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9edac2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20314,7 +20774,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b7256-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MS_2',
     'og_theme' => NULL,
@@ -20326,7 +20788,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9ef3ef-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20365,7 +20827,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b7256-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MS_3',
     'og_theme' => NULL,
@@ -20377,7 +20841,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9f1059-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20416,7 +20880,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6b7256-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'MS_4',
     'og_theme' => NULL,
@@ -20428,7 +20894,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9f28aa-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20474,7 +20940,9 @@ function community_uuid_features_default_content() {
     <p>Congressman Fortenberry has signed on as a co-sponsor of H.R. 1207.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ba2b3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NE_1',
     'og_theme' => NULL,
@@ -20486,7 +20954,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9f430d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20532,7 +21000,9 @@ function community_uuid_features_default_content() {
     ',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ba2b3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NE_2',
     'og_theme' => NULL,
@@ -20544,7 +21014,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9f5c7e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20596,7 +21066,9 @@ function community_uuid_features_default_content() {
     Rich in heritage and history, Nebraska',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ba2b3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NE_3',
     'og_theme' => NULL,
@@ -20608,7 +21080,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9f7756-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20661,7 +21133,9 @@ function community_uuid_features_default_content() {
     <p><span style="text-decoration: underline;">Assembly:</span> <a href="http://www.accessclarkcounty.com/depts/election/English/pages/StateAssembly.aspx">http://www.accessclarkcounty.com/depts/election/English/pages/StateAssembly.aspx</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bbc10-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NV_1',
     'og_theme' => NULL,
@@ -20673,7 +21147,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9f916a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20712,7 +21186,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bbc10-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NV_2',
     'og_theme' => NULL,
@@ -20724,7 +21200,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9fac72-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20763,7 +21239,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bbc10-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NV_3',
     'og_theme' => NULL,
@@ -20775,7 +21253,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9fc6a2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20814,7 +21292,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6877cb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NH_1',
     'og_theme' => NULL,
@@ -20826,7 +21306,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9fdfa1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20865,7 +21345,9 @@ function community_uuid_features_default_content() {
         'value' => '<br />',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6877cb-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NH_2',
     'og_theme' => NULL,
@@ -20877,7 +21359,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'af9ffa0d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20916,7 +21398,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_1',
     'og_theme' => NULL,
@@ -20928,7 +21412,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa0142c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -20967,7 +21451,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_2',
     'og_theme' => NULL,
@@ -20979,7 +21465,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa02e2b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21018,7 +21504,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_3',
     'og_theme' => NULL,
@@ -21030,7 +21518,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa04716-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21069,7 +21557,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_4',
     'og_theme' => NULL,
@@ -21081,7 +21571,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa060ee-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21120,7 +21610,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_5',
     'og_theme' => NULL,
@@ -21132,7 +21624,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa0786c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21171,7 +21663,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>NJ-6 is currently Frank Pallone\'s district. BUt C4L is working to ensure the people are informed of the more Constitutional candidates running in 2010! Come back for more details as events get planned.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_6',
     'og_theme' => NULL,
@@ -21183,7 +21677,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa092f4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21222,7 +21716,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_7',
     'og_theme' => NULL,
@@ -21234,7 +21730,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa0aab1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21273,7 +21769,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_8',
     'og_theme' => NULL,
@@ -21285,7 +21783,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa0bc6f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21324,7 +21822,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_9',
     'og_theme' => NULL,
@@ -21336,7 +21836,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa0d711-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21375,7 +21875,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_10',
     'og_theme' => NULL,
@@ -21387,7 +21889,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa0f178-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21426,7 +21928,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_11',
     'og_theme' => NULL,
@@ -21438,7 +21942,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa10d1d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21477,7 +21981,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_12',
     'og_theme' => NULL,
@@ -21489,7 +21995,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa125f7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21528,7 +22034,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6bd584-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NJ_13',
     'og_theme' => NULL,
@@ -21540,7 +22048,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa13faf-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21579,7 +22087,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6beed5-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NM_1',
     'og_theme' => NULL,
@@ -21591,7 +22101,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa15903-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21630,7 +22140,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6beed5-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NM_2',
     'og_theme' => NULL,
@@ -21642,7 +22154,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa173df-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21681,7 +22193,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6beed5-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NM_3',
     'og_theme' => NULL,
@@ -21693,7 +22207,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa180f8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21763,7 +22277,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_1',
     'og_theme' => NULL,
@@ -21775,7 +22291,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa18e2e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21814,7 +22330,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_2',
     'og_theme' => NULL,
@@ -21826,7 +22344,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa1a755-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21865,7 +22383,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_3',
     'og_theme' => NULL,
@@ -21877,7 +22397,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa1c282-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21916,7 +22436,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_4',
     'og_theme' => NULL,
@@ -21928,7 +22450,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa1da72-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -21967,7 +22489,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_5',
     'og_theme' => NULL,
@@ -21979,7 +22503,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa1f763-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22018,7 +22542,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_6',
     'og_theme' => NULL,
@@ -22030,7 +22556,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa210a3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22069,7 +22595,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_7',
     'og_theme' => NULL,
@@ -22081,7 +22609,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa22983-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22120,7 +22648,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_8',
     'og_theme' => NULL,
@@ -22132,7 +22662,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa23d23-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22171,7 +22701,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_9',
     'og_theme' => NULL,
@@ -22183,7 +22715,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa24a53-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22222,7 +22754,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_10',
     'og_theme' => NULL,
@@ -22234,7 +22768,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa257a9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22273,7 +22807,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_11',
     'og_theme' => NULL,
@@ -22285,7 +22821,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa26956-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22324,7 +22860,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_12',
     'og_theme' => NULL,
@@ -22336,7 +22874,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa27af2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22375,7 +22913,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_13',
     'og_theme' => NULL,
@@ -22387,7 +22927,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa287fb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22426,7 +22966,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_14',
     'og_theme' => NULL,
@@ -22438,7 +22980,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2961d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22477,7 +23019,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_15',
     'og_theme' => NULL,
@@ -22489,7 +23033,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2a2ef-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22528,7 +23072,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_16',
     'og_theme' => NULL,
@@ -22540,7 +23086,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2b06a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22579,7 +23125,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_17',
     'og_theme' => NULL,
@@ -22591,7 +23139,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2be20-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22630,7 +23178,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_18',
     'og_theme' => NULL,
@@ -22642,7 +23192,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2cac7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22681,7 +23231,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_19',
     'og_theme' => NULL,
@@ -22693,7 +23245,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2d7d2-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22732,7 +23284,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_20',
     'og_theme' => NULL,
@@ -22744,7 +23298,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2e5bc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22783,7 +23337,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_21',
     'og_theme' => NULL,
@@ -22795,7 +23351,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa2f320-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22834,7 +23390,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_22',
     'og_theme' => NULL,
@@ -22846,7 +23404,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa30acb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22885,7 +23443,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_23',
     'og_theme' => NULL,
@@ -22897,7 +23457,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa31854-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22936,7 +23496,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_24',
     'og_theme' => NULL,
@@ -22948,7 +23510,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa325ba-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -22987,7 +23549,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_25',
     'og_theme' => NULL,
@@ -22999,7 +23563,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa338af-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23038,7 +23602,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>Includes Genesee, Wyoming, Livingston and parts of Erie, Niagara, Orleans and Monroe Counties.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_26',
     'og_theme' => NULL,
@@ -23050,7 +23616,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa34797-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23089,7 +23655,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_27',
     'og_theme' => NULL,
@@ -23101,7 +23669,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3577f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23140,7 +23708,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_28',
     'og_theme' => NULL,
@@ -23152,7 +23722,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa364c9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23191,7 +23761,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c089f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NY_29',
     'og_theme' => NULL,
@@ -23203,7 +23775,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3718f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23242,7 +23814,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_1',
     'og_theme' => NULL,
@@ -23254,7 +23828,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa37e37-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23293,7 +23867,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_2',
     'og_theme' => NULL,
@@ -23305,7 +23881,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa38afb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23344,7 +23920,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_3',
     'og_theme' => NULL,
@@ -23356,7 +23934,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa397f8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23395,7 +23973,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_4',
     'og_theme' => NULL,
@@ -23407,7 +23987,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3a4fd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23446,7 +24026,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_5',
     'og_theme' => NULL,
@@ -23458,7 +24040,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3b28e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23497,7 +24079,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_6',
     'og_theme' => NULL,
@@ -23509,7 +24093,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3c62f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23548,7 +24132,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_7',
     'og_theme' => NULL,
@@ -23560,7 +24146,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3d42c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23625,7 +24211,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_8',
     'og_theme' => NULL,
@@ -23637,7 +24225,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3e173-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23676,7 +24264,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_9',
     'og_theme' => NULL,
@@ -23688,7 +24278,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3ef9e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23727,7 +24317,9 @@ function community_uuid_features_default_content() {
         'value' => 'We already have some dedicated troops in our district, and are growing stronger month by month.  Educate, mobilize and  fight smart...',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_10',
     'og_theme' => NULL,
@@ -23739,7 +24331,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa3fcb5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23778,7 +24370,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_11',
     'og_theme' => NULL,
@@ -23790,7 +24384,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa40970-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23829,7 +24423,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_12',
     'og_theme' => NULL,
@@ -23841,7 +24437,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa415fe-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -23880,7 +24476,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c201f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'NC_13',
     'og_theme' => NULL,
@@ -23892,7 +24490,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa42312-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -24111,7 +24709,9 @@ function community_uuid_features_default_content() {
     <p><a href="http://www.downsizedc.org/" target="_blank">Downsize DC</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_1',
     'og_theme' => NULL,
@@ -24123,7 +24723,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa42fb3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -24409,7 +25009,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_2',
     'og_theme' => NULL,
@@ -24421,7 +25023,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa43c27-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -24460,7 +25062,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_3',
     'og_theme' => NULL,
@@ -24472,7 +25076,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa44943-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -24511,7 +25115,9 @@ function community_uuid_features_default_content() {
         'value' => 'Ohio Congressional District 4 for Freedom and Peace.',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_4',
     'og_theme' => NULL,
@@ -24523,7 +25129,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa45621-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -24562,7 +25168,9 @@ function community_uuid_features_default_content() {
         'value' => 'Congressman: Robert Latta',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_5',
     'og_theme' => NULL,
@@ -24574,7 +25182,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa4637c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -24613,7 +25221,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_6',
     'og_theme' => NULL,
@@ -24625,7 +25235,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa47970-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25078,7 +25688,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_7',
     'og_theme' => NULL,
@@ -25090,7 +25702,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa4926c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25129,7 +25741,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_8',
     'og_theme' => NULL,
@@ -25141,7 +25755,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa4af82-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25180,7 +25794,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_9',
     'og_theme' => NULL,
@@ -25192,7 +25808,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa4c193-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25231,7 +25847,9 @@ function community_uuid_features_default_content() {
         'value' => '<p><img src="&lt;iframe width=&quot;425&quot; height=&quot;300&quot; frameborder=&quot;0&quot;  scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot;  src=&quot;http://www.govtrack.us/embed/mapframe.xpd?state=OH&amp;district=10&amp;bounds=-82.24639892578125,41.52708581365465,-81.41693115234375,41.26232380214859&quot;&gt;&lt;/iframe&gt;" alt="Ohio Congressional District 10" /></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_10',
     'og_theme' => NULL,
@@ -25243,7 +25861,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa4dc7c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25282,7 +25900,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_11',
     'og_theme' => NULL,
@@ -25294,7 +25914,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa4f4e4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25333,7 +25953,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_12',
     'og_theme' => NULL,
@@ -25345,7 +25967,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa50368-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25384,7 +26006,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_13',
     'og_theme' => NULL,
@@ -25396,7 +26020,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa51249-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25506,7 +26130,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_14',
     'og_theme' => NULL,
@@ -25518,7 +26144,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa52695-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25557,7 +26183,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_15',
     'og_theme' => NULL,
@@ -25569,7 +26197,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5396e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -25778,7 +26406,9 @@ function community_uuid_features_default_content() {
     <p><a href="https://secure.downsizedc.org/etp/campaigns/27" target="_blank"></a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_16',
     'og_theme' => NULL,
@@ -25790,7 +26420,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa546c9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26033,7 +26663,9 @@ function community_uuid_features_default_content() {
     <p style="text-align: center;"><a href="http://www.sos.state.oh.us/SOS/" target="_blank"></a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_17',
     'og_theme' => NULL,
@@ -26045,7 +26677,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa55513-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26084,7 +26716,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c503b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OH_18',
     'og_theme' => NULL,
@@ -26096,7 +26730,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5656d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26135,7 +26769,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c5c4e-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OK_1',
     'og_theme' => NULL,
@@ -26147,7 +26783,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa57228-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26186,7 +26822,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c5c4e-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OK_2',
     'og_theme' => NULL,
@@ -26198,7 +26836,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa57ede-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26237,7 +26875,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c5c4e-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OK_3',
     'og_theme' => NULL,
@@ -26249,7 +26889,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa58b8e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26288,7 +26928,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c5c4e-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OK_4',
     'og_theme' => NULL,
@@ -26300,7 +26942,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa59846-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26339,7 +26981,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c5c4e-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OK_5',
     'og_theme' => NULL,
@@ -26351,7 +26995,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5a590-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26390,7 +27034,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c6831-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OR_1',
     'og_theme' => NULL,
@@ -26402,7 +27048,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5b2c1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26441,7 +27087,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c6831-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OR_2',
     'og_theme' => NULL,
@@ -26453,7 +27101,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5c8a1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26492,7 +27140,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c6831-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OR_3',
     'og_theme' => NULL,
@@ -26504,7 +27154,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5d7b9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26543,7 +27193,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c6831-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OR_4',
     'og_theme' => NULL,
@@ -26555,7 +27207,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5e47a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26594,7 +27246,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c6831-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'OR_5',
     'og_theme' => NULL,
@@ -26606,7 +27260,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5f12a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -26645,7 +27299,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_1',
     'og_theme' => NULL,
@@ -26657,7 +27313,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa5fdeb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -27618,7 +28274,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_2',
     'og_theme' => NULL,
@@ -27630,7 +28288,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa60b3a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -27669,7 +28327,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_3',
     'og_theme' => NULL,
@@ -27681,7 +28341,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa618bd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -27720,7 +28380,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_4',
     'og_theme' => NULL,
@@ -27732,7 +28394,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa62f8d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -27771,7 +28433,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_5',
     'og_theme' => NULL,
@@ -27783,7 +28447,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa63d05-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -27822,7 +28486,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_6',
     'og_theme' => NULL,
@@ -27834,7 +28500,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa64a71-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -27873,7 +28539,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_7',
     'og_theme' => NULL,
@@ -27885,7 +28553,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa65d77-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -27956,7 +28624,9 @@ function community_uuid_features_default_content() {
     <p class="MsoNormal" style="margin: 0in 0in 10pt;"><span style="font-size: small; font-family: Calibri;"><span style="font-family: Trebuchet MS;"><strong></strong></span></span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_8',
     'og_theme' => NULL,
@@ -27968,7 +28638,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa66e43-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28007,7 +28677,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_9',
     'og_theme' => NULL,
@@ -28019,7 +28691,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa6a7dd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28058,7 +28730,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_10',
     'og_theme' => NULL,
@@ -28070,7 +28744,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa6be82-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28109,7 +28783,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_11',
     'og_theme' => NULL,
@@ -28121,7 +28797,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa6cbda-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28160,7 +28836,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_12',
     'og_theme' => NULL,
@@ -28172,7 +28850,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa6d907-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28211,7 +28889,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_13',
     'og_theme' => NULL,
@@ -28223,7 +28903,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa6eb24-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28262,7 +28942,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_14',
     'og_theme' => NULL,
@@ -28274,7 +28956,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa6f890-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28313,7 +28995,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_15',
     'og_theme' => NULL,
@@ -28325,7 +29009,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa7082b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28364,7 +29048,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_16',
     'og_theme' => NULL,
@@ -28376,7 +29062,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa716ac-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28415,7 +29101,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_17',
     'og_theme' => NULL,
@@ -28427,7 +29115,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa72a0e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28466,7 +29154,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_18',
     'og_theme' => NULL,
@@ -28478,7 +29168,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa73790-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28517,7 +29207,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c742a-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'PA_19',
     'og_theme' => NULL,
@@ -28529,7 +29221,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa74857-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28568,7 +29260,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8021-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'RI_1',
     'og_theme' => NULL,
@@ -28580,7 +29274,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa756c1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28619,7 +29313,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8021-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'RI_2',
     'og_theme' => NULL,
@@ -28631,7 +29327,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa76471-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28670,7 +29366,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>Hello District One! I am going to be working on getting our site updated. Please stay tuned as I will be making more progress over the next few days. Until then, keep up the good fight!&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'SC_1',
     'og_theme' => NULL,
@@ -28682,7 +29380,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa7754c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28772,7 +29470,9 @@ function community_uuid_features_default_content() {
     <p>Joe Wilson Represents the 2<sup>nd</sup> district in Washington, D.C.&nbsp; You can find his contact information <a href="http://joewilson.house.gov/index.cfm?SectionID=10&amp;ParentID=0&amp;SectionTypeID=5&amp;SectionTree=10">here</a>.&nbsp; I find that e-mail largely gets ignored by the folks in DC.&nbsp; It is better to use the phone, mail or a fax.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'SC_2',
     'og_theme' => NULL,
@@ -28784,7 +29484,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa783c4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28823,7 +29523,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'SC_3',
     'og_theme' => NULL,
@@ -28835,7 +29537,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa79510-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28874,7 +29576,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'SC_4',
     'og_theme' => NULL,
@@ -28886,7 +29590,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa7cb3e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28945,7 +29649,9 @@ function community_uuid_features_default_content() {
     <p>Junior - <a href="http://demint.senate.gov/public/index.cfm?FuseAction=Contact.Offices" target="_blank">U.S. Senator Jim W. DeMint</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'SC_5',
     'og_theme' => NULL,
@@ -28957,7 +29663,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa7d8bb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -28996,7 +29702,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6c8c1d-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'SC_6',
     'og_theme' => NULL,
@@ -29008,7 +29716,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa7e5c1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29047,7 +29755,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>Welcome, all you patriots of Northeast Tennessee!&nbsp;&nbsp;Are you frustrated by your feeling of helplessness?&nbsp; Are you angry every time you see more news about an already bloated government overspending your money?&nbsp; Are you sick of more and more government intrusion into your life?&nbsp; You are NOT alone!&nbsp; Our members are working hard in District 1 to make a difference in our state and nation.&nbsp; Join us&nbsp;in this grass roots effort to restore our Republic.&nbsp; Use the tools you find here to educate yourself and inform others.&nbsp; Together, we can make this happen.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_1',
     'og_theme' => NULL,
@@ -29059,7 +29769,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa7f33b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29098,7 +29808,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_2',
     'og_theme' => NULL,
@@ -29110,7 +29822,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa80b23-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29158,7 +29870,9 @@ function community_uuid_features_default_content() {
     <p>It is&nbsp;<span style="text-decoration: underline;">critical</span> that they hear from us&nbsp;with reasons for supporting or opposing particular legislation.&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_3',
     'og_theme' => NULL,
@@ -29170,7 +29884,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa81c44-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29227,7 +29941,9 @@ function community_uuid_features_default_content() {
     </span></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_4',
     'og_theme' => NULL,
@@ -29239,7 +29955,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa82a28-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29278,7 +29994,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>The 5th Congressional District of Tennessee is a congressional district in Middle Tennessee. The most regularly drawn of the state\'s nine districts, it currently includes almost all of Davidson County, half of Wilson County, and half of Cheatham County. Nearly two-thirds of the district\'s voting population lives in the state capital, Nashville.<br /><br />Democrat Jim Cooper, a former representative from the 4th District in southern middle Tennessee, has represented the 5th since 2003<br /><br />The 5th is a very safe seat for the Democratic Party, due almost entirely to the influence of heavily Democratic Nashville. Some pockets of Republican influence exist in some wealthier Nashville neighborhoods (e.g., Belle Meade, Green Hills), and portions of neighboring Cheatham and Wilson counties undergoing rapid suburbanization. However, they are no match for the overwhelming Democratic trend in most of Nashville. While Republicans made several strong bids for the district in the late 1960s and early 1970s (largely over racial issues such as a 1971 busing order), they have only put up token candidates since 1972. At the federal level, the district has supported the Democrats\' presidential candidate in every election except two--in 1968 (when it supported George Wallace) and 1972 (when it supported Richard Nixon). Even Walter Mondale, who badly trailed Ronald Reagan in 1984 throughout Tennessee, won Davidson County by a healthy margin.<br /><br />Demographics are a major factor behind the Democrats\' near-absolute dominance of the political scene. Many conservative white voters (including Nashville natives) have increasingly moved out of Metro Nashville/Davidson County to more "family-friendly" Republican suburban counties such as Williamson and Sumner. They have been replaced largely by liberal-oriented constituencies such as students (and alumni) of the Nashville area\'s several colleges and universities, music industry professionals (especially in the growing non-country genres), and white-collar professionals, in a manner similar to that of cities such as Atlanta, Raleigh/Durham, and Austin. In the entire state, only Memphis has anything like a sizable constituency of progressive-minded whites that Nashville has. The clout of Nashville\'s African-American electorate, a traditionally Democratic constituency, has grown steadily in recent years as well.<br /><br />Generally, the 5th is one of three seats in Tennessee that are usually not seriously contested by Republicans (the others being the 8th and 9th districts).<br /><br />Most of voting population of Tennessee\'s 5th congressional district lives in Nashville. Other cities represented include Ashland City, Pegram, and Pleasant View in Cheatham County; and Green Hill, Lebanon, Mount Juliet, and Rural Hill in Wilson County.<br /><br /><br />History of district boundaries<br /><br />Tennessee has had at least five congressional districts since 1827. The district\'s current configuration dates from 1951, when Tennessee lost a seat in redistricting. The Tennessee General Assembly shifted most of the territory of the former 6th District to neighboring districts, creating a 5th District located entirely in Davidson County. While other areas around Nashville have been added in subsequent years, the 5th has been drawn as a Nashville-based district ever since.<br /><br />Below are the counties included in Tennessee District 5 from 1921 to 2000:<br /><br />1921-1930: Bedford, Cannon, Coffee, DeKalb, Lincoln, Marshall, Moore, Rutherford<br />1931-1940: Davidson, Macon, Montgomery, Robertson, Stewart, Sumner, Trousdale<br />1941-1950: Bedford, Cannon, Coffee, DeKalb, Franklin, Giles, Lincoln, Marshall, Moore, Rutherford, Wilson<br />1951-1970: Davidson<br />1971-1980: Cheatham, Davidson, Robertson<br />1981-1990: Davidson and Robertson<br />1991-2000: Davidson and most of Robertson<br />Source: Tennessee Blue Books</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_5',
     'og_theme' => NULL,
@@ -29290,7 +30008,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa83ce5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29341,7 +30059,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_6',
     'og_theme' => NULL,
@@ -29353,7 +30073,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa84e1a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29429,7 +30149,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;Join <a title="Campaign For Liberty" href="http://apps.facebook.com/causes/93500/27275991?m=71bb3202">Facebook Cause Campaign for Liberty!</a></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_7',
     'og_theme' => NULL,
@@ -29441,7 +30163,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa85e85-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29480,7 +30202,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_8',
     'og_theme' => NULL,
@@ -29492,7 +30216,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa86c55-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29531,7 +30255,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ca516-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TN_9',
     'og_theme' => NULL,
@@ -29543,7 +30269,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa87ba9-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29582,7 +30308,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_1',
     'og_theme' => NULL,
@@ -29594,7 +30322,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa88b77-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29633,7 +30361,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_2',
     'og_theme' => NULL,
@@ -29645,7 +30375,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa89adf-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29684,7 +30414,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_3',
     'og_theme' => NULL,
@@ -29696,7 +30428,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa8a8e5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29735,7 +30467,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_4',
     'og_theme' => NULL,
@@ -29747,7 +30481,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa8b850-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29786,7 +30520,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_5',
     'og_theme' => NULL,
@@ -29798,7 +30534,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa8cd93-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29837,7 +30573,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_6',
     'og_theme' => NULL,
@@ -29849,7 +30587,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa8db3b-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29888,7 +30626,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_7',
     'og_theme' => NULL,
@@ -29900,7 +30640,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa8e7ff-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29939,7 +30679,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_8',
     'og_theme' => NULL,
@@ -29951,7 +30693,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa8f4a6-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -29990,7 +30732,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_9',
     'og_theme' => NULL,
@@ -30002,7 +30746,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa90204-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30041,7 +30785,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_10',
     'og_theme' => NULL,
@@ -30053,7 +30799,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa94322-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30092,7 +30838,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_11',
     'og_theme' => NULL,
@@ -30104,7 +30852,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa9511d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30143,7 +30891,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_12',
     'og_theme' => NULL,
@@ -30155,7 +30905,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa95ea0-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30194,7 +30944,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_13',
     'og_theme' => NULL,
@@ -30206,7 +30958,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa96c45-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30245,7 +30997,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_14',
     'og_theme' => NULL,
@@ -30257,7 +31011,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa97f5f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30296,7 +31050,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_15',
     'og_theme' => NULL,
@@ -30308,7 +31064,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa99504-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30347,7 +31103,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_16',
     'og_theme' => NULL,
@@ -30359,7 +31117,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa9a5e7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30398,7 +31156,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_17',
     'og_theme' => NULL,
@@ -30410,7 +31170,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa9b602-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30449,7 +31209,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_18',
     'og_theme' => NULL,
@@ -30461,7 +31223,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa9c4e1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30500,7 +31262,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_19',
     'og_theme' => NULL,
@@ -30512,7 +31276,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa9d4cc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30551,7 +31315,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_20',
     'og_theme' => NULL,
@@ -30563,7 +31329,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa9e84d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30602,7 +31368,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_21',
     'og_theme' => NULL,
@@ -30614,7 +31382,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afa9f6b7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30653,7 +31421,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_22',
     'og_theme' => NULL,
@@ -30665,7 +31435,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa04af-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30704,7 +31474,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_23',
     'og_theme' => NULL,
@@ -30716,7 +31488,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa1343-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30755,7 +31527,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_24',
     'og_theme' => NULL,
@@ -30767,7 +31541,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa2200-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30806,7 +31580,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_25',
     'og_theme' => NULL,
@@ -30818,7 +31594,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa30dc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30857,7 +31633,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_26',
     'og_theme' => NULL,
@@ -30869,7 +31647,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa3f5d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30908,7 +31686,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_27',
     'og_theme' => NULL,
@@ -30920,7 +31700,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa4c95-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -30959,7 +31739,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_28',
     'og_theme' => NULL,
@@ -30971,7 +31753,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa5a02-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31010,7 +31792,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_29',
     'og_theme' => NULL,
@@ -31022,7 +31806,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa6874-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31061,7 +31845,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_30',
     'og_theme' => NULL,
@@ -31073,7 +31859,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa75b5-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31112,7 +31898,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_31',
     'og_theme' => NULL,
@@ -31124,7 +31912,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa831f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31163,7 +31951,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cb1c3-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'TX_32',
     'og_theme' => NULL,
@@ -31175,7 +31965,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa919a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31214,7 +32004,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ccd38-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'UT_1',
     'og_theme' => NULL,
@@ -31226,7 +32018,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaa9ed8-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31458,7 +32250,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ccd38-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'UT_2',
     'og_theme' => NULL,
@@ -31470,7 +32264,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaaac7a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31509,7 +32303,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6ccd38-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'UT_3',
     'og_theme' => NULL,
@@ -31521,7 +32317,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaab963-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31596,7 +32392,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_1',
     'og_theme' => NULL,
@@ -31608,7 +32406,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaac79a-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31647,7 +32445,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_2',
     'og_theme' => NULL,
@@ -31659,7 +32459,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaad615-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31698,7 +32498,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_3',
     'og_theme' => NULL,
@@ -31710,7 +32512,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaae3b1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31749,7 +32551,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>From Chesapeake to Chesterfield, the 4th District of Virginia is large and diverse. &nbsp;This particular district is served by Republican&nbsp;<a href="http://forbes.house.gov/" target="_self">Representative Randy Forbes</a>&nbsp;in the U.S. Congress.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_4',
     'og_theme' => NULL,
@@ -31761,7 +32565,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaaf0ed-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31800,7 +32604,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_5',
     'og_theme' => NULL,
@@ -31812,7 +32618,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaafe65-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31880,7 +32686,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_6',
     'og_theme' => NULL,
@@ -31892,7 +32700,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab0ca1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31931,7 +32739,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_7',
     'og_theme' => NULL,
@@ -31943,7 +32753,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab19dc-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -31982,7 +32792,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_8',
     'og_theme' => NULL,
@@ -31994,7 +32806,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab2743-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32033,7 +32845,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_9',
     'og_theme' => NULL,
@@ -32045,7 +32859,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab36c7-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32084,7 +32898,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_10',
     'og_theme' => NULL,
@@ -32096,7 +32912,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab45a3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32158,7 +32974,9 @@ function community_uuid_features_default_content() {
     <p><strong><a href="http://www.americancivicliteracy.org/">How civilly literate are you?</a>&nbsp;(scroll down to the bottom right to take the quiz)</strong></p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6cf6db-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'VA_11',
     'og_theme' => NULL,
@@ -32170,7 +32988,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab5429-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32268,7 +33086,9 @@ function community_uuid_features_default_content() {
     </table>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_1',
     'og_theme' => NULL,
@@ -32280,7 +33100,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab629f-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32319,7 +33139,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_2',
     'og_theme' => NULL,
@@ -32331,7 +33153,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab711d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32370,7 +33192,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>Dear Liberty Campaigners,<br /><br /><br />Save the date for the most exciting event of the New Year!&nbsp; <strong>On February 5th at 6:00 PM, Campaign for Liberty is hosting a special evening with former New Mexico Governor Gary Johnson at the Fort Vancouver High school: 5700 East 18th Street Vancouver, WA 98661-6898&nbsp; Governor Johnson will be speaking about the economy and civil liberties. </strong><br /><br />Governor Gary Johnson was a successful two-term governor who actually cut taxes and shrank state government.&nbsp; He knows what it takes to achieve limited government.&nbsp; Is it possible for a sitting governor to veto 750 bills?&nbsp; Gov. Gary Johnson did just that.&nbsp; He eliminated New Mexico\'s budget deficit and reduced the number of state employees by more than 1,200.&nbsp; He took decisive action knowing that it was the right thing to do and that it had to be done.&nbsp; That takes courage and leadership -- leadership that is sorely lacking in most politicians. <br /><br /><strong>Governor Gary Johnson\'s leadership is more relevant now than ever in this difficult time in our nation\'s history, where true leadership is lacking from the White House to the State House.&nbsp;</strong> Don\'t miss this once in a lifetime opportunity to hear Governor Johnson inspire you, the grassroots, to reclaim your constitutional republic!<br /><br />Thank you!<br />Katja Delavar and Kenny Smith<br />Interim State Coordinator and Clark County Coordinator<br />Campaign for Liberty<br /><br /><br />P.S. Please mark your calendar for February 5th so that you don\'t miss this event!&nbsp; A donation of $5 will be appreciated but not mandatory at the door. You will also be briefed on this year\'s local Campaign for Liberty events.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_3',
     'og_theme' => NULL,
@@ -32382,7 +33206,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab80a4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32421,7 +33245,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_4',
     'og_theme' => NULL,
@@ -32433,7 +33259,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afab8d73-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32472,7 +33298,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_5',
     'og_theme' => NULL,
@@ -32484,7 +33312,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afaba0fd-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32523,7 +33351,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_6',
     'og_theme' => NULL,
@@ -32535,7 +33365,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afabae9c-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32574,7 +33404,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_7',
     'og_theme' => NULL,
@@ -32586,7 +33418,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afabbbf1-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32625,7 +33457,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_8',
     'og_theme' => NULL,
@@ -32637,7 +33471,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afabcbf3-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32676,7 +33510,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d0c08-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WA_9',
     'og_theme' => NULL,
@@ -32688,7 +33524,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afabdabb-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32921,7 +33757,9 @@ function community_uuid_features_default_content() {
     <p>&nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d238f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WV_1',
     'og_theme' => NULL,
@@ -32933,7 +33771,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afabea92-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -32996,7 +33834,9 @@ function community_uuid_features_default_content() {
     </p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d238f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WV_2',
     'og_theme' => NULL,
@@ -33008,7 +33848,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afabf95d-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33072,7 +33912,9 @@ function community_uuid_features_default_content() {
     	This district includes Boone County, Fayette County, Greenbrier County, Lincoln County, Logan County, Mcdowell County, Mercer County, Mingo County, Monroe County, Nicholas County, Pocahontas County, Raleigh County, Summers County, Wayne County, Webster County, and Wyoming County.</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d238f-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WV_3',
     'og_theme' => NULL,
@@ -33084,7 +33926,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac07c4-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33123,7 +33965,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_1',
     'og_theme' => NULL,
@@ -33135,7 +33979,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac14e0-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33174,7 +34018,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_2',
     'og_theme' => NULL,
@@ -33186,7 +34032,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac233e-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33225,7 +34071,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_3',
     'og_theme' => NULL,
@@ -33237,7 +34085,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac2ded-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33276,7 +34124,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_4',
     'og_theme' => NULL,
@@ -33288,7 +34138,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac3899-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33327,7 +34177,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_5',
     'og_theme' => NULL,
@@ -33339,7 +34191,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac4317-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33485,7 +34337,9 @@ function community_uuid_features_default_content() {
     </ol>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_6',
     'og_theme' => NULL,
@@ -33497,7 +34351,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac4d98-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33536,7 +34390,9 @@ function community_uuid_features_default_content() {
         'value' => '<p>Wisconsin\'s 7th Congressional District encompasses most of western North Central Wisconsin and the seat is currently held by 19-term Representative Dave Obey. &nbsp;</p>',
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_7',
     'og_theme' => NULL,
@@ -33548,7 +34404,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac5822-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'region',
@@ -33587,7 +34443,9 @@ function community_uuid_features_default_content() {
         'value' => NULL,
       ),
     ),
-    'field_og_state' => array(),
+    'field_og_state' => array(
+      '0' => '6c6d3d0b-976b-11e0-88ba-e0e2cd5d67f0',
+    ),
     'og_selective' => '0',
     'og_description' => 'WI_8',
     'og_theme' => NULL,
@@ -33599,7 +34457,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'afac62d0-9770-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   $nodes[] = array(
     'type' => 'page',
@@ -33940,7 +34798,7 @@ function community_uuid_features_default_content() {
     'comment_count' => '0',
     'taxonomy' => array(),
     'uuid' => 'fa2f83a9-9446-11e0-88ba-e0e2cd5d67f0',
-    'pathauto_perform_alias' => TRUE,
+    'pathauto_perform_alias' => FALSE,
   );
   return $nodes;
 }
