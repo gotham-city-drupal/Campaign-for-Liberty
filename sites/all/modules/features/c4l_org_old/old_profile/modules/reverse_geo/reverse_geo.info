@@ -1,0 +1,15 @@
+; $Id: reverse_geo.info,v1.0$
+name = C4L Reverse Geocoding
+description = A module that reverse geocodes location data and puts users in appropriate groups
+core = 6.x
+dependencies[] = location
+dependencies[] = content
+dependencies[] = location_cck
+dependencies[] = og
+
+; Information added by drupal.org packaging script on 2009-08-19
+version = "6.x-1.0"
+core = "6.x"
+project = "reverse_geo"
+datestamp = "1250688034"
+
