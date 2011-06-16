@@ -1,0 +1,5 @@
+<?php
+// $Id: maskedinput.install,v 1.1 2010/11/19 11:19:56 twooten Exp $
+  function maskedinput_uninstall() {
+    variable_del('maskedinput_fields');
+  }

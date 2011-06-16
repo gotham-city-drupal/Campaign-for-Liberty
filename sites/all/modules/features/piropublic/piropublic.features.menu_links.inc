@@ -22,7 +22,7 @@ function piropublic_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '4',
+    'weight' => '-46',
   );
   // Exported menu link: menu-authheader:logout
   $menu_links['menu-authheader:logout'] = array(
@@ -41,7 +41,7 @@ function piropublic_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-46',
+    'weight' => '-47',
   );
   // Exported menu link: menu-footer:9b0988d8-87f4-11e0-b28c-9f89cf71cba4
   $menu_links['menu-footer:9b0988d8-87f4-11e0-b28c-9f89cf71cba4'] = array(

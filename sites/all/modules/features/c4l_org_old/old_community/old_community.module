@@ -1,11 +1,11 @@
 <?php
 
-include_once('community.features.inc');
+include_once('old_community.features.inc');
 
 /**
 * Implements hook_uuid_node_features_export_render_alter()
 */
-function community_uuid_node_features_export_render_alter(&$export, $node, $module) {
+function old_community_uuid_node_features_export_render_alter(&$export, $node, $module) {
   // don't allow uuid_features to export node properties that can change on deployment
   unset($export->changed);
   unset($export->created);

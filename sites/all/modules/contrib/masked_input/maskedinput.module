@@ -1,0 +1,66 @@
+<?php
+// $Id: maskedinput.module,v 1.1 2010/11/19 11:19:56 twooten Exp $
+
+/**
+ * Implementation of hook_help().
+ * 
+ */
+function maskedinput_help($path, $arg) {
+  if ($path == 'admin/help#maskedinput') {
+    $helptxt = '<p>' . t('The Masked Input module allows a user to more easily enter fixed width input where you would like them to enter the data in a certain format (dates, phone numbers, etc).') . '</p>';
+    
+    $helptxt .= t('
+      <p>Use the following format: $("#YOUR-FIELD-ID").mask("YOUR-MASK");</p>
+      <p>Where "YOUR-FIELD-ID" is the CSS ID of the textfield you want to mask.<br>
+      Where "YOUR-MASK" is one of the following</p>
+      <ul>
+      <li>a - Represents an alpha character (A-Z,a-z)</li>
+      <li>9 - Represents a numeric character (0-9)</li>
+      <li>* - Represents an alphanumeric character (A-Z,a-z,0-9)</li>
+      </ul>
+      <p>
+      Examples:<br>
+      $("#date").mask("99/99/9999");<br>
+      $("#phone").mask("(999) 999-9999");<br>
+      $("#tax-id").mask("99-9999999");<br>
+      $("#ssn").mask("999-99-9999");<br>
+      $("#prod-num").mask("a*-999-a999");<br>
+      $("#pct").mask("99%");
+      </p>
+      <p>Optionally, if you are not satisfied with the underscore ("_") character as a placeholder, you may pass an optional argument to the maskedinput method.</p>
+      <p>
+      $("#YOUR-FIELD-ID").mask("99-999999",{placeholder:"+"});
+      </p>
+      ');
+    return $helptxt;
+  }
+}
+
+function maskedinput_init() {
+  $path = drupal_get_path('module', 'maskedinput') .'/jquery.maskedinput-1.2.2.js';  
+  drupal_add_js($path);
+  drupal_add_js("$(function(){ \n". variable_get('maskedinput_fields', NULL) ."\n });", 'inline'); 
+}
+
+function maskedinput_menu() {
+  $items = array();
+  $items['admin/settings/maskedinput'] = array(
+    'title' => 'Masked Input',
+    'description' => 'Add Masked Input to css elements.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('maskedinput_settings'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_NORMAL_ITEM,
+   );
+  return $items;
+}
+
+function maskedinput_settings() {
+  $form['maskedinput_fields'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Masked Input to apply on fields'),
+    '#default_value' => variable_get('maskedinput_fields', ''),
+    '#description' => t('Use the following format: <em>$("#YOUR-FIELD-ID").mask("(999)-999-9999");</em>. Much more documentation is available at the <a href=/admin/help/maskedinput>help</a> page.'),
+  );
+  return system_settings_form($form);
+}
