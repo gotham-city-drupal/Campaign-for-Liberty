@@ -104,7 +104,6 @@ function uc_NDF_charge($order_id, $amount, $data) {
   global $submit_url;
   global $user;
   $order = uc_order_load($order_id);
-
 	// Build POST data for the transaction.
  	//$submit_data['Amount'] = uc_currency_format($amount, FALSE, FALSE, '.');
 	$submit_data['Amount'] = $amount;
@@ -128,6 +127,7 @@ function uc_NDF_charge($order_id, $amount, $data) {
         $tax += $tax_item->amount;
       }
     }
+
     $submit_data['TAX'] = uc_currency_format($tax, FALSE, FALSE, '.');
 
     // Optional billing address fields
@@ -145,6 +145,11 @@ function uc_NDF_charge($order_id, $amount, $data) {
     $submit_data['SCITY'] = substr($order->delivery_city, 0, 50);
     $submit_data['SSTATE'] = substr(uc_get_zone_code($order->delivery_zone), 0, 2);
     $submit_data['SZIP'] = substr($order->delivery_postal_code, 0, 9);
+
+    // Recurring
+    $submit_data['IsRecurring'] = $order->data['recurring']['confirmation'];
+    $submit_data['RecurringEffectiveDate'] = $order->data['recurring']['start_date'];
+    $submit_data['RecurringFrequency'] = $order->data['recurring']['frequency'];
   }
 
 /*

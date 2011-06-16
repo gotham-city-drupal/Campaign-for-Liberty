@@ -36,7 +36,6 @@ function varnish_admin_settings_form() {
     '#type' => 'checkbox',
     '#title' => t('Varnish Legacy Mode'),
     '#default_value' => variable_get('varnish_legacy', 0),
-    '#required' => TRUE,
     '#description' => t('Check this if you use a version of varnish lower than 2.1'),
   );
       

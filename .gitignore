@@ -48,3 +48,11 @@ Thumbs.db
 ._*
 .bzrignore
 /sites/default/backup_settings.php
+
+/sites/all/modules/custom/uc_NDF/.svn/all-wcprops
+/sites/all/modules/custom/uc_NDF/.svn/entries
+/sites/all/modules/custom/uc_NDF/.svn/text-base/hmacmd5_inc.php.svn-base
+/sites/all/modules/custom/uc_NDF/.svn/text-base/LICENSE.txt.svn-base
+/sites/all/modules/custom/uc_NDF/.svn/text-base/uc_NDF.info.svn-base
+/sites/all/modules/custom/uc_NDF/.svn/text-base/uc_NDF.install.svn-base
+/sites/all/modules/custom/uc_NDF/.svn/text-base/uc_NDF.module.svn-base

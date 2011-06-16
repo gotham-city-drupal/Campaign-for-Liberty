@@ -1,0 +1,140 @@
+<?php
+// $Id: $
+
+/**
+ * @file
+ * Assign recurrence to a donation at checkout, to be processed by payment merchant
+ */
+
+/**
+ * Implementation of hook_order().
+ */
+/*
+function uc_recurring_donation_order($op, &$arg1, $arg2) {
+  switch ($op) {
+    case 'submit':
+      if (variable_get('uc_recurring_checkout_process', TRUE)) {
+        $fees = uc_recurring_find_fees($arg1);
+        if (count($fees)) {
+          $pass = TRUE;
+          foreach ($fees as $fee) {
+            if (!uc_recurring_process($arg1, $fee)) {
+              uc_order_comment_save($arg1->order_id, 0, t('The recurring fee for product @model failed.', array('@model' => $fee->model)), 'admin', $arg1->order_status);
+              $pass = FALSE;
+            }
+          }
+          if ($pass == FALSE) {
+            $process = variable_get('uc_recurring_checkout_fail', 'fail');
+            if ($process == 'fail' && uc_payment_balance($arg1) < $arg1->order_total) {
+              $process = 'proceed';
+            }
+            switch ($process) {
+              case 'fail':
+                return array(array('pass' => FALSE, 'message' => t('Your order cannot be completed, because we could not process your recurring payment. Please review your payment details and contact us to complete your order if the problem persists.')));
+              case 'proceed':
+                return array(array('pass' => TRUE, 'message' => t('Your order has been submitted, but we may need to contact you to ensure your recurring fee is set up properly. Thank you for your understanding.')));
+            }
+          }
+        }
+      }
+      break;
+
+    case 'update':
+      if (uc_order_status_data($arg1->order_status, 'state') == 'in_checkout') {
+        db_query("UPDATE {uc_recurring_users} SET uid = %d WHERE uid = 0 AND order_id = %d", $arg1->uid, $arg1->order_id);
+      }
+  }
+}
+*/
+
+/**
+ * Implements hook_checkout_pane().
+ * @return $panes array
+ */
+function uc_recurring_donation_checkout_pane() {
+  $panes[] = array(
+    'id' => 'recurring',
+    'callback' => 'uc_recurring_donation_checkout_pane_recurring_donation',
+    'title' => t('Recurring Donation'),
+    'desc' => t("Make automatically recurring donations."),
+    'weight' => 5,
+    'enabled' => TRUE,
+    'process' => TRUE,
+    'collapsible' => TRUE,
+  );
+  return $panes;
+}
+function uc_recurring_donation_checkout_pane_recurring_donation($op, &$arg1, $arg2) {
+    switch ($op) {
+        case 'view':
+            return array(
+                'description' => 'Make an automatically recurring donation',
+                'contents' => uc_recurring_donation_form(),
+                'next-button' => FALSE,
+            );
+            break;
+        case 'review':
+            $ret = '';
+            if ($arg1->data['recurring']['confirmation']) {
+                $frequency = array('Daily', 'Weekly', 'Bi-monthly', 'Monthly', 'Annually');
+                $ret .= '<tr valign="top">';
+                $ret .= '<td class="title-col" nowrap>Start date:</td>';
+                $ret .= '<td class="data-col">' . $arg1->data['recurring']['start_date'] . '</td>';
+                $ret .= '</tr>';
+                $ret .= '<tr valign="top">';
+                $ret .= '<td class="title-col" nowrap>Frequency:</td>';
+                $ret .= '<td class="data-col">' . $frequency[$arg1->data['recurring']['frequency']] . '</td>';
+                $ret .= '</tr>';
+
+                return $ret;
+            }
+            break;
+        case 'process':
+            //  was confirmation given
+            if ($arg2['confirmation']) {
+                if (!$arg2['start_date'] || strlen($arg2['start_date']) < 6 || strlen($arg2['start_date'] > 8)) {
+                    form_set_error('', t('The start date for the recurring donation should be in mm-dd-yy format.'));
+                }
+                else {
+                    $date_parts = explode('-', $arg2['start_date']);
+                    if (sizeof($date_parts) != 3) {
+                        form_set_error('', t('The start date for the recurring donation should be in mm-dd-yy format.'));
+                    }
+                    if (!checkdate($date_parts[0], $date_parts[1], $date_parts[2]) || mktime(12, 0, 0, $date_parts[0], $date_parts[1], $date_parts[2]) <= time()) {
+                        form_set_error('', t('The start date for the recurring donation is invalid.'));
+                    }
+                // all is good - store the values in the order
+                $arg1->data['recurring'] = $arg2;
+                }
+            }
+            break;
+    }
+}
+
+function uc_recurring_donation_form() {
+    $items['confirmation'] = array(
+        '#type' => 'checkbox',
+        '#default_value' => 0,
+        '#title' => t('YES - I would like to make an automatically recurring donation!'),
+    );
+    $items['start_date'] = array(
+        '#type' => 'textfield',
+        '#description' => t('The date on which the donations should begin, in mm-dd-yy format'),
+        '#default_value' => format_date(time(), 'custom', 'm-d-y'),
+        '#size' => 10,
+    );
+    $items['frequency'] = array(
+        '#type' => 'select',
+        '#description' => t('Select how often the donation will repeat'),
+        '#default_value' => '3',
+        '#options' => array (
+            '0' => t('Daily'),
+            '1' => t('Weekly'),
+            '3' => t('Monthly'),
+            '2' => t('Bi-monthly'),
+            '4' => t('Annually'),
+        ),
+    );
+
+    return $items;
+}
