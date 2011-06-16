@@ -42,8 +42,22 @@
 }
 
 .node-type-staff .content-left {
-    background-color: #F7F4E6;
-    border-bottom: 4px solid #E3DDCE;
-    font-size: 12px;
-    padding: 5px;
+  background-color: #F7F4E6;
+  border-bottom: 4px solid #E3DDCE;
+  font-size: 12px;
+  padding: 5px;
+}
+
+#staff-board-teaser img {
+  border: 4px solid #E3DDCE;
+}
+
+#staff-board-teaser {
+  border-bottom: 1px solid #E3DDCE;
+}
+
+/* HELPER LINKS */
+
+.helper_links {
+  border-bottom: 1px solid #E3DDCE;
 }

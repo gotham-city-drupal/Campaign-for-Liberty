@@ -1,0 +1,130 @@
+<?php
+
+/**
+ *  This module implements the coordinator boot camp stuff.
+ *
+ *  @file
+ */
+// TODO: this is OK for now but eventually we need to clean it up
+/*
+ * We have another set of permissions...
+ * Implement hook_perm()
+ *
+ */
+function community_map_perm() {
+	return array('community map');
+}
+
+
+
+/**
+ *  implementation of hook_menu()
+ *
+ */
+function community_map_menu() {
+
+$items['community_map/get_group_list/%'] = array(
+	'title' => 'Edit a particular contact option.',
+	'description' => 'Get the group lists for a particular state.',
+    'page callback' => 'get_groups',
+    'page arguments' => array(2),
+    'access arguments' => array('community map'),
+    'type' => MENU_CALLBACK,
+);
+
+
+	return $items;
+}
+
+
+/**
+ * yet another entry point
+ * this one for editing a boot camp step
+ *
+ */
+function get_groups($statename = "") {
+
+	$bigarray = array();
+	$statearray = array();
+	$districtarray = array();
+	$countyarray = array();
+
+	$nidsel = "select nid from {node} where title = '%s'";
+
+	$result = db_query($nidsel, $statename);
+
+	$statenid = 0;
+
+	while ($row = db_fetch_array($result)) {
+		$statenid = intval($row["nid"]);
+	}
+
+	if($statenid > 0){
+
+		//the state group
+		$pathsel = "select dst from {url_alias} where src='node/%d'";
+			$pathresult = db_query($pathsel, $statenid);
+
+			while($pathrow = db_fetch_array($pathresult)){
+				$dst = $pathrow['dst'];
+				$statearray[] = array(
+											"path" => $dst,
+											"label" => $statename
+										);
+			}
+
+
+
+		//get the districts
+		$regsel = "select {node}.nid as thenid, title from {content_field_og_state} inner join {node} on {content_field_og_state}.nid = {node}.nid where {content_field_og_state}.field_og_state_nid = %d and {node}.type='region'";
+		$regresult = db_query($regsel, $statenid);
+
+		while($regrow = db_fetch_array($regresult)){
+
+			$pathsel = "select dst from {url_alias} where src='node/%s'";
+			$pathresult = db_query($pathsel, $regrow["thenid"]);
+
+			while($pathrow = db_fetch_array($pathresult)){
+				$dst = $pathrow['dst'];
+
+				$districtarray[] = array(
+											"path" => $dst,
+											"label" => $regrow["title"]
+										);
+
+			}
+
+		}
+
+
+
+		//get the counties
+		$countregsel = "select {node}.nid as thenid, title from {content_field_og_state} inner join {node} on {content_field_og_state}.nid = {node}.nid where {content_field_og_state}.field_og_state_nid = %d and {node}.type='county'";
+		$countregresult = db_query($countregsel, $statenid);
+
+		while($countregrow = db_fetch_array($countregresult)){
+
+			$pathsel = "select dst from {url_alias} where src='node/%s'";
+			$pathresult = db_query($pathsel, $countregrow["thenid"]);
+
+			while($pathrow = db_fetch_array($pathresult)){
+				$dst = $pathrow['dst'];
+
+				$countyarray[] = array(
+											"path" => $dst,
+											"label" => $countregrow["title"]
+										);
+			}
+		}
+
+
+
+	}
+
+
+	$bigarray[] = $statearray;
+	$bigarray[] = $districtarray;
+	$bigarray[] = $countyarray;
+
+	drupal_json($bigarray);
+}

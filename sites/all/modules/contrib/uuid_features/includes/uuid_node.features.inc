@@ -13,12 +13,12 @@ function uuid_node_features_export_options() {
   $types = node_get_types('names');
 
   $query = 'SELECT n.nid, n.title, n.type, u.uuid
-    FROM {node} n INNER JOIN {uuid_node} u 
+    FROM {node} n INNER JOIN {uuid_node} u
     ON n.nid = u.nid ORDER BY n.type, n.title ASC';
   $result = db_query($query);
   while ($node = db_fetch_object($result)) {
     $options[$node->uuid] = t('@type: @title', array(
-      '@type' => $types[$node->type], 
+      '@type' => $types[$node->type],
       '@title' => $node->title,
     ));
   }
@@ -70,7 +70,13 @@ function uuid_node_features_export_render($module, $data) {
     if (!empty($node->path)) {
       $node->pathauto_perform_alias = FALSE;
     }
-    $export = $node;
+    if (is_object($node)) {
+      $export = drupal_clone($node);
+    }
+    else {
+      $export = $node;
+
+        }
 
     // Use date instead of created, in the same format used by node_object_prepare.
     $export->date = format_date($export->created, 'custom', 'Y-m-d H:i:s O');

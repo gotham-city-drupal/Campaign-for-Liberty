@@ -66,6 +66,7 @@ projects[mollom][subdir] = contrib
 projects[nodequeue][subdir] = contrib
 projects[strongarm][subdir] = contrib
 projects[uuid][subdir] = contrib
+projects[uuid_features][version] = "1.0-alpha1"
 projects[uuid_features][subdir] = contrib
 projects[features][version] = "1.0"
 projects[features][subdir] = contrib
@@ -80,6 +81,8 @@ projects[conditional_fields][subdir] = contrib
 ; Lets us link UUID nodes in features to menus items in features
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 projects[features][patch][] = "http://drupal.org/files/issues/968826-features-menu-uuid_0.patch"
+projects[uuid_features][patch][] = "http://drupal.org/files/issues/drupal-clone-alter-01.patch"
+
 
 
 ; Themes

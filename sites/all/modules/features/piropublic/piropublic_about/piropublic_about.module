@@ -42,7 +42,7 @@ function piropublic_about_theme() {
    	  'preprocess functions' => array(
       	'template_preprocess',
       	'template_preprocess_views_view_fields',
-        'piropublic_about_views_view_fields__staff'
+        'piropublic_about_preprocess_views_view_fields__staff',
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
     ),
@@ -53,6 +53,7 @@ function piropublic_about_theme() {
    	  'preprocess functions' => array(
       	'template_preprocess',
       	'template_preprocess_views_view_fields',
+    	'piropublic_about_preprocess_views_view_fields__board_of_directors',
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
     ),
@@ -67,14 +68,14 @@ function piropublic_about_theme() {
       ),
       'arguments' => array('view' => NULL),
     ),
-    'views_view_unformatted__staff' => array(
-      'template' => 'views-view-unformatted--staff',
-      'original hook' => 'views_view_unformatted',
+    'views_view_grid__staff' => array(
+      'template' => 'views-view-grid--staff',
+      'original hook' => 'views_view_grid',
       'path' => drupal_get_path('module', 'piropublic_about') . '/theme/templates/',
       'preprocess functions' => array(
       	'template_preprocess',
-      	'template_preprocess_views_view_unformatted',
-        'piropublic_about_preprocess_views_view_unformatted__staff',
+      	'template_preprocess_views_view_grid',
+        'piropublic_about_preprocess_views_view_grid__staff',
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'rows' => NULL, 'title' => NULL),
     ),
@@ -116,9 +117,16 @@ function piropublic_about_preprocess_views_view_fields__staff(&$variables) {
 /**
  * Implements hook_preprocess()
  */
+function piropublic_about_preprocess_views_view_fields__board_of_directors(&$variables) {
+  $variables['admin_links'] = $variables['fields']['edit_node']->content . $variables['fields']['delete_node']->content;
+}
+
+
+/**
+ * Implements hook_preprocess()
+ */
 function piropublic_about_preprocess_views_view__faq(&$variables) {
   drupal_add_js(drupal_get_path('module', 'piropublic_about') . '/theme/js/piropublic_about.js');
-  $variables  = $variables;
   if (user_access('create faq content')) {
     $variables['helper_links'] = l(t('add another frequently asked question'), 'node/add/faq');
   }
@@ -127,7 +135,7 @@ function piropublic_about_preprocess_views_view__faq(&$variables) {
 /**
  * Implements hook_preprocess()
  */
-function piropublic_about_preprocess_views_view_unformatted__staff(&$variables) {
+function piropublic_about_preprocess_views_view_grid__staff(&$variables) {
   if (user_access('create staff content')) {
     $variables['helper_links'] = l(t('add another staff member'), 'node/add/staff');
   }
@@ -150,7 +158,7 @@ function piropublic_about_preprocess_views_view_grid__board_of_directors(&$varia
   // need something better than this but i had to do it because time was short
   if (user_access('manage board of directors page')) {
     $qid = (db_result(db_query("SELECT qid FROM {nodequeue_queue} WHERE name='%s' LIMIT 1", 'board_of_directors')));
-    $variables['helper_links'] .= l(t('mange board of directors page'), '/admin/content/nodequeue/' .$qid. '/view');
+    $variables['helper_links'] .= l(t('manage board of directors page'), '/admin/content/nodequeue/' .$qid. '/view');
   }
 }
 
