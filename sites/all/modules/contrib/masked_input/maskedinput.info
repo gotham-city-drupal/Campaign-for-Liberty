@@ -1,0 +1,13 @@
+; $Id: maskedinput.info,v 1.1 2010/11/19 11:19:56 twooten Exp $
+name = Masked Input
+description = Help users to more easily enter fixed width input.
+core = 6.x
+version = "6"
+project = "other"
+
+; Information added by drupal.org packaging script on 2010-11-19
+version = "6.x-1.0"
+core = "6.x"
+project = "masked_input"
+datestamp = "1290197446"
+
