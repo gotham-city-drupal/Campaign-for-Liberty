@@ -41,6 +41,18 @@ function old_profile_imagecache_default_presets() {
  */
 function old_profile_node_info() {
   $items = array(
+    'memblog' => array(
+      'name' => t('Member Blog'),
+      'module' => 'features',
+      'description' => t('Content type for member blog'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'has_body' => '1',
+      'body_label' => t('Body'),
+      'min_word_count' => '0',
+      'help' => t('<br />
+'),
+    ),
     'personal' => array(
       'name' => t('Personal Information'),
       'module' => 'features',
@@ -50,7 +62,9 @@ function old_profile_node_info() {
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => '',
+      'help' => t('<br />
+<br />
+'),
     ),
     'profile' => array(
       'name' => t('Profile'),
@@ -61,7 +75,8 @@ function old_profile_node_info() {
       'has_body' => '1',
       'body_label' => t('Profile'),
       'min_word_count' => '0',
-      'help' => '',
+      'help' => t('<br />
+'),
     ),
     'profpic' => array(
       'name' => t('Profile Picture'),
@@ -72,7 +87,9 @@ function old_profile_node_info() {
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => '',
+      'help' => t('<br />
+<br />
+'),
     ),
     'settings' => array(
       'name' => t('Settings'),
@@ -83,7 +100,8 @@ function old_profile_node_info() {
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => '',
+      'help' => t('<br />
+'),
     ),
   );
   return $items;

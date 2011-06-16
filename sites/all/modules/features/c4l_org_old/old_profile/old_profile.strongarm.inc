@@ -92,6 +92,13 @@ function old_profile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_anonymous_memblog';
+  $strongarm->value = '0';
+
+  $export['comment_anonymous_memblog'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_personal';
   $strongarm->value = '0';
 
@@ -117,6 +124,13 @@ function old_profile_strongarm() {
   $strongarm->value = '0';
 
   $export['comment_anonymous_settings'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_controls_memblog';
+  $strongarm->value = '3';
+
+  $export['comment_controls_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -148,6 +162,13 @@ function old_profile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_memblog';
+  $strongarm->value = '4';
+
+  $export['comment_default_mode_memblog'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_personal';
   $strongarm->value = '4';
 
@@ -173,6 +194,13 @@ function old_profile_strongarm() {
   $strongarm->value = '4';
 
   $export['comment_default_mode_settings'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_order_memblog';
+  $strongarm->value = '1';
+
+  $export['comment_default_order_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -204,6 +232,13 @@ function old_profile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_memblog';
+  $strongarm->value = '50';
+
+  $export['comment_default_per_page_memblog'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_personal';
   $strongarm->value = '50';
 
@@ -229,6 +264,13 @@ function old_profile_strongarm() {
   $strongarm->value = '50';
 
   $export['comment_default_per_page_settings'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_memblog';
+  $strongarm->value = '0';
+
+  $export['comment_form_location_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -260,10 +302,24 @@ function old_profile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_memblog';
+  $strongarm->value = '2';
+
+  $export['comment_memblog'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_personal';
   $strongarm->value = '0';
 
   $export['comment_personal'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_preview_memblog';
+  $strongarm->value = '1';
+
+  $export['comment_preview_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -316,6 +372,13 @@ function old_profile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_subject_field_memblog';
+  $strongarm->value = '1';
+
+  $export['comment_subject_field_memblog'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_personal';
   $strongarm->value = '1';
 
@@ -341,6 +404,25 @@ function old_profile_strongarm() {
   $strongarm->value = '1';
 
   $export['comment_subject_field_settings'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'content_extra_weights_memblog';
+  $strongarm->value = array(
+    'title' => '-5',
+    'body_field' => '-3',
+    'revision_information' => '0',
+    'author' => '4',
+    'options' => '5',
+    'comment_settings' => '3',
+    'menu' => '-1',
+    'path' => '2',
+    'flag' => '1',
+    'path_redirect' => '6',
+    'xmlsitemap' => '7',
+  );
+
+  $export['content_extra_weights_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -496,6 +578,22 @@ function old_profile_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'maskedinput_fields';
+  $strongarm->value = '$("#edit-field-prof-phone-0-value").mask("(999) 999-9999");';
+
+  $export['maskedinput_fields'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_memblog';
+  $strongarm->value = array(
+    0 => 'status',
+  );
+
+  $export['node_options_memblog'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_personal';
   $strongarm->value = array(
     0 => 'status',
@@ -603,6 +701,13 @@ function old_profile_strongarm() {
   $strongarm->value = '25';
 
   $export['privatemsg_per_page'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'upload_memblog';
+  $strongarm->value = '0';
+
+  $export['upload_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;

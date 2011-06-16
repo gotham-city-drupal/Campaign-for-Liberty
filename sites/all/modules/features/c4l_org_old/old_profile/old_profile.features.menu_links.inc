@@ -11,14 +11,15 @@ function old_profile_menu_default_menu_links() {
     'menu_name' => 'menu-authheader',
     'link_path' => 'messages',
     'router_path' => 'messages',
-    'link_title' => 'Messages',
+    'link_title' => 'Inbox',
     'options' => array(
       'attributes' => array(
-        'title' => '',
+        'title' => '<br />
+',
       ),
     ),
-    'module' => 'system',
-    'hidden' => '0',
+    'module' => 'menu',
+    'hidden' => '1',
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
@@ -44,7 +45,7 @@ function old_profile_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Messages');
+  t('Inbox');
   t('Profile');
 
 

@@ -6,6 +6,492 @@
 function old_profile_content_default_fields() {
   $fields = array();
 
+  // Exported field: field_article_featured
+  $fields['memblog-field_article_featured'] = array(
+    'field_name' => 'field_article_featured',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '12',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|
+1|Feature on Articles',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => NULL,
+      'default_value_php' => NULL,
+      'label' => 'Featired on Articles',
+      'weight' => '12',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
+    ),
+  );
+
+  // Exported field: field_embed_video
+  $fields['memblog-field_embed_video'] = array(
+    'field_name' => 'field_embed_video',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '40',
+      'parent' => 'group_video_links',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'emvideo',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'emvideo',
+    'active' => '1',
+    'widget' => array(
+      'video_width' => '425',
+      'video_height' => '350',
+      'video_autoplay' => 0,
+      'preview_width' => '425',
+      'preview_height' => '350',
+      'preview_autoplay' => 0,
+      'thumbnail_width' => '120',
+      'thumbnail_height' => '90',
+      'thumbnail_default_path' => '',
+      'thumbnail_link_title' => 'See video',
+      'meta_fields' => array(
+        'title' => 0,
+        'description' => 0,
+      ),
+      'providers' => array(
+        'youtube' => 'youtube',
+      ),
+      'emthumb' => 0,
+      'emthumb_label' => 'Embedded Video custom thumbnail',
+      'emthumb_description' => 'If you upload a custom thumbnail, then this will be displayed when the Embedded Video thumbnail is called for, overriding any automatic thumbnails by custom providers.',
+      'emthumb_max_resolution' => '0',
+      'emimport_image_path' => '',
+      'emthumb_custom_alt' => 0,
+      'emthumb_custom_title' => 0,
+      'emthumb_store_local_thumbnail' => 1,
+      'emthumb_start_collapsed' => 0,
+      'default_value' => array(
+        '0' => array(
+          'embed' => '',
+          'value' => '',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'YouTube Video',
+      'weight' => '40',
+      'description' => 'Place the link to the YouTube Video here',
+      'type' => 'emvideo_textfields',
+      'module' => 'emvideo',
+    ),
+  );
+
+  // Exported field: field_group
+  $fields['memblog-field_group'] = array(
+    'field_name' => 'field_group',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '8',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'nodereference',
+    'required' => '0',
+    'multiple' => '1',
+    'module' => 'nodereference',
+    'active' => '1',
+    'referenceable_types' => array(
+      'country' => 'country',
+      'county' => 'county',
+      'region' => 'region',
+      'state' => 'state',
+      'blank' => 0,
+      'candidate_survey_2010' => 0,
+      'event' => 0,
+      'faq' => 0,
+      'farticle' => 0,
+      'fauthor' => 0,
+      'forum' => 0,
+      'fp' => 0,
+      'group_announcement' => 0,
+      'image' => 0,
+      'lawmaker' => 0,
+      'memblog' => 0,
+      'natblog' => 0,
+      'page' => 0,
+      'personal' => 0,
+      'mediagall' => 0,
+      'pr' => 0,
+      'product' => 0,
+      'profile' => 0,
+      'profpic' => 0,
+      'res' => 0,
+      'settings' => 0,
+      'staff' => 0,
+      'story' => 0,
+      'demopost' => 0,
+      'video' => 0,
+      'webform' => 0,
+      'featured_blocks' => FALSE,
+      'newswire' => FALSE,
+      'fullnatblog' => FALSE,
+    ),
+    'advanced_view' => 'my_group_filter',
+    'advanced_view_args' => '',
+    'widget' => array(
+      'autocomplete_match' => 'contains',
+      'size' => 60,
+      'default_value' => array(
+        '0' => array(
+          'nid' => '',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Publish To Group',
+      'weight' => '8',
+      'description' => 'Publish this blog entry to a group.',
+      'type' => 'nodereference_select',
+      'module' => 'nodereference',
+    ),
+  );
+
+  // Exported field: field_homepage_feature
+  $fields['memblog-field_homepage_feature'] = array(
+    'field_name' => 'field_homepage_feature',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '9',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|
+1|Feature on homepage',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => 0,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Feature on homepage',
+      'weight' => '9',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
+    ),
+  );
+
+  // Exported field: field_member_blog_feature
+  $fields['memblog-field_member_blog_feature'] = array(
+    'field_name' => 'field_member_blog_feature',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '10',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|
+1|Feature on Member Blog Block',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => NULL,
+      'default_value_php' => NULL,
+      'label' => 'Featured on Member Blog Block',
+      'weight' => '10',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
+    ),
+  );
+
+  // Exported field: field_national_blog_feature
+  $fields['memblog-field_national_blog_feature'] = array(
+    'field_name' => 'field_national_blog_feature',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '11',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'number_integer',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'number',
+    'active' => '1',
+    'prefix' => '',
+    'suffix' => '',
+    'min' => '',
+    'max' => '',
+    'allowed_values' => '0|
+1|Feature on National Blog',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => 0,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Featured on National Blog Block',
+      'weight' => '11',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
+    ),
+  );
+
+  // Exported field: field_tax_issues
+  $fields['memblog-field_tax_issues'] = array(
+    'field_name' => 'field_tax_issues',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '-4',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'hidden',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'link',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '5' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'content_taxonomy',
+    'required' => '1',
+    'multiple' => '1',
+    'module' => 'content_taxonomy',
+    'active' => '1',
+    'widget' => array(
+      'group_parent' => '0',
+      'show_depth' => 1,
+      'default_value' => array(
+        '0' => array(
+          'value' => NULL,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'expand_all' => 0,
+      'label' => 'Issue(s)',
+      'weight' => '-4',
+      'description' => 'Select the issue keywords to be associate with this content',
+      'type' => 'content_taxonomy_select',
+      'module' => 'content_taxonomy_options',
+    ),
+  );
+
   // Exported field: field_prof_address
   $fields['personal-field_prof_address'] = array(
     'field_name' => 'field_prof_address',
@@ -2322,17 +2808,24 @@ OFF|Disabled',
   t('Bootcamp Progress');
   t('Country Group');
   t('County Group');
+  t('Featired on Articles');
+  t('Feature on homepage');
+  t('Featured on Member Blog Block');
+  t('Featured on National Blog Block');
   t('First Name');
   t('How Am I Involved');
   t('I Am');
+  t('Issue(s)');
   t('Last Name');
   t('Made Coordinatior By');
   t('Micro Bio');
   t('Phone');
   t('Profile Picture');
   t('Profile is Disabled');
+  t('Publish To Group');
   t('Region Group');
   t('State Group');
+  t('YouTube Video');
 
   return $fields;
 }
