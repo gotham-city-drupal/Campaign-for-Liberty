@@ -474,6 +474,11 @@ function old_profile_content_default_fields() {
     'multiple' => '1',
     'module' => 'content_taxonomy',
     'active' => '1',
+    'save_term_node' => '',
+    'vid' => '',
+    'parent' => '',
+    'parent_php_code' => '',
+    'depth' => '',
     'widget' => array(
       'group_parent' => '0',
       'show_depth' => 1,

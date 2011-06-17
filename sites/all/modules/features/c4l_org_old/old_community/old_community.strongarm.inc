@@ -535,7 +535,6 @@ function old_community_strongarm() {
     'fp' => 'drupal',
     'webform' => 'drupal',
     'blank' => 'drupal',
-    'group_announcement' => 'drupal',
     'image' => 'drupal',
     'product' => 'drupal',
     'candidate_survey_2010' => 'drupal',
@@ -551,6 +550,7 @@ function old_community_strongarm() {
     'personal' => 'drupal',
     'profpic' => 'drupal',
     'settings' => 'drupal',
+    'group_announcement' => 'drupal',
   );
 
   $export['gmap_node_markers'] = $strongarm;
@@ -1494,7 +1494,7 @@ function old_community_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_selective_state';
-  $strongarm->value = '0';
+  $strongarm->value = '3';
 
   $export['og_selective_state'] = $strongarm;
   $strongarm = new stdClass;
