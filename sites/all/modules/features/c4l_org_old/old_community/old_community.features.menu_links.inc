@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_menu_default_menu_links().
  */
-function community_menu_default_menu_links() {
+function old_community_menu_default_menu_links() {
   $menu_links = array();
 
   // Exported menu link: primary-links:fa2f83a9-9446-11e0-88ba-e0e2cd5d67f0

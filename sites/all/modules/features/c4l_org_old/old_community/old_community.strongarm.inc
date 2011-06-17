@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_strongarm().
  */
-function community_strongarm() {
+function old_community_strongarm() {
   $export = array();
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -547,6 +547,10 @@ function community_strongarm() {
     'trainingvideo' => 'drupal',
     'coordinatortools' => 'drupal',
     'project' => 'drupal',
+    'profile' => 'drupal',
+    'personal' => 'drupal',
+    'profpic' => 'drupal',
+    'settings' => 'drupal',
   );
 
   $export['gmap_node_markers'] = $strongarm;

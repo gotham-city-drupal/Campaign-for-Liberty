@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_content_default_fields().
  */
-function community_content_default_fields() {
+function old_community_content_default_fields() {
   $fields = array();
 
   // Exported field: field_og_2abbrev

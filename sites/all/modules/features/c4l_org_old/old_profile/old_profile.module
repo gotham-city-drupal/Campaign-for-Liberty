@@ -1,0 +1,16 @@
+<?php
+
+include_once('old_profile.features.inc');
+
+ /**
+ * Implementation of hook_form_FORM_ID_alter().
+ */
+function old_profile_form_privatemsg_list_alter(&$form, &$form_state/*, $form_id*/) {
+      // TODO: investigate a little more... skeptical of use since suffix is spelled wrong
+      // add a message
+      $form['messagelistnote'] = array(
+        '#prefix' => '<p>',
+        '#value' => t('The messages appear in the order of new before read and each group sorted chronologically.'),
+        '#suffix' => '</p>',
+      );
+}

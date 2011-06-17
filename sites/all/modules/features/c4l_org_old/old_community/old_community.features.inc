@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_ctools_plugin_api().
  */
-function community_ctools_plugin_api() {
+function old_community_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => 1);
@@ -13,7 +13,7 @@ function community_ctools_plugin_api() {
 /**
  * Implementation of hook_node_info().
  */
-function community_node_info() {
+function old_community_node_info() {
   $items = array(
     'country' => array(
       'name' => t('Country Group'),
@@ -24,8 +24,7 @@ function community_node_info() {
       'has_body' => '1',
       'body_label' => t('Country Profile'),
       'min_word_count' => '0',
-      'help' => t('<br />
-'),
+      'help' => '',
     ),
     'county' => array(
       'name' => t('County Group'),
@@ -36,8 +35,7 @@ function community_node_info() {
       'has_body' => '1',
       'body_label' => t('County Profile'),
       'min_word_count' => '0',
-      'help' => t('<br />
-'),
+      'help' => '',
     ),
     'group_announcement' => array(
       'name' => t('Group Announcement'),
@@ -59,8 +57,7 @@ function community_node_info() {
       'has_body' => '1',
       'body_label' => t('Region Profile'),
       'min_word_count' => '0',
-      'help' => t('<br />
-'),
+      'help' => '',
     ),
     'state' => array(
       'name' => t('State Group'),
@@ -71,8 +68,7 @@ function community_node_info() {
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => t('<br />
-'),
+      'help' => '',
     ),
   );
   return $items;
