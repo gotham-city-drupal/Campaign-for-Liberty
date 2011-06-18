@@ -16,13 +16,8 @@ function old_community_user_default_roles() {
     'name' => 'local coordinator',
   );
 
-  // Exported role: national_blogger
-  $roles['national_blogger'] = array(
-    'name' => 'national_blogger',
-  );
-
-  // Exported role: regional coordinator
-  $roles['regional coordinator'] = array(
+  // Exported role: region coordinator
+  $roles['region coordinator'] = array(
     'name' => 'region coordinator',
   );
 

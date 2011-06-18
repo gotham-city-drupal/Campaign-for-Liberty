@@ -1119,6 +1119,34 @@ function old_community_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'messaging_default_filter';
+  $strongarm->value = '6';
+
+  $export['messaging_default_filter'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'messaging_default_method';
+  $strongarm->value = 'mail';
+
+  $export['messaging_default_method'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'messaging_sender_mail';
+  $strongarm->value = '[mail]';
+
+  $export['messaging_sender_mail'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'messaging_sender_name';
+  $strongarm->value = '[user]';
+
+  $export['messaging_sender_name'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_country';
   $strongarm->value = array(
     0 => 'status',
@@ -1161,6 +1189,13 @@ function old_community_strongarm() {
   );
 
   $export['node_options_state'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_sender';
+  $strongarm->value = '1';
+
+  $export['notifications_sender'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -1480,21 +1515,21 @@ function old_community_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_selective_enforce_state';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
 
   $export['og_selective_enforce_state'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_selective_region';
-  $strongarm->value = '0';
+  $strongarm->value = '2';
 
   $export['og_selective_region'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_selective_state';
-  $strongarm->value = '3';
+  $strongarm->value = '2';
 
   $export['og_selective_state'] = $strongarm;
   $strongarm = new stdClass;

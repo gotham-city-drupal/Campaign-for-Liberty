@@ -48,6 +48,11 @@ function old_community_views_default_views() {
       'field' => 'nid',
       'relationship' => 'none',
     ),
+    'managelinkadmin_inherit' => array(
+      'id' => 'managelinkadmin_inherit',
+      'table' => 'og_uid',
+      'field' => 'managelinkadmin_inherit',
+    ),
   ));
   $handler->override_option('arguments', array(
     'nid' => array(
@@ -265,7 +270,7 @@ function old_community_views_default_views() {
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('block', 'Group Options', 'block_3');
   $handler->override_option('fields', array(
-    'managelinkadmin' => array(
+    'group_broadcast' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
@@ -288,51 +293,21 @@ function old_community_views_default_views() {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'exclude' => 1,
-      'id' => 'managelinkadmin',
-      'table' => 'og_uid',
-      'field' => 'managelinkadmin',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
-    'nothing_2' => array(
-      'label' => '',
-      'alter' => array(
-        'text' => 'View group member blog posts',
-        'make_link' => 1,
-        'path' => 'group_posts/list/!1',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
+      'text' => 'Message this group',
       'exclude' => 0,
-      'id' => 'nothing_2',
-      'table' => 'views',
-      'field' => 'nothing',
+      'id' => 'group_broadcast',
+      'table' => 'node',
+      'field' => 'group_broadcast',
       'override' => array(
         'button' => 'Use default',
       ),
       'relationship' => 'none',
     ),
-    'nothing' => array(
+    'group_edit_link' => array(
       'label' => '',
       'alter' => array(
-        'text' => '<a href="/node/add/webform">Create a new petition</a><br />
-<a href="/admin/content/webform">View Petition Submissions</a>',
+        'alter_text' => 0,
+        'text' => '',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -351,10 +326,44 @@ function old_community_views_default_views() {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
+      'text' => 'Edit this group',
       'exclude' => 0,
-      'id' => 'nothing',
-      'table' => 'views',
-      'field' => 'nothing',
+      'id' => 'group_edit_link',
+      'table' => 'node',
+      'field' => 'group_edit_link',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+    'group_invite' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'text' => 'Invite people to this group',
+      'exclude' => 0,
+      'id' => 'group_invite',
+      'table' => 'node',
+      'field' => 'group_invite',
       'override' => array(
         'button' => 'Use default',
       ),
