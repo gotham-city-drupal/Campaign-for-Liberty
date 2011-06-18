@@ -16,8 +16,8 @@ function old_profile_views_handlers() {
       'path' => drupal_get_path('module', 'old_profile') .'/includes',
     ),
     'handlers' => array(
-		'old_profile_handler_field_privatemsg_link' => array(
-        'parent' => 'views_handler_field_privatemsg_link',
+		'old_profile_handler_pcf_link' => array(
+        'parent' => 'views_handler_field_user_link',
       ),
 		'old_profile_create_memblog_link' => array(
         'parent' => 'views_handler_field',
@@ -31,20 +31,20 @@ function old_profile_views_handlers() {
  */
 function old_profile_views_data() {
   $data = array();
-	// cuom privatemsg link
-	$data['users']['privatemsg_link_user'] = array(
-    'group' => t('Privatemsg'),
-    'title' => t('Send Privatemsg link but not to self'),
-		'help' => t('Displays a link to send a private message to a user but hides link to self.'),
+	// personal contact form link
+	$data['users']['contact_not_self'] = array(
+    'group' => t('User'),
+    'title' => t('Link to user\'s personal contact form.'),
+	'help' => t('Displays a link to the users personal contact form but hides link to self.'),
     'field' => array(
-      'handler' => 'old_profile_handler_field_privatemsg_link',
+      'handler' => 'old_profile_handler_pcf_link',
     ),
   );
 	// memblog
 	$data['users']['memblog_link'] = array(
     'group' => t('Node'),
     'title' => t('Create memberblog link'),
-		'help' => t('Provide a create member blog link on logged in users profile page'),
+	'help' => t('Provide a create member blog link on logged in users profile page'),
     'field' => array(
       'handler' => 'old_profile_create_memblog_link',
     ),

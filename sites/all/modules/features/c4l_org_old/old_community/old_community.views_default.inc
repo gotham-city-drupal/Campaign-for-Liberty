@@ -371,24 +371,13 @@ function old_community_views_default_views() {
     ),
   ));
   $handler->override_option('filters', array(
-    'type_groups_all' => array(
-      'operator' => '=',
-      'value' => '',
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'type_groups_all',
-      'table' => 'og',
-      'field' => 'type_groups_all',
-      'relationship' => 'none',
-    ),
-    'is_admin' => array(
+    'type_groups' => array(
       'operator' => 'in',
       'value' => array(
-        '1' => '1',
+        'country' => 'country',
+        'county' => 'county',
+        'region' => 'region',
+        'state' => 'state',
       ),
       'group' => '0',
       'exposed' => FALSE,
@@ -396,9 +385,9 @@ function old_community_views_default_views() {
         'operator' => FALSE,
         'label' => '',
       ),
-      'id' => 'is_admin',
-      'table' => 'og_uid',
-      'field' => 'is_admin',
+      'id' => 'type_groups',
+      'table' => 'og',
+      'field' => 'type_groups',
       'override' => array(
         'button' => 'Use default',
       ),
@@ -408,31 +397,16 @@ function old_community_views_default_views() {
   $handler->override_option('access', array(
     'type' => 'role',
     'role' => array(
-      '3' => 3,
-      '16' => 16,
-      '13' => 13,
+      '9' => 9,
+      '7' => 7,
+      '10' => 10,
       '12' => 12,
-      '11' => 11,
+      '8' => 8,
+      '13' => 13,
     ),
   ));
-  $handler->override_option('header', '<?php
-$view=views_get_current_view();
-$group_id=$view->args[0];
-?>
-<?php
-global $user;
-if($user->og_groups[$group_id][\'is_admin\'] == 1 || in_array(\'administrator\', array_values($user->roles)) ){
-echo \'<br /><span><a href="/admin/local_upgrade/\' . $group_id . \'">Manage Group Coordinators</a></span>\';
-}
-?>
-<?php
-global $user;
-if($user->og_groups[$group_id][\'is_admin\'] == 1 || in_array(\'administrator\', array_values($user->roles)) ){
-echo \'<br /><span><a href="/manage/myannouncements">Manage My Announcements</a></span>\';
-}
-?>');
-  $handler->override_option('header_format', '3');
-  $handler->override_option('header_empty', 1);
+  $handler->override_option('header_format', '1');
+  $handler->override_option('header_empty', 0);
   $handler->override_option('block_description', 'Group Options');
   $handler->override_option('block_caching', -1);
 
