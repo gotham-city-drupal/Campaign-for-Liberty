@@ -3,6 +3,13 @@
 include_once('old_community.features.inc');
 
 /**
+ * Implementation of hook_perm()
+ */
+function old_community_perm() {
+  return array('manage all coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups');
+}
+
+/**
  * Implementation of hook_menu().
  */
 function old_community_menu() {

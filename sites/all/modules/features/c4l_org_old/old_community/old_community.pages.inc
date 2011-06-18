@@ -11,42 +11,13 @@ function old_profile_promote_member_confirm($form_state, $node, $account, $type)
   $form['type'] = array('#type' => 'value', '#value' => $type);
   $form['rid'] = array('#type' => 'value', '#value' => array_search($type . ' coordinator', user_roles(), TRUE));
 
- if ($type == 'state') {
-   print "yes";
-
-   $settings_node = node_load(array('uid' => $account->uid, 'type' => 'settings', 'status' => 1));
-
-   //NOW LETS INSERT ALL THOSE OTHERS
-    $q = 'SELECT c.nid AS NID
-      FROM content_field_og_state c, node n
-      WHERE field_og_state_nid = ' . $node->nid . '
-        AND c.nid = n.nid
-        AND c.nid NOT IN (
-        SELECT nid
-        FROM og_uid
-        WHERE uid = ' . $account->uid . ')';
-
-    $result = db_query($q);
-
-    while($row = db_fetch_object($result)){
-      //| nid  | og_role | is_active | is_admin | uid  | created    | changed    |
-      //$q2 = "INSERT INTO og_uid VALUES(" .  $row->NID . ", 0, 1, 1, " . $user_id . ", " . time() . ", " . time() .")";
-      //$r2  = db_query($q2);
-      print_r($row);
-    }
- }
- else {
-    print "no";
-   //og_save_subscription($node->nid, $account->uid, array('is_admin' => 1));
- }
-
   return confirm_form($form,
-           t('Are you sure you want to make !name a !type Coordinator for !title?', array('!name' => theme('username', $account), '!type' => $type, '!title' => $node->title)),
+           t('Are you sure you want to make !name a !type Coordinator of !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
            "og/users/$node->nid",
            ' ',
            t('Confirm'),
            t('Cancel'));
-}
+  }
 
 /**
  * Confirm og create admin form
@@ -60,6 +31,36 @@ function old_profile_promote_member_confirm_submit($form, &$form_state) {
   if (!isset($account->roles[$rid])) {
     db_query('INSERT INTO {users_roles} (uid, rid) VALUES (%d, %d)', $account->uid, $rid);
   }
+
+  og_save_subscription($node->nid, $account->uid, array('is_admin' => 1));
+
+  if ($type == 'state') {
+     print "yes";
+
+     $settings_node = node_load(array('uid' => $account->uid, 'type' => 'settings', 'status' => 1));
+
+     //NOW LETS INSERT ALL THOSE OTHERS
+      $q = 'SELECT c.nid AS NID
+        FROM content_field_og_state c, node n
+        WHERE field_og_state_nid = ' . $node->nid . '
+          AND c.nid = n.nid
+          AND c.nid NOT IN (
+          SELECT nid
+          FROM og_uid
+          WHERE uid = ' . $account->uid . ')';
+
+      $result = db_query($q);
+
+      while($row = db_fetch_object($result)){
+        //| nid  | og_role | is_active | is_admin | uid  | created    | changed    |
+        //$q2 = "INSERT INTO og_uid VALUES(" .  $row->NID . ", 0, 1, 1, " . $user_id . ", " . time() . ", " . time() .")";
+        //$r2  = db_query($q2);
+        print_r($row);
+      }
+   }
+   else {
+
+   }
 
 
   drupal_set_message($fuck.t('%name was promoted to <em>group administrator</em>.', array('%name' => $account->name)));
@@ -92,10 +93,8 @@ function old_profile_demote_member_confirm($form_state, $node, $account, $type) 
   $form['type'] = array('#type' => 'value', '#value' => $type);
   $form['rid'] = array('#type' => 'value', '#value' => array_search($type . ' coordinator', user_roles(), TRUE));
 
-  $account = $account;
-
   return confirm_form($form,
-    t('Are you sure you want to remove !name as a group administrator for the group %title?', array('!name' => theme('username', $account), '%title' => $node->title)),
+    t('Are you sure you want to remove !name as a !type Coordinator of !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
     "og/users/$node->nid",
     ' ',
     t('Remove'),
@@ -117,6 +116,38 @@ function old_profile_demote_member_confirm_submit($form, &$form_state) {
   }
 
   og_save_subscription($gid, $account->uid, array('is_admin' => 0));
-  //drupal_set_message(t('%name is no longer a <em>group administrator</em>.', array('%name' => $account->name)));
+
+  if ($type == 'state') {
+     print "yes";
+
+     $settings_node = node_load(array('uid' => $account->uid, 'type' => 'settings', 'status' => 1));
+
+     //NOW LETS INSERT ALL THOSE OTHERS
+      $q = 'SELECT c.nid AS NID
+        FROM content_field_og_state c, node n
+        WHERE field_og_state_nid = ' . $node->nid . '
+          AND c.nid = n.nid
+          AND c.nid NOT IN (
+          SELECT nid
+          FROM og_uid
+          WHERE uid = ' . $account->uid . ')';
+
+      $result = db_query($q);
+
+      while($row = db_fetch_object($result)){
+        //| nid  | og_role | is_active | is_admin | uid  | created    | changed    |
+        //$q2 = "INSERT INTO og_uid VALUES(" .  $row->NID . ", 0, 1, 1, " . $user_id . ", " . time() . ", " . time() .")";
+        //$r2  = db_query($q2);
+        print_r($row);
+      }
+   }
+   else {
+
+   }
+
+
+  drupal_set_message(t('%name is no longer a <em>group administrator</em>.', array('%name' => $account->name)));
   $form_state['redirect'] = "og/users/$gid";
 }
+
+

@@ -23,7 +23,7 @@ function old_community_user_default_roles() {
 
   // Exported role: regional coordinator
   $roles['regional coordinator'] = array(
-    'name' => 'regional coordinator',
+    'name' => 'region coordinator',
   );
 
   // Exported role: state coordinator
