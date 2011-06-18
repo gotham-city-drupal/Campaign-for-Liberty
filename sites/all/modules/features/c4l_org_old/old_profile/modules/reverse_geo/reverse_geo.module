@@ -61,7 +61,7 @@ function reverse_geo_reverse_geocode_coords($locations = array()) {
   	}
 	}
 	else {
-		return FALSE;
+
 	}
 
 	// govtack.us API

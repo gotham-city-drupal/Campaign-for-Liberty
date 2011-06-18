@@ -50,8 +50,7 @@ function old_profile_node_info() {
       'has_body' => '1',
       'body_label' => t('Body'),
       'min_word_count' => '0',
-      'help' => t('<br />
-'),
+      'help' => '',
     ),
     'personal' => array(
       'name' => t('Personal Information'),
@@ -62,9 +61,7 @@ function old_profile_node_info() {
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => t('<br />
-<br />
-'),
+      'help' => '',
     ),
     'profile' => array(
       'name' => t('Profile'),
@@ -75,8 +72,7 @@ function old_profile_node_info() {
       'has_body' => '1',
       'body_label' => t('Profile'),
       'min_word_count' => '0',
-      'help' => t('<br />
-'),
+      'help' => '',
     ),
     'profpic' => array(
       'name' => t('Profile Picture'),
@@ -87,9 +83,7 @@ function old_profile_node_info() {
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => t('<br />
-<br />
-'),
+      'help' => '',
     ),
     'settings' => array(
       'name' => t('Settings'),
@@ -100,8 +94,7 @@ function old_profile_node_info() {
       'has_body' => '0',
       'body_label' => '',
       'min_word_count' => '0',
-      'help' => t('<br />
-'),
+      'help' => '',
     ),
   );
   return $items;
@@ -120,7 +113,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -237,7 +229,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -314,7 +305,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -391,7 +381,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -468,7 +457,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -533,7 +521,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -598,7 +585,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -664,7 +650,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -749,192 +734,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         ),
         '#version' => 6003,
       ),
-      'rules_32' => array(
-        '#type' => 'rule',
-        '#set' => 'event_init',
-        '#label' => 'Redirect join us to front page upon completion',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          '0' => 'profile',
-          'old_profile' => 'old_profile',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(
-          '0' => array(
-            '#type' => 'condition',
-            '#settings' => array(
-              'path' => 'thanks',
-              'op' => 'equal',
-            ),
-            '#name' => 'pathrules_checkpath',
-            '#info' => array(
-              'label' => 'Check path',
-              'arguments' => array(
-                'path' => array(
-                  'type' => 'string',
-                  'label' => 'Path to check',
-                ),
-                'op' => array(
-                  'type' => 'string',
-                  'label' => 'Op',
-                ),
-              ),
-              'module' => 'System',
-            ),
-            '#weight' => 0,
-          ),
-          '1' => array(
-            '#weight' => 0,
-            '#info' => array(
-              'label' => 'User has role(s)',
-              'arguments' => array(
-                'user' => array(
-                  'type' => 'user',
-                  'label' => 'User',
-                ),
-              ),
-              'module' => 'User',
-            ),
-            '#name' => 'rules_condition_user_hasrole',
-            '#settings' => array(
-              'roles' => array(
-                '0' => 1,
-              ),
-              'operation' => 'OR',
-              '#argument map' => array(
-                'user' => 'user',
-              ),
-            ),
-            '#type' => 'condition',
-          ),
-        ),
-        '#actions' => array(
-          '0' => array(
-            '#type' => 'action',
-            '#settings' => array(
-              'path' => '',
-              'query' => '',
-              'fragment' => '',
-              'force' => 0,
-              'immediate' => 0,
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-            '#weight' => 0,
-          ),
-          '1' => array(
-            '#weight' => 0,
-            '#info' => array(
-              'label' => 'Show a configurable message on the site',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'message',
-              ),
-            ),
-            '#name' => 'rules_action_drupal_message',
-            '#settings' => array(
-              'message' => 'Thanks for joining us!',
-              'error' => 0,
-            ),
-            '#type' => 'action',
-          ),
-        ),
-        '#version' => 6003,
-      ),
-      'rules_33' => array(
-        '#type' => 'rule',
-        '#set' => 'event_init',
-        '#label' => 'Redirect join us based user registration to profile setup',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          '0' => 'profile',
-          'old_profile' => 'old_profile',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(
-          '0' => array(
-            '#weight' => 0,
-            '#info' => array(
-              'label' => 'Check path',
-              'arguments' => array(
-                'path' => array(
-                  'type' => 'string',
-                  'label' => 'Path to check',
-                ),
-                'op' => array(
-                  'type' => 'string',
-                  'label' => 'Op',
-                ),
-              ),
-              'module' => 'System',
-            ),
-            '#name' => 'pathrules_checkpath',
-            '#settings' => array(
-              'path' => 'thanks',
-              'op' => 'equal',
-            ),
-            '#type' => 'condition',
-          ),
-          '1' => array(
-            '#weight' => 0,
-            '#type' => 'condition',
-            '#settings' => array(
-              'roles' => array(
-                '0' => 2,
-              ),
-              'operation' => 'OR',
-              '#argument map' => array(
-                'user' => 'user',
-              ),
-            ),
-            '#name' => 'rules_condition_user_hasrole',
-            '#info' => array(
-              'label' => 'User has role(s)',
-              'arguments' => array(
-                'user' => array(
-                  'type' => 'user',
-                  'label' => 'User',
-                ),
-              ),
-              'module' => 'User',
-            ),
-          ),
-        ),
-        '#actions' => array(
-          '0' => array(
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#settings' => array(
-              'path' => 'user',
-              'query' => '',
-              'fragment' => '',
-              'force' => 0,
-              'immediate' => 0,
-            ),
-            '#type' => 'action',
-            '#weight' => 0,
-          ),
-        ),
-        '#version' => 6003,
-      ),
       'rules_34' => array(
         '#type' => 'rule',
         '#set' => 'event_init',
@@ -942,7 +741,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -1003,67 +801,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         ),
         '#version' => 6003,
       ),
-      'rules_35' => array(
-        '#type' => 'rule',
-        '#set' => 'event_init',
-        '#label' => 'User Register to CiviCRM Profile',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          '0' => 'profile',
-          'old_profile' => 'old_profile',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(
-          '0' => array(
-            '#type' => 'condition',
-            '#settings' => array(
-              'path' => 'user/register',
-              'op' => 'starts',
-            ),
-            '#name' => 'pathrules_checkpath',
-            '#info' => array(
-              'label' => 'Check path',
-              'arguments' => array(
-                'path' => array(
-                  'type' => 'string',
-                  'label' => 'Path to check',
-                ),
-                'op' => array(
-                  'type' => 'string',
-                  'label' => 'Op',
-                ),
-              ),
-              'module' => 'System',
-            ),
-            '#weight' => 0,
-          ),
-        ),
-        '#actions' => array(
-          '0' => array(
-            '#weight' => 0,
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#settings' => array(
-              'path' => 'civicrm/profile/create?gid=13&reset=1',
-              'query' => '',
-              'fragment' => '',
-              'force' => 0,
-              'immediate' => 0,
-            ),
-            '#type' => 'action',
-          ),
-        ),
-        '#version' => 6003,
-      ),
       'rules_36' => array(
         '#type' => 'rule',
         '#set' => 'event_init',
@@ -1071,7 +808,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -1205,7 +941,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',

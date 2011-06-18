@@ -9,8 +9,8 @@ function old_profile_views_default_views() {
   // Exported view: profile
   $view = new view;
   $view->name = 'profile';
-  $view->description = '';
-  $view->tag = '';
+  $view->description = 'Profile';
+  $view->tag = 'old profile';
   $view->view_php = '';
   $view->base_table = 'users';
   $view->is_cacheable = FALSE;
@@ -379,27 +379,27 @@ function old_profile_views_default_views() {
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
         '2' => 0,
-        '3' => 0,
-        '4' => 0,
-        '8' => 0,
-        '14' => 0,
-        '6' => 0,
-        '13' => 0,
-        '7' => 0,
-        '9' => 0,
         '5' => 0,
-        '12' => 0,
-        '15' => 0,
+        '9' => 0,
+        '7' => 0,
         '10' => 0,
         '11' => 0,
+        '12' => 0,
+        '3' => 0,
+        '6' => 0,
+        '4' => 0,
+        '8' => 0,
+        '13' => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
       'default_argument_image_size' => '_original',
       'default_argument_user' => 1,
       'default_argument_fixed' => '',
-      'default_argument_php' => 'if (arg(1)) { 
+      'default_argument_php' => 'if (arg(0)==\'profile\') {
+if (arg(1)) { 
  return (arg(1));
+}
 }
 else {
  global $user;
@@ -411,37 +411,33 @@ else {
         'preview' => 'preview',
       ),
       'validate_argument_node_type' => array(
-        'webform' => 0,
         'image' => 0,
-        'blog' => 0,
-        'forum' => 0,
-        'civicrmactivity' => 0,
-        'faq' => 0,
-        'farticle' => 0,
-        'fauthor' => 0,
-        'gp' => 0,
-        'lawmaker' => 0,
-        'mediagall' => 0,
-        'natblog' => 0,
-        'page' => 0,
+        'country' => 0,
+        'county' => 0,
+        'group_announcement' => 0,
+        'region' => 0,
+        'state' => 0,
+        'memblog' => 0,
         'personal' => 0,
-        'pgroup' => 0,
-        'pr' => 0,
         'profile' => 0,
         'profpic' => 0,
+        'settings' => 0,
+        'featured_blocks' => 0,
+        'frontpage_banner' => 0,
+        'page' => 0,
+        'faq' => 0,
         'staff' => 0,
-        'story' => 0,
+        'forum' => 0,
+        'feed' => 0,
         'video' => 0,
+        'webform' => 0,
       ),
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '51' => 0,
         '2' => 0,
-        '49' => 0,
-        '47' => 0,
-        '50' => 0,
-        '46' => 0,
+        '3' => 0,
+        '1' => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -452,10 +448,16 @@ else {
       'validate_argument_user_flag_name' => '*relationship*',
       'validate_argument_user_flag_test' => 'flaggable',
       'validate_argument_user_flag_id_type' => 'id',
-      'validate_argument_is_member' => 0,
+      'validate_argument_is_member' => 'OG_VIEWS_DO_NOT_VALIDATE_MEMBERSHIP',
       'validate_argument_php' => '',
       'override' => array(
         'button' => 'Use default',
+      ),
+      'validate_argument_group_node_type' => array(
+        'country' => 0,
+        'county' => 0,
+        'region' => 0,
+        'state' => 0,
       ),
     ),
   ));

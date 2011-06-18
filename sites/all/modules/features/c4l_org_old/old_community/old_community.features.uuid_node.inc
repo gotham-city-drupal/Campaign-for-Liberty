@@ -20,19 +20,19 @@ function old_community_uuid_features_default_content() {
     'revision_uid' => '1',
     'title' => 'Community',
     'body' => '<?php
-
+  
           $mod_path = drupal_get_path(\'module\', \'community_map\');
           global $base_path;
           drupal_add_js($mod_path . \'/community_map.js\');
-
+  
           ?>
-
+  
           <h2>Select Your State</h2>
           <div id="floatingnamediv" ><h3>&nbsp;</h3>
           </div>
-
+  
           <img src="<?php print $base_path . $mod_path;?>/Community-Map.jpg" width="950" height="830" border="0" usemap="#map" />
-
+  
           <map name="map">
           <!-- #$-:Image map file created by GIMP Image Map plug-in -->
           <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
@@ -90,13 +90,13 @@ function old_community_uuid_features_default_content() {
           <area shape="poly" class="community_map_area" coords="615,405,618,410,617,467,619,490,622,494,633,493,638,490,639,483,634,479,647,479,674,476,673,471,672,468,672,462,671,458,672,453,673,451,672,449,668,442,664,428,658,403" alt="Alabama" href="#mapanchor"  />
           <area shape="poly" class="community_map_area" coords="666,401,706,397,706,399,703,403,705,404,710,406,717,416,720,416,728,423,734,430,743,444,747,445,747,448,744,452,743,458,741,463,740,472,734,472,733,473,733,479,728,480,727,477,687,479,685,479,681,469,681,463,678,460,680,456,680,450,680,446,677,443" alt="Georgia" href="#mapanchor" />
           <area shape="poly" class="community_map_area" coords="798,280,801,275,805,279,804,284" alt="District of Columbia" href="#mapanchor" />
-
+  
           </map>
-
+  
           <form action="#" method="post" onsubmit="return false;">
-
+  
           Or select state with this pull-down: <select id="communitymapstateselect">
-
+  
           <option value=""></option>
           <option value="Alabama">Alabama</option>
           <option value="Alaska">Alaska</option>
@@ -149,48 +149,48 @@ function old_community_uuid_features_default_content() {
           <option value="West Virginia">West Virginia</option>
           <option value="Wisconsin">Wisconsin</option>
           <option value="Wyoming">Wyoming</option>
-
+  
           </select>
-
+  
           </form>
-
+  
           <a name="mapanchor" id="mapanchor" />
           <div id="communitymapstatelistdiv" style="display: none;">
           <h3>State Group</h3>
           <ul id="communitymapstatelist">
-
+  
           </ul>
-
+  
           </div>
-
-
+  
+  
           <div id="communitymapdistrictlistdiv" style="display: none;">
           <h3>Region Groups</h3>
-
-
+  
+  
           </div>
-
-
+  
+  
           <div id="communitymapcountylistdiv" style="display: none;">
           <h3>County Groups</h3>
-
-
+  
+  
           </div>
           ',
     'teaser' => '<?php
-
+  
           $mod_path = drupal_get_path(\'module\', \'community_map\');
           global $base_path;
           drupal_add_js($mod_path . \'/community_map.js\');
-
+  
           ?>
-
+  
           <h2>Select Your State</h2>
           <div id="floatingnamediv" ><h3>&nbsp;</h3>
           </div>
-
+  
           <img src="<?php print $base_path . $mod_path;?>/Community-Map.jpg" width="950" height="830" border="0" usemap="#map" />
-
+  
           <map name="map">
           <!-- #$-:Image map file created by GIMP Image Map plug-in -->
           <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
@@ -248,13 +248,13 @@ function old_community_uuid_features_default_content() {
           <area shape="poly" class="community_map_area" coords="615,405,618,410,617,467,619,490,622,494,633,493,638,490,639,483,634,479,647,479,674,476,673,471,672,468,672,462,671,458,672,453,673,451,672,449,668,442,664,428,658,403" alt="Alabama" href="#mapanchor"  />
           <area shape="poly" class="community_map_area" coords="666,401,706,397,706,399,703,403,705,404,710,406,717,416,720,416,728,423,734,430,743,444,747,445,747,448,744,452,743,458,741,463,740,472,734,472,733,473,733,479,728,480,727,477,687,479,685,479,681,469,681,463,678,460,680,456,680,450,680,446,677,443" alt="Georgia" href="#mapanchor" />
           <area shape="poly" class="community_map_area" coords="798,280,801,275,805,279,804,284" alt="District of Columbia" href="#mapanchor" />
-
+  
           </map>
-
+  
           <form action="#" method="post" onsubmit="return false;">
-
+  
           Or select state with this pull-down: <select id="communitymapstateselect">
-
+  
           <option value=""></option>
           <option value="Alabama">Alabama</option>
           <option value="Alaska">Alaska</option>
@@ -307,32 +307,32 @@ function old_community_uuid_features_default_content() {
           <option value="West Virginia">West Virginia</option>
           <option value="Wisconsin">Wisconsin</option>
           <option value="Wyoming">Wyoming</option>
-
+  
           </select>
-
+  
           </form>
-
+  
           <a name="mapanchor" id="mapanchor" />
           <div id="communitymapstatelistdiv" style="display: none;">
           <h3>State Group</h3>
           <ul id="communitymapstatelist">
-
+  
           </ul>
-
+  
           </div>
-
-
+  
+  
           <div id="communitymapdistrictlistdiv" style="display: none;">
           <h3>Region Groups</h3>
-
-
+  
+  
           </div>
-
-
+  
+  
           <div id="communitymapcountylistdiv" style="display: none;">
           <h3>County Groups</h3>
-
-
+  
+  
           </div>
           ',
     'log' => '',

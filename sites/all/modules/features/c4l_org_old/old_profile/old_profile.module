@@ -14,3 +14,43 @@ function old_profile_form_privatemsg_list_alter(&$form, &$form_state/*, $form_id
         '#suffix' => '</p>',
       );
 }
+
+/**
+ * Alter the final export array just prior to the rendering of defaults. Allows
+ * modules a final say in altering what component objects are exported.
+ *
+ * @param array &$export
+ *   By reference. An array of all components to be exported with a given
+ *   feature.
+ * @param array $module_name
+ *   The name of the feature module to be generated.
+ */
+function old_profile_features_export_alter(&$export, $module_name) {
+  // Example: do not allow the page content type to be exported, ever.
+  if (!empty($export['node']['page'])) {
+    unset($export['node']['page']);
+  }
+}
+
+/**
+* Implements hook_uuid_node_features_export_render_alter()
+*/
+function old_profile_uuid_node_features_export_render_alter(&$export, $node, $module) {
+  // don't allow uuid_features to export node properties that can change on deployment
+  unset($export->changed);
+  unset($export->created);
+  unset($export->revision_uuid);
+  unset($export->last_comment_timestamp);
+  unset($export->revision_timestamp);
+  unset($export->data);
+  unset($export->picture);
+  unset($export->old_status);
+  unset($export->date);
+  // webform stores nid
+  if(isset($export->webform)) {
+    unset($export->webform['nid']);
+    foreach($export->webform['components'] as $key => $wf) {
+      unset($export->webform['components'][$key]['nid']);
+    }
+  }
+}

@@ -350,73 +350,6 @@ function old_community_content_default_fields() {
     ),
   );
 
-  // Exported field: field_og_civicrmhook
-  $fields['county-field_og_civicrmhook'] = array(
-    'field_name' => 'field_og_civicrmhook',
-    'type_name' => 'county',
-    'display_settings' => array(
-      'weight' => '3',
-      'parent' => '',
-      'label' => array(
-        'format' => 'hidden',
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'text',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'text',
-    'active' => '1',
-    'text_processing' => '0',
-    'max_length' => '',
-    'allowed_values' => '',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'rows' => 5,
-      'size' => '60',
-      'default_value' => array(
-        '0' => array(
-          'value' => '',
-          '_error_element' => 'default_value_widget][field_og_civicrmhook][0][value',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'CiviCRM Hookin',
-      'weight' => '3',
-      'description' => '',
-      'type' => 'text_textfield',
-      'module' => 'text',
-    ),
-  );
-
   // Exported field: field_og_des
   $fields['county-field_og_des'] = array(
     'field_name' => 'field_og_des',
@@ -1618,7 +1551,6 @@ function old_community_content_default_fields() {
   t('Abbreviation (3 Letter)');
   t('Abbreviation (5 Letter)');
   t('Brief Description');
-  t('CiviCRM Hookin');
   t('Country Picture');
   t('County Picture');
   t('Link to Official Site');
