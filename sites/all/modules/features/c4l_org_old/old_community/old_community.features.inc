@@ -5,7 +5,10 @@
  */
 function old_community_ctools_plugin_api() {
   list($module, $api) = func_get_args();
-  if ($module == "strongarm" && $api == "strongarm") {
+  if ($module == "context" && $api == "context") {
+    return array("version" => 3);
+  }
+  elseif ($module == "strongarm" && $api == "strongarm") {
     return array("version" => 1);
   }
 }
@@ -37,17 +40,6 @@ function old_community_node_info() {
       'min_word_count' => '0',
       'help' => '',
     ),
-    'group_announcement' => array(
-      'name' => t('Group Announcement'),
-      'module' => 'features',
-      'description' => t('Brief message to be posted at the top of group pages.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'has_body' => '1',
-      'body_label' => t('Message'),
-      'min_word_count' => '0',
-      'help' => t('Brief message to be posted at top of group pages.'),
-    ),
     'region' => array(
       'name' => t('Regional Group'),
       'module' => 'features',
@@ -72,4 +64,13 @@ function old_community_node_info() {
     ),
   );
   return $items;
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function old_community_views_api() {
+  return array(
+    'api' => '2',
+  );
 }

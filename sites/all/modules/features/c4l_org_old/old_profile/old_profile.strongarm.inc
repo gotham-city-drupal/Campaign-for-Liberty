@@ -411,15 +411,13 @@ function old_profile_strongarm() {
   $strongarm->value = array(
     'title' => '-5',
     'body_field' => '-3',
-    'revision_information' => '0',
-    'author' => '4',
-    'options' => '5',
-    'comment_settings' => '3',
-    'menu' => '-1',
-    'path' => '2',
-    'flag' => '1',
-    'path_redirect' => '6',
-    'xmlsitemap' => '7',
+    'revision_information' => '-1',
+    'author' => '2',
+    'options' => '3',
+    'comment_settings' => '1',
+    'menu' => '-2',
+    'path' => '0',
+    'path_redirect' => '4',
   );
 
   $export['content_extra_weights_memblog'] = $strongarm;

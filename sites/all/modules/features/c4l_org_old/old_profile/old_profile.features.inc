@@ -120,7 +120,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -237,7 +236,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -314,7 +312,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -391,7 +388,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -468,7 +464,6 @@ function old_profile_rules_defaults() {
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -533,7 +528,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -598,7 +592,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -664,7 +657,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -756,7 +748,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -857,7 +848,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -942,7 +932,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -1010,7 +999,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -1071,7 +1059,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
@@ -1205,7 +1192,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
         '#active' => 1,
         '#weight' => '0',
         '#categories' => array(
-          '0' => 'profile',
           'old_profile' => 'old_profile',
         ),
         '#status' => 'default',
