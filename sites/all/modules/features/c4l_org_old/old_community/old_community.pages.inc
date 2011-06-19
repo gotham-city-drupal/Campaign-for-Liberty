@@ -12,12 +12,12 @@ function old_profile_promote_member_confirm($form_state, $node, $account, $type)
   $form['rid'] = array('#type' => 'value', '#value' => array_search($type . ' coordinator', user_roles(), TRUE));
 
   return confirm_form($form,
-           t('Are you sure you want to make !name a !type Coordinator of !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
+           t('Are you sure you want to make !name a !type Coordinator for !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
            "og/users/$node->nid",
            ' ',
            t('Confirm'),
            t('Cancel'));
-  }
+}
 
 /**
  * Confirm og create admin form
@@ -32,38 +32,13 @@ function old_profile_promote_member_confirm_submit($form, &$form_state) {
     db_query('INSERT INTO {users_roles} (uid, rid) VALUES (%d, %d)', $account->uid, $rid);
   }
 
-  og_save_subscription($node->nid, $account->uid, array('is_admin' => 1));
+  og_save_subscription($node->nid, $account->uid, array('is_admin' => 1, 'is_active' => 1));
 
   if ($type == 'state') {
-     print "yes";
+    old_profile_promote_state_coordinator($node->nid, $account->uid);
+  }
 
-     $settings_node = node_load(array('uid' => $account->uid, 'type' => 'settings', 'status' => 1));
-
-     //NOW LETS INSERT ALL THOSE OTHERS
-      $q = 'SELECT c.nid AS NID
-        FROM content_field_og_state c, node n
-        WHERE field_og_state_nid = ' . $node->nid . '
-          AND c.nid = n.nid
-          AND c.nid NOT IN (
-          SELECT nid
-          FROM og_uid
-          WHERE uid = ' . $account->uid . ')';
-
-      $result = db_query($q);
-
-      while($row = db_fetch_object($result)){
-        //| nid  | og_role | is_active | is_admin | uid  | created    | changed    |
-        //$q2 = "INSERT INTO og_uid VALUES(" .  $row->NID . ", 0, 1, 1, " . $user_id . ", " . time() . ", " . time() .")";
-        //$r2  = db_query($q2);
-        print_r($row);
-      }
-   }
-   else {
-
-   }
-
-
-  drupal_set_message($fuck.t('%name was promoted to <em>group administrator</em>.', array('%name' => $account->name)));
+  drupal_set_message(t('%name is now a !type Coordinator for !title.', array('%name' => $account->name, '!type' => ucwords($type), '!title' => $node->title)));
 
   $variables = array(
     '@group' => $node->title,
@@ -77,7 +52,6 @@ function old_profile_promote_member_confirm_submit($form, &$form_state) {
   );
 
   module_invoke_all('og', 'admin new', $node->nid, $account->uid, $message);
-
   $form_state['#redirect'] = "og/users/$node->nid";
 }
 
@@ -86,15 +60,15 @@ function old_profile_promote_member_confirm_submit($form, &$form_state) {
  */
 function old_profile_demote_member_confirm($form_state, $node, $account, $type) {
   $form['gid'] = array('#type' => 'value', '#value' => $node->nid);
+  $form['title'] = array('#type' => 'value', '#value' => $node->title);
   $form['account'] = array('#type' => 'value', '#value' => $account);
-
 
   // group type and associated role id
   $form['type'] = array('#type' => 'value', '#value' => $type);
   $form['rid'] = array('#type' => 'value', '#value' => array_search($type . ' coordinator', user_roles(), TRUE));
 
   return confirm_form($form,
-    t('Are you sure you want to remove !name as a !type Coordinator of !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
+    t('Are you sure you want to remove !name as a !type Coordinator for !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
     "og/users/$node->nid",
     ' ',
     t('Remove'),
@@ -110,44 +84,72 @@ function old_profile_demote_member_confirm_submit($form, &$form_state) {
   $gid = $form_state['values']['gid'];
   $type = $form_state['values']['type'];
   $rid = $form_state['values']['rid'];
+  $title = $form_state['values']['title'];
 
   if (isset($account->roles[$rid])) {
     db_query('DELETE FROM {users_roles} WHERE uid = %d AND rid = %d', $account->uid, $rid);
   }
 
-  og_save_subscription($gid, $account->uid, array('is_admin' => 0));
+  og_save_subscription($gid, $account->uid, array('is_admin' => 0, 'is_active' => 1));
 
   if ($type == 'state') {
-     print "yes";
+    old_profile_remove_state_coordinator($gid, $account->uid);
+  }
 
-     $settings_node = node_load(array('uid' => $account->uid, 'type' => 'settings', 'status' => 1));
-
-     //NOW LETS INSERT ALL THOSE OTHERS
-      $q = 'SELECT c.nid AS NID
-        FROM content_field_og_state c, node n
-        WHERE field_og_state_nid = ' . $node->nid . '
-          AND c.nid = n.nid
-          AND c.nid NOT IN (
-          SELECT nid
-          FROM og_uid
-          WHERE uid = ' . $account->uid . ')';
-
-      $result = db_query($q);
-
-      while($row = db_fetch_object($result)){
-        //| nid  | og_role | is_active | is_admin | uid  | created    | changed    |
-        //$q2 = "INSERT INTO og_uid VALUES(" .  $row->NID . ", 0, 1, 1, " . $user_id . ", " . time() . ", " . time() .")";
-        //$r2  = db_query($q2);
-        print_r($row);
-      }
-   }
-   else {
-
-   }
-
-
-  drupal_set_message(t('%name is no longer a <em>group administrator</em>.', array('%name' => $account->name)));
+  drupal_set_message(t('%name is no longer a !type Coordinator for !title.', array('%name' => $account->name, '!type' => ucwords($type), '!title' => $title)));
   $form_state['redirect'] = "og/users/$gid";
+}
+
+/**
+ * function for promoting a state coordinator
+ *
+ * adds member to all sub groups of state
+ *
+ */
+function old_profile_promote_state_coordinator($nid, $uid) {
+  //update subscriptions for state subgroups that user is already a member of
+  $notin = 'SELECT c.nid, n.title
+                    FROM content_field_og_state c, node n
+                    WHERE field_og_state_nid = %d
+                    AND c.nid = n.nid';
+  $result = db_query($notin, $nid, $uid);
+
+  while($row = db_fetch_object($result)) {
+    og_save_subscription($row->nid, $uid, array('is_admin' => 1, 'is_active' => 1));
+  }
+}
+
+/**
+ * function for promoting a state coordinator
+ *
+ * adds member to all sub groups of state
+ *
+ */
+function old_profile_remove_state_coordinator($nid, $uid) {
+  //update subscriptions for state subgroups that user is already a member of
+
+  $groups = 'SELECT c.nid, n.title, n.type
+                  FROM content_field_og_state c, node n
+                  WHERE field_og_state_nid = %d
+                  AND c.nid = n.nid
+                  AND c.nid
+                  IN (SELECT nid FROM og_uid WHERE uid = %d)';
+  $result = db_query($groups, $nid, $uid);
+
+  $settings_node = node_load(array('uid' => $uid, 'type' => 'settings', 'status' => 1));
+
+  while($row = db_fetch_object($result)) {
+    if ($row->type=='region') {
+      if (($row->nid)!=($settings_node->field_prof_region[0]['nid'])) {
+        og_delete_subscription($row->nid, $uid);
+      }
+    }
+    elseif ($row->type=='county') {
+      if (($row->nid)!=($settings_node->field_prof_county[0]['nid'])) {
+        og_delete_subscription($row->nid, $uid);
+      }
+    }
+  }
 }
 
 

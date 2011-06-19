@@ -18,17 +18,19 @@ class old_community_views_handler_field_og_managelinklocal extends og_views_hand
       $is_admin = $values->{$this->aliases['is_admin']};
       $node = node_load($nid);
       // Only show links to group admins. And don't show next to group manager.
-      if ($uid != $node->uid) {
-        if (!$is_admin) {
-          $item = menu_get_item("community/$nid/promote/$uid/local");
-          if (($item['access'])||(user_access('manage all coordinators'))) {
-            return l(t('promote to local coordinator', array('!type' => $node->type)), "community/$nid/promote/$uid/local", array('query' => drupal_get_destination()));
+      if ($node->type=='county') {
+        if ($uid != $node->uid) {
+          if (!$is_admin) {
+            $item = menu_get_item("community/$nid/promote/$uid/local");
+            if (($item['access'])||(user_access('manage all coordinators'))) {
+              return l(t('promote to local coordinator', array('!type' => $node->type)), "community/$nid/promote/$uid/local", array('query' => drupal_get_destination()));
+            }
           }
-        }
-        else {
-          $item = menu_get_item("community/$nid/promote/$uid/local");
-          if (($item['access'])||(user_access('manage all coordinators'))) {
-            return l(t('demote from local coordinator', array('!type' => $node->type)), "community/$nid/demote/$uid/local", array('query' => drupal_get_destination()));
+          else {
+            $item = menu_get_item("community/$nid/promote/$uid/local");
+            if (($item['access'])||(user_access('manage all coordinators'))) {
+              return l(t('demote from local coordinator', array('!type' => $node->type)), "community/$nid/demote/$uid/local", array('query' => drupal_get_destination()));
+            }
           }
         }
       }
