@@ -106,6 +106,89 @@ function old_profile_node_info() {
 function old_profile_rules_defaults() {
   return array(
     'rules' => array(
+      'rules_21' => array(
+        '#type' => 'rule',
+        '#set' => 'event_node_insert',
+        '#label' => 'After prof pic is created redirect to profile',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          'old_profile' => 'old_profile',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#type' => 'condition',
+            '#settings' => array(
+              'type' => array(
+                'profpic' => 'profpic',
+              ),
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#name' => 'rules_condition_content_is_type',
+            '#info' => array(
+              'label' => 'Created content is Profile Picture',
+              'arguments' => array(
+                'node' => array(
+                  'type' => 'node',
+                  'label' => 'Content',
+                ),
+              ),
+              'module' => 'Node',
+            ),
+          ),
+        ),
+        '#actions' => array(
+          '0' => array(
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#settings' => array(
+              'path' => 'profile',
+              'query' => '',
+              'fragment' => '',
+              'force' => 1,
+              'immediate' => 0,
+            ),
+            '#type' => 'action',
+            '#weight' => 0,
+          ),
+          '1' => array(
+            '#weight' => 0,
+            '#type' => 'action',
+            '#settings' => array(
+              'message' => 'You\'ve successfully completed the profile setup!',
+              'error' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'message' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#name' => 'rules_action_drupal_message',
+            '#info' => array(
+              'label' => 'Show a configurable message on the site',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'message',
+              ),
+            ),
+          ),
+        ),
+        '#version' => 6003,
+      ),
       'rules_18' => array(
         '#type' => 'rule',
         '#set' => 'event_user_view',
@@ -369,82 +452,6 @@ function old_profile_rules_defaults() {
                 '0' => 'message',
               ),
             ),
-            '#weight' => 0,
-          ),
-        ),
-        '#version' => 6003,
-      ),
-      'rules_21' => array(
-        '#type' => 'rule',
-        '#set' => 'event_node_insert',
-        '#label' => 'After prof pic is created redirect to profile',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          'old_profile' => 'old_profile',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(
-          '0' => array(
-            '#info' => array(
-              'label' => 'Created content is Profile Picture',
-              'arguments' => array(
-                'node' => array(
-                  'type' => 'node',
-                  'label' => 'Content',
-                ),
-              ),
-              'module' => 'Node',
-            ),
-            '#name' => 'rules_condition_content_is_type',
-            '#settings' => array(
-              'type' => array(
-                'profpic' => 'profpic',
-              ),
-              '#argument map' => array(
-                'node' => 'node',
-              ),
-            ),
-            '#type' => 'condition',
-            '#weight' => 0,
-          ),
-        ),
-        '#actions' => array(
-          '0' => array(
-            '#weight' => 0,
-            '#type' => 'action',
-            '#settings' => array(
-              'path' => 'profile',
-              'query' => '',
-              'fragment' => '',
-              'force' => 1,
-              'immediate' => 0,
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-          ),
-          '1' => array(
-            '#info' => array(
-              'label' => 'Show a configurable message on the site',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'message',
-              ),
-            ),
-            '#name' => 'rules_action_drupal_message',
-            '#settings' => array(
-              'message' => 'You\'ve successfully completed the profile setup! Check out your groups or use the contact search to start connecting!',
-              'error' => 0,
-            ),
-            '#type' => 'action',
             '#weight' => 0,
           ),
         ),

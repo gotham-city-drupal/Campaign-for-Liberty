@@ -128,6 +128,227 @@ function piropublic_node_info() {
 }
 
 /**
+ * Implementation of hook_rules_defaults().
+ */
+function piropublic_rules_defaults() {
+  return array(
+    'rules' => array(
+      'rules_add_new_frontpage_banner_to_top_of_nodequeue' => array(
+        '#type' => 'rule',
+        '#set' => 'event_node_insert',
+        '#label' => 'Add New Frontpage Banner to Top of Nodequeue',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'piropublic',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Created content is Frontpage Banner',
+              'arguments' => array(
+                'node' => array(
+                  'type' => 'node',
+                  'label' => 'Content',
+                ),
+              ),
+              'module' => 'Node',
+            ),
+            '#name' => 'rules_condition_content_is_type',
+            '#settings' => array(
+              'type' => array(
+                'frontpage_banner' => 'frontpage_banner',
+              ),
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#type' => 'condition',
+          ),
+        ),
+        '#actions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'module' => 'Node',
+              'arguments' => array(
+                'node' => array(
+                  'label' => 'Content',
+                  'type' => 'node',
+                ),
+              ),
+              'label' => 'Add to Nodequeues',
+              'base' => 'rules_core_action_execute',
+              'action_name' => 'nodequeue_add_action',
+              'configurable' => TRUE,
+            ),
+            '#name' => 'rules_core_nodequeue_add_action',
+            '#settings' => array(
+              'qids' => array(
+                '1' => '1',
+              ),
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#type' => 'action',
+          ),
+        ),
+        '#version' => 6003,
+      ),
+      'rules_redirect_featured_block_creation_to_frontpage' => array(
+        '#type' => 'rule',
+        '#set' => 'event_node_presave',
+        '#label' => 'Redirect featured block creation to frontpage',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'piropublic',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Saved content is Featured Blocks',
+              'arguments' => array(
+                'node' => array(
+                  'type' => 'node',
+                  'label' => 'Content',
+                ),
+              ),
+              'module' => 'Node',
+            ),
+            '#name' => 'rules_condition_content_is_type',
+            '#settings' => array(
+              'type' => array(
+                'featured_blocks' => 'featured_blocks',
+              ),
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#type' => 'condition',
+          ),
+        ),
+        '#actions' => array(
+          '0' => array(
+            '#type' => 'action',
+            '#settings' => array(
+              'path' => '<front>',
+              'query' => '',
+              'fragment' => '',
+              'force' => 0,
+              'immediate' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'path' => array(
+                    '0' => ':global',
+                  ),
+                  'query' => array(
+                    '0' => ':global',
+                  ),
+                  'fragment' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#weight' => 0,
+          ),
+        ),
+        '#version' => 6003,
+      ),
+      'rules_redirect_frontpage_banner_creation_to_frontpage' => array(
+        '#type' => 'rule',
+        '#set' => 'event_node_presave',
+        '#label' => 'Redirect frontpage banner creation to frontpage',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'piropublic',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(
+          '0' => array(
+            '#type' => 'condition',
+            '#settings' => array(
+              'type' => array(
+                'frontpage_banner' => 'frontpage_banner',
+              ),
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#name' => 'rules_condition_content_is_type',
+            '#info' => array(
+              'label' => 'Saved content is Frontpage Banner',
+              'arguments' => array(
+                'node' => array(
+                  'type' => 'node',
+                  'label' => 'Content',
+                ),
+              ),
+              'module' => 'Node',
+            ),
+            '#weight' => 0,
+          ),
+        ),
+        '#actions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#settings' => array(
+              'path' => '<front>',
+              'query' => '',
+              'fragment' => '',
+              'force' => 0,
+              'immediate' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'path' => array(
+                    '0' => ':global',
+                  ),
+                  'query' => array(
+                    '0' => ':global',
+                  ),
+                  'fragment' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#type' => 'action',
+          ),
+        ),
+        '#version' => 6003,
+      ),
+    ),
+  );
+}
+
+/**
  * Implementation of hook_views_api().
  */
 function piropublic_views_api() {

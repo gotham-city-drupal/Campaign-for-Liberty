@@ -22,13 +22,13 @@ class old_community_views_handler_field_og_managelinkadmin extends og_views_hand
         if (!$is_admin) {
           $item = menu_get_item("community/$nid/promote/$uid/$node->type");
           if (($item['access'])||(user_access('manage all coordinators'))) {
-            return l(t('promote to !type coordinator', array('!type' => $node->type)), "community/$nid/promote/$uid/$node->type", array('query' => drupal_get_destination()));
+            return l(t('Promote to !type coordinator', array('!type' => $node->type)), "community/$nid/promote/$uid/$node->type", array('query' => drupal_get_destination()));
           }
         }
         else {
           $item = menu_get_item("community/$nid/demote/$uid/$node->type");
           if (($item['access'])||(user_access('manage all coordinators'))) {
-            return l(t('demote from !type coordinator', array('!type' => $node->type)), "community/$nid/demote/$uid/$node->type", array('query' => drupal_get_destination()));
+            return l(t('Demote from !type coordinator', array('!type' => $node->type)), "community/$nid/demote/$uid/$node->type", array('query' => drupal_get_destination()));
           }
         }
       }
