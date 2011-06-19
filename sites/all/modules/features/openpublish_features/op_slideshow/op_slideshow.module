@@ -1,5 +1,0 @@
-<?php
-
-include_once('op_slideshow.features.inc');
-
-include_once(dirname(__FILE__) . '/includes/theme.inc');

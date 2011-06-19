@@ -1,3 +1,0 @@
-<?php
-
-include_once('op_solr.features.inc');
