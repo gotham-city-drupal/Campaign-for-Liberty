@@ -40,11 +40,17 @@ function old_profile_context_default_contexts() {
           'region' => 'left_top',
           'weight' => 2,
         ),
-        'views-og_my-block_1' => array(
+        'views-profile_my_groups-block_1' => array(
           'module' => 'views',
-          'delta' => 'og_my-block_1',
+          'delta' => 'profile_my_groups-block_1',
           'region' => 'right_top',
           'weight' => 0,
+        ),
+        'views-profile_my_admin_groups-block_1' => array(
+          'module' => 'views',
+          'delta' => 'profile_my_admin_groups-block_1',
+          'region' => 'right_top',
+          'weight' => 1,
         ),
       ),
     ),
