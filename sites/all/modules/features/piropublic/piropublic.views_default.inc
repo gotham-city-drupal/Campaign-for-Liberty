@@ -1134,8 +1134,8 @@ function piropublic_views_default_views() {
   $handler->override_option('style_options', array(
     'wrap' => 'circular',
     'skin' => 'default',
-    'visible' => '1',
-    'scroll' => '',
+    'visible' => '',
+    'scroll' => '1',
     'auto' => '0',
     'animation' => '',
     'easing' => '',

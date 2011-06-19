@@ -247,7 +247,7 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'contact_default_status';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
 
   $export['contact_default_status'] = $strongarm;
   $strongarm = new stdClass;
@@ -277,7 +277,6 @@ function piropublic_strongarm() {
     'menu' => '0',
     'path' => '5',
     'path_redirect' => '7',
-    'xmlsitemap' => '4',
   );
 
   $export['content_extra_weights_featured_blocks'] = $strongarm;
@@ -1016,20 +1015,6 @@ function piropublic_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_update_action';
-  $strongarm->value = '2';
-
-  $export['pathauto_update_action'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'site_403';
-  $strongarm->value = 'toboggan/denied';
-
-  $export['site_403'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'site_404';
   $strongarm->value = 'search404';
 
@@ -1130,20 +1115,7 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'vertical_tabs_forms';
-  $strongarm->value = array(
-    'frontpage_banner_node_form' => array(
-      'menu' => 'menu',
-      'notifications' => 'notifications',
-      'revision_information' => 'revision_information',
-      'author' => 'author',
-      'options' => 'options',
-      'comment_settings' => 'comment_settings',
-      'xmlsitemap' => 'xmlsitemap',
-      'path' => 'path',
-      'group_frontpage_banner_vidgrp' => 0,
-      'group_frontpage_banner_lnkgrp' => 0,
-    ),
-  );
+  $strongarm->value = array();
 
   $export['vertical_tabs_forms'] = $strongarm;
   $strongarm = new stdClass;

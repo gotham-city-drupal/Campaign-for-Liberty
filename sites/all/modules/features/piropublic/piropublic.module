@@ -2,9 +2,11 @@
 
 include_once('piropublic.features.inc');
 
+
 /**
  * Implementation of hook_perm()
  */
+
 function piropublic_perm() {
   return array('manage frontpage_banner cycle order');
 }

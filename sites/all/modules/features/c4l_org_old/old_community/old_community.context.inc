@@ -23,6 +23,12 @@ function old_community_context_default_contexts() {
         'node_form' => '0',
       ),
     ),
+    'path' => array(
+      'values' => array(
+        'community/*/members' => 'community/*/members',
+        'community/*/coordinators' => 'community/*/coordinators',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -45,21 +51,15 @@ function old_community_context_default_contexts() {
           'region' => 'left_top',
           'weight' => 2,
         ),
-        'views-og_members_block-block' => array(
+        'views-group_members-block_1' => array(
           'module' => 'views',
-          'delta' => 'og_members_block-block',
+          'delta' => 'group_members-block_1',
           'region' => 'left',
           'weight' => 0,
         ),
-        'views-og_members_block-block_1' => array(
+        'views--exp-group_members-page' => array(
           'module' => 'views',
-          'delta' => 'og_members_block-block_1',
-          'region' => 'left',
-          'weight' => 1,
-        ),
-        'og_views-0' => array(
-          'module' => 'og_views',
-          'delta' => 0,
+          'delta' => '-exp-group_members-page',
           'region' => 'right_top',
           'weight' => 0,
         ),

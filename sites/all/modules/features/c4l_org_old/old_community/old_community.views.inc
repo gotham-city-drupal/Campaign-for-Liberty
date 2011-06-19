@@ -19,7 +19,7 @@ function old_community_views_handlers() {
 		'old_community_views_handler_field_og_managelinkadmin' => array(
         'parent' => 'og_views_handler_field_og_uid',
       ),
-      	'old_community_views_handler_field_og_mangelinklocal' => array(
+      	'old_community_views_handler_field_og_managelinklocal' => array(
         'parent' => 'og_views_handler_field_og_uid',
       ),
       	'old_community_views_handler_field_og_editlink' => array(
