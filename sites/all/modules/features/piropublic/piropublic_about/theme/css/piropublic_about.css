@@ -41,8 +41,8 @@
 #staff-board-teaser {
   width: 320px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
-  min-height: 110px;
+  margin-bottom: 10px;
+  height: 190px;
 }
 
 .staff-board-teaser-left {

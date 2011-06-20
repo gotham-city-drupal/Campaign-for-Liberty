@@ -1,5 +1,6 @@
 /* $Id: layout.css,v 1.1.2.11.2.3 2010/04/21 14:17:09 psynaptic Exp $ */
 
+
 /* Global */
 .limiter {
   width: 960px;
@@ -133,21 +134,28 @@ a#logo {
 
 #footer {
   min-height: 165px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin-top: 100px; /* collapse hack */
 }
 
 #footer_main {
-  height: 625px;
+  /* height: 625px; */
   margin: 0 auto;
 }
 
 #footer_top {
   padding: 105px 0 0;
-  height: 425px;
+  /* height: 425px; */
+  /* collapse hacks */
+  position: relative;
+  top:-63px;
 }
 
 #footer_bottom {
-  padding: 30px 0 0;
+  /* padding: 30px 0 0; */
+  /* collapse hacks */
+  position:relative;
+  top:-63px;
 }
 
 #footer_bottom .block-content {

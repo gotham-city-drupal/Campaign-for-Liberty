@@ -47,45 +47,6 @@ function piropublic_context_default_contexts() {
   $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'front_page';
-  $context->description = 'Front Page Context';
-  $context->tag = 'piropublic core';
-  $context->conditions = array(
-    'path' => array(
-      'values' => array(
-        '<front>' => '<front>',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'views-frontpage_banner-block_1' => array(
-          'module' => 'views',
-          'delta' => 'frontpage_banner-block_1',
-          'region' => 'banner',
-          'weight' => 0,
-        ),
-        'views-legislative_efforts-block_1' => array(
-          'module' => 'views',
-          'delta' => 'legislative_efforts-block_1',
-          'region' => 'right',
-          'weight' => 0,
-        ),
-      ),
-    ),
-  );
-  $context->condition_mode = 0;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Front Page Context');
-  t('piropublic core');
-
-  $export['front_page'] = $context;
-  $context = new stdClass;
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
   $context->name = 'header_top_menu_anon';
   $context->description = 'Context for header top menu for anonymous users';
   $context->tag = 'piropublic core';

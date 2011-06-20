@@ -1,0 +1,4 @@
+<?php
+
+include_once('old_misc.features.inc');
+// Drupal needs this blank file.

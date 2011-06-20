@@ -119,7 +119,8 @@ body,table,td {
 }
 
 #footer {
-  background: url("../img/footer-bg.jpg") repeat-x left bottom;
+  /* background: url("../img/footer-bg.jpg") repeat-x left bottom; */
+  background: url("../img/footer-bg.jpg") repeat-x left top;
 }
 
 #footer #footer_main h3 a {
@@ -136,7 +137,7 @@ body,table,td {
 }
 
 #footer_bottom {
-  background: url("../img/footer-bottom-bg.jpg") no-repeat center top;
+  /* background: url("../img/footer-bottom-bg.jpg") no-repeat center top; */
 }
 
 #footer_bottom .edit a {

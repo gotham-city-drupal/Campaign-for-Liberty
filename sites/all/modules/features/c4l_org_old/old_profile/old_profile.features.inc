@@ -32,6 +32,20 @@ function old_profile_imagecache_default_presets() {
         ),
       ),
     ),
+    'sidebar_thumb' => array(
+      'presetname' => 'sidebar_thumb',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale_and_crop',
+          'data' => array(
+            'width' => '60',
+            'height' => '60',
+          ),
+        ),
+      ),
+    ),
   );
   return $items;
 }

@@ -1228,6 +1228,41 @@ function old_community_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'og_audience_checkboxes';
+  $strongarm->value = 1;
+
+  $export['og_audience_checkboxes'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_audience_country';
+  $strongarm->value = array();
+
+  $export['og_audience_country'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_audience_region';
+  $strongarm->value = array();
+
+  $export['og_audience_region'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_audience_required';
+  $strongarm->value = '1';
+
+  $export['og_audience_required'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_audience_state';
+  $strongarm->value = array();
+
+  $export['og_audience_state'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'og_content_type_usage_country';
   $strongarm->value = 'group';
 
@@ -1246,6 +1281,13 @@ function old_community_strongarm() {
   $strongarm->value = 'group_post_standard';
 
   $export['og_content_type_usage_group_announcement'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_content_type_usage_memblog';
+  $strongarm->value = 'group_post_standard';
+
+  $export['og_content_type_usage_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -1274,6 +1316,13 @@ function old_community_strongarm() {
   $strongarm->value = 'Membership request denied for \'@title\'';
 
   $export['og_deny_user_subject'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_description_country';
+  $strongarm->value = '';
+
+  $export['og_description_country'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -1389,6 +1438,13 @@ function old_community_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'og_home_page_view';
+  $strongarm->value = '0';
+
+  $export['og_home_page_view'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'og_max_groups_country';
   $strongarm->value = '';
 
@@ -1407,6 +1463,13 @@ function old_community_strongarm() {
   $strongarm->value = '';
 
   $export['og_max_groups_group_announcement'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_max_groups_memblog';
+  $strongarm->value = '';
+
+  $export['og_max_groups_memblog'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -1565,7 +1628,7 @@ function old_community_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_visibility';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
 
   $export['og_visibility'] = $strongarm;
   $strongarm = new stdClass;

@@ -1023,7 +1023,7 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'node';
+  $strongarm->value = 'front';
 
   $export['site_frontpage'] = $strongarm;
   $strongarm = new stdClass;
@@ -1115,7 +1115,17 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'vertical_tabs_forms';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    'memblog_node_form' => array(
+      'menu' => 'menu',
+      'revision_information' => 'revision_information',
+      'author' => 'author',
+      'options' => 'options',
+      'path' => 'path',
+      'comment_settings' => 'comment_settings',
+      'notifications' => 0,
+    ),
+  );
 
   $export['vertical_tabs_forms'] = $strongarm;
   $strongarm = new stdClass;

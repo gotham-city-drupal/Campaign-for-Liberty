@@ -38,6 +38,17 @@ function piropublic_theme() {
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
     ),
+    'views_view_fields__upcoming_events' => array(
+      'template' => 'views-view-fields--upcoming-events',
+      'original hook' => 'views_view_fields',
+      'path' => drupal_get_path('module', 'piropublic') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_fields',
+        'piropublic_preprocess_views_view_fields__upcoming_events',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+    ),
   	'views_view_fields__frontpage_banner' => array(
       'template' => 'views-view-fields--frontpage-banner',
       'original hook' => 'views_view_fields',
@@ -58,6 +69,23 @@ function piropublic_theme() {
 function piropublic_preprocess_views_view_fields__legislative_efforts(&$variables) {
   // need to use custom template to fix link module target=blank fail
   $variables['fields']['field_feat_image_fid']->attributes = unserialize($variables['row']->node_data_field_legislative_field_featured_block_link_attributes);
+  $variables['fields']['field_feat_image_fid']->attributes['target'] ?
+    $variables['fields']['field_feat_image_fid']->content = l($variables['fields']['field_feat_image_fid']->content, $variables['fields']['field_featured_block_link_url']->content, array('attributes' => array('target' => $variables['fields']['field_feat_image_fid']->attributes['target']), 'html' => 'true')) :
+    $variables['fields']['field_feat_image_fid']->content = l($variables['fields']['field_feat_image_fid']->content, $variables['fields']['field_featured_block_link_url']->content, array('attributes' => array('target' => '_self'), 'html' => 'true'));
+
+  if (!user_access('create featured_blocks content')) {
+    unset($variables['fields']['nothing']);
+  }
+
+  $variables['admin_links'] = $variables['fields']['nothing']->content . $variables['fields']['edit_node']->content . $variables['fields']['delete_node']->content;
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_preprocess_views_view_fields__upcoming_events(&$variables) {
+  // need to use custom template to fix link module target=blank fail
+  $variables['fields']['field_feat_image_fid']->attributes = unserialize($variables['row']->node_data_field_event_field_featured_block_link_attributes);
   $variables['fields']['field_feat_image_fid']->attributes['target'] ?
     $variables['fields']['field_feat_image_fid']->content = l($variables['fields']['field_feat_image_fid']->content, $variables['fields']['field_featured_block_link_url']->content, array('attributes' => array('target' => $variables['fields']['field_feat_image_fid']->attributes['target']), 'html' => 'true')) :
     $variables['fields']['field_feat_image_fid']->content = l($variables['fields']['field_feat_image_fid']->content, $variables['fields']['field_featured_block_link_url']->content, array('attributes' => array('target' => '_self'), 'html' => 'true'));
@@ -150,10 +178,12 @@ function piropublic_form_alter(&$form, &$form_state, $form_id) {
   unset($form['buttons']['preview']);
   switch ($form_id) {
     case 'featured_blocks_node_form':
+      /* temp disabled
       if (!module_exists('piropublic_events')) {
         $form['field_events']['#description'] = '<small class="red">' . t('piropublic_events module required for this option') . '</small>';
         $form['#after_build'][] = '_piropublic_after_build';
       }
+      */
       if (!module_exists('piropublic_store')) {
         $form['field_store']['#description'] = '<small class="red">' . t('piropublic_store module required for this option') . '</small>';
         $form['#after_build'][] = '_piropublic_after_build';
@@ -168,9 +198,11 @@ function piropublic_form_alter(&$form, &$form_state, $form_id) {
 function _piropublic_after_build($form, &$form_state) {
   switch ($form['form_id']['#value']) {
     case 'featured_blocks_node_form':
+      /* enable for now
       if (!module_exists('piropublic_events')) {
         _piropublic_fix_disabled($form['group_promote']['field_events']);
       }
+      */
       if (!module_exists('piropublic_store')) {
         _piropublic_fix_disabled($form['group_promote']['field_store']);
       }

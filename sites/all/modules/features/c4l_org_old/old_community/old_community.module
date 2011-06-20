@@ -34,8 +34,32 @@ function old_community_menu() {
   return $items;
 }
 
-
-
+/**
+ * Implementation of hook_form_alter()
+ *
+ * need to use instead of hook_FORM_ID_alter() because need for other modules to alter first.
+ *
+ */
+function old_community_form_alter(&$form, &$form_state, $form_id) {
+  $form = $form;
+}
+/**
+ * Implementation of hook_nodeapi().
+ */
+function old_community_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  if ($node->type=='memblog') {
+    switch ($op) {
+      case 'insert':
+        global $user;
+        foreach ($user->og_groups as &$group) {
+          db_query('INSERT INTO {og_access_post} (nid, og_public) VALUES (%d, 0)', $node->nid);
+          db_query('INSERT INTO {og_ancestry} (nid, group_nid) VALUES (%d, %d)', $node->nid, $group['nid']);
+        }
+        unset($group);
+  	  break;
+    }
+  }
+}
 /**
  * Alter the final export array just prior to the rendering of defaults. Allows
  * modules a final say in altering what component objects are exported.

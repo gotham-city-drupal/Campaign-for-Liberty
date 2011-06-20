@@ -222,5 +222,13 @@ function old_community_user_default_permissions() {
     ),
   );
 
+  // Exported permission: subscribe to content in groups
+  $permissions['subscribe to content in groups'] = array(
+    'name' => 'subscribe to content in groups',
+    'roles' => array(
+      '0' => 'administrator',
+    ),
+  );
+
   return $permissions;
 }

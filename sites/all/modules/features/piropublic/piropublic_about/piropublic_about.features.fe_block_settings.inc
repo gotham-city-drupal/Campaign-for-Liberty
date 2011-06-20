@@ -95,7 +95,7 @@ function piropublic_about_default_fe_block_settings() {
     'throttle' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => 'Filter By Question Type',
+    'title' => '',
     'cache' => '1',
   );
 
@@ -154,7 +154,7 @@ function piropublic_about_default_fe_block_settings() {
     'delta' => '1',
     'theme' => 'liberty',
     'status' => 0,
-    'weight' => '-6',
+    'weight' => '0',
     'region' => '',
     'custom' => '0',
     'throttle' => '0',
@@ -169,7 +169,7 @@ function piropublic_about_default_fe_block_settings() {
     'delta' => '-exp-faq-default',
     'theme' => 'liberty',
     'status' => 0,
-    'weight' => '-2',
+    'weight' => '0',
     'region' => '',
     'custom' => '0',
     'throttle' => '0',
@@ -184,13 +184,13 @@ function piropublic_about_default_fe_block_settings() {
     'delta' => '-exp-faq-page_1',
     'theme' => 'liberty',
     'status' => 0,
-    'weight' => '-1',
+    'weight' => '0',
     'region' => '',
     'custom' => '0',
     'throttle' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => 'Filter By Question Type',
+    'title' => '',
     'cache' => '1',
   );
 

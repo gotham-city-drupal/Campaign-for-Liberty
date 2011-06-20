@@ -24,6 +24,7 @@ function old_profile_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-48',
   );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Profile');

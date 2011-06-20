@@ -8,25 +8,20 @@ function piropublic_about_context_default_contexts() {
   $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'about_section';
-  $context->description = 'About us page';
+  $context->name = 'about';
+  $context->description = 'Blocks for all about pages';
   $context->tag = 'piropublic about';
   $context->conditions = array(
     'path' => array(
       'values' => array(
         'about' => 'about',
+        'about/*' => 'about/*',
       ),
     ),
   );
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-5' => array(
-          'module' => 'block',
-          'delta' => 5,
-          'region' => 'banner',
-          'weight' => 0,
-        ),
         'menu_block-1' => array(
           'module' => 'menu_block',
           'delta' => 1,
@@ -54,57 +49,10 @@ function piropublic_about_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('About us page');
+  t('Blocks for all about pages');
   t('piropublic about');
 
-  $export['about_section'] = $context;
-  $context = new stdClass;
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
-  $context->name = 'directors';
-  $context->description = 'Board of Directors';
-  $context->tag = 'piropublic about';
-  $context->conditions = array(
-    'path' => array(
-      'values' => array(
-        'about/board' => 'about/board',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'menu_block-1' => array(
-          'module' => 'menu_block',
-          'delta' => 1,
-          'region' => 'right_top',
-          'weight' => 0,
-        ),
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => 1,
-          'region' => 'right',
-          'weight' => 0,
-        ),
-        'block-3' => array(
-          'module' => 'block',
-          'delta' => 3,
-          'region' => 'right',
-          'weight' => 1,
-        ),
-      ),
-    ),
-    'breadcrumb' => 'about/board',
-    'menu' => 'about/board',
-  );
-  $context->condition_mode = 0;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Board of Directors');
-  t('piropublic about');
-
-  $export['directors'] = $context;
+  $export['about'] = $context;
   $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
@@ -130,29 +78,17 @@ function piropublic_about_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu_block-1' => array(
-          'module' => 'menu_block',
-          'delta' => 1,
-          'region' => 'right_top',
-          'weight' => 0,
-        ),
         'views--exp-faq-page_1' => array(
           'module' => 'views',
           'delta' => '-exp-faq-page_1',
           'region' => 'right_top',
-          'weight' => 1,
-        ),
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => 1,
-          'region' => 'right',
           'weight' => 0,
         ),
         'block-4' => array(
           'module' => 'block',
           'delta' => 4,
           'region' => 'right',
-          'weight' => 1,
+          'weight' => 0,
         ),
       ),
     ),
@@ -184,28 +120,6 @@ function piropublic_about_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'menu_block-1' => array(
-          'module' => 'menu_block',
-          'delta' => 1,
-          'region' => 'right_top',
-          'weight' => 0,
-        ),
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => 1,
-          'region' => 'right',
-          'weight' => 0,
-        ),
-        'block-3' => array(
-          'module' => 'block',
-          'delta' => 3,
-          'region' => 'right',
-          'weight' => 1,
-        ),
-      ),
-    ),
     'breadcrumb' => 'node/116',
     'menu' => 'node/116',
   );
@@ -217,52 +131,5 @@ function piropublic_about_context_default_contexts() {
   t('piropublic about');
 
   $export['persons'] = $context;
-  $context = new stdClass;
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
-  $context->name = 'staff';
-  $context->description = 'Staff Page';
-  $context->tag = 'piropublic about';
-  $context->conditions = array(
-    'path' => array(
-      'values' => array(
-        'about/staff' => 'about/staff',
-      ),
-    ),
-  );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'menu_block-1' => array(
-          'module' => 'menu_block',
-          'delta' => 1,
-          'region' => 'right_top',
-          'weight' => 0,
-        ),
-        'block-1' => array(
-          'module' => 'block',
-          'delta' => 1,
-          'region' => 'right',
-          'weight' => 0,
-        ),
-        'block-3' => array(
-          'module' => 'block',
-          'delta' => 3,
-          'region' => 'right',
-          'weight' => 1,
-        ),
-      ),
-    ),
-    'breadcrumb' => 'about/staff',
-    'menu' => 'about/staff',
-  );
-  $context->condition_mode = 0;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Staff Page');
-  t('piropublic about');
-
-  $export['staff'] = $context;
   return $export;
 }
