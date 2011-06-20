@@ -4,7 +4,7 @@
  *
  * @ingroup views_field_handlers
  */
-class old_community_views_handler_field_og_editlink extends views_handler_field_node_link {
+class old_community_views_handler_field_view_all_memblogs extends views_handler_field_node_link {
   function construct() {
     parent::construct();
     $this->additional_fields['uid'] = 'uid';
@@ -20,15 +20,13 @@ class old_community_views_handler_field_og_editlink extends views_handler_field_
     $node->type = $values->{$this->aliases['type']};
     $node->format = $values->{$this->aliases['format']};
     $node->status = 1; // unpublished nodes ignore access control
-    if (!node_access('update', $node)) {
-        return;
-    }
 
-    if ((!user_access('edit all groups'))&&(!og_is_group_admin($node))) {
+    $item = menu_get_item("community/$node->nid/blog/all");
+    if (!$item['access']) {
       return;
     }
 
-    $text = !empty($this->options['text']) ? $this->options['text'] : t('edit this group');
-    return l($text, "node/$node->nid/edit", array('query' => drupal_get_destination()));
+    $text = !empty($this->options['text']) ? $this->options['text'] : t('view all posts for this group');
+    return l($text, "community/$node->nid/blog/all", array('query' => drupal_get_destination()));
   }
 }

@@ -31,6 +31,12 @@ function old_community_views_handlers() {
       	'old_community_views_handler_field_og_broadcastlink' => array(
         'parent' => 'views_handler_field_node_link',
       ),
+      	'old_community_views_handler_field_view_all_memblogs' => array(
+        'parent' => 'views_handler_field_node_link',
+      ),
+      	'old_community_views_handler_field_promote_to_group' => array(
+        'parent' => 'views_handler_field_node_link',
+      ),
     ),
   );
 }
@@ -79,6 +85,15 @@ function old_community_views_data() {
       'click sortable' => FALSE,
     ),
   );
+  $data['node']['all_group_memblogs'] = array(
+    'title' => t('OG: All Member Blogs'),
+	'group' => t('Organic groups'),
+    'help' => t('Link for coordinators to view all posts in their group.'),
+    'field' => array(
+      'handler' => 'old_community_views_handler_field_view_all_memblogs',
+      'click sortable' => FALSE,
+    ),
+  );
   $data['node']['group_broadcast'] = array(
     'title' => t('OG: Broadcast link'),
 	'group' => t('Organic groups'),
@@ -88,6 +103,17 @@ function old_community_views_data() {
       'click sortable' => FALSE,
     ),
   );
+  $data['node']['group_promote'] = array(
+    'title' => t('Promote post to group'),
+	'group' => t('Node'),
+    'help' => t('A link for coordinators to promote a post to a group.'),
+    'field' => array(
+      'handler' => 'old_community_views_handler_field_promote_to_group',
+      'click sortable' => FALSE,
+    ),
+  );
+
+
 
 
   return $data;

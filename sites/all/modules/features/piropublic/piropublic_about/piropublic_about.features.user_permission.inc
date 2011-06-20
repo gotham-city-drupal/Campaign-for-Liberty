@@ -115,6 +115,7 @@ function piropublic_about_user_default_permissions() {
     'roles' => array(
       '0' => 'administrator',
       '1' => 'staff',
+      '2' => 'state coordinator',
     ),
   );
 
@@ -135,6 +136,24 @@ function piropublic_about_user_default_permissions() {
       '0' => 'administrator',
       '1' => 'headquarters',
       '2' => 'staff',
+    ),
+  );
+
+  // Exported permission: view imagecache staff_header_image
+  $permissions['view imagecache staff_header_image'] = array(
+    'name' => 'view imagecache staff_header_image',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'anonymous user',
+    ),
+  );
+
+  // Exported permission: view imagecache staff_image
+  $permissions['view imagecache staff_image'] = array(
+    'name' => 'view imagecache staff_image',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'anonymous user',
     ),
   );
 
