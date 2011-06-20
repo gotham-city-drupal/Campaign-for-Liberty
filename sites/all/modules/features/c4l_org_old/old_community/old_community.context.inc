@@ -57,6 +57,12 @@ function old_community_context_default_contexts() {
           'region' => 'left',
           'weight' => 1,
         ),
+        'views-group_blogs-block_1' => array(
+          'module' => 'views',
+          'delta' => 'group_blogs-block_1',
+          'region' => 'content_top',
+          'weight' => 0,
+        ),
         'views-group_subgroups-block_1' => array(
           'module' => 'views',
           'delta' => 'group_subgroups-block_1',

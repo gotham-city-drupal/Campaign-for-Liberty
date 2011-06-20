@@ -23,7 +23,7 @@ class old_community_views_handler_field_og_invitelink extends views_handler_fiel
     if (!node_access('update', $node)) {
       return;
     }
-    if ((!user_access('invite to all groups'))&&(!og_is_admin($node))) {
+    if ((!user_access('invite to all groups'))&&(!og_is_group_admin($node))) {
       return;
     }
 

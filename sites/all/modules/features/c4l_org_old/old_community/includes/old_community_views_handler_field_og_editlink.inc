@@ -23,7 +23,7 @@ class old_community_views_handler_field_og_editlink extends views_handler_field_
     if (!node_access('update', $node)) {
       return;
     }
-    if ((!user_access('edit all groups'))&&(!og_is_admin($node))) {
+    if ((!user_access('edit all groups'))&&(!og_is_group_admin($node))) {
       return;
     }
 

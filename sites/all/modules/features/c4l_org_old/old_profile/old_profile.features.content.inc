@@ -48,35 +48,34 @@ function old_profile_content_default_fields() {
     'module' => 'nodereference',
     'active' => '1',
     'referenceable_types' => array(
-      'country' => 'country',
-      'county' => 'county',
-      'region' => 'region',
-      'state' => 'state',
+      'country' => 0,
+      'county' => 0,
       'faq' => 0,
       'featured_blocks' => 0,
       'feed' => 0,
       'forum' => 0,
       'frontpage_banner' => 0,
-      'group_announcement' => 0,
       'image' => 0,
       'memblog' => 0,
       'page' => 0,
       'personal' => 0,
       'profile' => 0,
       'profpic' => 0,
+      'region' => 0,
       'settings' => 0,
       'staff' => 0,
+      'state' => 0,
       'video' => 0,
       'webform' => 0,
     ),
-    'advanced_view' => 'og_my',
+    'advanced_view' => 'profile_my_admin_groups_noderef',
     'advanced_view_args' => '',
     'widget' => array(
       'autocomplete_match' => 'contains',
       'size' => 60,
       'default_value' => array(
         '0' => array(
-          'nid' => '',
+          'nid' => NULL,
         ),
       ),
       'default_value_php' => NULL,
@@ -1810,72 +1809,6 @@ Other',
     ),
   );
 
-  // Exported field: field_prof_boot
-  $fields['settings-field_prof_boot'] = array(
-    'field_name' => 'field_prof_boot',
-    'type_name' => 'settings',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'number_integer',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'number',
-    'active' => '1',
-    'prefix' => '',
-    'suffix' => '',
-    'min' => '',
-    'max' => '',
-    'allowed_values' => '',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'default_value' => array(
-        '0' => array(
-          'value' => '',
-          '_error_element' => 'default_value_widget][field_prof_boot][0][value',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Bootcamp Progress',
-      'weight' => '2',
-      'description' => '',
-      'type' => 'number',
-      'module' => 'number',
-    ),
-  );
-
   // Exported field: field_prof_country
   $fields['settings-field_prof_country'] = array(
     'field_name' => 'field_prof_country',
@@ -2053,154 +1986,6 @@ Other',
       'description' => '',
       'type' => 'nodereference_autocomplete',
       'module' => 'nodereference',
-    ),
-  );
-
-  // Exported field: field_prof_profdis
-  $fields['settings-field_prof_profdis'] = array(
-    'field_name' => 'field_prof_profdis',
-    'type_name' => 'settings',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'text',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'text',
-    'active' => '1',
-    'text_processing' => '0',
-    'max_length' => '',
-    'allowed_values' => 'ON|Enabled
-OFF|Disabled',
-    'allowed_values_php' => '',
-    'widget' => array(
-      'default_value' => array(
-        '0' => array(
-          'value' => 'DIS',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Profile is Disabled',
-      'weight' => '1',
-      'description' => '',
-      'type' => 'optionwidgets_onoff',
-      'module' => 'optionwidgets',
-    ),
-  );
-
-  // Exported field: field_prof_promby
-  $fields['settings-field_prof_promby'] = array(
-    'field_name' => 'field_prof_promby',
-    'type_name' => 'settings',
-    'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '2' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '3' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '5' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'token' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-    ),
-    'widget_active' => '1',
-    'type' => 'userreference',
-    'required' => '0',
-    'multiple' => '0',
-    'module' => 'userreference',
-    'active' => '1',
-    'referenceable_roles' => array(
-      '16' => 16,
-      '17' => 17,
-      '13' => 13,
-      '12' => 12,
-      '11' => 11,
-      '2' => 0,
-      '3' => 0,
-      '4' => 0,
-      '8' => 0,
-      '14' => 0,
-      '6' => 0,
-      '7' => 0,
-      '9' => 0,
-      '5' => 0,
-      '15' => 0,
-      '10' => 0,
-    ),
-    'referenceable_status' => '1',
-    'advanced_view' => '--',
-    'advanced_view_args' => '',
-    'widget' => array(
-      'autocomplete_match' => 'contains',
-      'size' => '60',
-      'reverse_link' => 0,
-      'default_value' => array(
-        '0' => array(
-          'uid' => NULL,
-          '_error_element' => 'default_value_widget][field_prof_promby][0][uid][uid',
-        ),
-      ),
-      'default_value_php' => NULL,
-      'label' => 'Made Coordinatior By',
-      'weight' => 0,
-      'description' => '',
-      'type' => 'userreference_autocomplete',
-      'module' => 'userreference',
     ),
   );
 
@@ -2401,18 +2186,15 @@ OFF|Disabled',
   // Included for use with string extractors like potx.
   t('Address');
   t('Birthday');
-  t('Bootcamp Progress');
   t('Country Group');
   t('County Group');
   t('First Name');
   t('How Am I Involved');
   t('I Am');
   t('Last Name');
-  t('Made Coordinatior By');
   t('Micro Bio');
   t('Phone');
   t('Profile Picture');
-  t('Profile is Disabled');
   t('Publish To Group');
   t('Region Group');
   t('State Group');
