@@ -24,7 +24,7 @@ function c4l_videos_node_info() {
     'video' => array(
       'name' => t('Video'),
       'module' => 'features',
-      'description' => t('Video content can be entered by referencing an external source, like YouTube, or by uploading a local video file into the CMS.'),
+      'description' => t('RSS Video Feed from Campaign for Liberty\'s YouTube Channel'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'has_body' => '1',
