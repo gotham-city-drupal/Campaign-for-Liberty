@@ -18,6 +18,20 @@ function old_profile_ctools_plugin_api() {
  */
 function old_profile_imagecache_default_presets() {
   $items = array(
+    'groupprof_pic' => array(
+      'presetname' => 'groupprof_pic',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale_and_crop',
+          'data' => array(
+            'width' => '225',
+            'height' => '250',
+          ),
+        ),
+      ),
+    ),
     'profile_pic' => array(
       'presetname' => 'profile_pic',
       'actions' => array(

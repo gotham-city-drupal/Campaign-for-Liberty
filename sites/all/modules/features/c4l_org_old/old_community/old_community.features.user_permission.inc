@@ -20,6 +20,7 @@ function old_community_user_default_permissions() {
     'name' => 'create country content',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'state coordinator',
     ),
   );
 
@@ -28,6 +29,7 @@ function old_community_user_default_permissions() {
     'name' => 'create county content',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'state coordinator',
     ),
   );
 
@@ -36,6 +38,7 @@ function old_community_user_default_permissions() {
     'name' => 'create region content',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'state coordinator',
     ),
   );
 
@@ -44,6 +47,7 @@ function old_community_user_default_permissions() {
     'name' => 'create state content',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'state coordinator',
     ),
   );
 
@@ -172,6 +176,7 @@ function old_community_user_default_permissions() {
     'roles' => array(
       '0' => 'administrator',
       '1' => 'authenticated user',
+      '2' => 'state coordinator',
     ),
   );
 
@@ -181,6 +186,7 @@ function old_community_user_default_permissions() {
     'roles' => array(
       '0' => 'administrator',
       '1' => 'authenticated user',
+      '2' => 'state coordinator',
     ),
   );
 
@@ -190,6 +196,7 @@ function old_community_user_default_permissions() {
     'roles' => array(
       '0' => 'administrator',
       '1' => 'authenticated user',
+      '2' => 'state coordinator',
     ),
   );
 
@@ -219,6 +226,19 @@ function old_community_user_default_permissions() {
       '0' => 'administrator',
       '1' => 'headquarters',
       '2' => 'staff',
+    ),
+  );
+
+  // Exported permission: promote to my groups
+  $permissions['promote to my groups'] = array(
+    'name' => 'promote to my groups',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'county coordinator',
+      '2' => 'headquarters',
+      '3' => 'region coordinator',
+      '4' => 'staff',
+      '5' => 'state coordinator',
     ),
   );
 

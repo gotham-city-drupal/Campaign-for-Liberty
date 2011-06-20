@@ -6,7 +6,7 @@ include_once('old_community.features.inc');
  * Implementation of hook_perm()
  */
 function old_community_perm() {
-  return array('manage all coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups');
+  return array('manage all coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups', 'promote to my groups');
 }
 
 /**
@@ -52,7 +52,7 @@ function old_community_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
       case 'insert':
         global $user;
         foreach ($user->og_groups as &$group) {
-          db_query('INSERT INTO {og_access_post} (nid, og_public) VALUES (%d, 0)', $node->nid);
+          db_query('INSERT INTO {og_access_post} (nid, og_public) VALUES (%d, 1)', $node->nid);
           db_query('INSERT INTO {og_ancestry} (nid, group_nid) VALUES (%d, %d)', $node->nid, $group['nid']);
         }
         unset($group);

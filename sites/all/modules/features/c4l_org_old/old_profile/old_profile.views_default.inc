@@ -109,62 +109,64 @@ function old_profile_views_default_views() {
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
         '2' => 0,
-        '3' => 0,
-        '4' => 0,
-        '8' => 0,
-        '14' => 0,
-        '6' => 0,
-        '13' => 0,
-        '7' => 0,
-        '9' => 0,
         '5' => 0,
-        '12' => 0,
-        '15' => 0,
+        '9' => 0,
+        '7' => 0,
         '10' => 0,
         '11' => 0,
+        '12' => 0,
+        '8' => 0,
+        '13' => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
       'default_argument_image_size' => '_original',
       'default_argument_user' => 1,
       'default_argument_fixed' => '',
-      'default_argument_php' => 'return arg(1);',
+      'default_argument_php' => 'if (arg(0)==\'profile\') {
+if (arg(1)) { 
+ return (arg(1));
+}}
+elseif (arg(0)==\'user\') {
+if (arg(1)) { 
+ return (arg(1));
+}}
+else {
+ global $user;
+ return $user->uid;
+}',
       'image_size' => array(
         '_original' => '_original',
         'thumbnail' => 'thumbnail',
         'preview' => 'preview',
       ),
       'validate_argument_node_type' => array(
-        'webform' => 0,
         'image' => 0,
-        'blog' => 0,
-        'forum' => 0,
-        'civicrmactivity' => 0,
-        'faq' => 0,
-        'farticle' => 0,
-        'fauthor' => 0,
-        'gp' => 0,
-        'mediagall' => 0,
-        'natblog' => 0,
-        'page' => 0,
+        'country' => 0,
+        'county' => 0,
+        'region' => 0,
+        'state' => 0,
+        'memblog' => 0,
         'personal' => 0,
-        'pgroup' => 0,
-        'pr' => 0,
         'profile' => 0,
         'profpic' => 0,
+        'settings' => 0,
+        'featured_blocks' => 0,
+        'frontpage_banner' => 0,
+        'page' => 0,
+        'faq' => 0,
         'staff' => 0,
-        'story' => 0,
+        'forum' => 0,
+        'feed' => 0,
         'video' => 0,
+        'webform' => 0,
       ),
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '51' => 0,
         '2' => 0,
-        '49' => 0,
-        '47' => 0,
-        '50' => 0,
-        '46' => 0,
+        '3' => 0,
+        '1' => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -175,10 +177,16 @@ function old_profile_views_default_views() {
       'validate_argument_user_flag_name' => '*relationship*',
       'validate_argument_user_flag_test' => 'flaggable',
       'validate_argument_user_flag_id_type' => 'id',
-      'validate_argument_is_member' => 0,
+      'validate_argument_is_member' => 'OG_VIEWS_DO_NOT_VALIDATE_MEMBERSHIP',
       'validate_argument_php' => '',
       'override' => array(
         'button' => 'Override',
+      ),
+      'validate_argument_group_node_type' => array(
+        'country' => 0,
+        'county' => 0,
+        'region' => 0,
+        'state' => 0,
       ),
     ),
   ));
@@ -347,7 +355,7 @@ function old_profile_views_default_views() {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'imagecache_preset' => 'profile_pic',
+      'imagecache_preset' => 'groupprof_pic',
       'exclude' => 0,
       'id' => 'picture',
       'table' => 'users',
@@ -385,9 +393,6 @@ function old_profile_views_default_views() {
         '10' => 0,
         '11' => 0,
         '12' => 0,
-        '3' => 0,
-        '6' => 0,
-        '4' => 0,
         '8' => 0,
         '13' => 0,
       ),
@@ -399,8 +404,11 @@ function old_profile_views_default_views() {
       'default_argument_php' => 'if (arg(0)==\'profile\') {
 if (arg(1)) { 
  return (arg(1));
-}
-}
+}}
+elseif (arg(0)==\'user\') {
+if (arg(1)) { 
+ return (arg(1));
+}}
 else {
  global $user;
  return $user->uid;
@@ -414,7 +422,6 @@ else {
         'image' => 0,
         'country' => 0,
         'county' => 0,
-        'group_announcement' => 0,
         'region' => 0,
         'state' => 0,
         'memblog' => 0,
@@ -756,29 +763,27 @@ else {
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
         '2' => 0,
-        '3' => 0,
-        '4' => 0,
-        '16' => 0,
-        '8' => 0,
-        '14' => 0,
-        '6' => 0,
-        '17' => 0,
-        '13' => 0,
-        '7' => 0,
-        '9' => 0,
         '5' => 0,
-        '12' => 0,
-        '15' => 0,
+        '9' => 0,
+        '7' => 0,
         '10' => 0,
         '11' => 0,
+        '12' => 0,
+        '8' => 0,
+        '13' => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
       'default_argument_image_size' => '_original',
       'default_argument_user' => 1,
       'default_argument_fixed' => '',
-      'default_argument_php' => 'if (arg(1)) { 
+      'default_argument_php' => 'if (arg(0)==\'profile\') {
+if (arg(1)) { 
  return (arg(1));
+}}
+else {
+ global $user;
+ return $user->uid;
 }',
       'image_size' => array(
         '_original' => '_original',
@@ -786,53 +791,32 @@ else {
         'preview' => 'preview',
       ),
       'validate_argument_node_type' => array(
-        'webform' => 0,
         'image' => 0,
-        'product' => 0,
-        'forum' => 0,
-        'blank' => 0,
-        'candidate_survey_2010' => 0,
         'country' => 0,
         'county' => 0,
-        'demopost' => 0,
-        'event' => 0,
-        'faq' => 0,
-        'farticle' => 0,
-        'fauthor' => 0,
-        'featured_blocks' => 0,
-        'fp' => 0,
-        'group_announcement' => 0,
-        'lawmaker' => 0,
-        'mediagall' => 0,
+        'region' => 0,
+        'state' => 0,
         'memblog' => 0,
-        'natblog' => 0,
-        'newswire' => 0,
-        'page' => 0,
         'personal' => 0,
-        'pr' => 0,
         'profile' => 0,
         'profpic' => 0,
-        'region' => 0,
-        'res' => 0,
         'settings' => 0,
+        'featured_blocks' => 0,
+        'frontpage_banner' => 0,
+        'page' => 0,
+        'faq' => 0,
         'staff' => 0,
-        'state' => 0,
-        'story' => 0,
+        'forum' => 0,
+        'feed' => 0,
         'video' => 0,
+        'webform' => 0,
       ),
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '63' => 0,
-        '59' => 0,
-        '49' => 0,
-        '47' => 0,
-        '60' => 0,
-        '50' => 0,
-        '46' => 0,
-        '54' => 0,
-        '55' => 0,
-        '52' => 0,
+        '2' => 0,
+        '3' => 0,
+        '1' => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -1080,28 +1064,24 @@ else {
       'validate_user_argument_type' => 'uid',
       'validate_user_roles' => array(
         '2' => 0,
-        '3' => 0,
-        '4' => 0,
-        '8' => 0,
-        '14' => 0,
-        '6' => 0,
-        '13' => 0,
-        '7' => 0,
-        '9' => 0,
         '5' => 0,
-        '12' => 0,
-        '15' => 0,
+        '9' => 0,
+        '7' => 0,
         '10' => 0,
         '11' => 0,
+        '12' => 0,
+        '8' => 0,
+        '13' => 0,
       ),
       'relationship' => 'none',
       'default_options_div_prefix' => '',
       'default_argument_image_size' => '_original',
       'default_argument_user' => 1,
       'default_argument_fixed' => '',
-      'default_argument_php' => 'if (arg(1)) { 
+      'default_argument_php' => 'if (arg(0)==\'profile\') {
+if (arg(1)) { 
  return (arg(1));
-}
+}}
 else {
  global $user;
  return $user->uid;
@@ -1112,37 +1092,32 @@ else {
         'preview' => 'preview',
       ),
       'validate_argument_node_type' => array(
-        'webform' => 0,
         'image' => 0,
-        'blog' => 0,
-        'forum' => 0,
-        'civicrmactivity' => 0,
-        'faq' => 0,
-        'farticle' => 0,
-        'fauthor' => 0,
-        'gp' => 0,
-        'lawmaker' => 0,
-        'mediagall' => 0,
-        'natblog' => 0,
-        'page' => 0,
+        'country' => 0,
+        'county' => 0,
+        'region' => 0,
+        'state' => 0,
+        'memblog' => 0,
         'personal' => 0,
-        'pgroup' => 0,
-        'pr' => 0,
         'profile' => 0,
         'profpic' => 0,
+        'settings' => 0,
+        'featured_blocks' => 0,
+        'frontpage_banner' => 0,
+        'page' => 0,
+        'faq' => 0,
         'staff' => 0,
-        'story' => 0,
+        'forum' => 0,
+        'feed' => 0,
         'video' => 0,
+        'webform' => 0,
       ),
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
-        '51' => 0,
         '2' => 0,
-        '49' => 0,
-        '47' => 0,
-        '50' => 0,
-        '46' => 0,
+        '3' => 0,
+        '1' => 0,
       ),
       'validate_argument_type' => 'tid',
       'validate_argument_transform' => 0,
@@ -1159,7 +1134,10 @@ else {
         'button' => 'Use default',
       ),
       'validate_argument_group_node_type' => array(
-        'pgroup' => 0,
+        'country' => 0,
+        'county' => 0,
+        'region' => 0,
+        'state' => 0,
       ),
     ),
   ));
@@ -1338,9 +1316,10 @@ else {
   $handler->override_option('access', array(
     'type' => 'role',
     'role' => array(
-      '16' => 16,
+      '9' => 9,
+      '7' => 7,
       '12' => 12,
-      '11' => 11,
+      '13' => 13,
     ),
   ));
   $handler->override_option('items_per_page', 1);
@@ -1394,12 +1373,15 @@ else {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'link_to_node' => 0,
+      'link_to_node' => 1,
       'exclude' => 0,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'created' => array(
       'label' => '',
@@ -1521,6 +1503,36 @@ else {
       'field' => 'comments_link',
       'relationship' => 'none',
     ),
+    'group_promote' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 0,
+        'ellipsis' => 0,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'text' => 'Promote to my group(s)',
+      'exclude' => 0,
+      'id' => 'group_promote',
+      'table' => 'node',
+      'field' => 'group_promote',
+      'relationship' => 'none',
+    ),
     'edit_node' => array(
       'label' => '',
       'alter' => array(
@@ -1620,7 +1632,7 @@ else {
   ));
   $handler->override_option('sorts', array(
     'created' => array(
-      'order' => 'ASC',
+      'order' => 'DESC',
       'granularity' => 'second',
       'id' => 'created',
       'table' => 'node',
@@ -1899,12 +1911,15 @@ else {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'link_to_node' => 0,
+      'link_to_node' => 1,
       'exclude' => 0,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
     ),
     'created' => array(
       'label' => '',
@@ -2079,36 +2094,6 @@ else {
       'field' => 'type',
       'relationship' => 'none',
     ),
-    'title' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 1,
-      'exclude' => 0,
-      'id' => 'title',
-      'table' => 'node',
-      'field' => 'title',
-      'relationship' => 'none',
-    ),
     'field_og_pic_fid' => array(
       'label' => '',
       'alter' => array(
@@ -2145,6 +2130,36 @@ else {
       'id' => 'field_og_pic_fid',
       'table' => 'node_data_field_og_pic',
       'field' => 'field_og_pic_fid',
+      'relationship' => 'none',
+    ),
+    'title' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 0,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
       'relationship' => 'none',
     ),
   ));
@@ -2291,12 +2306,12 @@ else {
   ));
   $handler->override_option('title', 'Groups I Admin');
   $handler->override_option('use_ajax', TRUE);
-  $handler->override_option('items_per_page', 0);
+  $handler->override_option('items_per_page', 40);
   $handler->override_option('use_pager', 'mini');
   $handler->override_option('style_plugin', 'grid');
   $handler->override_option('style_options', array(
     'grouping' => 'type',
-    'columns' => '3',
+    'columns' => '2',
     'alignment' => 'horizontal',
     'fill_single_line' => 1,
   ));
@@ -2318,6 +2333,37 @@ else {
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
+    'type' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'machine_name' => 0,
+      'exclude' => 1,
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+    ),
     'field_og_pic_fid' => array(
       'label' => '',
       'alter' => array(
@@ -2381,6 +2427,15 @@ else {
       'empty_zero' => 0,
       'link_to_node' => 1,
       'exclude' => 0,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('sorts', array(
+    'title' => array(
+      'order' => 'ASC',
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
@@ -2797,7 +2852,7 @@ else {
       'wildcard_substitution' => 'All',
       'title' => '',
       'breadcrumb' => '',
-      'default_argument_type' => 'current_user',
+      'default_argument_type' => 'php',
       'default_argument' => '',
       'validate_type' => 'none',
       'validate_fail' => 'not found',
@@ -2823,7 +2878,15 @@ else {
       'default_argument_fixed' => '',
       'default_argument_user' => 0,
       'default_argument_image_size' => '_original',
-      'default_argument_php' => '',
+      'default_argument_php' => 'if (arg(0)==\'profile\') {
+if (arg(1)) { 
+ return (arg(1));
+}
+}
+else {
+ global $user;
+ return $user->uid;
+}',
       'validate_argument_node_type' => array(
         'image' => 0,
         'country' => 0,
@@ -2874,6 +2937,9 @@ else {
         'state' => 0,
       ),
       'validate_argument_php' => '',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('filters', array(

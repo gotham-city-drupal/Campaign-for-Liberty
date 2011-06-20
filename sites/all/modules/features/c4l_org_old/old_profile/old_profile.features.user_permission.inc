@@ -238,5 +238,32 @@ function old_profile_user_default_permissions() {
     ),
   );
 
+  // Exported permission: view imagecache groupprof_pic
+  $permissions['view imagecache groupprof_pic'] = array(
+    'name' => 'view imagecache groupprof_pic',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'anonymous user',
+    ),
+  );
+
+  // Exported permission: view imagecache profile_pic
+  $permissions['view imagecache profile_pic'] = array(
+    'name' => 'view imagecache profile_pic',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'anonymous user',
+    ),
+  );
+
+  // Exported permission: view imagecache sidebar_thumb
+  $permissions['view imagecache sidebar_thumb'] = array(
+    'name' => 'view imagecache sidebar_thumb',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'anonymous user',
+    ),
+  );
+
   return $permissions;
 }
