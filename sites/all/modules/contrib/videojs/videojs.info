@@ -1,0 +1,12 @@
+name = VideoJS
+description = VideoJS is an HTML5 Video Player with 3 core parts: An embed code (Video for Everybody), a Javascript library (video.js), and a pure HTML/CSS skin (video-js.css).
+package = Video
+core = 6.x
+dependencies[] = filefield
+
+; Information added by drupal.org packaging script on 2011-05-03
+version = "6.x-1.6"
+core = "6.x"
+project = "videojs"
+datestamp = "1304407617"
+
