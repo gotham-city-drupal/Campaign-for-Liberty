@@ -37,6 +37,9 @@ function old_community_views_handlers() {
       	'old_community_views_handler_field_promote_to_group' => array(
         'parent' => 'views_handler_field_node_link',
       ),
+      	'old_community_views_handler_field_remove_from_group' => array(
+        'parent' => 'og_views_handler_field_og_uid',
+      ),
     ),
   );
 }
@@ -112,9 +115,16 @@ function old_community_views_data() {
       'click sortable' => FALSE,
     ),
   );
-
-
-
+  $data['og_uid']['remove_member'] = array(
+    'title' => t('OG: Remove member from group'),
+	'group' => t('Organic groups'),
+    'help' => t('A link for coordinators to remove a member from a group.'),
+    'real field' => 'uid',
+    'field' => array(
+      'handler' => 'old_community_views_handler_field_remove_from_group',
+      'click sortable' => FALSE,
+    ),
+  );
 
   return $data;
 }

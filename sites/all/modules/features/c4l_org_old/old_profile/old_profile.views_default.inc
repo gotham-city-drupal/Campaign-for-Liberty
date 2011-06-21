@@ -210,13 +210,10 @@ else {
     ),
   ));
   $handler->override_option('access', array(
-    'type' => 'perm',
-    'perm' => 'access user profiles',
+    'type' => 'none',
   ));
   $handler->override_option('cache', array(
-    'type' => 'time',
-    'results_lifespan' => 3600,
-    'output_lifespan' => 3600,
+    'type' => 'none',
   ));
   $handler = $view->new_display('page', 'Base Profile Page', 'page_1');
   $handler->override_option('arguments', array(
@@ -401,14 +398,15 @@ else {
       'default_argument_image_size' => '_original',
       'default_argument_user' => 1,
       'default_argument_fixed' => '',
-      'default_argument_php' => 'if (arg(0)==\'profile\') {
-if (arg(1)) { 
- return (arg(1));
-}}
-elseif (arg(0)==\'user\') {
-if (arg(1)) { 
- return (arg(1));
-}}
+      'default_argument_php' => 'if (arg(0)==\'node\') {
+  $n = node_load(arg(1));
+  return $n->uid;
+}
+elseif (arg(0)==\'profile\') {
+  if (arg(1)) {
+    return arg(1);
+}
+}
 else {
  global $user;
  return $user->uid;
@@ -954,94 +952,6 @@ else {
         'button' => 'Use default',
       ),
     ),
-    'field_prof_address_lid' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'strip_tags' => 0,
-        'html' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'none',
-      'format' => 'default',
-      'multiple' => array(
-        'group' => TRUE,
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_reversed' => FALSE,
-      ),
-      'exclude' => 0,
-      'id' => 'field_prof_address_lid',
-      'table' => 'node_data_field_prof_address',
-      'field' => 'field_prof_address_lid',
-      'relationship' => 'content_profile_rel_1',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-    ),
-    'field_prof_dob_value' => array(
-      'label' => 'Born',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'strip_tags' => 0,
-        'html' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 0,
-      'label_type' => 'custom',
-      'format' => 'medium',
-      'multiple' => array(
-        'multiple_number' => '',
-        'multiple_from' => '',
-        'multiple_to' => '',
-        'group' => TRUE,
-      ),
-      'repeat' => array(
-        'show_repeat_rule' => '',
-      ),
-      'fromto' => array(
-        'fromto' => 'both',
-      ),
-      'exclude' => 0,
-      'id' => 'field_prof_dob_value',
-      'table' => 'node_data_field_prof_dob',
-      'field' => 'field_prof_dob_value',
-      'relationship' => 'content_profile_rel_1',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-    ),
   ));
   $handler->override_option('arguments', array(
     'uid' => array(
@@ -1170,8 +1080,8 @@ else {
     ),
   ));
   $handler->override_option('fields', array(
-    'address' => array(
-      'label' => 'Address',
+    'field_prof_dob_value' => array(
+      'label' => '',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -1191,30 +1101,31 @@ else {
         'strip_tags' => 0,
       ),
       'empty' => '',
-      'hide_empty' => 0,
+      'hide_empty' => 1,
       'empty_zero' => 0,
-      'hide' => array(
-        'name' => 0,
-        'street' => 0,
-        'additional' => 0,
-        'city' => 0,
-        'province' => 0,
-        'postal_code' => 0,
-        'country' => 0,
-        'locpick' => 0,
-        'province_name' => 0,
-        'country_name' => 0,
-        'map_link' => 0,
-        'coords' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'long',
+      'multiple' => array(
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_to' => '',
+        'group' => '',
+      ),
+      'repeat' => array(
+        'show_repeat_rule' => '',
+      ),
+      'fromto' => array(
+        'fromto' => 'both',
       ),
       'exclude' => 0,
-      'id' => 'address',
-      'table' => 'location',
-      'field' => 'address',
+      'id' => 'field_prof_dob_value',
+      'table' => 'node_data_field_prof_dob',
+      'field' => 'field_prof_dob_value',
+      'relationship' => 'content_profile_rel',
       'override' => array(
         'button' => 'Use default',
       ),
-      'relationship' => 'content_profile_rel',
     ),
     'field_prof_phone_value' => array(
       'label' => 'Phone',
@@ -1237,7 +1148,7 @@ else {
         'strip_tags' => 0,
       ),
       'empty' => '',
-      'hide_empty' => 0,
+      'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'widget',
@@ -1256,6 +1167,52 @@ else {
       'override' => array(
         'button' => 'Use default',
       ),
+    ),
+    'address' => array(
+      'label' => 'Address',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 1,
+      'empty_zero' => 0,
+      'hide' => array(
+        'name' => 'name',
+        'additional' => 'additional',
+        'locpick' => 'locpick',
+        'province_name' => 'province_name',
+        'country_name' => 'country_name',
+        'map_link' => 'map_link',
+        'coords' => 'coords',
+        'street' => 0,
+        'city' => 0,
+        'province' => 0,
+        'postal_code' => 0,
+        'country' => 0,
+      ),
+      'exclude' => 0,
+      'id' => 'address',
+      'table' => 'location',
+      'field' => 'address',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'content_profile_rel',
     ),
   ));
   $handler->override_option('filters', array(
@@ -1316,9 +1273,8 @@ else {
   $handler->override_option('access', array(
     'type' => 'role',
     'role' => array(
-      '9' => 9,
       '7' => 7,
-      '12' => 12,
+      '8' => 8,
       '13' => 13,
     ),
   ));
@@ -1649,7 +1605,7 @@ else {
       'wildcard_substitution' => 'All',
       'title' => 'Posts by %1',
       'breadcrumb' => '',
-      'default_argument_type' => 'current_user',
+      'default_argument_type' => 'php',
       'default_argument' => '',
       'validate_type' => 'none',
       'validate_fail' => 'not found',
@@ -1675,7 +1631,15 @@ else {
       'default_argument_fixed' => '',
       'default_argument_user' => 0,
       'default_argument_image_size' => '_original',
-      'default_argument_php' => '',
+      'default_argument_php' => 'if (arg(0)==\'profile\') {
+  if (arg(1)) {
+    return arg(1);
+}
+}
+else {
+ global $user;
+ return $user->uid;
+}',
       'validate_argument_node_type' => array(
         'image' => 0,
         'country' => 0,
@@ -1791,97 +1755,6 @@ else {
     'name' => 'navigation',
   ));
   $handler = $view->new_display('block', 'Profile Block', 'block_1');
-  $handler->override_option('arguments', array(
-    'uid' => array(
-      'default_action' => 'default',
-      'style_plugin' => 'default_summary',
-      'style_options' => array(),
-      'wildcard' => 'all',
-      'wildcard_substitution' => 'All',
-      'title' => '',
-      'breadcrumb' => '',
-      'default_argument_type' => 'current_user',
-      'default_argument' => '',
-      'validate_type' => 'none',
-      'validate_fail' => 'not found',
-      'break_phrase' => 0,
-      'not' => 0,
-      'id' => 'uid',
-      'table' => 'users',
-      'field' => 'uid',
-      'validate_user_argument_type' => 'uid',
-      'validate_user_roles' => array(
-        '2' => 0,
-        '5' => 0,
-        '9' => 0,
-        '7' => 0,
-        '10' => 0,
-        '11' => 0,
-        '12' => 0,
-        '8' => 0,
-        '13' => 0,
-      ),
-      'relationship' => 'none',
-      'default_options_div_prefix' => '',
-      'default_argument_fixed' => '',
-      'default_argument_user' => 0,
-      'default_argument_image_size' => '_original',
-      'default_argument_php' => '',
-      'validate_argument_node_type' => array(
-        'image' => 0,
-        'country' => 0,
-        'county' => 0,
-        'region' => 0,
-        'state' => 0,
-        'memblog' => 0,
-        'personal' => 0,
-        'profile' => 0,
-        'profpic' => 0,
-        'settings' => 0,
-        'featured_blocks' => 0,
-        'frontpage_banner' => 0,
-        'page' => 0,
-        'faq' => 0,
-        'staff' => 0,
-        'forum' => 0,
-        'feed' => 0,
-        'video' => 0,
-        'webform' => 0,
-      ),
-      'validate_argument_node_access' => 0,
-      'validate_argument_nid_type' => 'nid',
-      'validate_argument_vocabulary' => array(
-        '2' => 0,
-        '3' => 0,
-        '1' => 0,
-      ),
-      'validate_argument_type' => 'tid',
-      'validate_argument_transform' => 0,
-      'validate_user_restrict_roles' => 0,
-      'validate_argument_node_flag_name' => '*relationship*',
-      'validate_argument_node_flag_test' => 'flaggable',
-      'validate_argument_node_flag_id_type' => 'id',
-      'validate_argument_user_flag_name' => '*relationship*',
-      'validate_argument_user_flag_test' => 'flaggable',
-      'validate_argument_user_flag_id_type' => 'id',
-      'image_size' => array(
-        '_original' => '_original',
-        'thumbnail' => 'thumbnail',
-        'preview' => 'preview',
-      ),
-      'validate_argument_is_member' => 'OG_VIEWS_DO_NOT_VALIDATE_MEMBERSHIP',
-      'validate_argument_group_node_type' => array(
-        'country' => 0,
-        'county' => 0,
-        'region' => 0,
-        'state' => 0,
-      ),
-      'validate_argument_php' => '',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-    ),
-  ));
   $handler->override_option('items_per_page', 3);
   $handler->override_option('use_pager', '0');
   $handler->override_option('block_description', 'Profile Blogs');
@@ -1962,7 +1835,7 @@ else {
       'wildcard_substitution' => 'All',
       'title' => 'More by %1',
       'breadcrumb' => '',
-      'default_argument_type' => 'current_user',
+      'default_argument_type' => 'php',
       'default_argument' => '',
       'validate_type' => 'none',
       'validate_fail' => 'not found',
@@ -1988,7 +1861,19 @@ else {
       'default_argument_fixed' => '',
       'default_argument_user' => 0,
       'default_argument_image_size' => '_original',
-      'default_argument_php' => '',
+      'default_argument_php' => 'if (arg(0)==\'node\') {
+  $n = node_load(arg(1));
+  return $n->uid;
+}
+elseif (arg(0)==\'profile\') {
+  if (arg(1)) {
+    return arg(1);
+}
+}
+else {
+ global $user;
+ return $user->uid;
+}',
       'validate_argument_node_type' => array(
         'image' => 0,
         'country' => 0,

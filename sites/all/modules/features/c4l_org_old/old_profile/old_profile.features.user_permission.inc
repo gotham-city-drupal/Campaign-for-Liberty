@@ -233,8 +233,7 @@ function old_profile_user_default_permissions() {
     'name' => 'edit own settings content',
     'roles' => array(
       '0' => 'administrator',
-      '1' => 'anonymous user',
-      '2' => 'authenticated user',
+      '1' => 'authenticated user',
     ),
   );
 

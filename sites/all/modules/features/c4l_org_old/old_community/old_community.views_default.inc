@@ -1798,7 +1798,7 @@ elseif (og_get_group_context()) {
       'field' => 'contact_not_self',
       'relationship' => 'none',
     ),
-    'managelink' => array(
+    'remove_member' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
@@ -1822,9 +1822,9 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'exclude' => 0,
-      'id' => 'managelink',
+      'id' => 'remove_member',
       'table' => 'og_uid',
-      'field' => 'managelink',
+      'field' => 'remove_member',
       'relationship' => 'none',
     ),
     'managelinkadmin_local' => array(
@@ -2216,7 +2216,7 @@ elseif (og_get_group_context()) {
       ),
       'relationship' => 'none',
     ),
-    'managelink' => array(
+    'remove_member' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
@@ -2240,13 +2240,13 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'exclude' => 0,
-      'id' => 'managelink',
+      'id' => 'remove_member',
       'table' => 'og_uid',
-      'field' => 'managelink',
-      'relationship' => 'none',
+      'field' => 'remove_member',
       'override' => array(
         'button' => 'Use default',
       ),
+      'relationship' => 'none',
     ),
     'managelinkadmin_local' => array(
       'label' => '',
@@ -2555,7 +2555,7 @@ elseif (og_get_group_context()) {
       'field' => 'name',
       'relationship' => 'none',
     ),
-    'managelink' => array(
+    'remove_member' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
@@ -2579,9 +2579,12 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'exclude' => 0,
-      'id' => 'managelink',
+      'id' => 'remove_member',
       'table' => 'og_uid',
-      'field' => 'managelink',
+      'field' => 'remove_member',
+      'override' => array(
+        'button' => 'Override',
+      ),
       'relationship' => 'none',
     ),
     'managelinkadmin_local' => array(
@@ -2942,6 +2945,38 @@ elseif (og_get_group_context()) {
         'button' => 'Use default',
       ),
     ),
+    'remove_member' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'remove_member',
+      'table' => 'og_uid',
+      'field' => 'remove_member',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
     'is_admin' => array(
       'label' => '',
       'alter' => array(
@@ -2973,38 +3008,6 @@ elseif (og_get_group_context()) {
         'button' => 'Use default',
       ),
       'relationship' => 'none',
-    ),
-    'managelink' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'exclude' => 0,
-      'id' => 'managelink',
-      'table' => 'og_uid',
-      'field' => 'managelink',
-      'relationship' => 'none',
-      'override' => array(
-        'button' => 'Use default',
-      ),
     ),
     'managelinkadmin_local' => array(
       'label' => '',

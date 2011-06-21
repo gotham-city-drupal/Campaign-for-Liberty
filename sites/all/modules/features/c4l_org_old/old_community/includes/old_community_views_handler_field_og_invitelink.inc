@@ -22,7 +22,7 @@ class old_community_views_handler_field_og_invitelink extends views_handler_fiel
     $node->status = 1; // unpublished nodes ignore access control
 
     // need to change this... bad access control
-    if ((!user_access('invite to all groups'))&&(!og_is_group_admin($node))) {
+    if (!user_access('invite to all groups')) {
       return;
     }
 

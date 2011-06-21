@@ -799,7 +799,7 @@ function old_community_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'location_geocode_google_apikey';
-  $strongarm->value = 'ABQIAAAAW6zb_bLuI3t6DCMSuqzbPBT0gwwV-9WJIwEUqT_ke6OKr26qWBSv1x8zGze9NmC93bMUhS2AkxCpmA';
+  $strongarm->value = '';
 
   $export['location_geocode_google_apikey'] = $strongarm;
   $strongarm = new stdClass;
@@ -1229,7 +1229,7 @@ function old_community_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_audience_checkboxes';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
 
   $export['og_audience_checkboxes'] = $strongarm;
   $strongarm = new stdClass;
@@ -1601,21 +1601,21 @@ function old_community_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_selective_enforce_state';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
 
   $export['og_selective_enforce_state'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_selective_region';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
 
   $export['og_selective_region'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'og_selective_state';
-  $strongarm->value = '2';
+  $strongarm->value = '0';
 
   $export['og_selective_state'] = $strongarm;
   $strongarm = new stdClass;

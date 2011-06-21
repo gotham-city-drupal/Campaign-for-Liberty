@@ -242,6 +242,16 @@ function old_community_user_default_permissions() {
     ),
   );
 
+  // Exported permission: remove from group
+  $permissions['remove from group'] = array(
+    'name' => 'remove from group',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'headquarters',
+      '2' => 'staff',
+    ),
+  );
+
   // Exported permission: subscribe to content in groups
   $permissions['subscribe to content in groups'] = array(
     'name' => 'subscribe to content in groups',
