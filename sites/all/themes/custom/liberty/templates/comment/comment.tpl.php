@@ -1,6 +1,8 @@
 <?php // $Id: comment.tpl.php,v 1.0 2011/4/28 00:32:00 pirog Exp $ ?>
 <?php print $pre; ?>
 
+ <?php print $picture; ?>
+
 <div <?php print drupal_attributes($attr); ?>>
 
   <?php if ($title): ?>
@@ -18,7 +20,7 @@
     </div>
   <?php endif; ?>
 
-  <?php print $picture; ?>
+
 
   <div class="comment-content clear-block">
     <?php print $content; ?>

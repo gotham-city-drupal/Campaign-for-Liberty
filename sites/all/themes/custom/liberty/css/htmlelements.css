@@ -426,6 +426,20 @@ html.js input.throbbing {
   margin: 10px 0 20px;
 }
 
+#comments .picture {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+
+#comments .comment {
+  margin-left: 80px;
+}
+
+#main #content .groups {
+  display: none;
+}
+
 div.admin .left {
   float: left;
   width: 48%;
