@@ -52,7 +52,26 @@ function old_community_menu() {
  */
 function old_community_form_alter(&$form, &$form_state, $form_id) {
   $form = $form;
+  switch ($form_id) {
+    case 'memblog_node_form':
+      if ($form['nid']['#value']) {
+        $form['#attributes']['class'] = 'memblog-edit';
+      }
+      else {
+        $form['#attributes']['class'] = 'memblog-add';
+      }
+
+      $form['field_group']['#prefix'] = '<div class="promote-box">';
+      $form['field_group']['#suffix'] = '</div>';
+
+      $form['og_nodeapi']['#prefix'] = '<div class="audience-box">';
+      $form['og_nodeapi']['#suffix'] = '</div>';
+
+    break;
+  }
+
 }
+
 /**
  * Implementation of hook_nodeapi().
  */

@@ -1,1 +1,13 @@
 @CHARSET "ISO-8859-1";
+
+.section-community .tabs, .page_title {
+  display: none;  
+}
+
+.section-community #content {
+  margin-top: 20px;
+}
+
+.node-type-state .tabs, .node-type-state .tabs, .node-type-state .tabs, .node-type-state .tabs {
+  display: none;  
+}

@@ -1,1 +1,21 @@
 @CHARSET "ISO-8859-1";
+
+.memblog-edit .audience-box {
+  display: none;
+}
+
+.memblog-add .audience-box {
+  display: none;
+}
+
+.authenticated-user .memblog-edit .promote-box {
+  display: none;
+}
+
+.authenticated-user .memblog-add .promote-box {
+  display: none;
+}
+
+.state-coordinator .memblog-add .promote-box {
+  display: none;
+}

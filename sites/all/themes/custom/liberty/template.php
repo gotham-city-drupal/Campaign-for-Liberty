@@ -207,7 +207,13 @@ function liberty_body_classes(&$variables) {
     $classes[] = 'one-sidebar sidebar-' . $variables['layout'];
   }
 
+  global $user;
+  foreach ($user->roles as &$role) {
+    $classes[] = str_replace(' ', '-', $role);
+  }
+
   $variables['attr']['class'] .= implode(' ', $classes);
+
 
   // System path gives us the id, replacing slashes with dashes.
   $system_path = drupal_get_normal_path($path);
