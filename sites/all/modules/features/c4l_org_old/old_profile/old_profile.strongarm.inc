@@ -695,5 +695,40 @@ function old_profile_strongarm() {
   $strongarm->value = '0';
 
   $export['upload_settings'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_imagecache_comments';
+  $strongarm->value = 'sidebar_thumb';
+
+  $export['user_picture_imagecache_comments'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_imagecache_profiles';
+  $strongarm->value = 'profile_pic';
+
+  $export['user_picture_imagecache_profiles'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_imagecache_profiles_default';
+  $strongarm->value = 'profile_pic';
+
+  $export['user_picture_imagecache_profiles_default'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_imagecache_profiles_min_height';
+  $strongarm->value = '60';
+
+  $export['user_picture_imagecache_profiles_min_height'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'user_picture_imagecache_profiles_min_width';
+  $strongarm->value = '60';
+
+  $export['user_picture_imagecache_profiles_min_width'] = $strongarm;
   return $export;
 }

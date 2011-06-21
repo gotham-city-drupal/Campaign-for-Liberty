@@ -149,6 +149,14 @@ div.password-description {
   padding-bottom: 20px;
 }
 
+#comments .picture {
+  float: left;
+}
+
+#comments .comment {
+  margin-left: 80px;
+}
+
 #content .comment .content {
   margin: 1em;
   padding: 0;
@@ -424,16 +432,6 @@ html.js input.throbbing {
 /* Core */
 .admin-panel {
   margin: 10px 0 20px;
-}
-
-#comments .picture {
-  width: 60px;
-  height: 60px;
-  float: left;
-}
-
-#comments .comment {
-  margin-left: 80px;
 }
 
 #main #content .groups {

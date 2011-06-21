@@ -2,6 +2,16 @@
 
 include_once('old_profile.features.inc');
 
+/**
+ * Implementation of hook_init()
+ */
+function old_profile_init() {
+  drupal_add_css(drupal_get_path('module', 'old_profile') . '/theme/css/old_profile.css');
+  if (file_exists(drupal_get_path('module', 'old_profile') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css')) {
+    drupal_add_css(drupal_get_path('module', 'old_profile') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
+  }
+}
+
  /**
  * Implementation of hook_form_FORM_ID_alter().
  */

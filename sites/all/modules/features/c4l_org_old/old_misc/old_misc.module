@@ -2,3 +2,13 @@
 
 include_once('old_misc.features.inc');
 // Drupal needs this blank file.
+
+/**
+ * Implementation of hook_init()
+ */
+function old_misc_init() {
+  drupal_add_css(drupal_get_path('module', 'old_misc') . '/theme/css/old_misc.css');
+  if (file_exists(drupal_get_path('module', 'old_misc') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css')) {
+    drupal_add_css(drupal_get_path('module', 'old_misc') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
+  }
+}

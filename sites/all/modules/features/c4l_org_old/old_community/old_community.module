@@ -10,6 +10,16 @@ function old_community_perm() {
 }
 
 /**
+ * Implementation of hook_init()
+ */
+function old_community_init() {
+  drupal_add_css(drupal_get_path('module', 'old_community') . '/theme/css/old_community.css');
+  if (file_exists(drupal_get_path('module', 'old_community') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css')) {
+    drupal_add_css(drupal_get_path('module', 'old_community') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
+  }
+}
+
+/**
  * Implementation of hook_menu().
  */
 function old_community_menu() {

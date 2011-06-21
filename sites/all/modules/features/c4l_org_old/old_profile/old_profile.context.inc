@@ -30,17 +30,11 @@ function old_profile_context_default_contexts() {
           'region' => 'right_top',
           'weight' => 0,
         ),
-        'views-profile-block_2' => array(
-          'module' => 'views',
-          'delta' => 'profile-block_2',
-          'region' => 'right_top',
-          'weight' => 1,
-        ),
         'views-profile-block_3' => array(
           'module' => 'views',
           'delta' => 'profile-block_3',
           'region' => 'right_top',
-          'weight' => 2,
+          'weight' => 1,
         ),
         'views-profile_my_groups-block_1' => array(
           'module' => 'views',
