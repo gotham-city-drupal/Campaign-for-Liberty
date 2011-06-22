@@ -529,36 +529,7 @@ function old_community_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'gmap_node_markers';
   $strongarm->value = array(
-    'res' => 'drupal',
-    'demopost' => 'drupal',
-    'fp' => 'drupal',
-    'webform' => 'drupal',
-    'blank' => 'drupal',
-    'image' => 'drupal',
-    'product' => 'drupal',
-    'candidate_survey_2010' => 'drupal',
-    'forum' => 'drupal',
-    'event' => 'drupal',
-    'newswire' => 'drupal',
-    'fullnatblog' => 'drupal',
-    'trainingvideo' => 'drupal',
-    'coordinatortools' => 'drupal',
-    'project' => 'drupal',
-    'group_announcement' => 'drupal',
-    'featured_blocks' => 'drupal',
-    'frontpage_banner' => 'drupal',
-    'page' => 'drupal',
-    'country' => 'drupal',
-    'county' => 'drupal',
-    'region' => 'drupal',
-    'state' => 'drupal',
-    'memblog' => 'drupal',
-    'personal' => 'drupal',
-    'profile' => 'drupal',
-    'profpic' => 'drupal',
-    'settings' => 'drupal',
-    'faq' => 'drupal',
-    'staff' => 'drupal',
+    'webform_report' => 'drupal',
   );
 
   $export['gmap_node_markers'] = $strongarm;

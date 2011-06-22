@@ -92,8 +92,6 @@ function piropublic_about_context_default_contexts() {
         ),
       ),
     ),
-    'breadcrumb' => 'about/faq',
-    'menu' => 'about/faq',
   );
   $context->condition_mode = 0;
 

@@ -17,5 +17,60 @@
 }
 
 .state-coordinator .memblog-add .promote-box {
-  display: none;
+  display: block;
+}
+
+.state-coordinator .memblog-edit .promote-box {
+  display: block;
+}
+
+.local-coordinator .memblog-add .promote-box {
+  display: block;
+}
+
+.local-coordinator .memblog-edit .promote-box {
+  display: block;
+}
+
+.region-coordinator .memblog-add .promote-box {
+  display: block;
+}
+
+.region-coordinator .memblog-edit .promote-box {
+  display: block;
+}
+
+.county-coordinator .memblog-add .promote-box {
+  display: block;
+}
+
+.county-coordinator .memblog-edit .promote-box {
+  display: block;
+}
+
+.staff .memblog-add .promote-box {
+  display: block;
+}
+
+.headquarters .memblog-add .promote-box {
+  display: block;
+}
+
+.promote-box .form-item .form-checkboxes .form-item {
+  display: block;
+  float: left;
+  border: 1px solid #ccc;
+  width: 85px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+
+.memblog-add .body-field-wrapper {
+  clear: both;
+}
+
+.memblog-edit .body-field-wrapper {
+  clear: both;
 }

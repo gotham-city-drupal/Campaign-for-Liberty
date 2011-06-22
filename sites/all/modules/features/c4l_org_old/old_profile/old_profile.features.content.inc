@@ -81,7 +81,7 @@ function old_profile_content_default_fields() {
       'default_value_php' => NULL,
       'label' => 'Publish To Group',
       'weight' => '-4',
-      'description' => 'Publish this blog entry to a group.',
+      'description' => '',
       'type' => 'nodereference_buttons',
       'module' => 'nodereference',
     ),

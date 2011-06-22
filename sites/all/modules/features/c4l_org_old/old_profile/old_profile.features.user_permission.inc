@@ -11,7 +11,8 @@ function old_profile_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       '0' => 'administrator',
-      '1' => 'authenticated user',
+      '1' => 'anonymous user',
+      '2' => 'authenticated user',
     ),
   );
 

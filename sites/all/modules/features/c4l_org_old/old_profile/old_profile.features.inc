@@ -217,6 +217,49 @@ function old_profile_rules_defaults() {
         ),
         '#version' => 6003,
       ),
+      'rules_24' => array(
+        '#type' => 'rule',
+        '#set' => 'event_user_view',
+        '#label' => 'Profile Redirect',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          'old_profile' => 'old_profile',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(),
+        '#actions' => array(
+          '0' => array(
+            '#type' => 'action',
+            '#settings' => array(
+              'path' => 'profile/[account:uid]',
+              'query' => '',
+              'fragment' => '',
+              'force' => 1,
+              'immediate' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'path' => array(
+                    '0' => 'account',
+                  ),
+                ),
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#weight' => 0,
+          ),
+        ),
+        '#version' => 6003,
+      ),
       'rules_18' => array(
         '#type' => 'rule',
         '#set' => 'event_user_view',
@@ -606,71 +649,6 @@ $cck_image = \'sites/default/files/defprof.jpg\';
 db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node->uid);',
               'vars' => array(
                 '0' => 'node',
-              ),
-            ),
-            '#type' => 'action',
-          ),
-        ),
-        '#version' => 6003,
-      ),
-      'rules_24' => array(
-        '#type' => 'rule',
-        '#set' => 'event_user_view',
-        '#label' => 'Profile Redirect',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          'old_profile' => 'old_profile',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(
-          '0' => array(
-            '#type' => 'condition',
-            '#settings' => array(
-              'type' => 'personal',
-              '#argument map' => array(
-                'user' => 'user',
-              ),
-            ),
-            '#name' => 'content_profile_user_has_profile_condition',
-            '#info' => array(
-              'label' => 'Acting user has his Personal Information created',
-              'arguments' => array(
-                'user' => array(
-                  'type' => 'user',
-                  'label' => 'User',
-                ),
-              ),
-              'module' => 'Content Profile',
-            ),
-            '#weight' => 0,
-          ),
-        ),
-        '#actions' => array(
-          '0' => array(
-            '#weight' => 0,
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#settings' => array(
-              'path' => 'profile/[account:uid]',
-              'query' => '',
-              'fragment' => '',
-              'force' => 1,
-              'immediate' => 0,
-              '#eval input' => array(
-                'token_rules_input_evaluator' => array(
-                  'path' => array(
-                    '0' => 'account',
-                  ),
-                ),
               ),
             ),
             '#type' => 'action',

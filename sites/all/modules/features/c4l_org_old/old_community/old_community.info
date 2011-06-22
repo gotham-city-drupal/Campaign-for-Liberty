@@ -1,5 +1,6 @@
 core = "6.x"
 dependencies[] = "community_map"
+dependencies[] = "context"
 dependencies[] = "filefield"
 dependencies[] = "gmap"
 dependencies[] = "gmap_location"

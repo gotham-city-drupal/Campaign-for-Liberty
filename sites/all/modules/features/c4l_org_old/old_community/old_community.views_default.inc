@@ -177,6 +177,8 @@ elseif (og_get_group_context()) {
     'results_lifespan' => 3600,
     'output_lifespan' => 3600,
   ));
+  $handler->override_option('header_format', '1');
+  $handler->override_option('header_empty', 0);
   $handler->override_option('items_per_page', 1);
   $handler = $view->new_display('block', 'Group Photo', 'block_1');
   $handler->override_option('fields', array(
@@ -431,8 +433,6 @@ elseif (og_get_group_context()) {
       '13' => 13,
     ),
   ));
-  $handler->override_option('header_format', '1');
-  $handler->override_option('header_empty', 0);
   $handler->override_option('block_description', 'Group Options');
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('block', 'Group Parent', 'block_4');
@@ -1756,7 +1756,7 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_user' => 1,
-      'overwrite_anonymous' => 1,
+      'overwrite_anonymous' => 0,
       'anonymous_text' => '',
       'exclude' => 0,
       'id' => 'name',
@@ -2173,7 +2173,7 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_user' => 1,
-      'overwrite_anonymous' => 1,
+      'overwrite_anonymous' => 0,
       'anonymous_text' => '',
       'exclude' => 0,
       'id' => 'name',
@@ -2547,13 +2547,16 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_user' => 1,
-      'overwrite_anonymous' => 1,
+      'overwrite_anonymous' => 0,
       'anonymous_text' => '',
       'exclude' => 0,
       'id' => 'name',
       'table' => 'users',
       'field' => 'name',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'remove_member' => array(
       'label' => '',
@@ -2934,7 +2937,7 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_user' => 1,
-      'overwrite_anonymous' => 1,
+      'overwrite_anonymous' => 0,
       'anonymous_text' => '',
       'exclude' => 0,
       'id' => 'name',
