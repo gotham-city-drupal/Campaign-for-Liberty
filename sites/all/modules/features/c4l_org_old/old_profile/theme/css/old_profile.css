@@ -8,6 +8,10 @@
   display: none;
 }
 
+.promote-only .audience-box {
+  display: none;
+}
+
 .authenticated-user .memblog-edit .promote-box {
   display: none;
 }
@@ -61,6 +65,7 @@
   float: left;
   border: 1px solid #ccc;
   width: 85px;
+  height: 85px;
   padding: 5px;
   margin: 5px;
   font-size: 12px;
@@ -74,3 +79,16 @@
 .memblog-edit .body-field-wrapper {
   clear: both;
 }
+
+.promote-only .body-field-wrapper {
+  clear: both;
+}
+
+.promote-only #edit-title-wrapper {
+  display: none;
+}
+
+.promote-only .body-field-wrapper {
+  display: none;
+}
+

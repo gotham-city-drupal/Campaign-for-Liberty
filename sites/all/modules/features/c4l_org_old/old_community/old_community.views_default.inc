@@ -696,12 +696,15 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'link_to_node' => 0,
+      'link_to_node' => 1,
       'exclude' => 0,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'created' => array(
       'label' => '',
@@ -1287,12 +1290,15 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'link_to_node' => 0,
+      'link_to_node' => 1,
       'exclude' => 0,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'created' => array(
       'label' => '',
@@ -1483,12 +1489,15 @@ elseif (og_get_group_context()) {
   ));
   $handler->override_option('sorts', array(
     'created' => array(
-      'order' => 'ASC',
+      'order' => 'DESC',
       'granularity' => 'second',
       'id' => 'created',
       'table' => 'node',
       'field' => 'created',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('arguments', array(

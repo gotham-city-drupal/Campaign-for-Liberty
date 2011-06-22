@@ -2032,7 +2032,7 @@ else {
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
-    'type' => array(
+    'nid' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
@@ -2056,11 +2056,10 @@ else {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_node' => 0,
-      'machine_name' => 0,
       'exclude' => 1,
-      'id' => 'type',
+      'id' => 'nid',
       'table' => 'node',
-      'field' => 'type',
+      'field' => 'nid',
       'relationship' => 'none',
     ),
     'field_og_pic_fid' => array(
@@ -2167,7 +2166,7 @@ else {
         '7' => 0,
         '10' => 0,
         '11' => 0,
-        '12' => 0,
+        '14' => 0,
         '8' => 0,
         '13' => 0,
       ),
@@ -2186,7 +2185,15 @@ else {
  return $user->uid;
 }',
       'validate_argument_node_type' => array(
+        'poll' => 0,
+        'feed_fast' => 0,
+        'feed' => 0,
+        'feed_item' => 0,
         'image' => 0,
+        'product' => 0,
+        'event' => 0,
+        'donation' => 0,
+        'webform_report' => 0,
         'country' => 0,
         'county' => 0,
         'region' => 0,
@@ -2196,20 +2203,22 @@ else {
         'profile' => 0,
         'profpic' => 0,
         'settings' => 0,
+        'video' => 0,
+        'op_image' => 0,
         'featured_blocks' => 0,
         'frontpage_banner' => 0,
         'page' => 0,
         'faq' => 0,
         'staff' => 0,
         'forum' => 0,
-        'feed' => 0,
-        'video' => 0,
+        'feed_video' => 0,
         'webform' => 0,
       ),
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
         '2' => 0,
+        '4' => 0,
         '3' => 0,
         '1' => 0,
       ),
@@ -2238,6 +2247,8 @@ else {
       'override' => array(
         'button' => 'Override',
       ),
+      'validate_argument_signup_status' => 'any',
+      'validate_argument_signup_node_access' => 0,
     ),
   ));
   $handler->override_option('filters', array(
@@ -2282,17 +2293,8 @@ else {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
-  $handler->override_option('title', 'Groups I Admin');
-  $handler->override_option('use_ajax', TRUE);
   $handler->override_option('items_per_page', 0);
-  $handler->override_option('use_pager', 'mini');
-  $handler->override_option('style_plugin', 'grid');
-  $handler->override_option('style_options', array(
-    'grouping' => 'type',
-    'columns' => '3',
-    'alignment' => 'horizontal',
-    'fill_single_line' => 1,
-  ));
+  $handler->override_option('use_pager', '0');
 
   $views[$view->name] = $view;
 

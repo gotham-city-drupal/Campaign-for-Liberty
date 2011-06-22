@@ -13,7 +13,7 @@ function old_community_perm() {
  * Implementation of hook_init()
  */
 function old_community_init() {
-  //drupal_add_css(drupal_get_path('module', 'old_community') . '/theme/css/old_community.css');
+  drupal_add_css(drupal_get_path('module', 'old_community') . '/theme/css/old_community.css');
   if (file_exists(drupal_get_path('module', 'old_community') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css')) {
     drupal_add_css(drupal_get_path('module', 'old_community') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
   }
@@ -56,9 +56,10 @@ function old_community_form_alter(&$form, &$form_state, $form_id) {
       if ($form['nid']['#value']) {
         $form['#attributes']['class'] = 'memblog-edit';
         if (user_access('promote to my groups')) {
-          $form['#attributes']['class'] = 'promote-only';
-          $form['title']['#default_value'] = 'Promote this post';
-          $form = $form;
+          global $user;
+          if (($user->uid)!==($form['uid']['#value'])) {
+            $form['#attributes']['class'] = 'promote-only';
+          }
         }
       }
       else {
@@ -84,9 +85,22 @@ function old_community_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
         global $user;
         foreach ($user->og_groups as &$group) {
           db_query('INSERT INTO {og_ancestry} (nid, group_nid) VALUES (%d, %d)', $node->nid, $group['nid']);
+          db_query('INSERT INTO {og_access_post} (nid, og_public) VALUES (%d, 1)', $node->nid);
         }
         unset($group);
   	  break;
+     case 'update':
+      global $user;
+      $list = db_query('SELECT group_nid FROM {og_ancestry} WHERE nid = %d', $node->nid);
+      while($row = db_fetch_array($list)) {
+        foreach ($user->og_groups as &$group) {
+          if ($group['nid'] !== $row['group_nid']) {
+            db_query('INSERT INTO {og_ancestry} (nid, group_nid) VALUES (%d, %d)', $node->nid, $group['nid']);
+          }
+        }
+      }
+      unset($group);
+     break;
     }
   }
 }
