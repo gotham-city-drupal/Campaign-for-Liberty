@@ -119,7 +119,7 @@ function template_preprocess_videojs(&$vars) {
     'video/quicktime' => "video/mp4; codecs='avc1.42E01E, mp4a.40.2'"
   );
   foreach ($vars['items'] as $item) {
-//    $item['filepath'] = file_create_url($item['filepath']);
+    $item['filepath'] = file_create_url($item['filepath']);
     // Skip unplayable items.
     if (!isset($codecs[$item['filemime']]))
       continue;
@@ -145,7 +145,7 @@ function template_preprocess_videojs(&$vars) {
   $vars['items'] = array_merge($items_mp4, $items_others); // mp4 listed first
 
   if (!isset($vars['flash'])) {
-    $vars['flash'] = file_create_url($items_mp4[0]['filepath']);
+    $vars['flash'] = $items_mp4[0]['filepath'];
   }
 }
 
