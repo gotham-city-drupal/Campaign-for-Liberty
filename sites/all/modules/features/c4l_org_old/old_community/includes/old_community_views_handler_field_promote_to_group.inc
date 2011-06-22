@@ -21,15 +21,14 @@ class old_community_views_handler_field_promote_to_group extends views_handler_f
     $node->format = $values->{$this->aliases['format']};
     $node->status = 1; // unpublished nodes ignore access control
 
-    if (!node_access('update', $node)) {
-      return;
+    if (user_access('edit member blogs')) {
+      $text = !empty($this->options['text']) ? $this->options['text'] : t('Edit/Promote');
+      return l($text, "node/$node->nid/edit", array('query' => drupal_get_destination()));
+    }
+    elseif (user_access('promote to my groups')) {
+      $text = !empty($this->options['text']) ? $this->options['text'] : t('Promote to my group');
+      return l($text, "node/$node->nid/edit", array('query' => drupal_get_destination()));
     }
 
-    if ((!user_access('promote to my groups'))&&(!og_is_group_admin($node))) {
-      return;
-    }
-
-    $text = !empty($this->options['text']) ? $this->options['text'] : t('promote to my group');
-    return l($text, "node/$node->nid/edit", array('query' => drupal_get_destination()));
   }
 }

@@ -226,6 +226,134 @@ else {
     'type' => 'none',
   ));
   $handler = $view->new_display('page', 'Base Profile Page', 'page_1');
+  $handler->override_option('arguments', array(
+    'uid' => array(
+      'default_action' => 'default',
+      'style_plugin' => 'default_summary',
+      'style_options' => array(),
+      'wildcard' => '',
+      'wildcard_substitution' => '',
+      'title' => '%1',
+      'breadcrumb' => '%1',
+      'default_argument_type' => 'php',
+      'default_argument' => '',
+      'validate_type' => 'user',
+      'validate_fail' => 'not found',
+      'break_phrase' => 0,
+      'not' => 0,
+      'id' => 'uid',
+      'table' => 'users',
+      'field' => 'uid',
+      'validate_user_argument_type' => 'uid',
+      'validate_user_roles' => array(
+        '2' => 0,
+        '5' => 0,
+        '9' => 0,
+        '7' => 0,
+        '10' => 0,
+        '11' => 0,
+        '14' => 0,
+        '12' => 0,
+        '3' => 0,
+        '6' => 0,
+        '4' => 0,
+        '8' => 0,
+        '13' => 0,
+      ),
+      'relationship' => 'none',
+      'default_options_div_prefix' => '',
+      'default_argument_image_size' => '_original',
+      'default_argument_user' => 1,
+      'default_argument_fixed' => '',
+      'default_argument_php' => 'if (arg(0)==\'node\') {
+  if (is_numeric(arg(1))) {
+  $n = node_load(arg(1));
+  return $n->uid;}
+  else {global $user;
+ return $user->uid;
+}
+}
+elseif (arg(0)==\'profile\') {
+  if (arg(1)) {
+    return arg(1);
+}
+}
+elseif (arg(0)==\'user\') {
+  if (arg(1)) {
+    return arg(1);
+}
+}
+else {
+ global $user;
+ return $user->uid;
+}',
+      'image_size' => array(
+        '_original' => '_original',
+        'thumbnail' => 'thumbnail',
+        'preview' => 'preview',
+      ),
+      'validate_argument_node_type' => array(
+        'poll' => 0,
+        'feed_fast' => 0,
+        'feed' => 0,
+        'feed_item' => 0,
+        'image' => 0,
+        'product' => 0,
+        'event' => 0,
+        'donation' => 0,
+        'webform_report' => 0,
+        'country' => 0,
+        'county' => 0,
+        'region' => 0,
+        'state' => 0,
+        'memblog' => 0,
+        'personal' => 0,
+        'profile' => 0,
+        'profpic' => 0,
+        'settings' => 0,
+        'video' => 0,
+        'op_image' => 0,
+        'featured_blocks' => 0,
+        'frontpage_banner' => 0,
+        'page' => 0,
+        'faq' => 0,
+        'staff' => 0,
+        'forum' => 0,
+        'feed_video' => 0,
+        'webform' => 0,
+      ),
+      'validate_argument_node_access' => 0,
+      'validate_argument_nid_type' => 'nid',
+      'validate_argument_vocabulary' => array(
+        '2' => 0,
+        '4' => 0,
+        '3' => 0,
+        '1' => 0,
+      ),
+      'validate_argument_type' => 'tid',
+      'validate_argument_transform' => 0,
+      'validate_user_restrict_roles' => 0,
+      'validate_argument_node_flag_name' => '*relationship*',
+      'validate_argument_node_flag_test' => 'flaggable',
+      'validate_argument_node_flag_id_type' => 'id',
+      'validate_argument_user_flag_name' => '*relationship*',
+      'validate_argument_user_flag_test' => 'flaggable',
+      'validate_argument_user_flag_id_type' => 'id',
+      'validate_argument_is_member' => 'OG_VIEWS_DO_NOT_VALIDATE_MEMBERSHIP',
+      'validate_argument_php' => '',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'validate_argument_group_node_type' => array(
+        'country' => 0,
+        'county' => 0,
+        'region' => 0,
+        'state' => 0,
+      ),
+      'validate_argument_signup_status' => 'any',
+      'validate_argument_signup_node_access' => 0,
+    ),
+  ));
   $handler->override_option('path', 'profile');
   $handler->override_option('menu', array(
     'type' => 'none',
@@ -1096,42 +1224,15 @@ else {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'text' => 'Promote to my group(s)',
+      'text' => '',
       'exclude' => 0,
       'id' => 'group_promote',
       'table' => 'node',
       'field' => 'group_promote',
       'relationship' => 'none',
-    ),
-    'edit_node' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
+      'override' => array(
+        'button' => 'Override',
       ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'text' => 'Edit',
-      'exclude' => 0,
-      'id' => 'edit_node',
-      'table' => 'node',
-      'field' => 'edit_node',
-      'relationship' => 'none',
     ),
     'delete_node' => array(
       'label' => '',
