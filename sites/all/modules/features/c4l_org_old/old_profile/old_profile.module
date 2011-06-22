@@ -25,6 +25,33 @@ function old_profile_theme_registry_alter(&$theme_registry) {
 }
 
 /**
+* Implements hook_theme().
+*/
+function old_profile_theme() {
+  return array(
+    // need to use custom template to fix link module target=blank fail
+  	'old_profile_preprocess_user_picture' => array(
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'imagecache_profiles_preprocess_user_picture',
+        'old_profile_preprocess_user_picture',
+      ),
+    ),
+  );
+}
+
+
+function old_profile_preprocess_user_picture(&$variables) {
+  $variables['picture'] = strip_tags($variables['picture'], '<img>');
+  $account = $variables['account'];
+  if (!empty($account->uid) && user_access('access user profiles')) {
+    $title = t('View user profile.');
+    $attributes = array('attributes' => array('title' => $title), 'html' => TRUE);
+    $variables['picture'] = l($variables['picture'], "profile/$account->uid", $attributes);
+  }
+}
+
+/**
 * theme_username function()
 */
 function old_profile_theme_username($object = NULL, $previous_function = 'theme_username') {

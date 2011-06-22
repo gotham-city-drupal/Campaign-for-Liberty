@@ -699,7 +699,7 @@ function old_profile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_default';
-  $strongarm->value = 'http://www.campaignforliberty.org/sites/default/files/defprof.jpg';
+  $strongarm->value = '';
 
   $export['user_picture_default'] = $strongarm;
   $strongarm = new stdClass;
@@ -734,14 +734,14 @@ function old_profile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_imagecache_profiles';
-  $strongarm->value = 'profile_pic';
+  $strongarm->value = 'groupprof_pic';
 
   $export['user_picture_imagecache_profiles'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_picture_imagecache_profiles_default';
-  $strongarm->value = 'profile_pic';
+  $strongarm->value = 'groupprof_pic';
 
   $export['user_picture_imagecache_profiles_default'] = $strongarm;
   $strongarm = new stdClass;

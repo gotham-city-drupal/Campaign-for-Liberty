@@ -134,6 +134,55 @@ function old_profile_node_info() {
 function old_profile_rules_defaults() {
   return array(
     'rules' => array(
+      'rules_redirect_logn' => array(
+        '#type' => 'rule',
+        '#set' => 'event_user_login',
+        '#label' => 'Redirect logn',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'old_profile',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(),
+        '#actions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#settings' => array(
+              'path' => 'profile',
+              'query' => '',
+              'fragment' => '',
+              'force' => 1,
+              'immediate' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'path' => array(
+                    '0' => ':global',
+                  ),
+                  'query' => array(
+                    '0' => ':global',
+                  ),
+                  'fragment' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#type' => 'action',
+          ),
+        ),
+        '#version' => 6003,
+      ),
       'rules_redirect_user_edit_to_profile' => array(
         '#type' => 'rule',
         '#set' => 'event_user_update',

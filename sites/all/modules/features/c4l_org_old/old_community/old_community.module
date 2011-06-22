@@ -51,7 +51,6 @@ function old_community_menu() {
  *
  */
 function old_community_form_alter(&$form, &$form_state, $form_id) {
-  $form = $form;
   switch ($form_id) {
     case 'memblog_node_form':
       if ($form['nid']['#value']) {
@@ -71,11 +70,8 @@ function old_community_form_alter(&$form, &$form_state, $form_id) {
 
       $form['og_nodeapi']['#prefix'] = '<div class="audience-box">';
       $form['og_nodeapi']['#suffix'] = '</div>';
-
-
     break;
   }
-
 }
 
 /**
