@@ -173,9 +173,7 @@ elseif (og_get_group_context()) {
     'type' => 'none',
   ));
   $handler->override_option('cache', array(
-    'type' => 'time',
-    'results_lifespan' => 3600,
-    'output_lifespan' => 3600,
+    'type' => 'none',
   ));
   $handler->override_option('header_format', '1');
   $handler->override_option('header_empty', 0);

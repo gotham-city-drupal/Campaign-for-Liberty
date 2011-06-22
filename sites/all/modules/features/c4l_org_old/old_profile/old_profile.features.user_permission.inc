@@ -151,9 +151,10 @@ function old_profile_user_default_permissions() {
       '0' => 'administrator',
       '1' => 'county coordinator',
       '2' => 'headquarters',
-      '3' => 'region coordinator',
-      '4' => 'staff',
-      '5' => 'state coordinator',
+      '3' => 'local coordinator',
+      '4' => 'region coordinator',
+      '5' => 'staff',
+      '6' => 'state coordinator',
     ),
   );
 

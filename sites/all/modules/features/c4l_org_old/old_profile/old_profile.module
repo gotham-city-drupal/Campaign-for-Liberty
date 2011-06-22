@@ -12,6 +12,60 @@ function old_profile_init() {
   }
 }
 
+/**
+* Implementation of hook_theme_registry_alter().
+*/
+function old_profile_theme_registry_alter(&$theme_registry) {
+  if (!empty($theme_registry['username']['function'])) {
+    $previous_function = $theme_registry['username']['function'];
+    $theme_registry['username']['function'] = 'old_profile_theme_username';
+    $theme_registry['username']['arguments']['previous_function'] =
+      $previous_function;
+  }
+}
+
+/**
+* theme_username function()
+*/
+function old_profile_theme_username($object = NULL, $previous_function = 'theme_username') {
+  // want to use a fake object because objects are passed by reference
+  if ($object->uid && $object->name) {
+    // Shorten the name when it is too long or it will break many tables.
+    if (drupal_strlen($object->name) > 20) {
+      $name = drupal_substr($object->name, 0, 15) . '...';
+    }
+    else {
+      $name = $object->name;
+    }
+
+    if (user_access('access user profiles')) {
+      $output = l($name, 'profile/' . $object->uid, array('attributes' => array('title' => t('View user profile.'))));
+    }
+    else {
+      $output = check_plain($name);
+    }
+  }
+  else if ($object->name) {
+    // Sometimes modules display content composed by people who are
+    // not registered members of the site (e.g. mailing list or news
+    // aggregator modules). This clause enables modules to display
+    // the true author of the content.
+    if (!empty($object->homepage)) {
+      $output = l($object->name, $object->homepage, array('attributes' => array('rel' => 'nofollow')));
+    }
+    else {
+      $output = check_plain($object->name);
+    }
+
+    $output .= ' (' . t('not verified') . ')';
+  }
+  else {
+    $output = check_plain(variable_get('anonymous', t('Anonymous')));
+  }
+
+  return $output;
+}
+
  /**
  * Implementation of hook_form_FORM_ID_alter().
  */

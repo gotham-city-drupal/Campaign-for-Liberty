@@ -53,8 +53,8 @@ function old_community_context_default_contexts() {
         ),
       ),
     ),
-    'breadcrumb' => 'node/197',
-    'menu' => 'node/197',
+    'breadcrumb' => 'node/428',
+    'menu' => 'node/428',
   );
   $context->condition_mode = 0;
 
@@ -175,8 +175,8 @@ function old_community_context_default_contexts() {
         ),
       ),
     ),
-    'breadcrumb' => 'node/197',
-    'menu' => 'node/197',
+    'breadcrumb' => 'node/428',
+    'menu' => 'node/428',
   );
   $context->condition_mode = 0;
 
