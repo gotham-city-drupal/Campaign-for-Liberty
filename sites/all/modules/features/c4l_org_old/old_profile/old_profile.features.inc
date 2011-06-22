@@ -134,6 +134,81 @@ function old_profile_node_info() {
 function old_profile_rules_defaults() {
   return array(
     'rules' => array(
+      'rules_redirect_user_edit_to_profile' => array(
+        '#type' => 'rule',
+        '#set' => 'event_user_update',
+        '#label' => 'Redirect user edit to profile',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'old_profile',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Compare two users',
+              'arguments' => array(
+                'user1' => array(
+                  'type' => 'user',
+                  'label' => 'User account 1',
+                ),
+                'user2' => array(
+                  'type' => 'user',
+                  'label' => 'User account 2',
+                ),
+              ),
+              'module' => 'User',
+            ),
+            '#name' => 'rules_condition_user_comparison',
+            '#settings' => array(
+              '#argument map' => array(
+                'user1' => 'user',
+                'user2' => 'account',
+              ),
+            ),
+            '#type' => 'condition',
+          ),
+        ),
+        '#actions' => array(
+          '0' => array(
+            '#type' => 'action',
+            '#settings' => array(
+              'path' => 'profile',
+              'query' => '',
+              'fragment' => '',
+              'force' => 1,
+              'immediate' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'path' => array(
+                    '0' => ':global',
+                  ),
+                  'query' => array(
+                    '0' => ':global',
+                  ),
+                  'fragment' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#weight' => 0,
+          ),
+        ),
+        '#version' => 6003,
+      ),
       'rules_21' => array(
         '#type' => 'rule',
         '#set' => 'event_node_insert',
