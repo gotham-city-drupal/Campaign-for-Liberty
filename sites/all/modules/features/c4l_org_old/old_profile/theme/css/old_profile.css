@@ -1,5 +1,22 @@
 @CHARSET "ISO-8859-1";
 
+.node-type-profile .tabs {
+  display: none;
+}
+
+.node-type-profpic .tabs {
+  display: none;
+}
+
+.node-type-personal .tabs {
+  display: none;
+}
+
+.section-user .tabs {
+  display: none;
+}
+
+
 .memblog-edit .audience-box {
   display: none;
 }
