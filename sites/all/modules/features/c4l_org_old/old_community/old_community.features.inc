@@ -14,6 +14,29 @@ function old_community_ctools_plugin_api() {
 }
 
 /**
+ * Implementation of hook_imagecache_default_presets().
+ */
+function old_community_imagecache_default_presets() {
+  $items = array(
+    'group_thumb' => array(
+      'presetname' => 'group_thumb',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale_and_crop',
+          'data' => array(
+            'width' => '60',
+            'height' => '60',
+          ),
+        ),
+      ),
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implementation of hook_node_info().
  */
 function old_community_node_info() {

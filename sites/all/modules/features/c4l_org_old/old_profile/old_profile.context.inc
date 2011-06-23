@@ -20,6 +20,11 @@ function old_profile_context_default_contexts() {
         'node_form' => '1',
       ),
     ),
+    'path' => array(
+      'values' => array(
+        'profile/*/blog' => 'profile/*/blog',
+      ),
+    ),
   );
   $context->reactions = array(
     'block' => array(
@@ -36,17 +41,11 @@ function old_profile_context_default_contexts() {
           'region' => 'right_top',
           'weight' => 1,
         ),
-        'views-profile_my_groups-block_1' => array(
-          'module' => 'views',
-          'delta' => 'profile_my_groups-block_1',
-          'region' => 'right',
-          'weight' => 0,
-        ),
         'views-profile_blogs-block_2' => array(
           'module' => 'views',
           'delta' => 'profile_blogs-block_2',
           'region' => 'right',
-          'weight' => 1,
+          'weight' => 0,
         ),
       ),
     ),

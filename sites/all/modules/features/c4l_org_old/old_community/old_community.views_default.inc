@@ -173,9 +173,7 @@ elseif (og_get_group_context()) {
     'type' => 'none',
   ));
   $handler->override_option('cache', array(
-    'type' => 'time',
-    'results_lifespan' => 3600,
-    'output_lifespan' => 3600,
+    'type' => 'none',
   ));
   $handler->override_option('header_format', '1');
   $handler->override_option('header_empty', 0);
@@ -698,12 +696,15 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'link_to_node' => 0,
+      'link_to_node' => 1,
       'exclude' => 0,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'created' => array(
       'label' => '',
@@ -825,7 +826,7 @@ elseif (og_get_group_context()) {
       'field' => 'comments_link',
       'relationship' => 'none',
     ),
-    'edit_node' => array(
+    'group_promote' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
@@ -848,11 +849,11 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'text' => 'Edit',
+      'text' => '',
       'exclude' => 0,
-      'id' => 'edit_node',
+      'id' => 'group_promote',
       'table' => 'node',
-      'field' => 'edit_node',
+      'field' => 'group_promote',
       'override' => array(
         'button' => 'Override',
       ),
@@ -1289,12 +1290,15 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'link_to_node' => 0,
+      'link_to_node' => 1,
       'exclude' => 0,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'created' => array(
       'label' => '',
@@ -1439,44 +1443,11 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'text' => 'Promote to my group(s)',
+      'text' => '',
       'exclude' => 0,
       'id' => 'group_promote',
       'table' => 'node',
       'field' => 'group_promote',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-    'edit_node' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'text' => 'Edit',
-      'exclude' => 0,
-      'id' => 'edit_node',
-      'table' => 'node',
-      'field' => 'edit_node',
       'override' => array(
         'button' => 'Override',
       ),
@@ -1518,12 +1489,15 @@ elseif (og_get_group_context()) {
   ));
   $handler->override_option('sorts', array(
     'created' => array(
-      'order' => 'ASC',
+      'order' => 'DESC',
       'granularity' => 'second',
       'id' => 'created',
       'table' => 'node',
       'field' => 'created',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('arguments', array(

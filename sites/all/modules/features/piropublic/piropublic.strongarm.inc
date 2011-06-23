@@ -746,14 +746,14 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_redirect_on_confirm';
-  $strongarm->value = 'user';
+  $strongarm->value = 'profile';
 
   $export['logintoboggan_redirect_on_confirm'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'logintoboggan_redirect_on_register';
-  $strongarm->value = 'user';
+  $strongarm->value = 'profile';
 
   $export['logintoboggan_redirect_on_register'] = $strongarm;
   $strongarm = new stdClass;

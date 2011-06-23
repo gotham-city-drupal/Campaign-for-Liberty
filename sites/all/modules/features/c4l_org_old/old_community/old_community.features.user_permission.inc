@@ -170,6 +170,16 @@ function old_community_user_default_permissions() {
     ),
   );
 
+  // Exported permission: edit member blogs
+  $permissions['edit member blogs'] = array(
+    'name' => 'edit member blogs',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'headquarters',
+      '2' => 'staff',
+    ),
+  );
+
   // Exported permission: edit own country content
   $permissions['edit own country content'] = array(
     'name' => 'edit own country content',
@@ -235,10 +245,9 @@ function old_community_user_default_permissions() {
     'roles' => array(
       '0' => 'administrator',
       '1' => 'county coordinator',
-      '2' => 'headquarters',
+      '2' => 'local coordinator',
       '3' => 'region coordinator',
-      '4' => 'staff',
-      '5' => 'state coordinator',
+      '4' => 'state coordinator',
     ),
   );
 

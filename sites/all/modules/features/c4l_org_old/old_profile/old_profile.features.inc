@@ -134,6 +134,55 @@ function old_profile_node_info() {
 function old_profile_rules_defaults() {
   return array(
     'rules' => array(
+      'rules_redirect_logn' => array(
+        '#type' => 'rule',
+        '#set' => 'event_user_login',
+        '#label' => 'Redirect logn',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'old_profile',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(),
+        '#actions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#settings' => array(
+              'path' => 'profile',
+              'query' => '',
+              'fragment' => '',
+              'force' => 1,
+              'immediate' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'path' => array(
+                    '0' => ':global',
+                  ),
+                  'query' => array(
+                    '0' => ':global',
+                  ),
+                  'fragment' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#type' => 'action',
+          ),
+        ),
+        '#version' => 6003,
+      ),
       'rules_redirect_user_edit_to_profile' => array(
         '#type' => 'rule',
         '#set' => 'event_user_update',
@@ -288,49 +337,6 @@ function old_profile_rules_defaults() {
                 '0' => 'message',
               ),
             ),
-          ),
-        ),
-        '#version' => 6003,
-      ),
-      'rules_24' => array(
-        '#type' => 'rule',
-        '#set' => 'event_user_view',
-        '#label' => 'Profile Redirect',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          'old_profile' => 'old_profile',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(),
-        '#actions' => array(
-          '0' => array(
-            '#type' => 'action',
-            '#settings' => array(
-              'path' => 'profile/[account:uid]',
-              'query' => '',
-              'fragment' => '',
-              'force' => 1,
-              'immediate' => 0,
-              '#eval input' => array(
-                'token_rules_input_evaluator' => array(
-                  'path' => array(
-                    '0' => 'account',
-                  ),
-                ),
-              ),
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-            '#weight' => 0,
           ),
         ),
         '#version' => 6003,
@@ -1016,97 +1022,6 @@ db_query(\'UPDATE {users} SET picture = "%s" WHERE uid = %d\', $cck_image, $node
               'fragment' => '',
               'force' => 0,
               'immediate' => 0,
-            ),
-            '#type' => 'action',
-          ),
-        ),
-        '#version' => 6003,
-      ),
-      'rules_37' => array(
-        '#type' => 'rule',
-        '#set' => 'event_init',
-        '#label' => 'Redirect profile to home, anon user',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          'old_profile' => 'old_profile',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(
-          '0' => array(
-            '#type' => 'condition',
-            '#settings' => array(
-              'path' => 'profile',
-              'op' => 'equal',
-            ),
-            '#name' => 'pathrules_checkpath',
-            '#info' => array(
-              'label' => 'Check path',
-              'arguments' => array(
-                'path' => array(
-                  'type' => 'string',
-                  'label' => 'Path to check',
-                ),
-                'op' => array(
-                  'type' => 'string',
-                  'label' => 'Op',
-                ),
-              ),
-              'module' => 'System',
-            ),
-            '#weight' => 0,
-          ),
-          '1' => array(
-            '#info' => array(
-              'label' => 'User has role(s)',
-              'arguments' => array(
-                'user' => array(
-                  'type' => 'user',
-                  'label' => 'User',
-                ),
-              ),
-              'module' => 'User',
-            ),
-            '#name' => 'rules_condition_user_hasrole',
-            '#settings' => array(
-              'roles' => array(
-                '0' => 1,
-              ),
-              'operation' => 'OR',
-              '#argument map' => array(
-                'user' => 'user',
-              ),
-            ),
-            '#type' => 'condition',
-            '#weight' => 0,
-          ),
-        ),
-        '#actions' => array(
-          '0' => array(
-            '#weight' => 0,
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#settings' => array(
-              'path' => '',
-              'query' => '',
-              'fragment' => '',
-              'force' => 0,
-              'immediate' => 0,
-              '#eval input' => array(
-                'token_rules_input_evaluator' => array(
-                  'path' => array(
-                    '0' => 'user',
-                  ),
-                ),
-              ),
             ),
             '#type' => 'action',
           ),
