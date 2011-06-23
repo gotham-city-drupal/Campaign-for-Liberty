@@ -122,8 +122,6 @@ function reverse_geo_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
 
   			}
   			break;
-  	  case 'view':
-  			break;
 		}
 	}
 }
@@ -160,8 +158,12 @@ function reverse_geo_get_location_groups($geogroups = array()) {
 				 }
 
 			// get correct region and county
-	    $get_other_groups = db_query("SELECT n.nid, n.title, n.type FROM {content_field_og_state} og INNER JOIN {node} n ON n.nid = og.nid WHERE og.field_og_state_nid = %d AND (n.title LIKE '%%%s%%' OR n.title LIKE '%%%s%%') AND n.status = 1 AND (n.type='region' OR n.type='county')", $groups['state'], $geogroups['county']['long'], "Region ".$geogroups['region']['district']);
-
+	        $get_other_groups = db_query("SELECT n.nid, n.title, n.type FROM {content_field_og_state} og INNER JOIN {node} n ON n.nid = og.nid WHERE og.field_og_state_nid = %d AND (n.title LIKE '%%%s%%' OR n.title LIKE '%%%s%%') AND n.status = 1 AND (n.type='region' OR n.type='county')", $groups['state'], $geogroups['county']['long'], "Region ".$geogroups['region']['district']);
+            $check_county = db_query("SELECT n.nid, n.title, n.type FROM {content_field_og_state} og INNER JOIN {node} n ON n.nid = og.nid WHERE og.field_og_state_nid = %d AND (n.title LIKE '%%%s%%') AND n.status = 1 AND n.type='county'", $groups['state'], $geogroups['county']['long']);
+            if (!db_fetch_object($check_county)) {
+              drupal_set_message(t('Your county (!county) is not recognized in our database. Please contact C4L staff to have them update our records so we can place you in the correct county.', array('!county' => $geogroups['county']['long'])));
+              watchdog('emergency', t('Google Reverse Geocoder Fail: could not find county: !county'), $variables = array('!county' => $geogroups['county']['long']));
+            }
 			while ($other_groups = db_fetch_object($get_other_groups)) {
 						$groups[$other_groups->type] = $other_groups->nid;
 			}

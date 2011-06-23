@@ -1,1 +1,62 @@
 @CHARSET "ISO-8859-1";
+
+.front #left_bottom .views-row {
+  margin-bottom: 5px;
+}
+
+.front #left_bottom .views-field-title {
+  font-size: 14px;
+}
+
+.front #left_bottom .views-field-created {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.front #left_bottom .views-field-delete-node {
+  font-size: 11px;
+}
+
+.front #left_bottom .views-field-nodequeue-links ul.links li {
+  font-size: 11px;
+  display: block;
+} 
+
+.front #content .picture  {
+  float: left;
+  padding-right: 15px;
+  display: block;
+}
+
+.front #content .views-row {
+  border-bottom:1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.front #content .views-field-title {
+  font-size: 17px;
+}
+
+.front #content .views-field-created {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.front #content .views-field-teaser {
+  font-size: 14px;
+  margin-left: 100px;
+}
+
+.front #content .views-field-delete-node {
+  font-size: 11px;
+  margin-left: 100px;
+}
+
+.front #content .views-field-nodequeue-links ul.links li {
+  font-size: 11px;
+  margin-left: 100px;
+  display: block;
+} 
+
+
