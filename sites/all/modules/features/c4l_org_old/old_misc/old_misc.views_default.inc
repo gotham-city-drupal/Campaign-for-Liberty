@@ -27,13 +27,16 @@ function old_misc_views_default_views() {
         'frontpage_banner_queue' => 0,
         'board_of_directors' => 0,
         'staff' => 0,
-        'national_blog' => 0,
         'member_posts' => 0,
+        'national_blog' => 0,
       ),
       'id' => 'nodequeue_rel_queue_name',
       'table' => 'node',
       'field' => 'nodequeue_rel_queue_name',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('fields', array(
@@ -677,7 +680,62 @@ function old_misc_views_default_views() {
   $handler->override_option('block_description', 'Front Page National Blog');
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('block', 'Member Posts', 'block_2');
+  $handler->override_option('relationships', array(
+    'nodequeue_rel_queue_name' => array(
+      'label' => 'queue',
+      'required' => 1,
+      'limit' => 1,
+      'names' => array(
+        'member_posts' => 'member_posts',
+        'frontpage_banner_queue' => 0,
+        'board_of_directors' => 0,
+        'staff' => 0,
+        'frontpage_center' => 0,
+        'national_blog' => 0,
+      ),
+      'id' => 'nodequeue_rel_queue_name',
+      'table' => 'node',
+      'field' => 'nodequeue_rel_queue_name',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+    ),
+  ));
   $handler->override_option('fields', array(
+    'title' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 0,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
     'created' => array(
       'label' => '',
       'alter' => array(
@@ -896,6 +954,34 @@ function old_misc_views_default_views() {
   $handler->override_option('items_per_page', 5);
   $handler->override_option('block_description', 'Front Page Member Posts');
   $handler->override_option('block_caching', -1);
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->override_option('style_plugin', 'rss');
+  $handler->override_option('style_options', array(
+    'mission_description' => 0,
+    'description' => 'Front Page blog posts',
+  ));
+  $handler->override_option('row_plugin', 'node_rss');
+  $handler->override_option('row_options', array(
+    'relationship' => 'none',
+    'item_length' => 'default',
+  ));
+  $handler->override_option('path', 'path/frontpage/rss.xml');
+  $handler->override_option('menu', array(
+    'type' => 'none',
+    'title' => '',
+    'description' => '',
+    'weight' => 0,
+    'name' => 'navigation',
+  ));
+  $handler->override_option('tab_options', array(
+    'type' => 'none',
+    'title' => '',
+    'description' => '',
+    'weight' => 0,
+    'name' => 'navigation',
+  ));
+  $handler->override_option('displays', array());
+  $handler->override_option('sitename_title', FALSE);
 
   $views[$view->name] = $view;
 
