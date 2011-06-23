@@ -41,7 +41,7 @@ function old_misc_views_default_views() {
   ));
   $handler->override_option('fields', array(
     'picture' => array(
-      'label' => 'Picture',
+      'label' => '',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -69,6 +69,9 @@ function old_misc_views_default_views() {
       'table' => 'users',
       'field' => 'picture',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'title' => array(
       'label' => '',
