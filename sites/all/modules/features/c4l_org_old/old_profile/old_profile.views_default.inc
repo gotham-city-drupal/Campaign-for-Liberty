@@ -20,12 +20,15 @@ function old_profile_views_default_views() {
   $handler->override_option('relationships', array(
     'content_profile_rel' => array(
       'label' => 'Content Profile',
-      'required' => 1,
+      'required' => 0,
       'type' => 'profile',
       'id' => 'content_profile_rel',
       'table' => 'users',
       'field' => 'content_profile_rel',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('fields', array(
@@ -412,7 +415,7 @@ else {
   $handler->override_option('relationships', array(
     'content_profile_rel' => array(
       'label' => 'Profile',
-      'required' => 1,
+      'required' => 0,
       'type' => 'profile',
       'id' => 'content_profile_rel',
       'table' => 'users',
@@ -436,7 +439,7 @@ else {
     ),
     'content_profile_rel_2' => array(
       'label' => 'Picture',
-      'required' => 1,
+      'required' => 0,
       'type' => 'profpic',
       'id' => 'content_profile_rel_2',
       'table' => 'users',
@@ -686,7 +689,7 @@ else {
   $handler->override_option('relationships', array(
     'content_profile_rel' => array(
       'label' => 'Profile',
-      'required' => 1,
+      'required' => 0,
       'type' => 'profile',
       'id' => 'content_profile_rel',
       'table' => 'users',
@@ -727,11 +730,11 @@ else {
         'max_length' => '',
         'word_boundary' => 1,
         'ellipsis' => 1,
-        'strip_tags' => 0,
         'html' => 0,
+        'strip_tags' => 0,
       ),
       'empty' => '',
-      'hide_empty' => 0,
+      'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'custom',
@@ -768,11 +771,11 @@ else {
         'max_length' => '',
         'word_boundary' => 1,
         'ellipsis' => 1,
-        'strip_tags' => 0,
         'html' => 0,
+        'strip_tags' => 0,
       ),
       'empty' => '',
-      'hide_empty' => 0,
+      'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_node' => 0,
       'label_type' => 'custom',
@@ -2312,21 +2315,27 @@ else {
   $handler->override_option('relationships', array(
     'field_prof_county_nid' => array(
       'label' => 'County Group',
-      'required' => 1,
+      'required' => 0,
       'delta' => -1,
       'id' => 'field_prof_county_nid',
       'table' => 'node_data_field_prof_county',
       'field' => 'field_prof_county_nid',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'field_prof_region_nid' => array(
       'label' => 'Region Group',
-      'required' => 1,
+      'required' => 0,
       'delta' => -1,
       'id' => 'field_prof_region_nid',
       'table' => 'node_data_field_prof_region',
       'field' => 'field_prof_region_nid',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'field_prof_state_nid' => array(
       'label' => 'State Group',
@@ -2336,6 +2345,9 @@ else {
       'table' => 'node_data_field_prof_state',
       'field' => 'field_prof_state_nid',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('fields', array(

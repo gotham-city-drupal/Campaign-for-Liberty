@@ -93,17 +93,48 @@ function old_profile_theme_username($object = NULL, $previous_function = 'theme_
   return $output;
 }
 
- /**
- * Implementation of hook_form_FORM_ID_alter().
+/**
+ * Implementation of hook_nodeapi().
  */
-function old_profile_form_privatemsg_list_alter(&$form, &$form_state/*, $form_id*/) {
-      // TODO: investigate a little more... skeptical of use since suffix is spelled wrong
-      // add a message
-      $form['messagelistnote'] = array(
-        '#prefix' => '<p>',
-        '#value' => t('The messages appear in the order of new before read and each group sorted chronologically.'),
-        '#suffix' => '</p>',
-      );
+function old_profile_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  //print_r($node);
+  if ($node->type=='personal') {
+  	switch ($op) {
+      case 'insert':
+        $new_profile_node = new StdClass();
+        		 $new_profile_node->uid = $node->uid;
+        		 $new_profile_node->type = 'profile';
+        		 $new_profile_node->status = 1;
+
+        		 node_save($new_profile_node);
+
+  	    $new_profpic_node = new StdClass();
+        		 $new_profpic_node->uid = $node->uid;
+        		 $new_profpic_node->type = 'profpic';
+        		 $new_profpic_node->status = 1;
+
+        		 node_save($new_profpic_node);
+      break;
+      case 'update':
+        if (!node_load(array('uid' => $node->uid, 'type' => 'profile', 'status' => 1))) {
+          $new_profile_node = new StdClass();
+        		 $new_profile_node->uid = $node->uid;
+        		 $new_profile_node->type = 'profile';
+        		 $new_profile_node->status = 1;
+
+        		 node_save($new_profile_node);
+        }
+  	    if (!node_load(array('uid' => $node->uid, 'type' => 'profpic', 'status' => 1))) {
+          $new_profpic_node = new StdClass();
+        		 $new_profpic_node->uid = $node->uid;
+        		 $new_profpic_node->type = 'profpic';
+        		 $new_profpic_node->status = 1;
+
+        		 node_save($new_profpic_node);
+        }
+      break;
+    }
+  }
 }
 
 /**

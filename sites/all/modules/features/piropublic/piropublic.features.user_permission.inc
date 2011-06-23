@@ -94,6 +94,7 @@ function piropublic_user_default_permissions() {
       '0' => 'administrator',
       '1' => 'headquarters',
       '2' => 'staff',
+      '3' => 'state coordinator',
     ),
   );
 
