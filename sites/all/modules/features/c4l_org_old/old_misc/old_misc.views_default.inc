@@ -106,7 +106,7 @@ function old_misc_views_default_views() {
     'name' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 1,
+        'alter_text' => 0,
         'text' => 'by [name]',
         'make_link' => 0,
         'path' => '',
@@ -129,7 +129,7 @@ function old_misc_views_default_views() {
       'link_to_user' => 1,
       'overwrite_anonymous' => 0,
       'anonymous_text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'name',
       'table' => 'users',
       'field' => 'name',
@@ -142,7 +142,7 @@ function old_misc_views_default_views() {
       'label' => '',
       'alter' => array(
         'alter_text' => 1,
-        'text' => 'on [created]',
+        'text' => 'by [name] on [created]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -162,7 +162,7 @@ function old_misc_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'date_format' => 'custom',
-      'custom_date_format' => 'l, F j, Y',
+      'custom_date_format' => 'F j, Y',
       'exclude' => 0,
       'id' => 'created',
       'table' => 'node',
@@ -225,17 +225,20 @@ function old_misc_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'text' => 'edit',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'edit_node',
       'table' => 'node',
       'field' => 'edit_node',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'delete_node' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '[edit_node] [delete_node]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -260,6 +263,9 @@ function old_misc_views_default_views() {
       'table' => 'node',
       'field' => 'delete_node',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'nodequeue_links' => array(
       'label' => '',
@@ -413,7 +419,7 @@ function old_misc_views_default_views() {
     'name' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 1,
+        'alter_text' => 0,
         'text' => 'by [name]',
         'make_link' => 0,
         'path' => '',
@@ -436,7 +442,7 @@ function old_misc_views_default_views() {
       'link_to_user' => 1,
       'overwrite_anonymous' => 0,
       'anonymous_text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'name',
       'table' => 'users',
       'field' => 'name',
@@ -449,7 +455,7 @@ function old_misc_views_default_views() {
       'label' => '',
       'alter' => array(
         'alter_text' => 1,
-        'text' => 'on [created]',
+        'text' => 'by [name] on [created]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -469,7 +475,7 @@ function old_misc_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'date_format' => 'custom',
-      'custom_date_format' => 'l, F j, Y',
+      'custom_date_format' => 'F j, Y',
       'exclude' => 0,
       'id' => 'created',
       'table' => 'node',
@@ -503,17 +509,20 @@ function old_misc_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'text' => 'edit',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'edit_node',
       'table' => 'node',
       'field' => 'edit_node',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
     ),
     'delete_node' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '[edit_node] [delete_node]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -538,6 +547,9 @@ function old_misc_views_default_views() {
       'table' => 'node',
       'field' => 'delete_node',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
     ),
     'nodequeue_links' => array(
       'label' => '',
@@ -634,7 +646,7 @@ function old_misc_views_default_views() {
     'name' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 1,
+        'alter_text' => 0,
         'text' => 'by [name]',
         'make_link' => 0,
         'path' => '',
@@ -657,7 +669,7 @@ function old_misc_views_default_views() {
       'link_to_user' => 1,
       'overwrite_anonymous' => 0,
       'anonymous_text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'name',
       'table' => 'users',
       'field' => 'name',
@@ -670,7 +682,7 @@ function old_misc_views_default_views() {
       'label' => '',
       'alter' => array(
         'alter_text' => 1,
-        'text' => 'on [created]',
+        'text' => 'by [name] on [created]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -690,7 +702,7 @@ function old_misc_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'date_format' => 'custom',
-      'custom_date_format' => 'l, F j, Y',
+      'custom_date_format' => 'F j, Y',
       'exclude' => 0,
       'id' => 'created',
       'table' => 'node',
@@ -724,17 +736,20 @@ function old_misc_views_default_views() {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'text' => 'edit',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'edit_node',
       'table' => 'node',
       'field' => 'edit_node',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
     ),
     'delete_node' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '[edit_node] [delete_node]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -759,6 +774,9 @@ function old_misc_views_default_views() {
       'table' => 'node',
       'field' => 'delete_node',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
     ),
     'nodequeue_links' => array(
       'label' => '',
