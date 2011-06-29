@@ -92,21 +92,22 @@ function old_profile_content_default_fields() {
     'field_name' => 'field_prof_address',
     'type_name' => 'personal',
     'display_settings' => array(
+      'weight' => '31',
+      'parent' => '',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '2' => array(
         'format' => 'default',
@@ -1262,21 +1263,22 @@ function old_profile_content_default_fields() {
     'field_name' => 'field_prof_dob',
     'type_name' => 'personal',
     'display_settings' => array(
+      'weight' => '28',
+      'parent' => '',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '2' => array(
         'format' => 'default',
@@ -1336,21 +1338,22 @@ function old_profile_content_default_fields() {
     'field_name' => 'field_prof_first',
     'type_name' => 'personal',
     'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '26',
+      'parent' => '',
       '4' => array(
         'format' => 'default',
         'exclude' => 0,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       '2' => array(
         'format' => 'default',
@@ -1402,21 +1405,22 @@ function old_profile_content_default_fields() {
     'field_name' => 'field_prof_gender',
     'type_name' => 'personal',
     'display_settings' => array(
+      'weight' => '29',
+      'parent' => '',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '2' => array(
         'format' => 'default',
@@ -1467,21 +1471,22 @@ Other',
     'field_name' => 'field_prof_last',
     'type_name' => 'personal',
     'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '27',
+      'parent' => '',
       '4' => array(
         'format' => 'default',
         'exclude' => 0,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       '2' => array(
         'format' => 'default',
@@ -1533,21 +1538,22 @@ Other',
     'field_name' => 'field_prof_phone',
     'type_name' => 'personal',
     'display_settings' => array(
+      'weight' => '30',
+      'parent' => '',
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '2' => array(
         'format' => 'default',
@@ -1595,17 +1601,18 @@ Other',
     'field_name' => 'field_prof_haii',
     'type_name' => 'profile',
     'display_settings' => array(
+      'weight' => '-2',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '4' => array(
         'format' => 'default',
@@ -1661,17 +1668,18 @@ Other',
     'field_name' => 'field_prof_microbio',
     'type_name' => 'profile',
     'display_settings' => array(
+      'weight' => '-3',
+      'parent' => '',
       'label' => array(
         'format' => 'above',
-        'exclude' => 0,
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '4' => array(
         'format' => 'default',
@@ -1728,29 +1736,30 @@ Other',
     'field_name' => 'field_prof_pic',
     'type_name' => 'profpic',
     'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '-4',
+      'parent' => '',
       '2' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '3' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       '5' => array(
         'format' => 'default',
@@ -1814,22 +1823,8 @@ Other',
     'field_name' => 'field_prof_country',
     'type_name' => 'settings',
     'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '-1',
+      'parent' => '',
       '2' => array(
         'format' => 'default',
         'exclude' => 0,
@@ -1837,6 +1832,21 @@ Other',
       '3' => array(
         'format' => 'default',
         'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       '5' => array(
         'format' => 'default',
@@ -1904,22 +1914,8 @@ Other',
     'field_name' => 'field_prof_county',
     'type_name' => 'settings',
     'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '-4',
+      'parent' => '',
       '2' => array(
         'format' => 'default',
         'exclude' => 0,
@@ -1927,6 +1923,21 @@ Other',
       '3' => array(
         'format' => 'default',
         'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       '5' => array(
         'format' => 'default',
@@ -1994,22 +2005,8 @@ Other',
     'field_name' => 'field_prof_region',
     'type_name' => 'settings',
     'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '-3',
+      'parent' => '',
       '2' => array(
         'format' => 'default',
         'exclude' => 0,
@@ -2017,6 +2014,21 @@ Other',
       '3' => array(
         'format' => 'default',
         'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       '5' => array(
         'format' => 'default',
@@ -2084,22 +2096,8 @@ Other',
     'field_name' => 'field_prof_state',
     'type_name' => 'settings',
     'display_settings' => array(
-      'label' => array(
-        'format' => 'above',
-        'exclude' => 0,
-      ),
-      'teaser' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
-      '4' => array(
-        'format' => 'default',
-        'exclude' => 0,
-      ),
+      'weight' => '-2',
+      'parent' => '',
       '2' => array(
         'format' => 'default',
         'exclude' => 0,
@@ -2107,6 +2105,21 @@ Other',
       '3' => array(
         'format' => 'default',
         'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'label' => array(
+        'format' => 'above',
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 1,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 1,
       ),
       '5' => array(
         'format' => 'default',
