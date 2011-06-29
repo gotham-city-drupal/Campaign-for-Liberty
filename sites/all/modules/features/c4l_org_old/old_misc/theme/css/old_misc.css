@@ -20,7 +20,11 @@
 .front #left_bottom .views-field-nodequeue-links ul.links li {
   font-size: 11px;
   display: block;
-} 
+}
+
+.front #content .views-row {
+  min-height: 430px;
+}
 
 .front #content .picture  {
   float: left;
@@ -34,8 +38,10 @@
   margin-bottom: 20px;
 }
 
-.front #content .views-field-title {
-  font-size: 17px;
+.front #content .views-field-title a {
+  font-size: 20px;
+  color: #AD210B;
+  font-family: Georgia,"Times New Roman",Times,serif;
 }
 
 .front #content .views-field-created {
@@ -43,7 +49,7 @@
   margin-bottom: 10px;
 }
 
-.front #content .views-field-teaser {
+.front #content .views-field-body {
   font-size: 14px;
   margin-left: 100px;
 }
@@ -57,6 +63,24 @@
   font-size: 11px;
   margin-left: 100px;
   display: block;
-} 
+}
+
+.front #content .views-field-view-node {
+  display: inline;
+  font-size: 12px;
+  margin-left: 100px;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.front #content .views-field-comments-link {
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.front #content .views-field-comments-link ul.links  {
+  display: inline;
+}
 
 
