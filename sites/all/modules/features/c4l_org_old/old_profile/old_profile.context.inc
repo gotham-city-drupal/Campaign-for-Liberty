@@ -149,6 +149,7 @@ function old_profile_context_default_contexts() {
     'path' => array(
       'values' => array(
         'user/*/edit*' => 'user/*/edit*',
+        'user/*/notifications*' => 'user/*/notifications*',
       ),
     ),
   );

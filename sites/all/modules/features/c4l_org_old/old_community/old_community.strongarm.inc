@@ -1171,6 +1171,85 @@ function old_community_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_content_per_type';
+  $strongarm->value = '0';
+
+  $export['notifications_content_per_type'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_content_type';
+  $strongarm->value = array(
+    'grouptype' => 0,
+    'thread' => 0,
+    'nodetype' => 0,
+    'author' => 0,
+    'typeauthor' => 0,
+  );
+
+  $export['notifications_content_type'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_content_type_feed';
+  $strongarm->value = array(
+    0 => 'thread',
+    1 => 'nodetype',
+    2 => 'author',
+  );
+
+  $export['notifications_content_type_feed'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_content_type_feed_video';
+  $strongarm->value = array(
+    0 => 'thread',
+    1 => 'nodetype',
+    2 => 'author',
+  );
+
+  $export['notifications_content_type_feed_video'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_content_type_frontpage_banner';
+  $strongarm->value = array();
+
+  $export['notifications_content_type_frontpage_banner'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_content_type_memblog';
+  $strongarm->value = array();
+
+  $export['notifications_content_type_memblog'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_content_type_video';
+  $strongarm->value = array();
+
+  $export['notifications_content_type_video'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'notifications_events';
+  $strongarm->value = array(
+    'lite' => array(
+      'default' => 0,
+    ),
+    'node' => array(
+      'insert' => 0,
+      'update' => 0,
+      'comment' => 1,
+    ),
+  );
+
+  $export['notifications_events'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'notifications_sender';
   $strongarm->value = '1';
 
@@ -1498,6 +1577,22 @@ function old_community_strongarm() {
   $strongarm->value = '@group: \'@title\' at @site';
 
   $export['og_new_node_subject'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_notifications_autosubscribe';
+  $strongarm->value = 0;
+
+  $export['og_notifications_autosubscribe'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_notifications_content_types';
+  $strongarm->value = array(
+    'memblog' => 0,
+  );
+
+  $export['og_notifications_content_types'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;

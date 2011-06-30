@@ -229,6 +229,15 @@ function old_community_user_default_permissions() {
     ),
   );
 
+  // Exported permission: maintain own subscriptions
+  $permissions['maintain own subscriptions'] = array(
+    'name' => 'maintain own subscriptions',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'authenticated user',
+    ),
+  );
+
   // Exported permission: manage all coordinators
   $permissions['manage all coordinators'] = array(
     'name' => 'manage all coordinators',
@@ -236,6 +245,15 @@ function old_community_user_default_permissions() {
       '0' => 'administrator',
       '1' => 'headquarters',
       '2' => 'staff',
+    ),
+  );
+
+  // Exported permission: manage own subscriptions
+  $permissions['manage own subscriptions'] = array(
+    'name' => 'manage own subscriptions',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'authenticated user',
     ),
   );
 
@@ -261,11 +279,21 @@ function old_community_user_default_permissions() {
     ),
   );
 
+  // Exported permission: subscribe to content
+  $permissions['subscribe to content'] = array(
+    'name' => 'subscribe to content',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'authenticated user',
+    ),
+  );
+
   // Exported permission: subscribe to content in groups
   $permissions['subscribe to content in groups'] = array(
     'name' => 'subscribe to content in groups',
     'roles' => array(
       '0' => 'administrator',
+      '1' => 'authenticated user',
     ),
   );
 
