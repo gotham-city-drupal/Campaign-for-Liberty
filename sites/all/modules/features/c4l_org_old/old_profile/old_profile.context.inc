@@ -100,7 +100,7 @@ function old_profile_context_default_contexts() {
         'views-profile_blogs-block_1' => array(
           'module' => 'views',
           'delta' => 'profile_blogs-block_1',
-          'region' => 'content_top',
+          'region' => 'content_bottom',
           'weight' => 0,
         ),
         'views-profile_my_groups-block_1' => array(
@@ -150,6 +150,8 @@ function old_profile_context_default_contexts() {
       'values' => array(
         'user/*/edit*' => 'user/*/edit*',
         'user/*/notifications*' => 'user/*/notifications*',
+        'users/*/contact' => 'users/*/contact',
+        'user/*/delete' => 'user/*/delete',
       ),
     ),
   );

@@ -13,6 +13,5 @@ if (Drupal.jsEnabled) {
 		$('#views-exposed-form-faq-page-1 select').change(function(){
 			$('#views-exposed-form-faq-page-1').submit();
 		});
-
 	});
 }

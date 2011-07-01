@@ -35,8 +35,8 @@ function old_profile_views_default_views() {
     'title' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '<h3>About Me</h3>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -49,8 +49,8 @@ function old_profile_views_default_views() {
         'max_length' => '',
         'word_boundary' => 1,
         'ellipsis' => 1,
-        'strip_tags' => 0,
         'html' => 0,
+        'strip_tags' => 0,
       ),
       'empty' => '',
       'hide_empty' => 0,
@@ -68,27 +68,34 @@ function old_profile_views_default_views() {
     'body' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '<div id="hide-extra">[body]</div>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
         'alt' => '',
         'prefix' => '',
         'suffix' => '',
+        'target' => '',
         'help' => '',
         'trim' => 0,
         'max_length' => '',
         'word_boundary' => 1,
         'ellipsis' => 1,
-        'strip_tags' => 0,
         'html' => 0,
+        'strip_tags' => 0,
       ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
       'exclude' => 0,
       'id' => 'body',
       'table' => 'node_revisions',
       'field' => 'body',
       'relationship' => 'content_profile_rel',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
   ));
   $handler->override_option('arguments', array(
@@ -116,8 +123,9 @@ function old_profile_views_default_views() {
         '9' => 0,
         '7' => 0,
         '10' => 0,
+        '15' => 0,
         '11' => 0,
-        '12' => 0,
+        '14' => 0,
         '8' => 0,
         '13' => 0,
       ),
@@ -154,7 +162,15 @@ else {
         'preview' => 'preview',
       ),
       'validate_argument_node_type' => array(
+        'features_test' => 0,
+        'feed_fast' => 0,
+        'feed' => 0,
+        'feed_item' => 0,
         'image' => 0,
+        'product' => 0,
+        'event' => 0,
+        'donation' => 0,
+        'webform_report' => 0,
         'country' => 0,
         'county' => 0,
         'region' => 0,
@@ -164,20 +180,22 @@ else {
         'profile' => 0,
         'profpic' => 0,
         'settings' => 0,
+        'video' => 0,
+        'op_image' => 0,
         'featured_blocks' => 0,
         'frontpage_banner' => 0,
         'page' => 0,
         'faq' => 0,
         'staff' => 0,
         'forum' => 0,
-        'feed' => 0,
-        'video' => 0,
+        'feed_video' => 0,
         'webform' => 0,
       ),
       'validate_argument_node_access' => 0,
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
         '2' => 0,
+        '4' => 0,
         '3' => 0,
         '1' => 0,
       ),
@@ -201,6 +219,8 @@ else {
         'region' => 0,
         'state' => 0,
       ),
+      'validate_argument_signup_status' => 'any',
+      'validate_argument_signup_node_access' => 0,
     ),
   ));
   $handler->override_option('filters', array(
@@ -802,7 +822,7 @@ else {
   $handler->override_option('relationships', array(
     'content_profile_rel' => array(
       'label' => 'Content Profile',
-      'required' => 1,
+      'required' => 0,
       'type' => 'personal',
       'id' => 'content_profile_rel',
       'table' => 'users',
@@ -812,21 +832,10 @@ else {
         'button' => 'Use default',
       ),
     ),
-    'nid' => array(
-      'label' => 'Group node (member)',
-      'required' => 1,
-      'id' => 'nid',
-      'table' => 'og_uid',
-      'field' => 'nid',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
   ));
   $handler->override_option('fields', array(
     'field_prof_dob_value' => array(
-      'label' => '',
+      'label' => 'Birthday',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -849,7 +858,7 @@ else {
       'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_node' => 0,
-      'label_type' => 'none',
+      'label_type' => 'widget',
       'format' => 'long',
       'multiple' => array(
         'multiple_number' => '',
@@ -960,64 +969,10 @@ else {
       'relationship' => 'content_profile_rel',
     ),
   ));
-  $handler->override_option('filters', array(
-    'status' => array(
-      'operator' => '=',
-      'value' => '1',
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'status',
-      'table' => 'users',
-      'field' => 'status',
-      'override' => array(
-        'button' => 'Override',
-      ),
-      'relationship' => 'none',
-    ),
-    'uid' => array(
-      'operator' => '=',
-      'value' => '1',
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'uid',
-      'table' => 'og_uid',
-      'field' => 'uid',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'nid',
-    ),
-    'is_admin' => array(
-      'operator' => 'in',
-      'value' => array(
-        '1' => '1',
-      ),
-      'group' => '0',
-      'exposed' => FALSE,
-      'expose' => array(
-        'operator' => FALSE,
-        'label' => '',
-      ),
-      'id' => 'is_admin',
-      'table' => 'og_uid',
-      'field' => 'is_admin',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'nid',
-    ),
-  ));
   $handler->override_option('access', array(
     'type' => 'role',
     'role' => array(
+      '5' => 5,
       '7' => 7,
       '8' => 8,
       '13' => 13,
@@ -1025,10 +980,10 @@ else {
   ));
   $handler->override_option('items_per_page', 1);
   $handler->override_option('attachment_position', 'after');
-  $handler->override_option('inherit_arguments', TRUE);
+  $handler->override_option('inherit_arguments', 0);
   $handler->override_option('inherit_exposed_filters', FALSE);
   $handler->override_option('inherit_pager', FALSE);
-  $handler->override_option('render_pager', TRUE);
+  $handler->override_option('render_pager', 0);
   $handler->override_option('displays', array(
     'block_3' => 'block_3',
     'default' => 0,
@@ -1228,7 +1183,7 @@ else {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'group_promote',
       'table' => 'node',
       'field' => 'group_promote',
@@ -1240,8 +1195,8 @@ else {
     'delete_node' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '[group_promote]  [delete_node]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -1451,12 +1406,19 @@ else {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
+  $handler->override_option('header_format', '1');
+  $handler->override_option('header_empty', 0);
+  $handler->override_option('footer_format', '1');
+  $handler->override_option('footer_empty', 0);
   $handler->override_option('use_ajax', TRUE);
   $handler->override_option('use_pager', '1');
   $handler->override_option('use_more', 1);
   $handler->override_option('use_more_always', 0);
   $handler->override_option('use_more_text', 'Click for more');
-  $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->override_option('style_options', array(
+    'grouping' => '',
+  ));
+  $handler = $view->new_display('page', 'Blog List', 'page_1');
   $handler->override_option('path', 'profile/%/blog');
   $handler->override_option('menu', array(
     'type' => 'none',
@@ -2008,12 +1970,12 @@ else {
   ));
   $handler->override_option('title', 'Groups I Admin');
   $handler->override_option('use_ajax', TRUE);
-  $handler->override_option('items_per_page', 40);
+  $handler->override_option('items_per_page', 21);
   $handler->override_option('use_pager', 'mini');
   $handler->override_option('style_plugin', 'grid');
   $handler->override_option('style_options', array(
     'grouping' => 'type',
-    'columns' => '2',
+    'columns' => '3',
     'alignment' => 'horizontal',
     'fill_single_line' => 1,
   ));
@@ -2383,17 +2345,21 @@ else {
         'multiple_from' => '',
         'multiple_reversed' => FALSE,
       ),
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'field_og_pic_fid_2',
       'table' => 'node_data_field_og_pic',
       'field' => 'field_og_pic_fid',
       'relationship' => 'field_prof_state_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'title_2' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
-        'text' => '',
+        'text' => '<div>[field_og_pic_fid_2]</div>
+<div>[title_2] </div>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -2413,11 +2379,46 @@ else {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_node' => 1,
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'title_2',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'field_prof_state_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'nothing' => array(
+      'label' => '',
+      'alter' => array(
+        'text' => '[field_og_pic_fid_2] <br />
+[title_2]',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'nothing',
+      'table' => 'views',
+      'field' => 'nothing',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
     ),
     'field_og_pic_fid_1' => array(
       'label' => '',
@@ -2451,17 +2452,21 @@ else {
         'multiple_from' => '',
         'multiple_reversed' => FALSE,
       ),
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'field_og_pic_fid_1',
       'table' => 'node_data_field_og_pic',
       'field' => 'field_og_pic_fid',
       'relationship' => 'field_prof_region_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'title_1' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
-        'text' => '',
+        'text' => '<div>[field_og_pic_fid_1] </div>
+<div>[title_1]</div>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -2481,11 +2486,46 @@ else {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_node' => 1,
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'title_1',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'field_prof_region_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'nothing_1' => array(
+      'label' => '',
+      'alter' => array(
+        'text' => '[field_og_pic_fid_1] <br />
+[title_1]',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'nothing_1',
+      'table' => 'views',
+      'field' => 'nothing',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
     ),
     'field_og_pic_fid' => array(
       'label' => '',
@@ -2519,17 +2559,21 @@ else {
         'multiple_from' => '',
         'multiple_reversed' => FALSE,
       ),
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'field_og_pic_fid',
       'table' => 'node_data_field_og_pic',
       'field' => 'field_og_pic_fid',
       'relationship' => 'field_prof_county_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'title' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
-        'text' => '',
+        'text' => '<div>[field_og_pic_fid] </div>
+<div>[title] </div>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -2549,11 +2593,46 @@ else {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_node' => 1,
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'title',
       'table' => 'node',
       'field' => 'title',
       'relationship' => 'field_prof_county_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'nothing_2' => array(
+      'label' => '',
+      'alter' => array(
+        'text' => '[field_og_pic_fid] <br />
+[title] ',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'nothing_2',
+      'table' => 'views',
+      'field' => 'nothing',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
     ),
   ));
   $handler->override_option('arguments', array(
@@ -2708,6 +2787,11 @@ else {
   ));
   $handler->override_option('title', 'My Groups');
   $handler->override_option('items_per_page', 1);
+  $handler->override_option('row_options', array(
+    'inline' => array(),
+    'separator' => '',
+    'hide_empty' => 0,
+  ));
   $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->override_option('block_description', 'My Groups');
   $handler->override_option('block_caching', -1);
