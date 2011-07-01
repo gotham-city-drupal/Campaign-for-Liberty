@@ -652,7 +652,7 @@ function old_misc_views_default_views() {
     ),
   ));
   $handler->override_option('title', 'National Blog');
-  $handler->override_option('items_per_page', 5);
+  $handler->override_option('items_per_page', 8);
   $handler->override_option('block_description', 'Front Page National Blog');
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('block', 'Member Posts', 'block_2');
@@ -879,7 +879,7 @@ function old_misc_views_default_views() {
     ),
   ));
   $handler->override_option('title', 'Member Posts');
-  $handler->override_option('items_per_page', 5);
+  $handler->override_option('items_per_page', 8);
   $handler->override_option('block_description', 'Front Page Member Posts');
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('feed', 'Feed', 'feed_1');

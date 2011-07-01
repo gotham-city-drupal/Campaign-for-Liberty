@@ -35,7 +35,7 @@ function old_misc_default_fe_nodequeue_queue() {
   $fe_nodequeue_queue->name = 'member_posts';
   $fe_nodequeue_queue->title = 'Member Posts';
   $fe_nodequeue_queue->subqueue_title = '';
-  $fe_nodequeue_queue->size = '5';
+  $fe_nodequeue_queue->size = '8';
   $fe_nodequeue_queue->link = 'Add to member posts';
   $fe_nodequeue_queue->link_remove = 'Remove from member posts';
   $fe_nodequeue_queue->owner = 'nodequeue';
@@ -60,7 +60,7 @@ function old_misc_default_fe_nodequeue_queue() {
   $fe_nodequeue_queue->name = 'national_blog';
   $fe_nodequeue_queue->title = 'National Blog';
   $fe_nodequeue_queue->subqueue_title = '';
-  $fe_nodequeue_queue->size = '5';
+  $fe_nodequeue_queue->size = '8';
   $fe_nodequeue_queue->link = 'Add to national blog';
   $fe_nodequeue_queue->link_remove = 'Remove from national blog';
   $fe_nodequeue_queue->owner = 'nodequeue';
