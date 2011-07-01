@@ -23,7 +23,7 @@
 }
 
 .front #content .views-row {
-  min-height: 430px;
+  min-height: 400px;
 }
 
 .front #content .picture  {
@@ -82,5 +82,3 @@
 .front #content .views-field-comments-link ul.links  {
   display: inline;
 }
-
-

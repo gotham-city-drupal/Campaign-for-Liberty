@@ -33,22 +33,16 @@ function old_community_context_default_contexts() {
           'region' => 'left_top',
           'weight' => 0,
         ),
-        'views-group-block_2' => array(
-          'module' => 'views',
-          'delta' => 'group-block_2',
-          'region' => 'left_top',
-          'weight' => 1,
-        ),
         'views-group-block_3' => array(
           'module' => 'views',
           'delta' => 'group-block_3',
           'region' => 'left_top',
-          'weight' => 2,
+          'weight' => 1,
         ),
         'views-group_blogs-block_1' => array(
           'module' => 'views',
           'delta' => 'group_blogs-block_1',
-          'region' => 'content_top',
+          'region' => 'content_bottom',
           'weight' => 0,
         ),
       ),
@@ -80,14 +74,28 @@ function old_community_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-group-block_1' => array(
+          'module' => 'views',
+          'delta' => 'group-block_1',
+          'region' => 'right_top',
+          'weight' => 0,
+        ),
         'views--exp-group_coordinators-page' => array(
           'module' => 'views',
           'delta' => '-exp-group_coordinators-page',
-          'region' => 'content_top',
-          'weight' => 0,
+          'region' => 'right_top',
+          'weight' => 1,
+        ),
+        'views-group-block_3' => array(
+          'module' => 'views',
+          'delta' => 'group-block_3',
+          'region' => 'right_top',
+          'weight' => 2,
         ),
       ),
     ),
+    'breadcrumb' => 'node/428',
+    'menu' => 'node/428',
   );
   $context->condition_mode = 0;
 
@@ -113,14 +121,28 @@ function old_community_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-group-block_1' => array(
+          'module' => 'views',
+          'delta' => 'group-block_1',
+          'region' => 'right_top',
+          'weight' => 0,
+        ),
         'views--exp-group_members-page' => array(
           'module' => 'views',
           'delta' => '-exp-group_members-page',
-          'region' => 'content_top',
-          'weight' => 0,
+          'region' => 'right_top',
+          'weight' => 1,
+        ),
+        'views-group-block_3' => array(
+          'module' => 'views',
+          'delta' => 'group-block_3',
+          'region' => 'right_top',
+          'weight' => 2,
         ),
       ),
     ),
+    'breadcrumb' => 'node/428',
+    'menu' => 'node/428',
   );
   $context->condition_mode = 0;
 
@@ -153,8 +175,6 @@ function old_community_context_default_contexts() {
         'community/*/blog*' => 'community/*/blog*',
         'node/*/broadcast*' => 'node/*/broadcast*',
         'og/users/*/invite*' => 'og/users/*/invite*',
-        'community/*/coordinators' => 'community/*/coordinators',
-        'community/*/members' => 'community/*/members',
       ),
     ),
   );
@@ -167,9 +187,9 @@ function old_community_context_default_contexts() {
           'region' => 'right_top',
           'weight' => 0,
         ),
-        'views-group-block_2' => array(
+        'views-group-block_3' => array(
           'module' => 'views',
-          'delta' => 'group-block_2',
+          'delta' => 'group-block_3',
           'region' => 'right_top',
           'weight' => 1,
         ),

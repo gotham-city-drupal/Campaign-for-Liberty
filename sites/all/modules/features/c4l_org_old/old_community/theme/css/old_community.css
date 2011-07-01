@@ -4,10 +4,308 @@
   display: none;  
 }
 
-.section-community #content {
-  margin-top: 20px;
+.section-community #content .meta {
+  margin-bottom: 0px;
+}
+
+.section-community #content .field-field-og-prof {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
 }
 
 .node-type-state .tabs, .node-type-state .tabs, .node-type-state .tabs, .node-type-state .tabs {
   display: none;  
 }
+
+.section-community #right_top .block, .section-community #left_top .block, .node-type-state #right_top .block, .node-type-county #right_top .block, 
+  .node-type-region #right_top .block, .node-type-country #right_top .block, .section-og #right_top .block {
+  padding: 0;
+}
+
+#block-views-group_subgroups-block_1, #block-views-group_subgroups-block_2  {
+  font-size: 11px;
+}
+
+#block-views-group_subgroups-block_1 .view-content, #block-views-group_subgroups-block_2 .view-content {
+  padding: 0px 15px;
+}
+
+#block-views-group_subgroups-block_1 td, #block-views-group_subgroups-block_2 td {
+  padding: 0;
+}
+
+#block-views-group_subgroups-block_1 .col-1, #block-views-group_subgroups-block_2 .col-1 {
+  width: 65px;
+}
+
+#block-views-group_subgroups-block_1 .col-2, #block-views-group_subgroups-block_2 .col-2 {
+  width: 65px;
+  padding: 3px;
+}
+
+#content a.show:focus {
+  color: #1E5594;
+}
+
+#content a.show {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#content a.hide:focus {
+  color: #1E5594;
+}
+
+#content a.hide {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+.section-community .views-row .views-field-title a {
+  font-size: 20px;
+  color: #AD210B;
+  font-family: Georgia,"Times New Roman",Times,serif;
+
+}
+
+.section-community .views-row .views-field-created {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.section-community .views-row .views-field-teaser {
+  font-size: 14px;
+  margin-left: 100px;
+}
+
+.section-community .views-row .views-field-delete-node {
+  font-size: 11px;
+  margin-left: 100px;
+}
+
+.section-community .views-row .views-field-nodequeue-links ul.links li {
+  font-size: 11px;
+  display: block;
+  margin-left: 100px;
+}
+
+.section-community .views-row .views-field-view-node {
+  display: inline;
+  font-size: 12px;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+  margin-left: 100px;
+}
+
+.section-community .views-row .views-field-comments-link {
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.section-community .views-row .views-field-comments-link ul.links  {
+  display: inline;
+}
+
+.section-community .views-row .views-field-picture  {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.section-community .more-link a {
+  font-weight: bold;
+}
+
+#block-views-group_blogs-block_1 .views-row {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.view-group-blogs.view-display-id-page_1 .views-row {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.view-group-blogs-all .views-row {
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+#block-views-group-block_3 {
+  background: url("../img/menu-box-topframe.jpg") no-repeat scroll center top #F7F4E6;
+  border: 4px solid #E3DDCE;
+}
+
+#block-views-group-block_3 .block-content {
+  padding: 15px 12px 15px;
+}
+
+#block-views-group-block_3 .block-content .view-content a {
+  border-bottom: 1px solid #D9D2C0;
+  padding-left: 10px;
+  text-transform: uppercase;
+  display: block;
+  line-height: 29px;
+  font-size: 12px;
+  color: #473F29;
+}
+
+#block-views-group-block_3 .block-content .view-content a:hover {
+  background-color: #F4EED8;
+}
+
+#block-views-group-block_3 {
+  background: url("../img/menu-box-topframe.jpg") no-repeat scroll center top #F7F4E6;
+  border: 4px solid #E3DDCE;
+}
+
+#block-views-group-block_3 .block-content {
+  padding: 15px 12px 15px;
+}
+
+#block-views-group-block_3 .block-content .view-content a {
+  border-bottom: 1px solid #D9D2C0;
+  padding-left: 10px;
+  text-transform: uppercase;
+  display: block;
+  line-height: 29px;
+  font-size: 12px;
+  color: #473F29;
+}
+
+#block-views-group-block_3 .block-content .view-content a:hover {
+  background-color: #F4EED8;
+}
+
+
+  
+#block-views-group_members-block_1 {
+  font-size: 11px;
+}
+
+#block-views-group_members-block_1 .view-content {
+
+}
+
+#block-views-group_members-block_1 td {
+  padding: 0;
+}
+
+#block-views-group_members-block_1 .col-1 {
+  width: 65px;
+}
+
+#block-views-group_members-block_1 .col-2 {
+  width: 65px;
+  padding: 3px;
+}
+
+#block-views-group_coordinators-block_1 .views-row {
+  margin-bottom: 10px;
+}
+
+#block-views-group_coordinators-block_1 .views-field-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#block-views-group_coordinators-block_1 .views-field-contact-not-self {
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+#block-views-group_coordinators-block_1 .views-field-remove-member {
+  font-size: 11px;
+}
+
+#block-views-group_coordinators-block_1 .views-field-managelinkadmin-local {
+  font-size: 11px;
+}
+
+#block-views-group_coordinators-block_1 .views-field-managelinkadmin-inherit {
+  font-size: 11px;
+}
+
+#block-views--exp-group_coordinators-page {
+  background-color: #F5F3EE;
+  margin-bottom: 30px;
+}
+
+#block-views--exp-group_coordinators-page .block-content {
+  padding: 0px 10px;
+}
+
+#block-views--exp-group_coordinators-page .block-content .description {
+  font-size: 9px;
+  margin: 0;
+}
+
+#block-views--exp-group_coordinators-page .views-exposed-widget input#edit-submit-group-coordinators {
+  display: none;
+}
+
+#block-views--exp-group_coordinators-page .views-exposed-widget input#edit-uid {
+  background-color: #F5F9FB;
+  padding: 5px;
+  width: 195px;
+}
+
+
+#block-views--exp-group_coordinators-page.block h2.block-title {
+  background: none repeat scroll 0 0 transparent;
+  color: #87774A;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: normal;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#block-views--exp-group_members-page {
+  background-color: #F5F3EE;
+  margin-bottom: 30px;
+}
+
+#block-views--exp-group_members-page .block-content {
+  padding: 0px 10px;
+}
+
+#block-views--exp-group_members-page .block-content .description {
+  font-size: 9px;
+  margin: 0;
+}
+
+#block-views--exp-group_members-page .views-exposed-widget input#edit-submit-group-members {
+  display: none;
+}
+
+#block-views--exp-group_members-page .views-exposed-widget input#edit-uid {
+  background-color: #F5F9FB;
+  padding: 5px;
+  width: 195px;
+}
+
+
+#block-views--exp-group_members-page.block h2.block-title {
+  background: none repeat scroll 0 0 transparent;
+  color: #87774A;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: normal;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+

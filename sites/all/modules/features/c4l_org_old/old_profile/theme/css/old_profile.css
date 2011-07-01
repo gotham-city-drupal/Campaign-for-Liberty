@@ -1,83 +1,22 @@
 @CHARSET "ISO-8859-1";
 
-.node-type-profile .tabs {
+.section-profile #content .view-content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.node-type-profile .tabs, .node-type-profpic .tabs, .node-type-personal .tabs, .section-user .tabs, .section-users .tabs  {
   display: none;
 }
 
-.node-type-profpic .tabs {
+.memblog-edit .audience-box, .memblog-add .audience-box, .promote-only .audience-box, .authenticated-user .memblog-edit .promote-box, .authenticated-user .memblog-add .promote-box {
   display: none;
 }
 
-.node-type-personal .tabs {
-  display: none;
-}
-
-.section-user .tabs {
-  display: none;
-}
-
-.section-users .tabs {
-  display: none;
-}
-
-
-.memblog-edit .audience-box {
-  display: none;
-}
-
-.memblog-add .audience-box {
-  display: none;
-}
-
-.promote-only .audience-box {
-  display: none;
-}
-
-.authenticated-user .memblog-edit .promote-box {
-  display: none;
-}
-
-.authenticated-user .memblog-add .promote-box {
-  display: none;
-}
-
-.state-coordinator .memblog-add .promote-box {
-  display: block;
-}
-
-.state-coordinator .memblog-edit .promote-box {
-  display: block;
-}
-
-.local-coordinator .memblog-add .promote-box {
-  display: block;
-}
-
-.local-coordinator .memblog-edit .promote-box {
-  display: block;
-}
-
-.region-coordinator .memblog-add .promote-box {
-  display: block;
-}
-
-.region-coordinator .memblog-edit .promote-box {
-  display: block;
-}
-
-.county-coordinator .memblog-add .promote-box {
-  display: block;
-}
-
-.county-coordinator .memblog-edit .promote-box {
-  display: block;
-}
-
-.staff .memblog-add .promote-box {
-  display: block;
-}
-
-.headquarters .memblog-add .promote-box {
+.state-coordinator .memblog-add .promote-box, .state-coordinator .memblog-edit .promote-box, .local-coordinator .memblog-add .promote-box, .local-coordinator .memblog-edit .promote-box,
+  .region-coordinator .memblog-add .promote-box, .region-coordinator .memblog-edit .promote-box, .county-coordinator .memblog-add .promote-box, .county-coordinator .memblog-edit .promote-box,
+  .staff .memblog-add .promote-box, .headquarters .memblog-add .promote-box
+   {
   display: block;
 }
 
@@ -92,59 +31,17 @@
   font-size: 12px;
 }
 
-.memblog-add .body-field-wrapper {
+.memblog-add .body-field-wrapper, .memblog-edit .body-field-wrapper, .promote-only .body-field-wrapper {
   clear: both;
 }
 
-.memblog-edit .body-field-wrapper {
-  clear: both;
-}
 
-.promote-only .body-field-wrapper {
-  clear: both;
-}
-
-.promote-only #edit-title-wrapper {
+.promote-only #edit-title-wrapper, .promote-only .body-field-wrapper {
   display: none;
 }
 
-.promote-only .body-field-wrapper {
-  display: none;
-}
-
-.section-profile #right_top .block {
-  padding: 0;
-}
-
-.section-profile #left_top .block {
-  padding: 0;
-}
-
-.section-user #right_top .block {
-  padding: 0;
-}
-
-.section-user #left_top .block {
-  padding: 0;
-}
-
-.section-users #right_top .block {
-  padding: 0;
-}
-
-.section-users #left_top .block {
-  padding: 0;
-}
-
-.node-type-profile #right_top .block {
-  padding: 0;
-}
-
-.node-type-profpic #right_top .block {
-  padding: 0;
-}
-
-.node-type-personal #right_top .block {
+.section-profile #right_top .block, .section-profile #left_top .block, .section-user #right_top .block, .section-user #left_top .block, .section-users #right_top .block,
+  .section-users #left_top .block, .node-type-profile #right_top .block, .node-type-profpic #right_top .block, .node-type-personal #right_top .block {
   padding: 0;
 }
 
@@ -197,6 +94,7 @@
 #block-views-profile_my_groups-block_1 .views-field-nothing  {
   display: inline-block;  
   width: 65px;
+  vertical-align: top;
 }
 
 #block-views-profile_my_groups-block_1 .views-field-nothing-1 {
@@ -204,11 +102,13 @@
   width: 65px;
   padding-left: 4px;
   padding-right: 4px;
+  vertical-align: top;
 }
 
 #block-views-profile_my_groups-block_1 .views-field-nothing-2 {
   display: inline-block;  
   width: 65px;
+  vertical-align: top;
 }
 
 #block-views-profile_my_admin_groups-block_1  {
@@ -319,9 +219,14 @@
   font-size: 13px;
 }
 
+#block-views-profile_blogs-block_2 .views-row {
+  margin-bottom: 10px;
+}
 
+#block-views-profile_blogs-block_2 .views-field-title {
+  font-size: 13px;
+}
 
-
-
-
-
+#block-views-profile_blogs-block_2 .views-field-created {
+  font-size: 11px;
+}

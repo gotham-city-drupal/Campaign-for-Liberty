@@ -229,8 +229,8 @@ elseif (og_get_group_context()) {
     'description' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '<blockquote>[description] </blockquote>',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -243,8 +243,8 @@ elseif (og_get_group_context()) {
         'max_length' => '',
         'word_boundary' => 1,
         'ellipsis' => 1,
-        'strip_tags' => 0,
         'html' => 0,
+        'strip_tags' => 0,
       ),
       'empty' => '',
       'hide_empty' => 0,
@@ -385,7 +385,7 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'text' => 'See all posts for this group',
+      'text' => 'View all posts',
       'exclude' => 0,
       'id' => 'all_group_memblogs',
       'table' => 'node',
@@ -662,9 +662,9 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'link_to_user' => 1,
-      'overwrite_anonymous' => 1,
+      'overwrite_anonymous' => 0,
       'anonymous_text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'name',
       'table' => 'users',
       'field' => 'name',
@@ -709,8 +709,8 @@ elseif (og_get_group_context()) {
     'created' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => 'by [name] on [created]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -736,6 +736,9 @@ elseif (og_get_group_context()) {
       'table' => 'node',
       'field' => 'created',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'teaser' => array(
       'label' => '',
@@ -750,11 +753,11 @@ elseif (og_get_group_context()) {
         'suffix' => '',
         'target' => '',
         'help' => '',
-        'trim' => 0,
-        'max_length' => '',
+        'trim' => 1,
+        'max_length' => '350',
         'word_boundary' => 1,
         'ellipsis' => 1,
-        'html' => 0,
+        'html' => 1,
         'strip_tags' => 0,
       ),
       'empty' => '',
@@ -765,6 +768,9 @@ elseif (og_get_group_context()) {
       'table' => 'node_revisions',
       'field' => 'teaser',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'view_node' => array(
       'label' => '',
@@ -850,7 +856,7 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'group_promote',
       'table' => 'node',
       'field' => 'group_promote',
@@ -862,8 +868,8 @@ elseif (og_get_group_context()) {
     'delete_node' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '[group_promote]  [delete_node] ',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -1258,7 +1264,7 @@ elseif (og_get_group_context()) {
       'link_to_user' => 1,
       'overwrite_anonymous' => 1,
       'anonymous_text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'name',
       'table' => 'users',
       'field' => 'name',
@@ -1303,8 +1309,8 @@ elseif (og_get_group_context()) {
     'created' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => 'by [name] on [created]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -1330,6 +1336,9 @@ elseif (og_get_group_context()) {
       'table' => 'node',
       'field' => 'created',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'teaser' => array(
       'label' => '',
@@ -1344,11 +1353,11 @@ elseif (og_get_group_context()) {
         'suffix' => '',
         'target' => '',
         'help' => '',
-        'trim' => 0,
-        'max_length' => '',
+        'trim' => 1,
+        'max_length' => '300',
         'word_boundary' => 1,
         'ellipsis' => 1,
-        'html' => 0,
+        'html' => 1,
         'strip_tags' => 0,
       ),
       'empty' => '',
@@ -1359,6 +1368,9 @@ elseif (og_get_group_context()) {
       'table' => 'node_revisions',
       'field' => 'teaser',
       'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
     ),
     'view_node' => array(
       'label' => '',
@@ -1444,7 +1456,7 @@ elseif (og_get_group_context()) {
       'hide_empty' => 0,
       'empty_zero' => 0,
       'text' => '',
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'group_promote',
       'table' => 'node',
       'field' => 'group_promote',
@@ -1456,8 +1468,8 @@ elseif (og_get_group_context()) {
     'delete_node' => array(
       'label' => '',
       'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
+        'alter_text' => 1,
+        'text' => '[group_promote]  [delete_node]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -1878,7 +1890,7 @@ elseif (og_get_group_context()) {
   ));
   $handler->override_option('arguments', array(
     'nid' => array(
-      'default_action' => 'not found',
+      'default_action' => 'default',
       'style_plugin' => 'default_summary',
       'style_options' => array(
         'count' => TRUE,
@@ -1889,7 +1901,7 @@ elseif (og_get_group_context()) {
       'wildcard_substitution' => 'All',
       'title' => 'Coordinators of %1',
       'breadcrumb' => '',
-      'default_argument_type' => 'fixed',
+      'default_argument_type' => 'node',
       'default_argument' => '',
       'validate_type' => 'og_group_types',
       'validate_fail' => 'not found',
@@ -1903,7 +1915,15 @@ elseif (og_get_group_context()) {
       'default_argument_fixed' => '',
       'default_argument_php' => '',
       'validate_argument_node_type' => array(
+        'features_test' => 0,
+        'feed_fast' => 0,
+        'feed' => 0,
+        'feed_item' => 0,
         'image' => 0,
+        'product' => 0,
+        'event' => 0,
+        'donation' => 0,
+        'webform_report' => 0,
         'country' => 0,
         'county' => 0,
         'region' => 0,
@@ -1913,14 +1933,15 @@ elseif (og_get_group_context()) {
         'profile' => 0,
         'profpic' => 0,
         'settings' => 0,
+        'video' => 0,
+        'op_image' => 0,
         'featured_blocks' => 0,
         'frontpage_banner' => 0,
         'page' => 0,
         'faq' => 0,
         'staff' => 0,
         'forum' => 0,
-        'feed' => 0,
-        'video' => 0,
+        'feed_video' => 0,
         'webform' => 0,
       ),
       'validate_argument_php' => '',
@@ -1931,6 +1952,7 @@ elseif (og_get_group_context()) {
       'validate_argument_nid_type' => 'nid',
       'validate_argument_vocabulary' => array(
         '2' => 0,
+        '4' => 0,
         '3' => 0,
         '1' => 0,
       ),
@@ -1943,8 +1965,9 @@ elseif (og_get_group_context()) {
         '9' => 0,
         '7' => 0,
         '10' => 0,
+        '15' => 0,
         '11' => 0,
-        '12' => 0,
+        '14' => 0,
         '8' => 0,
         '13' => 0,
       ),
@@ -1972,6 +1995,8 @@ elseif (og_get_group_context()) {
         'region' => 0,
         'state' => 0,
       ),
+      'validate_argument_signup_status' => 'any',
+      'validate_argument_signup_node_access' => 0,
     ),
   ));
   $handler->override_option('filters', array(
@@ -2017,7 +2042,7 @@ elseif (og_get_group_context()) {
     'is_admin' => array(
       'operator' => 'in',
       'value' => array(
-        '0' => '0',
+        '1' => '1',
       ),
       'group' => '0',
       'exposed' => FALSE,
@@ -2050,46 +2075,13 @@ elseif (og_get_group_context()) {
   $handler->override_option('style_plugin', 'grid');
   $handler->override_option('style_options', array(
     'grouping' => '',
-    'columns' => '2',
+    'columns' => '4',
     'alignment' => 'horizontal',
     'fill_single_line' => 1,
   ));
   $handler->override_option('exposed_block', TRUE);
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->override_option('fields', array(
-    'uid' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_user' => 0,
-      'exclude' => 0,
-      'id' => 'uid',
-      'table' => 'users',
-      'field' => 'uid',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
     'picture' => array(
       'label' => '',
       'alter' => array(
@@ -2287,6 +2279,7 @@ elseif (og_get_group_context()) {
       'relationship' => 'none',
     ),
   ));
+  $handler->override_option('use_ajax', TRUE);
   $handler->override_option('items_per_page', 20);
   $handler->override_option('path', 'community/%/coordinators');
   $handler->override_option('menu', array(
@@ -2441,11 +2434,9 @@ elseif (og_get_group_context()) {
     ),
   ));
   $handler->override_option('items_per_page', 6);
+  $handler->override_option('style_plugin', 'default');
   $handler->override_option('style_options', array(
     'grouping' => '',
-    'columns' => '3',
-    'alignment' => 'horizontal',
-    'fill_single_line' => 1,
   ));
   $handler->override_option('block_description', 'Group Coordinators');
   $handler->override_option('block_caching', -1);
@@ -2814,46 +2805,13 @@ elseif (og_get_group_context()) {
   $handler->override_option('style_plugin', 'grid');
   $handler->override_option('style_options', array(
     'grouping' => '',
-    'columns' => '2',
+    'columns' => '4',
     'alignment' => 'horizontal',
     'fill_single_line' => 1,
   ));
   $handler->override_option('exposed_block', TRUE);
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->override_option('fields', array(
-    'uid' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_user' => 0,
-      'exclude' => 1,
-      'id' => 'uid',
-      'table' => 'users',
-      'field' => 'uid',
-      'override' => array(
-        'button' => 'Use default',
-      ),
-      'relationship' => 'none',
-    ),
     'picture' => array(
       'label' => '',
       'alter' => array(
@@ -3228,36 +3186,6 @@ elseif (og_get_group_context()) {
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
-    'title' => array(
-      'label' => '',
-      'alter' => array(
-        'alter_text' => 0,
-        'text' => '',
-        'make_link' => 0,
-        'path' => '',
-        'link_class' => '',
-        'alt' => '',
-        'prefix' => '',
-        'suffix' => '',
-        'target' => '',
-        'help' => '',
-        'trim' => 0,
-        'max_length' => '',
-        'word_boundary' => 1,
-        'ellipsis' => 1,
-        'html' => 0,
-        'strip_tags' => 0,
-      ),
-      'empty' => '',
-      'hide_empty' => 0,
-      'empty_zero' => 0,
-      'link_to_node' => 1,
-      'exclude' => 0,
-      'id' => 'title',
-      'table' => 'node',
-      'field' => 'title',
-      'relationship' => 'none',
-    ),
     'view_node' => array(
       'label' => '',
       'alter' => array(
@@ -3331,6 +3259,36 @@ elseif (og_get_group_context()) {
       'override' => array(
         'button' => 'Override',
       ),
+    ),
+    'title' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 0,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'relationship' => 'none',
     ),
   ));
   $handler->override_option('sorts', array(
@@ -3461,11 +3419,12 @@ elseif (og_get_group_context()) {
   $handler->override_option('style_plugin', 'grid');
   $handler->override_option('style_options', array(
     'grouping' => '',
-    'columns' => '2',
+    'columns' => '3',
     'alignment' => 'horizontal',
     'fill_single_line' => 1,
   ));
   $handler = $view->new_display('block', 'Regions', 'block_1');
+  $handler->override_option('sorts', array());
   $handler->override_option('filters', array(
     'status' => array(
       'operator' => '=',
