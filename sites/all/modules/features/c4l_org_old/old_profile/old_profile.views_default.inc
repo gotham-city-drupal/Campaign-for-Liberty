@@ -248,6 +248,11 @@ else {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
+  $handler->override_option('row_options', array(
+    'inline' => array(),
+    'separator' => '',
+    'hide_empty' => 1,
+  ));
   $handler = $view->new_display('page', 'Base Profile Page', 'page_1');
   $handler->override_option('arguments', array(
     'uid' => array(
@@ -701,6 +706,12 @@ else {
         'button' => 'Use default',
       ),
       'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('access', array(
+    'type' => 'role',
+    'role' => array(
+      '2' => 2,
     ),
   ));
   $handler->override_option('block_description', 'Profile Options');
