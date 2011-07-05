@@ -238,13 +238,26 @@ function old_community_user_default_permissions() {
     ),
   );
 
-  // Exported permission: manage all coordinators
-  $permissions['manage all coordinators'] = array(
-    'name' => 'manage all coordinators',
+  // Exported permission: manage county coordinators
+  $permissions['manage county coordinators'] = array(
+    'name' => 'manage county coordinators',
     'roles' => array(
       '0' => 'administrator',
       '1' => 'headquarters',
       '2' => 'staff',
+      '3' => 'state coordinator',
+    ),
+  );
+
+  // Exported permission: manage local coordinators
+  $permissions['manage local coordinators'] = array(
+    'name' => 'manage local coordinators',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'county coordinator',
+      '2' => 'headquarters',
+      '3' => 'staff',
+      '4' => 'state coordinator',
     ),
   );
 
@@ -254,6 +267,27 @@ function old_community_user_default_permissions() {
     'roles' => array(
       '0' => 'administrator',
       '1' => 'authenticated user',
+    ),
+  );
+
+  // Exported permission: manage region coordinators
+  $permissions['manage region coordinators'] = array(
+    'name' => 'manage region coordinators',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'headquarters',
+      '2' => 'staff',
+      '3' => 'state coordinator',
+    ),
+  );
+
+  // Exported permission: manage state coordinators
+  $permissions['manage state coordinators'] = array(
+    'name' => 'manage state coordinators',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'headquarters',
+      '2' => 'staff',
     ),
   );
 

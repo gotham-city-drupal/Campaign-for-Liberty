@@ -513,7 +513,7 @@ elseif (og_get_group_context()) {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'link_to_node' => 0,
+      'link_to_node' => 1,
       'exclude' => 1,
       'id' => 'title',
       'table' => 'node',
@@ -560,7 +560,7 @@ elseif (og_get_group_context()) {
       'label' => '',
       'alter' => array(
         'text' => 'Return to [title] ',
-        'make_link' => 1,
+        'make_link' => 0,
         'path' => '[path]',
         'link_class' => '',
         'alt' => '',

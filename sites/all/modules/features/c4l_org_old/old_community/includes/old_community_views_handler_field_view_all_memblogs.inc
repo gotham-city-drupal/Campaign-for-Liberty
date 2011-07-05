@@ -21,8 +21,13 @@ class old_community_views_handler_field_view_all_memblogs extends views_handler_
     $node->format = $values->{$this->aliases['format']};
     $node->status = 1; // unpublished nodes ignore access control
 
+
     $item = menu_get_item("community/$node->nid/blog/all");
     if (!$item['access']) {
+      return;
+    }
+
+    if (!og_is_group_admin($node)) {
       return;
     }
 

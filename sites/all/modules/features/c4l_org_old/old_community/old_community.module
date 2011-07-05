@@ -6,7 +6,7 @@ include_once('old_community.features.inc');
  * Implementation of hook_perm()
  */
 function old_community_perm() {
-  return array('manage all coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups', 'promote to my groups', 'remove from group', 'edit member blogs');
+  return array('manage local coordinators', 'manage county coordinators', 'manage region coordinators', 'manage state coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups', 'promote to my groups', 'remove from group', 'edit member blogs');
 }
 
 /**

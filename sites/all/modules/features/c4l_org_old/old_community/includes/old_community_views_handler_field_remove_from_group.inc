@@ -20,7 +20,7 @@ class old_community_views_handler_field_remove_from_group extends og_views_handl
 
       if ($uid != $node->uid) {
         if ($is_active) {
-          if (user_access('invite to all groups')) {
+          if (user_access('remove from group')) {
             return l(t('Remove from group'), "og/unsubscribe/$nid/$uid", array('query' => drupal_get_destination()));
           }
         }

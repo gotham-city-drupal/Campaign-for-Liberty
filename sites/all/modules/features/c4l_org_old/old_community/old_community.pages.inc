@@ -13,7 +13,7 @@ function old_profile_promote_member_confirm($form_state, $node, $account, $type)
 
   return confirm_form($form,
            t('Are you sure you want to make !name a !type Coordinator for !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
-           "og/users/$node->nid",
+           "node/$node->nid",
            ' ',
            t('Confirm'),
            t('Cancel'));
@@ -52,7 +52,7 @@ function old_profile_promote_member_confirm_submit($form, &$form_state) {
   );
 
   module_invoke_all('og', 'admin new', $node->nid, $account->uid, $message);
-  $form_state['#redirect'] = "og/users/$node->nid";
+  $form_state['#redirect'] = "$node->nid";
 }
 
 /**
@@ -69,7 +69,7 @@ function old_profile_demote_member_confirm($form_state, $node, $account, $type) 
 
   return confirm_form($form,
     t('Are you sure you want to remove !name as a !type Coordinator for !title?', array('!name' => theme('username', $account), '!type' => ucwords($type), '!title' => $node->title)),
-    "og/users/$node->nid",
+    "$node->nid",
     ' ',
     t('Remove'),
     t('Cancel')
@@ -97,7 +97,7 @@ function old_profile_demote_member_confirm_submit($form, &$form_state) {
   }
 
   drupal_set_message(t('%name is no longer a !type Coordinator for !title.', array('%name' => $account->name, '!type' => ucwords($type), '!title' => $title)));
-  $form_state['redirect'] = "og/users/$gid";
+  $form_state['redirect'] = "$node->nid";
 }
 
 /**
