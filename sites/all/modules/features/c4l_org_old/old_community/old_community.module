@@ -57,7 +57,7 @@ function old_community_form_alter(&$form, &$form_state, $form_id) {
     case 'memblog_node_form':
       if ($form['nid']['#value']) {
         $form['#attributes']['class'] = 'memblog-edit';
-        if (user_access('promote to my groups')) {
+        if ((user_access('promote to my groups'))&&(!user_access('edit member blogs'))) {
           global $user;
           if (($user->uid)!==($form['uid']['#value'])) {
             $form['#attributes']['class'] = 'promote-only';
