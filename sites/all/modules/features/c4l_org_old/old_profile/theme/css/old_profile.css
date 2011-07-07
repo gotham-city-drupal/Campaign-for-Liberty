@@ -15,7 +15,7 @@
 
 .state-coordinator .memblog-add .promote-box, .state-coordinator .memblog-edit .promote-box, .local-coordinator .memblog-add .promote-box, .local-coordinator .memblog-edit .promote-box,
   .region-coordinator .memblog-add .promote-box, .region-coordinator .memblog-edit .promote-box, .county-coordinator .memblog-add .promote-box, .county-coordinator .memblog-edit .promote-box,
-  .staff .memblog-add .promote-box, .headquarters .memblog-add .promote-box
+  .staff .memblog-add .promote-box, .headquarters .memblog-add .promote-box, .staff .memblog-edit .promote-box, .headquarters .memblog-edit .promote-box
    {
   display: block;
 }
