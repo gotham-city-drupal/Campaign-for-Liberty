@@ -464,7 +464,7 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'filter_default_format';
-  $strongarm->value = '1';
+  $strongarm->value = '5';
 
   $export['filter_default_format'] = $strongarm;
   $strongarm = new stdClass;
@@ -1192,6 +1192,18 @@ function piropublic_strongarm() {
       'path' => 'path',
       'group_frontpage_banner_vidgrp' => 0,
       'group_frontpage_banner_lnkgrp' => 0,
+    ),
+    'donation_node_form' => array(
+      'menu' => 'menu',
+      'revision_information' => 'revision_information',
+      'author' => 'author',
+      'options' => 'options',
+      'comment_settings' => 'comment_settings',
+      'path' => 'path',
+      'attachments' => 'attachments',
+      'xmlsitemap' => 'xmlsitemap',
+      'base' => 0,
+      'shipping' => 0,
     ),
   );
 

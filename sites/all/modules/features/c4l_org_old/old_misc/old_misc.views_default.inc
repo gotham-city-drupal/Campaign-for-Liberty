@@ -883,6 +883,7 @@ function old_misc_views_default_views() {
   $handler->override_option('block_description', 'Front Page Member Posts');
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->override_option('title', 'Campaign for Liberty');
   $handler->override_option('style_plugin', 'rss');
   $handler->override_option('style_options', array(
     'mission_description' => 0,
@@ -909,7 +910,7 @@ function old_misc_views_default_views() {
     'name' => 'navigation',
   ));
   $handler->override_option('displays', array());
-  $handler->override_option('sitename_title', FALSE);
+  $handler->override_option('sitename_title', 0);
 
   $views[$view->name] = $view;
 

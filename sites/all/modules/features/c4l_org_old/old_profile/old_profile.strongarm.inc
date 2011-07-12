@@ -410,14 +410,17 @@ function old_profile_strongarm() {
   $strongarm->name = 'content_extra_weights_memblog';
   $strongarm->value = array(
     'title' => '-5',
-    'body_field' => '-3',
-    'revision_information' => '-1',
-    'author' => '2',
-    'options' => '3',
-    'comment_settings' => '1',
-    'menu' => '-2',
-    'path' => '0',
-    'path_redirect' => '4',
+    'body_field' => '-1',
+    'revision_information' => '1',
+    'author' => '5',
+    'options' => '6',
+    'comment_settings' => '4',
+    'menu' => '0',
+    'path' => '2',
+    'og_nodeapi' => '3',
+    'path_redirect' => '7',
+    'workflow' => '8',
+    'xmlsitemap' => '9',
   );
 
   $export['content_extra_weights_memblog'] = $strongarm;
