@@ -3,14 +3,14 @@
 /**
  * Implementation of hook_views_default_views().
  */
-function old_misc_views_default_views() {
+function piropublic_frontpage_views_default_views() {
   $views = array();
 
   // Exported view: front_page
   $view = new view;
   $view->name = 'front_page';
   $view->description = 'Page and blocks for frontpage';
-  $view->tag = 'old_misc';
+  $view->tag = 'piropublic_frontpage';
   $view->view_php = '';
   $view->base_table = 'node';
   $view->is_cacheable = FALSE;

@@ -1,0 +1,14 @@
+<?php
+
+include_once('piropublic_frontpage.features.inc');
+// Drupal needs this blank file.
+
+/**
+ * Implementation of hook_init()
+ */
+function piropublic_frontpage_init() {
+  drupal_add_css(drupal_get_path('module', 'piropublic_frontpage') . '/theme/css/piropublic_frontpage.css');
+  if (file_exists(drupal_get_path('module', 'piropublic_frontpage') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css')) {
+    drupal_add_css(drupal_get_path('module', 'piropublic_frontpage') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
+  }
+}

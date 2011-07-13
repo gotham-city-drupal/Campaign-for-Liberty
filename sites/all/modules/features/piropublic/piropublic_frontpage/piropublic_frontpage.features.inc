@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_default_fe_nodequeue_queue().
  */
-function old_misc_default_fe_nodequeue_queue() {
+function piropublic_frontpage_default_fe_nodequeue_queue() {
   $export = array();
 
   $fe_nodequeue_queue = new stdClass;
@@ -87,7 +87,7 @@ function old_misc_default_fe_nodequeue_queue() {
 /**
  * Implementation of hook_views_api().
  */
-function old_misc_views_api() {
+function piropublic_frontpage_views_api() {
   return array(
     'api' => '2',
   );
