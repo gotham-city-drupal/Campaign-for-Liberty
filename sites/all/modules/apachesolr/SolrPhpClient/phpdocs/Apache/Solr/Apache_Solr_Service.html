@@ -55,7 +55,7 @@
 				<li><span class="field">todo:</span> Investigate using other HTTP clients other than file_get_contents built-in handler. Could provide performance  improvements when dealing with multiple requests by using HTTP's keep alive functionality</li>
 			</ul>
 		<p class="notes">
-			Located in <a class="field" href="_Service.php.html">/Service.php</a> (line <span class="field"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a86">86</a></span>)
+			Located in <a class="field" href="_Service.php.html">/Service.php</a> (line <span class="field"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a80">80</a></span>)
 		</p>
 		
 				
@@ -80,11 +80,6 @@
 					</div>
 		<div class="info-box-body">
 			<div class="const-summary">
-								<div class="const-title">
-					<img src="../../media/images/Constant.png" alt=" " />
-					<a href="#EXTRACT_SERVLET" title="details" class="const-name">EXTRACT_SERVLET</a> = 					<span class="var-type"> 'update/extract'</span>
-
-				</div>
 								<div class="const-title">
 					<img src="../../media/images/Constant.png" alt=" " />
 					<a href="#METHOD_GET" title="details" class="const-name">METHOD_GET</a> = 					<span class="var-type"> 'GET'</span>
@@ -117,17 +112,22 @@
 				</div>
 								<div class="const-title">
 					<img src="../../media/images/Constant.png" alt=" " />
+					<a href="#SOLR_VERSION" title="details" class="const-name">SOLR_VERSION</a> = 					<span class="var-type"> '1.2'</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../../media/images/Constant.png" alt=" " />
 					<a href="#SOLR_WRITER" title="details" class="const-name">SOLR_WRITER</a> = 					<span class="var-type"> 'json'</span>
 
 				</div>
 								<div class="const-title">
 					<img src="../../media/images/Constant.png" alt=" " />
-					<a href="#SVN_ID" title="details" class="const-name">SVN_ID</a> = 					<span class="var-type"> '$Id: Service.php 59 2011-02-08 20:38:59Z donovan.jimenez $'</span>
+					<a href="#SVN_ID" title="details" class="const-name">SVN_ID</a> = 					<span class="var-type"> '$Id: Service.php 22 2009-11-09 22:46:54Z donovan.jimenez $'</span>
 
 				</div>
 								<div class="const-title">
 					<img src="../../media/images/Constant.png" alt=" " />
-					<a href="#SVN_REVISION" title="details" class="const-name">SVN_REVISION</a> = 					<span class="var-type"> '$Revision: 59 $'</span>
+					<a href="#SVN_REVISION" title="details" class="const-name">SVN_REVISION</a> = 					<span class="var-type"> '$Revision: 22 $'</span>
 
 				</div>
 								<div class="const-title">
@@ -158,7 +158,7 @@
 					</div>
 		<div class="info-box-body">
 			<div class="var-summary">
-																																																																																																																																								<div class="var-title">
+																																																																																																																																																<div class="var-title">
 					<span class="var-type">boolean</span>
 					<a href="#$_collapseSingleValueArrays" title="details" class="var-name">$_collapseSingleValueArrays</a>
 				</div>
@@ -167,12 +167,16 @@
 					<a href="#$_createDocuments" title="details" class="var-name">$_createDocuments</a>
 				</div>
 																<div class="var-title">
-					<span class="var-type">string</span>
-					<a href="#$_host" title="details" class="var-name">$_host</a>
+					<span class="var-type">mixed</span>
+					<a href="#$_defaultTimeout" title="details" class="var-name">$_defaultTimeout</a>
 				</div>
 																<div class="var-title">
-					<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>
-					<a href="#$_httpTransport" title="details" class="var-name">$_httpTransport</a>
+					<span class="var-type">resource</span>
+					<a href="#$_getContext" title="details" class="var-name">$_getContext</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_host" title="details" class="var-name">$_host</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">string</span>
@@ -192,7 +196,7 @@
 				</div>
 																<div class="var-title">
 					<span class="var-type">mixed</span>
-					<a href="#$_queryBracketsEscaped" title="details" class="var-name">$_queryBracketsEscaped</a>
+					<a href="#$_postContext" title="details" class="var-name">$_postContext</a>
 				</div>
 																<div class="var-title">
 					<span class="var-type">string</span>
@@ -236,7 +240,7 @@
 		</div>
 		<div class="info-box-body">			
 			<div class="method-summary">
-																																																																										
+																																																																																		
 				<div class="method-definition">
 					static 						<span class="method-result">string</span>
 										<a href="#escape" title="details" class="method-name">escape</a>
@@ -248,13 +252,19 @@
 										<a href="#escapePhrase" title="details" class="method-name">escapePhrase</a>
 											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
 									</div>
-																																																																																																																						
+																																																																						
 				<div class="method-definition">
 					static 						<span class="method-result">string</span>
 										<a href="#phrase" title="details" class="method-name">phrase</a>
 											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
 									</div>
-																																																																																																																																																																																		
+																																																																																																																																																										
+				<div class="method-definition">
+											<span class="method-result">Apache_Solr_Service</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">8180</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span> = <span class="var-default">'/solr/'</span>])
+									</div>
+														
 				<div class="method-definition">
 											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
 										<a href="#add" title="details" class="method-name">add</a>
@@ -264,19 +274,19 @@
 				<div class="method-definition">
 											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
 										<a href="#addDocument" title="details" class="method-name">addDocument</a>
-											(<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$commitWithin</span> = <span class="var-default">0</span>])
+											(<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>])
 									</div>
 														
 				<div class="method-definition">
 											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
 										<a href="#addDocuments" title="details" class="method-name">addDocuments</a>
-											(<span class="var-type">array</span>&nbsp;<span class="var-name">$documents</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$commitWithin</span> = <span class="var-default">0</span>])
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$documents</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>])
 									</div>
 														
 				<div class="method-definition">
 											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
 										<a href="#commit" title="details" class="method-name">commit</a>
-											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$expungeDeletes</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitFlush</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitSearcher</span> = <span class="var-default">true</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">3600</span>])
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$optimize</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitFlush</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitSearcher</span> = <span class="var-default">true</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">3600</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -304,24 +314,6 @@
 									</div>
 																														
 				<div class="method-definition">
-											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
-										<a href="#extract" title="details" class="method-name">extract</a>
-											(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">'application/octet-stream'</span>])
-									</div>
-														
-				<div class="method-definition">
-											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
-										<a href="#extractFromString" title="details" class="method-name">extractFromString</a>
-											(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">'application/octet-stream'</span>])
-									</div>
-														
-				<div class="method-definition">
-											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
-										<a href="#extractFromUrl" title="details" class="method-name">extractFromUrl</a>
-											(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">'application/octet-stream'</span>])
-									</div>
-														
-				<div class="method-definition">
 											<span class="method-result">boolean</span>
 										<a href="#getCollapseSingleValueArrays" title="details" class="method-name">getCollapseSingleValueArrays</a>
 										()
@@ -334,20 +326,8 @@
 									</div>
 														
 				<div class="method-definition">
-											<span class="method-result">float</span>
-										<a href="#getDefaultTimeout" title="details" class="method-name">getDefaultTimeout</a>
-										()
-									</div>
-														
-				<div class="method-definition">
 											<span class="method-result">string</span>
 										<a href="#getHost" title="details" class="method-name">getHost</a>
-										()
-									</div>
-														
-				<div class="method-definition">
-											<span class="method-result">HttpTransportInterface</span>
-										<a href="#getHttpTransport" title="details" class="method-name">getHttpTransport</a>
 										()
 									</div>
 														
@@ -370,12 +350,6 @@
 									</div>
 														
 				<div class="method-definition">
-											<span class="method-result">Apache_Solr_Service</span>
-										<a href="#__construct" title="details" class="method-name">__construct</a>
-											([<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">8180</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span> = <span class="var-default">'/solr/'</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>&nbsp;<span class="var-name">$httpTransport</span> = <span class="var-default">false</span>])
-									</div>
-														
-				<div class="method-definition">
 											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
 										<a href="#optimize" title="details" class="method-name">optimize</a>
 											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitFlush</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitSearcher</span> = <span class="var-default">true</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">3600</span>])
@@ -390,7 +364,7 @@
 				<div class="method-definition">
 											<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
 										<a href="#search" title="details" class="method-name">search</a>
-											(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">10</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">self::METHOD_GET</span>])
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">10</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">self::METHOD_GET</span>])
 									</div>
 														
 				<div class="method-definition">
@@ -402,13 +376,7 @@
 				<div class="method-definition">
 											<span class="method-result">void</span>
 										<a href="#setCreateDocuments" title="details" class="method-name">setCreateDocuments</a>
-											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$createDocuments</span>)
-									</div>
-														
-				<div class="method-definition">
-											<span class="method-result">void</span>
-										<a href="#setDefaultTimeout" title="details" class="method-name">setDefaultTimeout</a>
-											(<span class="var-type">float</span>&nbsp;<span class="var-name">$timeout</span>)
+											(<span class="var-type">unknown_type</span>&nbsp;<span class="var-name">$createDocuments</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -419,13 +387,7 @@
 														
 				<div class="method-definition">
 											<span class="method-result">void</span>
-										<a href="#setHttpTransport" title="details" class="method-name">setHttpTransport</a>
-											(<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>&nbsp;<span class="var-name">$httpTransport</span>)
-									</div>
-														
-				<div class="method-definition">
-											<span class="method-result">void</span>
-										<a href="#setNamedListTreatment" title="details" class="method-name">setNamedListTreatment</a>
+										<a href="#setNamedListTreatmet" title="details" class="method-name">setNamedListTreatmet</a>
 											(<span class="var-type">string</span>&nbsp;<span class="var-name">$namedListTreatment</span>)
 									</div>
 														
@@ -469,12 +431,6 @@
 											<span class="method-result">string</span>
 										<a href="#_documentToXmlFragment" title="details" class="method-name">_documentToXmlFragment</a>
 											(<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span>)
-									</div>
-														
-				<div class="method-definition">
-											<span class="method-result">void</span>
-										<a href="#_generateQueryString" title="details" class="method-name">_generateQueryString</a>
-											(<span class="var-type"></span>&nbsp;<span class="var-name">$params</span>)
 									</div>
 														
 				<div class="method-definition">
@@ -527,7 +483,7 @@
 		<span class="var-title">
 			<span class="var-type">boolean</span>
 			<span class="var-name">$_collapseSingleValueArrays</span>
-			 = <span class="var-default"> true</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a145">145</a></span>)
+			 = <span class="var-default"> true</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a143">143</a></span>)
 		</span>
 	</div>
 
@@ -549,12 +505,57 @@
 		<span class="var-title">
 			<span class="var-type">boolean</span>
 			<span class="var-name">$_createDocuments</span>
-			 = <span class="var-default"> true</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a137">137</a></span>)
+			 = <span class="var-default"> true</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a135">135</a></span>)
 		</span>
 	</div>
 
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Whether <a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a> objects should create <a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a>s in  the returned parsed data</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_defaultTimeout" id="$_defaultTimeout"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$_defaultTimeout</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a187">187</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default HTTP timeout when one is not specified (initialized to default_socket_timeout ini setting)</p>
+<p class="description"><p>var float</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_getContext" id="$_getContext"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">resource</span>
+			<span class="var-name">$_getContext</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a180">180</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reusable stream context resources for GET and POST operations</p>
 	<ul class="tags">
 				<li><span class="field">access:</span> protected</li>
 			</ul>
@@ -571,7 +572,7 @@
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_host</span>
-						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a129">129</a></span>)
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a127">127</a></span>)
 		</span>
 	</div>
 
@@ -586,36 +587,14 @@
 		
 
 </div>
-<a name="var$_httpTransport" id="$_httpTransport"><!-- --></A>
-<div class="evenrow">
-
-	<div class="var-header">
-		<span class="var-title">
-			<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>
-			<span class="var-name">$_httpTransport</span>
-			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a182">182</a></span>)
-		</span>
-	</div>
-
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">HTTP Transport implementation (pluggable)</p>
-	<ul class="tags">
-				<li><span class="field">access:</span> protected</li>
-			</ul>
-	
-	
-		
-		
-
-</div>
 <a name="var$_namedListTreatment" id="$_namedListTreatment"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_namedListTreatment</span>
-			 = <span class="var-default"> self::NAMED_LIST_MAP</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a153">153</a></span>)
+			 = <span class="var-default"> self::NAMED_LIST_MAP</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a151">151</a></span>)
 		</span>
 	</div>
 
@@ -631,13 +610,13 @@
 
 </div>
 <a name="var$_path" id="$_path"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$_path</span>
-						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a129">129</a></span>)
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a127">127</a></span>)
 		</span>
 	</div>
 
@@ -652,13 +631,13 @@
 
 </div>
 <a name="var$_pingUrl" id="$_pingUrl"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_pingUrl</span>
-						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a168">168</a></span>)
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a166">166</a></span>)
 		</span>
 	</div>
 
@@ -674,13 +653,13 @@
 
 </div>
 <a name="var$_port" id="$_port"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$_port</span>
-						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a129">129</a></span>)
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a127">127</a></span>)
 		</span>
 	</div>
 
@@ -694,14 +673,14 @@
 		
 
 </div>
-<a name="var$_queryBracketsEscaped" id="$_queryBracketsEscaped"><!-- --></A>
-<div class="oddrow">
+<a name="var$_postContext" id="$_postContext"><!-- --></A>
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
-			<span class="var-name">$_queryBracketsEscaped</span>
-			 = <span class="var-default"> true</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a161">161</a></span>)
+			<span class="var-name">$_postContext</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a180">180</a></span>)
 		</span>
 	</div>
 
@@ -716,13 +695,13 @@
 
 </div>
 <a name="var$_queryDelimiter" id="$_queryDelimiter"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">string</span>
 			<span class="var-name">$_queryDelimiter</span>
-			 = <span class="var-default"> '?'</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a161">161</a></span>)
+			 = <span class="var-default"> '?'</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a159">159</a></span>)
 		</span>
 	</div>
 
@@ -738,13 +717,13 @@
 
 </div>
 <a name="var$_queryStringDelimiter" id="$_queryStringDelimiter"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$_queryStringDelimiter</span>
-			 = <span class="var-default"> '&amp;'</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a161">161</a></span>)
+			 = <span class="var-default"> '&amp;'</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a159">159</a></span>)
 		</span>
 	</div>
 
@@ -759,13 +738,13 @@
 
 </div>
 <a name="var$_searchUrl" id="$_searchUrl"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$_searchUrl</span>
-						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a168">168</a></span>)
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a166">166</a></span>)
 		</span>
 	</div>
 
@@ -780,13 +759,13 @@
 
 </div>
 <a name="var$_threadsUrl" id="$_threadsUrl"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$_threadsUrl</span>
-						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a168">168</a></span>)
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a166">166</a></span>)
 		</span>
 	</div>
 
@@ -801,13 +780,13 @@
 
 </div>
 <a name="var$_updateUrl" id="$_updateUrl"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">mixed</span>
 			<span class="var-name">$_updateUrl</span>
-						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a168">168</a></span>)
+						(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a166">166</a></span>)
 		</span>
 	</div>
 
@@ -822,13 +801,13 @@
 
 </div>
 <a name="var$_urlsInited" id="$_urlsInited"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="var-header">
 		<span class="var-title">
 			<span class="var-type">boolean</span>
 			<span class="var-name">$_urlsInited</span>
-			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a175">175</a></span>)
+			 = <span class="var-default"> false</span>			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a173">173</a></span>)
 		</span>
 	</div>
 
@@ -861,10 +840,10 @@
 		<div class="info-box-body">
 			<A NAME='method_detail'></A>
 <a name="methodescape" id="escape"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">static escape</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a192">192</a></span>)
+		<span class="method-title">static escape</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a197">197</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -891,10 +870,10 @@
 			
 	</div>
 <a name="methodescapePhrase" id="escapePhrase"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">static escapePhrase</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a207">207</a></span>)
+		<span class="method-title">static escapePhrase</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a212">212</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -920,10 +899,10 @@
 			
 	</div>
 <a name="methodphrase" id="phrase"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">static phrase</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a221">221</a></span>)
+		<span class="method-title">static phrase</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a226">226</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -948,17 +927,52 @@
 		
 			
 	</div>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a239">239</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor. All parameters are optional and will take on default values  if not specified.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Apache_Solr_Service</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">8180</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span> = <span class="var-default">'/solr/'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$host</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$port</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span>			</li>
+				</ul>
+		
+			
+	</div>
 <a name="methodadd" id="add"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">add</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a667">667</a></span>)
+		<span class="method-title">add</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a650">650</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Raw Add Method. Takes a raw post body and sends it to the update service.  Post body  should be a complete and well formed &quot;add&quot; xml document.</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -982,13 +996,13 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">addDocument</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a684">684</a></span>)
+		<span class="method-title">addDocument</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a666">666</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Add a Solr Document to the index</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -997,7 +1011,7 @@
 		<span class="method-name">
 			addDocument
 		</span>
-					(<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$commitWithin</span> = <span class="var-default">0</span>])
+					(<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -1013,9 +1027,6 @@
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$overwriteCommitted</span>			</li>
-					<li>
-				<span class="var-type">integer</span>
-				<span class="var-name">$commitWithin</span><span class="var-description">: The number of milliseconds that a document must be committed within, see @{link http://wiki.apache.org/solr/UpdateXmlMessages#The_Update_Schema} for details.  If left empty this property will not be set in the request.</span>			</li>
 				</ul>
 		
 			
@@ -1024,13 +1035,13 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">addDocuments</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a712">712</a></span>)
+		<span class="method-title">addDocuments</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a690">690</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Add an array of Solr Documents to the index all at once</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1039,7 +1050,7 @@
 		<span class="method-name">
 			addDocuments
 		</span>
-					(<span class="var-type">array</span>&nbsp;<span class="var-name">$documents</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>], [<span class="var-type">integer</span>&nbsp;<span class="var-name">$commitWithin</span> = <span class="var-default">0</span>])
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$documents</span>, [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$allowDups</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwritePending</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$overwriteCommitted</span> = <span class="var-default">true</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -1055,9 +1066,6 @@
 					<li>
 				<span class="var-type">boolean</span>
 				<span class="var-name">$overwriteCommitted</span>			</li>
-					<li>
-				<span class="var-type">integer</span>
-				<span class="var-name">$commitWithin</span><span class="var-description">: The number of milliseconds that a document must be committed within, see @{link http://wiki.apache.org/solr/UpdateXmlMessages#The_Update_Schema} for details.  If left empty this property will not be set in the request.</span>			</li>
 				</ul>
 		
 			
@@ -1066,13 +1074,13 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">commit</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a821">821</a></span>)
+		<span class="method-title">commit</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a796">796</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Send a commit command.  Will be synchronous unless both wait parameters are set to false.</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1081,19 +1089,19 @@
 		<span class="method-name">
 			commit
 		</span>
-					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$expungeDeletes</span> = <span class="var-default">false</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitFlush</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitSearcher</span> = <span class="var-default">true</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">3600</span>])
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$optimize</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitFlush</span> = <span class="var-default">true</span>], [<span class="var-type">boolean</span>&nbsp;<span class="var-name">$waitSearcher</span> = <span class="var-default">true</span>], [<span class="var-type">float</span>&nbsp;<span class="var-name">$timeout</span> = <span class="var-default">3600</span>])
 			</div>
 	
 			<ul class="parameters">
 					<li>
 				<span class="var-type">boolean</span>
-				<span class="var-name">$expungeDeletes</span><span class="var-description">: Defaults to false, merge segments with deletes away</span>			</li>
+				<span class="var-name">$optimize</span><span class="var-description">: Defaults to true</span>			</li>
 					<li>
 				<span class="var-type">boolean</span>
-				<span class="var-name">$waitFlush</span><span class="var-description">: Defaults to true,  block until index changes are flushed to disk</span>			</li>
+				<span class="var-name">$waitFlush</span><span class="var-description">: Defaults to true</span>			</li>
 					<li>
 				<span class="var-type">boolean</span>
-				<span class="var-name">$waitSearcher</span><span class="var-description">: Defaults to true, block until a new searcher is opened and registered as the main query searcher, making the changes visible</span>			</li>
+				<span class="var-name">$waitSearcher</span><span class="var-description">: Defaults to true</span>			</li>
 					<li>
 				<span class="var-type">float</span>
 				<span class="var-name">$timeout</span><span class="var-description">: Maximum expected duration (in seconds) of the commit operation on the server (otherwise, will throw a communication exception). Defaults to 1 hour</span>			</li>
@@ -1105,13 +1113,13 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">delete</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a842">842</a></span>)
+		<span class="method-title">delete</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a817">817</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Raw Delete Method. Takes a raw post body and sends it to the update service. Body should be  a complete and well formed &quot;delete&quot; xml document</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1138,13 +1146,13 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">deleteById</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a858">858</a></span>)
+		<span class="method-title">deleteById</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a833">833</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Create a delete document based on document ID</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1177,13 +1185,13 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">deleteByMultipleIds</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a882">882</a></span>)
+		<span class="method-title">deleteByMultipleIds</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a857">857</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Create and post a delete document based on multiple document IDs.</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1216,13 +1224,13 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">deleteByQuery</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a913">913</a></span>)
+		<span class="method-title">deleteByQuery</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a888">888</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Create a delete document based on a query and submit it</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1251,132 +1259,11 @@
 		
 			
 	</div>
-<a name="methodextract" id="extract"><!-- --></a>
-<div class="oddrow">
-	
-	<div class="method-header">
-		<span class="method-title">extract</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a944">944</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</p>
-<p class="description"><p>NOTE: when passing an Apache_Solr_Document instance, field names and boosts will automatically be prepended by &quot;literal.&quot; and &quot;boost.&quot;  as appropriate. Any keys from the $params array will NOT be treated this way. Any mappings from the document will overwrite key / value  pairs in the params array if they have the same name (e.g. you pass a &quot;literal.id&quot; key and value in your $params array but you also  pass in a document isntance with an &quot;id&quot; field&quot; - the document's value(s) will take precedence).</p></p>
-	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_InvalidArgumentException if $file, $params, or $document are invalid.</li>
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
-		<span class="method-name">
-			extract
-		</span>
-					(<span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">'application/octet-stream'</span>])
-			</div>
-	
-			<ul class="parameters">
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$file</span><span class="var-description">: Path to file to extract data from</span>			</li>
-					<li>
-				<span class="var-type">array</span>
-				<span class="var-name">$params</span><span class="var-description">: optional array of key value pairs that will be sent with the post (see Solr Cell documentation)</span>			</li>
-					<li>
-				<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>
-				<span class="var-name">$document</span><span class="var-description">: optional document that will be used to generate post parameters (literal.* and boost.* params)</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$mimetype</span><span class="var-description">: optional mimetype specification (for the file being extracted)</span>			</li>
-				</ul>
-		
-			
-	</div>
-<a name="methodextractFromString" id="extractFromString"><!-- --></a>
-<div class="evenrow">
-	
-	<div class="method-header">
-		<span class="method-title">extractFromString</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a1005">1005</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</p>
-<p class="description"><p>NOTE: when passing an Apache_Solr_Document instance, field names and boosts will automatically be prepended by &quot;literal.&quot; and &quot;boost.&quot;  as appropriate. Any keys from the $params array will NOT be treated this way. Any mappings from the document will overwrite key / value  pairs in the params array if they have the same name (e.g. you pass a &quot;literal.id&quot; key and value in your $params array but you also  pass in a document isntance with an &quot;id&quot; field&quot; - the document's value(s) will take precedence).</p></p>
-	<ul class="tags">
-				<li><span class="field">todo:</span> Should be using multipart/form-data to post parameter values, but I could not get my implementation to work. Needs revisisted.</li>
-				<li><span class="field">throws:</span> Apache_Solr_InvalidArgumentException if $file, $params, or $document are invalid.</li>
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
-		<span class="method-name">
-			extractFromString
-		</span>
-					(<span class="var-type">string</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">'application/octet-stream'</span>])
-			</div>
-	
-			<ul class="parameters">
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$data</span><span class="var-description">: Data that will be passed to Solr Cell</span>			</li>
-					<li>
-				<span class="var-type">array</span>
-				<span class="var-name">$params</span><span class="var-description">: optional array of key value pairs that will be sent with the post (see Solr Cell documentation)</span>			</li>
-					<li>
-				<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>
-				<span class="var-name">$document</span><span class="var-description">: optional document that will be used to generate post parameters (literal.* and boost.* params)</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$mimetype</span><span class="var-description">: optional mimetype specification (for the file being extracted)</span>			</li>
-				</ul>
-		
-			
-	</div>
-<a name="methodextractFromUrl" id="extractFromUrl"><!-- --></a>
-<div class="oddrow">
-	
-	<div class="method-header">
-		<span class="method-title">extractFromUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a1068">1068</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</p>
-<p class="description"><p>NOTE: when passing an Apache_Solr_Document instance, field names and boosts will automatically be prepended by &quot;literal.&quot; and &quot;boost.&quot;  as appropriate. Any keys from the $params array will NOT be treated this way. Any mappings from the document will overwrite key / value  pairs in the params array if they have the same name (e.g. you pass a &quot;literal.id&quot; key and value in your $params array but you also  pass in a document isntance with an &quot;id&quot; field&quot; - the document's value(s) will take precedence).</p></p>
-	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_InvalidArgumentException if $url, $params, or $document are invalid.</li>
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result"><a href="../../Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a></span>
-		<span class="method-name">
-			extractFromUrl
-		</span>
-					(<span class="var-type">string</span>&nbsp;<span class="var-name">$url</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>&nbsp;<span class="var-name">$document</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$mimetype</span> = <span class="var-default">'application/octet-stream'</span>])
-			</div>
-	
-			<ul class="parameters">
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$url</span><span class="var-description">: URL</span>			</li>
-					<li>
-				<span class="var-type">array</span>
-				<span class="var-name">$params</span><span class="var-description">: optional array of key value pairs that will be sent with the post (see Solr Cell documentation)</span>			</li>
-					<li>
-				<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a></span>
-				<span class="var-name">$document</span><span class="var-description">: optional document that will be used to generate post parameters (literal.* and boost.* params)</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$mimetype</span><span class="var-description">: optional mimetype specification (for the file being extracted)</span>			</li>
-				</ul>
-		
-			
-	</div>
 <a name="methodgetCollapseSingleValueArrays" id="getCollapseSingleValueArrays"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getCollapseSingleValueArrays</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a533">533</a></span>)
+		<span class="method-title">getCollapseSingleValueArrays</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a522">522</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1397,10 +1284,10 @@
 			
 	</div>
 <a name="methodgetCreateDocuments" id="getCreateDocuments"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getCreateDocuments</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a513">513</a></span>)
+		<span class="method-title">getCreateDocuments</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a502">502</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1420,36 +1307,11 @@
 		
 			
 	</div>
-<a name="methodgetDefaultTimeout" id="getDefaultTimeout"><!-- --></a>
-<div class="evenrow">
-	
-	<div class="method-header">
-		<span class="method-title">getDefaultTimeout</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a546">546</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Get the current default timeout setting (initially the default_socket_timeout ini setting)  in seconds</p>
-	<ul class="tags">
-				<li><span class="field">deprecated:</span> Use the getDefaultTimeout method on the HTTP transport implementation</li>
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result">float</span>
-		<span class="method-name">
-			getDefaultTimeout
-		</span>
-				()
-			</div>
-	
-		
-			
-	</div>
 <a name="methodgetHost" id="getHost"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHost</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a375">375</a></span>)
+		<span class="method-title">getHost</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a396">396</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1469,35 +1331,11 @@
 		
 			
 	</div>
-<a name="methodgetHttpTransport" id="getHttpTransport"><!-- --></a>
+<a name="methodgetNamedListTreatment" id="getNamedListTreatment"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getHttpTransport</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a474">474</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Get the current configured HTTP Transport</p>
-	<ul class="tags">
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result">HttpTransportInterface</span>
-		<span class="method-name">
-			getHttpTransport
-		</span>
-				()
-			</div>
-	
-		
-			
-	</div>
-<a name="methodgetNamedListTreatment" id="getNamedListTreatment"><!-- --></a>
-<div class="oddrow">
-	
-	<div class="method-header">
-		<span class="method-title">getNamedListTreatment</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a592">592</a></span>)
+		<span class="method-title">getNamedListTreatment</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a556">556</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1518,10 +1356,10 @@
 			
 	</div>
 <a name="methodgetPath" id="getPath"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">getPath</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a447">447</a></span>)
+		<span class="method-title">getPath</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a464">464</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1542,10 +1380,10 @@
 			
 	</div>
 <a name="methodgetPort" id="getPort"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">getPort</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a410">410</a></span>)
+		<span class="method-title">getPort</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a429">429</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1565,55 +1403,17 @@
 		
 			
 	</div>
-<a name="method__construct" id="__construct"><!-- --></a>
-<div class="evenrow">
-	
-	<div class="method-header">
-		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a235">235</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Constructor. All parameters are optional and will take on default values  if not specified.</p>
-	<ul class="tags">
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result">Apache_Solr_Service</span>
-		<span class="method-name">
-			__construct
-		</span>
-					([<span class="var-type">string</span>&nbsp;<span class="var-name">$host</span> = <span class="var-default">'localhost'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">8180</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span> = <span class="var-default">'/solr/'</span>], [<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>&nbsp;<span class="var-name">$httpTransport</span> = <span class="var-default">false</span>])
-			</div>
-	
-			<ul class="parameters">
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$host</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$port</span>			</li>
-					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$path</span>			</li>
-					<li>
-				<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>
-				<span class="var-name">$httpTransport</span>			</li>
-				</ul>
-		
-			
-	</div>
 <a name="methodoptimize" id="optimize"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">optimize</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a1117">1117</a></span>)
+		<span class="method-title">optimize</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a912">912</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Send an optimize command.  Will be synchronous unless both wait parameters are set  to false.</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1643,7 +1443,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">ping</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a626">626</a></span>)
+		<span class="method-title">ping</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a591">591</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1673,14 +1473,13 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">search</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a1140">1140</a></span>)
+		<span class="method-title">search</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a933">933</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Simple Search interface</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_InvalidArgumentException If an invalid HTTP method is used</li>
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1689,7 +1488,7 @@
 		<span class="method-name">
 			search
 		</span>
-					(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">10</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">self::METHOD_GET</span>])
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$query</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$offset</span> = <span class="var-default">0</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$limit</span> = <span class="var-default">10</span>], [<span class="var-type">array</span>&nbsp;<span class="var-name">$params</span> = <span class="var-default">array()</span>], [<span class="var-type"></span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">self::METHOD_GET</span>])
 			</div>
 	
 			<ul class="parameters">
@@ -1706,8 +1505,8 @@
 				<span class="var-type">array</span>
 				<span class="var-name">$params</span><span class="var-description">: key / value pairs for other query parameters (see Solr documentation), use arrays for parameter keys used more than once (e.g. facet.field)</span>			</li>
 					<li>
-				<span class="var-type">string</span>
-				<span class="var-name">$method</span><span class="var-description">: The HTTP method (Apache_Solr_Service::METHOD_GET or Apache_Solr_Service::METHOD::POST)</span>			</li>
+				<span class="var-type"></span>
+				<span class="var-name">$method</span>			</li>
 				</ul>
 		
 			
@@ -1716,7 +1515,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setCollapseSingleValueArrays</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a523">523</a></span>)
+		<span class="method-title">setCollapseSingleValueArrays</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a512">512</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1745,7 +1544,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setCreateDocuments</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a503">503</a></span>)
+		<span class="method-title">setCreateDocuments</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a492">492</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1759,58 +1558,27 @@
 		<span class="method-name">
 			setCreateDocuments
 		</span>
-					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$createDocuments</span>)
+					(<span class="var-type">unknown_type</span>&nbsp;<span class="var-name">$createDocuments</span>)
 			</div>
 	
 			<ul class="parameters">
 					<li>
-				<span class="var-type">boolean</span>
+				<span class="var-type">unknown_type</span>
 				<span class="var-name">$createDocuments</span>			</li>
 				</ul>
 		
 			
 	</div>
-<a name="methodsetDefaultTimeout" id="setDefaultTimeout"><!-- --></a>
+<a name="methodsetHost" id="setHost"><!-- --></a>
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setDefaultTimeout</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a558">558</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Set the default timeout for all calls that aren't passed a specific timeout</p>
-	<ul class="tags">
-				<li><span class="field">deprecated:</span> Use the setDefaultTimeout method on the HTTP transport implementation</li>
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result">void</span>
-		<span class="method-name">
-			setDefaultTimeout
-		</span>
-					(<span class="var-type">float</span>&nbsp;<span class="var-name">$timeout</span>)
-			</div>
-	
-			<ul class="parameters">
-					<li>
-				<span class="var-type">float</span>
-				<span class="var-name">$timeout</span><span class="var-description">: Timeout value in seconds</span>			</li>
-				</ul>
-		
-			
-	</div>
-<a name="methodsetHost" id="setHost"><!-- --></a>
-<div class="oddrow">
-	
-	<div class="method-header">
-		<span class="method-title">setHost</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a387">387</a></span>)
+		<span class="method-title">setHost</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a406">406</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Set the host used. If empty will fallback to constants</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_InvalidArgumentException If the host parameter is empty</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1830,53 +1598,24 @@
 		
 			
 	</div>
-<a name="methodsetHttpTransport" id="setHttpTransport"><!-- --></a>
-<div class="evenrow">
-	
-	<div class="method-header">
-		<span class="method-title">setHttpTransport</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a492">492</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-<p class="short-description">Set the HTTP Transport implemenation that will be used for all HTTP requests</p>
-	<ul class="tags">
-				<li><span class="field">access:</span> public</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result">void</span>
-		<span class="method-name">
-			setHttpTransport
-		</span>
-					(<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>&nbsp;<span class="var-name">$httpTransport</span>)
-			</div>
-	
-			<ul class="parameters">
-					<li>
-				<span class="var-type"><a href="../../Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a></span>
-				<span class="var-name">$httpTransport</span>			</li>
-				</ul>
-		
-			
-	</div>
-<a name="methodsetNamedListTreatment" id="setNamedListTreatment"><!-- --></a>
+<a name="methodsetNamedListTreatmet" id="setNamedListTreatmet"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setNamedListTreatment</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a570">570</a></span>)
+		<span class="method-title">setNamedListTreatmet</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a534">534</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Set how NamedLists should be formatted in the response data. This mainly effects  the facet counts format.</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_InvalidArgumentException If invalid option is set</li>
+				<li><span class="field">throws:</span> Exception If invalid option is set</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
 	<div class="method-signature">
 		<span class="method-result">void</span>
 		<span class="method-name">
-			setNamedListTreatment
+			setNamedListTreatmet
 		</span>
 					(<span class="var-type">string</span>&nbsp;<span class="var-name">$namedListTreatment</span>)
 			</div>
@@ -1893,7 +1632,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setPath</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a457">457</a></span>)
+		<span class="method-title">setPath</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a474">474</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1922,13 +1661,12 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setPort</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a422">422</a></span>)
+		<span class="method-title">setPort</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a439">439</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Set the port used. If empty will fallback to constants</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_InvalidArgumentException If the port parameter is empty</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -1952,7 +1690,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">setQueryDelimiter</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a603">603</a></span>)
+		<span class="method-title">setQueryDelimiter</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a568">568</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -1982,7 +1720,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">setQueryStringDelimiter</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a614">614</a></span>)
+		<span class="method-title">setQueryStringDelimiter</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a579">579</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2011,13 +1749,13 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">threads</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a653">653</a></span>)
+		<span class="method-title">threads</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a636">636</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Call the /admin/threads servlet and retrieve information about all threads in the  Solr servlet's thread group. Useful for diagnostics.</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If an error occurs during the service call</li>
+				<li><span class="field">throws:</span> Exception If an error occurs during the service call</li>
 				<li><span class="field">access:</span> public</li>
 			</ul>
 	
@@ -2036,7 +1774,7 @@
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">_constructUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a258">258</a></span>)
+		<span class="method-title">_constructUrl</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a267">267</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2068,7 +1806,7 @@
 <div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">_documentToXmlFragment</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a741">741</a></span>)
+		<span class="method-title">_documentToXmlFragment</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a716">716</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2093,39 +1831,11 @@
 		
 			
 	</div>
-<a name="method_generateQueryString" id="_generateQueryString"><!-- --></a>
+<a name="method_initUrls" id="_initUrls"><!-- --></a>
 <div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">_generateQueryString</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a295">295</a></span>)
-	</div> 
-	
-	<!-- ========== Info from phpDoc block ========= -->
-	<ul class="tags">
-				<li><span class="field">access:</span> protected</li>
-			</ul>
-	
-	<div class="method-signature">
-		<span class="method-result">void</span>
-		<span class="method-name">
-			_generateQueryString
-		</span>
-					(<span class="var-type"></span>&nbsp;<span class="var-name">$params</span>)
-			</div>
-	
-			<ul class="parameters">
-					<li>
-				<span class="var-type"></span>
-				<span class="var-name">$params</span>			</li>
-				</ul>
-		
-			
-	</div>
-<a name="method_initUrls" id="_initUrls"><!-- --></a>
-<div class="evenrow">
-	
-	<div class="method-header">
-		<span class="method-title">_initUrls</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a283">283</a></span>)
+		<span class="method-title">_initUrls</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a292">292</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2146,16 +1856,16 @@
 			
 	</div>
 <a name="method_sendRawGet" id="_sendRawGet"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">_sendRawGet</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a329">329</a></span>)
+		<span class="method-title">_sendRawGet</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a312">312</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Central method for making a get operation against this Solr Server</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If a non 200 response status is returned</li>
+				<li><span class="field">throws:</span> Exception If a non 200 response status is returned</li>
 				<li><span class="field">access:</span> protected</li>
 			</ul>
 	
@@ -2179,16 +1889,16 @@
 			
 	</div>
 <a name="method_sendRawPost" id="_sendRawPost"><!-- --></a>
-<div class="evenrow">
+<div class="oddrow">
 	
 	<div class="method-header">
-		<span class="method-title">_sendRawPost</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a355">355</a></span>)
+		<span class="method-title">_sendRawPost</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a351">351</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
 <p class="short-description">Central method for making a post operation against this Solr Server</p>
 	<ul class="tags">
-				<li><span class="field">throws:</span> Apache_Solr_HttpTransportException If a non 200 response status is returned</li>
+				<li><span class="field">throws:</span> Exception If a non 200 response status is returned</li>
 				<li><span class="field">access:</span> protected</li>
 			</ul>
 	
@@ -2218,10 +1928,10 @@
 			
 	</div>
 <a name="method_stripCtrlChars" id="_stripCtrlChars"><!-- --></a>
-<div class="oddrow">
+<div class="evenrow">
 	
 	<div class="method-header">
-		<span class="method-title">_stripCtrlChars</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a803">803</a></span>)
+		<span class="method-title">_stripCtrlChars</span> (line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a778">778</a></span>)
 	</div> 
 	
 	<!-- ========== Info from phpDoc block ========= -->
@@ -2264,23 +1974,7 @@
 							
 					</div>
 		<div class="info-box-body">
-			<a name="constEXTRACT_SERVLET" id="EXTRACT_SERVLET"><!-- --></A>
-<div class="evenrow">
-
-	<div class="const-header">
-		<img src="../../media/images/Variable.png" />
-		<span class="const-title">
-			<span class="const-name">EXTRACT_SERVLET</span>
-			 = <span class="const-default"> 'update/extract'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a122">122</a></span>)
-		</span>
-	</div>
-
-	<!-- ========== Info from phpDoc block ========= -->
-	
-	
-</div>
-<a name="constMETHOD_GET" id="METHOD_GET"><!-- --></A>
+			<a name="constMETHOD_GET" id="METHOD_GET"><!-- --></A>
 <div class="oddrow">
 
 	<div class="const-header">
@@ -2288,7 +1982,7 @@
 		<span class="const-title">
 			<span class="const-name">METHOD_GET</span>
 			 = <span class="const-default"> 'GET'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a112">112</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a111">111</a></span>)
 		</span>
 	</div>
 
@@ -2305,7 +1999,7 @@
 		<span class="const-title">
 			<span class="const-name">METHOD_POST</span>
 			 = <span class="const-default"> 'POST'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a113">113</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a112">112</a></span>)
 		</span>
 	</div>
 
@@ -2321,7 +2015,7 @@
 		<span class="const-title">
 			<span class="const-name">NAMED_LIST_FLAT</span>
 			 = <span class="const-default"> 'flat'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a106">106</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a105">105</a></span>)
 		</span>
 	</div>
 
@@ -2338,7 +2032,7 @@
 		<span class="const-title">
 			<span class="const-name">NAMED_LIST_MAP</span>
 			 = <span class="const-default"> 'map'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a107">107</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a106">106</a></span>)
 		</span>
 	</div>
 
@@ -2354,7 +2048,7 @@
 		<span class="const-title">
 			<span class="const-name">PING_SERVLET</span>
 			 = <span class="const-default"> 'admin/ping'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a118">118</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a117">117</a></span>)
 		</span>
 	</div>
 
@@ -2371,7 +2065,7 @@
 		<span class="const-title">
 			<span class="const-name">SEARCH_SERVLET</span>
 			 = <span class="const-default"> 'select'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a120">120</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a119">119</a></span>)
 		</span>
 	</div>
 
@@ -2379,15 +2073,32 @@
 	
 	
 </div>
-<a name="constSOLR_WRITER" id="SOLR_WRITER"><!-- --></A>
+<a name="constSOLR_VERSION" id="SOLR_VERSION"><!-- --></A>
 <div class="oddrow">
+
+	<div class="const-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">SOLR_VERSION</span>
+			 = <span class="const-default"> '1.2'</span>
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a95">95</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Response version we support</p>
+	
+	
+</div>
+<a name="constSOLR_WRITER" id="SOLR_WRITER"><!-- --></A>
+<div class="evenrow">
 
 	<div class="const-header">
 		<img src="../../media/images/Variable.png" />
 		<span class="const-title">
 			<span class="const-name">SOLR_WRITER</span>
 			 = <span class="const-default"> 'json'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a101">101</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a100">100</a></span>)
 		</span>
 	</div>
 
@@ -2397,14 +2108,14 @@
 	
 </div>
 <a name="constSVN_ID" id="SVN_ID"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="const-header">
 		<img src="../../media/images/Variable.png" />
 		<span class="const-title">
 			<span class="const-name">SVN_ID</span>
-			 = <span class="const-default"> '$Id: Service.php 59 2011-02-08 20:38:59Z donovan.jimenez $'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a96">96</a></span>)
+			 = <span class="const-default"> '$Id: Service.php 22 2009-11-09 22:46:54Z donovan.jimenez $'</span>
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a90">90</a></span>)
 		</span>
 	</div>
 
@@ -2414,14 +2125,14 @@
 	
 </div>
 <a name="constSVN_REVISION" id="SVN_REVISION"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="const-header">
 		<img src="../../media/images/Variable.png" />
 		<span class="const-title">
 			<span class="const-name">SVN_REVISION</span>
-			 = <span class="const-default"> '$Revision: 59 $'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a91">91</a></span>)
+			 = <span class="const-default"> '$Revision: 22 $'</span>
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a85">85</a></span>)
 		</span>
 	</div>
 
@@ -2431,14 +2142,14 @@
 	
 </div>
 <a name="constTHREADS_SERVLET" id="THREADS_SERVLET"><!-- --></A>
-<div class="evenrow">
+<div class="oddrow">
 
 	<div class="const-header">
 		<img src="../../media/images/Variable.png" />
 		<span class="const-title">
 			<span class="const-name">THREADS_SERVLET</span>
 			 = <span class="const-default"> 'admin/threads'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a121">121</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a120">120</a></span>)
 		</span>
 	</div>
 
@@ -2447,14 +2158,14 @@
 	
 </div>
 <a name="constUPDATE_SERVLET" id="UPDATE_SERVLET"><!-- --></A>
-<div class="oddrow">
+<div class="evenrow">
 
 	<div class="const-header">
 		<img src="../../media/images/Variable.png" />
 		<span class="const-title">
 			<span class="const-name">UPDATE_SERVLET</span>
 			 = <span class="const-default"> 'update'</span>
-			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a119">119</a></span>)
+			(line <span class="line-number"><a href="../../__filesource/fsource_Apache_Solr_Service.php.html#a118">118</a></span>)
 		</span>
 	</div>
 
@@ -2467,7 +2178,7 @@
 	</div>
 
 	<p class="notes" id="credit">
-		Documentation generated on Wed, 04 May 2011 11:01:19 -0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+		Documentation generated on Mon, 09 Nov 2009 18:15:45 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.2</a>
 	</p>
 	</div></body>
 </html>

@@ -18,10 +18,7 @@
 	<a class="index-letter" href="elementindex_Apache.html#c">c</a>
 	<a class="index-letter" href="elementindex_Apache.html#d">d</a>
 	<a class="index-letter" href="elementindex_Apache.html#e">e</a>
-	<a class="index-letter" href="elementindex_Apache.html#f">f</a>
 	<a class="index-letter" href="elementindex_Apache.html#g">g</a>
-	<a class="index-letter" href="elementindex_Apache.html#h">h</a>
-	<a class="index-letter" href="elementindex_Apache.html#i">i</a>
 	<a class="index-letter" href="elementindex_Apache.html#m">m</a>
 	<a class="index-letter" href="elementindex_Apache.html#n">n</a>
 	<a class="index-letter" href="elementindex_Apache.html#o">o</a>
@@ -104,11 +101,24 @@
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#var$_defaultBackoff">Apache_Solr_Service_Balancer::$_defaultBackoff</a> in Balancer.php</div>
 					</dd>
 			<dt class="field">
+						<span class="var-title">$_defaultTimeout</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_defaultTimeout">Apache_Solr_Service::$_defaultTimeout</a> in Service.php</div>
+							<div class="index-item-description">Default HTTP timeout when one is not specified (initialized to default_socket_timeout ini setting)</div>
+					</dd>
+			<dt class="field">
 						<span class="var-title">$_documentBoost</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Document.html#var$_documentBoost">Apache_Solr_Document::$_documentBoost</a> in Document.php</div>
 							<div class="index-item-description">Document boost value</div>
+					</dd>
+			<dt class="field">
+						<span class="var-title">$_encoding</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#var$_encoding">Apache_Solr_Response::$_encoding</a> in Response.php</div>
 					</dd>
 			<dt class="field">
 						<span class="var-title">$_fieldBoosts</span>
@@ -125,6 +135,13 @@
 							<div class="index-item-description">Document field values, indexed by name</div>
 					</dd>
 			<dt class="field">
+						<span class="var-title">$_getContext</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_getContext">Apache_Solr_Service::$_getContext</a> in Service.php</div>
+							<div class="index-item-description">Reusable stream context resources for GET and POST operations</div>
+					</dd>
+			<dt class="field">
 						<span class="var-title">$_host</span>
 					</dt>
 		<dd class="index-item-body">
@@ -132,11 +149,17 @@
 							<div class="index-item-description">Server identification strings</div>
 					</dd>
 			<dt class="field">
-						<span class="var-title">$_httpTransport</span>
+						<span class="var-title">$_httpStatus</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_httpTransport">Apache_Solr_Service::$_httpTransport</a> in Service.php</div>
-							<div class="index-item-description">HTTP Transport implementation (pluggable)</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#var$_httpStatus">Apache_Solr_Response::$_httpStatus</a> in Response.php</div>
+							<div class="index-item-description">Parsed values from the passed in http headers</div>
+					</dd>
+			<dt class="field">
+						<span class="var-title">$_httpStatusMessage</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#var$_httpStatusMessage">Apache_Solr_Response::$_httpStatusMessage</a> in Response.php</div>
 					</dd>
 			<dt class="field">
 						<span class="var-title">$_isParsed</span>
@@ -179,10 +202,10 @@
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_port">Apache_Solr_Service::$_port</a> in Service.php</div>
 					</dd>
 			<dt class="field">
-						<span class="var-title">$_queryBracketsEscaped</span>
+						<span class="var-title">$_postContext</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_queryBracketsEscaped">Apache_Solr_Service::$_queryBracketsEscaped</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_postContext">Apache_Solr_Service::$_postContext</a> in Service.php</div>
 					</dd>
 			<dt class="field">
 						<span class="var-title">$_queryDelimiter</span>
@@ -198,6 +221,13 @@
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_queryStringDelimiter">Apache_Solr_Service::$_queryStringDelimiter</a> in Service.php</div>
 					</dd>
 			<dt class="field">
+						<span class="var-title">$_rawResponse</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#var$_rawResponse">Apache_Solr_Response::$_rawResponse</a> in Response.php</div>
+							<div class="index-item-description">Holds the raw response used in construction</div>
+					</dd>
+			<dt class="field">
 						<span class="var-title">$_readableServices</span>
 					</dt>
 		<dd class="index-item-body">
@@ -210,13 +240,6 @@
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#var$_readPingTimeout">Apache_Solr_Service_Balancer::$_readPingTimeout</a> in Balancer.php</div>
 					</dd>
 			<dt class="field">
-						<span class="var-title">$_response</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#var$_response">Apache_Solr_Response::$_response</a> in Response.php</div>
-							<div class="index-item-description">Holds the raw response used in construction</div>
-					</dd>
-			<dt class="field">
 						<span class="var-title">$_searchUrl</span>
 					</dt>
 		<dd class="index-item-body">
@@ -227,6 +250,12 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#var$_threadsUrl">Apache_Solr_Service::$_threadsUrl</a> in Service.php</div>
+					</dd>
+			<dt class="field">
+						<span class="var-title">$_type</span>
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#var$_type">Apache_Solr_Response::$_type</a> in Response.php</div>
 					</dd>
 			<dt class="field">
 						<span class="var-title">$_updateUrl</span>
@@ -272,12 +301,6 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#method_documentToXmlFragment">Apache_Solr_Service::_documentToXmlFragment()</a> in Service.php</div>
 							<div class="index-item-description">Create an XML fragment from a <a href="Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a> instance appropriate for use inside a Solr add call</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">_generateQueryString</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#method_generateQueryString">Apache_Solr_Service::_generateQueryString()</a> in Service.php</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">_getServiceId</span>
@@ -346,41 +369,6 @@
 						<span class="method-title">__construct</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#method__construct">Apache_Solr_Service::__construct()</a> in Service.php</div>
-							<div class="index-item-description">Constructor. All parameters are optional and will take on default values  if not specified.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">__construct</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html#method__construct">Apache_Solr_HttpTransport_Response::__construct()</a> in Response.php</div>
-							<div class="index-item-description">Construct a HTTP transport response</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">__construct</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_FileGetContents.html#method__construct">Apache_Solr_HttpTransport_FileGetContents::__construct()</a> in FileGetContents.php</div>
-							<div class="index-item-description">Initializes our reuseable get and post stream contexts</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">__construct</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html#method__construct">Apache_Solr_HttpTransport_Curl::__construct()</a> in Curl.php</div>
-							<div class="index-item-description">Initializes a curl session</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">__construct</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransportException.html#method__construct">Apache_Solr_HttpTransportException::__construct()</a> in HttpTransportException.php</div>
-							<div class="index-item-description">HttpTransportException Constructor</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">__construct</span>
-					</dt>
-		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#method__construct">Apache_Solr_Response::__construct()</a> in Response.php</div>
 							<div class="index-item-description">Constructor. Takes the raw HTTP response body and the exploded HTTP headers</div>
 					</dd>
@@ -392,18 +380,11 @@
 							<div class="index-item-description">Constructor. Takes arrays of read and write service instances or descriptions</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">__destruct</span>
+						<span class="method-title">__construct</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html#method__destruct">Apache_Solr_HttpTransport_Curl::__destruct()</a> in Curl.php</div>
-							<div class="index-item-description">Closes a curl session</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">__get</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#method__get">Apache_Solr_Response::__get()</a> in Response.php</div>
-							<div class="index-item-description">Magic get to expose the parsed data and to lazily load it</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#method__construct">Apache_Solr_Service::__construct()</a> in Service.php</div>
+							<div class="index-item-description">Constructor. All parameters are optional and will take on default values  if not specified.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">__get</span>
@@ -413,18 +394,18 @@
 							<div class="index-item-description">Magic get for field values</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">__isset</span>
+						<span class="method-title">__get</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Document.html#method__isset">Apache_Solr_Document::__isset()</a> in Document.php</div>
-							<div class="index-item-description">Magic isset for fields values.  Do not call directly. Allows usage:</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#method__get">Apache_Solr_Response::__get()</a> in Response.php</div>
+							<div class="index-item-description">Magic get to expose the parsed data and to lazily load it</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">__isset</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#method__isset">Apache_Solr_Response::__isset()</a> in Response.php</div>
-							<div class="index-item-description">Magic function for isset function on parsed data</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Document.html#method__isset">Apache_Solr_Document::__isset()</a> in Document.php</div>
+							<div class="index-item-description">Magic isset for fields values.  Do not call directly. Allows usage:</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">__set</span>
@@ -452,14 +433,14 @@
 						<span class="method-title">add</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodadd">Apache_Solr_Service::add()</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodadd">Apache_Solr_Service_Balancer::add()</a> in Balancer.php</div>
 							<div class="index-item-description">Raw Add Method. Takes a raw post body and sends it to the update service.  Post body  should be a complete and well formed &quot;add&quot; xml document.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">add</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodadd">Apache_Solr_Service_Balancer::add()</a> in Balancer.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodadd">Apache_Solr_Service::add()</a> in Service.php</div>
 							<div class="index-item-description">Raw Add Method. Takes a raw post body and sends it to the update service.  Post body  should be a complete and well formed &quot;add&quot; xml document.</div>
 					</dd>
 			<dt class="field">
@@ -480,14 +461,14 @@
 						<span class="method-title">addDocuments</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodaddDocuments">Apache_Solr_Service_Balancer::addDocuments()</a> in Balancer.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodaddDocuments">Apache_Solr_Service::addDocuments()</a> in Service.php</div>
 							<div class="index-item-description">Add an array of Solr Documents to the index all at once</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">addDocuments</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodaddDocuments">Apache_Solr_Service::addDocuments()</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodaddDocuments">Apache_Solr_Service_Balancer::addDocuments()</a> in Balancer.php</div>
 							<div class="index-item-description">Add an array of Solr Documents to the index all at once</div>
 					</dd>
 			<dt class="field">
@@ -519,83 +500,6 @@
 							<div class="index-item-description">Holds Key / Value pairs that represent a Solr Document along with any associated boost  values. Field values can be accessed by direct dereferencing such as:</div>
 					</dd>
 			<dt class="field">
-						Apache_Solr_Exception
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Exception.html">Apache_Solr_Exception</a> in Exception.php</div>
-							<div class="index-item-description">Copyright (c) 2007-2011, Servigistics, Inc.</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_HttpTransportException
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransportException.html">Apache_Solr_HttpTransportException</a> in HttpTransportException.php</div>
-							<div class="index-item-description">Copyright (c) 2007-2011, Servigistics, Inc.</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_HttpTransport_Abstract
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Abstract.html">Apache_Solr_HttpTransport_Abstract</a> in Abstract.php</div>
-							<div class="index-item-description">Convenience class that implements the transport implementation. Can be extended by</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_HttpTransport_Curl
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html">Apache_Solr_HttpTransport_Curl</a> in Curl.php</div>
-							<div class="index-item-description">A Curl based HTTP transport. Uses a single curl session for all requests.</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_HttpTransport_CurlNoReuse
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_CurlNoReuse.html">Apache_Solr_HttpTransport_CurlNoReuse</a> in CurlNoReuse.php</div>
-							<div class="index-item-description">An alternative Curl HTTP transport that opens and closes a curl session for  every request. This isn't the recommended way to use curl, but some version of  PHP have memory issues.</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_HttpTransport_FileGetContents
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_FileGetContents.html">Apache_Solr_HttpTransport_FileGetContents</a> in FileGetContents.php</div>
-							<div class="index-item-description">HTTP Transport implemenation that uses the builtin http URL wrappers and file_get_contents</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_HttpTransport_Interface
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Interface.html">Apache_Solr_HttpTransport_Interface</a> in Interface.php</div>
-							<div class="index-item-description">Interface that all Transport (HTTP Requester) implementations must implement. These</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_HttpTransport_Response
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html">Apache_Solr_HttpTransport_Response</a> in Response.php</div>
-							<div class="index-item-description">Represents the required pieces of an HTTP response provided by HTTP transport</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_InvalidArgumentException
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_InvalidArgumentException.html">Apache_Solr_InvalidArgumentException</a> in InvalidArgumentException.php</div>
-							<div class="index-item-description">Copyright (c) 2007-2011, Servigistics, Inc.</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_NoServiceAvailableException
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_NoServiceAvailableException.html">Apache_Solr_NoServiceAvailableException</a> in NoServiceAvailableException.php</div>
-							<div class="index-item-description">Copyright (c) 2007-2011, Servigistics, Inc.</div>
-					</dd>
-			<dt class="field">
-						Apache_Solr_ParserException
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_ParserException.html">Apache_Solr_ParserException</a> in ParserException.php</div>
-							<div class="index-item-description">Copyright (c) 2007-2011, Servigistics, Inc.</div>
-					</dd>
-			<dt class="field">
 						Apache_Solr_Response
 					</dt>
 		<dd class="index-item-body">
@@ -615,12 +519,6 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html">Apache_Solr_Service_Balancer</a> in Balancer.php</div>
 							<div class="index-item-description">Reference Implementation for using multiple Solr services in a distribution. Functionality</div>
-					</dd>
-			<dt class="field">
-						<span class="include-title">Abstract.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_HttpTransport---Abstract.php.html">Abstract.php</a> in Abstract.php</div>
 					</dd>
 		</dl>
 	<a name="b"></a>
@@ -655,27 +553,15 @@
 						<span class="method-title">commit</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodcommit">Apache_Solr_Service_Balancer::commit()</a> in Balancer.php</div>
-							<div class="index-item-description">Send a commit command.  Will be synchronous unless both wait parameters are set  to false.</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodcommit">Apache_Solr_Service::commit()</a> in Service.php</div>
+							<div class="index-item-description">Send a commit command.  Will be synchronous unless both wait parameters are set to false.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">commit</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodcommit">Apache_Solr_Service::commit()</a> in Service.php</div>
-							<div class="index-item-description">Send a commit command.  Will be synchronous unless both wait parameters are set to false.</div>
-					</dd>
-			<dt class="field">
-						<span class="include-title">Curl.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_HttpTransport---Curl.php.html">Curl.php</a> in Curl.php</div>
-					</dd>
-			<dt class="field">
-						<span class="include-title">CurlNoReuse.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_HttpTransport---CurlNoReuse.php.html">CurlNoReuse.php</a> in CurlNoReuse.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodcommit">Apache_Solr_Service_Balancer::commit()</a> in Balancer.php</div>
+							<div class="index-item-description">Send a commit command.  Will be synchronous unless both wait parameters are set  to false.</div>
 					</dd>
 		</dl>
 	<a name="d"></a>
@@ -689,22 +575,15 @@
 						<span class="method-title">delete</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methoddelete">Apache_Solr_Service_Balancer::delete()</a> in Balancer.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methoddelete">Apache_Solr_Service::delete()</a> in Service.php</div>
 							<div class="index-item-description">Raw Delete Method. Takes a raw post body and sends it to the update service. Body should be  a complete and well formed &quot;delete&quot; xml document</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">delete</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methoddelete">Apache_Solr_Service::delete()</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methoddelete">Apache_Solr_Service_Balancer::delete()</a> in Balancer.php</div>
 							<div class="index-item-description">Raw Delete Method. Takes a raw post body and sends it to the update service. Body should be  a complete and well formed &quot;delete&quot; xml document</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">deleteById</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methoddeleteById">Apache_Solr_Service_Balancer::deleteById()</a> in Balancer.php</div>
-							<div class="index-item-description">Create a delete document based on document ID</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">deleteById</span>
@@ -714,11 +593,11 @@
 							<div class="index-item-description">Create a delete document based on document ID</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">deleteByMultipleIds</span>
+						<span class="method-title">deleteById</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methoddeleteByMultipleIds">Apache_Solr_Service_Balancer::deleteByMultipleIds()</a> in Balancer.php</div>
-							<div class="index-item-description">Create and post a delete document based on multiple document IDs.</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methoddeleteById">Apache_Solr_Service_Balancer::deleteById()</a> in Balancer.php</div>
+							<div class="index-item-description">Create a delete document based on document ID</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">deleteByMultipleIds</span>
@@ -731,14 +610,14 @@
 						<span class="method-title">deleteByQuery</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methoddeleteByQuery">Apache_Solr_Service_Balancer::deleteByQuery()</a> in Balancer.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methoddeleteByQuery">Apache_Solr_Service::deleteByQuery()</a> in Service.php</div>
 							<div class="index-item-description">Create a delete document based on a query and submit it</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">deleteByQuery</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methoddeleteByQuery">Apache_Solr_Service::deleteByQuery()</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methoddeleteByQuery">Apache_Solr_Service_Balancer::deleteByQuery()</a> in Balancer.php</div>
 							<div class="index-item-description">Create a delete document based on a query and submit it</div>
 					</dd>
 			<dt class="field">
@@ -759,22 +638,15 @@
 						<span class="method-title">escape</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodescape">Apache_Solr_Service_Balancer::escape()</a> in Balancer.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodescape">Apache_Solr_Service::escape()</a> in Service.php</div>
 							<div class="index-item-description">Escape a value for special query characters such as ':', '(', ')', '*', '?', etc.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">escape</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodescape">Apache_Solr_Service::escape()</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodescape">Apache_Solr_Service_Balancer::escape()</a> in Balancer.php</div>
 							<div class="index-item-description">Escape a value for special query characters such as ':', '(', ')', '*', '?', etc.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">escapePhrase</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodescapePhrase">Apache_Solr_Service_Balancer::escapePhrase()</a> in Balancer.php</div>
-							<div class="index-item-description">Escape a value meant to be contained in a phrase for special query characters</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">escapePhrase</span>
@@ -784,65 +656,11 @@
 							<div class="index-item-description">Escape a value meant to be contained in a phrase for special query characters</div>
 					</dd>
 			<dt class="field">
-						<span class="include-title">Exception.php</span>
+						<span class="method-title">escapePhrase</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_Exception.php.html">Exception.php</a> in Exception.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">extract</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodextract">Apache_Solr_Service_Balancer::extract()</a> in Balancer.php</div>
-							<div class="index-item-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">extract</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodextract">Apache_Solr_Service::extract()</a> in Service.php</div>
-							<div class="index-item-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">extractFromString</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodextractFromString">Apache_Solr_Service_Balancer::extractFromString()</a> in Balancer.php</div>
-							<div class="index-item-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">extractFromString</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodextractFromString">Apache_Solr_Service::extractFromString()</a> in Service.php</div>
-							<div class="index-item-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">extractFromUrl</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodextractFromUrl">Apache_Solr_Service::extractFromUrl()</a> in Service.php</div>
-							<div class="index-item-description">Use Solr Cell to extract document contents. See <a href="http://wiki.apache.org/solr/ExtractingRequestHandler">http://wiki.apache.org/solr/ExtractingRequestHandler</a> for information on how  to use Solr Cell and what parameters are available.</div>
-					</dd>
-			<dt class="field">
-						EXTRACT_SERVLET
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#constEXTRACT_SERVLET">Apache_Solr_Service::EXTRACT_SERVLET</a> in Service.php</div>
-					</dd>
-		</dl>
-	<a name="f"></a>
-	<div class="index-letter-section">
-		<div style="float: left" class="index-letter-title">f</div>
-		<div style="float: right"><a href="#top">top</a></div>
-		<div style="clear: both"></div>
-	</div>
-	<dl>
-			<dt class="field">
-						<span class="include-title">FileGetContents.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_HttpTransport---FileGetContents.php.html">FileGetContents.php</a> in FileGetContents.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodescapePhrase">Apache_Solr_Service_Balancer::escapePhrase()</a> in Balancer.php</div>
+							<div class="index-item-description">Escape a value meant to be contained in a phrase for special query characters</div>
 					</dd>
 		</dl>
 	<a name="g"></a>
@@ -852,13 +670,6 @@
 		<div style="clear: both"></div>
 	</div>
 	<dl>
-			<dt class="field">
-						<span class="method-title">getBody</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html#methodgetBody">Apache_Solr_HttpTransport_Response::getBody()</a> in Response.php</div>
-							<div class="index-item-description">Get the raw response body</div>
-					</dd>
 			<dt class="field">
 						<span class="method-title">getBoost</span>
 					</dt>
@@ -878,7 +689,6 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodgetCreateDocuments">Apache_Solr_Service_Balancer::getCreateDocuments()</a> in Balancer.php</div>
-							<div class="index-item-description">Get the current state of teh create documents flag.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">getCreateDocuments</span>
@@ -886,41 +696,6 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodgetCreateDocuments">Apache_Solr_Service::getCreateDocuments()</a> in Service.php</div>
 							<div class="index-item-description">Get the current state of teh create documents flag.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getDefaultStatusMessage</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html#methodgetDefaultStatusMessage">Apache_Solr_HttpTransport_Response::getDefaultStatusMessage()</a> in Response.php</div>
-							<div class="index-item-description">Get the HTTP status message based on status code</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getDefaultTimeout</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Abstract.html#methodgetDefaultTimeout">Apache_Solr_HttpTransport_Abstract::getDefaultTimeout()</a> in Abstract.php</div>
-							<div class="index-item-description">Get the current default timeout setting (initially the default_socket_timeout ini setting)  in seconds</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getDefaultTimeout</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Interface.html#methodgetDefaultTimeout">Apache_Solr_HttpTransport_Interface::getDefaultTimeout()</a> in Interface.php</div>
-							<div class="index-item-description">Get the current default timeout for all HTTP requests</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getDefaultTimeout</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodgetDefaultTimeout">Apache_Solr_Service::getDefaultTimeout()</a> in Service.php</div>
-							<div class="index-item-description">Get the current default timeout setting (initially the default_socket_timeout ini setting)  in seconds</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getEncoding</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html#methodgetEncoding">Apache_Solr_HttpTransport_Response::getEncoding()</a> in Response.php</div>
-							<div class="index-item-description">Get the charset encoding of the response body.</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">getEncoding</span>
@@ -986,25 +761,11 @@
 							<div class="index-item-description">Get the HTTP status message of the response</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">getHttpTransport</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodgetHttpTransport">Apache_Solr_Service::getHttpTransport()</a> in Service.php</div>
-							<div class="index-item-description">Get the current configured HTTP Transport</div>
-					</dd>
-			<dt class="field">
 						<span class="method-title">getIterator</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Document.html#methodgetIterator">Apache_Solr_Document::getIterator()</a> in Document.php</div>
 							<div class="index-item-description">IteratorAggregate implementation function. Allows usage:</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getMimeType</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html#methodgetMimeType">Apache_Solr_HttpTransport_Response::getMimeType()</a> in Response.php</div>
-							<div class="index-item-description">Get the mimetype of the response body</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">getNamedListTreatment</span>
@@ -1035,66 +796,11 @@
 							<div class="index-item-description">Get the raw response as it was given to this object</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">getResponse</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransportException.html#methodgetResponse">Apache_Solr_HttpTransportException::getResponse()</a> in HttpTransportException.php</div>
-							<div class="index-item-description">Get the response for which this exception was generated</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getStatusCode</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html#methodgetStatusCode">Apache_Solr_HttpTransport_Response::getStatusCode()</a> in Response.php</div>
-							<div class="index-item-description">Get the status code of the response</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">getStatusMessage</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Response.html#methodgetStatusMessage">Apache_Solr_HttpTransport_Response::getStatusMessage()</a> in Response.php</div>
-							<div class="index-item-description">Get the status message of the response</div>
-					</dd>
-			<dt class="field">
 						<span class="method-title">getType</span>
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#methodgetType">Apache_Solr_Response::getType()</a> in Response.php</div>
 							<div class="index-item-description">Get content type of this Solr response</div>
-					</dd>
-		</dl>
-	<a name="h"></a>
-	<div class="index-letter-section">
-		<div style="float: left" class="index-letter-title">h</div>
-		<div style="float: right"><a href="#top">top</a></div>
-		<div style="clear: both"></div>
-	</div>
-	<dl>
-			<dt class="field">
-						<span class="include-title">HttpTransportException.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_HttpTransportException.php.html">HttpTransportException.php</a> in HttpTransportException.php</div>
-					</dd>
-		</dl>
-	<a name="i"></a>
-	<div class="index-letter-section">
-		<div style="float: left" class="index-letter-title">i</div>
-		<div style="float: right"><a href="#top">top</a></div>
-		<div style="clear: both"></div>
-	</div>
-	<dl>
-			<dt class="field">
-						<span class="include-title">Interface.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_HttpTransport---Interface.php.html">Interface.php</a> in Interface.php</div>
-					</dd>
-			<dt class="field">
-						<span class="include-title">InvalidArgumentException.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_InvalidArgumentException.php.html">InvalidArgumentException.php</a> in InvalidArgumentException.php</div>
 					</dd>
 		</dl>
 	<a name="m"></a>
@@ -1138,12 +844,6 @@
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#constNAMED_LIST_MAP">Apache_Solr_Service::NAMED_LIST_MAP</a> in Service.php</div>
 					</dd>
-			<dt class="field">
-						<span class="include-title">NoServiceAvailableException.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_NoServiceAvailableException.php.html">NoServiceAvailableException.php</a> in NoServiceAvailableException.php</div>
-					</dd>
 		</dl>
 	<a name="o"></a>
 	<div class="index-letter-section">
@@ -1175,98 +875,17 @@
 	</div>
 	<dl>
 			<dt class="field">
-						<span class="include-title">ParserException.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_ParserException.php.html">ParserException.php</a> in ParserException.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performGetRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_CurlNoReuse.html#methodperformGetRequest">Apache_Solr_HttpTransport_CurlNoReuse::performGetRequest()</a> in CurlNoReuse.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performGetRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html#methodperformGetRequest">Apache_Solr_HttpTransport_Curl::performGetRequest()</a> in Curl.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performGetRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_FileGetContents.html#methodperformGetRequest">Apache_Solr_HttpTransport_FileGetContents::performGetRequest()</a> in FileGetContents.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performGetRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Interface.html#methodperformGetRequest">Apache_Solr_HttpTransport_Interface::performGetRequest()</a> in Interface.php</div>
-							<div class="index-item-description">Perform a GET HTTP operation with an optional timeout and return the response  contents, use getLastResponseHeaders to retrieve HTTP headers</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performHeadRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Interface.html#methodperformHeadRequest">Apache_Solr_HttpTransport_Interface::performHeadRequest()</a> in Interface.php</div>
-							<div class="index-item-description">Perform a HEAD HTTP operation with an optional timeout and return the response  headers - NOTE: head requests have no response body</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performHeadRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_FileGetContents.html#methodperformHeadRequest">Apache_Solr_HttpTransport_FileGetContents::performHeadRequest()</a> in FileGetContents.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performHeadRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_CurlNoReuse.html#methodperformHeadRequest">Apache_Solr_HttpTransport_CurlNoReuse::performHeadRequest()</a> in CurlNoReuse.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performHeadRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html#methodperformHeadRequest">Apache_Solr_HttpTransport_Curl::performHeadRequest()</a> in Curl.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performPostRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_CurlNoReuse.html#methodperformPostRequest">Apache_Solr_HttpTransport_CurlNoReuse::performPostRequest()</a> in CurlNoReuse.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performPostRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Interface.html#methodperformPostRequest">Apache_Solr_HttpTransport_Interface::performPostRequest()</a> in Interface.php</div>
-							<div class="index-item-description">Perform a POST HTTP operation with an optional timeout and return the response  contents, use getLastResponseHeaders to retrieve HTTP headers</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performPostRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html#methodperformPostRequest">Apache_Solr_HttpTransport_Curl::performPostRequest()</a> in Curl.php</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">performPostRequest</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_FileGetContents.html#methodperformPostRequest">Apache_Solr_HttpTransport_FileGetContents::performPostRequest()</a> in FileGetContents.php</div>
-					</dd>
-			<dt class="field">
 						<span class="method-title">phrase</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodphrase">Apache_Solr_Service::phrase()</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodphrase">Apache_Solr_Service_Balancer::phrase()</a> in Balancer.php</div>
 							<div class="index-item-description">Convenience function for creating phrase syntax from a value</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">phrase</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodphrase">Apache_Solr_Service_Balancer::phrase()</a> in Balancer.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodphrase">Apache_Solr_Service::phrase()</a> in Service.php</div>
 							<div class="index-item-description">Convenience function for creating phrase syntax from a value</div>
 					</dd>
 			<dt class="field">
@@ -1291,12 +910,6 @@
 		<div style="clear: both"></div>
 	</div>
 	<dl>
-			<dt class="field">
-						<span class="include-title">Response.php</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/_HttpTransport---Response.php.html">Response.php</a> in Response.php</div>
-					</dd>
 			<dt class="field">
 						<span class="method-title">removeReadService</span>
 					</dt>
@@ -1369,36 +982,14 @@
 						<span class="method-title">setCreateDocuments</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodsetCreateDocuments">Apache_Solr_Service::setCreateDocuments()</a> in Service.php</div>
-							<div class="index-item-description">Set the create documents flag. This determines whether <a href="Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a> objects will  parse the response and create <a href="Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a> instances in place.</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodsetCreateDocuments">Apache_Solr_Service_Balancer::setCreateDocuments()</a> in Balancer.php</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">setCreateDocuments</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodsetCreateDocuments">Apache_Solr_Service_Balancer::setCreateDocuments()</a> in Balancer.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodsetCreateDocuments">Apache_Solr_Service::setCreateDocuments()</a> in Service.php</div>
 							<div class="index-item-description">Set the create documents flag. This determines whether <a href="Apache/Solr/Apache_Solr_Response.html">Apache_Solr_Response</a> objects will  parse the response and create <a href="Apache/Solr/Apache_Solr_Document.html">Apache_Solr_Document</a> instances in place.</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">setDefaultTimeout</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Abstract.html#methodsetDefaultTimeout">Apache_Solr_HttpTransport_Abstract::setDefaultTimeout()</a> in Abstract.php</div>
-							<div class="index-item-description">Set the current default timeout for all HTTP requests</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">setDefaultTimeout</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodsetDefaultTimeout">Apache_Solr_Service::setDefaultTimeout()</a> in Service.php</div>
-							<div class="index-item-description">Set the default timeout for all calls that aren't passed a specific timeout</div>
-					</dd>
-			<dt class="field">
-						<span class="method-title">setDefaultTimeout</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Interface.html#methodsetDefaultTimeout">Apache_Solr_HttpTransport_Interface::setDefaultTimeout()</a> in Interface.php</div>
-							<div class="index-item-description">Set the current default timeout for all HTTP requests</div>
 					</dd>
 			<dt class="field">
 						<span class="method-title">setField</span>
@@ -1422,13 +1013,6 @@
 							<div class="index-item-description">Set the host used. If empty will fallback to constants</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">setHttpTransport</span>
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodsetHttpTransport">Apache_Solr_Service::setHttpTransport()</a> in Service.php</div>
-							<div class="index-item-description">Set the HTTP Transport implemenation that will be used for all HTTP requests</div>
-					</dd>
-			<dt class="field">
 						<span class="method-title">setMultiValue</span>
 					</dt>
 		<dd class="index-item-body">
@@ -1436,10 +1020,10 @@
 							<div class="index-item-description">Handle the array manipulation for a multi-valued field</div>
 					</dd>
 			<dt class="field">
-						<span class="method-title">setNamedListTreatment</span>
+						<span class="method-title">setNamedListTreatmet</span>
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodsetNamedListTreatment">Apache_Solr_Service::setNamedListTreatment()</a> in Service.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#methodsetNamedListTreatmet">Apache_Solr_Service::setNamedListTreatmet()</a> in Service.php</div>
 							<div class="index-item-description">Set how NamedLists should be formatted in the response data. This mainly effects  the facet counts format.</div>
 					</dd>
 			<dt class="field">
@@ -1489,32 +1073,18 @@
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#methodsetWritePingTimeout">Apache_Solr_Service_Balancer::setWritePingTimeout()</a> in Balancer.php</div>
 					</dd>
 			<dt class="field">
+						SOLR_VERSION
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#constSOLR_VERSION">Apache_Solr_Service::SOLR_VERSION</a> in Service.php</div>
+							<div class="index-item-description">Response version we support</div>
+					</dd>
+			<dt class="field">
 						SOLR_WRITER
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#constSOLR_WRITER">Apache_Solr_Service::SOLR_WRITER</a> in Service.php</div>
 							<div class="index-item-description">Response writer we'll request - JSON. See http://code.google.com/p/solr-php-client/issues/detail?id=6#c1 for reasoning</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#constSVN_ID">Apache_Solr_Service_Balancer::SVN_ID</a> in Balancer.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html#constSVN_ID">Apache_Solr_HttpTransport_Curl::SVN_ID</a> in Curl.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#constSVN_ID">Apache_Solr_Service::SVN_ID</a> in Service.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
 					</dd>
 			<dt class="field">
 						SVN_ID
@@ -1527,49 +1097,7 @@
 						SVN_ID
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_ParserException.html#constSVN_ID">Apache_Solr_ParserException::SVN_ID</a> in ParserException.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_InvalidArgumentException.html#constSVN_ID">Apache_Solr_InvalidArgumentException::SVN_ID</a> in InvalidArgumentException.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_FileGetContents.html#constSVN_ID">Apache_Solr_HttpTransport_FileGetContents::SVN_ID</a> in FileGetContents.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransportException.html#constSVN_ID">Apache_Solr_HttpTransportException::SVN_ID</a> in HttpTransportException.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Exception.html#constSVN_ID">Apache_Solr_Exception::SVN_ID</a> in Exception.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_NoServiceAvailableException.html#constSVN_ID">Apache_Solr_NoServiceAvailableException::SVN_ID</a> in NoServiceAvailableException.php</div>
-							<div class="index-item-description">SVN ID meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_ID
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_CurlNoReuse.html#constSVN_ID">Apache_Solr_HttpTransport_CurlNoReuse::SVN_ID</a> in CurlNoReuse.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service_Balancer.html#constSVN_ID">Apache_Solr_Service_Balancer::SVN_ID</a> in Balancer.php</div>
 							<div class="index-item-description">SVN ID meta data for this class</div>
 					</dd>
 			<dt class="field">
@@ -1577,6 +1105,13 @@
 					</dt>
 		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Document.html#constSVN_ID">Apache_Solr_Document::SVN_ID</a> in Document.php</div>
+							<div class="index-item-description">SVN ID meta data for this class</div>
+					</dd>
+			<dt class="field">
+						SVN_ID
+					</dt>
+		<dd class="index-item-body">
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Service.html#constSVN_ID">Apache_Solr_Service::SVN_ID</a> in Service.php</div>
 							<div class="index-item-description">SVN ID meta data for this class</div>
 					</dd>
 			<dt class="field">
@@ -1590,49 +1125,7 @@
 						SVN_REVISION
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Document.html#constSVN_REVISION">Apache_Solr_Document::SVN_REVISION</a> in Document.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Exception.html#constSVN_REVISION">Apache_Solr_Exception::SVN_REVISION</a> in Exception.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_FileGetContents.html#constSVN_REVISION">Apache_Solr_HttpTransport_FileGetContents::SVN_REVISION</a> in FileGetContents.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransportException.html#constSVN_REVISION">Apache_Solr_HttpTransportException::SVN_REVISION</a> in HttpTransportException.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
 			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Response.html#constSVN_REVISION">Apache_Solr_Response::SVN_REVISION</a> in Response.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_CurlNoReuse.html#constSVN_REVISION">Apache_Solr_HttpTransport_CurlNoReuse::SVN_REVISION</a> in CurlNoReuse.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_NoServiceAvailableException.html#constSVN_REVISION">Apache_Solr_NoServiceAvailableException::SVN_REVISION</a> in NoServiceAvailableException.php</div>
 							<div class="index-item-description">SVN Revision meta data for this class</div>
 					</dd>
 			<dt class="field">
@@ -1646,21 +1139,7 @@
 						SVN_REVISION
 					</dt>
 		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_HttpTransport_Curl.html#constSVN_REVISION">Apache_Solr_HttpTransport_Curl::SVN_REVISION</a> in Curl.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_InvalidArgumentException.html#constSVN_REVISION">Apache_Solr_InvalidArgumentException::SVN_REVISION</a> in InvalidArgumentException.php</div>
-							<div class="index-item-description">SVN Revision meta data for this class</div>
-					</dd>
-			<dt class="field">
-						SVN_REVISION
-					</dt>
-		<dd class="index-item-body">
-			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_ParserException.html#constSVN_REVISION">Apache_Solr_ParserException::SVN_REVISION</a> in ParserException.php</div>
+			<div class="index-item-details"><a href="Apache/Solr/Apache_Solr_Document.html#constSVN_REVISION">Apache_Solr_Document::SVN_REVISION</a> in Document.php</div>
 							<div class="index-item-description">SVN Revision meta data for this class</div>
 					</dd>
 		</dl>
@@ -1706,10 +1185,7 @@
 	<a class="index-letter" href="elementindex_Apache.html#c">c</a>
 	<a class="index-letter" href="elementindex_Apache.html#d">d</a>
 	<a class="index-letter" href="elementindex_Apache.html#e">e</a>
-	<a class="index-letter" href="elementindex_Apache.html#f">f</a>
 	<a class="index-letter" href="elementindex_Apache.html#g">g</a>
-	<a class="index-letter" href="elementindex_Apache.html#h">h</a>
-	<a class="index-letter" href="elementindex_Apache.html#i">i</a>
 	<a class="index-letter" href="elementindex_Apache.html#m">m</a>
 	<a class="index-letter" href="elementindex_Apache.html#n">n</a>
 	<a class="index-letter" href="elementindex_Apache.html#o">o</a>
