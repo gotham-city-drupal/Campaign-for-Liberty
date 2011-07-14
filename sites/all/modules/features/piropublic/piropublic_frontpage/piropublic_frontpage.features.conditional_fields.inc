@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_conditional_fields_default_fields().
  */
-function piropublic_conditional_fields_default_fields() {
+function piropublic_frontpage_conditional_fields_default_fields() {
 $items = array();
 $items[] = array (
   'control_field_name' => 'field_frontpage_banner_type',

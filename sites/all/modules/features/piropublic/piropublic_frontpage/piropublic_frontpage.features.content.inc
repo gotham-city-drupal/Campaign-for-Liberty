@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_content_default_fields().
  */
-function piropublic_content_default_fields() {
+function piropublic_frontpage_content_default_fields() {
   $fields = array();
 
   // Exported field: field_events

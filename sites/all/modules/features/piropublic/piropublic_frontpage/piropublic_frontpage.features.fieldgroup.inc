@@ -3,7 +3,7 @@
 /**
  * Implementation of hook_fieldgroup_default_groups().
  */
-function piropublic_fieldgroup_default_groups() {
+function piropublic_frontpage_fieldgroup_default_groups() {
   $groups = array();
 
   // Exported group: group_promote
