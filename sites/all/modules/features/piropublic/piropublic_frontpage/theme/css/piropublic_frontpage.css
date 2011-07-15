@@ -51,26 +51,18 @@
   margin-bottom: 10px;
 }
 
-.front #content .views-field-body {
-  font-size: 14px;
-  margin-left: 100px;
-}
-
 .front #content .views-field-delete-node {
   font-size: 11px;
-  margin-left: 100px;
 }
 
 .front #content .views-field-nodequeue-links ul.links li {
   font-size: 11px;
-  margin-left: 100px;
   display: block;
 }
 
 .front #content .views-field-view-node {
   display: inline;
   font-size: 12px;
-  margin-left: 100px;
   border-right: 1px solid #ccc;
   padding-right: 10px;
 }
