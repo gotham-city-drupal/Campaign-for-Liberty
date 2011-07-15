@@ -676,7 +676,7 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'media_youtube__use_jw_flv';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
 
   $export['media_youtube__use_jw_flv'] = $strongarm;
   $strongarm = new stdClass;
@@ -870,87 +870,13 @@ function piropublic_strongarm() {
   $strongarm->value = array(
     'memblog_node_form' => array(
       'menu' => 'menu',
+      'og_nodeapi' => 'og_nodeapi',
       'revision_information' => 'revision_information',
       'author' => 'author',
-      'options' => 'options',
-      'path' => 'path',
-      'comment_settings' => 'comment_settings',
-      'notifications' => 0,
-    ),
-    'region_node_form' => array(
-      'menu' => 'menu',
-      'revision_information' => 'revision_information',
-      'author' => 'author',
-      'options' => 'options',
-      'comment_settings' => 'comment_settings',
-      'path' => 'path',
-      'notifications' => 0,
-      'themes' => 0,
-    ),
-    'county_node_form' => array(
-      'menu' => 'menu',
-      'revision_information' => 'revision_information',
-      'author' => 'author',
-      'options' => 'options',
-      'comment_settings' => 'comment_settings',
-      'path' => 'path',
-      'notifications' => 0,
-      'themes' => 0,
-    ),
-    'country_node_form' => array(
-      'menu' => 'menu',
-      'author' => 'author',
-      'revision_information' => 'revision_information',
-      'options' => 'options',
-      'path' => 'path',
-      'comment_settings' => 'comment_settings',
-      'notifications' => 0,
-      'themes' => 0,
-    ),
-    'state_node_form' => array(
-      'menu' => 'menu',
-      'revision_information' => 'revision_information',
-      'author' => 'author',
-      'options' => 'options',
-      'comment_settings' => 'comment_settings',
-      'path' => 'path',
-      'notifications' => 0,
-      'themes' => 0,
-    ),
-    'frontpage_banner_node_form' => array(
-      'menu' => 'menu',
-      'author' => 'author',
-      'revision_information' => 'revision_information',
-      'options' => 'options',
-      'path' => 'path',
-      'xmlsitemap' => 'xmlsitemap',
-      'attachments' => 'attachments',
-      'comment_settings' => 'comment_settings',
-      'group_frontpage_banner_vidgrp' => 0,
-      'group_frontpage_banner_lnkgrp' => 0,
-    ),
-    'donation_node_form' => array(
-      'menu' => 'menu',
-      'revision_information' => 'revision_information',
-      'author' => 'author',
-      'options' => 'options',
-      'comment_settings' => 'comment_settings',
-      'path' => 'path',
-      'attachments' => 'attachments',
-      'xmlsitemap' => 'xmlsitemap',
-      'base' => 0,
-      'shipping' => 0,
-    ),
-    'featured_blocks_node_form' => array(
-      'menu' => 'menu',
-      'author' => 'author',
-      'revision_information' => 'revision_information',
       'options' => 'options',
       'xmlsitemap' => 'xmlsitemap',
-      'comment_settings' => 'comment_settings',
       'path' => 'path',
-      'attachments' => 'attachments',
-      'group_promote' => 0,
+      'comment_settings' => 'comment_settings',
     ),
   );
 

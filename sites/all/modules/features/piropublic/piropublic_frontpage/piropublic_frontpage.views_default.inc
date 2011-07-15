@@ -10,7 +10,7 @@ function piropublic_frontpage_views_default_views() {
   $view = new view;
   $view->name = 'front_page';
   $view->description = 'Page and blocks for frontpage';
-  $view->tag = 'piropublic_frontpage';
+  $view->tag = 'old_misc';
   $view->view_php = '';
   $view->base_table = 'node';
   $view->is_cacheable = FALSE;
@@ -195,13 +195,42 @@ function piropublic_frontpage_views_default_views() {
       'empty' => '',
       'hide_empty' => 0,
       'empty_zero' => 0,
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'body',
       'table' => 'node_revisions',
       'field' => 'body',
       'override' => array(
         'button' => 'Override',
       ),
+      'relationship' => 'none',
+    ),
+    'teaser' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'exclude' => 0,
+      'id' => 'teaser',
+      'table' => 'node_revisions',
+      'field' => 'teaser',
       'relationship' => 'none',
     ),
     'view_node' => array(
