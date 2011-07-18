@@ -1,0 +1,243 @@
+<?php
+// $Id: reverse_geo.module,v1.0 $
+/*
+ * TODO: consider a settings page with API information?
+ * TODO: make sure api limits are not exceeded.
+ */
+/**
+ * Perform a reverse geocode on a latlon pair array.
+ * @param $location
+ *   The location coordinates and country to process.
+ * @return
+ *   an associative array with keys 'county' and 'state' and 'district' and 'country' containing the parsed XML.
+ */
+function reverse_geo_reverse_geocode_coords($locations = array()) {
+  $groups = array();
+
+	// Google API
+  if (function_exists('gmap_get_key')) {
+    $key = gmap_get_key();
+  }
+  else {
+    $key = variable_get('location_geocode_google_apikey', '');
+  }
+
+  $query = array(
+  	'latlng' => $locations[0]['latitude'].','.$locations[0]['longitude'],
+    'sensor' => 'false', // Required by TOS.
+  	'key' => $key,
+    //'ll' => 0,
+    //'spn' => 0,
+    'gl' => $locations[0]['country'],
+  );
+
+  $url = url('http://maps.googleapis.com/maps/api/geocode/xml', array(
+    'query' => $query,
+    'external' => TRUE,
+  ));
+
+  $google_xml = simplexml_load_file($url);
+
+  if ($google_xml->status=='OK') {
+    foreach ($google_xml->result as $value) {
+      if ($value->type[0]=='administrative_area_level_2') {
+  	    if ($value->address_component[0]->type[0]=='administrative_area_level_2') {
+      	  $groups['county']['long'] = (string)$value->address_component[0]->long_name;
+          $groups['county']['short'] = (string)$value->address_component[0]->short_name;
+    	}
+        if ($value->address_component[1]->type[0]=='administrative_area_level_1') {
+          $groups['state']['long'] = (string)$value->address_component[1]->long_name;
+      	  $groups['state']['short'] = (string)$value->address_component[1]->short_name;
+    	}
+        if ($value->address_component[2]->type[0]=='country') {
+          $groups['country']['long'] = (string)$value->address_component[2]->long_name;
+      	  $groups['country']['short'] = (string)$value->address_component[2]->short_name;
+    	}
+      }
+    }
+  }
+
+  // govtack.us API
+  if ($groups['country']['long']=='United States') {
+  	$query = array(
+	  'lat' =>  $locations[0]['latitude'],
+      'long' => $locations[0]['longitude'],
+    );
+
+    $url = url('http://www.govtrack.us/perl/district-lookup.cgi', array(
+      'query' => $query,
+      'external' => TRUE,
+    ));
+
+    $govtrack_xml = @simplexml_load_file($url);
+  	if (!$govtrack_xml) {
+  	}
+  	else {
+  	  $groups['region']['state'] = (string)$govtrack_xml->state;
+      $groups['region']['district'] = (string)$govtrack_xml->district;
+  	}
+  }
+
+
+
+  return $groups;
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function reverse_geo_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  if ($node->type=='personal') {
+  	switch ($op) {
+      case 'insert':
+      case 'update':
+  	    // get users location data
+  		$locations = location_load_locations($node->vid);
+
+		// if location data is not useable
+		if (($locations[0]['latitude']==0.000000)&&($locations[0]['longitude']==0.000000)) {
+		 drupal_set_message(t('Please !link to reflect a valid address. You will not be able to join your local and state groups until this is done.', array('!link' => l('update your personal information','node/'.$node->nid.'/edit'))), 'error');
+		}
+		else {
+		  $geogroups = array();
+		  // get new groups
+		  if ($locations[0]['country_name']=='United States') {
+		    $geogroups = reverse_geo_get_location_groups(reverse_geo_reverse_geocode_coords($locations));
+		  }
+		  else {
+		    $c_node = node_load(array('type' => 'country', 'status' => 1, 'title' => $locations[0]['country_name']));
+			$geogroups['country'] = $c_node->nid;
+			$geogroups['state'] = NULL;
+			$geogroups['region'] = NULL;
+			$geogroups['county'] = NULL;
+		  }
+		  reverse_geo_rework_groups($geogroups, $node->uid);
+		}
+		break;
+  	}
+  }
+}
+
+/**
+ * get node id's with reverse geocode array
+ * @param $geogroups
+ *   The reverse geocoded array
+ * @return
+ *   an associative array with keys 'county' and 'state' and 'region' and 'country' pointing to the node ids.
+ */
+
+function reverse_geo_get_location_groups($geogroups) {
+  if (!$geogroups) {
+   return FALSE;
+  }
+  else {
+  	$groups = array();
+  	$groups['country'] = NULL;
+  	$groups['state'] = NULL;
+  	$groups['region'] = NULL;
+  	$groups['county'] = NULL;
+
+    // get and validate state
+	$state_node = node_load(array('title' => $geogroups['state']['long'], 'type' => 'state', 'status' => 1));
+	if ($state_node) {
+	  $groups['state'] = $state_node->nid;
+	}
+
+  	// get and validate country
+	$country_node = node_load(array('title' => $geogroups['country']['long'], 'type' => 'country', 'status' => 1));
+	if ($country_node) {
+	  $groups['country'] = $country_node->nid;
+	}
+
+  	// get correct region and county
+    $get_other_groups = db_query("SELECT n.nid, n.title, n.type FROM {content_field_og_state} og INNER JOIN {node} n ON n.nid = og.nid WHERE og.field_og_state_nid = %d AND (n.title = '%s' OR n.title = '%s') AND n.status = 1 AND (n.type='region' OR n.type='county')", $groups['state'], $geogroups['county']['long'], "Region ".$geogroups['region']['district']);
+    $check_county = db_query("SELECT n.nid, n.title, n.type FROM {content_field_og_state} og INNER JOIN {node} n ON n.nid = og.nid WHERE og.field_og_state_nid = %d AND (n.title = '%s') AND n.status = 1 AND n.type='county'", $groups['state'], $geogroups['county']['long']);
+
+    if (!db_fetch_object($check_county)) {
+      drupal_set_message(t('Your county (!county) in !state is not recognized in our database. Please contact C4L staff to have them update our records so we can place you in the correct county.', array('!county' => $geogroups['county']['long'], '!state' => $geogroups['state']['long'])));
+      watchdog('emergency', t('Could not find county: !county in state: !state | country: !country'), $variables = array('!county' => $geogroups['county']['long'], '!state' => $geogroups['state']['long'], '!country' => $geogroups['country']['long']));
+    }
+
+  	while ($other_groups = db_fetch_object($get_other_groups)) {
+  	  $groups[$other_groups->type] = $other_groups->nid;
+  	}
+
+  	return $groups;
+  }
+}
+
+/**
+ * alter default group memberships based on change of location
+ * @param $geogroups
+ *   The group parsed reverse geocoded array
+ * @param $node
+ *   The uid to use
+ */
+
+function reverse_geo_rework_groups($geogroups = array(), $uid) {
+  // prime settings for new data
+  if (!node_load(array('uid' => $uid, 'type' => 'settings', 'status' => 1))) {
+    $new_settings_node = new StdClass();
+  	$new_settings_node->uid = $uid;
+  	$new_settings_node->type = 'settings';
+    $new_settings_node->status = 1;
+
+    node_save($new_settings_node);
+  }
+
+  $new_settings = array();
+  $settings_node = node_load(array('uid' => $uid, 'type' => 'settings', 'status' => 1));
+
+  // begin reworking groups
+  foreach ($geogroups as $key => $value) {
+    $field = 'field_prof_'.$key;
+  	$old_group = $settings_node->$field;
+
+    if ($old_group[0]['nid']==$value) {
+  	  $new_settings[$key] = $value;
+  	}
+  	else {
+      if (!isset($old_group[0]['nid'])) {
+        if (isset($value)) {
+          og_subscribe_user($value, user_load($uid), TRUE);
+    	  $new_settings[$key] = $value;
+    	}
+    	else {
+    	  $new_settings[$key] = $value;
+     	}
+      }
+  	  else {
+  	    if (isset($value)) {
+  		  if (og_is_group_admin($old_group[0]['nid'], TRUE, $uid)) {
+  		    drupal_set_message(t('You cannot join a new !group_type group while still an administrator for another.'), array('!group_type' => $key), 'error');
+  			$new_settings[$key] = $old_group[0]['nid'];
+  		  }
+  		  else {
+  		    og_delete_subscription($old_group[0]['nid'], $uid);
+  			og_subscribe_user($value, user_load($uid), TRUE);
+  			$new_settings[$key] = $value;
+  		  }
+  		}
+  		else {
+  		  if (og_is_group_admin($old_group[0]['nid'], TRUE, $uid)) {
+  		    drupal_set_message(t('You cannot join a new !group_type group while still an administrator for another.'), array('!group_type' => $key), 'error');
+  			$new_settings[$key] = $old_group[0]['nid'];
+  		  }
+  		  else {
+  		    og_delete_subscription($old_group[0]['nid'], $uid);
+  			$new_settings[$key] = $value;
+  		  }
+        }
+  	  }
+    }
+  }
+
+  foreach ($new_settings as $key => $value) {
+    $field = 'field_prof_'.$key;
+    $section = $settings_node->$field;
+  	$section[0]['nid'] = $value;
+  	$settings_node->$field = $section;
+  }
+
+  node_save($settings_node);
+}

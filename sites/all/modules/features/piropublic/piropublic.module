@@ -27,13 +27,6 @@ function piropublic_form_system_site_information_settings_alter(&$form, &$form_s
 }
 
 /**
- * Implementation of hook_form_FORM_ID_alter().
- */
-function piropublic_form_user_profile_form_alter(&$form, $form_state) {
- unset($form['picture']);
-}
-
-/**
 * Implements hook_uuid_node_features_export_render_alter()
 */
 function piropublic_uuid_node_features_export_render_alter(&$export, $node, $module) {

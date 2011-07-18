@@ -1,0 +1,273 @@
+<?php
+
+include_once('piropublic_community.features.inc');
+
+/**
+ * Implementation of hook_perm()
+ */
+function piropublic_community_perm() {
+  return array('manage local coordinators', 'manage county coordinators', 'manage region coordinators', 'manage state coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups', 'promote to my groups', 'remove from group', 'edit member blogs');
+}
+
+/**
+ * Implementation of hook_init()
+ */
+function piropublic_community_init() {
+  drupal_add_js(drupal_get_path('module', 'piropublic_community') . '/theme/js/jquery.eTruncate.min.js');
+  drupal_add_js(drupal_get_path('module', 'piropublic_community') . '/theme/js/piropublic_community.js');
+  drupal_add_css(drupal_get_path('module', 'piropublic_community') . '/theme/css/piropublic_community.css');
+  if (file_exists(drupal_get_path('module', 'piropublic_community') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css')) {
+    drupal_add_css(drupal_get_path('module', 'piropublic_community') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
+  }
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function piropublic_community_menu() {
+  $items['community/%node/promote/%user/%'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('piropublic_community_promote_member_confirm', 1, 3, 4),
+    'access callback' => 'og_is_group_admin',
+    'access arguments' => array(1),
+    'title' => 'Promote to Coordinator',
+    'file' => 'piropublic_community.pages.inc',
+  );
+  $items['community/%node/demote/%user/%'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('piropublic_community_demote_member_confirm', 1, 3, 4),
+    'access callback' => 'og_is_group_admin',
+    'access arguments' => array(1),
+    'title' => 'Demote Coordinator',
+    'file' => 'piropublic_community.pages.inc',
+  );
+  return $items;
+}
+
+/**
+ * Implementation of hook_form_FORM_ID_alter().
+ */
+function piropublic_community_form_user_profile_form_alter(&$form, $form_state) {
+ unset($form['picture']);
+}
+
+/**
+* Implementation of hook_theme_registry_alter().
+*/
+function piropublic_community_theme_registry_alter(&$theme_registry) {
+  if (!empty($theme_registry['username']['function'])) {
+    $previous_function = $theme_registry['username']['function'];
+    $theme_registry['username']['function'] = 'piropublic_community_theme_username';
+    $theme_registry['username']['arguments']['previous_function'] =
+      $previous_function;
+  }
+}
+
+/**
+ * Implementation of hook_form_alter()
+ *
+ * need to use instead of hook_FORM_ID_alter() because need for other modules to alter first.
+ *
+ */
+function piropublic_community_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'memblog_node_form':
+      if ($form['nid']['#value']) {
+        $form['#attributes']['class'] = 'memblog-edit';
+        if ((user_access('promote to my groups'))&&(!user_access('edit member blogs'))) {
+          global $user;
+          if (($user->uid)!==($form['uid']['#value'])) {
+            $form['#attributes']['class'] = 'promote-only';
+          }
+        }
+      }
+      else {
+        $form['#attributes']['class'] = 'memblog-add';
+      }
+
+      $form['field_group']['#prefix'] = '<div class="promote-box">';
+      $form['field_group']['#suffix'] = '</div>';
+
+      $form['og_nodeapi']['#prefix'] = '<div class="audience-box">';
+      $form['og_nodeapi']['#suffix'] = '</div>';
+    break;
+  }
+}
+
+/**
+* Implements hook_theme().
+*/
+function piropublic_community_theme() {
+  return array(
+    // need to use custom template to fix link module target=blank fail
+  	'piropublic_community_preprocess_user_picture' => array(
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'imagecache_profiles_preprocess_user_picture',
+        'piropublic_community_preprocess_user_picture',
+      ),
+    ),
+  );
+}
+
+
+function piropublic_community_preprocess_user_picture(&$variables) {
+  $variables['picture'] = strip_tags($variables['picture'], '<img>');
+  $account = $variables['account'];
+  if (!empty($account->uid) && user_access('access user profiles')) {
+    $title = t('View user profile.');
+    $attributes = array('attributes' => array('title' => $title), 'html' => TRUE);
+    $variables['picture'] = l($variables['picture'], "profile/$account->uid", $attributes);
+  }
+}
+
+/**
+* theme_username function()
+*/
+function piropublic_community_theme_username($object = NULL, $previous_function = 'theme_username') {
+  // want to use a fake object because objects are passed by reference
+  if ($object->uid && $object->name) {
+    // Shorten the name when it is too long or it will break many tables.
+    if (drupal_strlen($object->name) > 20) {
+      $name = drupal_substr($object->name, 0, 15) . '...';
+    }
+    else {
+      $name = $object->name;
+    }
+
+    if (user_access('access user profiles')) {
+      $output = l($name, 'profile/' . $object->uid, array('attributes' => array('title' => t('View user profile.'))));
+    }
+    else {
+      $output = check_plain($name);
+    }
+  }
+  else if ($object->name) {
+    // Sometimes modules display content composed by people who are
+    // not registered members of the site (e.g. mailing list or news
+    // aggregator modules). This clause enables modules to display
+    // the true author of the content.
+    if (!empty($object->homepage)) {
+      $output = l($object->name, $object->homepage, array('attributes' => array('rel' => 'nofollow')));
+    }
+    else {
+      $output = check_plain($object->name);
+    }
+
+    $output .= ' (' . t('not verified') . ')';
+  }
+  else {
+    $output = check_plain(variable_get('anonymous', t('Anonymous')));
+  }
+
+  return $output;
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function piropublic_community_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  if ($node->type=='personal') {
+  	switch ($op) {
+      case 'insert':
+        $new_profile_node = new StdClass();
+        		 $new_profile_node->uid = $node->uid;
+        		 $new_profile_node->type = 'profile';
+        		 $new_profile_node->status = 1;
+
+        		 node_save($new_profile_node);
+
+  	    $new_profpic_node = new StdClass();
+        		 $new_profpic_node->uid = $node->uid;
+        		 $new_profpic_node->type = 'profpic';
+        		 $new_profpic_node->status = 1;
+
+        		 node_save($new_profpic_node);
+      break;
+      case 'update':
+        if (!node_load(array('uid' => $node->uid, 'type' => 'profile', 'status' => 1))) {
+          $new_profile_node = new StdClass();
+        		 $new_profile_node->uid = $node->uid;
+        		 $new_profile_node->type = 'profile';
+        		 $new_profile_node->status = 1;
+
+        		 node_save($new_profile_node);
+        }
+  	    if (!node_load(array('uid' => $node->uid, 'type' => 'profpic', 'status' => 1))) {
+          $new_profpic_node = new StdClass();
+        		 $new_profpic_node->uid = $node->uid;
+        		 $new_profpic_node->type = 'profpic';
+        		 $new_profpic_node->status = 1;
+
+        		 node_save($new_profpic_node);
+        }
+      break;
+    }
+  }
+  if ($node->type=='memblog') {
+    switch ($op) {
+      case 'insert':
+        global $user;
+        foreach ($user->og_groups as &$group) {
+          db_query('INSERT INTO {og_ancestry} (nid, group_nid) VALUES (%d, %d)', $node->nid, $group['nid']);
+          db_query('INSERT INTO {og_access_post} (nid, og_public) VALUES (%d, 1)', $node->nid);
+        }
+        unset($group);
+  	  break;
+     case 'update':
+      global $user;
+      $list = db_query('SELECT group_nid FROM {og_ancestry} WHERE nid = %d', $node->nid);
+      while($row = db_fetch_array($list)) {
+        foreach ($user->og_groups as &$group) {
+          if ($group['nid'] != $row['group_nid']) {
+            db_query('INSERT INTO {og_ancestry} (nid, group_nid) VALUES (%d, %d)', $node->nid, $group['nid']);
+          }
+        }
+      }
+      unset($group);
+     break;
+    }
+  }
+}
+
+/**
+ * Alter the final export array just prior to the rendering of defaults. Allows
+ * modules a final say in altering what component objects are exported.
+ *
+ * @param array &$export
+ *   By reference. An array of all components to be exported with a given
+ *   feature.
+ * @param array $module_name
+ *   The name of the feature module to be generated.
+ */
+function piropublic_community_features_export_alter(&$export, $module_name) {
+  // Example: do not allow the page content type to be exported, ever.
+  if (!empty($export['node']['page'])) {
+    unset($export['node']['page']);
+  }
+}
+
+/**
+* Implements hook_uuid_node_features_export_render_alter()
+*/
+function piropublic_community_uuid_node_features_export_render_alter(&$export, $node, $module) {
+  // don't allow uuid_features to export node properties that can change on deployment
+  unset($export->changed);
+  unset($export->created);
+  unset($export->revision_uuid);
+  unset($export->last_comment_timestamp);
+  unset($export->revision_timestamp);
+  unset($export->data);
+  unset($export->picture);
+  unset($export->old_status);
+  unset($export->date);
+  // webform stores nid
+  if(isset($export->webform)) {
+    unset($export->webform['nid']);
+    foreach($export->webform['components'] as $key => $wf) {
+      unset($export->webform['components'][$key]['nid']);
+    }
+  }
+}
