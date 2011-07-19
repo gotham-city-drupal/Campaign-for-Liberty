@@ -24,6 +24,7 @@ function piropublic_community_menu_default_menu_links() {
     'expanded' => '0',
     'weight' => '-48',
   );
+  // Exported menu link: primary-links:fa2f83a9-9446-11e0-88ba-e0e2cd5d67f0
   $menu_links['primary-links:fa2f83a9-9446-11e0-88ba-e0e2cd5d67f0'] = array(
     'menu_name' => 'primary-links',
     'router_path' => 'node/%',
@@ -43,8 +44,8 @@ function piropublic_community_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('Profile');
   t('Community');
+  t('Profile');
 
 
   return $menu_links;

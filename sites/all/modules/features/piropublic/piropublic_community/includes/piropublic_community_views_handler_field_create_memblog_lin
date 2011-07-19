@@ -10,7 +10,7 @@
  *
  * @ingroup views
  */
-class old_profile_create_memblog_link extends views_handler_field {
+class piropublic_community_views_handler_field_create_memblog_link extends views_handler_field {
   /**
 	 *  shows display of the memblog create link on logged in users profile page
    */

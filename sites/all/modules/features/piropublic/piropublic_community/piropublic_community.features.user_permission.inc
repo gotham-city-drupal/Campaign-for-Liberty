@@ -34,6 +34,15 @@ function piropublic_community_user_default_permissions() {
     ),
   );
 
+  // Exported permission: create county content
+  $permissions['create county content'] = array(
+    'name' => 'create county content',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'state coordinator',
+    ),
+  );
+
   // Exported permission: create memblog content
   $permissions['create memblog content'] = array(
     'name' => 'create memblog content',

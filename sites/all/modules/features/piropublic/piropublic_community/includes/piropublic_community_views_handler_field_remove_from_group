@@ -4,7 +4,7 @@
  *
  * @ingroup views_field_handlers
  */
-class old_community_views_handler_field_remove_from_group extends og_views_handler_field_og_uid {
+class piropublic_community_views_handler_field_remove_from_group extends og_views_handler_field_og_uid {
   function construct() {
     parent::construct();
     $this->additional_fields['nid'] = array('table' => 'og_uid', 'field' => 'nid');

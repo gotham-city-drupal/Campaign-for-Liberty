@@ -5,7 +5,6 @@
  */
 function piropublic_community_context_default_contexts() {
   $export = array();
-
   $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
@@ -262,7 +261,6 @@ function piropublic_community_context_default_contexts() {
   t('old_community');
 
   $export['other_group_pages_general'] = $context;
-
   $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
@@ -331,8 +329,7 @@ function piropublic_community_context_default_contexts() {
   t('piropublic_community');
 
   $export['profile_blocks'] = $context;
-
-   $context = new stdClass;
+  $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'regioncounty_context';
@@ -435,7 +432,6 @@ function piropublic_community_context_default_contexts() {
   t('old_community');
 
   $export['state_context'] = $context;
-
   $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;

@@ -6,7 +6,7 @@
 function piropublic_community_views_default_views() {
   $views = array();
 
-   // Exported view: group
+  // Exported view: group
   $view = new view;
   $view->name = 'group';
   $view->description = 'Groups';

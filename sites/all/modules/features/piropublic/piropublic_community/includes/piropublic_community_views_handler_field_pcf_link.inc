@@ -10,7 +10,7 @@
  *
  * @ingroup views
  */
-class old_profile_handler_pcf_link extends views_handler_field_user_link {
+class piropublic_community_views_handler_field_pcf_link extends views_handler_field_user_link {
   function option_definition() {
     $options = parent::option_definition();
     $options['link_display'] = array('default' => 'link', 'translatable' => FALSE);

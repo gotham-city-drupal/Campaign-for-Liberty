@@ -4,7 +4,7 @@
  *
  * @ingroup views_field_handlers
  */
-class old_community_views_handler_field_view_all_memblogs extends views_handler_field_node_link {
+class piropublic_community_views_handler_field_view_all_memblogs extends views_handler_field_node_link {
   function construct() {
     parent::construct();
     $this->additional_fields['uid'] = 'uid';

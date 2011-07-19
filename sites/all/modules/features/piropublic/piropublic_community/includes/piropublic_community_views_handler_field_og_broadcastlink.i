@@ -4,7 +4,7 @@
  *
  * @ingroup views_field_handlers
  */
-class old_community_views_handler_field_view_all_memblogs extends views_handler_field_node_link {
+class piropublic_community_views_handler_field_og_broadcastlink extends views_handler_field_node_link {
   function construct() {
     parent::construct();
     $this->additional_fields['uid'] = 'uid';
@@ -21,17 +21,11 @@ class old_community_views_handler_field_view_all_memblogs extends views_handler_
     $node->format = $values->{$this->aliases['format']};
     $node->status = 1; // unpublished nodes ignore access control
 
-
-    $item = menu_get_item("community/$node->nid/blog/all");
-    if (!$item['access']) {
+    if ((!user_access('broadcast to all groups'))&&(!og_is_group_admin($node))) {
       return;
     }
 
-    if (!og_is_group_admin($node)) {
-      return;
-    }
-
-    $text = !empty($this->options['text']) ? $this->options['text'] : t('view all posts for this group');
-    return l($text, "community/$node->nid/blog/all", array('query' => drupal_get_destination()));
+    $text = !empty($this->options['text']) ? $this->options['text'] : t('message my members');
+    return l($text, "node/$node->nid/broadcast", array('query' => drupal_get_destination()));
   }
 }
