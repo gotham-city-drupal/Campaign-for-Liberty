@@ -1,5 +1,5 @@
 ; $Id: reverse_geo.info,v1.0$
-name = C4L Reverse Geocoding
+name = Reverse Geocoding
 description = A module that reverse geocodes location data and puts users in appropriate groups
 core = 6.x
 dependencies[] = location

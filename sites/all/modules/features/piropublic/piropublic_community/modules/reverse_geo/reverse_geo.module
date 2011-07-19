@@ -54,7 +54,23 @@ function reverse_geo_reverse_geocode_coords($locations = array()) {
       	  $groups['country']['short'] = (string)$value->address_component[2]->short_name;
     	}
       }
+      elseif ($value->type[0]=='neighborhood') {
+  	    if ($value->address_component[2]->type[0]=='administrative_area_level_2') {
+      	  $groups['county']['long'] = (string)$value->address_component[2]->long_name;
+          $groups['county']['short'] = (string)$value->address_component[2]->short_name;
+    	}
+        if ($value->address_component[3]->type[0]=='administrative_area_level_1') {
+          $groups['state']['long'] = (string)$value->address_component[3]->long_name;
+      	  $groups['state']['short'] = (string)$value->address_component[3]->short_name;
+    	}
+        if ($value->address_component[4]->type[0]=='country') {
+          $groups['country']['long'] = (string)$value->address_component[4]->long_name;
+      	  $groups['country']['short'] = (string)$value->address_component[4]->short_name;
+    	}
+      }
     }
+    watchdog('emergency', t('URL: !url'), $variables = array('!url' => $url));
+
   }
 
   // govtack.us API
