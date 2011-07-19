@@ -1,0 +1,7 @@
+core = "6.x"
+description = "ADD YOUR CUSTOMIZATIONS HERE"
+name = "Piropublic YouAdd"
+package = "Features"
+project = "piropublic"
+project status url = "http://www.piroshare.com/fserver"
+version = "6.x-2.0-dev"
