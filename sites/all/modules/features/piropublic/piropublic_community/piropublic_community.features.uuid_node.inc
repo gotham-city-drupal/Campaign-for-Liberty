@@ -345,8 +345,6 @@ function piropublic_community_uuid_features_default_content() {
     'last_comment_name' => NULL,
     'comment_count' => '0',
     'taxonomy' => array(),
-    'locations' => array(),
-    'location' => array(),
     'uuid' => 'fa2f83a9-9446-11e0-88ba-e0e2cd5d67f0',
     'pathauto_perform_alias' => FALSE,
   );

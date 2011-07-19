@@ -31,8 +31,6 @@ function piropublic_uuid_features_default_content() {
     'last_comment_name' => NULL,
     'comment_count' => '0',
     'taxonomy' => array(),
-    'locations' => array(),
-    'location' => array(),
     'uuid' => '9b0988d8-87f4-11e0-b28c-9f89cf71cba4',
     'pathauto_perform_alias' => FALSE,
   );
@@ -61,8 +59,6 @@ function piropublic_uuid_features_default_content() {
     'last_comment_name' => NULL,
     'comment_count' => '0',
     'taxonomy' => array(),
-    'locations' => array(),
-    'location' => array(),
     'uuid' => 'f4cd1ce6-87f7-11e0-b28c-9f89cf71cba4',
     'pathauto_perform_alias' => FALSE,
   );

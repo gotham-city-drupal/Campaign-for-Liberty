@@ -177,11 +177,7 @@ function piropublic_about_uuid_node_features_export_render_alter(&$export, $node
   unset($export->picture);
   unset($export->old_status);
   unset($export->date);
-  // webform stores nid
-  if(isset($export->webform)) {
-    unset($export->webform['nid']);
-    foreach($export->webform['components'] as $key => $wf) {
-      unset($export->webform['components'][$key]['nid']);
-    }
-  }
+  unset($export->webform);
+  unset($export->location);
+  unset($export->locations);
 }
