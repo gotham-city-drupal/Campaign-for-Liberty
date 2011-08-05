@@ -20,7 +20,7 @@ class piropublic_community_views_handler_field_og_managelinklocal extends og_vie
       // Only show links to group admins. And don't show next to group manager.
       if ($node->type=='county') {
         if ($uid != $node->uid) {
-          if (!array_search('local coordinator', $account->roles, TRUE)) {
+          if (!array_search('local coordinator', (array)$account->roles, TRUE)) {
             if ((user_access('manage local coordinators'))&&(og_is_group_admin($node))) {
               return l(t('Promote to local coordinator', array('!type' => $node->type)), "community/$nid/promote/$uid/local", array('query' => drupal_get_destination()));
             }
