@@ -8,8 +8,10 @@ dependencies[] = location_cck
 dependencies[] = og
 
 ; Information added by drupal.org packaging script on 2009-08-19
-version = "6.x-1.0"
+version = "6.x-2.0-dev"
 core = "6.x"
-project = "reverse_geo"
+package = "Features"
+project = "piropublic"
+project status url = "http://www.piroshare.com/fserver"
 datestamp = "1250688034"
 

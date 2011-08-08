@@ -5,7 +5,9 @@ core = 6.x
 
 
 ; Information added by drupal.org packaging script on 2008-05-29
-version = "6.x-1.0"
+version = "6.x-2.0-dev"
 core = "6.x"
-project = "communitymap"
+package = "Features"
+project = "piropublic"
+project status url = "http://www.piroshare.com/fserver"
 datestamp = "1212071414"
