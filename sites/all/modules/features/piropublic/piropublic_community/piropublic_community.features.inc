@@ -663,7 +663,6 @@ function piropublic_community_rules_defaults() {
               'query' => '',
               'fragment' => '',
               'force' => 1,
-              'immediate' => 0,
               '#eval input' => array(
                 'token_rules_input_evaluator' => array(
                   'path' => array(

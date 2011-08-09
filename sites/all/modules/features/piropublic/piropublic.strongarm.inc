@@ -878,6 +878,18 @@ function piropublic_strongarm() {
       'path' => 'path',
       'comment_settings' => 'comment_settings',
     ),
+    'frontpage_banner_node_form' => array(
+      'menu' => 'menu',
+      'author' => 'author',
+      'revision_information' => 'revision_information',
+      'options' => 'options',
+      'comment_settings' => 'comment_settings',
+      'xmlsitemap' => 'xmlsitemap',
+      'path' => 'path',
+      'attachments' => 'attachments',
+      'group_frontpage_banner_vidgrp' => 0,
+      'group_frontpage_banner_lnkgrp' => 0,
+    ),
   );
 
   $export['vertical_tabs_forms'] = $strongarm;
