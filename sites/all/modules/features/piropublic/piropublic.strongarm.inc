@@ -768,6 +768,18 @@ function piropublic_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'securepages_ignore';
+  $strongarm->value = '*/autocomplete/*
+*/ajax/*
+*/rss
+*/rss.xml
+admin/content/nodequeue/*/remove-node/*
+admin/content/nodequeue/*/add/*';
+
+  $export['securepages_ignore'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_404';
   $strongarm->value = 'search404';
 
