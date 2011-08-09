@@ -212,7 +212,7 @@ function piropublic_community_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'other_group_pages_general';
   $context->description = 'Blocks for group sub pages';
-  $context->tag = 'old_community';
+  $context->tag = 'piropublic_community';
   $context->conditions = array(
     'node' => array(
       'values' => array(
@@ -258,7 +258,7 @@ function piropublic_community_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Blocks for group sub pages');
-  t('old_community');
+  t('piropublic_community');
 
   $export['other_group_pages_general'] = $context;
   $context = new stdClass;
@@ -334,7 +334,7 @@ function piropublic_community_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'regioncounty_context';
   $context->description = 'Blocks for regions and coutnies';
-  $context->tag = 'old_community';
+  $context->tag = 'piropublic_community';
   $context->conditions = array(
     'node' => array(
       'values' => array(
@@ -375,7 +375,7 @@ function piropublic_community_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Blocks for regions and coutnies');
-  t('old_community');
+  t('piropublic_community');
 
   $export['regioncounty_context'] = $context;
   $context = new stdClass;
@@ -383,7 +383,7 @@ function piropublic_community_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'state_context';
   $context->description = 'Just for state groups';
-  $context->tag = 'old_community';
+  $context->tag = 'piropublic_community';
   $context->conditions = array(
     'node' => array(
       'values' => array(
@@ -429,7 +429,7 @@ function piropublic_community_context_default_contexts() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Just for state groups');
-  t('old_community');
+  t('piropublic_community');
 
   $export['state_context'] = $context;
   $context = new stdClass;
