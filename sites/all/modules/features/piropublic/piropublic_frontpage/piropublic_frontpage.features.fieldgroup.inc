@@ -95,7 +95,7 @@ function piropublic_frontpage_fieldgroup_default_groups() {
         ),
       ),
     ),
-    'weight' => '2',
+    'weight' => '-1',
     'fields' => array(
       '0' => 'field_frontpage_banner_link',
       '1' => 'field_frontpage_banner_img',
@@ -145,7 +145,7 @@ function piropublic_frontpage_fieldgroup_default_groups() {
         ),
       ),
     ),
-    'weight' => '1',
+    'weight' => '-2',
     'fields' => array(
       '0' => 'field_frontpage_banner_videotype',
       '1' => 'field_frontpage_banner_youtube',

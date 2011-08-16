@@ -235,15 +235,16 @@ function piropublic_frontpage_strongarm() {
   $strongarm->name = 'content_extra_weights_frontpage_banner';
   $strongarm->value = array(
     'title' => '-5',
-    'revision_information' => '6',
-    'author' => '5',
-    'options' => '7',
-    'comment_settings' => '10',
+    'revision_information' => '3',
+    'author' => '2',
+    'options' => '4',
+    'comment_settings' => '7',
     'menu' => '-4',
-    'path' => '12',
-    'attachments' => '11',
-    'path_redirect' => '8',
-    'xmlsitemap' => '9',
+    'path' => '9',
+    'attachments' => '8',
+    'locations' => '1',
+    'path_redirect' => '5',
+    'xmlsitemap' => '6',
   );
 
   $export['content_extra_weights_frontpage_banner'] = $strongarm;
