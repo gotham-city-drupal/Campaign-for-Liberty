@@ -704,17 +704,16 @@ function piropublic_community_strongarm() {
   $strongarm->name = 'content_extra_weights_memblog';
   $strongarm->value = array(
     'title' => '-5',
-    'body_field' => '-1',
-    'revision_information' => '1',
-    'author' => '5',
-    'options' => '6',
-    'comment_settings' => '4',
-    'menu' => '0',
-    'path' => '2',
-    'og_nodeapi' => '3',
-    'path_redirect' => '7',
-    'workflow' => '8',
-    'xmlsitemap' => '9',
+    'body_field' => '-2',
+    'revision_information' => '0',
+    'author' => '4',
+    'options' => '5',
+    'comment_settings' => '3',
+    'menu' => '-1',
+    'path' => '1',
+    'og_nodeapi' => '2',
+    'path_redirect' => '6',
+    'xmlsitemap' => '7',
   );
 
   $export['content_extra_weights_memblog'] = $strongarm;

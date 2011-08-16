@@ -6,7 +6,7 @@ include_once('piropublic_community.features.inc');
  * Implementation of hook_perm()
  */
 function piropublic_community_perm() {
-  return array('manage local coordinators', 'manage county coordinators', 'manage region coordinators', 'manage state coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups', 'promote to my groups', 'remove from group', 'edit member blogs');
+  return array('manage national blog', 'manage local coordinators', 'manage county coordinators', 'manage region coordinators', 'manage state coordinators', 'edit all groups', 'invite to all groups', 'broadcast to all groups', 'promote to my groups', 'remove from group', 'edit member blogs');
 }
 
 /**
@@ -74,6 +74,19 @@ function piropublic_community_theme_registry_alter(&$theme_registry) {
 function piropublic_community_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id) {
     case 'memblog_node_form':
+      // hide national blog field
+
+      if (!user_access('manage national blog')) {
+        $form['field_memblog_national_blog']['#prefix'] = '<div style="display:none;">';
+        $form['field_memblog_national_blog']['#suffix'] = '</div>';
+      }
+
+      $form['field_group']['#prefix'] = '<div class="promote-box">';
+      $form['field_group']['#suffix'] = '</div>';
+
+      $form['og_nodeapi']['#prefix'] = '<div class="audience-box">';
+      $form['og_nodeapi']['#suffix'] = '</div>';
+
       if ($form['nid']['#value']) {
         $form['#attributes']['class'] = 'memblog-edit';
         if ((user_access('promote to my groups'))&&(!user_access('edit member blogs'))) {
@@ -87,11 +100,6 @@ function piropublic_community_form_alter(&$form, &$form_state, $form_id) {
         $form['#attributes']['class'] = 'memblog-add';
       }
 
-      $form['field_group']['#prefix'] = '<div class="promote-box">';
-      $form['field_group']['#suffix'] = '</div>';
-
-      $form['og_nodeapi']['#prefix'] = '<div class="audience-box">';
-      $form['og_nodeapi']['#suffix'] = '</div>';
     break;
   }
 }
@@ -173,35 +181,34 @@ function piropublic_community_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
   	switch ($op) {
       case 'insert':
         $new_profile_node = new StdClass();
-        		 $new_profile_node->uid = $node->uid;
-        		 $new_profile_node->type = 'profile';
-        		 $new_profile_node->status = 1;
+          $new_profile_node->uid = $node->uid;
+          $new_profile_node->type = 'profile';
+          $new_profile_node->status = 1;
 
-        		 node_save($new_profile_node);
-
+          node_save($new_profile_node);
   	    $new_profpic_node = new StdClass();
-        		 $new_profpic_node->uid = $node->uid;
-        		 $new_profpic_node->type = 'profpic';
-        		 $new_profpic_node->status = 1;
+          $new_profpic_node->uid = $node->uid;
+          $new_profpic_node->type = 'profpic';
+          $new_profpic_node->status = 1;
 
-        		 node_save($new_profpic_node);
+          node_save($new_profpic_node);
       break;
       case 'update':
         if (!node_load(array('uid' => $node->uid, 'type' => 'profile', 'status' => 1))) {
           $new_profile_node = new StdClass();
-        		 $new_profile_node->uid = $node->uid;
-        		 $new_profile_node->type = 'profile';
-        		 $new_profile_node->status = 1;
+            $new_profile_node->uid = $node->uid;
+            $new_profile_node->type = 'profile';
+            $new_profile_node->status = 1;
 
-        		 node_save($new_profile_node);
+            node_save($new_profile_node);
         }
   	    if (!node_load(array('uid' => $node->uid, 'type' => 'profpic', 'status' => 1))) {
           $new_profpic_node = new StdClass();
-        		 $new_profpic_node->uid = $node->uid;
-        		 $new_profpic_node->type = 'profpic';
-        		 $new_profpic_node->status = 1;
+        	$new_profpic_node->uid = $node->uid;
+        	$new_profpic_node->type = 'profpic';
+            $new_profpic_node->status = 1;
 
-        		 node_save($new_profpic_node);
+            node_save($new_profpic_node);
         }
       break;
     }

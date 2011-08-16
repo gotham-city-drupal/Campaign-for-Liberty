@@ -549,6 +549,7 @@ function piropublic_community_rules_defaults() {
         ),
         '#actions' => array(
           '0' => array(
+            '#weight' => 0,
             '#type' => 'action',
             '#settings' => array(
               'path' => 'profile/[node:author-uid]',
@@ -581,7 +582,6 @@ function piropublic_community_rules_defaults() {
                 '2' => 'fragment',
               ),
             ),
-            '#weight' => 0,
           ),
         ),
         '#version' => 6003,
@@ -648,21 +648,14 @@ function piropublic_community_rules_defaults() {
         '#conditions' => array(),
         '#actions' => array(
           '0' => array(
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
-            '#name' => 'rules_action_drupal_goto',
+            '#weight' => 0,
+            '#type' => 'action',
             '#settings' => array(
               'path' => 'profile/[account:uid]',
               'query' => '',
               'fragment' => '',
               'force' => 1,
+              'immediate' => 0,
               '#eval input' => array(
                 'token_rules_input_evaluator' => array(
                   'path' => array(
@@ -678,8 +671,16 @@ function piropublic_community_rules_defaults() {
                 ),
               ),
             ),
-            '#type' => 'action',
-            '#weight' => 0,
+            '#name' => 'rules_action_drupal_goto',
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
           ),
         ),
         '#version' => 6003,

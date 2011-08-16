@@ -232,6 +232,24 @@ function piropublic_frontpage_strongarm() {
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'content_extra_weights_frontpage_banner';
+  $strongarm->value = array(
+    'title' => '-5',
+    'revision_information' => '6',
+    'author' => '5',
+    'options' => '7',
+    'comment_settings' => '10',
+    'menu' => '-4',
+    'path' => '12',
+    'attachments' => '11',
+    'path_redirect' => '8',
+    'xmlsitemap' => '9',
+  );
+
+  $export['content_extra_weights_frontpage_banner'] = $strongarm;
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'content_profile_use_featured_blocks';
   $strongarm->value = 0;
 

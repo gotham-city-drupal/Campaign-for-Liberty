@@ -494,6 +494,16 @@ function piropublic_community_user_default_permissions() {
     ),
   );
 
+  // Exported permission: manage national blog
+  $permissions['manage national blog'] = array(
+    'name' => 'manage national blog',
+    'roles' => array(
+      '0' => 'administrator',
+      '1' => 'headquarters',
+      '2' => 'staff',
+    ),
+  );
+
   // Exported permission: manage own subscriptions
   $permissions['manage own subscriptions'] = array(
     'name' => 'manage own subscriptions',

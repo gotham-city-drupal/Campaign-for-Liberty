@@ -259,6 +259,130 @@ function piropublic_frontpage_rules_defaults() {
         ),
         '#version' => 6003,
       ),
+      'rules_promote_front_page_memblogs' => array(
+        '#type' => 'rule',
+        '#set' => 'event_nodequeue_added_6',
+        '#label' => 'Promote Front Page Memblogs',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'piropublic_frontpage',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(),
+        '#actions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Promote Queued node to front page',
+              'module' => 'Node',
+              'arguments' => array(
+                'node' => array(
+                  'label' => 'Content',
+                  'type' => 'node',
+                ),
+              ),
+              'base' => 'rules_core_action_execute',
+              'action_name' => 'node_promote_action',
+              'configurable' => FALSE,
+              'label callback' => 'rules_core_node_label_callback',
+              'label_skeleton' => 'Promote @node to front page',
+            ),
+            '#name' => 'rules_core_node_promote_action',
+            '#settings' => array(
+              'auto_save' => 1,
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#type' => 'action',
+          ),
+        ),
+        '#version' => 6003,
+      ),
+      'rules_promote_front_page_national_blogs' => array(
+        '#type' => 'rule',
+        '#set' => 'event_nodequeue_added_7',
+        '#label' => 'Promote Front Page National Blogs',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'piropublic_frontpage',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(),
+        '#actions' => array(
+          '0' => array(
+            '#type' => 'action',
+            '#settings' => array(
+              'auto_save' => 1,
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#name' => 'rules_core_node_promote_action',
+            '#info' => array(
+              'label' => 'Promote Queued node to front page',
+              'module' => 'Node',
+              'arguments' => array(
+                'node' => array(
+                  'label' => 'Content',
+                  'type' => 'node',
+                ),
+              ),
+              'base' => 'rules_core_action_execute',
+              'action_name' => 'node_promote_action',
+              'configurable' => FALSE,
+              'label callback' => 'rules_core_node_label_callback',
+              'label_skeleton' => 'Promote @node to front page',
+            ),
+            '#weight' => 0,
+          ),
+          '1' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Populate Queued node\'s field \'field_memblog_national_blog\'',
+              'arguments' => array(
+                'node' => array(
+                  'type' => 'node',
+                  'label' => 'Content',
+                ),
+              ),
+              'eval input' => array(
+                '0' => 'code',
+                '1' => 'value|0|value',
+              ),
+              'module' => 'CCK',
+            ),
+            '#name' => 'content_rules_action_populate_field',
+            '#settings' => array(
+              'field_name' => 'field_memblog_national_blog',
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+              'value' => array(
+                '0' => array(
+                  'value' => 'on',
+                ),
+              ),
+              'code' => '',
+              'vars' => array(),
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'code' => array(
+                    '0' => ':global',
+                  ),
+                  'value|0|value' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#type' => 'action',
+          ),
+        ),
+        '#version' => 6003,
+      ),
       'rules_redirect_featured_block_creation_to_frontpage' => array(
         '#type' => 'rule',
         '#set' => 'event_node_presave',

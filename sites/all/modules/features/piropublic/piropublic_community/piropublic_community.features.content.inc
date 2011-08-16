@@ -686,7 +686,7 @@ function piropublic_community_content_default_fields() {
     'field_name' => 'field_group',
     'type_name' => 'memblog',
     'display_settings' => array(
-      'weight' => '8',
+      'weight' => '-3',
       'parent' => '',
       'label' => array(
         'format' => 'hidden',
@@ -755,10 +755,71 @@ function piropublic_community_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Publish To Group',
-      'weight' => '-4',
+      'weight' => '-3',
       'description' => '',
       'type' => 'nodereference_buttons',
       'module' => 'nodereference',
+    ),
+  );
+
+  // Exported field: field_memblog_national_blog
+  $fields['memblog-field_memblog_national_blog'] = array(
+    'field_name' => 'field_memblog_national_blog',
+    'type_name' => 'memblog',
+    'display_settings' => array(
+      'weight' => '-4',
+      'parent' => '',
+      'label' => array(
+        'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'hidden',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'text',
+    'required' => '0',
+    'multiple' => '0',
+    'module' => 'text',
+    'active' => '1',
+    'text_processing' => '0',
+    'max_length' => '',
+    'allowed_values' => 'off
+on|National Blog',
+    'allowed_values_php' => '',
+    'widget' => array(
+      'default_value' => array(
+        '0' => array(
+          'value' => NULL,
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'National Blog',
+      'weight' => '-4',
+      'description' => '',
+      'type' => 'optionwidgets_onoff',
+      'module' => 'optionwidgets',
     ),
   );
 
@@ -3763,6 +3824,7 @@ Other',
   t('Last Name');
   t('Link to Official Site');
   t('Micro Bio');
+  t('National Blog');
   t('Phone');
   t('Profile Picture');
   t('Publish To Group');
