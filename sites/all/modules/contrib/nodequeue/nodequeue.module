@@ -953,6 +953,11 @@ function nodequeue_save(&$queue) {
       nodequeue_add_subqueue($queue, $title, $reference);
     }
   }
+
+  if (module_exists('rules')) {
+    rules_invoke_event('nodequeue_saved_' . $queue->qid, NULL);
+  }
+
   return $queue->qid;
 }
 

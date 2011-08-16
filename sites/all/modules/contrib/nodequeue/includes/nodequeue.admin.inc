@@ -53,6 +53,10 @@ function nodequeue_admin_add_node($queue, $subqueue, $node) {
   $id = nodequeue_get_content_id($queue, $node);
   nodequeue_subqueue_add($queue, $subqueue, $id);
 
+  if (module_exists('rules')) {
+    rules_invoke_event('nodequeue_added_' . $queue->qid, array('node' => $node));
+  }
+
   // Provide a response if this is javascript.
   if (!empty($_POST['js'])) {
     if (isset($_GET['tab'])) {
@@ -80,6 +84,10 @@ function nodequeue_admin_remove_node($queue, $subqueue, $node) {
   }
   $id = nodequeue_get_content_id($queue, $node);
   nodequeue_subqueue_remove_node($subqueue->sqid, $id);
+
+  if (module_exists('rules')) {
+    rules_invoke_event('nodequeue_removed_' . $queue->qid, array('node' => $node));
+  }
 
   // Provide a response if this is javascript.
   if (!empty($_POST['js'])) {
