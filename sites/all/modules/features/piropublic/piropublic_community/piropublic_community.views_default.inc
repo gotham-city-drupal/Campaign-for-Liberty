@@ -981,7 +981,7 @@ function piropublic_community_views_default_views() {
       ),
     ),
     'promote' => array(
-      'label' => 'Approved',
+      'label' => '',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
@@ -1005,7 +1005,7 @@ function piropublic_community_views_default_views() {
       'empty_zero' => 0,
       'type' => 'yes-no',
       'not' => 0,
-      'exclude' => 0,
+      'exclude' => 1,
       'id' => 'promote',
       'table' => 'node',
       'field' => 'promote',

@@ -150,7 +150,7 @@ function piropublic_community_preprocess_user_picture(&$variables) {
 function piropublic_community_preprocess_views_view_fields__blog(&$variables) {
   // need to use custom template to fix link module target=blank fail
   $variables = $variables;
-  if ($variables['fields']['promote']->raw == 1) {
+  if ($variables['row']->node_promote == 1) {
     $variables['promoteclass'] = 'approved';
   }
 }

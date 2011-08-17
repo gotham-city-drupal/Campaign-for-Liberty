@@ -413,22 +413,22 @@
   font-weight: bold;
 }
 
-#block-views--exp-blog-page_2 {
+#block-views--exp-blog-page_2, #block-views--exp-blog-page_1 {
   background-color: #F5F3EE;
   margin-bottom: 30px;
   padding: 5px;
 }
 
-#block-views--exp-blog-page_2 input.form-text {
+#block-views--exp-blog-page_2 input.form-text, #block-views--exp-blog-page_1 input.form-text {
   background-color: #FFFFFF;
   width: 185px;
 }
 
-#block-views--exp-blog-page_2 input.form-text:focus {
+#block-views--exp-blog-page_2 input.form-text:focus, #block-views--exp-blog-page_1 input.form-text:focus {
   background-color: #F5F9FB;
 }
 
-#block-views--exp-blog-page_2 .description {
+#block-views--exp-blog-page_2 .description, #block-views--exp-blog-page_1 .description {
  font-size: 9px;
 }
 
