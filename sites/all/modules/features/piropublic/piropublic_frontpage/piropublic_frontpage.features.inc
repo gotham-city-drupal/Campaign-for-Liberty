@@ -313,14 +313,7 @@ function piropublic_frontpage_rules_defaults() {
         '#conditions' => array(),
         '#actions' => array(
           '0' => array(
-            '#type' => 'action',
-            '#settings' => array(
-              'auto_save' => 1,
-              '#argument map' => array(
-                'node' => 'node',
-              ),
-            ),
-            '#name' => 'rules_core_node_promote_action',
+            '#weight' => 0,
             '#info' => array(
               'label' => 'Promote Queued node to front page',
               'module' => 'Node',
@@ -336,25 +329,18 @@ function piropublic_frontpage_rules_defaults() {
               'label callback' => 'rules_core_node_label_callback',
               'label_skeleton' => 'Promote @node to front page',
             ),
-            '#weight' => 0,
+            '#name' => 'rules_core_node_promote_action',
+            '#settings' => array(
+              'auto_save' => 1,
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#type' => 'action',
           ),
           '1' => array(
             '#weight' => 0,
-            '#info' => array(
-              'label' => 'Populate Queued node\'s field \'field_memblog_national_blog\'',
-              'arguments' => array(
-                'node' => array(
-                  'type' => 'node',
-                  'label' => 'Content',
-                ),
-              ),
-              'eval input' => array(
-                '0' => 'code',
-                '1' => 'value|0|value',
-              ),
-              'module' => 'CCK',
-            ),
-            '#name' => 'content_rules_action_populate_field',
+            '#type' => 'action',
             '#settings' => array(
               'field_name' => 'field_memblog_national_blog',
               '#argument map' => array(
@@ -362,7 +348,7 @@ function piropublic_frontpage_rules_defaults() {
               ),
               'value' => array(
                 '0' => array(
-                  'value' => 'on',
+                  'value' => 'national',
                 ),
               ),
               'code' => '',
@@ -378,7 +364,21 @@ function piropublic_frontpage_rules_defaults() {
                 ),
               ),
             ),
-            '#type' => 'action',
+            '#name' => 'content_rules_action_populate_field',
+            '#info' => array(
+              'label' => 'Populate Queued node\'s field \'field_memblog_national_blog\'',
+              'arguments' => array(
+                'node' => array(
+                  'type' => 'node',
+                  'label' => 'Content',
+                ),
+              ),
+              'eval input' => array(
+                '0' => 'code',
+                '1' => 'value|0|value',
+              ),
+              'module' => 'CCK',
+            ),
           ),
         ),
         '#version' => 6003,

@@ -805,13 +805,13 @@ function piropublic_community_content_default_fields() {
     'active' => '1',
     'text_processing' => '0',
     'max_length' => '',
-    'allowed_values' => 'off
-on|National Blog',
+    'allowed_values' => 'member_blogs|Member Blogs
+national|National Blog',
     'allowed_values_php' => '',
     'widget' => array(
       'default_value' => array(
         '0' => array(
-          'value' => NULL,
+          'value' => 'off',
         ),
       ),
       'default_value_php' => NULL,

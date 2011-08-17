@@ -8,6 +8,72 @@ function piropublic_community_context_default_contexts() {
   $context = new stdClass;
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'admin_blog';
+  $context->description = 'Admin Blog page context';
+  $context->tag = 'piropublic_community';
+  $context->conditions = array(
+    'views' => array(
+      'values' => array(
+        'blog:page_2' => 'blog:page_2',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views--exp-blog-page_2' => array(
+          'module' => 'views',
+          'delta' => '-exp-blog-page_2',
+          'region' => 'right_top',
+          'weight' => 0,
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Admin Blog page context');
+  t('piropublic_community');
+
+  $export['admin_blog'] = $context;
+  $context = new stdClass;
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'blog';
+  $context->description = 'Blog page context';
+  $context->tag = 'piropublic_community';
+  $context->conditions = array(
+    'views' => array(
+      'values' => array(
+        'blog:page_1' => 'blog:page_1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views--exp-blog-page_1' => array(
+          'module' => 'views',
+          'delta' => '-exp-blog-page_1',
+          'region' => 'right_top',
+          'weight' => 0,
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Blog page context');
+  t('piropublic_community');
+
+  $export['blog'] = $context;
+  $context = new stdClass;
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'group_all';
   $context->description = 'Common group elements for group home pages';
   $context->tag = 'piropublic_community';

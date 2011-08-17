@@ -681,6 +681,11 @@ function piropublic_frontpage_views_default_views() {
     ),
   ));
   $handler->override_option('title', 'National Blog');
+  $handler->override_option('footer', '<div class="more-link">
+<a href="/blog/national"> Click for more National Blog </a>
+</div>');
+  $handler->override_option('footer_format', '2');
+  $handler->override_option('footer_empty', 1);
   $handler->override_option('items_per_page', 8);
   $handler->override_option('block_description', 'Front Page National Blog');
   $handler->override_option('block_caching', -1);
@@ -908,6 +913,11 @@ function piropublic_frontpage_views_default_views() {
     ),
   ));
   $handler->override_option('title', 'Member Posts');
+  $handler->override_option('footer', '<div class="more-link">
+<a href="/blog"> Click for more member posts </a>
+</div>');
+  $handler->override_option('footer_format', '2');
+  $handler->override_option('footer_empty', 1);
   $handler->override_option('items_per_page', 8);
   $handler->override_option('block_description', 'Front Page Member Posts');
   $handler->override_option('block_caching', -1);

@@ -117,10 +117,23 @@ function piropublic_community_theme() {
         'piropublic_community_preprocess_user_picture',
       ),
     ),
+    'views_view_fields__blog' => array(
+      'template' => 'views-view-fields--blog',
+      'original hook' => 'views_view_fields',
+      'path' => drupal_get_path('module', 'piropublic_community') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_fields',
+        'piropublic_community_preprocess_views_view_fields__blog',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+    ),
   );
 }
 
-
+/**
+ * Implements hook_preprocess()
+ */
 function piropublic_community_preprocess_user_picture(&$variables) {
   $variables['picture'] = strip_tags($variables['picture'], '<img>');
   $account = $variables['account'];
@@ -128,6 +141,17 @@ function piropublic_community_preprocess_user_picture(&$variables) {
     $title = t('View user profile.');
     $attributes = array('attributes' => array('title' => $title), 'html' => TRUE);
     $variables['picture'] = l($variables['picture'], "profile/$account->uid", $attributes);
+  }
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_community_preprocess_views_view_fields__blog(&$variables) {
+  // need to use custom template to fix link module target=blank fail
+  $variables = $variables;
+  if ($variables['fields']['promote']->raw == 1) {
+    $variables['promoteclass'] = 'approved';
   }
 }
 

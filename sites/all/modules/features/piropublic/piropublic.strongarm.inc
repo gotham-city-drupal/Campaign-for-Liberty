@@ -774,7 +774,8 @@ function piropublic_strongarm() {
 */rss
 */rss.xml
 admin/content/nodequeue/*/remove-node/*
-admin/content/nodequeue/*/add/*';
+admin/content/nodequeue/*/add/*
+admin/blog*';
 
   $export['securepages_ignore'] = $strongarm;
   $strongarm = new stdClass;

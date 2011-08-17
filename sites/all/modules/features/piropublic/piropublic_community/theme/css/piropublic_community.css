@@ -297,6 +297,7 @@
   font-size: 13px;
 }
 
+/* community blog */
 
 .section-community .views-row .views-field-title a {
   font-size: 20px;
@@ -354,6 +355,83 @@
   font-weight: bold;
 }
 
+/* national/member blog  */
+
+.view-id-blog .views-row .views-field-title a {
+  font-size: 20px;
+  color: #AD210B;
+  font-family: Georgia,"Times New Roman",Times,serif;
+
+}
+
+.view-id-blog .views-row .views-field-created {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.view-id-blog .views-row .views-field-teaser {
+  font-size: 14px;
+  margin-left: 100px;
+}
+
+.view-id-blog .views-row .views-field-delete-node {
+  font-size: 11px;
+  margin-left: 100px;
+}
+
+.view-id-blog .views-row .views-field-nodequeue-links ul.links li {
+  font-size: 11px;
+  display: block;
+  margin-left: 100px;
+}
+
+.view-id-blog .views-row .views-field-view-node {
+  display: inline;
+  font-size: 12px;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+  margin-left: 100px;
+}
+
+.view-id-blog .views-row .views-field-comments-link {
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.view-id-blog .views-row .views-field-comments-link ul.links  {
+  display: inline;
+}
+
+.view-id-blog .views-row .views-field-picture  {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.view-id-blog .more-link a {
+  font-weight: bold;
+}
+
+#block-views--exp-blog-page_2 {
+  background-color: #F5F3EE;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+#block-views--exp-blog-page_2 input.form-text {
+  background-color: #FFFFFF;
+  width: 185px;
+}
+
+#block-views--exp-blog-page_2 input.form-text:focus {
+  background-color: #F5F9FB;
+}
+
+#block-views--exp-blog-page_2 .description {
+ font-size: 9px;
+}
+
 #block-views-group_blogs-block_1 .views-row {
   margin-bottom: 25px;
   border-bottom: 1px solid #ccc;
@@ -361,15 +439,27 @@
 }
 
 .view-group-blogs.view-display-id-page_1 .views-row {
-    border-bottom: 1px solid #CCCCCC;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.view-blog .views-row {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+.view-blog .views-row .approved {
+  background-color: #F8F3E0;
+  padding: 10px;
+  opacity: .85;
 }
 
 .view-group-blogs-all .views-row {
-    border-bottom: 1px solid #CCCCCC;
-    margin-bottom: 25px;
-    padding-bottom: 10px;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 #block-views-group-block_3 {
