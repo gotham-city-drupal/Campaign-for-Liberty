@@ -1,0 +1,3 @@
+<?php
+
+include_once('piropublic_commerce.features.inc');
