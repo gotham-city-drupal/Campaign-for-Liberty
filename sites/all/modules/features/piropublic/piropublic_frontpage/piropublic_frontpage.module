@@ -160,12 +160,12 @@ function piropublic_frontpage_form_alter(&$form, &$form_state, $form_id) {
       /* temp disabled
       if (!module_exists('piropublic_events')) {
         $form['field_events']['#description'] = '<small class="red">' . t('piropublic_events module required for this option') . '</small>';
-        $form['#after_build'][] = '_piropublic_after_build';
+        $form['#after_build'][] = '_piropublic_frontpage_after_build';
       }
       */
-      if (!module_exists('piropublic_store')) {
-        $form['field_store']['#description'] = '<small class="red">' . t('piropublic_store module required for this option') . '</small>';
-        $form['#after_build'][] = '_piropublic_after_build';
+      if (!module_exists('piropublic_commerce')) {
+        $form['field_store']['#description'] = '<small class="red">' . t('piropublic_commerce module required for this option') . '</small>';
+        $form['#after_build'][] = '_piropublic_frontpage_after_build';
       }
     break;
   }
@@ -179,10 +179,10 @@ function _piropublic_frontpage_after_build($form, &$form_state) {
     case 'featured_blocks_node_form':
       /* enable for now
       if (!module_exists('piropublic_events')) {
-        _piropublic_fix_disabled($form['group_promote']['field_events']);
+        _piropublic_frontpage_fix_disabled($form['group_promote']['field_events']);
       }
       */
-      if (!module_exists('piropublic_store')) {
+      if (!module_exists('piropublic_commerce')) {
         _piropublic_frontpage_fix_disabled($form['group_promote']['field_store']);
       }
     break;
