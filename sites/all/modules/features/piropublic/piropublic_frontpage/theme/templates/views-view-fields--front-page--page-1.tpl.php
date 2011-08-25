@@ -4,11 +4,8 @@
  * @file views-view-fields.tpl.php
  * Default simple view template to all the fields as a row.
  *
- * - $admin_links: List of management tools for this node and queue.
- * - $media: Image or inline video.
- * - $source: Source of $media.
- * - $button: The button content.
  * - $view: The view in use.
+ * - $more_link: links to correct page.
  * - $fields: an array of $field objects. Each one contains:
  *   - $field->content: The output of the field.
  *   - $field->raw: The raw data for the field, if it exists. This is NOT output safe.
@@ -22,32 +19,26 @@
  *
  * @ingroup views_templates
  */
-
 ?>
+<?php foreach ($fields as $id => $field): ?>
+  <?php if (!empty($field->separator)): ?>
+    <?php print $field->separator; ?>
+  <?php endif; ?>
 
-<div class="promo_item">
-  <div class="promo_left">
-    <h1>
-      <?php print $fields['title']->content; ?>
-    </h1>
-    <div class="teaser">
-      <?php print $fields['field_frontpage_banner_desc_value']->content; ?>
-    </div>
-    <div class="button-link">
-      <?php print $button; ?>
-    </div>
-    <div class="extra-links">
-    </div>
-  </div>
-  <div class="promo_right">
-    <div class="media-wrapper <?php print $attr['classes']; ?>">
-      <?php print $media; ?>
-    </div>
-    <div class="admin_links admin_top">
-      <?php print $admin_links; ?>
-    </div>
-    <div class="source">
-      <?php print $source; ?>
-    </div>
-  </div>
-</div>
+  <<?php print $field->inline_html;?> class="views-field-<?php print $field->class; ?>">
+    <?php if ($field->label): ?>
+      <label class="views-label-<?php print $field->class; ?>">
+        <?php print $field->label; ?>:
+      </label>
+    <?php endif; ?>
+      <?php
+      // $field->element_type is either SPAN or DIV depending upon whether or not
+      // the field is a 'block' element type or 'inline' element type.
+      ?>
+      <<?php print $field->element_type; ?> class="field-content"><?php print $field->content; ?></<?php print $field->element_type; ?>>
+  </<?php print $field->inline_html;?>>
+<?php endforeach; ?>
+
+<?php if (!empty($more_link)): ?>
+  <div class="more-link"><?php print $more_link; ?></div>
+<?php endif; ?>

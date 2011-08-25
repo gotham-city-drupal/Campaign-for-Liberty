@@ -138,12 +138,15 @@ function piropublic_media_strongarm() {
   $strongarm->value = array(
     'title' => '-5',
     'body_field' => '0',
-    'revision_information' => '2',
-    'comment_settings' => '3',
-    'menu' => '5',
-    'path' => '4',
-    'print' => '6',
-    'nodewords' => '1',
+    'revision_information' => '1',
+    'author' => '5',
+    'options' => '6',
+    'comment_settings' => '2',
+    'menu' => '4',
+    'taxonomy' => '-2',
+    'path' => '3',
+    'path_redirect' => '7',
+    'xmlsitemap' => '8',
   );
 
   $export['content_extra_weights_farticle'] = $strongarm;

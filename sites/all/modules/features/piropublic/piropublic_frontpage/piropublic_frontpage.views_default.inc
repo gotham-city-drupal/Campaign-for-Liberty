@@ -38,13 +38,66 @@ function piropublic_frontpage_views_default_views() {
         'button' => 'Override',
       ),
     ),
+    'field_fathor_node_nid' => array(
+      'label' => 'Featured Author',
+      'required' => 0,
+      'delta' => '-1',
+      'id' => 'field_fathor_node_nid',
+      'table' => 'node_data_field_fathor_node',
+      'field' => 'field_fathor_node_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
   ));
   $handler->override_option('fields', array(
-    'picture' => array(
+    'field_fauthor_image_fid' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'label_type' => 'none',
+      'format' => 'staff_header_image_linked',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_fauthor_image_fid',
+      'table' => 'node_data_field_fauthor_image',
+      'field' => 'field_fauthor_image_fid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'field_fathor_node_nid',
+    ),
+    'picture' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '[field_fauthor_image_fid][picture]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -124,10 +177,10 @@ function piropublic_frontpage_views_default_views() {
         'strip_tags' => 0,
       ),
       'empty' => '',
-      'hide_empty' => 0,
+      'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_user' => 1,
-      'overwrite_anonymous' => 0,
+      'overwrite_anonymous' => 1,
       'anonymous_text' => '',
       'exclude' => 1,
       'id' => 'name',
@@ -137,6 +190,86 @@ function piropublic_frontpage_views_default_views() {
       'override' => array(
         'button' => 'Override',
       ),
+    ),
+    'title_1' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 1,
+      'id' => 'title_1',
+      'table' => 'node',
+      'field' => 'title',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'field_fathor_node_nid',
+    ),
+    'field_pub_date_value' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 1,
+        'text' => 'by [title_1] on [field_pub_date_value] ',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'medium',
+      'multiple' => array(
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_to' => '',
+        'group' => '',
+      ),
+      'repeat' => array(
+        'show_repeat_rule' => '',
+      ),
+      'fromto' => array(
+        'fromto' => 'both',
+      ),
+      'exclude' => 0,
+      'id' => 'field_pub_date_value',
+      'table' => 'node_data_field_pub_date',
+      'field' => 'field_pub_date_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
     ),
     'created' => array(
       'label' => '',
@@ -395,6 +528,81 @@ function piropublic_frontpage_views_default_views() {
       'field' => 'nodequeue_links',
       'relationship' => 'none',
     ),
+    'field_memblog_national_blog_value' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'plain',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 1,
+      'id' => 'field_memblog_national_blog_value',
+      'table' => 'node_data_field_memblog_national_blog',
+      'field' => 'field_memblog_national_blog_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'type' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'machine_name' => 1,
+      'exclude' => 1,
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
   ));
   $handler->override_option('sorts', array(
     'position' => array(
@@ -443,8 +651,46 @@ function piropublic_frontpage_views_default_views() {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
+  $handler->override_option('footer_format', '2');
+  $handler->override_option('footer_empty', 0);
   $handler->override_option('items_per_page', 3);
   $handler = $view->new_display('page', 'Page', 'page_1');
+  $handler->override_option('filters', array(
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'memblog' => 'memblog',
+        'farticle' => 'farticle',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+    ),
+  ));
   $handler->override_option('path', 'front');
   $handler->override_option('menu', array(
     'type' => 'none',
@@ -682,11 +928,10 @@ function piropublic_frontpage_views_default_views() {
   ));
   $handler->override_option('title', 'National Blog');
   $handler->override_option('footer', '<div class="more-link">
-<a href="/blog/national"> Click for more National Blog </a>
+<a href="blog/national">Read More on Our Official Blog </a>
 </div>');
-  $handler->override_option('footer_format', '2');
   $handler->override_option('footer_empty', 1);
-  $handler->override_option('items_per_page', 8);
+  $handler->override_option('items_per_page', 5);
   $handler->override_option('block_description', 'Front Page National Blog');
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('block', 'Member Posts', 'block_2');
@@ -914,11 +1159,13 @@ function piropublic_frontpage_views_default_views() {
   ));
   $handler->override_option('title', 'Member Posts');
   $handler->override_option('footer', '<div class="more-link">
-<a href="/blog"> Click for more member posts </a>
+<a href="blog">Find more member posts </a>
+</div>
+<div class="more-link">
+<a href="user/register">Start your own blog </a>
 </div>');
-  $handler->override_option('footer_format', '2');
   $handler->override_option('footer_empty', 1);
-  $handler->override_option('items_per_page', 8);
+  $handler->override_option('items_per_page', 5);
   $handler->override_option('block_description', 'Front Page Member Posts');
   $handler->override_option('block_caching', -1);
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
@@ -950,6 +1197,293 @@ function piropublic_frontpage_views_default_views() {
   ));
   $handler->override_option('displays', array());
   $handler->override_option('sitename_title', 0);
+  $handler = $view->new_display('block', 'Featured Articles', 'block_3');
+  $handler->override_option('relationships', array(
+    'nodequeue_rel_queue_name' => array(
+      'label' => 'queue',
+      'required' => 1,
+      'limit' => 1,
+      'names' => array(
+        'featured_article_queue' => 'featured_article_queue',
+        'frontpage_banner_queue' => 0,
+        'board_of_directors' => 0,
+        'staff' => 0,
+        'frontpage_center' => 0,
+        'member_posts' => 0,
+        'national_blog' => 0,
+      ),
+      'id' => 'nodequeue_rel_queue_name',
+      'table' => 'node',
+      'field' => 'nodequeue_rel_queue_name',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+    ),
+    'field_fathor_node_nid' => array(
+      'label' => 'Featured Author',
+      'required' => 1,
+      'delta' => '-1',
+      'id' => 'field_fathor_node_nid',
+      'table' => 'node_data_field_fathor_node',
+      'field' => 'field_fathor_node_nid',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('fields', array(
+    'title' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 0,
+      'id' => 'title',
+      'table' => 'node',
+      'field' => 'title',
+      'relationship' => 'none',
+    ),
+    'title_1' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 1,
+      'id' => 'title_1',
+      'table' => 'node',
+      'field' => 'title',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'field_fathor_node_nid',
+    ),
+    'field_pub_date_value' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 1,
+        'text' => 'by [title_1] on [field_pub_date_value]',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'medium',
+      'multiple' => array(
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_to' => '',
+        'group' => '',
+      ),
+      'repeat' => array(
+        'show_repeat_rule' => '',
+      ),
+      'fromto' => array(
+        'fromto' => 'both',
+      ),
+      'exclude' => 0,
+      'id' => 'field_pub_date_value',
+      'table' => 'node_data_field_pub_date',
+      'field' => 'field_pub_date_value',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+      'relationship' => 'none',
+    ),
+    'edit_node' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'text' => 'edit',
+      'exclude' => 1,
+      'id' => 'edit_node',
+      'table' => 'node',
+      'field' => 'edit_node',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'delete_node' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 1,
+        'text' => '[edit_node] [delete_node]',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'text' => 'delete',
+      'exclude' => 0,
+      'id' => 'delete_node',
+      'table' => 'node',
+      'field' => 'delete_node',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Override',
+      ),
+    ),
+    'nodequeue_links' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'text' => '',
+      'exclude' => 0,
+      'id' => 'nodequeue_links',
+      'table' => 'node',
+      'field' => 'nodequeue_links',
+      'relationship' => 'none',
+    ),
+  ));
+  $handler->override_option('filters', array(
+    'status' => array(
+      'operator' => '=',
+      'value' => '1',
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'status',
+      'table' => 'node',
+      'field' => 'status',
+      'relationship' => 'none',
+    ),
+    'type' => array(
+      'operator' => 'in',
+      'value' => array(
+        'farticle' => 'farticle',
+      ),
+      'group' => '0',
+      'exposed' => FALSE,
+      'expose' => array(
+        'operator' => FALSE,
+        'label' => '',
+      ),
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'relationship' => 'none',
+      'override' => array(
+        'button' => 'Use default',
+      ),
+    ),
+  ));
+  $handler->override_option('title', 'Featured Articles');
+  $handler->override_option('footer', '<div class="more-link">
+<a href="media/featured_article">Find More Featured Articles </a>
+</div>');
+  $handler->override_option('footer_empty', 1);
+  $handler->override_option('items_per_page', 5);
+  $handler->override_option('block_description', 'Front Page Featured Articles');
+  $handler->override_option('block_caching', -1);
 
   $views[$view->name] = $view;
 

@@ -18,11 +18,11 @@ function piropublic_media_content_default_fields() {
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'hidden',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '4' => array(
         'format' => 'default',
@@ -89,7 +89,7 @@ function piropublic_media_content_default_fields() {
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 1,
+        'exclude' => 0,
       ),
       '4' => array(
         'format' => 'default',
@@ -143,7 +143,7 @@ function piropublic_media_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Featured Author',
-      'weight' => '-3',
+      'weight' => '-4',
       'description' => '',
       'type' => 'nodereference_autocomplete',
       'module' => 'nodereference',
@@ -161,12 +161,12 @@ function piropublic_media_content_default_fields() {
         'format' => 'hidden',
       ),
       'teaser' => array(
-        'format' => 'default',
+        'format' => 'medium',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 1,
+        'format' => 'medium',
+        'exclude' => 0,
       ),
       '4' => array(
         'format' => 'default',
@@ -218,7 +218,7 @@ function piropublic_media_content_default_fields() {
       'year_range' => '-3:+3',
       'label_position' => 'above',
       'label' => 'Published Date',
-      'weight' => '-4',
+      'weight' => '-3',
       'description' => 'The date that the content was published',
       'type' => 'date_popup',
       'module' => 'date',
@@ -230,8 +230,8 @@ function piropublic_media_content_default_fields() {
     'field_name' => 'field_authoruser',
     'type_name' => 'fauthor',
     'display_settings' => array(
-      'weight' => '-2',
-      'parent' => 'group_author_pane',
+      'weight' => '-3',
+      'parent' => '',
       'label' => array(
         'format' => 'hidden',
       ),
@@ -313,8 +313,8 @@ function piropublic_media_content_default_fields() {
     'field_name' => 'field_brief_bio',
     'type_name' => 'fauthor',
     'display_settings' => array(
-      'weight' => '-3',
-      'parent' => 'group_author_pane',
+      'weight' => '-2',
+      'parent' => '',
       'label' => array(
         'format' => 'hidden',
       ),
@@ -381,16 +381,16 @@ function piropublic_media_content_default_fields() {
     'type_name' => 'fauthor',
     'display_settings' => array(
       'weight' => '-4',
-      'parent' => 'group_author_pane',
+      'parent' => '',
       'label' => array(
         'format' => 'hidden',
       ),
       'teaser' => array(
-        'format' => 'image_plain',
+        'format' => 'author_full_default',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'image_plain',
+        'format' => 'author_full_default',
         'exclude' => 0,
       ),
       '5' => array(
@@ -427,7 +427,7 @@ function piropublic_media_content_default_fields() {
       'resolution' => '150x200',
       'enforce_ratio' => 1,
       'croparea' => '500x500',
-      'enforce_minimum' => NULL,
+      'enforce_minimum' => 1,
       'file_extensions' => 'png gif jpg jpeg',
       'file_path' => 'featuredauthor/images',
       'progress_indicator' => 'bar',
@@ -441,16 +441,16 @@ function piropublic_media_content_default_fields() {
       'custom_title' => 0,
       'title_type' => 'textfield',
       'default_image' => array(
-        'filename' => 'default_avatar1234375017.jpg',
-        'filepath' => 'sites/default/files/imagefield_default_images/default_avatar1234375017.jpg',
+        'filename' => 'defprof.jpg',
+        'filepath' => 'sites/default/files/imagefield_default_images/defprof_0.jpg',
         'filemime' => 'image/jpeg',
         'source' => 'default_image_upload',
-        'destination' => 'sites/default/files/imagefield_default_images/default_avatar1234375017.jpg',
-        'filesize' => 13492,
+        'destination' => 'sites/default/files/imagefield_default_images/defprof_0.jpg',
+        'filesize' => 2872,
         'uid' => '1',
         'status' => 1,
-        'timestamp' => 1264577641,
-        'fid' => '89',
+        'timestamp' => 1314291196,
+        'fid' => '219',
       ),
       'use_default_image' => 1,
       'collapsible' => '2',

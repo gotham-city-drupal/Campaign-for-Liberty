@@ -192,6 +192,83 @@ function piropublic_community_node_info() {
 function piropublic_community_rules_defaults() {
   return array(
     'rules' => array(
+      'rules_redirect_content_profiles_to_profile' => array(
+        '#type' => 'rule',
+        '#set' => 'event_node_view',
+        '#label' => 'Redirect content profile subtypes to profile',
+        '#active' => 1,
+        '#weight' => '0',
+        '#categories' => array(
+          '0' => 'piropublic_community',
+        ),
+        '#status' => 'default',
+        '#conditions' => array(
+          '0' => array(
+            '#type' => 'condition',
+            '#settings' => array(
+              'type' => array(
+                'personal' => 'personal',
+                'profile' => 'profile',
+                'profpic' => 'profpic',
+                'settings' => 'settings',
+              ),
+              '#argument map' => array(
+                'node' => 'node',
+              ),
+            ),
+            '#name' => 'rules_condition_content_is_type',
+            '#info' => array(
+              'label' => 'Viewed content is Personal Information or Profile or Profile Picture or Settings',
+              'arguments' => array(
+                'node' => array(
+                  'type' => 'node',
+                  'label' => 'Content',
+                ),
+              ),
+              'module' => 'Node',
+            ),
+            '#weight' => 0,
+          ),
+        ),
+        '#actions' => array(
+          '0' => array(
+            '#weight' => 0,
+            '#info' => array(
+              'label' => 'Page redirect',
+              'module' => 'System',
+              'eval input' => array(
+                '0' => 'path',
+                '1' => 'query',
+                '2' => 'fragment',
+              ),
+            ),
+            '#name' => 'rules_action_drupal_goto',
+            '#settings' => array(
+              'path' => 'profile/[node:author-uid]',
+              'query' => '',
+              'fragment' => '',
+              'force' => 1,
+              'immediate' => 0,
+              '#eval input' => array(
+                'token_rules_input_evaluator' => array(
+                  'path' => array(
+                    '0' => 'node',
+                    '1' => ':global',
+                  ),
+                  'query' => array(
+                    '0' => ':global',
+                  ),
+                  'fragment' => array(
+                    '0' => ':global',
+                  ),
+                ),
+              ),
+            ),
+            '#type' => 'action',
+          ),
+        ),
+        '#version' => 6003,
+      ),
       'rules_19' => array(
         '#type' => 'rule',
         '#set' => 'event_node_insert',
@@ -723,83 +800,6 @@ function piropublic_community_rules_defaults() {
               ),
             ),
             '#type' => 'action',
-          ),
-        ),
-        '#version' => 6003,
-      ),
-      'rules_redirect_content_profiles_to_profile' => array(
-        '#type' => 'rule',
-        '#set' => 'event_node_view',
-        '#label' => 'Redirect content profile subtypes to profile',
-        '#active' => 1,
-        '#weight' => '0',
-        '#categories' => array(
-          '0' => 'piropublic_community',
-        ),
-        '#status' => 'default',
-        '#conditions' => array(
-          '0' => array(
-            '#weight' => 0,
-            '#info' => array(
-              'label' => 'Viewed content is Personal Information or Profile or Profile Picture or Settings',
-              'arguments' => array(
-                'node' => array(
-                  'type' => 'node',
-                  'label' => 'Content',
-                ),
-              ),
-              'module' => 'Node',
-            ),
-            '#name' => 'rules_condition_content_is_type',
-            '#settings' => array(
-              'type' => array(
-                'personal' => 'personal',
-                'profile' => 'profile',
-                'profpic' => 'profpic',
-                'settings' => 'settings',
-              ),
-              '#argument map' => array(
-                'node' => 'node',
-              ),
-            ),
-            '#type' => 'condition',
-          ),
-        ),
-        '#actions' => array(
-          '0' => array(
-            '#weight' => 0,
-            '#type' => 'action',
-            '#settings' => array(
-              'path' => 'profile/[node:author-uid]',
-              'query' => '',
-              'fragment' => '',
-              'force' => 1,
-              'immediate' => 0,
-              '#eval input' => array(
-                'token_rules_input_evaluator' => array(
-                  'path' => array(
-                    '0' => 'node',
-                    '1' => ':global',
-                  ),
-                  'query' => array(
-                    '0' => ':global',
-                  ),
-                  'fragment' => array(
-                    '0' => ':global',
-                  ),
-                ),
-              ),
-            ),
-            '#name' => 'rules_action_drupal_goto',
-            '#info' => array(
-              'label' => 'Page redirect',
-              'module' => 'System',
-              'eval input' => array(
-                '0' => 'path',
-                '1' => 'query',
-                '2' => 'fragment',
-              ),
-            ),
           ),
         ),
         '#version' => 6003,

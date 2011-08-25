@@ -60,6 +60,17 @@ function piropublic_frontpage_theme() {
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
     ),
+    'views_view_fields__front_page__page_1' => array(
+      'template' => 'views-view-fields--front-page--page-1',
+      'original hook' => 'views_view_fields',
+      'path' => drupal_get_path('module', 'piropublic_frontpage') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_fields',
+        'piropublic_frontpage_preprocess_views_view_fields__front_page__page_1',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+    ),
   );
 }
 
@@ -144,6 +155,32 @@ function piropublic_frontpage_preprocess_views_view_fields__frontpage_banner(&$v
      $variables['fields']['field_frontpage_banner_btntxt_value']->content ?
       $variables['button'] = $variables['fields']['field_frontpage_banner_btntxt_value']->content : $variables['button'] = t("READ MORE");
     $variables['button'] =  l($variables['button'], $variables['fields']['field_frontpage_banner_link_url']->content, array('attributes' => array('target' => $variables['fields']['title']->attributes['target']), 'html' => 'true'));
+  }
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_frontpage_preprocess_views_view_fields__front_page__page_1(&$variables) {
+  if ($variables['row']->node_type!='farticle') {
+    unset($variables['fields']['field_fauthor_image_fid']);
+    unset($variables['fields']['field_pub_date_value']);
+    if ($variables['row']->node_type=='memblog') {
+      if ($variables['row']->node_data_field_memblog_national_blog_field_memblog_national_blog_value=='member_blogs') {
+        $more_path = 'blog';
+      }
+      elseif ($variables['row']->node_data_field_memblog_national_blog_field_memblog_national_blog_value=='national') {
+        $more_path = 'blog/national';
+      }
+    }
+  }
+  else {
+    $more_path = 'media/featured_article';
+    unset($variables['fields']['created']);
+  }
+
+  if ($more_path) {
+    $variables['more_link'] = l(t('Find More Like This'), $more_path);
   }
 }
 

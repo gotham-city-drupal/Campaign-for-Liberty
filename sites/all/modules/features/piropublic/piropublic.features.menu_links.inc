@@ -148,7 +148,6 @@ function piropublic_menu_default_menu_links() {
     'module' => 'menu',
     'hidden' => '0',
     'external' => '1',
-    'has_children' => '0',
     'expanded' => '0',
     'weight' => '-50',
   );

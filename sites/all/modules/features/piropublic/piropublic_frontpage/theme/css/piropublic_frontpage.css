@@ -15,6 +15,11 @@
   margin-bottom: 10px;
 }
 
+.front #left_bottom .views-field-field-pub-date-value {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
 .front #left_bottom .views-field-delete-node {
   font-size: 11px;
 }
@@ -28,7 +33,13 @@
   /*min-height: 400px;*/
 }
 
-.front #content .picture  {
+.front #content .views-field-picture  {
+  float: left;
+  padding-right: 15px;
+  display: block;
+}
+
+.front #content .views-field-field-fauthor-image-fid  {
   float: left;
   padding-right: 15px;
   display: block;
@@ -47,6 +58,11 @@
 }
 
 .front #content .views-field-created {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.front #content .views-field-field-pub-date-value {
   font-size: 12px;
   margin-bottom: 10px;
 }
