@@ -2,7 +2,6 @@
 
 include_once('piropublic_media.features.inc');
 
-
 /**
  * Implementation of hook_init()
  */
@@ -12,4 +11,3 @@ function piropublic_media_init() {
     drupal_add_css(drupal_get_path('module', 'piropublic_media') . '/theme/css/' . variable_get('theme_default', 'garland'). '.css');
   }
 }
-

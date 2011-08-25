@@ -903,6 +903,18 @@ admin/blog*';
       'group_frontpage_banner_vidgrp' => 0,
       'group_frontpage_banner_lnkgrp' => 0,
     ),
+    'product_node_form' => array(
+      'menu' => 'menu',
+      'revision_information' => 'revision_information',
+      'author' => 'author',
+      'options' => 'options',
+      'xmlsitemap' => 'xmlsitemap',
+      'comment_settings' => 'comment_settings',
+      'path' => 'path',
+      'attachments' => 'attachments',
+      'base' => 0,
+      'shipping' => 0,
+    ),
   );
 
   $export['vertical_tabs_forms'] = $strongarm;

@@ -1037,6 +1037,10 @@ function piropublic_community_strongarm() {
   $strongarm->name = 'gmap_node_markers';
   $strongarm->value = array(
     'webform_report' => 'drupal',
+    'survey' => 'drupal',
+    'poll' => 'drupal',
+    'product_kit' => 'drupal',
+    'donation' => 'drupal',
     'farticle' => 'drupal',
     'fauthor' => 'drupal',
   );
