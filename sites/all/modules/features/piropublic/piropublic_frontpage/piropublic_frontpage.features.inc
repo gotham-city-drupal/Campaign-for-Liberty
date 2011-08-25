@@ -17,6 +17,32 @@ function piropublic_frontpage_default_fe_nodequeue_queue() {
   $export = array();
 
   $fe_nodequeue_queue = new stdClass;
+  $fe_nodequeue_queue->name = 'featured_article_queue';
+  $fe_nodequeue_queue->title = 'Featured Articles';
+  $fe_nodequeue_queue->subqueue_title = '';
+  $fe_nodequeue_queue->size = '5';
+  $fe_nodequeue_queue->link = 'Add to featured articles frontpage';
+  $fe_nodequeue_queue->link_remove = 'Remove from featured articles frontpage';
+  $fe_nodequeue_queue->owner = 'nodequeue';
+  $fe_nodequeue_queue->show_in_ui = '1';
+  $fe_nodequeue_queue->show_in_tab = '1';
+  $fe_nodequeue_queue->show_in_links = '1';
+  $fe_nodequeue_queue->reference = '0';
+  $fe_nodequeue_queue->reverse = '0';
+  $fe_nodequeue_queue->i18n = '0';
+  $fe_nodequeue_queue->types = array(
+    0 => 'farticle',
+  );
+  $fe_nodequeue_queue->roles = array(
+    0 => '7',
+    1 => '8',
+  );
+  $fe_nodequeue_queue->count = 0;
+  $fe_nodequeue_queue->machine_name = 'featured_article_queue';
+
+  $export['featured_article_queue'] = $fe_nodequeue_queue;
+
+  $fe_nodequeue_queue = new stdClass;
   $fe_nodequeue_queue->name = 'frontpage_banner_queue';
   $fe_nodequeue_queue->title = 'Frontpage Banner List';
   $fe_nodequeue_queue->subqueue_title = '';
@@ -57,7 +83,8 @@ function piropublic_frontpage_default_fe_nodequeue_queue() {
   $fe_nodequeue_queue->reverse = '1';
   $fe_nodequeue_queue->i18n = '0';
   $fe_nodequeue_queue->types = array(
-    0 => 'memblog',
+    0 => 'farticle',
+    1 => 'memblog',
   );
   $fe_nodequeue_queue->roles = array(
     0 => '7',
@@ -71,7 +98,7 @@ function piropublic_frontpage_default_fe_nodequeue_queue() {
   $fe_nodequeue_queue->name = 'member_posts';
   $fe_nodequeue_queue->title = 'Member Posts';
   $fe_nodequeue_queue->subqueue_title = '';
-  $fe_nodequeue_queue->size = '8';
+  $fe_nodequeue_queue->size = '5';
   $fe_nodequeue_queue->link = 'Add to member posts';
   $fe_nodequeue_queue->link_remove = 'Remove from member posts';
   $fe_nodequeue_queue->owner = 'nodequeue';
@@ -96,7 +123,7 @@ function piropublic_frontpage_default_fe_nodequeue_queue() {
   $fe_nodequeue_queue->name = 'national_blog';
   $fe_nodequeue_queue->title = 'National Blog';
   $fe_nodequeue_queue->subqueue_title = '';
-  $fe_nodequeue_queue->size = '8';
+  $fe_nodequeue_queue->size = '5';
   $fe_nodequeue_queue->link = 'Add to national blog';
   $fe_nodequeue_queue->link_remove = 'Remove from national blog';
   $fe_nodequeue_queue->owner = 'nodequeue';

@@ -142,21 +142,21 @@ function piropublic_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_format_long';
-  $strongarm->value = 'l, F j, Y - H:i';
+  $strongarm->value = 'l, F j, Y - g:ia';
 
   $export['date_format_long'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_format_medium';
-  $strongarm->value = 'D, Y-m-d H:i';
+  $strongarm->value = 'F j, Y - g:ia';
 
   $export['date_format_medium'] = $strongarm;
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_format_short';
-  $strongarm->value = 'Y-m-d H:i';
+  $strongarm->value = 'M j Y - g:ia';
 
   $export['date_format_short'] = $strongarm;
   $strongarm = new stdClass;
@@ -830,17 +830,18 @@ admin/blog*';
     'toggle_node_info_donation' => 0,
     'toggle_node_info_faq' => 0,
     'toggle_node_info_feed_fast' => 0,
+    'toggle_node_info_farticle' => 0,
+    'toggle_node_info_fauthor' => 0,
     'toggle_node_info_featured_blocks' => 0,
     'toggle_node_info_feed' => 0,
     'toggle_node_info_feed_item' => 0,
     'toggle_node_info_forum' => 0,
     'toggle_node_info_frontpage_banner' => 0,
-    'toggle_node_info_image' => 0,
     'toggle_node_info_op_image' => 0,
+    'toggle_node_info_image' => 0,
     'toggle_node_info_memblog' => 0,
     'toggle_node_info_page' => 0,
     'toggle_node_info_personal' => 0,
-    'toggle_node_info_poll' => 0,
     'toggle_node_info_product' => 0,
     'toggle_node_info_profile' => 0,
     'toggle_node_info_profpic' => 0,
@@ -848,6 +849,7 @@ admin/blog*';
     'toggle_node_info_settings' => 0,
     'toggle_node_info_staff' => 0,
     'toggle_node_info_state' => 0,
+    'toggle_node_info_features_test' => 1,
     'toggle_node_info_video' => 0,
     'toggle_node_info_feed_video' => 0,
     'toggle_node_info_webform' => 0,

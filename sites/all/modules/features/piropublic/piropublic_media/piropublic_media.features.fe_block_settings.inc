@@ -9,6 +9,21 @@ function piropublic_media_default_fe_block_settings() {
   // admin_theme
   $theme = array();
 
+  $theme['views--exp-featured_articles-page_4'] = array(
+    'module' => 'views',
+    'delta' => '-exp-featured_articles-page_4',
+    'theme' => 'admin_theme',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => 'Filter by Author',
+    'cache' => '1',
+  );
+
   $theme['views-featured_articles-block_1'] = array(
     'module' => 'views',
     'delta' => 'featured_articles-block_1',
@@ -50,7 +65,7 @@ function piropublic_media_default_fe_block_settings() {
     'throttle' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '',
+    'title' => '<none>',
     'cache' => '-1',
   );
 
@@ -102,21 +117,6 @@ function piropublic_media_default_fe_block_settings() {
   $theme['views-featured_articles-block_7'] = array(
     'module' => 'views',
     'delta' => 'featured_articles-block_7',
-    'theme' => 'admin_theme',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'throttle' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => '',
-    'cache' => '-1',
-  );
-
-  $theme['views-featured_articles-block_8'] = array(
-    'module' => 'views',
-    'delta' => 'featured_articles-block_8',
     'theme' => 'admin_theme',
     'status' => 0,
     'weight' => '0',
@@ -134,6 +134,21 @@ function piropublic_media_default_fe_block_settings() {
   // liberty
   $theme = array();
 
+  $theme['views--exp-featured_articles-page_4'] = array(
+    'module' => 'views',
+    'delta' => '-exp-featured_articles-page_4',
+    'theme' => 'liberty',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => 'Filter by Author',
+    'cache' => '1',
+  );
+
   $theme['views-featured_articles-block_1'] = array(
     'module' => 'views',
     'delta' => 'featured_articles-block_1',
@@ -175,7 +190,7 @@ function piropublic_media_default_fe_block_settings() {
     'throttle' => '0',
     'visibility' => '0',
     'pages' => '',
-    'title' => '',
+    'title' => '<none>',
     'cache' => '-1',
   );
 
@@ -227,21 +242,6 @@ function piropublic_media_default_fe_block_settings() {
   $theme['views-featured_articles-block_7'] = array(
     'module' => 'views',
     'delta' => 'featured_articles-block_7',
-    'theme' => 'liberty',
-    'status' => 0,
-    'weight' => '0',
-    'region' => '',
-    'custom' => '0',
-    'throttle' => '0',
-    'visibility' => '0',
-    'pages' => '',
-    'title' => '',
-    'cache' => '-1',
-  );
-
-  $theme['views-featured_articles-block_8'] = array(
-    'module' => 'views',
-    'delta' => 'featured_articles-block_8',
     'theme' => 'liberty',
     'status' => 0,
     'weight' => '0',
