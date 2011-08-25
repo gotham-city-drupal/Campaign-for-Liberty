@@ -164,6 +164,7 @@ function piropublic_frontpage_preprocess_views_view_fields__frontpage_banner(&$v
 function piropublic_frontpage_preprocess_views_view_fields__front_page__page_1(&$variables) {
   if ($variables['row']->node_type!='farticle') {
     unset($variables['fields']['field_fauthor_image_fid']);
+    unset($variables['fields']['field_pub_date_value']);
     if ($variables['row']->node_type=='memblog') {
       if ($variables['row']->node_data_field_memblog_national_blog_field_memblog_national_blog_value=='member_blogs') {
         $more_path = 'blog';
@@ -175,6 +176,7 @@ function piropublic_frontpage_preprocess_views_view_fields__front_page__page_1(&
   }
   else {
     $more_path = 'media/featured_article';
+    unset($variables['fields']['created']);
   }
 
   if ($more_path) {
