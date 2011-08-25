@@ -1,0 +1,59 @@
+<?php
+// $Id: uc_single_page_checkout.install,v 1.2 2011/08/23 05:53:53 kbell Exp $
+/**
+ * Implementation of hook_schema().
+ */
+function uc_single_page_checkout_schema() {
+  $schema = array();
+  $schema['uc_single_page_checkout'] = array(
+    'description' => 'The table for node panes in a single page checkout.',
+    'fields' => array(
+      'tid' => array(
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+        ),
+      'lid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+        ),
+      'pid' => array(
+        'description' => 'The primary identifier for a product.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+        ),
+      'nid' => array(
+        'description' => 'The primary identifier for a node.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+        ),
+      'text' => array(
+        'description' => 'The label for the checkbox.',
+        'type' => 'varchar',
+        'length' => 9999
+        ),
+    ),
+    'primary key' => array('tid')
+    );
+  return $schema;
+}
+/**
+ * Implementation of hook_install().
+ */
+function uc_single_page_checkout_install() {
+  drupal_install_schema('uc_single_page_checkout');
+  drupal_set_message(t('Ubercart Single Page Checkout module installed successfully.'), 'warning');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function uc_single_page_checkout_uninstall() {
+  drupal_uninstall_schema('uc_single_page_checkout');
+
+  drupal_set_message(t('Ubercart Single Page Checkout module uninstalled successfully.'), 'warning');
+}
+

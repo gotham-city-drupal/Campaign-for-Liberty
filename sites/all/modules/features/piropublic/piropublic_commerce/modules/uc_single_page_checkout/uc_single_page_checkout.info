@@ -1,0 +1,11 @@
+
+name = Ubercart Single Page Checkout
+description = Allow creating panes from node content and adding them to checkout based on the product purchased.
+package = Ubercart - extra
+core = 6.x
+dependencies[] = ahah_helper
+dependencies[] = uc_product
+dependencies[] = uc_store
+dependencies[] = uc_cart
+dependencies[] = uc_order
+

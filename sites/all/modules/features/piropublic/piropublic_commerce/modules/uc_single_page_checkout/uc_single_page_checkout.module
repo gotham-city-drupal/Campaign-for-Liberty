@@ -1,0 +1,352 @@
+<?php
+// $Id: uc_single_page_checkout.module,v 1.1.3 2011/08/23 00:59:08 kbell Exp $
+/**
+ * Ubercart Node Panes
+ * Adds the ability to use nodes as panes in the checkout
+ */
+
+/**
+ * Implementation of hook_menu().
+ */
+function uc_single_page_checkout_menu() {
+  $path = drupal_get_path('module', 'uc_single_page_checkout') .'/includes';
+  $items['admin/settings/uc-single-page-checkout/settings'] = array(
+    'title'             => t('UC Single Page Checkout'),
+    'description'       => t('Configure panes available for products in the checkout page.'),
+    'page callback'     => 'drupal_get_form',
+    'page arguments'    => array('uc_single_page_checkout_panes_admin_settings_form'),
+    'access arguments'  => array('administer store'),
+    'file'              => 'uc_single_page_checkout_panes.admin.inc',
+    'file path'         => $path,
+    'type'              => MENU_NORMAL_ITEM,
+    'weight'            => 0,
+  );
+  $items['admin/settings/uc-single-page-checkout/settings/panes'] = array(
+    'title'             => t('Node Panes'),
+    'description'       => t('Configure options for node panes that will show in checkout.'),
+    'page callback'     => 'drupal_get_form',
+    'page arguments'    => array('uc_single_page_checkout_panes_admin_settings_form'),
+    'access arguments'  => array('administer store'),
+    'file'              => 'uc_single_page_checkout_panes.admin.inc',
+    'file path'         => $path,
+    'type'              => MENU_DEFAULT_LOCAL_TASK,
+    'weight'            => 0,
+  );
+  $items['uc-single-page-checkout/autocomplete-node'] = array(
+    'page callback'     => 'uc_single_page_checkout_autocomplete_node',
+    'type'              => MENU_CALLBACK,
+    'file'              => 'uc_single_page_checkout_autocomplete_node.inc',
+    'file path'         => $path,
+    'access arguments'  => array('administer store'),
+  );
+  $items['uc-single-page-checkout/autocomplete-product'] = array(
+    'page callback'     => 'uc_single_page_checkout_autocomplete_product',
+    'type'              => MENU_CALLBACK,
+    'file'              => 'uc_single_page_checkout_autocomplete_product.inc',
+    'file path'         => $path,
+    'access arguments'  => array('administer store'),
+  );
+  return $items;
+}
+
+/**
+ * Implementation of hook_checkout_pane().
+ */
+function uc_single_page_checkout_checkout_pane() {
+  // get all of the db entries and create a pane for each
+  $result = db_query("SELECT * FROM {uc_single_page_checkout}");
+  $row = null;
+  while ($row = db_fetch_array($result)) {
+    $arr = db_fetch_array(db_query("SELECT title FROM {node} WHERE nid = %d LIMIT 1", $row['nid']));
+    $title = $arr['title'];
+    $func = 'uc_checkout_pane_uc_single_page_checkout_'. $row['lid']; // the hook ubercart will look for
+
+    // register the pane
+    $panes[] = array(
+      'id' => 'uc_single_page_checkout',
+      'callback' => $func,
+      'title' => $title,
+      'weight' => -11,
+      'collapsible' => FALSE,
+    );
+  }
+
+	return $panes;
+}
+
+/**
+ * Actual function used to produce content for each pane
+ *
+ * @param $lid
+ * The row id given by the entry in the db
+ *
+ * @return $content OR false
+ * returns the content to be displayed as a drupal form or false if conditions are not met
+ */
+function _uc_single_page_checkout_ucpane($lid) {
+  $result = db_query("SELECT * FROM {uc_single_page_checkout} WHERE lid = %d", $lid);
+  $row = null;
+  $row = db_fetch_array($result);
+  while ($row) {
+    if (_uc_single_page_checkout_checkcart($row['pid'])) {
+      
+      // used by other functions to check if a single page checkout pane is displayed
+      
+      $cartcontents = uc_cart_get_contents();      
+      global $is_spc;
+      $is_spc = 'one';    
+      global $no_spc;
+      $no_spc = 'one';
+      foreach ($cartcontents as $key => $value) {
+        $nl = node_load($value->nid);
+        if($nl->type != 'spc') {
+          global $is_spc;
+          $no_spc = 'no_spc';
+        }
+        else {
+          global $is_spc;
+          $is_spc = 'is_spc';
+        }
+      }    
+	  
+	  if (($is_spc == 'is_spc') && ($no_spc == 'one')) {
+	   
+	  $node = node_load($row['nid']);
+      unset($node->title);
+            
+      //Why remove the form tag? B/C multiple form tags do not play well with IE. 
+      //Why use preg_replace? B/C node_view is required to display the node, and UC alters node when node_view is called
+      $str_node = node_view($node);
+      $value = preg_replace('#</?form[^>]*>#is', '', $str_node);  
+	  
+      $id = 'uc_single_page_checkout_pane_'. $row['lid'];
+      $contents[$id] = array(
+        '#type' => 'markup',
+        '#value' => $value,
+      );
+      	  
+	  // Create an array with attribute keys and corresponding prices 
+	  $att = uc_product_get_attributes($node->nid);
+	  // Enter "Value" attribute id number here
+	  $blink = $att['1']->options;
+	  foreach($blink as $key => $control) {
+		 $newkey = 'att_' . $key; // $key is the attribute value, aka AttVal
+		 $tmp[$newkey] = $control->price;	
+	  }
+	  
+	  // Add $tmp to Drupal.settings so it can be later added when the order is saved
+	  drupal_add_js($tmp, 'setting');
+	  
+	  drupal_add_js("
+	    
+	    function removeLineItems(){
+	      $('tr:contains(Subtotal)').hide();  
+        };
+		
+		function updateOrderTotalWithAttributeValues() {
+          for (i=0; i<document.uccheckout[name='attributes[1]'].length; i++) {			
+		    // Get the selected attribute value
+            if ((document.uccheckout[name='attributes[1]'][i].checked == true) && (document.uccheckout[name='attributes[1]'][i].value != 4)) {           
+              var AttVal = 'att_' + document.uccheckout[name='attributes[1]'][i].value;
+			  // Now that we have the selected attribute value, use it to pull attribute price		  
+		      var AttPrice = Drupal.settings[AttVal];
+            }
+			else if ((document.uccheckout[name='attributes[1]'][i].checked == true) && (document.uccheckout[name='attributes[1]'][i].value == 4)) {           
+              var AttPrice = document.getElementById('edit-attributes-2').value;
+            }
+          }
+	      
+		  // Finally, set the price
+		  set_line_item('subtotal2', '". t('Correct Subtotal') ."', AttPrice , -10); 
+		  setTimeout('removeLineItems()', 1250);  
+		  // Add AttPrice to hidden form field so it can be added to order total on save
+		  \$('#edit-panes-uc-single-page-checkout-att-value').val(AttPrice);
+	    }  	
+	  
+	    \$(document).ready( function() { 
+		  updateOrderTotalWithAttributeValues();
+	      \$(document.uccheckout[name='attributes[1]']).click(function(){
+		    updateOrderTotalWithAttributeValues();
+	      });		  
+		  \$(document.getElementById('edit-attributes-2')).change(function(){
+		    updateOrderTotalWithAttributeValues();
+	      });		  
+	    });
+	    
+	    \$(document).ready(function() {
+          \$(document.uccheckout[name='attributes[2]']).focus(function() {
+            for (var i = 0; i < document.uccheckout[name='attributes[1]'].length; i++) {
+	          if (document.uccheckout[name='attributes[1]'][i].value == 4) { 
+	            document.uccheckout[name='attributes[1]'][i].checked = true;
+			  }
+			}
+		  });
+		})
+		
+		function optionallyHidePaypal() {
+	      if (document.uccheckout[name='panes[recurring][recurring_option][+1 months]'].checked == 1) { 
+	        document.getElementById('edit-panes-payment-payment-method-paypal-wps-wrapper').style.display = 'none';			
+		  }
+	      if (document.uccheckout[name='panes[recurring][recurring_option][+1 months]'].checked == 0) { 
+	        document.getElementById('edit-panes-payment-payment-method-paypal-wps-wrapper').style.display = 'block';			
+		  }		
+		}
+		
+		\$(document).ready(function() {
+		  optionallyHidePaypal();
+	      \$(document.uccheckout[name='panes[recurring][recurring_option][+1 months]']).click(function() {
+	        optionallyHidePaypal();
+		  });
+		});
+	  
+	  ", 'inline');
+	  }
+      return $contents;
+    }
+    else return false; 
+    
+  }
+}
+
+function uc_single_page_checkout_line_item() {
+  $items[] = array(
+    'id' => 'subtotal2',
+    'title' => t('Donation Amount'),
+    'weight' => 2,
+    'default' => TRUE,
+    'stored' => TRUE,
+    'add_list' => TRUE,
+    'calculated' => TRUE,
+    'display_only' => FALSE,
+  );
+  return $items;
+}
+
+/**
+ * Implementation of Hook Form Alter
+ *
+ * Hide all unnecessary forms when there is a single page checkout pane present
+ *
+ **/
+function uc_single_page_checkout_form_alter(&$form, $form_state, $form_id) {
+  switch ($form_id) {    
+	 case 'uc_cart_checkout_form':
+	   // This is a handy function to print out all form elements
+	   // $output .=dsm($form);
+	   global $is_spc;
+	   global $no_spc;	   
+	   
+	   if (($is_spc == 'is_spc') && ($no_spc != 'no_spc')) {
+	     unset($form['panes']['cart']);
+         // Used to save attribute value when form is saved 
+         // so that JS variable can be passed to PHP
+         $form['panes']['uc_single_page_checkout']['att_value'] = array(
+           '#type' => 'hidden',
+         );
+	     $form['#submit'][] = 'uc_single_page_checkout_attsave_submit';	     
+	     // Add css file only on SPC pages
+	     drupal_add_css(drupal_get_path('module', 'uc_single_page_checkout') .'/uc_single_page_checkout.css', 'module', 'all', FALSE);
+	     $form['panes']['recurring']['recurring_option']['#type'] = 'checkboxes';
+	     $form['panes']['recurring']['#title'] = 'Recurring Donation';
+	     $form['panes']['recurring']['#description'] = '';
+	     $form['panes']['recurring']['recurring_option']['#type'] = 'checkboxes';	     
+	     $form['panes']['recurring']['recurring_option']['#title'] = '';	     
+	     $form['panes']['recurring']['recurring_option']['#options']['+1 months'] = 'I would like this to be a recurring monthly donation.';
+         // unset($form['panes']['recurring']['recurring_option']['#default_value']); // otherwise watchdog complains         
+	     $nodes = unserialize($form['cart_contents']['#value']);
+	     foreach($nodes as $node) {
+	       if($node->nid == '3896') {
+	         $form['panes']['recurring']['recurring_option']['#default_value'] = array('+1 months');
+	       }
+	       else {
+	         unset($form['panes']['recurring']['recurring_option']['#default_value']); // otherwise watchdog complains  
+	       }
+	     }	
+	   }  
+	   else {
+	     unset($form['panes']['payment']['payment_method']['#options']['paypal_ec']);
+	     unset($form['panes']['payment']['payment_method']['#options']['paypal_wps']);
+	     unset($form['panes']['recurring']);
+         unset($form['recurring_option']);
+         unset($form['apply']);
+	   }	 
+	   $form['panes']['payment']['payment_method']['#default_value'] = 'credit';
+	   $form['#attributes'] = array('name' => 'uccheckout');
+       break; 
+     case 'uc_recurring_order_pane_cart':
+       unset($form['recurring_option']);
+       unset($form['apply']);
+       break; 
+  }
+}
+
+/**
+ * Submit handler to store attribute value
+ **/
+function uc_single_page_checkout_attsave_submit($form, &$form_state) {
+  $attval = $form_state['values']['panes']['uc_single_page_checkout']['att_value'];
+  //Delete all line items
+  uc_order_delete_line_item($_SESSION['cart_order'], $order = TRUE);
+  uc_order_line_item_add($_SESSION['cart_order'], 'subtotal2', t('Donation Amount'), $attval, 2);
+}
+
+/**
+ * implementation of hook_init()
+ *
+ * Initializes each of the needed uc_checkout_pane hooks needed for each pane
+ * only runs on cart/checkout and deeper pages
+ */
+function uc_single_page_checkout_init() {
+  $ccout = array('cart', 'checkout');
+  $adminco = array('admin', 'store', 'settings', 'checkout');
+  if (array_intersect(arg(), $ccout) || array_intersect(arg(), $adminco)) {
+    $result = db_query("SELECT * FROM {uc_single_page_checkout}");
+    $row = null;
+    while ($row = db_fetch_array($result)) {
+      $id = 'uc_checkout_pane_uc_single_page_checkout_'. $row['lid'];
+      $lid = $row['lid'];
+      // here we create a function as a variable to be reused
+      $uccheckout_pane_uc_single_page_checkout_default = sprintf('
+      function %s($op, &$arg1, $arg2) {
+        switch ($op) {
+          case \'view\':
+            global $language;
+            $contents = _uc_single_page_checkout_ucpane(%s);            
+            if ($contents != false) return array(\'contents\' => $contents);
+        }
+      }', $id, $lid);
+      // initialize this function, YAY!
+      eval($uccheckout_pane_uc_single_page_checkout_default);
+    }
+  }
+}
+
+/**
+ * Custom function to check the contents of the cart
+ *
+ * @param $pid
+ * the product id (nid) associated with a product
+ * if no pid given then we check against the classes specified in the administration
+ *
+ * @return true OR false
+ * returns either true or false regarding whether the pane calling this function should be shown
+ */
+function _uc_single_page_checkout_checkcart($pid) {
+  $cartcontents = uc_cart_get_contents();
+  // TODO: allow classes here
+  //$classes = explode(",", trim(variable_get('uc_single_page_checkout_classes', null)));
+  if ($pid) {
+    foreach($cartcontents as $elem) {
+      if ($elem->nid == $pid) return true;
+    }
+  }/*
+  else {
+    foreach($cartcontents as $elem) {
+      $node = node_load($elem->nid);
+      if (in_array($node->type, $classes)) return true;
+    }
+  }*/
+  return false;
+}
+
+

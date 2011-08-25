@@ -1,0 +1,4 @@
+#uc_single_page_checkout-pane input.form-submit,
+#content h1{
+  display: none;
+}
