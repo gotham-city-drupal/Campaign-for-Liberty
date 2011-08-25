@@ -1037,6 +1037,8 @@ function piropublic_community_strongarm() {
   $strongarm->name = 'gmap_node_markers';
   $strongarm->value = array(
     'webform_report' => 'drupal',
+    'farticle' => 'drupal',
+    'fauthor' => 'drupal',
   );
 
   $export['gmap_node_markers'] = $strongarm;
