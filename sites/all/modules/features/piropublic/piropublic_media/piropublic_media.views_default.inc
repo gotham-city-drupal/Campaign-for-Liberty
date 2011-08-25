@@ -390,12 +390,15 @@ function piropublic_media_views_default_views() {
     ),
   ));
   $handler->override_option('sorts', array(
-    'created' => array(
+    'field_pub_date_value' => array(
       'order' => 'DESC',
-      'granularity' => 'second',
-      'id' => 'created',
-      'table' => 'node',
-      'field' => 'created',
+      'delta' => -1,
+      'id' => 'field_pub_date_value',
+      'table' => 'node_data_field_pub_date',
+      'field' => 'field_pub_date_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
       'relationship' => 'none',
     ),
   ));
@@ -752,7 +755,7 @@ function piropublic_media_views_default_views() {
     'vid' => array(
       'operator' => 'in',
       'value' => array(
-        '6' => '6',
+        '5' => '5',
       ),
       'group' => '0',
       'exposed' => FALSE,

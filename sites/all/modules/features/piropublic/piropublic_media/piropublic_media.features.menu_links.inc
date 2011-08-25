@@ -23,7 +23,7 @@ function piropublic_media_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '-50',
-    'parent_path' => 'node/6018',
+    'parent_path' => 'node/12416',
     'parent_uuid' => '4e23ba37-cf29-11e0-be4c-a9b89ff3e49c',
   );
   // Exported menu link: secondary-links:featured_author

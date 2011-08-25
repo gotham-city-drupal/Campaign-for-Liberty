@@ -60,8 +60,7 @@ function piropublic_frontpage_default_fe_nodequeue_queue() {
     0 => 'frontpage_banner',
   );
   $fe_nodequeue_queue->roles = array(
-    0 => '5',
-    1 => '7',
+    0 => '7',
   );
   $fe_nodequeue_queue->count = 0;
   $fe_nodequeue_queue->machine_name = 'frontpage_banner_queue';
