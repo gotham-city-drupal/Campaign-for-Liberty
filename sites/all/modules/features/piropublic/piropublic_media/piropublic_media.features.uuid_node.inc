@@ -17,7 +17,7 @@ function piropublic_media_uuid_features_default_content() {
     'sticky' => '0',
     'tnid' => '0',
     'translate' => '0',
-    'revision_uid' => '0',
+    'revision_uid' => '1',
     'title' => 'Media',
     'body' => '',
     'teaser' => '',
