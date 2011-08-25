@@ -51,7 +51,7 @@ function piropublic_about_content_default_fields() {
     'multiple' => '0',
     'module' => 'text',
     'active' => '1',
-    'text_processing' => '0',
+    'text_processing' => '1',
     'max_length' => '400',
     'allowed_values' => '',
     'allowed_values_php' => '',
