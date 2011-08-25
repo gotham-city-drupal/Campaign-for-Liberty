@@ -14,6 +14,43 @@ function piropublic_media_ctools_plugin_api() {
 }
 
 /**
+ * Implementation of hook_imagecache_default_presets().
+ */
+function piropublic_media_imagecache_default_presets() {
+  $items = array(
+    'author_full' => array(
+      'presetname' => 'author_full',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale_and_crop',
+          'data' => array(
+            'width' => '190',
+            'height' => '235',
+          ),
+        ),
+      ),
+    ),
+    'author_teaser' => array(
+      'presetname' => 'author_teaser',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale_and_crop',
+          'data' => array(
+            'width' => '80',
+            'height' => '98',
+          ),
+        ),
+      ),
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implementation of hook_node_info().
  */
 function piropublic_media_node_info() {

@@ -60,6 +60,17 @@ function piropublic_frontpage_theme() {
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
     ),
+    'views_view_fields__front_page' => array(
+      'template' => 'views-view-fields--front-page',
+      'original hook' => 'views_view_fields',
+      'path' => drupal_get_path('module', 'piropublic_frontpage') . '/theme/templates/',
+   	  'preprocess functions' => array(
+      	'template_preprocess',
+      	'template_preprocess_views_view_fields',
+        'piropublic_frontpage_preprocess_views_view_fields__front_page',
+      ),
+      'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
+    ),
   );
 }
 
@@ -145,6 +156,13 @@ function piropublic_frontpage_preprocess_views_view_fields__frontpage_banner(&$v
       $variables['button'] = $variables['fields']['field_frontpage_banner_btntxt_value']->content : $variables['button'] = t("READ MORE");
     $variables['button'] =  l($variables['button'], $variables['fields']['field_frontpage_banner_link_url']->content, array('attributes' => array('target' => $variables['fields']['title']->attributes['target']), 'html' => 'true'));
   }
+}
+
+/**
+ * Implements hook_preprocess()
+ */
+function piropublic_frontpage_preprocess_views_view_fields__front_page(&$variables) {
+  $variables = $variables;
 }
 
 /**
