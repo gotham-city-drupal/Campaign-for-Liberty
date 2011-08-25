@@ -18,11 +18,11 @@ function piropublic_media_content_default_fields() {
       ),
       'teaser' => array(
         'format' => 'default',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       'full' => array(
         'format' => 'hidden',
-        'exclude' => 0,
+        'exclude' => 1,
       ),
       '4' => array(
         'format' => 'default',
@@ -89,7 +89,7 @@ function piropublic_media_content_default_fields() {
       ),
       'full' => array(
         'format' => 'default',
-        'exclude' => 1,
+        'exclude' => 0,
       ),
       '4' => array(
         'format' => 'default',
@@ -143,7 +143,7 @@ function piropublic_media_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Featured Author',
-      'weight' => '-3',
+      'weight' => '-4',
       'description' => '',
       'type' => 'nodereference_autocomplete',
       'module' => 'nodereference',
@@ -161,12 +161,12 @@ function piropublic_media_content_default_fields() {
         'format' => 'hidden',
       ),
       'teaser' => array(
-        'format' => 'default',
+        'format' => 'medium',
         'exclude' => 0,
       ),
       'full' => array(
-        'format' => 'default',
-        'exclude' => 1,
+        'format' => 'medium',
+        'exclude' => 0,
       ),
       '4' => array(
         'format' => 'default',
@@ -218,7 +218,7 @@ function piropublic_media_content_default_fields() {
       'year_range' => '-3:+3',
       'label_position' => 'above',
       'label' => 'Published Date',
-      'weight' => '-4',
+      'weight' => '-3',
       'description' => 'The date that the content was published',
       'type' => 'date_popup',
       'module' => 'date',

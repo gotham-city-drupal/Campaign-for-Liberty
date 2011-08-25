@@ -28,7 +28,13 @@
   /*min-height: 400px;*/
 }
 
-.front #content .picture  {
+.front #content .views-field-picture  {
+  float: left;
+  padding-right: 15px;
+  display: block;
+}
+
+.front #content .views-field-field-fauthor-image-fid  {
   float: left;
   padding-right: 15px;
   display: block;

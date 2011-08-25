@@ -5,6 +5,7 @@
  * Default simple view template to all the fields as a row.
  *
  * - $view: The view in use.
+ * - $more_link: links to correct page.
  * - $fields: an array of $field objects. Each one contains:
  *   - $field->content: The output of the field.
  *   - $field->raw: The raw data for the field, if it exists. This is NOT output safe.
@@ -37,3 +38,7 @@
       <<?php print $field->element_type; ?> class="field-content"><?php print $field->content; ?></<?php print $field->element_type; ?>>
   </<?php print $field->inline_html;?>>
 <?php endforeach; ?>
+
+<?php if (!empty($more_link)): ?>
+  <div class="more-link"><?php print $more_link; ?></div>
+<?php endif; ?>

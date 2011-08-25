@@ -22,6 +22,7 @@
  *
  * @ingroup views_templates
  */
+
 ?>
 
 <div class="promo_item">

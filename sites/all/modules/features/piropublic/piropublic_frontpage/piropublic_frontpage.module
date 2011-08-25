@@ -60,14 +60,14 @@ function piropublic_frontpage_theme() {
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
     ),
-    'views_view_fields__front_page' => array(
-      'template' => 'views-view-fields--front-page',
+    'views_view_fields__front_page__page_1' => array(
+      'template' => 'views-view-fields--front-page--page-1',
       'original hook' => 'views_view_fields',
       'path' => drupal_get_path('module', 'piropublic_frontpage') . '/theme/templates/',
    	  'preprocess functions' => array(
       	'template_preprocess',
       	'template_preprocess_views_view_fields',
-        'piropublic_frontpage_preprocess_views_view_fields__front_page',
+        'piropublic_frontpage_preprocess_views_view_fields__front_page__page_1',
       ),
       'arguments' => array('view' => NULL, 'options' => NULL, 'row' => NULL),
     ),
@@ -161,8 +161,25 @@ function piropublic_frontpage_preprocess_views_view_fields__frontpage_banner(&$v
 /**
  * Implements hook_preprocess()
  */
-function piropublic_frontpage_preprocess_views_view_fields__front_page(&$variables) {
-  $variables = $variables;
+function piropublic_frontpage_preprocess_views_view_fields__front_page__page_1(&$variables) {
+  if ($variables['row']->node_type!='farticle') {
+    unset($variables['fields']['field_fauthor_image_fid']);
+    if ($variables['row']->node_type=='memblog') {
+      if ($variables['row']->node_data_field_memblog_national_blog_field_memblog_national_blog_value=='member_blogs') {
+        $more_path = 'blog';
+      }
+      elseif ($variables['row']->node_data_field_memblog_national_blog_field_memblog_national_blog_value=='national') {
+        $more_path = 'blog/national';
+      }
+    }
+  }
+  else {
+    $more_path = 'media/featured_article';
+  }
+
+  if ($more_path) {
+    $variables['more_link'] = l(t('Find More Like This'), $more_path);
+  }
 }
 
 /**

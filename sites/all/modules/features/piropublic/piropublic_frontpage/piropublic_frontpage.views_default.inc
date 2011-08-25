@@ -38,13 +38,66 @@ function piropublic_frontpage_views_default_views() {
         'button' => 'Override',
       ),
     ),
+    'field_fathor_node_nid' => array(
+      'label' => 'Featured Author',
+      'required' => 0,
+      'delta' => '-1',
+      'id' => 'field_fathor_node_nid',
+      'table' => 'node_data_field_fathor_node',
+      'field' => 'field_fathor_node_nid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
   ));
   $handler->override_option('fields', array(
-    'picture' => array(
+    'field_fauthor_image_fid' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 0,
         'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'label_type' => 'none',
+      'format' => 'staff_header_image_linked',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 0,
+      'id' => 'field_fauthor_image_fid',
+      'table' => 'node_data_field_fauthor_image',
+      'field' => 'field_fauthor_image_fid',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'field_fathor_node_nid',
+    ),
+    'picture' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '[field_fauthor_image_fid][picture]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -124,10 +177,10 @@ function piropublic_frontpage_views_default_views() {
         'strip_tags' => 0,
       ),
       'empty' => '',
-      'hide_empty' => 0,
+      'hide_empty' => 1,
       'empty_zero' => 0,
       'link_to_user' => 1,
-      'overwrite_anonymous' => 0,
+      'overwrite_anonymous' => 1,
       'anonymous_text' => '',
       'exclude' => 1,
       'id' => 'name',
@@ -138,11 +191,44 @@ function piropublic_frontpage_views_default_views() {
         'button' => 'Override',
       ),
     ),
+    'title_1' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 1,
+      'exclude' => 1,
+      'id' => 'title_1',
+      'table' => 'node',
+      'field' => 'title',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'field_fathor_node_nid',
+    ),
     'created' => array(
       'label' => '',
       'alter' => array(
         'alter_text' => 1,
-        'text' => 'by [name] on [created]',
+        'text' => 'by [name][title_1]  on [created]',
         'make_link' => 0,
         'path' => '',
         'link_class' => '',
@@ -395,6 +481,81 @@ function piropublic_frontpage_views_default_views() {
       'field' => 'nodequeue_links',
       'relationship' => 'none',
     ),
+    'field_memblog_national_blog_value' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'label_type' => 'none',
+      'format' => 'plain',
+      'multiple' => array(
+        'group' => TRUE,
+        'multiple_number' => '',
+        'multiple_from' => '',
+        'multiple_reversed' => FALSE,
+      ),
+      'exclude' => 1,
+      'id' => 'field_memblog_national_blog_value',
+      'table' => 'node_data_field_memblog_national_blog',
+      'field' => 'field_memblog_national_blog_value',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
+    'type' => array(
+      'label' => '',
+      'alter' => array(
+        'alter_text' => 0,
+        'text' => '',
+        'make_link' => 0,
+        'path' => '',
+        'link_class' => '',
+        'alt' => '',
+        'prefix' => '',
+        'suffix' => '',
+        'target' => '',
+        'help' => '',
+        'trim' => 0,
+        'max_length' => '',
+        'word_boundary' => 1,
+        'ellipsis' => 1,
+        'html' => 0,
+        'strip_tags' => 0,
+      ),
+      'empty' => '',
+      'hide_empty' => 0,
+      'empty_zero' => 0,
+      'link_to_node' => 0,
+      'machine_name' => 1,
+      'exclude' => 1,
+      'id' => 'type',
+      'table' => 'node',
+      'field' => 'type',
+      'override' => array(
+        'button' => 'Override',
+      ),
+      'relationship' => 'none',
+    ),
   ));
   $handler->override_option('sorts', array(
     'position' => array(
@@ -443,11 +604,8 @@ function piropublic_frontpage_views_default_views() {
   $handler->override_option('cache', array(
     'type' => 'none',
   ));
-  $handler->override_option('footer', '<div class="more-link">
-<a href="/media/featured_article">Find More Featured Articles </a>
-</div>');
   $handler->override_option('footer_format', '2');
-  $handler->override_option('footer_empty', 1);
+  $handler->override_option('footer_empty', 0);
   $handler->override_option('items_per_page', 3);
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->override_option('filters', array(
@@ -723,8 +881,9 @@ function piropublic_frontpage_views_default_views() {
   ));
   $handler->override_option('title', 'National Blog');
   $handler->override_option('footer', '<div class="more-link">
-<a href="/blog/national">Read More on Our Official Blog </a>
+<a href="blog/national">Read More on Our Official Blog </a>
 </div>');
+  $handler->override_option('footer_empty', 1);
   $handler->override_option('items_per_page', 5);
   $handler->override_option('block_description', 'Front Page National Blog');
   $handler->override_option('block_caching', -1);
@@ -953,11 +1112,12 @@ function piropublic_frontpage_views_default_views() {
   ));
   $handler->override_option('title', 'Member Posts');
   $handler->override_option('footer', '<div class="more-link">
-<a href="/blog">Find more member posts </a>
+<a href="blog">Find more member posts </a>
 </div>
 <div class="more-link">
-<a href="/user/register">Start your own blog </a>
+<a href="user/register">Start your own blog </a>
 </div>');
+  $handler->override_option('footer_empty', 1);
   $handler->override_option('items_per_page', 5);
   $handler->override_option('block_description', 'Front Page Member Posts');
   $handler->override_option('block_caching', -1);
@@ -1257,6 +1417,10 @@ function piropublic_frontpage_views_default_views() {
     ),
   ));
   $handler->override_option('title', 'Featured Articles');
+  $handler->override_option('footer', '<div class="more-link">
+<a href="media/featured_article">Find More Featured Articles </a>
+</div>');
+  $handler->override_option('footer_empty', 1);
   $handler->override_option('items_per_page', 5);
   $handler->override_option('block_description', 'Front Page Featured Articles');
   $handler->override_option('block_caching', -1);
