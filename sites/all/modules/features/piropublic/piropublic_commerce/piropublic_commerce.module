@@ -11,7 +11,8 @@ function piropublic_commerce_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
       case 'view':
         if ($node->model=='D00001') {
           unset($node->content['model']);
-          unset($node->content['display_price']);
+          // manintain price update since moving to single-form
+          //unset($node->content['display_price']);
           unset($node->content['sell_price']);
         }
       break;
