@@ -33,6 +33,8 @@ function piropublic_commerce_context_default_contexts() {
         ),
       ),
     ),
+    'breadcrumb' => 'node/4039',
+    'menu' => 'node/4039',
   );
   $context->condition_mode = 0;
 
