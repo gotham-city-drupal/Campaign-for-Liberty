@@ -154,7 +154,10 @@ function uc_ndf_charge($order_id, $amount, $data) {
   // parse result
   $exploded = explode('&', $result);
   foreach ($exploded as &$value) {
-    $response[strstr($value, '=', true)] = substr(strstr($value, '='), 1);
+    // PHP 5.3
+    //$response[strstr($value, '=', true)] = substr(strstr($value, '='), 1);
+    // PHP 5.2
+    $response[substr($value, 0, strpos($value, '='))] = substr(strstr($value, '='), 1);
   }
 
   if ($response['ResponseCode'] != '000') {
