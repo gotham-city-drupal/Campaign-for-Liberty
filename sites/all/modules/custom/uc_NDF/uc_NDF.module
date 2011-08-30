@@ -6,263 +6,213 @@
  * Process payments using NDF.
  *
  * Code by David Long <dave@longwaveconsulting.com>
+ * Rewritten by Mike Pirog <mpirog@pirotekdc.com>
  *
  * Development sponsored by:
  * * CityTech Corp - http://www.citytechcorp.com/
  * * NDF - http://www.NDF.com/
+ * * Gotham City Drupal - http://gothamcitydrupal.com/
  *
  * For API reference see https://NDF.com/manuals/NDFAPIUserGuideXML.pdf
  */
 
+// Currently no test url
+//define('UC_NDF_TEST_GATEWAY_URL', 'https://webtest.comstarinteractive.com/chargeanywheremanager/PaymentForm/PaymentForm.asp');
+define('UC_NDF_LIVE_GATEWAY_URL', 'https://www.comstarinteractive.com/ChargeAnywhereManager/PaymentForm/PaymentForm.asp');
+
+if (!function_exists('hex_hmac_md5')) {
+  require_once('hmacmd5_inc.php');
+}
+
 /**
  * Implementation of hook_payment_gateway().
  */
- 
- require_once('hmacmd5_inc.php');
-function uc_NDF_payment_gateway() {
+function uc_ndf_payment_gateway() {
   $gateways[] = array(
-    'id' => 'NDF',
+    'id' => 'ndf',
     'title' => t('NDF'),
     'description' => t('Process credit card payments using NDF.'),
-    'settings' => 'uc_NDF_settings_form',
-    'credit' => 'uc_NDF_charge',
+    'settings' => 'uc_ndf_settings_form',
+    'credit' => 'uc_ndf_charge',
     'credit_txn_types' => array(UC_CREDIT_AUTH_ONLY, UC_CREDIT_PRIOR_AUTH_CAPTURE, UC_CREDIT_AUTH_CAPTURE),
   );
 
   return $gateways;
 }
 
-
-
 /**
  * Payment gateway settings form.
  */
-function uc_NDF_settings_form() {
-  $form['uc_NDF_api_test'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Enable test mode.'),
-    '#description' => t('In test mode, transactions will be processed as normal but cards will not be charged.'),
-    '#default_value' => variable_get('uc_NDF_api_test', FALSE),
+function uc_ndf_settings_form() {
+  $form['uc_ndf_merchantid'] = array(
+  	'#type' => 'textfield',
+  	'#title' => t('Merchant ID'),
+  	'#default_value' => variable_get('uc_ndf_merchantid', ''),
   );
-  
-  
-	 
-  
- 	$form['uc_NDF_merchantid'] = array(
-    	'#type' => 'textfield',
-    	'#title' => t('MerchantId'),
-    	'#default_value' => variable_get('uc_NDF_merchantid', ''),
-	);
-
-	$form['uc_NDF_terminalid'] = array(
-    	'#type' => 'textfield',
-    	'#title' => t('TerminalId'),
-    	'#default_value' => variable_get('uc_NDF_terminalid', ''),
-	);
-	$form['uc_NDF_secret'] = array(
-	    '#type' => 'textfield',
-	    '#title' => t('Secret'),
-	    '#default_value' => variable_get('uc_NDF_secret', ''),
-	);
-
-
-	 $form['uc_ndf_wps_server'] = array(
-        '#type' => 'select',
-        '#title' => t('NDF server'),
-        '#description' => t('Please provide the Server Type for Next Day Funding'),
-		'#attributes' => array('style' => 'width:70px'),
-	  '#options' => array(
-		  'Live' => ('Live'),
-          'Test' => ('Test'),
-          
-        ),
-		 '#default_value' => variable_get('uc_ndf_wps_server', 'Live'),
-         );
-	$form['uc_NDF_live_url'] = array(
-	    '#type' => 'textfield',
-	    '#title' => t('Live URL'),
-		'#size'=>100,
-	    '#default_value' => variable_get('uc_NDF_live_url', 'https://www.comstarinteractive.com/chargeanywheremanager/PaymentForm/PaymentForm.asp'),
-	);	 
-		 
-	$form['uc_NDF_test_url'] = array(
-	    '#type' => 'textfield',
-	    '#title' => t('Test URL'),
-		'#size'=>100,
-	    '#default_value' => variable_get('uc_NDF_test_url','https://webtest.comstarinteractive.com/chargeanywheremanager/PaymentForm/PaymentForm.asp'),
-	);
-	
-	
-
+  $form['uc_ndf_terminalid'] = array(
+  	'#type' => 'textfield',
+  	'#title' => t('Terminal ID'),
+  	'#default_value' => variable_get('uc_ndf_terminalid', ''),
+  );
+  $form['uc_ndf_secret'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Secret'),
+    '#default_value' => variable_get('uc_ndf_secret', ''),
+  );
+ $form['uc_ndf_wps_server'] = array(
+    '#type' => 'select',
+    '#title' => t('NDF server'),
+    '#description' => t('Please provide the Server Type for Next Day Funding'),
+  	'#attributes' => array('style' => 'width:70px'),
+    '#options' => array(
+  		'Live' => ('Live'),
+    	//'Test' => ('Test'),
+    ),
+ 	'#default_value' => variable_get('uc_ndf_wps_server', 'Live'),
+  );
+  $form['uc_ndf_live_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Live URL'),
+	'#size'=>100,
+    '#default_value' => variable_get('uc_ndf_live_url', UC_NDF_LIVE_GATEWAY_URL),
+  );
   return $form;
 }
 
 /**
  * Callback for processing a credit card transaction.
  */
-function uc_NDF_charge($order_id, $amount, $data) {
-  global $submit_url;
+function uc_ndf_charge($order_id, $amount, $data) {
   global $user;
+
+  // Load the order.
   $order = uc_order_load($order_id);
-	// Build POST data for the transaction.
- 	//$submit_data['Amount'] = uc_currency_format($amount, FALSE, FALSE, '.');
-	$submit_data['Amount'] = $amount;
-	  // Sale or authorization request.
-    $submit_data['CardNumber'] = $order->payment_details['cc_number'];
-    $submit_data['ExpMonth'] = substr('0'. $order->payment_details['cc_exp_month'], -2);
-    $submit_data['ExpYear'] = substr($order->payment_details['cc_exp_year'], -2);
 
-    // Add card CSC/CVV value, if enabled.
-    if (variable_get('uc_credit_cvv_enabled', TRUE)) {
-      $submit_data['CSC'] = $order->payment_details['cc_cvv'];
-    
-
-    $submit_data['EMAIL'] = substr($order->primary_email, 0, 50);
-    $submit_data['INVOICE'] = $order_id;
-
-    // Calculate tax.
-    $tax = 0;
-    if (module_exists('uc_taxes')) {
-      foreach (uc_taxes_calculate($order) as $tax_item) {
-        $tax += $tax_item->amount;
-      }
-    }
-
-    $submit_data['TAX'] = uc_currency_format($tax, FALSE, FALSE, '.');
-
-    // Optional billing address fields
-    $submit_data['BNAME'] = substr($order->billing_first_name .' '. $order->billing_last_name, 0, 50);
-    $submit_data['BADDRESS'] = substr($order->billing_street1, 0, 50);
-    $submit_data['BADDRESS2'] = substr($order->billing_street2, 0, 50);
-    $submit_data['BCITY'] = substr($order->billing_city, 0, 50);
-    $submit_data['BSTATE'] = substr(uc_get_zone_code($order->billing_zone), 0, 2);
-    $submit_data['BZIP'] = substr($order->billing_postal_code, 0, 9);
-
-    // Optional shipping address fields
-    $submit_data['SNAME'] = substr($order->delivery_first_name .' '. $order->delivery_last_name, 0, 50);
-    $submit_data['SADDRESS'] = substr($order->delivery_street1, 0, 50);
-    $submit_data['SADDRESS2'] = substr($order->delivery_street2, 0, 50);
-    $submit_data['SCITY'] = substr($order->delivery_city, 0, 50);
-    $submit_data['SSTATE'] = substr(uc_get_zone_code($order->delivery_zone), 0, 2);
-    $submit_data['SZIP'] = substr($order->delivery_postal_code, 0, 9);
-
-    // Recurring
-    $submit_data['IsRecurring'] = $order->data['recurring']['confirmation'];
-    $submit_data['RecurringEffectiveDate'] = $order->data['recurring']['start_date'];
-    $submit_data['RecurringFrequency'] = $order->data['recurring']['frequency'];
+  // Build a description of the order for logging.
+  $description = array();
+  foreach ((array) $order->products as $product) {
+    $description[] = $product->qty .'x '. $product->model;
   }
 
-/*
-If the live URL entered is selected the request will got the Live site;
-otherwise the request will be sever from the test URL given.
-*/
+  // Build the POST data for the transaction.
+  $submit_data = array(
+    // Merchant Information
+    'MerchantId' => variable_get('uc_ndf_merchantid', ''),
+    'TerminalId' => variable_get('uc_ndf_terminalid', ''),
+    'Secret' => variable_get('uc_ndf_secret', ''),
 
-if(variable_get('uc_ndf_wps_server', '')=="Live")
-$submit_url=variable_get('uc_NDF_live_url', '');
-else
-$submit_url=variable_get('uc_NDF_test_url', '');
+    // Transaction Information
+    'Amount' => $amount,
+    'CardNumber' => $order->payment_details['cc_number'],
+    'ExpMonth' => str_pad($order->payment_details['cc_exp_month'], 2, '0', STR_PAD_LEFT),
+    'ExpYear' => substr($order->payment_details['cc_exp_year'], -2),
 
+     // Request Information
+  	'Mode' => 2,
+  );
 
-  // Send transaction request.
-  $response = _uc_NDF_send_request('ProcessTranx', $submit_data);
-  if (!$response) {
-    return array('success' => FALSE);
+  // Add card CSC/CVV value, if enabled.
+  if (variable_get('uc_credit_cvv_enabled', TRUE)) {
+    $submit_data['CardVerificationValue'] = $order->payment_details['cc_cvv'];
   }
 
-
-		$resp_arr_main=explode("&",$response[0]);
-		$resp_arr_sub_1=explode("=",$resp_arr_main[0]);
-		$fe_status= $resp_arr_sub_1[1];
-		
-  // Check for errors.
-  $success = FALSE;
-  if ($fe_status=="000") {
-    $message = t('NDF error: @error', array('@error' => $response['ERROR']));
+  /*
+  If the live URL entered is selected the request will got the Live site;
+  otherwise the request will be sever from the test URL given.
+  */
+  // Determine the correct URL based on the transaction mode.
+  if (variable_get('uc_ndf_wps_server', 'Live') == 'Test') {
+    //$post_url = variable_get('uc_ndf_test_url', UC_NDF_TEST_GATEWAY_URL);
   }
   else {
-    
-      // Sale or authorization succeeded.
-      $message = t('Message: @message<br />Transaction ID: @id', array('@message' => $response['APPMSG'], '@id' => $response['TRANSACTIONID']));
-      $success = TRUE;
-
-      // Log authorization data.
-      if ($data['txn_type'] == UC_CREDIT_AUTH_ONLY) {
-        uc_credit_log_authorization($order_id, $response['TRANSACTIONID'], $amount);
-      
-    }
+    $post_url = variable_get('uc_ndf_live_url', UC_NDF_LIVE_GATEWAY_URL);
   }
 
-  // Build result array.
-  $result = array(
-    'success' => $success,
-    'comment' => $message,
-    'message' => $message,
-    'uid' => $user->uid,
-    'log_payment' => ($data['txn_type'] != UC_CREDIT_AUTH_ONLY),
-  );
-  if ($response['TRANSACTIONID']) {
-    $result['data'] = array('module' => 'uc_NDF', 'txn_id' => $response['TRANSACTIONID']);
+  // Translate the data array into a string we can POST.
+  $post_fields = array();
+  foreach ($submit_data as $key => $value) {
+    $post_fields[] = $key .'='. urlencode($value);
   }
 
-  // Build an admin order comment.
-  $comment = $message .'<br />'. t('AVS response: @avs', array('@avs' => $response['AVSRESPONSE']));
-  if (variable_get('uc_credit_cvv_enabled', TRUE)) {
-    $comment .= '<br />'. t('CSC response: @csc', array('@csc' => $response['CSCRESPONSE']));
-  }
-  uc_order_comment_save($order_id, $user->uid, $comment, 'admin');
-
-
-  return $result;
-}
-
-/**
- * Send a request to the NDF API and parse the response.
- */
-function _uc_NDF_send_request($method, $data) {
-	global $seed;
-	global $submit_url;
-	$seed=rand();
-	
-	$Signature = hex_hmac_md5(variable_get('uc_NDF_secret', ''), variable_get('uc_NDF_merchantid', '') . ':' . variable_get('uc_NDF_terminalid', '') . ':' . $seed . ':' . uc_currency_format($amount, FALSE, FALSE, '.'));
-  // Add common fields to the request.
-  $data = array(
-    'MerchantId' => variable_get('uc_NDF_merchantid', ''),
-    'TerminalId' => variable_get('uc_NDF_terminalid', ''),
-	'Seed' => $seed,
-	'Signature' => $Signature,
-	'Mode' => "1",
-     ) + $data;
-
-  // Format data for the request.
-  $post_data = "";
-  foreach ($data as $key => $value) {
-    $post_data .= $key .'='. urlencode($value) .'&';
-  }
-
-
-//print_r($post_data);
-//exit;
-  // Send the cURL request and retrieve the response.
-  
+  // Setup the cURL request.
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, $submit_url);
-  curl_setopt($ch, CURLOPT_VERBOSE, 0);
-  curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
-  curl_setopt($ch, CURLOPT_NOPROGRESS, 1);
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
-  $response_string = curl_exec($ch);
-
+  curl_setopt($ch, CURLOPT_URL, $post_url);
+  curl_setopt($ch, CURLOPT_POST, TRUE);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, implode('&', $post_fields));
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+  $result = curl_exec($ch);
 
   // Log any errors to the watchdog.
   if ($error = curl_error($ch)) {
     watchdog('uc_NDF', 'cURL error: @error', array('@error' => $error), WATCHDOG_ERROR);
-    return FALSE;
+    return array('success' => FALSE);
   }
-
   curl_close($ch);
 
-  return $response_string;
+  // parse result
+  $exploded = explode('&', $result);
+  foreach ($exploded as &$value) {
+    $response[strstr($value, '=', true)] = substr(strstr($value, '='), 1);
+  }
+
+  if ($response['ResponseCode'] != '000') {
+    // Fail the charge with the reason text in the decline message.
+    $result = array(
+      'success' => FALSE,
+      'message' => t('Credit card payment declined: @message', array('@message' => 'RESPONSE CODE: ' . $response['ResponseCode'] . ': ' . $response['ResponseText'])),
+      'uid' => $user->uid,
+    );
+  }
+  else {
+    // Build a message for display and comments in the payments table.
+    $message = t('Type: @type<br />ID: @id', array('@type' => $data['txn_type'], '@id' => $response['ReferenceNumber']));
+    $result = array(
+      'success' => TRUE,
+      'comment' => $message,
+      'message' => $message,
+      'data' => array('module' => 'uc_NDF', 'txn_type' => $data['txn_type'], 'txn_id' => $response['ReferenceNumber']),
+      'uid' => $user->uid,
+    );
+
+    // If this was an authorization only transaction...
+    if ($data['txn_type'] == UC_CREDIT_AUTH_ONLY) {
+      // Log the authorization to the order.
+      uc_credit_log_authorization($order->order_id, $response['ReferenceNumber'], $amount);
+    }
+    elseif ($data['txn_type'] == UC_CREDIT_PRIOR_AUTH_CAPTURE) {
+      uc_credit_log_prior_auth_capture($order->order_id, $data['auth_id']);
+    }
+  }
+
+  // Don't log this as a payment money wasn't actually captured.
+  if (in_array($data['txn_type'], array(UC_CREDIT_AUTH_ONLY))) {
+    $result['log_payment'] = FALSE;
+  }
+
+  // Build an admin order comment.
+  $context = array(
+    'revision' => 'formatted-original',
+    'type' => 'amount',
+  );
+  $comment = t('Type: @type<br />Status: @status<br />Message: @message<br />Amount: @amount<br />AVS response: @avs',
+      array(
+      	'@type' => $data['txn_type'],
+      	'@status' => $response['ResponseCode'],
+      	'@message' => $response['ResponseText'],
+      	'@amount' => $amount,
+      	'@avs' => $response['AVSResponse']
+       )
+  );
+
+  // Add the CVV response if enabled.
+  if (variable_get('uc_credit_cvv_enabled', TRUE)) {
+    $comment .= '<br />'. t('CVV match: @cvv', array('@cvv' =>$result['CVVResponse']));
+  }
+
+  // Save the comment to the order.
+  uc_order_comment_save($order->order_id, $user->uid, $comment, 'admin');
+
+  return $result;
 }
